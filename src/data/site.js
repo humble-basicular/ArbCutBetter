@@ -47,7 +47,7 @@ export const site = {
 
   // --- Forma (Web3Forms — IŠSAUGOTI raktai iš veikiančios svetainės) ---
   web3formsKey: '5d05475d-520b-4671-bc6e-79848e14dd02',
-  hcaptchaSiteKey: '75de3474-fc1a-4642-a228-15d0ae76ac10',
+  hcaptchaSiteKey: '50b2fe65-b00b-4b9e-ad62-3ba471098be2',
 
   // --- Statistika (count-up) — REALŪS skaičiai iš paslaugos.lt profilio ---
   statai: [
