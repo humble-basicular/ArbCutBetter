@@ -35,7 +35,7 @@ const schemas = [breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Taisykl�
         <p>Svetainės turinys, nuotraukos ir tekstai priklauso {site.pavadinimas}. Jų naudoti be sutikimo negalima.</p>
 
         <h2>Kontaktai</h2>
-        <p>{site.pavadinimas}, {site.savininkas}<br />Tel.: <a href={site.telefonasHref}>{site.telefonas}</a><br />El. paštas: <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
+        <p>{site.pavadinimas}, {site.savininkas}<br />Tel.: <a href={site.telefonasHref} data-loc="terms">{site.telefonas}</a><br />El. paštas: <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
       </div>
     </section>
   </main>

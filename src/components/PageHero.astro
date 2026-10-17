@@ -26,7 +26,7 @@ const bg = image || '/assets/images/gallery/hero.jpg';
     {subtitle && <p class="page-hero__subtitle">{subtitle}</p>}
 
     <div class="page-hero__ctas">
-      <a href={site.telefonasHref} class="btn btn--call btn--large">
+      <a href={site.telefonasHref} data-loc="page-hero" class="btn btn--call btn--large">
         <Icon name="telefonas" size={20} stroke={2.5} /> {site.telefonas}
       </a>
       <button type="button" class="btn btn--outline-light btn--large" data-modal-trigger aria-haspopup="dialog">Palikti užklausą</button>

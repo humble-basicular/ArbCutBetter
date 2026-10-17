@@ -12,7 +12,7 @@ import InquiryForm from './InquiryForm.astro';
     <h2 class="inquiry-modal__title" id="modal-title">Palikti užklausą</h2>
     <p class="inquiry-modal__sub">
       Atsakysime per vieną darbo dieną. Arba skambinkite tiesiogiai:
-      <a href={site.telefonasHref} class="contact-form__phone-link">{site.telefonas}</a>.
+      <a href={site.telefonasHref} data-loc="modal-form" class="contact-form__phone-link">{site.telefonas}</a>.
     </p>
     <InquiryForm id="modal-contact-form" idPrefix="m" subject="Nauja užklausa iš ArbCut svetainės (modalas)" />
   </div>

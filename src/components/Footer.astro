@@ -38,7 +38,7 @@ const topPaslaugos = paslaugos.slice(0, 6);
       <div class="site-footer__col">
         <h3 class="site-footer__heading">Kontaktai</h3>
         <ul class="site-footer__contact" role="list">
-          <li><Icon name="telefonas" size={15} stroke={2} /> <a href={site.telefonasHref}>{site.telefonas}</a></li>
+          <li><Icon name="telefonas" size={15} stroke={2} /> <a href={site.telefonasHref} data-loc="footer">{site.telefonas}</a></li>
           <li><Icon name="pastas" size={15} stroke={2} /> <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></li>
           <li><Icon name="laikrodis" size={15} stroke={2} /> <span>{site.darboLaikas}</span></li>
           <li><Icon name="vieta" size={15} stroke={2} /> <span>{site.regionas} · {site.aptarnavimas}</span></li>

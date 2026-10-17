@@ -9,7 +9,7 @@ const {
   idPrefix = 'f',
 } = Astro.props;
 ---
-<form class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate id={id}>
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate id={id} data-loc={id}>
   <input type="hidden" name="access_key" value={site.web3formsKey} />
   <input type="hidden" name="subject" value={subject} />
   <input type="hidden" name="from_name" value="ArbCut svetainė" />

@@ -9,7 +9,7 @@ import { site } from '@data/site.js';
       <a href="/" class="site-header__logo" aria-label="ArbCut — į pagrindinį puslapį">
         <img src="/assets/logo-horizontal.svg" alt="ArbCut" class="site-header__logo-img" width="168" height="48" style="height:42px;width:auto;" />
       </a>
-      <a href={site.telefonasHref} class="btn btn--call" style="margin-left:auto;">
+      <a href={site.telefonasHref} data-loc="success-top" class="btn btn--call" style="margin-left:auto;">
         <Icon name="telefonas" size={16} stroke={2.5} /> Skambinti
       </a>
     </div>
@@ -22,7 +22,7 @@ import { site } from '@data/site.js';
       <div class="success-card__body">
         <p>Susisieksime artimiausiu metu.</p>
         <p>Jei reikia skubios pagalbos, skambinkite tiesiogiai:</p>
-        <a href={site.telefonasHref} class="success-card__phone">{site.telefonas}</a>
+        <a href={site.telefonasHref} data-loc="success-card" class="success-card__phone">{site.telefonas}</a>
       </div>
       <a href="/" class="btn btn--forest btn--large">← Grįžti į pagrindinį puslapį</a>
     </div>

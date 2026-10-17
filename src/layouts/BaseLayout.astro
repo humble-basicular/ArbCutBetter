@@ -20,6 +20,7 @@ const schemaList = schemas && schemas.length ? schemas : [localBusiness()];
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{pageTitle}</title>
     <meta name="description" content={desc} />
+    <meta name="jw-site" content="arbcut" />
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
 
@@ -54,5 +55,6 @@ const schemaList = schemas && schemas.length ? schemas : [localBusiness()];
     <a href="#main" class="skip-link">Pereiti prie turinio</a>
     <slot />
     <script src="../scripts/site.js"></script>
+    <script>import '../scripts/inquiry-track.ts';</script>
   </body>
 </html>

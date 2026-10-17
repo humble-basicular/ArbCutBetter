@@ -41,13 +41,14 @@ const schemas = [breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Privatum
         <p>Užklausų duomenis saugome tiek, kiek reikia jūsų užklausai išnagrinėti ir įprastam bendravimui dėl paslaugų. Vėliau jie pašalinami arba nuasmeninami.</p>
 
         <h2>Jūsų teisės</h2>
-        <p>Galite bet kada kreiptis ir paprašyti susipažinti su savo duomenimis, juos ištaisyti arba ištrinti. Tam susisiekite: <a href={site.telefonasHref}>{site.telefonas}</a> arba <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a>.</p>
+        <p>Galite bet kada kreiptis ir paprašyti susipažinti su savo duomenimis, juos ištaisyti arba ištrinti. Tam susisiekite: <a href={site.telefonasHref} data-loc="privacy-rights">{site.telefonas}</a> arba <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a>.</p>
 
         <h2>Slapukai</h2>
         <p>Svetainė nenaudoja sekimo ar rinkodaros slapukų. Funkciniai trečiųjų šalių komponentai (pvz. „hCaptcha", „Google Fonts") gali naudoti techninius slapukus savo veikimui užtikrinti.</p>
+        <p>Anonimiškai skaičiuojame, kiek kartų paspaudžiamas skambučio mygtukas, atidaroma ir išsiunčiama užklausos forma (puslapis, mygtuko vieta, ar atėjote iš paieškos, ir ar įrenginys mobilus). Nenaudojame slapukų, nefiksuojame IP adreso ir jokių asmens duomenų.</p>
 
         <h2>Kontaktai</h2>
-        <p>{site.pavadinimas}, {site.savininkas}<br />Tel.: <a href={site.telefonasHref}>{site.telefonas}</a><br />El. paštas: <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
+        <p>{site.pavadinimas}, {site.savininkas}<br />Tel.: <a href={site.telefonasHref} data-loc="privacy-contact">{site.telefonas}</a><br />El. paštas: <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
       </div>
     </section>
   </main>

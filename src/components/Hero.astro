@@ -33,7 +33,7 @@ const vidurkisStr = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
       </a>
 
       <div class="hero__ctas js-reveal">
-        <a href={site.telefonasHref} class="btn btn--call btn--large">
+        <a href={site.telefonasHref} data-loc="hero" class="btn btn--call btn--large">
           <Icon name="telefonas" size={20} stroke={2.5} /> {site.telefonas}
         </a>
         <a href="#paslaugos" class="btn btn--outline-light btn--large">Žiūrėti paslaugas</a>
@@ -51,7 +51,7 @@ const vidurkisStr = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
         <h2 class="hero-form-card__title">Gaukite nemokamą pasiūlymą</h2>
         <p class="hero-form-card__sub">Aprašykite darbą — susisieksime ir pateiksime preliminarią kainą. Be įsipareigojimų.</p>
 
-        <form class="hero-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <form class="hero-form" action="https://api.web3forms.com/submit" method="POST" novalidate data-loc="hero-form">
           <input type="hidden" name="access_key" value={site.web3formsKey} />
           <input type="hidden" name="subject" value="Nauja užklausa iš ArbCut (hero)" />
           <input type="hidden" name="from_name" value="ArbCut svetainė" />
@@ -76,7 +76,7 @@ const vidurkisStr = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
           <button type="submit" class="btn btn--call btn--large btn--block">
             <Icon name="rodykle" size={18} stroke={2.5} /> Siųsti užklausą
           </button>
-          <p class="hero-form__or">arba skambinkite <a href={site.telefonasHref}>{site.telefonas}</a></p>
+          <p class="hero-form__or">arba skambinkite <a href={site.telefonasHref} data-loc="hero-form">{site.telefonas}</a></p>
         </form>
       </div>
     </div>
