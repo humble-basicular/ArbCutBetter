@@ -17,16 +17,6 @@ const turinys = {
     tekstas:
       'Į Vilnių išvykstame reguliariai — sostinėje dažniausiai tenka šalinti pavojingus medžius ankštuose sklypuose, prie daugiabučių, tvorų ir komunikacijų, kur klaidai nėra vietos. Tokiems darbams naudojame alpinistinę įrangą ir virves, o kur privažiuoja technika — autobokštelį iki 20 m. Didesnius objektus suderiname iš anksto ir, jei reikia, sutvariname kelių medžių darbus į vieną išvykimą, kad kaina jums būtų mažesnė.',
   },
-  'medziu-pjovimas-klaipeda': {
-    intro: 'Klaipėdoje ir pajūryje — vėjo išversti medžiai ir audrų padariniai.',
-    tekstas:
-      'Pajūryje stiprūs vėjai dažnai išverčia ar įtrūkdina medžius, todėl Klaipėdoje ir aplink dažnai tvarkome audrų padarinius — užvirtusius ant stogų, tvorų ar kelio medžius. Atvykstame su visa reikiama įranga ir saugiai pašaliname pavojų keliančius medžius bei nulaužtas šakas. Atliekame ir įprastą priežiūrą: genėjimą, lajos formavimą bei kelmų naikinimą, o darbus aukštyje pasiekiame nuosavu autobokšteliu.',
-  },
-  'medziu-pjovimas-siauliai': {
-    intro: 'Šiauliuose — medžių pjovimas, genėjimas ir aukštuminiai darbai su autobokšteliu.',
-    tekstas:
-      'Šiauliuose ir Šiaulių rajone atliekame visą medžių priežiūros darbų spektrą: pavojingų medžių pjovimą, genėjimą, kelmų frezavimą bei aukštuminius darbus nuosavu autobokšteliu iki 20 m. Įvertiname medžio būklę ir aplinką, parenkame saugiausią būdą, o po darbų sutvarkome teritoriją. Toliau nuo Kauno medieną paprastai paliekame tvarkingoje krūvoje, dėl išvežimo susitariame atskirai.',
-  },
   'medziu-pjovimas-panevezys': {
     intro: 'Panevėžyje — sodybų, sklypų ir pavojingų medžių tvarkymas.',
     tekstas:

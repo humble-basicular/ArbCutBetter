@@ -28,8 +28,6 @@ export const site = {
   vietoves: [
     { miestas: 'Kaunas',       slug: 'medziu-pjovimas-kaunas',       pagrindinis: true },
     { miestas: 'Vilnius',      slug: 'medziu-pjovimas-vilnius' },
-    { miestas: 'Klaipėda',     slug: 'medziu-pjovimas-klaipeda' },
-    { miestas: 'Šiauliai',     slug: 'medziu-pjovimas-siauliai' },
     { miestas: 'Panevėžys',    slug: 'medziu-pjovimas-panevezys' },
     { miestas: 'Marijampolė',  slug: 'medziu-pjovimas-marijampole' },
     { miestas: 'Alytus',       slug: 'medziu-pjovimas-alytus' },

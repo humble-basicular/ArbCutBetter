@@ -31,7 +31,7 @@ public/         # assets/images, llms.txt, robots.txt, logotipai
 ```
 
 ## Turinys
-- 12 paslaugų (6 kategorijos), 10 vietovių puslapių, galerija (86 nuotr.), 4 tinklaraščio straipsniai.
+- 12 paslaugų (6 kategorijos), 8 vietovių puslapių, galerija (86 nuotr.), 4 tinklaraščio straipsniai.
 - 51 realus atsiliepimas (paslaugos.lt, 5,0/106). **Faktai/kainos — nepramanyti.**
 - GEO: JSON-LD (LocalBusiness + AggregateRating + Review + Service + FAQ + BlogPosting), `llms.txt`.
 
