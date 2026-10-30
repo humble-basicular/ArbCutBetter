@@ -1,13 +1,14 @@
 ---
-/* Atsiliepimai — REALŪS iš paslaugos.lt (5,0 / 106). Pagrindiniame puslapyje
-   rodome agreguotą reitingą + 6 atsiliepimus + nuorodą į pilną profilį.
+/* Atsiliepimai — REALŪS, sinchronizuoti su paslaugos.lt (scripts/sync-atsiliepimai.mjs).
+   Agreguotas reitingas + naujausi atsiliepimai + nuoroda į pilną profilį.
+   Paslaugos puslapyje (paslauga=slug) pirmiau rodomi tos paslaugos atsiliepimai.
    ⚠️ Jokių prasimanytų atsiliepimų (PRD §10). */
-import { atsiliepimai, atsiliepimuVidurkis, atsiliepimuKiekis, atsiliepimuSaltinis } from '@data/atsiliepimai.js';
+import { atsiliepimai, atsiliepimaiPaslaugai, atsiliepimuVidurkis, atsiliepimuKiekis, atsiliepimuSaltinis } from '@data/atsiliepimai.js';
 import { site } from '@data/site.js';
 import Icon from './Icon.astro';
 const paliktiUrl = site.atsiliepimai.paliktiUrl;
-const { limit = 6 } = Astro.props;
-const rodomi = atsiliepimai.slice(0, limit);
+const { limit = 6, paslauga = null } = Astro.props;
+const rodomi = paslauga ? atsiliepimaiPaslaugai(paslauga, limit) : atsiliepimai.slice(0, limit);
 const vidurkisStr = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 ---
 <section class="reviews section section--cream" id="atsiliepimai" aria-label="Atsiliepimai">
@@ -26,11 +27,12 @@ const vidurkisStr = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
     <div class="reviews__grid">
       {rodomi.map((a) => (
         <figure class="review-card js-reveal-scroll">
-          <div class="stars" aria-label={`${a.zvaigzdes} iš 5`}>{'★'.repeat(a.zvaigzdes)}</div>
+          {a.zvaigzdes && <div class="stars" aria-label={`${a.zvaigzdes} iš 5`}>{'★'.repeat(a.zvaigzdes)}</div>}
+          {a.paslaugaPavadinimas && <span class="review-card__svc">{a.paslaugaPavadinimas}</span>}
           <blockquote class="review-card__text">„{a.tekstas}"</blockquote>
           <figcaption class="review-card__foot">
             <span class="review-card__name">{a.vardas}</span>
-            <span class="review-card__src">paslaugos.lt</span>
+            <span class="review-card__src">paslaugos.lt · {a.data.slice(0, 7)}</span>
           </figcaption>
         </figure>
       ))}
@@ -64,7 +66,8 @@ const vidurkisStr = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   .review-card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--space-6); box-shadow: var(--shadow-card); display: flex; flex-direction: column; gap: var(--space-3); transition: transform var(--t-base), box-shadow var(--t-base); }
   .review-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-heavy); }
   .review-card .stars { font-size: 1rem; }
-  .review-card__text { font-size: 1rem; line-height: 1.6; color: var(--color-text); }
+  .review-card__text { font-size: 1rem; line-height: 1.6; color: var(--color-text); white-space: pre-line; }
+  .review-card__svc { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-rust); }
   .review-card__foot { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: var(--space-2); }
   .review-card__name { font-weight: 700; }
   .review-card__src { font-size: 0.8rem; color: var(--color-text-muted); }

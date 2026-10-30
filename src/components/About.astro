@@ -3,7 +3,9 @@
    Nuotrauka („main photo") svarbi — parodo žmogų, kuris dirba (pasitikėjimas). */
 import { apie } from '@data/turinys.js';
 import { site } from '@data/site.js';
+import { atsiliepimuKiekis, atsiliepimuVidurkis, patirtisMetai } from '@data/atsiliepimai.js';
 import Icon from './Icon.astro';
+const vidurkisStr = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 ---
 <section class="about section section--cream" id="apie" aria-label="Apie ArbCut">
   <div class="container about__grid">
@@ -22,8 +24,8 @@ import Icon from './Icon.astro';
       <p class="about__body about__body--detail">{apie.detail}</p>
 
       <div class="about__points">
-        <span class="about__point"><Icon name="zvaigzde" size={18} /> 5,0 ★ · 106 atsiliepimai</span>
-        <span class="about__point"><Icon name="laikrodis" size={18} /> 13+ metų patirtis</span>
+        <span class="about__point"><Icon name="zvaigzde" size={18} /> {vidurkisStr} ★ · {atsiliepimuKiekis} atsiliepimai</span>
+        <span class="about__point"><Icon name="laikrodis" size={18} /> {patirtisMetai}+ metų patirtis</span>
         <span class="about__point"><Icon name="autobokstelis" size={18} /> Nuosavas autobokštelis (20 m)</span>
       </div>
 

@@ -24,7 +24,7 @@ const reviewList = (limit = 51) =>
     '@type': 'Review',
     author: { '@type': 'Person', name: a.vardas },
     datePublished: a.data,
-    reviewRating: { '@type': 'Rating', ratingValue: String(a.zvaigzdes), bestRating: '5' },
+    ...(a.zvaigzdes ? { reviewRating: { '@type': 'Rating', ratingValue: String(a.zvaigzdes), bestRating: '5' } } : {}),
     reviewBody: a.tekstas,
   }));
 

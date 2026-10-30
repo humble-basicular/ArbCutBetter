@@ -4,6 +4,8 @@
    turi sutapti visur (žr. CLAUDE.md).
    ===================================================================== */
 
+import { atsiliepimuKiekis, atsiliepimuVidurkis, patirtisMetai } from './atsiliepimai.js';
+
 export const site = {
   pavadinimas: 'ArbCut',
   savininkas: 'Mantas Gerulis',
@@ -34,6 +36,7 @@ export const site = {
     { miestas: 'Jonava',       slug: 'medziu-pjovimas-jonava' },
     { miestas: 'Kėdainiai',    slug: 'medziu-pjovimas-kedainiai' },
     { miestas: 'Kazlų Rūda',   slug: 'medziu-pjovimas-kazlu-ruda' },
+    { miestas: 'Tauragė',      slug: 'medziu-pjovimas-taurage' },
   ],
 
   // --- SEO ---
@@ -47,10 +50,10 @@ export const site = {
   web3formsKey: '5d05475d-520b-4671-bc6e-79848e14dd02',
   hcaptchaSiteKey: '50b2fe65-b00b-4b9e-ad62-3ba471098be2',
 
-  // --- Statistika (count-up) — REALŪS skaičiai iš paslaugos.lt profilio ---
+  // --- Statistika (count-up) — REALŪS skaičiai, sinchronizuojami su paslaugos.lt profiliu ---
   statai: [
-    { skaicius: 106, priesaga: '+', etikete: 'klientų atsiliepimų · 5,0 ★' },
-    { skaicius: 13, priesaga: '+', etikete: 'metų patirtis' },
+    { skaicius: atsiliepimuKiekis, priesaga: '+', etikete: `klientų atsiliepimų · ${atsiliepimuVidurkis.toFixed(1).replace('.', ',')} ★` },
+    { skaicius: patirtisMetai, priesaga: '+', etikete: 'metų patirtis' },
     { skaicius: 20, priesaga: ' m', etikete: 'aukštyje su nuosavu autobokšteliu' },
   ],
 

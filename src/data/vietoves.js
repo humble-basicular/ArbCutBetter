@@ -47,6 +47,12 @@ const turinys = {
     tekstas:
       'Kazlų Rūda ir jos apylinkės — miškingas kraštas, kuriame dirbame reguliariai (čia mus rekomendavo ir klientai). Pjauname aukštus, pavojingus medžius prie namų ir sodybų, genime, naikiname kelmus bei karpome gyvatvores. Aukščiui pasiekti naudojame autobokštelį ir alpinistinę įrangą, o aplinką po darbų tvarkingai sutvarkome.',
   },
+  // Pridėta kliento prašymu (2026-10). Tauragė — Kaunas +200 km aptarnavimo zonoje (paslaugos.lt profilis).
+  'medziu-pjovimas-taurage': {
+    intro: 'Tauragėje ir Tauragės krašte — pavojingi medžiai, genėjimas ir kelmai.',
+    tekstas:
+      'Tauragė ir aplinkiniai rajonai patenka į mūsų aptarnavimo zoną, todėl atvykstame ir į Tauragę, ir į aplinkines sodybas bei kaimus. Dažniausiai čia šaliname senus, pavojingai pasvirusius ar audros pažeistus medžius prie namų, ūkinių pastatų ir elektros linijų, genime lają, frezuojame kelmus. Aukštus medžius pjauname dalimis — su nuosavu autobokšteliu iki 20 m arba alpinistine įranga. Kad kelionė apsimokėtų, išvykimo datą suderiname iš anksto, o kelių kaimynų darbus galime atlikti per vieną atvykimą.',
+  },
 };
 
 export const vietoves = site.vietoves.map((v) => ({ ...v, ...(turinys[v.slug] || {}) }));

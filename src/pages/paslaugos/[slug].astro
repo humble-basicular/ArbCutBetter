@@ -13,6 +13,7 @@ import ChatWidget from '@components/ChatWidget.astro';
 import Icon from '@components/Icon.astro';
 import { paslaugos } from '@data/paslaugos.js';
 import { site } from '@data/site.js';
+import { atsiliepimuKiekis, atsiliepimuVidurkis } from '@data/atsiliepimai.js';
 import { localBusiness, serviceSchema, breadcrumbs } from '@data/jsonld.js';
 
 export function getStaticPaths() {
@@ -26,7 +27,7 @@ const privalumai = [
   { ikona: 'skydas', lead: 'Saugiai', text: 'alpinistinė įranga ir autobokštelis iki 20 m' },
   { ikona: 'vieta', lead: 'Visoje Lietuvoje', text: 'atvykstame į visus regionus' },
   { ikona: 'tvarka', lead: 'Tvarkinga', text: 'po darbų sutvarkome teritoriją' },
-  { ikona: 'zvaigzde', lead: '5,0 įvertinimas', text: '106 klientų atsiliepimai' },
+  { ikona: 'zvaigzde', lead: `${atsiliepimuVidurkis.toFixed(1).replace('.', ',')} įvertinimas`, text: `${atsiliepimuKiekis} klientų atsiliepimai` },
 ];
 
 const title = `${p.pavadinimas} — ArbCut | Visoje Lietuvoje`;
@@ -95,7 +96,7 @@ const schemas = [
     </section>
 
     <Process />
-    <Reviews limit={3} />
+    <Reviews limit={3} paslauga={p.slug} />
     <CtaBand />
     <ContactSection />
   </main>

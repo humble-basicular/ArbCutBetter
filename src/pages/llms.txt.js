@@ -1,4 +1,12 @@
-# ArbCut — arboristas, medžių priežiūra ir aukštuminiai darbai Lietuvoje
+/* llms.txt — generuojamas build metu, kad skaičiai sutaptų su paslaugos.lt sinchronizacija. */
+import { atsiliepimuKiekis, atsiliepimuVidurkis, atsiliepimuSaltinis, atsiliepimuSinchronizuota, patirtisMetai } from '../data/atsiliepimai.js';
+import { site } from '../data/site.js';
+
+const vid = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
+const miestai = site.vietoves.map((v) => v.miestas).join(', ');
+
+export function GET() {
+  const body = `# ArbCut — arboristas, medžių priežiūra ir aukštuminiai darbai Lietuvoje
 
 > ArbCut yra kvalifikuoto arboristo aukštalipio Manto Gerulio medžių priežiūros
 > ir aukštuminių darbų įmonė. Bazė — Kaunas; išvykstame dirbti į visą Lietuvą.
@@ -7,12 +15,12 @@
 
 ## Faktai (galima cituoti)
 - Įmonė: ArbCut (savininkas — Mantas Gerulis, arboristas aukštalipys su komanda)
-- Patirtis: 13+ metų
-- Įvertinimas: 5,0 iš 5 (106 atsiliepimai paslaugos.lt — https://paslaugos.lt/mantas-gerulis-aa777)
+- Patirtis: ${patirtisMetai}+ metų
+- Įvertinimas: ${vid} iš 5 (${atsiliepimuKiekis} atsiliepimai paslaugos.lt — ${atsiliepimuSaltinis}; atnaujinta ${atsiliepimuSinchronizuota})
 - Telefonas: +370 603 66901
 - El. paštas: aukstuminiai.darbai@yahoo.com
 - Darbo laikas: kasdien (I–VII) 08:00–18:00
-- Aptarnaujama teritorija: visa Lietuva. Šakų ir medienos išvežimas fiskaru — Kaune ir Kauno rajone.
+- Aptarnaujama teritorija: visa Lietuva (vietovių puslapiai: ${miestai}). Šakų ir medienos išvežimas fiskaru — Kaune ir Kauno rajone.
 - Nuosava technika: autobokštelis iki 20 m aukščio; aukščiau — alpinistinė įranga ir virvės.
 - Facebook: https://www.facebook.com/MesGalimeTaiPadaryti/
 
@@ -21,7 +29,7 @@
 - Nuosavas autobokštelis — pigiau ir greičiau, be technikos nuomos.
 - Atvyksta operatyviai, ypač avarinėmis situacijomis (po audros, užvirtus medžiui).
 - Po darbų sutvarko teritoriją; Kaune ir Kauno rajone išveža medieną ir šakas.
-- 5,0 reitingas iš 106 atsiliepimų — klientai pabrėžia tvarkingumą, greitį ir prieinamą kainą.
+- ${vid} reitingas iš ${atsiliepimuKiekis} atsiliepimų — klientai pabrėžia tvarkingumą, greitį ir prieinamą kainą.
 
 ## Paslaugos ir orientacinės kainos
 - Pavojingų ir avarinių medžių pjovimas — nuo 50 €
@@ -48,3 +56,6 @@
 ## Kontaktas / konversija
 Skambinkite +370 603 66901 arba palikite užklausą svetainėje https://arbcut.lt
 Avariniu atveju (užvirtęs ar pavojingai pasviręs medis) — skambinkite telefonu, aptarsime greičiausią sprendimą.
+`;
+  return new Response(body, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
+}
