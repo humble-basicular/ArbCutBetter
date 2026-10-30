@@ -46,7 +46,7 @@ tikras Chrome langas Mato Mac'e.
 - `npm run sync:auto` — Chrome už ekrano → nuskaito profilį → `scripts/paslaugos-atsiliepimai.json`
   → `src/data/atsiliepimai.js` → build → commit + push (Vercel publikuoja). Jei niekas nepasikeitė — nieko nedaro.
   `--dry` — be commit/push.
-- Kasdien paleidžia launchd: `~/Library/LaunchAgents/lt.jarvisweb.arbcut-sync.plist`, žurnalas `~/Library/Logs/arbcut-sync.log`.
+- Kas savaitę (pirmadienį 10:00) paleidžia launchd: `~/Library/LaunchAgents/lt.jarvisweb.arbcut-sync.plist`, žurnalas `~/Library/Logs/arbcut-sync.log`.
   Jei Mac išjungtas — pasileidžia kitą kartą pabudus.
 - Rankinis atsarginis būdas: `scripts/paslaugos-export.js` naršyklės konsolėje → išsaugoti JSON → `npm run sync:atsiliepimai`.
 - Saugikliai: nekeičia nieko, jei profilis neįsikėlė, nuskaitytas ne visas sąrašas ar atsiliepimų sumažėjo >5.

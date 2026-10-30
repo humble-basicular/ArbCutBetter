@@ -1,5 +1,5 @@
 /* =====================================================================
-   AUTOMATINĖ atsiliepimų sinchronizacija (paleidžia launchd kasdien).
+   AUTOMATINĖ atsiliepimų sinchronizacija (paleidžia launchd kas savaitę).
    paslaugos.lt Cloudflare blokuoja serverius ir headless naršykles, bet
    praleidžia tikrą Chrome langą — todėl atidarome Chrome už ekrano ribų,
    nuskaitome profilį, perrašome duomenis, patikriname build ir, jei kas
