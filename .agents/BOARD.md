@@ -12,6 +12,7 @@
 - Acceptance: distinct intentional design, truthful Lithuanian content, useful service coverage/internal links, all real useful URLs mapped, isolated form tests, mobile/desktop interaction and accessibility/performance checks, noindex preview, no fabricated evidence, full raw/source protection.
 - Task brief: `.agents/handoffs/2026-11-04-arbcut-upgrade-approved.md`.
 
+- Stage log: 4 Nov 18:35 EET lead resumed on Claude2 after the `claudeAgent` 5h limit stopped it at 17:00. Brand commit `32fe006` integrated. Fixed: preview shipped the tracker instead of `site.js` (conditional `<script>` in BaseLayout), hidden success block, 320px overflow. Next: Codex review on `codex` (not `codex_codex2`, 92% session), then Drive assets and final report.
 - Stage log: `arbcut-brand-mark` delegated 4 Nov to Codex `gpt-6.1-sol` (medium), isolated worktree, owns only `public/assets/arbcut-upgrade-brand/**`, soft budget 1.5M input tokens (estimate; no comparable history).
 
 ## Requests / interfaces

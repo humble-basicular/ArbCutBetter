@@ -57,7 +57,11 @@ const B = '/assets/arbcut-upgrade-brand';
     <Lightbox />
     <MobileActions />
     <script src="../scripts/site.js"></script>
-    {!PREVIEW && <script>import '../scripts/inquiry-track.ts';</script>}
+    <script>
+      /* Sąlyga čia, ne šablone: sąlyginis <script> Astro sumaišo skriptų numeraciją
+         ir peržiūroje vietoje site.js įkeliamas sekimas. */
+      if (import.meta.env.PUBLIC_PREVIEW !== '1') import('../scripts/inquiry-track.ts');
+    </script>
     {!PREVIEW && <script is:inline src="https://js.hcaptcha.com/1/api.js" async defer></script>}
   </body>
 </html>
