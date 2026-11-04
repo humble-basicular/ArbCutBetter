@@ -27,3 +27,6 @@ Retry1 completed at0a69615: 7services desktop/6mobile; exact remaining10service 
 
 ## Codex2 recovery20:10UTC
 Confirmed retry2 exists and is RUNNING: node:delegated-task:command%3Amcp%3Af9e74f2d-f5c1-40c2-9ef6-2d72dce20c45%3Adelegate-task%3Av4-vensland-detail-retry2 . No duplicate delegation. Child Claude2 Opus5.5 continues same session; await completion notification then read result. Codex99%, Codex2 warning87%; Claude2 last catalog60%session/69%weekly is stale. No website changes. Work remains active on Claude2.
+
+## Update20:11UTC
+VensLand retry2 completed72d0851 and result read. All10services viewed both widths, no full-page claim because seam gaps;22locality/privacy pairs unviewed, interactions none. No more VensLand retries. Codex2 now92%; moving independent Betono detail stage to Claude2 (latest catalog60%session/69%weekly stale). Owner only new Betono report/tmp dir; no source writes. Estimated1M input budget, no measured successful comparable full25route study. Original content and approval constraints remain.
