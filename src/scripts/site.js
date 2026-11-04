@@ -172,7 +172,7 @@
 
   /* Atsiliepimų lenta: šaltinio ir paslaugos filtrai, „Rodyti daugiau“ */
   $$('[data-rv-board]').forEach((board) => {
-    const per = +board.dataset.per || 6;
+    const per = (matchMedia('(max-width: 600px)').matches ? +board.dataset.perMobile : +board.dataset.per) || 6;
     const items = $$('[data-rv-item]', board);
     const count = $('[data-rv-count]', board);
     const empty = $('[data-rv-empty]', board);

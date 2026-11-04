@@ -23,7 +23,7 @@ const r1 = (x) => x.toFixed(1).replace('.', ',');
       <p class="lead">Kiekvienas atsiliepimas su šaltiniu, data ir atlikta paslauga. Tekstai netaisyti. Įvertinimai rodomi atskirai kiekvienai platformai.</p>
     </div>
     <div class="rvb__grid">
-      <div class="rvb__main" data-rv-board data-per={PER}>
+      <div class="rvb__main" data-rv-board data-per={PER} data-per-mobile="4">
         <div class="rvb__filters" role="group" aria-label="Atsiliepimų filtras">
           <div class="rvb__fg">
             <span class="rvb__fl">Šaltinis</span>
@@ -110,6 +110,10 @@ const r1 = (x) => x.toFixed(1).replace('.', ',');
     .rvb__side { display: contents; }
     .pl { order: -1; width: 100%; }
     .rvb__side :global(.gp) { order: 2; width: 100%; }
+  }
+  @media (max-width: 600px) {
+    .rvb__c:nth-child(n + 5) { display: none; }
+    :global(.js) .rvb__c { display: block; }
   }
   @media (max-width: 760px) {
     .rvb__head { grid-template-columns: 1fr; }

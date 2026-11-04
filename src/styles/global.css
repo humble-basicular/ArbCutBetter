@@ -205,3 +205,5 @@ strong, b { font-weight: 700; }
   /* Kai pildoma forma, apatinė juosta pasitraukia ir neuždengia laukų */
   .is-typing .mact { transform: translateY(110%); visibility: hidden; }
 }
+
+@media (max-width: 600px) { :root { --sec: 48px; } }
