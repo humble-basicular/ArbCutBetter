@@ -1,12 +1,12 @@
 ---
 /* DUK — natūralus <details>, veikia ir be JS. */
-const { items = [] } = Astro.props;
+const { items = [], openFirst = false } = Astro.props;
 ---
 <div class="faq">
-  {items.map((q) => (
-    <details>
+  {items.map((q, i) => (
+    <details open={openFirst && i === 0}>
       <summary>{q.klausimas}</summary>
-      <div class="faq-a"><p>{q.atsakymas}{q.nuoroda && <> <a href={q.nuoroda}>Skaityti plačiau</a></>}</p></div>
+      <div class="faq-a"><p>{q.atsakymas}{q.nuoroda && <> <a href={q.nuoroda}>Plačiau</a></>}</p></div>
     </details>
   ))}
 </div>

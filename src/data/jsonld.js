@@ -13,6 +13,12 @@ const telBare = site.telefonasHref.replace('tel:', '');
 const areaServed = [
   { '@type': 'AdministrativeArea', name: 'Kauno apskritis' },
   ...site.vietoves.map((v) => ({ '@type': 'City', name: v.miestas })),
+  /* „Kaunas, +200 km aplink“ — kaip Paslaugos.lt profilyje */
+  {
+    '@type': 'GeoCircle',
+    geoMidpoint: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
+    geoRadius: 200000,
+  },
 ];
 
 /* --- Pagrindinis verslo subjektas (NAP + paslaugos) ---

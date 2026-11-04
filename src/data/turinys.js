@@ -82,3 +82,35 @@ export const duk = [
     atsakymas: 'Taip, dirbame kasdien 08:00–18:00, įskaitant savaitgalius.',
   },
 ];
+
+/* Pradžios puslapio DUK (2026-11). Atsakymai remiasi Paslaugos.lt profiliu,
+   LRT.lt ir Valstietis.lt straipsniais. Tas pats tekstas eina į FAQPage schemą. */
+export const dukPradzia = [
+  {
+    klausimas: 'Kiek kainuoja nupjauti medį?',
+    atsakymas: 'Medžio pjovimas, genėjimas ir audros padarinių šalinimas kainuoja nuo 50 € už darbą, kelmo frezavimas nuo 75 €, šakų išvežimas nuo 80 €, darbai autobokšteliu nuo 150 €. Kainą lemia medžio dydis, kas aplink jį (namas, tvora, laidai, gatvė), ar privažiuoja autobokštelis ir ar reikia išvežti medieną. Preliminarią kainą pasakome pagal nuotraukas iš kelių pusių, tikslią atvažiavę į vietą.',
+    nuoroda: '/kainos',
+  },
+  {
+    klausimas: 'Ar reikia leidimo nupjauti medį savo sklype?',
+    atsakymas: 'Dažnai reikia. Gyvenamųjų namų teritorijose valstybės saugomi medžiai (pvz., ąžuolai, uosiai, klevai, liepos, maumedžiai, beržai, pušys) mieste saugomi nuo 20 cm kamieno skersmens, ne mieste nuo 30 cm. Skersmuo matuojamas 1,3 m aukštyje. Dėl leidimo kreipiamasi į savivaldybę ar seniūniją. Nuo kovo 15 iki rugpjūčio 15 d. saugomų medžių kirsti negalima, išskyrus kai medis kelia grėsmę žmonių gyvybei, sveikatai ar turtui. Už neteisėtą kirtimą gyventojui gresia bauda nuo 60 iki 200 €. Mantas LRT.lt sakė: „Mes kertame medžius tik turėdami leidimus.“ Nežinote, ar jūsų medžiui reikia leidimo? Paklauskite skambindami.',
+  },
+  {
+    klausimas: 'Ar sutvarkote ir išvežate šakas?',
+    atsakymas: 'Taip. Kaune ir Kauno rajone šakas ir medieną išvežame fiskaru, jis talpina nuo 20 m³ (išvežimas nuo 80 €). Toliau nuo Kauno medį supjauname, o šakas ir medieną sukrauname tvarkingomis krūvomis jūsų sklype.',
+    nuoroda: '/paslaugos/saku-isvezimas',
+  },
+  {
+    klausimas: 'Kas, jei autobokštelis neprivažiuoja prie medžio?',
+    atsakymas: 'Tada lipame į medį su alpinistine įranga. Medį pjauname dalimis, šakas ir kamieno gabalus nuleidžiame virvėmis, kad nieko neapgadintume aplink. Autobokštelis kelia iki 20 m, aukščiau irgi dirbame su virvėmis.',
+  },
+  {
+    klausimas: 'Ar dirbate prie elektros laidų ir kapinėse?',
+    atsakymas: 'Taip, tai įprasti mūsų darbai. Medį prie laidų ar kapaviečių pjauname dalimis ir nuleidžiame virvėmis. Jei medis jau užkrito ant elektros laidų, nelieskite jo ir pirmiausia praneškite elektros tinklų operatoriui.',
+    nuoroda: '/paslaugos/avariniu-medziu-pjovimas',
+  },
+  {
+    klausimas: 'Kada galite atvažiuoti ir kiek toli važiuojate?',
+    atsakymas: 'Dirbame kasdien 08:00–18:00, ir savaitgaliais. Bazė Kaune, važiuojame iki 200 km aplink. Tolimesnį darbą suderiname iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.',
+  },
+];
