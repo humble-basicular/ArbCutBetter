@@ -38,3 +38,5 @@
 - Acceptance: text before screenshots, distinguish observation from taste, cover all named references, preserve bb63bd8 content/function. Lead then asks design questions and presents exact proposal; explicit approval precedes implementation.
 
 - Reference study initial pass INCOMPLETE: old contact sheet only; missing fresh/mobile captures and Glassperts/Betono visual inspection. User explicitly requires every page and actual screenshots. Continuing same child session for full visual coverage; no implementation authorized. Required output: URL-by-URL coverage manifest, fresh desktop/mobile screenshots and observations, explicit inaccessible-page gaps.
+
+- Lead takeover checkpoint: fresh capture batch running, full study NOT accepted; no implementation. Handoff: .agents/handoffs/2026-11-04-2036-v4-visual-study-incomplete.md. Codex2 session 92%; exact captures and actual inspection separated.
