@@ -2,17 +2,27 @@
 
 Stage v4-vensland-detail, 2026-11-04. Owner Claude2 Opus 5.5. Research only: no website edits, no forms submitted, no paid APIs.
 
-## Status: stopped early
-The soft input budget was exceeded (513,293 against 450,000), so this pass stopped before the planned scope. **Visual findings cover the homepage only.** Of 44 route/viewport pairs, 1 was viewed in full, 1 in part, and 42 were not viewed in this pass. Findings on the other 21 routes come from HTML and text comparison, and are labelled that way. Do not treat them as visual evidence.
+## Status: incomplete, two budget stops
+Pass 1 (`21ceb32`) stopped at 513,293 against 450,000. Pass 2 stopped at 762,498 against 650,000, with 20 of 30 service panels viewed.
 
-T3 preview and computer use were not attempted, so no interaction, animation or hover state has been observed here. No capture failed; the work simply did not reach that step.
+Of 44 route/viewport pairs, this is the state:
+
+| State | Pairs |
+|---|---|
+| Viewed by this agent, whole capture | 14: `/` at 1440; 6 service routes at both widths; `/paslaugos/zoles-pjovimas/` at 1440 |
+| Viewed jointly: this agent y0-12000, lead the tail | 1: `/` at 390 |
+| Not viewed | 29: 3 service routes at both widths; `/paslaugos/zoles-pjovimas/` at 390; 10 locality routes at both widths; `/privatumo-politika/` at both widths |
+
+"Viewed" never means every pixel. See seam limits below, so no route here is claimed as a full-page visual. Locality findings are text-only.
+
+T3 preview and computer use were not attempted, so no interaction, animation or hover state has been observed here. No capture failed; the work did not reach that step.
 
 ## Coverage ledger
 Source: `/tmp/arbcut-v4-study/capture-manifest.json`, viewports 1440x900 and 390x900, 800 px scroll step. All 22 routes returned HTTP 200 and match the 22 `<loc>` entries in `https://vensland.lt/sitemap.xml`. All chunk files exist on disk.
 
 | Route | 1440 capture | 1440 inspected | 390 capture | 390 inspected |
 |---|---|---|---|---|
-| `/` | 11401 px, 15 chunks | **Viewed in full**, 8 panels at native width | 17510 px, 22 chunks | **Partly viewed**, y0-12000 of 17510; y12000+ not viewed |
+| `/` | 11401 px, 15 chunks | Viewed, 8 native panels (`p0` also viewed by lead) | 17510 px, 22 chunks | y0-12000 this agent; tail (`home-390-s2-y12000`) viewed by lead; bar seams apply |
 | `/vilnius/` | 11971 px, 15 chunks | Not viewed | 18347 px, 23 chunks | Not viewed |
 | `/avizieniai/` | 11927 px, 15 chunks | Not viewed | 18249 px, 23 chunks | Not viewed |
 | `/riese/` | 11927 px, 15 chunks | Not viewed | 18237 px, 23 chunks | Not viewed |
@@ -23,13 +33,13 @@ Source: `/tmp/arbcut-v4-study/capture-manifest.json`, viewports 1440x900 and 390
 | `/lentvaris/` | 11927 px, 15 chunks | Not viewed | 18193 px, 23 chunks | Not viewed |
 | `/trakai/` | 11927 px, 15 chunks | Not viewed | 18193 px, 23 chunks | Not viewed |
 | `/maisiagala/` | 11927 px, 15 chunks | Not viewed | 18225 px, 23 chunks | Not viewed |
-| `/paslaugos/vejos-irengimas/` | 3953 px, 5 chunks | Not viewed | 6478 px, 9 chunks | Not viewed |
-| `/paslaugos/laistymo-sistemos/` | 3544 px, 5 chunks | Not viewed | 5860 px, 8 chunks | Not viewed |
-| `/paslaugos/vejos-aeravimas-core/` | 3845 px, 5 chunks | Not viewed | 6381 px, 8 chunks | Not viewed |
-| `/paslaugos/vejos-skarifikavimas/` | 3939 px, 5 chunks | Not viewed | 6122 px, 8 chunks | Not viewed |
-| `/paslaugos/vejos-lyginimas-levelingas/` | 3912 px, 5 chunks | Not viewed | 6355 px, 8 chunks | Not viewed |
-| `/paslaugos/vejos-tresimas-purskimas/` | 3585 px, 5 chunks | Not viewed | 5848 px, 8 chunks | Not viewed |
-| `/paslaugos/zoles-pjovimas/` | 3939 px, 5 chunks | Not viewed | 6021 px, 8 chunks | Not viewed |
+| `/paslaugos/vejos-irengimas/` | 3953 px, 5 chunks | Viewed, 2 panels at 0.75 scale | 6478 px, 9 chunks | Viewed, 1 native 4-column sheet; seams apply |
+| `/paslaugos/laistymo-sistemos/` | 3544 px, 5 chunks | Viewed, 2 panels at 0.75 scale | 5860 px, 8 chunks | Viewed, 1 native 4-column sheet; seams apply |
+| `/paslaugos/vejos-aeravimas-core/` | 3845 px, 5 chunks | Viewed, 2 panels at 0.75 scale | 6381 px, 8 chunks | Viewed, 1 native 4-column sheet; seams apply |
+| `/paslaugos/vejos-skarifikavimas/` | 3939 px, 5 chunks | Viewed, 2 panels at 0.75 scale | 6122 px, 8 chunks | Viewed, 1 native 4-column sheet; seams apply |
+| `/paslaugos/vejos-lyginimas-levelingas/` | 3912 px, 5 chunks | Viewed, 2 panels at 0.75 scale | 6355 px, 8 chunks | Viewed, 1 native 4-column sheet; seams apply |
+| `/paslaugos/vejos-tresimas-purskimas/` | 3585 px, 5 chunks | Viewed, 2 panels at 0.75 scale | 5848 px, 8 chunks | Viewed, 1 native 4-column sheet; seams apply |
+| `/paslaugos/zoles-pjovimas/` | 3939 px, 5 chunks | Viewed, 2 panels at 0.75 scale | 6021 px, 8 chunks | Not viewed |
 | `/paslaugos/apleistu-sklypu-tvarkymas/` | 3939 px, 5 chunks | Not viewed | 6146 px, 8 chunks | Not viewed |
 | `/paslaugos/mini-ekskavatoriaus-paslaugos/` | 3980 px, 5 chunks | Not viewed | 6269 px, 8 chunks | Not viewed |
 | `/paslaugos/gyvatvoriu-sodinimas-prieziura/` | 3980 px, 5 chunks | Not viewed | 6268 px, 8 chunks | Not viewed |
@@ -42,7 +52,9 @@ Duplicate manifest records exist at 1440 for `/lentvaris/`, `/maisiagala/` and `
 ## Method notes
 - Stitched pages and panels: `/tmp/arbcut-v4-vensland-detail/stitched/`, `panels/`. Scripts `stitch2.py`, `panel.py`, `diff.py`. Route HTML: `html/`.
 - Chunks overlap by only 100 px, which the fixed header covers, so overlap cannot validate seams. The stitcher pastes in reverse order and clamps the last chunk to pageHeight minus 900.
-- In the mobile panels the bottom action bar repeats about every 800 px. That is a capture artefact of a fixed element, not page content.
+- Pass 1 mobile panels (`/`) show the fixed action bar about every 800 px, because earlier chunks were pasted on top. That is an artefact, not page content, and the bar covers real content at each seam.
+- Pass 2 mobile sheets paste forward, so the fixed header repeats about every 800 px instead. Chunk comparison shows a fixed header at the top and a fixed bar at the bottom of each 900 px chunk, so a strip of roughly 45 px per seam (estimate) is hidden in both chunks. Text clipped at those seams was not recovered.
+- Service 1440 panels are scaled to 0.75. In `/paslaugos/vejos-irengimas/`, `/vejos-skarifikavimas/`, `/vejos-lyginimas-levelingas/` and `/zoles-pjovimas/`, the single FAQ row is clipped or blank at a chunk seam. This is likely a capture or reveal artefact, unverified. The first three rows read normally at 390; `/zoles-pjovimas/` at 390 was not viewed.
 - The first overlap mismatch check was invalid for the same reason and is not used as evidence.
 - Pixel diff against `/vilnius/` is not usable: that page is 44 px taller at 1440, so everything below the offset differs. Clone claims below rest on text diff of live HTML.
 
@@ -66,7 +78,7 @@ y positions are approximate, read from panels.
 | Final CTA, 10290-10764 | Centred caps title, 2 buttons | House photo washed in a green gradient, with the photo barely visible | Grass edge again | Clear but generic |
 | Footer, 10764-11401 | 4 columns: brand, services, areas, contact | Black, ordered | Logo on white plate | Complete crawl path to all 20 service and area routes. Credit reads `Programavimas: jarvisweb.lt` |
 
-## Homepage `/` at 390 (y0-12000 viewed)
+## Homepage `/` at 390 (y0-12000 by this agent, tail by lead)
 | Band, y | Observation |
 |---|---|
 | 0-110 | Area strip, logo, green phone disc, black menu button. Compact and well sized |
@@ -80,7 +92,35 @@ y positions are approximate, read from panels.
 | 9620-10800 | Reviews become a one-card carousel. The rating box takes nearly a screen |
 | 10900-12000+ | Prices become stacked rows; each row is tall because VAT detail wraps, so it is long but legible |
 
+Tail, y12000-17510, viewed by the lead rather than this agent: prices, FAQ with contact-photo card, area links, map consent, final CTA and the full mobile footer with service and locality links. Fixed-bar seams apply there too, so this is not a complete tail read.
+
 Fixed bar: black rounded container with `Skambinti` and `Gauti kainą`, always present. It keeps both actions in reach, but its heavy outline is visually loud and overlaps content while scrolling.
+
+## Service routes (7 of 10 viewed)
+Shared pattern, seen on all 7:
+- **Hero:** the same darkened house photo as the homepage on every route, so nothing shows the service itself. H1 is all white caps, without the homepage lime. The full form stays in the hero and sets its height.
+- **Header:** nav changes to `Apie paslaugą`, `Paslaugos`, `Kur dirbame`. Useful page-level navigation.
+- **Hero base:** a thin green grass edge, then white. No trust band, reviews or prices anywhere on these pages, so the service pages carry almost no proof.
+- **Body at 1440:** breadcrumb, then two H2 + short paragraph blocks on the left and a tinted sidebar on the right (`Darbų apimtis`, `Ką pasiruošti užklausai`, `Nuo ko priklauso kaina`, `Aptarti darbą`). The sidebar is taller, leaving a large empty area under the left text.
+- **Photos:** 0-2 small captioned job photos, about 320 px wide at 1440, left aligned, with the right side empty. The strongest asset is the smallest thing on the page.
+- **FAQ:** one question under a large heading. Heavy treatment for one row.
+- **Links:** `Kitos paslaugos` is a 3x3 grid of plain text cards with keyword anchors, then `Visos paslaugos`, then the full footer. Strong crawl path, visually flat.
+- **390:** order holds. Hero and form take about 1,700 px before the breadcrumb, so body content starts on about the third screen. The 9 link cards take about 1,000 px. Sidebar stacks after the text and reads well.
+
+| Route | Widths viewed | H1 at 1440 | Photos | Route-specific note |
+|---|---|---|---|---|
+| `/paslaugos/vejos-irengimas/` | both | 3 lines | 2: turf rolls, prepared base by house | Best photo pair: shows real ground work |
+| `/paslaugos/laistymo-sistemos/` | both | 4 lines | 0 | No irrigation image at all. `Dažniausi klausimai` sits tight under the sidebar |
+| `/paslaugos/vejos-aeravimas-core/` | both | 4 lines | 2: aerator, both same machine | Real kit gives credibility; one scope item makes the sidebar sparse |
+| `/paslaugos/vejos-skarifikavimas/` | both | 4 lines, `VEJOS` alone | 1: red scarifier | Single photo leaves most of the row blank |
+| `/paslaugos/vejos-lyginimas-levelingas/` | both | 3 lines | 2: sand cart, sanded lawn | Clear process evidence, but no before/after pairing |
+| `/paslaugos/vejos-tresimas-purskimas/` | both | 4 lines, `Ę Š Ž Ų` in caps | 0 | Same tight heading as irrigation. H1 drops `Vilniaus rajone` |
+| `/paslaugos/zoles-pjovimas/` | 1440 only | 3 lines, `Ž` starts the H1 | 1: striped lawn | Most attractive result photo, still small |
+| `/paslaugos/apleistu-sklypu-tvarkymas/` | none | Not viewed | Not viewed | Panels ready |
+| `/paslaugos/mini-ekskavatoriaus-paslaugos/` | none | Not viewed | Not viewed | Panels ready |
+| `/paslaugos/gyvatvoriu-sodinimas-prieziura/` | none | Not viewed | Not viewed | Panels ready |
+
+To beat this: make the service photo the visual lead in each hero and enlarge the job photos, within the `bb63bd8` sequence. Avoid the empty left column, and stop one-question FAQs looking like full sections.
 
 ## Other routes (HTML and text only, not visual)
 **Area pages (10 routes).** Each differs from `/vilnius/` by only 23-24 of about 353 text lines. Changes: area name, neighbour list, one local paragraph, `Dažni darbai` lines. Against `/`, `/vilnius/` changes 21 lines and adds a local section (`Vilnius ir apylinkės`). Each has its own title, description, canonical and `BreadcrumbList`. The H2 order was checked on `/vilnius/` and `/avizieniai/` and matches the homepage after the local section.
@@ -98,19 +138,17 @@ Fixed bar: black rounded container with `Skambinti` and `Gauti kainą`, always p
 | `/trakai/` | Trakai · Lentvaris · Rykantai |
 | `/maisiagala/` | Maišiagala · Zujūnai · Avižieniai |
 
-**Service pages (10 routes).** Only `/paslaugos/vejos-irengimas/` and `/paslaugos/zoles-pjovimas/` were parsed. Both follow: H1, form, service-specific H2s, `Darbų apimtis`, `Ką pasiruošti užklausai`, `Nuo ko priklauso kaina`, FAQ, `Kitos paslaugos`. Both add `Service` schema to `LocalBusiness` and `BreadcrumbList`. They carry only 6-7 `<img>` tags, against 149 on `/`, `/vilnius/` and `/avizieniai/`. That is consistent with the earlier "thin set" note, but it has not been checked visually, and the other 8 service pages are unparsed beyond their download size (about 121-122 KB each).
-
 **`/privatumo-politika/`.** H1 plus 6 H2 sections, indexable, 2 images.
 
 **SEO, `/`.** `index,follow`, self-canonical, `LocalBusiness` + `WebSite` schema, one H1. H2s include form and rating-dialog headings (`Gaukite kainą` twice, `Kaip įvertintumėte mūsų darbą?`, `Padėkite mums tobulėti`), which add noise to the outline.
 
 ## Reusable rules
-Homepage evidence only, unless stated. All apply to the visual layer; `bb63bd8` copy, order, SEO and function stay as they are.
+Homepage evidence only, written in pass 1, with rule 3 corrected in pass 2. All apply to the visual layer; `bb63bd8` copy, order, SEO and function stay as they are.
 
 Keep, and do better:
 1. Put phone and quote actions in the header on every width, plus a fixed mobile bar, but make the bar lighter than VensLand's black outline.
 2. Layer the form as an object on the hero; a brand tab breaking the card edge is cheap and effective.
-3. Turn real facts into a band right after the hero. For ArbCut only 5,0 and 123 on Paslaugos.lt, 15 years, 20 m lift and LRT qualify.
+3. Corrected: do **not** add a post-hero trust band. `bb63bd8` order forbids a new section there. Real facts (5,0 and 123 on Paslaugos.lt, 15 years, 20 m lift, LRT) may only be styled as badges inside sections that already exist, in their existing sequence.
 4. Use one large lead image in the job gallery, and show the photo count.
 5. Attach contact to a photo (FAQ card) rather than adding another CTA band.
 6. Rebuild steps for mobile as a vertical sequence rather than shrinking the desktop row.
@@ -130,14 +168,21 @@ Beat:
 11. If area pages are reused, vary at least the local section visually. Text is 93% shared at VensLand (about 23 of 353 lines changed); visual sameness is unverified.
 
 ## Explicit gaps
-- 42 of 44 route/viewport pairs not viewed; `/` at 390 not viewed from y12000 (rest of prices, FAQ, areas, final CTA, footer).
-- Service page layouts, their photo use and responsive behaviour are unverified.
-- `/aciu/` and the 404 page have not been viewed.
+Exact visual remainder, panels already in `/tmp/arbcut-v4-vensland-detail/panels/` unless noted:
+- `s_zoles-pjovimas-390-sheet.jpg`
+- `s_apleistu-sklypu-tvarkymas`: `-1440-h0-y0`, `-1440-h1-y1970`, `-390-sheet`
+- `s_mini-ekskavatoriaus-paslaugos`: `-1440-h0-y0`, `-1440-h1-y1990`, `-390-sheet`
+- `s_gyvatvoriu-sodinimas-prieziura`: `-1440-h0-y0`, `-1440-h1-y1990`, `-390-sheet`
+- 10 locality routes at both widths and `/privatumo-politika/` at both widths: no panels generated, stitches exist.
+- `/aciu/` and the 404 page: never viewed, not captured.
+
+Other gaps:
+- Seam strips listed under Method notes, on all viewed mobile pages.
 - Not observed: mobile menu, nav dropdowns, form validation, file upload, `Ko reikia kainai įvertinti?` disclosure, gallery dialog (120 photos), review carousel, FAQ animation, map consent, rating dialog, hovers, scroll or entrance motion.
-- No images were found missing on the homepage. Other routes were not checked for lazy-load gaps.
+- No images were found missing on the viewed routes. The other routes were not checked for lazy-load gaps.
 - Font names are masked (`V3 Head`, `V3 Sans`); actual families were not identified.
-- Y positions and the 93% figure are estimates from panels and line counts.
+- Y positions, seam strip size and the 93% figure are estimates.
 - No direct side-by-side with ArbCut was done here. The lead owns the synthesis.
 
 ## Next
-Lead decides whether to fund a second pass. Cheapest order: `/` at 390 from y12000, one service page at both widths, `/vilnius/` local section, then T3 preview for the mobile menu, gallery and form disclosure. Panel tooling is ready, but `/tmp` may vanish.
+Lead decides whether to fund the remaining 10 service panels first, then localities. Full 22-route objective is still pending. `/tmp` may vanish.
