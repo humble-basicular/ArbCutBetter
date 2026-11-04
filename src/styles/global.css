@@ -206,6 +206,6 @@ strong, b { font-weight: 700; }
   .is-typing .mact { transform: translateY(110%); visibility: hidden; }
 }
 
-@media (max-width: 600px) { :root { --sec: 48px; } }
+@media (max-width: 600px) { :root { --sec: 36px; } }
 
 @media (max-width: 600px) { .faq summary { padding: 14px 16px; } .faq .faq-a { padding: 0 16px 16px; } }
