@@ -11,7 +11,7 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 ---
 <section class="hero">
   <div class="hero__bg" aria-hidden="true">
-    <Photo name="autobokstelis-prie-namo" alt="" sizes="100vw" widths={[640, 960, 1280, 1667]} loading="eager" fetchpriority="high" position="60% 58%" />
+    <Photo name="autobokstelis-prie-namo" alt="" sizes="100vw" widths={[640, 960, 1280, 1667]} loading="eager" fetchpriority="high" position="60% 52%" />
   </div>
   <div class="wrap hero__grid">
     <div class="hero__txt">
@@ -50,19 +50,19 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 <style>
   .hero { position: relative; isolation: isolate; background: var(--f0); color: var(--cream); }
   .hero__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
-  .hero__bg :global(img), .hero__bg :global(picture) { width: 100%; height: 100%; object-fit: cover; }
+  .hero__bg :global(img), .hero__bg :global(picture) { width: 100%; height: 100%; object-fit: cover; filter: brightness(1.12) contrast(1.05); }
   .hero__bg::after {
     content: ''; position: absolute; inset: 0;
     background:
-      linear-gradient(90deg, rgba(14, 26, 20, .96) 0%, rgba(14, 26, 20, .9) 34%, rgba(14, 26, 20, .45) 62%, rgba(14, 26, 20, .2) 100%),
-      linear-gradient(0deg, rgba(14, 26, 20, .7) 0%, rgba(14, 26, 20, 0) 30%);
+      linear-gradient(90deg, rgba(14, 26, 20, .95) 0%, rgba(14, 26, 20, .9) 36%, rgba(14, 26, 20, .55) 49%, rgba(14, 26, 20, .12) 64%, rgba(14, 26, 20, .08) 100%),
+      linear-gradient(0deg, rgba(14, 26, 20, .6) 0%, rgba(14, 26, 20, 0) 26%);
   }
   .hero__grid { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: clamp(32px, 5vw, 80px); align-items: start; padding-block: clamp(40px, 5vw, 72px) 0; min-height: calc(100svh - var(--header-h) - 40px); }
   .hero__txt { display: grid; gap: 22px; align-content: start; padding-bottom: clamp(40px, 5vw, 64px); }
   .hero__who { font-size: clamp(1.1rem, 1rem + .4vw, 1.35rem); color: var(--on-dark-2); }
   .hero__who strong { color: var(--cream); }
   .hero h1 { font-size: clamp(2.9rem, 1.2rem + 5.4vw, 6.4rem); line-height: .92; max-width: 11.5ch; font-weight: 700; }
-  .hero__lead { font-size: clamp(1.15rem, 1.04rem + .45vw, 1.4rem); line-height: 1.45; color: #E3E9E4; max-width: 34em; }
+  .hero__lead { font-size: clamp(1.15rem, 1.04rem + .45vw, 1.4rem); line-height: 1.45; color: #E3E9E4; max-width: 27em; }
 
   .hero__call { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 26px; margin-top: 6px; }
   .hero__tel { display: inline-flex; align-items: center; gap: 18px; padding: 16px 28px 16px 22px; background: var(--rust); color: var(--f0); border-radius: var(--radius); box-shadow: 0 18px 40px -16px rgba(0,0,0,.6); transition: background var(--t); }

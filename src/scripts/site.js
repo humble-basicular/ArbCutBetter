@@ -170,6 +170,16 @@
     }));
   }
 
+  /* Mobili juosta pasitraukia, kol fokusas formos lauke */
+  document.addEventListener('focusin', (e) => {
+    if (e.target.matches && e.target.matches('input, textarea, select')) document.documentElement.classList.add('is-typing');
+  });
+  document.addEventListener('focusout', (e) => {
+    if (e.target.matches && e.target.matches('input, textarea, select')) {
+      setTimeout(() => { const a = document.activeElement; if (!a || !a.matches('input, textarea, select')) document.documentElement.classList.remove('is-typing'); }, 60);
+    }
+  });
+
   /* Nuosaikus atsiradimas */
   const rv = $$('.rv');
   if (rv.length && !reduce && 'IntersectionObserver' in window) {

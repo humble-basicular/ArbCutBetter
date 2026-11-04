@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Photo from '../components/Photo.astro';
 import Hero from '../components/home/Hero.astro';
 import Emergency from '../components/home/Emergency.astro';
+import Services from '../components/home/Services.astro';
 import Icon from '../components/Icon.astro';
 import ServiceIndex from '../components/ServiceIndex.astro';
 import Sequences from '../components/Sequences.astro';
@@ -28,19 +29,7 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   <Hero />
   <Emergency />
 
-  <!-- Paslaugos -->
-  <section class="sec" id="paslaugos">
-    <div class="wrap">
-      <div class="sec-head sec-head--split">
-        <div>
-          <p class="kicker">Paslaugos</p>
-          <h2>Ką darome</h2>
-        </div>
-        <p class="mute" style="max-width:34rem">Kainos „nuo“ — iš mūsų Paslaugos.lt profilio. Tikslią kainą pasakome pamatę medį ar darbą vietoje arba nuotraukose.</p>
-      </div>
-      <ServiceIndex />
-    </div>
-  </section>
+  <Services />
 
   <!-- Darbo eiga -->
   <section class="sec sec--white rule-top" id="darbai">
