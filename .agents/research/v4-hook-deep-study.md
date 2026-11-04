@@ -1,6 +1,6 @@
 # ArbCut v4: Hook reference deep study (INCOMPLETE, stopped by budget steer)
 
-Status 2026-11-04: stopped twice by budget steers (1,514,291 of 1.5M, then 844,163 of 750k). Live viewing so far: 20 of 252 chunks, all Genz-Ryan home. Everything else on live pages is DOM data only, or not done. See "Corrective batch" below.
+Status 2026-11-04: incomplete. Three budget steers so far (latest 2,178,775 of 2M). Live viewing: 48 of 252 chunks, covering the full Puetz home (28) and Genz-Ryan home (20). Puetz home is the one page analysed to full depth; see "Puetz home: completed depth". The 2,253+ page inventory remains pending.
 
 ## Coverage
 
@@ -8,7 +8,7 @@ Article: complete text read (10 featured companies), all 10 article screenshots 
 
 | Site | Base | Sitemap URLs | Crawl-known URLs | Captured 1440 | Captured 390 | Chunks | Live chunks viewed | Errors |
 |---|---|---|---|---|---|---|---|---|
-| puetz | https://puetzconstruction.com | 241 | 244 | 1 | 1 | 28 | 0 | {'page.evaluate: Target page, cont': 1} |
+| puetz | https://puetzconstruction.com | 241 | 244 | 1 | 1 | 28 | 28 | {'page.evaluate: Target page, cont': 1} |
 | smock | https://smockhvac.com | 264 | not run | 0 | 0 | 0 | 0 | none |
 | veterans | https://veteranscontractingllc.com | 184 | 196 | 2 | 2 | 52 | 0 | {'page.evaluate: Target page, cont': 1} |
 | genz | https://genzryan.com | 326 | 328 | 1 | 1 | 37 | 20 | {'page.evaluate: Target page, cont': 1} |
@@ -120,6 +120,135 @@ The header becomes logo, menu and a split Schedule and phone bar, 188 px tall in
 
 Display font `ezra`, body `proxima-nova` 16 px with 25.6 px line height in #686868, about 69 characters per line at 550 px. H1 48 px uppercase, H2 40 px, brand red #c92a39, square buttons. `prefers-reduced-motion` found in readable CSS. Font weights were lost to a script bug. The tilt mechanism was not inspected.
 
+## Puetz home: completed depth
+
+URL: https://puetzconstruction.com/ . Ledger: `/tmp/arbcut-v4-deep-hook/puetz/ledger.json`. Bounded milestone for one page, not the site.
+
+### Evidence and coverage
+
+| Evidence | Viewed | Notes |
+|---|---|---|
+| Desktop chunks | 13 of 13 | Half-scale panels `d0` to `d2`. Fine left-column text comes from DOM, not these images |
+| Mobile chunks | 15 of 15 | Native panels `m0` to `m3`. They stop in the blog section |
+| Mobile recovery | 21 of 21 bands, plus 14 gap strips | Bands cover only the area between fixed bars, 703 px each, step 680, full page to the legal line. Strip positions may have drifted |
+| Desktop recovery | Right column (8 pieces), footer tail | Widgets hidden with injected CSS. Read-only change in my browser |
+| Interactions | Services hover, quote tab, mobile menu, one FAQ toggle | T3 preview, nothing submitted |
+
+Why recovery was needed: the saved heights were wrong. Mobile saved 10,992 px; with `content-visibility` forced visible the page measures 13,935 px, so the old chunks miss the closing CTA and footer. Desktop saved 9,820 px; live measures 10,484 px, so the last old chunk stops at the address. Fixed bars also hid 77 px at each old mobile join. Bands recover these.
+
+Capture differences: old chunks blocked analytics and tag-manager requests; recovery runs did not, except that the band run forced `content-visibility`. Podium chat and the quote tab appear in old desktop chunks, so those widgets are not blocked there.
+
+### Article vs today
+
+The layout skeleton survives: split hero, form strip, ribbon, red CTA. The content changed. "Transforming Daydreams into Blueprints" is gone, the finished home is replaced by a wrapped job-site house with a phone banner, and the header CTA now reads "Let's Begin Today".
+
+### Section notes
+
+| Section | Purpose | Composition and hierarchy | Proof, CTA, image | Weak points |
+|---|---|---|---|---|
+| Header | Route and contact | Fixed, 109 px, logo left, four nav items, phone chip, red CTA | Red solid button is the single strongest element | Mobile logo bar has no action |
+| Hero | Say who, where, what | Text left on faint blueprint linework, photo bleeds right to the top edge. Tan ribbon, 40 px headline, three icon facts | Real job-site photo with company banner: memorable and local | Banner number differs from the page number |
+| Form strip | Immediate lead | White card overlaps hero base; five fields in one row | Short, clear; rating ribbon docks on the photo corner | At 1440x900 the Podium prompt covers the submit button on load |
+| Trust logos | Supplier credibility | Single row, 205 px, restrained on desktop | Real supplier marks | Mobile: oversized stack, about 1,164 px, uneven sizes, repeats. Worst mobile decision on the page |
+| Services | Route to services | Image cards, icon plus title over a dark overlay; 2 + 2 + 1 centred | Whole card is one link; real project photos | White text on pale interior photo is weak on Home Remodels |
+| Puetz Promise | Human accountability | Navy band, owner and dog cut out over large logo mark, signature | Strongest brand moment: a real person layered on a brand device | Long quote is set small on desktop |
+| Trusted partner | Reassure | Text left, crew photo right | Casual real crew photo | Generic copy block |
+| Reviews | Third-party proof | Widget, three cards with carousel on desktop | Named Google reviews | Different type voice; the heading is a `span`. Mobile shows no review cards |
+| Process | Reduce uncertainty | Three white cards; "Call Now!" flag on step one | Clear first step | Mobile takes about 1,350 px |
+| Service area | Local relevance | Minnesota shape with watchtower breaks out of the navy band | Licence numbers; distinctive device | Lifestyle copy; no city links |
+| One stop | Summarise range | Photo left, text right | Clean porch photo | Long paragraph repeats the services |
+| Recent projects | Show work | Three equal photos, "See More" | Good real photos | Heading turns black, off the navy system |
+| Project map | Local proof | Embedded third-party map | Mapped jobs concept | Grey and "no projects" in the capture. Loaded state not verified. Not visible in mobile bands |
+| FAQ | Answer objections | Title left, boxed accordion right; first open | Offset review strip keeps proof nearby | Answers closed by default |
+| Blog | Depth | One feature plus two side items | Topical real images | "Keep Reading" is repeated |
+| Closing CTA | Final action | Framing photo under navy gradient, 48 px centred line | One clear button | Plain compared with the Promise band |
+| Footer | Contact and routes | Tan, large logo, four link columns, pine silhouette | NAP, licence, legal links | Logo is very large for a footer |
+
+### Why it reads as professional, and what undercuts it
+
+Strengths: one colour system (navy, red, tan); real local photos; two brand devices used sparingly (ribbon, Minnesota watchtower shape); consistent square red actions; calm white space on desktop.
+
+Undercutting it: four floating conversion elements compete at 1440 (quote callout, quote tab, Podium prompt, Text us); mobile supplier logos break the rhythm; labels vary for one action (Let's Begin Today, Get Started Today, Contact Us, Call Now).
+
+Proof is inconsistent: hero copy says 363+ Google reviews, the widget says over 375. Six different phone numbers appeared across sessions (507-932-8806, 442-6467, 668-8547, 690-3987, 410-4643, 418-5765). This looks like call tracking; that is an inference.
+
+### Mobile adaptation
+
+- Hero reverses: photo, ribbon, centred headline, facts, then stacked form. Text centres almost everywhere; service cards stay left aligned.
+- Fixed bars take 197 of 900 px (109 top, 88 bottom). The bottom bar keeps Menu and phone in thumb reach, which is the best mobile decision here.
+- Menu opens in place: socials first, then accordion items, with Contact added. The photo stays visible above it.
+- The Promise band moves text above the portrait, which works well.
+
+### Parity (corrected)
+
+The old 312-word mobile count was an artefact. With a mobile user agent, 9 sections use `content-visibility: auto`, and `innerText` skips off-screen ones. Scrolling each section into view gives equal text in 10 of 14 sections. Remaining differences:
+
+| Section | Desktop visible words | Mobile visible words | Cause |
+|---|---|---|---|
+| Trust logos | 6 | 0 | Logos only |
+| Reviews | 769 | 13 | Review cards present in DOM but not rendered on mobile |
+| FAQ | 115 | 47 | Same 176 words in DOM; open state differs |
+| Hero | 91 | 91 | Equal |
+
+In preview at 390 with a desktop user agent, no section reported `content-visibility: auto`, so it may depend on the user agent. Cause not confirmed.
+
+### Semantics (live DOM)
+
+Recovered outline, with size in px and weight:
+
+- H1 "Southern Minnesota Roofing, Siding & Remodeling Contractors": 16, Sen 500, inside the tan ribbon.
+- H2 "Your Local Full Service Construction Company": 40, weight 400. This is the visual headline.
+- H3 "Get Started Today!": 25.
+- H2 "Contracting Services We Offer": 36, then five service names as H5 at 20.
+- H3 "The Puetz Promise" 30, H3 "Your Trusted Contracting Partner For Life" 36.
+- H2 "Our Process" 36; each step is H5 "Step One:" at 20 above H4 "Reach out" at 35, so tag level and size invert.
+- H2 "Licensed in Minnesota, Wisconsin & Iowa" 15, above H3 "Your Local Contractor in Southeastern Minnesota" 36.
+- H3 "One Stop Building Solution" 36, H3 "Recent Projects" 30, H2 "Frequently asked questions" 30, FAQ questions H3 at 25.
+- H2 "Fresh From our Blog" 30, H2 "Quality Work, Done Right" 48.
+- Reviewer names (Glen S., Billy Reed) are H5. Phone, email and address are H6.
+- "What Our Customers Say About Us" is a 36 px `span`, not a heading.
+
+Display font `neilvard_semibold_oneregular` reports weight 400, so its weight is built into the file. Body is Sen 16/25.6 px.
+
+Reading: the small H1 keeps exact service and region wording while the large H2 carries the brand line. The title repeats service and region. Tags are partly used for styling: reviewer names and contact details sit in the outline, while the review heading is missing. Google says [heading order does not affect Search](https://developers.google.com/search/docs/fundamentals/seo-starter-guide), though semantic order helps screen readers, so this is a clarity and accessibility issue, not a ranking finding.
+
+### Links, content and conversion
+
+- Service cards are single links whose text includes title and description, so "Learn More" is not the real anchor. That suits Google's [descriptive anchor guidance](https://developers.google.com/search/docs/crawling-indexing/links-crawlable). This corrects the assumption that visible "Learn More" means generic anchors.
+- Body-copy links: 0 in saved DOM. The service-area and FAQ text name towns (Rochester, Winona, Mankato and others) with no links. Whether matching pages exist was not checked.
+- "See More" appears twice and "Contact Us" twice, which is weaker than the service cards.
+- Accordions are acceptable under [mobile-first guidance](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing), which also asks for the same primary content on mobile. Review cards hidden on mobile deserve a check; whether Puetz treats them as primary content is unknown.
+- Conversion path: phone and form sit at the top, then proof and service routes, with a closing CTA. Analytics, conversions and rankings: unknown.
+
+### Interactions and mechanics
+
+| Check | Result |
+|---|---|
+| Services hover | White dropdown, five links, overlaps headline; label turns red |
+| Resources | Parent has no href; opens on hover. Touch behaviour on desktop widths untested |
+| Fixed header | `position: fixed`, 0.3 s transition |
+| Red CTA | #c01931, white, 16 px, radius 0, padding 12 x 36, soft shadow, `transition: all`. Links to `/contact/`, no dialog |
+| Instant Roof Quote | Slide-out wrapper 1,152 px wide loading `app.roofle.com`. No `role` or `aria-modal`; close control is a `div`. Screenshot caught the transition, so its contents were not seen |
+| Mobile menu | `button.menu-toggle`, opens as above. Wrapper `aria-expanded` read false while open, but that wrapper measured 0 x 0, so this may be the wrong element. Unresolved |
+| FAQ | Clicking the H3 toggles it; one open at a time. H3 has `tabindex=-1` and no `aria-expanded` was found. Keyboard not tested |
+| Motion | Reduced-motion rule exists; no scroll-animation markers found. Actual motion not tested |
+| Hero image | `fetchpriority=high`, responsive 1536 and 768 variants; about 1,439 px natural shown at 645 px on desktop |
+
+Not tested: hover and focus states beyond the above, review carousel, map load, quote flow contents. Preview screenshots saved at 1280x800 despite a 1440x900 setting, so the widget overlap should be rechecked at exact size; `d0`, captured at 1440x900, shows it too.
+
+### Rules for ArbCut (recommendations only, no edits)
+
+bb63bd8 copy, order, SEO and function stay. Implementation needs approval.
+
+1. One real person over one brand device is the strongest move here (Puetz Promise). It suits the clean photographic direction if real ArbCut photos exist.
+2. Reserve display type for a small set of headings and keep accent devices to two.
+3. Keep one label per action across the page.
+4. Check that floating elements never cover a form submit.
+5. Limit logo strips on mobile by height; test them at 390, not just desktop.
+6. If reviews are hidden on mobile, decide that deliberately. Keeping proof visible matches the agreed review section.
+7. Whole-card links with real text are a good model for service cards.
+8. Test true page height after lazy rendering when auditing ArbCut's own pages.
+
 ## SEO and design harmony (first pass)
 
 DOM figures below cover all 17 captured page-widths, but only Genz-Ryan was viewed. Rankings, traffic and conversions are unknown; nothing here claims them.
@@ -151,7 +280,7 @@ Other DOM signals:
 - Links in body paragraphs: 0 to 2 on every captured page; card links 5 to 133; nav and footer 54 to 125. Internal linking lives in cards and menus. Genz-Ryan's repeated "Learn More" is less descriptive than its city links.
 - Titles: most name service and area; Veterans uses "Home - Veterans Contracting".
 - Hidden content: Genz-Ryan about 5,200 characters and Veterans about 3,300 in closed or hidden elements. The selector is heuristic.
-- Word counts differ by width (Puetz 1770 desktop, 312 mobile; Thelen 684 and 1453). This may be capture timing, so it is not proof of a parity gap.
+- Puetz word-count gap (1770 desktop, 312 mobile) was a measurement artefact; see Puetz parity below. Thelen's difference (684 and 1453) is not rechecked.
 - Performance figures came from seven sites crawling at once with trackers blocked. They are not benchmarks and are not used.
 
 ## ArbCut implications (separate recommendations, no edits)
@@ -176,5 +305,5 @@ bb63bd8 copy, order, SEO and function stay as the baseline. Approval comes befor
 
 1. Capture Smock, True Air and Bear's through T3 preview if normally accessible.
 2. Resume: `cd /tmp/arbcut-v4-deep-hook && node scripts/capture.mjs puetz,veterans,genz,northface,homefront,thelen,greentek` (skips finished URL and width pairs).
-3. View the remaining 232 captured chunks first (`viewed-ledger.json`), then continue in complete capture, view and notes batches.
+3. View the remaining 204 captured chunks (`viewed-ledger.json` lists unviewed panels; Puetz is now done, see `puetz/ledger.json`), then continue page by page at Puetz depth.
 4. Interactions, hover, focus, motion and dialogs: all still open. Fix the heading field bug before new capture.
