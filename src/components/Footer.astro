@@ -86,4 +86,13 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   @media (max-width: 1100px) { .ftr__grid { grid-template-columns: 1fr 1fr 1fr; } .ftr__brand { grid-column: 1 / -1; } }
   @media (max-width: 640px) { .ftr__grid { grid-template-columns: 1fr 1fr; gap: 32px 20px; } }
   @media (max-width: 340px) { .ftr__grid { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) {
+    .ftr__call { padding-block: 36px 28px; }
+    .ftr__grid { padding-block: 32px; gap: 24px 16px; }
+    .ftr__grid > div:last-child { grid-column: 1 / -1; }
+    .ftr__contact, .ftr__more { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 16px; }
+    .ftr li + li { margin-top: 4px; }
+    .ftr__contact li:nth-child(3) { grid-column: 1 / -1; }
+    .ftr__brand { gap: 10px; }
+  }
 </style>

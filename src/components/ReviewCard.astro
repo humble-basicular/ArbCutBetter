@@ -1,17 +1,18 @@
 ---
 /* Vienas atsiliepimas: šaltinis, data, žvaigždutės, originalus tekstas, autorius, paslauga. */
 import Icon from './Icon.astro';
-const { a } = Astro.props;
+const { a, compact = false } = Astro.props;
 const src = a.saltinis || 'paslaugos';
 const srcName = src === 'google' ? 'Google' : 'Paslaugos.lt';
 ---
-<article class:list={['rc', `rc--${src}`]} data-src={src} data-svc={a.paslauga || 'kita'}>
+<article class:list={['rc', `rc--${src}`, { 'rc--compact': compact }]} data-src={src} data-svc={a.paslauga || 'kita'}>
   <header class="rc__top">
     <span class="rc__src">{srcName}</span>
     <time datetime={a.data}>{a.data}</time>
   </header>
   {a.zvaigzdes && <p class="rc__stars" aria-label={`${a.zvaigzdes} iš 5`}>{Array.from({ length: a.zvaigzdes }).map(() => <Icon name="star" size={18} />)}</p>}
   <blockquote class="rc__txt">{a.tekstas.split('\n').filter(Boolean).map((l) => <p>{l}</p>)}</blockquote>
+  {compact && <button type="button" class="rc__expand" data-rv-expand aria-expanded="false">Skaityti visą atsiliepimą</button>}
   <footer class="rc__by">
     <strong>{a.vardas}</strong>
     {a.paslaugaPavadinimas && <span>{a.paslaugaPavadinimas}</span>}
@@ -30,4 +31,10 @@ const srcName = src === 'google' ? 'Google' : 'Paslaugos.lt';
   .rc__txt:first-of-type { margin-top: 6px; }
   .rc__by { display: grid; gap: 0; padding-top: 12px; border-top: 1px solid #e6dece; font-size: .98rem; color: var(--text-2); }
   .rc__by strong { color: var(--text); text-transform: capitalize; font-size: 1.05rem; }
+  .rc__expand { display: none; }
+  @media (max-width: 600px) {
+    :global(.js) .rc--compact:not(.is-expanded) .rc__txt { display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+    :global(.js) .rc--compact .rc__expand { display: block; align-self: start; color: var(--f1); font-weight: 700; text-decoration: underline; padding-block: 10px; }
+    .rc--compact { gap: 8px; }
+  }
 </style>

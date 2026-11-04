@@ -207,3 +207,5 @@ strong, b { font-weight: 700; }
 }
 
 @media (max-width: 600px) { :root { --sec: 48px; } }
+
+@media (max-width: 600px) { .faq summary { padding: 14px 16px; } .faq .faq-a { padding: 0 16px 16px; } }

@@ -39,7 +39,7 @@ const r1 = (x) => x.toFixed(1).replace('.', ',');
         </div>
         <p class="rvb__count" aria-live="polite" data-rv-count>Rodoma {Math.min(PER, items.length)} iš {items.length} naujausių</p>
         <div class="rvb__cards">
-          {items.map((a, i) => <div class="rvb__c" data-rv-item hidden={i >= PER}><ReviewCard a={a} /></div>)}
+          {items.map((a, i) => <div class="rvb__c" data-rv-item hidden={i >= PER}><ReviewCard a={a} compact /></div>)}
         </div>
         <p class="rvb__empty" data-rv-empty hidden>Šiam filtrui atsiliepimų tarp naujausių nėra. <a href="/atsiliepimai">Žiūrėti visus</a></p>
         <div class="rvb__more">
