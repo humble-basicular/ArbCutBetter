@@ -24,3 +24,6 @@ Earlier handoffs and reports; newest task briefs in app. Full research scope rem
 
 ## Update20:09UTC
 Retry1 completed at0a69615: 7services desktop/6mobile; exact remaining10service panels in child report. 29of44route-width pairs unviewed. Final retry2 clientRequestId v4-vensland-detail-retry2 will reuse same native child, finish prepared service panels and key interactions. No further VensLand retries after this. Codex92%; Claude2 catalog latest60% is stale20:01UTC, delegation enforces95% refusal. Keep full scope incomplete and do not invent acceptance.
+
+## Codex2 recovery20:10UTC
+Confirmed retry2 exists and is RUNNING: node:delegated-task:command%3Amcp%3Af9e74f2d-f5c1-40c2-9ef6-2d72dce20c45%3Adelegate-task%3Av4-vensland-detail-retry2 . No duplicate delegation. Child Claude2 Opus5.5 continues same session; await completion notification then read result. Codex99%, Codex2 warning87%; Claude2 last catalog60%session/69%weekly is stale. No website changes. Work remains active on Claude2.
