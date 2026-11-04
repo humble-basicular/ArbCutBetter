@@ -97,8 +97,11 @@ const q = encodeURIComponent('Kaunas, Lietuva');
   .area__cap { margin-top: 10px; font-size: .92rem; color: var(--on-dark-2); }
   @media (max-width: 960px) { .area__grid { grid-template-columns: 1fr; } }
   @media (max-width: 480px) {
-    .area__list { grid-template-columns: 1fr; }
-    .area__city { font-size: 1.4rem; }
+    .area__list a { padding: 10px 12px; min-height: 56px; }
+    .area__list li:not(.is-base) .area__sub { display: none; }
+    .area__list li:not(.is-base) a :global(svg) { width: 18px; height: 18px; }
+    .area__city { font-size: 1.25rem; }
+    .is-base .area__city { font-size: 1.8rem; }
     .area__frame { aspect-ratio: 1 / 1; }
     .area__svg { transform: scale(1.35); transform-origin: 46% 42%; }
     .area__load { left: 10px; right: 10px; bottom: 10px; }

@@ -12,10 +12,10 @@ import Icon from '../Icon.astro';
     <div class="sos__main">
       <h2 id="sos-h"><Icon name="alert" size={52} /> Medis nuvirto ar tuoj virs?</h2>
       <p class="sos__p">Skambinkite iš karto. Pirmiausia nuimame tai, kas gali kristi ant namo, mašinos ar žmonių, paskui tvarkome likusį medį. Jei medis užkrito ant elektros laidų, nelieskite jo ir praneškite elektros tinklų operatoriui.</p>
-      <div class="sos__act">
-        <a class="sos__tel" href={site.telefonasHref} data-loc="sos-call"><Icon name="phone" size={30} /> {site.telefonas}</a>
-        <p><strong>Kasdien 08:00–18:00</strong>, ir savaitgaliais.<br /><a href="/paslaugos/audros-isverstu-medziu-salinimas">Audros padarinių šalinimas, nuo 50 €</a></p>
-      </div>
+    </div>
+    <div class="sos__act">
+      <a class="sos__tel" href={site.telefonasHref} data-loc="sos-call"><Icon name="phone" size={30} /> {site.telefonas}</a>
+      <p><strong>Kasdien 08:00–18:00</strong>, ir savaitgaliais.<br /><a href="/paslaugos/audros-isverstu-medziu-salinimas">Audros padarinių šalinimas, nuo 50 €</a></p>
     </div>
   </div>
 </section>
@@ -27,18 +27,23 @@ import Icon from '../Icon.astro';
   .sos__ph img { width: 100%; aspect-ratio: 1; object-fit: cover; }
   .sos__ph figcaption { color: var(--cream); font-size: .9rem; line-height: 1.3; padding: 8px 4px 0; }
   .sos__main { display: grid; gap: 16px; }
-  .sos h2 { display: flex; align-items: center; gap: 14px; font-size: clamp(2.3rem, 1.4rem + 3vw, 4.4rem); font-weight: 700; }
+  .sos h2 { display: flex; align-items: center; gap: 14px; font-size: clamp(2.3rem, 1.5rem + 2.4vw, 3.9rem); font-weight: 700; }
   .sos h2 :global(svg) { flex: 0 0 auto; stroke-width: 2.4; }
   .sos__p { font-size: 1.2rem; line-height: 1.45; max-width: 36em; font-weight: 500; }
-  .sos__act { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; }
+  .sos__act { display: grid; gap: 12px; align-self: end; }
+  .sos__grid > .sos__act { align-self: center; }
   .sos__tel { display: inline-flex; align-items: center; gap: 12px; padding: 14px 24px; background: var(--f0); color: var(--amber); font-family: var(--display); font-weight: 700; font-size: clamp(1.9rem, 1.3rem + 1.6vw, 2.6rem); line-height: 1; border-radius: var(--radius); white-space: nowrap; }
   .sos__tel:hover { background: var(--f1); }
   .sos__act p { line-height: 1.4; }
   .sos__act a:not(.sos__tel) { font-weight: 700; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; }
-  @media (max-width: 1100px) { .sos__grid { grid-template-columns: 220px minmax(0, 1fr); padding-top: 96px; } }
+  @media (max-width: 1100px) {
+    .sos__grid { grid-template-columns: 220px minmax(0, 1fr); }
+    .sos__grid > .sos__act { padding-top: 22px; grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
+  }
   @media (max-width: 700px) {
     .sos__grid { grid-template-columns: 1fr; padding-block: 40px 44px; gap: 22px; }
-    .sos__ph { order: 2; max-width: 260px; }
+    .sos__ph { order: 3; max-width: 220px; }
+    .sos__grid > .sos__act { grid-column: 1; padding-top: 0; }
     .sos h2 :global(svg) { width: 40px; height: 40px; }
     .sos__p { font-size: 1.1rem; }
     .sos__tel { width: 100%; justify-content: center; }
