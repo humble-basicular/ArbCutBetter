@@ -1,0 +1,50 @@
+---
+/* Google verslo profilis per oficialų Places UI Kit elementą (gmp-place-details).
+   - Yra placeId: gamyboje įkeliama, kai priartėjama slenkant; peržiūroje tik paspaudus.
+     Nepavykus (Experimental API, raktas, tinklas) — rodoma nuoroda į profilį.
+   - Nėra placeId: peržiūroje rodoma rezervuota vieta su sąžininga žyma; gamyboje — nieko.
+   Google priskyrimas (gmp-place-attribution) paliekamas. */
+import { site, PREVIEW } from '@data/site.js';
+import Icon from './Icon.astro';
+const id = site.google.placeId;
+const key = site.google.mapsKey;
+const profileUrl = id ? `https://www.google.com/maps/place/?q=place_id:${id}` : '';
+---
+{id ? (
+  <div class="gp" data-gp data-place={id} data-key={key} data-auto={PREVIEW ? undefined : '1'}>
+    <div class="gp__head"><span class="gp__name">Google</span><span>verslo profilis</span></div>
+    <div class="gp__slot" data-gp-slot>
+      {PREVIEW && <button type="button" class="btn btn--ink btn--sm" data-gp-load>Įkelti Google profilį</button>}
+      <p class="gp__wait" data-gp-wait hidden>Įkeliama iš Google…</p>
+    </div>
+    <p class="gp__fail" data-gp-fail hidden>Google profilio čia įkelti nepavyko. <a href={profileUrl} target="_blank" rel="noopener">Atidaryti Google profilį <Icon name="external" size={15} /></a></p>
+    <a class="btn btn--primary gp__write" href={site.google.reviewUrl} target="_blank" rel="noopener" data-loc="google-review">Palikite atsiliepimą Google <Icon name="external" size={18} /></a>
+  </div>
+) : PREVIEW ? (
+  <div class="gp gp--empty">
+    <div class="gp__head"><span class="gp__name">Google</span><span>verslo profilis</span></div>
+    <div class="gp__slot">
+      <p class="gp__status">Ruošiamas</p>
+      <p>Mantas kuria ArbCut Google verslo profilį. Kai jis bus paskelbtas, šioje vietoje matysite Google įvertinimą ir naujausius atsiliepimus tiesiai iš Google.</p>
+      <div class="gp__ghost" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="gp__note">Peržiūros žyma: įrašius profilio ID (<code>site.google.placeId</code>), čia atsiras Google elementas ir mygtukas „Palikite atsiliepimą Google“.</p>
+    </div>
+  </div>
+) : null}
+<style>
+  .gp { background: #fff; border: 1px solid #d9cfba; display: grid; }
+  .gp__head { display: flex; align-items: baseline; gap: 10px; padding: 12px 20px; background: #2b3138; color: #fff; }
+  .gp__name { font-family: var(--display); font-weight: 600; font-size: 1.5rem; text-transform: uppercase; }
+  .gp__head span:last-child { color: #cfd4da; }
+  .gp__slot { min-height: 420px; padding: 20px; display: grid; gap: 14px; align-content: start; }
+  .gp__slot :global(gmp-place-details) { width: 100%; }
+  .gp__fail { padding: 0 20px 16px; }
+  .gp__fail a { font-weight: 700; text-decoration: underline; }
+  .gp__write { margin: 0 20px 20px; }
+  .gp--empty .gp__slot { color: var(--text-2); }
+  .gp__status { font-family: var(--display); font-weight: 600; font-size: 2.2rem; text-transform: uppercase; color: var(--text); line-height: 1; }
+  .gp__ghost { display: grid; gap: 10px; margin-top: 6px; }
+  .gp__ghost span { display: block; height: 64px; background: repeating-linear-gradient(135deg, #f1ece1 0 10px, #ebe4d6 10px 20px); }
+  .gp__note { font-size: .92rem; border-top: 1px solid #e6dece; padding-top: 12px; }
+  .gp__note code { font-size: .88rem; background: #f1ece1; padding: 1px 5px; }
+</style>

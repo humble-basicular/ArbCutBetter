@@ -1,49 +1,35 @@
 ---
-/* Atsiliepimai iš Paslaugos.lt — visada su šaltiniu ir nuoroda. Ne Google atsiliepimai. */
+/* Atsiliepimų blokas kitiems puslapiams: tos pačios kortelės kaip pradžios puslapyje. */
 import { site } from '@data/site.js';
 import { atsiliepimuKiekis, atsiliepimuVidurkis, atsiliepimuSinchronizuota } from '@data/atsiliepimai.js';
+import ReviewCard from './ReviewCard.astro';
 import Icon from './Icon.astro';
-const { items = [], heading = 'Ką sako klientai', showAll = true } = Astro.props;
-const fmt = (d) => new Date(d).toLocaleDateString('lt-LT', { year: 'numeric', month: 'long' });
+const { items = [], heading = 'Ką rašo klientai', showAll = true } = Astro.props;
 ---
 <div class="rv-wrap">
   <div class="sec-head sec-head--split">
-    <div>
-      <p class="kicker">Atsiliepimai Paslaugos.lt</p>
-      <h2>{heading}</h2>
-    </div>
+    <h2>{heading}</h2>
     <div class="rv-score">
-      <span class="rv-score__n serif">{atsiliepimuVidurkis.toFixed(1).replace('.', ',')}</span>
+      <span class="rv-score__n">{atsiliepimuVidurkis.toFixed(1).replace('.', ',')}</span>
       <span class="rv-score__t">iš 5 · {atsiliepimuKiekis} atsiliepimai<br /><small>Paslaugos.lt, duomenys {atsiliepimuSinchronizuota}</small></span>
     </div>
   </div>
   <ul role="list" class="rv-list">
-    {items.map((a) => (
-      <li class="rv-card">
-        {a.zvaigzdes && <span class="rv-stars" aria-label={`${a.zvaigzdes} iš 5`}>{Array.from({ length: a.zvaigzdes }).map(() => <Icon name="star" size={16} />)}</span>}
-        <blockquote><p>{a.tekstas}</p></blockquote>
-        <p class="rv-meta"><strong>{a.vardas}</strong>{a.paslaugaPavadinimas && <> · {a.paslaugaPavadinimas}</>} · {fmt(a.data)}</p>
-      </li>
-    ))}
+    {items.map((a) => <li><ReviewCard a={a} /></li>)}
   </ul>
   {showAll && (
     <div class="btn-row rv-links">
-      <a class="btn btn--line" href="/atsiliepimai">Skaityti daugiau atsiliepimų</a>
+      <a class="btn btn--ink" href="/atsiliepimai">Daugiau atsiliepimų</a>
       <a class="link-arrow" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">Profilis Paslaugos.lt <Icon name="external" size={15} /></a>
     </div>
   )}
 </div>
 <style>
   .rv-score { display: flex; align-items: center; gap: 14px; }
-  .rv-score__n { font-size: 3.4rem; line-height: 1; font-weight: 650; color: var(--ink); }
-  .rv-score__t { font-weight: 600; line-height: 1.35; }
-  .rv-score__t small { font-weight: 400; color: var(--mute); }
-  .rv-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-  .rv-card { background: var(--white); border: 1px solid var(--line); padding: 24px; display: flex; flex-direction: column; gap: 14px; }
-  .rv-stars { display: flex; gap: 2px; color: var(--timber); }
-  .rv-card blockquote { font-size: 1rem; color: #2b3a31; flex: 1; }
-  .rv-meta { font-size: .88rem; color: var(--mute); }
-  .rv-meta strong { color: var(--ink); text-transform: capitalize; }
+  .rv-score__n { font-family: var(--display); font-size: 4rem; line-height: 1; font-weight: 700; color: var(--f0); }
+  .rv-score__t { font-weight: 700; line-height: 1.35; }
+  .rv-score__t small { font-weight: 400; color: var(--mute); font-size: .95rem; }
+  .rv-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; align-items: start; }
   .rv-links { margin-top: 28px; align-items: center; gap: 22px; }
   @media (max-width: 960px) { .rv-list { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 620px) { .rv-list { grid-template-columns: 1fr; } }

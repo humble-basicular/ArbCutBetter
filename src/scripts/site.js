@@ -170,6 +170,85 @@
     }));
   }
 
+  /* Atsiliepimų lenta: šaltinio ir paslaugos filtrai, „Rodyti daugiau“ */
+  $$('[data-rv-board]').forEach((board) => {
+    const per = +board.dataset.per || 6;
+    const items = $$('[data-rv-item]', board);
+    const count = $('[data-rv-count]', board);
+    const empty = $('[data-rv-empty]', board);
+    const more = $('[data-rv-more]', board);
+    const st = { src: 'visi', svc: 'visos', limit: per };
+    const match = (it) => {
+      const c = it.firstElementChild;
+      return (st.src === 'visi' || c.dataset.src === st.src) && (st.svc === 'visos' || c.dataset.svc === st.svc);
+    };
+    function render() {
+      const m = items.filter(match);
+      items.forEach((it) => { it.hidden = true; });
+      m.slice(0, st.limit).forEach((it) => { it.hidden = false; });
+      const shown = Math.min(st.limit, m.length);
+      if (count) count.textContent = `Rodoma ${shown} iš ${m.length} naujausių`;
+      if (empty) empty.hidden = m.length > 0;
+      if (more) more.hidden = m.length <= st.limit;
+    }
+    const group = (attr, key) => {
+      const btns = $$(`[${attr}]`, board);
+      btns.forEach((b) => b.addEventListener('click', () => {
+        st[key] = b.getAttribute(attr); st.limit = per;
+        btns.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        render();
+      }));
+    };
+    group('data-rv-src', 'src'); group('data-rv-svc', 'svc');
+    more && more.addEventListener('click', () => {
+      const before = items.filter((it) => !it.hidden).length;
+      st.limit += per; render();
+      const next = items.filter((it) => !it.hidden)[before];
+      const f = next && next.querySelector('article');
+      if (f) { f.setAttribute('tabindex', '-1'); f.focus({ preventScroll: false }); }
+    });
+    render();
+  });
+
+  /* Google verslo profilis (Places UI Kit). Gamyboje — priartėjus; peržiūroje — tik paspaudus. */
+  $$('[data-gp]').forEach((box) => {
+    const slot = $('[data-gp-slot]', box), fail = $('[data-gp-fail]', box), wait = $('[data-gp-wait]', box);
+    const id = box.dataset.place, key = box.dataset.key;
+    let started = false;
+    const giveUp = () => { if (wait) wait.hidden = true; if (fail) fail.hidden = false; };
+    async function load() {
+      if (started) return; started = true;
+      const btn = $('[data-gp-load]', box); btn && btn.remove();
+      if (!key) return giveUp();
+      if (wait) wait.hidden = false;
+      try {
+        if (!(window.google && google.maps && google.maps.importLibrary)) {
+          /* Oficialus Google „dynamic library import“ įkėlėjas */
+          (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({ key, v: 'weekly', language: 'lt' });
+        }
+        await google.maps.importLibrary('places');
+        const el = document.createElement('gmp-place-details');
+        const req = document.createElement('gmp-place-details-place-request');
+        req.setAttribute('place', id);
+        el.append(req);
+        ['gmp-place-rating', 'gmp-place-reviews', 'gmp-place-attribution'].forEach((t) => el.append(document.createElement(t)));
+        let ok = false;
+        el.addEventListener('gmp-load', () => { ok = true; if (wait) wait.hidden = true; });
+        el.addEventListener('gmp-error', giveUp);
+        slot.append(el);
+        setTimeout(() => { if (!ok) giveUp(); }, 15000);
+      } catch (err) { giveUp(); }
+    }
+    const b = $('[data-gp-load]', box);
+    b && b.addEventListener('click', load);
+    if (box.dataset.auto === '1') {
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((en) => { if (en.some((x) => x.isIntersecting)) { io.disconnect(); load(); } }, { rootMargin: '600px 0px' });
+        io.observe(box);
+      } else load();
+    }
+  });
+
   /* Mobili juosta pasitraukia, kol fokusas formos lauke */
   document.addEventListener('focusin', (e) => {
     if (e.target.matches && e.target.matches('input, textarea, select')) document.documentElement.classList.add('is-typing');

@@ -1,0 +1,119 @@
+---
+/* Atsiliepimai iš abiejų šaltinių. Kiekviena kortelė pažymėta šaltiniu, data, paslauga.
+   Įvertinimai rodomi atskirai pagal platformą, niekada nesumuojami. Ne schema.org (žr. jsonld.js). */
+import { site } from '@data/site.js';
+import { visiAtsiliepimai, saltiniai } from '@data/atsiliepimai-visi.js';
+import ReviewCard from '../ReviewCard.astro';
+import GoogleProfile from '../GoogleProfile.astro';
+import Icon from '../Icon.astro';
+const P = saltiniai.paslaugos;
+const G = saltiniai.google;
+const items = visiAtsiliepimai.filter((a) => a.tekstas.trim().length >= 20).slice(0, 36);
+const PER = 6;
+const svcCount = {};
+items.forEach((a) => { if (a.paslauga) svcCount[a.paslauga] = { n: (svcCount[a.paslauga]?.n || 0) + 1, name: a.paslaugaPavadinimas }; });
+const svcs = Object.entries(svcCount).filter(([, v]) => v.n >= 2).sort((a, b) => b[1].n - a[1].n).slice(0, 4);
+const hasGoogle = items.some((a) => a.saltinis === 'google');
+const r1 = (x) => x.toFixed(1).replace('.', ',');
+---
+<section class="rvb" id="atsiliepimai" aria-labelledby="rvb-h">
+  <div class="wrap">
+    <div class="rvb__head">
+      <h2 id="rvb-h">Ką rašo klientai</h2>
+      <p class="lead">Kiekvienas atsiliepimas su šaltiniu, data ir atlikta paslauga. Tekstai netaisyti. Įvertinimai rodomi atskirai kiekvienai platformai.</p>
+    </div>
+    <div class="rvb__grid">
+      <div class="rvb__main" data-rv-board data-per={PER}>
+        <div class="rvb__filters" role="group" aria-label="Atsiliepimų filtras">
+          <div class="rvb__fg">
+            <span class="rvb__fl">Šaltinis</span>
+            <button type="button" aria-pressed="true" data-rv-src="visi">Visi</button>
+            <button type="button" aria-pressed="false" data-rv-src="paslaugos">Paslaugos.lt</button>
+            {hasGoogle && <button type="button" aria-pressed="false" data-rv-src="google">Google</button>}
+          </div>
+          <div class="rvb__fg">
+            <span class="rvb__fl">Paslauga</span>
+            <button type="button" aria-pressed="true" data-rv-svc="visos">Visos</button>
+            {svcs.map(([slug, v]) => <button type="button" aria-pressed="false" data-rv-svc={slug}>{v.name}</button>)}
+          </div>
+        </div>
+        <p class="rvb__count" aria-live="polite" data-rv-count>Rodoma {Math.min(PER, items.length)} iš {items.length} naujausių</p>
+        <div class="rvb__cards">
+          {items.map((a, i) => <div class="rvb__c" data-rv-item hidden={i >= PER}><ReviewCard a={a} /></div>)}
+        </div>
+        <p class="rvb__empty" data-rv-empty hidden>Šiam filtrui atsiliepimų tarp naujausių nėra. <a href="/atsiliepimai">Žiūrėti visus</a></p>
+        <div class="rvb__more">
+          <button type="button" class="btn btn--ink" data-rv-more>Rodyti daugiau</button>
+          <a class="link-arrow" href="/atsiliepimai">Visi atsiliepimai svetainėje</a>
+        </div>
+      </div>
+
+      <aside class="rvb__side" aria-label="Įvertinimai pagal platformą">
+        <div class="pl">
+          <div class="pl__head"><span class="pl__name">Paslaugos.lt</span><span>profilis</span></div>
+          <div class="pl__body">
+            <p class="pl__score"><span class="pl__n">{r1(P.ivertinimas)}</span><span class="pl__of">iš 5</span></p>
+            <p class="pl__stars" aria-hidden="true">{Array.from({ length: 5 }).map(() => <Icon name="star" size={24} />)}</p>
+            <p class="pl__cnt"><strong>{P.kiekis} atsiliepimai</strong></p>
+            <ul role="list" class="pl__facts">
+              <li><Icon name="check" size={18} /> Tapatybė patvirtinta</li>
+              <li><Icon name="check" size={18} /> Profilis nuo {site.profilis.nuo} m.</li>
+              <li><Icon name="check" size={18} /> {site.profilis.skambuciai} skambučiai per profilį</li>
+            </ul>
+            <p class="pl__date">Duomenys {P.data}</p>
+            <a class="btn btn--ink btn--sm" href={P.url} target="_blank" rel="noopener">Visi atsiliepimai Paslaugos.lt <Icon name="external" size={16} /></a>
+            <a class="link-arrow" href={site.atsiliepimai.paliktiUrl} target="_blank" rel="noopener">Parašyti atsiliepimą</a>
+          </div>
+        </div>
+        <GoogleProfile />
+      </aside>
+    </div>
+  </div>
+</section>
+<style>
+  .rvb { background: var(--sand-c); padding-block: var(--sec); }
+  .rvb__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 16px 56px; align-items: end; margin-bottom: clamp(28px, 3.5vw, 48px); }
+  .rvb__head h2 { font-size: clamp(2.6rem, 1.4rem + 4.4vw, 5.6rem); font-weight: 700; color: var(--f0); }
+  .rvb__grid { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: clamp(24px, 3vw, 40px); align-items: start; }
+  .rvb__filters { display: grid; gap: 10px; margin-bottom: 14px; }
+  .rvb__fg { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .rvb__fl { font-weight: 700; min-width: 5.5em; }
+  .rvb__fg button { min-height: 44px; padding: 8px 14px; background: #fff; border: 2px solid #c9bea8; font-weight: 600; font-size: 1rem; border-radius: var(--radius); }
+  .rvb__fg button:hover { border-color: var(--f1); }
+  .rvb__fg button[aria-pressed='true'] { background: var(--f1); border-color: var(--f1); color: var(--cream); }
+  .rvb__count { color: var(--text-2); margin-bottom: 14px; }
+  .rvb__cards { columns: 2 300px; column-gap: 14px; }
+  .rvb__c { break-inside: avoid; margin-bottom: 14px; }
+  .rvb__more { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; margin-top: 10px; }
+  .rvb__empty a { font-weight: 700; text-decoration: underline; }
+
+  .rvb__side { display: grid; gap: 14px; position: sticky; top: calc(var(--header-h) + 20px); }
+  .pl { background: #fff; border: 1px solid #d9cfba; box-shadow: 0 18px 40px -24px rgba(14, 26, 20, .5); }
+  .pl__head { display: flex; align-items: baseline; gap: 10px; padding: 12px 20px; background: var(--f1); color: var(--cream); }
+  .pl__name { font-family: var(--display); font-weight: 600; font-size: 1.5rem; text-transform: uppercase; }
+  .pl__head span:last-child { color: var(--on-dark-2); }
+  .pl__body { padding: 20px; display: grid; gap: 10px; justify-items: start; }
+  .pl__score { display: flex; align-items: baseline; gap: 10px; line-height: .85; }
+  .pl__n { font-family: var(--display); font-weight: 700; font-size: 6rem; color: var(--f0); }
+  .pl__of { font-family: var(--display); font-size: 1.6rem; font-weight: 600; color: var(--text-2); }
+  .pl__stars { display: flex; gap: 3px; color: var(--rust); }
+  .pl__cnt { font-size: 1.25rem; }
+  .pl__facts { display: grid; gap: 4px; color: var(--text-2); }
+  .pl__facts li { display: flex; gap: 8px; align-items: center; }
+  .pl__facts svg { color: var(--f2); stroke-width: 3; }
+  .pl__date { font-size: .92rem; color: var(--mute); }
+  .pl .btn { width: 100%; }
+
+  @media (max-width: 1060px) {
+    .rvb__grid { grid-template-columns: 1fr; }
+    .rvb__grid { display: flex; flex-direction: column; }
+    .rvb__side { display: contents; }
+    .pl { order: -1; width: 100%; }
+    .rvb__side :global(.gp) { order: 2; width: 100%; }
+  }
+  @media (max-width: 760px) {
+    .rvb__head { grid-template-columns: 1fr; }
+    .rvb__fl { width: 100%; }
+    .pl__n { font-size: 4.6rem; }
+  }
+</style>

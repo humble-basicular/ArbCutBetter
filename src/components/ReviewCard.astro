@@ -1,0 +1,33 @@
+---
+/* Vienas atsiliepimas: šaltinis, data, žvaigždutės, originalus tekstas, autorius, paslauga. */
+import Icon from './Icon.astro';
+const { a } = Astro.props;
+const src = a.saltinis || 'paslaugos';
+const srcName = src === 'google' ? 'Google' : 'Paslaugos.lt';
+---
+<article class:list={['rc', `rc--${src}`]} data-src={src} data-svc={a.paslauga || 'kita'}>
+  <header class="rc__top">
+    <span class="rc__src">{srcName}</span>
+    <time datetime={a.data}>{a.data}</time>
+  </header>
+  {a.zvaigzdes && <p class="rc__stars" aria-label={`${a.zvaigzdes} iš 5`}>{Array.from({ length: a.zvaigzdes }).map(() => <Icon name="star" size={18} />)}</p>}
+  <blockquote class="rc__txt">{a.tekstas.split('\n').filter(Boolean).map((l) => <p>{l}</p>)}</blockquote>
+  <footer class="rc__by">
+    <strong>{a.vardas}</strong>
+    {a.paslaugaPavadinimas && <span>{a.paslaugaPavadinimas}</span>}
+  </footer>
+</article>
+<style>
+  .rc { background: #fff; border: 1px solid #d9cfba; display: flex; flex-direction: column; gap: 12px; padding: 0 22px 20px; break-inside: avoid; }
+  .rc__top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 0 -22px; padding: 10px 22px; background: var(--f1); color: var(--cream); }
+  .rc--google .rc__top { background: #2b3138; }
+  .rc__src { font-family: var(--display); font-weight: 600; text-transform: uppercase; font-size: 1.05rem; letter-spacing: .02em; }
+  .rc__top time { font-size: .95rem; font-variant-numeric: tabular-nums; color: var(--on-dark-2); }
+  .rc__stars { display: flex; gap: 2px; color: var(--rust); margin-top: 4px; }
+  .rc__txt { display: grid; gap: 8px; font-size: 1.08rem; line-height: 1.5; color: var(--text); overflow-wrap: anywhere; flex: 1; }
+  .rc__stars + .rc__txt { margin-top: -2px; }
+  .rc__stars:first-child { margin-top: 0; }
+  .rc__txt:first-of-type { margin-top: 6px; }
+  .rc__by { display: grid; gap: 0; padding-top: 12px; border-top: 1px solid #e6dece; font-size: .98rem; color: var(--text-2); }
+  .rc__by strong { color: var(--text); text-transform: capitalize; font-size: 1.05rem; }
+</style>

@@ -7,6 +7,7 @@ import Services from '../components/home/Services.astro';
 import Moments from '../components/home/Moments.astro';
 import Press from '../components/home/Press.astro';
 import SendPhotos from '../components/home/SendPhotos.astro';
+import ReviewBoard from '../components/home/ReviewBoard.astro';
 import Icon from '../components/Icon.astro';
 import ServiceIndex from '../components/ServiceIndex.astro';
 import Sequences from '../components/Sequences.astro';
@@ -38,10 +39,7 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   <Press />
   <SendPhotos />
 
-  <!-- Atsiliepimai -->
-  <section class="sec sec--paper2">
-    <div class="wrap"><Reviews items={reviews} heading="Ką sako klientai po darbų" /></div>
-  </section>
+  <ReviewBoard />
 
   <!-- Kur dirbame -->
   <section class="sec">
