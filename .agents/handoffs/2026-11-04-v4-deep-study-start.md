@@ -16,3 +16,5 @@ Final design approval still pending, not needed for research.
 No new external writes, publication or payments.
 ## Next action + owner
 Claude2: Hook examples inventory and detailed inspection. Lead: review result then continue other references in depth; no polling async child.
+
+Active task: node:delegated-task:command%3Amcp%3Aa785890c-e047-4fbe-9aba-56ea9785bfb4%3Adelegate-task%3Aarbcut-hook-exhaustive-study-1 (Claude2 Opus5.5 high; async running). Read task_status on completion notification.
