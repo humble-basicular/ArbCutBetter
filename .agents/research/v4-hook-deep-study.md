@@ -21,7 +21,7 @@ Article: complete text read (10 featured companies), all 10 article screenshots 
 
 Totals: 2253 sitemap URLs; 9 desktop and 8 mobile page-widths captured; 252 chunks; 0 viewed; 2274 URLs pending. Interactions checked: 0.
 
-Counts are a floor: the internal crawl did not finish, so URLs absent from sitemaps are not yet known. Sitemap URLs include posts and taxonomy pages. Pending list: `/tmp/arbcut-v4-deep-hook/pending-urls.json` (may vanish; regenerate with `scripts/inventory.py`).
+Every Errors entry is a page open when I stopped the job, not a site fault. Counts are a floor: the internal crawl did not finish, so URLs absent from sitemaps are not yet known. Sitemap URLs include posts and taxonomy pages. Pending list: `/tmp/arbcut-v4-deep-hook/pending-urls.json` (may vanish; regenerate with `scripts/inventory.py`).
 
 The four earlier homepage capture sets in `/tmp/arbcut-v4-study/captures` were not re-viewed.
 
@@ -65,10 +65,10 @@ Source: `/tmp/arbcut-v4-deep-hook/article/*.png`, copied from hookagency.com/wp-
 
 Treat these as hypotheses until live pages are viewed.
 
-1. One element crosses a section edge in 8 of 10 screens, usually the form or card row.
-2. Eight of 10 hero images show a specific house, team or family, not an abstract background.
+1. A form or card row clearly crosses a section edge in 6 of 10 screens (Puetz, Genz-Ryan, Northface, Home Front, Thelen, GreenTek). Smock and Veterans are borderline; Bear's and True Air do not.
+2. All 10 hero images show a house, team or family, not an abstract background.
 3. The mobile bottom bar is present in all 10 and costs reading space; check it never covers the H1 (Genz-Ryan does).
-4. Mobile restacks: photo first, then label, headline, text. Headline position then depends on photo height.
+4. Eight of 10 mobile screens put the photo before the headline, so headline position depends on photo height. True Air leads with text; GreenTek sets text over the photo.
 5. Launch-quality checks: no placeholder phone, lorem ipsum or empty tiles.
 
 For ArbCut, separate from any edit: rule 2 suits the clean photographic direction with real ArbCut photos; rule 1 could carry the existing quote CTA without changing content or order; only real facts may become badges. bb63bd8 copy, order, SEO and function stay unchanged. Logo variants are not addressed here.
