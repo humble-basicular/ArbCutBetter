@@ -57,3 +57,5 @@
 - Hook deep-study initial result NOT ACCEPTED as full study: ten article screenshots viewed, >=2253 sitemap URLs discovered, 17 live page-widths captured but none viewed. Commits 5d997db/9633859. Retry must inspect existing captures first, document every section, then proceed in completed page batches; no silent scope reduction.
 
 - Deep-study retry1 commit3935e5c:20/252 chunks viewed, Genz desktop plus first4 mobile; incomplete. Lead spot-checked3 raw images confirming repeated brand devices and fixed-header obstruction. Retry2 (last) targets one complete Puetz homepage desktop/mobile with interactions to establish workable throughput; full inventory remains pending.
+
+- Retry2 final result bacc344/6886314: Puetz homepage visual analysis at both widths with recovered footer;48/252original chunks now viewed,204remain. Full inventory NOT complete. Lead directly verified Resources hover, loaded quote panel and actual mobile toggle state; wrote evidence in research report. Two retry limit exhausted; no further child retries. Next owner lead for remaining coverage and evidence consolidation.

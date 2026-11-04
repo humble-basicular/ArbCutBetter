@@ -307,3 +307,15 @@ bb63bd8 copy, order, SEO and function stay as the baseline. Approval comes befor
 2. Resume: `cd /tmp/arbcut-v4-deep-hook && node scripts/capture.mjs puetz,veterans,genz,northface,homefront,thelen,greentek` (skips finished URL and width pairs).
 3. View the remaining 204 captured chunks (`viewed-ledger.json` lists unviewed panels; Puetz is now done, see `puetz/ledger.json`), then continue page by page at Puetz depth.
 4. Interactions, hover, focus, motion and dialogs: all still open. Fix the heading field bug before new capture.
+
+## Lead verification — Puetz interactions, 4 November
+
+Direct inspection after child commit6886314. T3 preview opened successfully but snapshot failed twice with `Preview automation snapshot timed out after 15000ms.` Switched to Playwright Chrome fallback. No tracker blocking, forms not filled/submitted. Evidence `/tmp/arbcut-v4-lead-checks/{resources.jpg,quote-open.jpg,mobile-menu.jpg,interaction-results.json,interactions.mjs}`. All three images actually viewed by lead.
+
+- Resources hover at1440×900 opens a white dropdown with Financing, Customer Reviews, FAQs, Projects, Blog; links confirmed in DOM. Parent Resources has no href. Keyboard behaviour remains unchecked.
+- Quote slide-out after4seconds displays “What Will My Roof Cost?”, address field, START and close affordance. Panel occupies most of desktop with faded page still visible left. Chat prompt floats above the quote panel at bottom right, competing for attention. No address entered or next step submitted. Third-party Roofle iframe verified. This closes the prior unobserved-content gap, not the entire quote flow.
+- At390×844 mobile menu visibly opens, showing large logo, project photograph, social links, expandable navigation, bottom MENU-close and phone controls. The actual `button.menu-toggle` returns null for aria-label and aria-expanded both before/after opening; no unsupported claim about all accessible-name sources. Visual menu state verified; keyboard/screen-reader flow still untested.
+- Projectmapit frame text was readable, with filters and review count but “There are currently no projects to display.” This does not establish whether map tiles render; screenshot of map remains pending.
+- Lead also viewed previous `puetz/d0.jpg` composite and `band20.jpg` footer recovery. Those support the photo/owner composition and actual recovered footer, not independent verification of every child section.
+
+Design implications: preserve a single clear task within overlays; prevent unrelated floating widgets competing above it; provide explicit accessible control names/state; test real mobile content rendering before concluding content is absent. These are proposed acceptance checks, not website edits.
