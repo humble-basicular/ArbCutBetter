@@ -44,3 +44,5 @@
 ## 4 November — captured-page visual analysis
 - Capture batch finished: 183 records including superseded errors, 1666 screenshots. Glassperts unavailable; exact results in /tmp/arbcut-v4-study/capture-manifest.json.
 - Lead Codex2 owns board/handoffs and eventual questions/proposal. Claude2 design analyst owns only /tmp/arbcut-v4-study/design-analysis.md and design-inspection.json; read-only website scope. Input: saved actual screenshots, existing lead ledger and design brief. Output: per-page visual observations and coverage ledger, grounded recommendations/questions. Acceptance: actually view each captured page at desktop/mobile, distinguish unavailable and uninspected; no implementation before user approval.
+
+- Overview analysis milestone: lead closed 20 missing ArbCut sheets; combined 37 ArbCut/22 VensLand/25 Betono routes at two widths, four Hook homepages plus article. Glassperts inaccessible; interaction/detail audit incomplete. See 2026-11-04-v4-study-overview-complete.md. Design questions next; no implementation.
