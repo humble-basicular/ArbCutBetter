@@ -331,3 +331,45 @@ Actually viewed saved panels `/tmp/arbcut-v4-deep-hook/panels/genz__home__390__0
 - Across panels fixed announcement/logo/action header occupies roughly the top fifth of each 900px capture and obscures content at some scroll positions. Do not infer footer completion from panel05; it ends at service areas.
 
 Unverified: missing intervals due to capture stride/header obstruction, mobile footer, form/menu/accordion behavior and lazy media. These panels add actual inspection but do not complete the Genz homepage or full reference study.
+
+## Lead continuation — Northface desktop panels00–07
+
+Actually viewed all eight saved desktop panels at `/tmp/arbcut-v4-deep-hook/panels/northface__home__1440__00.jpg` through `07.jpg` (16 source chunks). Fixed-header obstruction and screenshot joins remain; not equivalent to all live states. Fresh mobile capture and project overlap check running separately.
+
+- Hero: left white headline/body on blue gradient; right tall family/home photograph; narrow white form overlaps photograph boundary, blue ratings dock beneath. Yellow pill actions are visually consistent across header/form/footer. Diagonal hero base and sparse dot pattern provide identity without pervasive decoration. Hero paragraph is long and form is narrow; exact mobile handling matters.
+- Two substantial educational sections use alternating image/text halves (winter roof, damaged decking) before a six-card service grid. Content is prominent and readable rather than disguised as SEO filler; generous spacing makes this a long page.
+- Services: three-column photo cards, clear title plus arrow; pale-blue band carries a simple testimonial below. Actual worker photo beside company positioning is stronger evidence than generic residential mood photography.
+- Coverage: raised white card, office/address boxes and regional map; diagonal blue transition returns for process. Process has staff portraits, checklist, quote and customer-for-life seal; captured cards appear partially masked, behavior untested.
+- Project section has conspicuous vertical cards over subsequent text in saved captures. Cannot yet call this a live defect: capture initialization/scripts may be responsible. This materially prevents accepting these screenshots as proof of intended composition.
+- Team section: large real fleet/group photograph, award/event photograph and two workers; three icon/value columns and outlined about CTA. Authentic photography provides the strongest specific identity on this page.
+- Materials photo/text and second coverage section repeat similar split layouts; compact underlined locality links accompany map. Map has tiles plus loading overlay in capture.
+- FAQ: white accordion rows on blue gradient, yellow plus controls, portrait/contact on right. Articles: bordered horizontal photo/text cards, dates and read links. Final family photo CTA overlaps footer transition; footer keeps service links, offices, contacts and social links clearly grouped.
+- Typography is consistent geometric sans with sentence-case headings and small spaced uppercase labels. White is the primary reading surface; blue anchors hero/process/FAQ/footer, yellow marks actions. This is closer to the requested clean photographic direction than Genz's many competing brand devices, but repeated split sections and generic imagery weaken distinction.
+
+Preview opened but snapshot failed twice with `Preview automation snapshot timed out after 15000ms.` Browser fallback authorized and used; no forms submitted.
+
+## Home Front homepage — saved desktop/mobile inspection
+
+Actually viewed all desktop panels00–06 and mobile00–04 under `panels/homefront__home__{1440,390}__*.jpg`. Observations apply to rendered captures only; many image placeholders and fixed-header overlaps require live recovery. Not a completed interaction study.
+
+- Desktop hero: black/red glow field, uppercase mixed-weight headline, benefits and ratings left; large right media placeholder. White horizontal form overlaps lower edge but squeezes many fields into short widths. Mobile places media before headline, then long centered text and tall stacked form. Several source marks load later in the capture sequence; placeholder screenshots cannot establish absent assets.
+- Coverage/map then prominent review section: rounded pale panel, huge faded quotation marks, white review cards, red author initials and source stars. Mobile presents one review at a time, but large blank space below first review needs a live sizing check.
+- Company positioning pairs drone roof image with text and a small quote card overlapping the image. Two opposing rounded image corners repeat through financing and service imagery. Red-highlighted heading phrases reinforce brand without another type family.
+- Dark services section: numbered vertical list, expanded description/action beside large image. Mobile integrates image beneath the expanded service; remaining rows follow. Behavior and keyboard operation untested.
+- Process uses numbered logo-shaped red devices, expanded first step beside smaller steps on desktop; mobile stacks tall cards with only first explanatory text shown. Financing uses family/laptop photo and substantial copy.
+- Owner section is the clearest distinctive composition: cutout owner, red logo geometry behind him, signed statement, badge and dark background. Do not copy unsupported guarantee badge to ArbCut. Values strip repeats beneath; motion not verified.
+- Projects: four image tiles desktop, two columns mobile, plus affordance. Coverage proof repeats as light panel with quote card/map. FAQ has large pale rounded rows; first is open in capture. Articles show dates and reading-time labels, with uneven image loading. Final family photo CTA above dark footer.
+- Desktop footer has categorized links; mobile capture shows brand/contact/social/legal but none of the desktop service/location columns. Confirm DOM visibility before concluding omission. Footer recovery itself is present in panel04.
+- Takeaways: use owner photography and one repeatable shape to establish identity; preserve readable short forms; avoid long centered body copy and bottom/top bars competing for reading space. Shared palette and headings can make dense SEO content cohesive, but only working interactions and loaded media complete the design.
+
+## Northface fresh mobile + desktop recovery
+
+Fallback script `/tmp/arbcut-v4-northface-live/check.mjs` loaded without request blocking or style injection. Desktop `projects.jpg` reproduces vertical project cards escaping blue section. Viewed fresh mobile m00–m28 individually, all29 files; document height18552 at390×900. Scroll step650; fixed top/bottom bars still leave small possible unseen intervals. Browser closed normally, no forms entered/submitted.
+
+- Mobile hero starts with family image then headline, long description, three benefits, video chip, full form and rating dock; requires several screens. Persistent header ~86px and bottom call/appointment bar ~122px reduce reading space. Phone wraps to two lines; accessibility widget overlaps appointment edge.
+- Two educational image/text sections stack into long centered paragraphs before service cards. Six service cards are single-column; price/action hierarchy remains simple, but length is substantial. Testimonial follows in pale-blue field.
+- Worker/about split becomes image then centered text. Office map becomes image above two full-width office cards. Process card is masked by blue gradient; visibility of later steps still needs interaction checks.
+- Project carousel renders horizontally on mobile (m15), unlike desktop overflow. Team photos become carousel with pagination; values stack beneath. Material image/text and locality links follow; live map is fully rendered with marker in m22.
+- FAQ first answer appears open, with remaining rows collapsed; no click performed. Articles use one large featured card then two compact horizontal cards. Final photo CTA, office contacts/social/legal reach bottom (m28).
+- Desktop service/footer navigation columns are absent visually in mobile footer. This is an explicit design/SEO preservation check for ArbCut: do not silently remove route discovery with responsive CSS. Exact DOM state not yet checked.
+- Fresh mobile displayed a different phone number from desktop. Likely tracking behavior, cause unverified; record as observed difference, not wrong business data.
