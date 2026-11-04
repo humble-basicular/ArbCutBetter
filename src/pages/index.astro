@@ -6,6 +6,7 @@ import Emergency from '../components/home/Emergency.astro';
 import Services from '../components/home/Services.astro';
 import Moments from '../components/home/Moments.astro';
 import Press from '../components/home/Press.astro';
+import SendPhotos from '../components/home/SendPhotos.astro';
 import Icon from '../components/Icon.astro';
 import ServiceIndex from '../components/ServiceIndex.astro';
 import Sequences from '../components/Sequences.astro';
@@ -35,27 +36,7 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 
   <Moments />
   <Press />
-
-  <!-- Kaip dirbame + technika -->
-  <section class="sec">
-    <div class="wrap how">
-      <div class="how__ph">
-        <div class="ph how__big"><Photo name="autobokstelis-prie-namo" alt="ArbCut autobokštelis dirba prie namo" sizes="(max-width: 860px) 100vw, 40vw" position="50% 60%" /></div>
-        <div class="ph how__small"><Photo name="du-arboristai-lajoje" alt="Du arboristai dirba didelio medžio lajoje" sizes="(max-width: 860px) 50vw, 20vw" position="50% 35%" /></div>
-      </div>
-      <div class="how__txt">
-        <p class="kicker">Kaip dirbame</p>
-        <h2>Nuo skambučio iki sutvarkyto kiemo</h2>
-        <ol class="steps" role="list">
-          <li><strong>Skambutis ar užklausa.</strong> Trumpai papasakokite, kas nutiko. Padeda kelios nuotraukos ar vaizdo įrašas.</li>
-          <li><strong>Įvertinimas ir kaina.</strong> Įvertiname vietoje arba pagal nuotraukas ir pasakome kainą iš anksto.</li>
-          <li><strong>Darbas.</strong> Atvykstame sutartu laiku. Medį pjauname dalimis, šakas nuleidžiame virvėmis arba nuimame nuo autobokštelio.</li>
-          <li><strong>Sutvarkymas.</strong> Surenkame šakas. Kaune ir Kauno rajone medieną išvežame fiskaru, toliau sukrauname tvarkingai krūvoje.</li>
-        </ol>
-        <a class="link-arrow" href="/apie">Apie Mantą ir komandą <Icon name="arrow" size={16} /></a>
-      </div>
-    </div>
-  </section>
+  <SendPhotos />
 
   <!-- Atsiliepimai -->
   <section class="sec sec--paper2">
@@ -95,13 +76,6 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 </BaseLayout>
 
 <style>
-  .how { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
-  .how__ph { display: grid; grid-template-columns: 1.4fr 1fr; gap: 12px; align-items: end; }
-  .how__big { aspect-ratio: 4 / 5; }
-  .how__small { aspect-ratio: 3 / 5; }
-  .how__txt { display: grid; gap: 20px; }
-  .how .steps li strong { display: block; font-size: 1.05rem; }
-
   .area { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
   .area > div { display: grid; gap: 18px; }
   .area__note { padding: 16px 18px; background: var(--white); border-left: 4px solid var(--timber); }
@@ -112,6 +86,6 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   .faqwrap { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
 
   @media (max-width: 960px) {
-    .how, .area, .faqwrap { grid-template-columns: 1fr; }
+    .area, .faqwrap { grid-template-columns: 1fr; }
   }
 </style>
