@@ -40,9 +40,9 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 <style>
   .all__n { margin-bottom: 20px; }
   .all { columns: 3 260px; column-gap: 16px; }
-  .all li { break-inside: avoid; margin-bottom: 16px; background: var(--white); border: 1px solid var(--line); padding: 20px; display: grid; gap: 10px; }
+  .all li { break-inside: avoid; margin-bottom: 16px; background: var(--white); border: 1px solid var(--line); padding: 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .all__s { display: flex; gap: 2px; color: var(--timber); }
-  .all blockquote { display: grid; gap: 8px; color: #2b3a31; }
+  .all blockquote { display: grid; gap: 8px; color: #2b3a31; overflow-wrap: anywhere; }
   .all__m { font-size: .86rem; color: var(--mute); }
   .all__m strong { color: var(--ink); text-transform: capitalize; }
 </style>
