@@ -1,0 +1,82 @@
+---
+/* Spauda: LRT.lt interviu (2020-12-19) ir Valstietis.lt. Citatos tiksliai iš straipsnių. */
+import { lrt, valstietis } from '@data/spauda.js';
+import Photo from '../Photo.astro';
+import Icon from '../Icon.astro';
+const c = lrt.citatos;
+---
+<section class="press" aria-labelledby="press-h">
+  <div class="press__ph ph">
+    <Photo name="maumedis-ziema" alt="Arboristas aukštai nugenėto maumedžio viršūnėje žiemą" sizes="(max-width: 860px) 100vw, 40vw" position="50% 18%" />
+  </div>
+  <div class="press__body">
+    <p class="press__src"><span class="press__pub">LRT.lt</span> <span>{lrt.dataTekstu} · kalbino {lrt.autorius}</span></p>
+    <h2 id="press-h" class="sr-only">Apie Mantą rašė LRT.lt ir Valstietis.lt</h2>
+    <blockquote class="press__big">
+      <p>„{c.klaidos}“</p>
+    </blockquote>
+    <p class="press__by">Mantas Gerulis, apie arboristo darbą</p>
+
+    <dl class="press__facts">
+      <div>
+        <dt>56 m</dt>
+        <dd>Aukščiausias Manto darbas. „Tai buvo Vilniuje, plastiko gamyklos pastatas.“</dd>
+      </div>
+      <div>
+        <dt>120</dt>
+        <dd>medžių rūšių, kurias Mantas turėjo mokėti apibūdinti ir išvardyti lotyniškai ir lietuviškai.</dd>
+      </div>
+    </dl>
+
+    <div class="press__pair">
+      <blockquote><p>„{c.vienam}“</p></blockquote>
+      <blockquote><p>„{c.kolega}“</p></blockquote>
+    </div>
+    <blockquote class="press__rope"><p>„{c.virves}“</p></blockquote>
+
+    <a class="link-arrow" href={lrt.url} target="_blank" rel="noopener">Skaityti visą interviu LRT.lt <Icon name="external" size={18} /></a>
+
+    <aside class="press__val" aria-label="Valstietis.lt">
+      <p class="press__pub press__pub--sm">Valstietis.lt</p>
+      <blockquote><p>„{valstietis.citatos.neatsisake}“</p></blockquote>
+      <p class="press__val-2">Apie brandžius, sveikus medžius Mantas ten sako: <q>{valstietis.citatos.azuolas}</q></p>
+      <a href={valstietis.url} target="_blank" rel="noopener">Skaityti Valstietis.lt <Icon name="external" size={16} /></a>
+    </aside>
+  </div>
+</section>
+<style>
+  .press { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); background: var(--cream); color: var(--f0); }
+  .press__ph { min-height: 100%; }
+  .press__ph :global(img) { position: absolute; inset: 0; }
+  .press__body { padding: var(--sec) max(var(--gutter), calc((100vw - var(--wrap)) / 2 + var(--gutter))) var(--sec) clamp(32px, 5vw, 88px); display: grid; gap: 26px; align-content: start; }
+  .press__src { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; color: var(--text-2); font-weight: 600; }
+  .press__pub { font-family: var(--display); font-weight: 700; font-size: 2rem; line-height: 1; color: var(--f0); padding: 6px 12px 7px; background: var(--f0); color: var(--cream); }
+  .press__big p { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: clamp(3rem, 1.2rem + 6vw, 7.6rem); line-height: .9; letter-spacing: -.005em; text-wrap: balance; }
+  .press__by { font-size: 1.2rem; font-weight: 700; margin-top: -8px; }
+  .press__facts { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 8px; }
+  .press__facts div { background: var(--f1); color: var(--cream); padding: 22px 24px 24px; }
+  .press__facts dt { font-family: var(--display); font-weight: 700; font-size: clamp(3.4rem, 2.4rem + 3vw, 5.6rem); line-height: .9; color: var(--amber); }
+  .press__facts dd { margin-top: 10px; color: #DDE5DF; font-size: 1.05rem; }
+  .press__pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; }
+  .press__pair p, .press__rope p { font-family: var(--display); font-weight: 600; text-transform: uppercase; font-size: clamp(1.45rem, 1.1rem + 1vw, 2rem); line-height: 1.08; border-left: 6px solid var(--rust); padding-left: 16px; }
+  .press__rope p { text-transform: none; font-family: var(--sans); font-weight: 600; font-size: clamp(1.2rem, 1.1rem + .4vw, 1.45rem); line-height: 1.4; border-left-color: var(--f2); }
+  .press .link-arrow { justify-self: start; }
+  .press__val { position: relative; z-index: 2; margin-top: 10px; background: var(--f0); color: var(--cream); padding: 26px 28px; display: grid; gap: 12px; box-shadow: var(--shadow); }
+  .press__val :focus-visible { outline-color: var(--amber); }
+  .press__pub--sm { font-size: 1.5rem; padding: 0; background: none; color: var(--amber); }
+  .press__val blockquote p { font-family: var(--display); font-weight: 600; text-transform: uppercase; font-size: clamp(1.5rem, 1.2rem + 1vw, 2.1rem); line-height: 1.05; }
+  .press__val-2 { color: var(--on-dark-2); }
+  .press__val-2 q { color: var(--cream); font-weight: 600; }
+  .press__val a { justify-self: start; display: inline-flex; gap: 8px; align-items: center; font-weight: 700; text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 4px; }
+  @media (min-width: 1200px) { .press__val { margin-left: -180px; } }
+  @media (max-width: 860px) {
+    .press { grid-template-columns: 1fr; }
+    .press__ph { min-height: 0; height: 520px; }
+    .press__body { padding: 48px var(--gutter) 64px; gap: 22px; }
+    .press__pair { grid-template-columns: 1fr; }
+    .press__facts { gap: 8px; }
+    .press__facts div { padding: 16px 14px 18px; }
+    .press__facts dt { font-size: 3rem; }
+    .press__facts dd { font-size: .98rem; }
+  }
+</style>
