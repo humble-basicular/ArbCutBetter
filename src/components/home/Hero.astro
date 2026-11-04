@@ -94,6 +94,10 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
     .hero__bg::after { background: linear-gradient(90deg, rgba(14, 26, 20, .95) 0%, rgba(14, 26, 20, .75) 60%, rgba(14, 26, 20, .4) 100%), linear-gradient(0deg, var(--f0) 0%, rgba(14, 26, 20, 0) 40%); }
   }
 
+  @media (min-width: 701px) and (max-width: 1100px) {
+    .hero h1 { max-width: 18ch; }
+  }
+
   @media (max-width: 700px) {
     .hero__bg { bottom: auto; height: 380px; }
     .hero__bg :global(img) { object-position: 62% 50% !important; }
