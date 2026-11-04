@@ -1,80 +1,66 @@
 ---
-/* 4.10 Footer. */
 import { site } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
-import { vietoves } from '@data/vietoves.js';
+import { grupes, detales } from '@data/paslaugu-turinys.js';
+import { atsiliepimuKiekis, atsiliepimuVidurkis } from '@data/atsiliepimai.js';
+import Logo from './Logo.astro';
 import Icon from './Icon.astro';
-const topPaslaugos = paslaugos.slice(0, 6);
+const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
+const year = new Date().getFullYear();
 ---
-<footer class="site-footer" role="contentinfo">
-  <div class="site-footer__inner container">
-    <div class="site-footer__grid">
-      <div class="site-footer__brand">
-        <a href="/" class="site-footer__logo-link" aria-label="ArbCut — į pradžią">
-          <img src="/assets/logo-horizontal-light.svg" alt="ArbCut" class="site-footer__logo-img" width="126" height="36" />
-        </a>
-        <p class="site-footer__tagline">{site.tagline}. Dirbame visoje Lietuvoje.</p>
-        <a href={site.facebook} class="site-footer__social" target="_blank" rel="noopener noreferrer" aria-label="ArbCut Facebook puslapis">
-          <Icon name="facebook" size={18} /> Facebook
-        </a>
-      </div>
-
-      <div class="site-footer__col">
-        <h3 class="site-footer__heading">Paslaugos</h3>
-        <ul class="site-footer__links" role="list">
-          {topPaslaugos.map((p) => <li><a href={`/paslaugos/${p.slug}`}>{p.pavadinimas}</a></li>)}
-          <li><a href="/galerija">Darbų galerija</a></li>
-          <li><a href="/tinklarastis">Tinklaraštis</a></li>
-        </ul>
-      </div>
-
-      <div class="site-footer__col">
-        <h3 class="site-footer__heading">Vietovės</h3>
-        <ul class="site-footer__links" role="list">
-          {vietoves.map((v) => <li><a href={`/${v.slug}`}>{v.miestas}</a></li>)}
-        </ul>
-      </div>
-
-      <div class="site-footer__col">
-        <h3 class="site-footer__heading">Kontaktai</h3>
-        <ul class="site-footer__contact" role="list">
-          <li><Icon name="telefonas" size={15} stroke={2} /> <a href={site.telefonasHref} data-loc="footer">{site.telefonas}</a></li>
-          <li><Icon name="pastas" size={15} stroke={2} /> <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></li>
-          <li><Icon name="laikrodis" size={15} stroke={2} /> <span>{site.darboLaikas}</span></li>
-          <li><Icon name="vieta" size={15} stroke={2} /> <span>{site.regionas} · {site.aptarnavimas}</span></li>
-        </ul>
-      </div>
+<footer class="ftr on-dark">
+  <div class="wrap ftr__grid">
+    <div class="ftr__brand">
+      <Logo tone="light" height={46} />
+      <p>Arboristas aukštalipys {site.savininkas} su komanda. Medžių pjovimas, genėjimas, kelmai ir darbai aukštyje iki 20 m.</p>
+      <a class="ftr__rep" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">
+        <Icon name="star" size={16} /> {atsiliepimuVidurkis.toFixed(1).replace('.', ',')} · {atsiliepimuKiekis} atsiliepimai Paslaugos.lt <Icon name="external" size={14} />
+      </a>
     </div>
-
-    <div class="site-footer__bottom">
-      <p>© 2026 {site.pavadinimas}. Visos teisės saugomos.</p>
-      <nav class="site-footer__legal" aria-label="Teisinės nuorodos">
-        <a href="/privatumo-politika">Privatumo politika</a>
-        <a href="/taisykles">Taisyklės</a>
-      </nav>
-      <p class="site-footer__credit">Programavimas: <a href="https://jarvisweb.lt" target="_blank" rel="noopener noreferrer">jarvisweb.lt</a></p>
+    {grupes.map((g) => (
+      <div>
+        <p class="ftr__h">{g.pavadinimas}</p>
+        <ul role="list">{g.slugs.map((s) => <li><a href={`/paslaugos/${s}`}>{detales[s]?.trumpas || byslug[s].pavadinimas}</a></li>)}</ul>
+      </div>
+    ))}
+    <div>
+      <p class="ftr__h">Kontaktai</p>
+      <ul role="list" class="ftr__contact">
+        <li><a href={site.telefonasHref} data-loc="footer-call"><Icon name="phone" size={16} /> {site.telefonas}</a></li>
+        <li><a href={`mailto:${site.elPastas}`}><Icon name="mail" size={16} /> {site.elPastas}</a></li>
+        <li><Icon name="clock" size={16} /> Kasdien 08:00–18:00</li>
+        <li><Icon name="pin" size={16} /> Kaunas, Kauno apskritis</li>
+      </ul>
+      <p class="ftr__h ftr__h--sp">Svetainė</p>
+      <ul role="list">
+        <li><a href="/galerija">Darbai</a></li>
+        <li><a href="/atsiliepimai">Atsiliepimai</a></li>
+        <li><a href="/kainos">Kainos</a></li>
+        <li><a href="/apie">Apie</a></li>
+        <li><a href="/tinklarastis">Patarimai</a></li>
+        <li><a href={site.facebook} target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
     </div>
   </div>
+  <div class="wrap ftr__base">
+    <span>© {year} ArbCut · {site.savininkas}</span>
+    <span><a href="/privatumo-politika">Privatumo politika</a> · <a href="/taisykles">Taisyklės</a></span>
+  </div>
 </footer>
-
 <style>
-  .site-footer { background: var(--color-bg); color: var(--color-text-light); padding-block: var(--space-8) var(--space-5); }
-  .site-footer__grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: var(--space-7); }
-  .site-footer__logo-img { height: 36px; width: auto; margin-bottom: var(--space-4); }
-  .site-footer__tagline { opacity: 0.8; margin-bottom: var(--space-4); max-width: 280px; }
-  .site-footer__social { display: inline-flex; align-items: center; gap: 8px; color: var(--color-text-light); font-weight: 500; }
-  .site-footer__social:hover { color: var(--color-rust); }
-  .site-footer__heading { color: var(--color-text-light); font-size: 1.15rem; margin-bottom: var(--space-4); }
-  .site-footer__links { display: grid; gap: 8px; }
-  .site-footer__links a, .site-footer__contact a { opacity: 0.82; }
-  .site-footer__links a:hover, .site-footer__contact a:hover { opacity: 1; color: var(--color-rust); }
-  .site-footer__contact { display: grid; gap: 12px; }
-  .site-footer__contact li { display: flex; align-items: center; gap: 10px; opacity: 0.9; }
-  .site-footer__bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: var(--space-7); padding-top: var(--space-5); border-top: 1px solid rgba(232,228,218,0.12); font-size: 0.85rem; opacity: 0.7; }
-  .site-footer__credit a { color: var(--color-rust); }
-  .site-footer__legal { display: flex; gap: var(--space-4); }
-  .site-footer__legal a { opacity: 0.7; }
-  .site-footer__legal a:hover { opacity: 1; color: var(--color-rust); }
-  @media (max-width: 920px) { .site-footer__grid { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 560px) { .site-footer__grid { grid-template-columns: 1fr; gap: var(--space-6); } .site-footer__bottom { flex-direction: column; } }
+  .ftr { background: var(--ink-2); color: var(--mute-light); padding-top: clamp(56px, 7vw, 88px); font-size: .97rem; }
+  .ftr__grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1.1fr; gap: 40px; padding-bottom: 48px; }
+  .ftr__brand { display: grid; gap: 18px; align-content: start; }
+  .ftr__brand p { max-width: 30ch; }
+  .ftr__rep { display: inline-flex; align-items: center; gap: 8px; color: var(--paper); font-weight: 600; }
+  .ftr__rep svg:first-child { color: var(--sand); }
+  .ftr__h { font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--sand); margin-bottom: 12px; }
+  .ftr__h--sp { margin-top: 26px; }
+  .ftr li + li { margin-top: 8px; }
+  .ftr a:hover { color: var(--paper); }
+  .ftr__contact li { display: flex; align-items: center; gap: 10px; }
+  .ftr__contact a { display: inline-flex; align-items: center; gap: 10px; color: var(--paper); word-break: break-all; }
+  .ftr__base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 20px; border-top: 1px solid var(--line-dark); font-size: .88rem; }
+  @media (max-width: 960px) { .ftr__grid { grid-template-columns: 1fr 1fr; } .ftr__brand { grid-column: 1 / -1; } }
+  @media (max-width: 520px) { .ftr__grid { grid-template-columns: 1fr; } }
 </style>

@@ -6,6 +6,9 @@
 
 import { atsiliepimuKiekis, atsiliepimuVidurkis, patirtisMetai } from './atsiliepimai.js';
 
+/* Peržiūros režimas (PUBLIC_PREVIEW=1): noindex, forma neišsiunčia, be sekimo. */
+export const PREVIEW = import.meta.env.PUBLIC_PREVIEW === '1';
+
 export const site = {
   pavadinimas: 'ArbCut',
   savininkas: 'Mantas Gerulis',
@@ -19,7 +22,10 @@ export const site = {
 
   darboLaikas: 'Pirmadienis–Sekmadienis: 08:00–18:00',
   regionas: 'Kauno apskritis',
-  aptarnavimas: 'Visa Lietuva',
+  baze: 'Kaunas',
+  // Bazė Kaune; išvykstame ir į kitus miestus (išvykimą derinti iš anksto).
+  // Išvežimas fiskaru — TIK Kaune ir Kauno rajone.
+  aptarnavimas: 'Kaunas, Kauno rajonas ir kiti Lietuvos miestai',
   priceRange: '€€',
 
   // Bazė Kaune (apytikslės koordinatės — GEO/JSON-LD areaServed centras)

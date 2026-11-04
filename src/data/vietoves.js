@@ -35,7 +35,7 @@ const turinys = {
   'medziu-pjovimas-jonava': {
     intro: 'Jonavoje — greitai pasiekiama iš Kauno, visi aukštuminiai darbai.',
     tekstas:
-      'Jonava yra visai šalia Kauno, todėl čia atvykstame greitai ir patogiai — tinka ir skubiems, avariniams iškvietimams. Atliekame pavojingų medžių pjovimą, genėjimą, kelmų naikinimą bei kitus aukštuminius darbus nuosavu autobokšteliu. Kadangi esame netoli, dažnai galime išvežti ir susidariusią medieną bei šakas — dėl to susitariame iš anksto.',
+      'Jonava yra visai šalia Kauno, todėl čia atvykstame greitai ir patogiai — tinka ir skubiems, avariniams iškvietimams. Atliekame pavojingų medžių pjovimą, genėjimą, kelmų naikinimą bei kitus aukštuminius darbus nuosavu autobokšteliu. Kadangi esame netoli, darbų datą suderinti paprasta; medieną ir šakas po darbų sukrauname tvarkingoje krūvoje, o dėl išvežimo galima pasitarti atskirai.',
   },
   'medziu-pjovimas-kedainiai': {
     intro: 'Kėdainiuose — sodybų medžiai, arti Kauno rajono.',
@@ -55,5 +55,10 @@ const turinys = {
   },
 };
 
-export const vietoves = site.vietoves.map((v) => ({ ...v, ...(turinys[v.slug] || {}) }));
+const vietininkas = {
+  Kaunas: 'Kaune', Vilnius: 'Vilniuje', Panevėžys: 'Panevėžyje', Marijampolė: 'Marijampolėje', Alytus: 'Alytuje',
+  Jonava: 'Jonavoje', Kėdainiai: 'Kėdainiuose', 'Kazlų Rūda': 'Kazlų Rūdoje', Tauragė: 'Tauragėje',
+};
+
+export const vietoves = site.vietoves.map((v) => ({ ...v, kur: vietininkas[v.miestas] || v.miestas, ...(turinys[v.slug] || {}) }));
 export const getVietove = (slug) => vietoves.find((v) => v.slug === slug);

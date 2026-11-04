@@ -5,36 +5,20 @@
    ===================================================================== */
 import { site } from './site.js';
 import { paslaugos } from './paslaugos.js';
-import { atsiliepimai, atsiliepimuVidurkis, atsiliepimuKiekis } from './atsiliepimai.js';
 import { duk } from './turinys.js';
 
 const abs = (path) => new URL(path, site.url).href;
 const telBare = site.telefonasHref.replace('tel:', '');
 
-const aggregateRating = {
-  '@type': 'AggregateRating',
-  ratingValue: atsiliepimuVidurkis.toFixed(1),
-  reviewCount: atsiliepimuKiekis,
-  bestRating: '5',
-  worstRating: '1',
-};
-
-const reviewList = (limit = 51) =>
-  atsiliepimai.slice(0, limit).map((a) => ({
-    '@type': 'Review',
-    author: { '@type': 'Person', name: a.vardas },
-    datePublished: a.data,
-    ...(a.zvaigzdes ? { reviewRating: { '@type': 'Rating', ratingValue: String(a.zvaigzdes), bestRating: '5' } } : {}),
-    reviewBody: a.tekstas,
-  }));
-
 const areaServed = [
+  { '@type': 'AdministrativeArea', name: 'Kauno apskritis' },
   ...site.vietoves.map((v) => ({ '@type': 'City', name: v.miestas })),
-  { '@type': 'Country', name: 'Lietuva' },
 ];
 
-/* --- Pagrindinis verslo subjektas (NAP + reitingas + paslaugos) --- */
-export function localBusiness({ withReviews = false } = {}) {
+/* --- Pagrindinis verslo subjektas (NAP + paslaugos) ---
+   2026-11: AggregateRating/Review pašalinti — atsiliepimai surinkti Paslaugos.lt
+   (trečioji šalis), Google nerekomenduoja jų žymėti savo svetainės schema. */
+export function localBusiness() {
   const node = {
     '@context': 'https://schema.org',
     '@type': 'LandscapingBusiness',
@@ -46,7 +30,7 @@ export function localBusiness({ withReviews = false } = {}) {
     telephone: telBare,
     email: site.elPastas,
     image: abs(site.ogImage),
-    logo: abs('/assets/logo-horizontal.svg'),
+    logo: abs('/assets/arbcut-upgrade-brand/icon-512.png'),
     priceRange: site.priceRange,
     founder: { '@type': 'Person', name: site.savininkas },
     knowsLanguage: 'lt',
@@ -66,7 +50,6 @@ export function localBusiness({ withReviews = false } = {}) {
       },
     ],
     sameAs: [site.facebook, site.atsiliepimai.profilis],
-    aggregateRating,
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'ArbCut paslaugos',
@@ -81,7 +64,6 @@ export function localBusiness({ withReviews = false } = {}) {
       })),
     },
   };
-  if (withReviews) node.review = reviewList();
   return node;
 }
 
@@ -109,7 +91,6 @@ export function serviceSchema(p) {
     url: abs(`/paslaugos/${p.slug}`),
     provider: { '@id': abs('/#business') },
     areaServed,
-    aggregateRating,
     ...(p.kaina && p.kaina.includes('€')
       ? { offers: { '@type': 'Offer', priceCurrency: 'EUR', description: p.kaina } }
       : {}),

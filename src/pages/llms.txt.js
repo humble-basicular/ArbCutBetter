@@ -9,7 +9,7 @@ export function GET() {
   const body = `# ArbCut — arboristas, medžių priežiūra ir aukštuminiai darbai Lietuvoje
 
 > ArbCut yra kvalifikuoto arboristo aukštalipio Manto Gerulio medžių priežiūros
-> ir aukštuminių darbų įmonė. Bazė — Kaunas; išvykstame dirbti į visą Lietuvą.
+> ir aukštuminių darbų įmonė. Bazė — Kaunas; išvykstame ir į kitus Lietuvos miestus.
 > Specializacija: pavojingų ir avarinių medžių pjovimas, genėjimas, kelmų
 > naikinimas ir darbai aukštyje nuosavu autobokšteliu (iki 20 m) bei alpinistine įranga.
 
@@ -20,7 +20,7 @@ export function GET() {
 - Telefonas: +370 603 66901
 - El. paštas: aukstuminiai.darbai@yahoo.com
 - Darbo laikas: kasdien (I–VII) 08:00–18:00
-- Aptarnaujama teritorija: visa Lietuva (vietovių puslapiai: ${miestai}). Šakų ir medienos išvežimas fiskaru — Kaune ir Kauno rajone.
+- Aptarnaujama teritorija: Kaunas ir Kauno apskritis, išvykstama ir į kitus miestus (vietovių puslapiai: ${miestai}). Šakų ir medienos išvežimas fiskaru — Kaune ir Kauno rajone.
 - Nuosava technika: autobokštelis iki 20 m aukščio; aukščiau — alpinistinė įranga ir virvės.
 - Facebook: https://www.facebook.com/MesGalimeTaiPadaryti/
 

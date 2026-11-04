@@ -1,158 +1,176 @@
 /* =====================================================================
-   ArbCut — Dizaino sistema (global.css)
-   Kryptis: „RUGGED FOREST" — amatininkiškas medžių priežiūros vibe.
-   Gilus miško žalias + žievės ruda + šiltas medienos oranžinis CTA.
-   Antraštės: Oswald (sturdy, pilnas LT palaikymas). Tekstas: Source Sans 3.
-   Visi komponentai skaito šituos kintamuosius — viena tiesa.
+   ArbCut — dizaino sistema (2026-11 peržiūra)
+   Kryptis: situacijomis paremta, tvirta amato svetainė. Gilus miško žalias
+   plotas, šiltas popierius, medienos akcentas tik veiksmams ir numeriams.
+   Šriftai: Source Serif 4 (antraštės), Archivo (tekstas/UI) — savi failai.
    ===================================================================== */
+@import '@fontsource-variable/source-serif-4/opsz.css';
+@import '@fontsource-variable/archivo/wdth.css';
 
 :root {
-  /* --- Colors --- */
-  --color-bg:          #0E1A14;  /* gilus naktinis žalias (dark sekcijos) */
-  --color-bg-cream:    #F6F1E6;  /* šiltas popierinis fonas */
-  --color-bg-card:     #FFFFFF;
-  --color-bg-sand:     #EFE7D7;  /* antrinis šiltas fonas */
-  --color-forest:      #15402B;  /* pagrindinis miško žalias */
-  --color-forest-deep: #0E2A1C;  /* gilesnis (hero, footer) */
-  --color-moss:        #6F9170;  /* šviesus mėtinis akcentas (ant tamsaus) */
-  --color-bark:        #3A2A1E;  /* žievės ruda */
-  --color-rust:        #DB7A22;  /* ŠILTAS medienos oranžinis — CTA akcentas */
-  --color-rust-hover:  #C2691A;
-  --color-amber:       #F0A94A;  /* šviesesnis akcentas (ant tamsaus) */
-  --color-text:        #19211C;
-  --color-text-muted:  #565D52;
-  --color-text-light:  #F1ECE0;
-  --color-border:      #E2DAC9;
+  --ink: #1d3227;
+  --ink-2: #14231b;
+  --ink-3: #2a4536;
+  --paper: #f3efe7;
+  --paper-2: #e9e3d7;
+  --white: #fffdf9;
+  --line: #d6cdbd;
+  --line-dark: #39523f;
+  --timber: #a4532b;
+  --timber-2: #8c4422;
+  --sand: #e7b48c;
+  --text: #1b2620;
+  --mute: #56635b;
+  --mute-light: #b9c6bd;
 
-  /* --- Spacing --- */
-  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:24px;
-  --space-6:32px; --space-7:48px; --space-8:64px; --space-9:96px; --space-10:128px;
+  --serif: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --sans: 'Archivo Variable', 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
-  /* --- Layout --- */
-  --max-width: 1240px;
-  --gutter: 24px;
-  --section-py: clamp(64px, 10vw, 128px);
-  --header-height: 76px;
-
-  /* --- Type --- */
-  --font-display: 'Oswald', 'Arial Narrow', system-ui, sans-serif;
-  --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
-
-  /* --- Shadow / motion --- */
-  --shadow-card: 0 12px 32px -16px rgba(14, 26, 20, 0.42);
-  --shadow-heavy: 0 26px 60px -22px rgba(14, 26, 20, 0.55);
-  --radius: 8px;
-  --radius-sm: 5px;
-  --t-fast: 150ms ease;
-  --t-base: 220ms cubic-bezier(.4,0,.2,1);
-  --t-slow: 420ms cubic-bezier(.4,0,.2,1);
+  --wrap: 1240px;
+  --gutter: clamp(18px, 4vw, 40px);
+  --sec: clamp(64px, 9vw, 112px);
+  --header-h: 76px;
+  --radius: 2px;
+  --t: 180ms cubic-bezier(.2, .7, .2, 1);
 }
 
-/* ===================== RESET ===================== */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; scroll-padding-top: 92px; }
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 16px); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 body {
-  font-family: var(--font-body);
-  font-size: 18px; line-height: 1.65;
-  color: var(--color-text);
-  background-color: var(--color-bg-cream);
-  -webkit-font-smoothing: antialiased;
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--paper);
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
-@media (min-width: 1024px) { body { font-size: 19px; } }
-
-/* Grain texture overlay — subtilus amatininkiškas paviršius */
-body::after {
-  content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 220px 220px;
-}
-/* Mobilėje grain perdanga virsta įstrižais „brūkšniais" (moiré) — išjungiame */
-@media (max-width: 768px) { body::after { display: none; } }
-
-img, svg { display: block; } img { max-width: 100%; }
+img, picture, svg, video { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: none; }
-ul { list-style: none; }
-button { font-family: inherit; cursor: pointer; border: none; background: none; }
-input, textarea, select { font-family: inherit; font-size: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: 0; padding: 0; }
+ul[role='list'], ol[role='list'] { list-style: none; padding: 0; }
+:focus-visible { outline: 3px solid var(--timber); outline-offset: 3px; }
+.on-dark :focus-visible { outline-color: var(--sand); }
 
-h1, h2, h3, h4 {
-  font-family: var(--font-display);
-  line-height: 1.1; font-weight: 600; color: var(--color-forest);
-  letter-spacing: -0.01em;
+h1, h2, h3, .serif { font-family: var(--serif); font-weight: 620; line-height: 1.08; letter-spacing: -0.012em; color: inherit; text-wrap: balance; }
+h1 { font-size: clamp(2.25rem, 1.4rem + 3.4vw, 4rem); }
+h2 { font-size: clamp(1.85rem, 1.3rem + 2vw, 2.75rem); }
+h3 { font-size: clamp(1.2rem, 1.05rem + .5vw, 1.45rem); line-height: 1.2; }
+p { text-wrap: pretty; }
+
+.wrap { width: 100%; max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); }
+.sec { padding-block: var(--sec); }
+.sec--tight { padding-block: clamp(48px, 6vw, 72px); }
+.sec--paper2 { background: var(--paper-2); }
+.sec--white { background: var(--white); }
+.sec--ink { background: var(--ink); color: var(--paper); }
+.rule-top { border-top: 1px solid var(--line); }
+
+.kicker {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--timber);
 }
+.on-dark .kicker, .sec--ink .kicker { color: var(--sand); }
+.lead { font-size: clamp(1.06rem, 1rem + .3vw, 1.2rem); color: #33443a; max-width: 38em; }
+.on-dark .lead, .sec--ink .lead { color: #cbd6ce; }
+.mute { color: var(--mute); }
 
-:focus-visible { outline: 2px solid var(--color-rust); outline-offset: 3px; border-radius: 2px; }
+.sec-head { display: grid; gap: 14px; margin-bottom: clamp(28px, 4vw, 48px); max-width: 46rem; }
+.sec-head--split { max-width: none; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 24px; }
+@media (max-width: 760px) { .sec-head--split { grid-template-columns: 1fr; } }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
-  html { scroll-behavior: auto; }
-  .js-reveal, .js-reveal-scroll { opacity: 1 !important; transform: none !important; }
-}
-
-/* ===================== LAYOUT ===================== */
-.container { width: 100%; max-width: var(--max-width); margin-inline: auto; padding-inline: var(--gutter); }
-@media (min-width: 1024px) { .container { padding-inline: var(--space-7); } }
-.section { padding-block: var(--section-py); position: relative; }
-.section--cream { background: var(--color-bg-cream); }
-.section--card-bg { background: var(--color-bg-sand); }
-.section--dark { background: var(--color-bg); color: var(--color-text-light); }
-.section--forest { background: var(--color-forest); color: var(--color-text-light); }
-
-/* ===================== EYEBROW + SECTION HEAD ===================== */
-.section-head { margin-bottom: var(--space-7); max-width: 760px; }
-.section-head--center { margin-inline: auto; text-align: center; }
-.eyebrow {
-  display: inline-flex; align-items: center; gap: 12px;
-  font-family: var(--font-body); font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.2em; font-size: 0.78rem; color: var(--color-rust); margin-bottom: var(--space-4);
-}
-.eyebrow::before { content: ''; width: 38px; height: 2px; background: var(--color-rust); }
-.eyebrow--center::before { display: none; }
-.eyebrow--light { color: var(--color-amber); }
-.section-title { font-size: clamp(2.25rem, 5vw, 4rem); text-transform: uppercase; letter-spacing: 0; }
-.section-title--light { color: var(--color-text-light); }
-.section-head p { margin-top: var(--space-4); color: var(--color-text-muted); font-size: 1.08rem; line-height: 1.6; }
-.section--dark .section-head p, .section--forest .section-head p { color: var(--color-text-light); opacity: 0.85; }
-
-/* ===================== BUTTONS ===================== */
+/* ---------- Mygtukai ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-  padding: 14px 26px; border-radius: var(--radius); font-weight: 700; font-size: 1rem;
-  line-height: 1; text-align: center; cursor: pointer; letter-spacing: 0.01em;
-  transition: background var(--t-base), color var(--t-base), transform var(--t-base), box-shadow var(--t-base);
+  min-height: 52px; padding: 14px 24px;
+  font-family: var(--sans); font-weight: 650; font-size: 1rem; line-height: 1.1; letter-spacing: .005em;
+  border: 2px solid transparent; border-radius: var(--radius);
+  transition: background var(--t), color var(--t), border-color var(--t), transform var(--t);
+  text-align: center;
 }
-.btn--large { padding: 17px 32px; font-size: 1.05rem; }
-.btn--block { width: 100%; }
-.btn--call { background: var(--color-rust); color: #fff; box-shadow: 0 8px 20px -8px rgba(219,122,34,0.75); }
-.btn--call:hover { background: var(--color-rust-hover); transform: translateY(-2px); box-shadow: 0 14px 28px -10px rgba(219,122,34,0.85); }
-.btn--forest { background: var(--color-forest); color: var(--color-text-light); }
-.btn--forest:hover { background: var(--color-forest-deep); transform: translateY(-2px); }
-.btn--outline-light { background: transparent; color: var(--color-text-light); border: 1.5px solid rgba(241,236,224,0.5); }
-.btn--outline-light:hover { border-color: var(--color-text-light); background: rgba(241,236,224,0.08); transform: translateY(-2px); }
-.btn--outline { background: transparent; color: var(--color-forest); border: 1.5px solid var(--color-border); }
-.btn--outline:hover { border-color: var(--color-forest); background: rgba(21,64,43,0.04); transform: translateY(-2px); }
-.btn--pulse { animation: pulse 4s ease-in-out infinite; }
-@keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.05);} }
+.btn svg { flex: 0 0 auto; }
+.btn--primary { background: var(--timber); color: #fff; }
+.btn--primary:hover { background: var(--timber-2); }
+.btn--ink { background: var(--ink); color: var(--paper); }
+.btn--ink:hover { background: var(--ink-2); }
+.btn--line { border-color: currentColor; color: var(--ink); }
+.btn--line:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.on-dark .btn--line, .sec--ink .btn--line { color: var(--paper); }
+.on-dark .btn--line:hover, .sec--ink .btn--line:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.btn--sm { min-height: 44px; padding: 10px 16px; font-size: .95rem; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
 
-/* ===================== CARDS ===================== */
-.card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius); box-shadow: var(--shadow-card); transition: transform var(--t-base), box-shadow var(--t-base); }
+.link-arrow { display: inline-flex; align-items: center; gap: 8px; font-weight: 650; color: var(--timber); border-bottom: 1px solid transparent; transition: border-color var(--t); }
+.link-arrow:hover { border-bottom-color: currentColor; }
+.on-dark .link-arrow { color: var(--sand); }
 
-/* ===================== REVEAL ===================== */
-.js-reveal, .js-reveal-scroll { opacity: 0; transform: translateY(26px); transition: opacity 0.6s ease, transform 0.6s ease; transition-delay: var(--reveal-delay, 0ms); }
-.js-reveal.is-visible, .js-reveal-scroll.is-visible { opacity: 1; transform: none; }
+/* ---------- Nuotraukos ---------- */
+.ph { position: relative; overflow: hidden; background: var(--paper-2); }
+.ph img { width: 100%; height: 100%; object-fit: cover; }
+.ph-cap { font-size: .86rem; color: var(--mute); margin-top: 8px; }
 
-/* ===================== DIVIDER RULE ===================== */
-.rule { width: 40px; height: 3px; background: var(--color-rust); margin-bottom: var(--space-5); border-radius: 2px; }
-.rule--center { margin-inline: auto; }
+/* ---------- Sąrašai ---------- */
+.ticks { display: grid; gap: 10px; padding: 0; list-style: none; }
+.ticks li { position: relative; padding-left: 28px; }
+.ticks li::before { content: ''; position: absolute; left: 2px; top: .55em; width: 14px; height: 8px; border-left: 2.5px solid var(--timber); border-bottom: 2.5px solid var(--timber); transform: rotate(-45deg); }
+.on-dark .ticks li::before { border-color: var(--sand); }
+.steps { counter-reset: s; display: grid; gap: 0; padding: 0; list-style: none; }
+.steps li { counter-increment: s; position: relative; padding: 16px 0 16px 52px; border-top: 1px solid var(--line); }
+.steps li::before { content: counter(s, decimal-leading-zero); position: absolute; left: 0; top: 14px; font-family: var(--serif); font-weight: 650; font-size: 1.25rem; color: var(--timber); }
 
-/* ===================== STAR RATING ===================== */
-.stars { color: var(--color-rust); letter-spacing: 2px; }
+/* ---------- Skydeliai ---------- */
+.panel { background: var(--white); border: 1px solid var(--line); padding: clamp(22px, 3vw, 32px); }
+.panel--ink { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
-/* ===================== HELPERS ===================== */
-.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-.skip-link { position:absolute; left:12px; top:-60px; background:var(--color-rust); color:#fff; padding:10px 18px; border-radius:var(--radius); z-index:2000; font-weight:700; transition:top .2s; }
-.skip-link:focus { top:12px; }
-.text-center { text-align: center; }
-.grain-photo { filter: saturate(0.96) contrast(1.02); }
+/* ---------- Duonos trupiniai ---------- */
+.crumbs { font-size: .88rem; color: var(--mute-light); display: flex; flex-wrap: wrap; gap: 6px; padding: 0; list-style: none; }
+.crumbs a { color: inherit; border-bottom: 1px solid transparent; }
+.crumbs a:hover { color: var(--paper); border-bottom-color: currentColor; }
+.crumbs li + li::before { content: '/'; margin-right: 6px; opacity: .6; }
+
+/* ---------- DUK ---------- */
+.faq { border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 20px; align-items: baseline;
+  padding: 20px 0; font-family: var(--serif); font-weight: 620; font-size: 1.18rem; line-height: 1.3;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: '+'; font-family: var(--sans); font-weight: 400; font-size: 1.6rem; line-height: 1; color: var(--timber); transition: transform var(--t); }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq .faq-a { padding: 0 0 22px; max-width: 46em; color: #33443a; }
+.faq .faq-a a { color: var(--timber); font-weight: 600; }
+
+/* ---------- Turinio tekstas (straipsniai, teisiniai) ---------- */
+.prose { max-width: 44rem; }
+.prose > * + * { margin-top: 1em; }
+.prose h2 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); margin-top: 1.8em; }
+.prose h3 { margin-top: 1.4em; }
+.prose ul, .prose ol { padding-left: 1.3em; }
+.prose li + li { margin-top: .4em; }
+.prose a { color: var(--timber); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Pagalbinės ---------- */
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; left: 12px; top: -60px; z-index: 3000; background: var(--ink); color: #fff; padding: 12px 18px; font-weight: 650; }
+.skip-link:focus { top: 12px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(24px, 4vw, 56px); }
+@media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; } }
+
+/* Nuosaikus atsiradimas — tik jei vartotojas neprašė mažinti judesio */
+@media (prefers-reduced-motion: no-preference) {
+  .js .rv { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+  .js .rv.is-in { opacity: 1; transform: none; }
+}
+
+/* Vietos apatinei mobiliai juostai */
+@media (max-width: 860px) { body { padding-bottom: 68px; } }

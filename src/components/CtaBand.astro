@@ -1,27 +1,26 @@
 ---
-/* Galutinis CTA prieš formą (konversijos akcentas). Fono nuotrauka + overlay. */
 import { site } from '@data/site.js';
 import Icon from './Icon.astro';
-const bg = '/assets/images/gallery/wrok3.jpg';
+const { title = 'Turite medį, kuris kelia nerimą?', text = 'Atsiųskite nuotrauką arba paskambinkite — pasakysime, kaip saugiai jį sutvarkyti ir kiek tai kainuotų.', service = '' } = Astro.props;
 ---
-<section class="cta-band" style={`--cta-bg:url('${bg}')`} aria-label="Susisiekite">
-  <div class="container cta-band__inner js-reveal-scroll">
-    <h2 class="cta-band__title">Turite pavojingą ar peraugusį medį? Sutvarkysime.</h2>
-    <p class="cta-band__text">Paskambinkite arba palikite užklausą — įvertinsime ir pasiūlysime aiškią kainą.</p>
-    <div class="cta-band__btns">
-      <a href={site.telefonasHref} data-loc="cta-band" class="btn btn--call btn--large btn--pulse"><Icon name="telefonas" size={20} stroke={2.5} /> Skambinti {site.telefonas}</a>
-      <button type="button" class="btn btn--outline-light btn--large" data-modal-trigger aria-haspopup="dialog">Palikti užklausą</button>
+<section class="cta on-dark">
+  <div class="wrap cta__in">
+    <div>
+      <h2>{title}</h2>
+      <p class="lead">{text}</p>
+    </div>
+    <div class="cta__act">
+      <a class="btn btn--primary" href={site.telefonasHref} data-loc="cta-band-call"><Icon name="phone" size={18} /> {site.telefonas}</a>
+      <button type="button" class="btn btn--line" data-quote data-service={service}>Gauti kainą</button>
+      <p class="cta__h">Kasdien 08:00–18:00</p>
     </div>
   </div>
 </section>
-
 <style>
-  .cta-band { position: relative; padding-block: clamp(80px, 11vw, 140px); background: var(--cta-bg) center/cover no-repeat; isolation: isolate; }
-  .cta-band::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(120deg, rgba(14,42,28,0.9) 0%, rgba(14,42,28,0.64) 100%); }
-  .cta-band::after { content: ''; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at center, rgba(14,26,20,0.45) 0%, rgba(14,26,20,0) 70%); }
-  .cta-band__inner { max-width: 760px; text-align: center; margin-inline: auto; color: var(--color-text-light); }
-  .cta-band__title { color: var(--color-text-light); font-size: clamp(2rem, 4.5vw, 3.4rem); margin-bottom: var(--space-4); }
-  .cta-band__text { opacity: 0.88; margin-bottom: var(--space-6); font-size: 1.1rem; }
-  .cta-band__btns { display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; }
-  @media (max-width: 520px) { .cta-band__btns .btn { width: 100%; } }
+  .cta { background: var(--ink); color: var(--paper); border-top: 6px solid var(--timber); }
+  .cta__in { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 40px; align-items: center; padding-block: clamp(48px, 6vw, 80px); }
+  .cta h2 { margin-bottom: 12px; }
+  .cta__act { display: grid; gap: 12px; justify-items: stretch; max-width: 360px; margin-left: auto; width: 100%; }
+  .cta__h { font-size: .9rem; color: var(--mute-light); text-align: center; }
+  @media (max-width: 860px) { .cta__in { grid-template-columns: 1fr; } .cta__act { margin-left: 0; } }
 </style>

@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '@data/site.js';
+import { paslaugos } from '@data/paslaugos.js';
+import { grupes, detales } from '@data/paslaugu-turinys.js';
+import { atsiliepimai, atsiliepimuSinchronizuota } from '@data/atsiliepimai.js';
+import { localBusiness, faqPage, breadcrumbs } from '@data/jsonld.js';
+const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
+const pavyzdys = atsiliepimai.find((a) => a.tekstas && a.tekstas.includes('kaina 470'));
+const duk = [
+  { klausimas: 'Ar galite pasakyti kainą pagal nuotraukas?', atsakymas: 'Dažnai taip. Atsiųskite kelias nuotraukas ar trumpą vaizdo įrašą, kuriame matytųsi medis ir aplinka, — pasakysime preliminarią kainą. Sudėtingesniais atvejais atvažiuojame apžiūrėti.' },
+  { klausimas: 'Ar kaina gali pasikeisti darbo metu?', atsakymas: 'Kainą ir darbų apimtį sutariame iš anksto. Jei vietoje paaiškėja, kad reikia papildomų darbų, juos aptariame prieš pradėdami.' },
+  { klausimas: 'Ar išvežimas įskaičiuotas?', atsakymas: 'Išvežimas Kaune ir Kauno rajone yra atskira paslauga (nuo 80 €). Galime jį įtraukti į bendrą kainą — sutariame iš anksto. Toliau už Kauno rajono medieną sukrauname krūvoje.' },
+  { klausimas: 'Kiek kainuoja kelmo pašalinimas?', atsakymas: 'Kelmų frezavimas — nuo 75 €. Kaina priklauso nuo kelmo skersmens, kiekio ir prieigos.', nuoroda: '/paslaugos/kelmu-naikinimas-frezavimas' },
+  { klausimas: 'Ar kaina priklauso nuo atstumo?', atsakymas: 'Taip, tolimesniems išvykimams įtakos turi kelionė. Todėl išvykimo datą suderiname iš anksto, o kelių kaimynų darbus galime atlikti per vieną atvykimą.' },
+];
+---
+<BaseLayout
+  title="Medžių pjovimo kainos ir kas jas lemia | ArbCut"
+  description="Orientacinės ArbCut kainos: medžių pjovimas ir genėjimas nuo 50 €, kelmų frezavimas nuo 75 €, išvežimas nuo 80 €. Kas lemia galutinę kainą ir kaip ją sužinoti greičiau."
+  schemas={[localBusiness(), faqPage(duk), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Kainos', path: '/kainos' }])]}
+>
+  <PageHero
+    title="Kainos ir kas jas lemia"
+    kicker="Orientacinės kainos"
+    lead="Kiekvienas medis kitoks, todėl skelbiame kainas „nuo“ ir aiškiai sakome, kas jas didina. Tikslią kainą pasakome pamatę darbą vietoje arba nuotraukose."
+    crumbs={[{ label: 'Kainos' }]}
+  />
+
+  <section class="sec">
+    <div class="wrap pr">
+      <div>
+        {grupes.map((g) => (
+          <div class="pr__grp">
+            <h2>{g.pavadinimas}</h2>
+            <table class="pr__t">
+              <thead><tr><th scope="col">Paslauga</th><th scope="col">Kaina</th></tr></thead>
+              <tbody>
+                {g.slugs.map((s) => (
+                  <tr><th scope="row"><a href={`/paslaugos/${s}`}>{detales[s].h1}</a></th><td>{byslug[s].kaina}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
+        <p class="pr__src">Kainos „nuo“ paimtos iš ArbCut profilio Paslaugos.lt (duomenys {atsiliepimuSinchronizuota}). Galutinė kaina sutariama prieš darbus.</p>
+      </div>
+      <aside class="pr__side">
+        <div class="panel">
+          <h2 class="pr__h">Kas lemia kainą</h2>
+          <ol class="steps" role="list">
+            <li><strong>Medžio dydis.</strong> Aukštus, storus medžius pjauname dalimis — tai užtrunka ilgiau.</li>
+            <li><strong>Vieta ir prieiga.</strong> Prie namo, tvoros ar laidų reikia nuleisti kiekvieną dalį virvėmis.</li>
+            <li><strong>Technika.</strong> Ar privažiuoja autobokštelis, ar reikia lipti su alpinistine įranga.</li>
+            <li><strong>Sutvarkymas.</strong> Išvežimas (Kaune ir Kauno rajone) ir kelmo frezavimas.</li>
+          </ol>
+        </div>
+        {pavyzdys && (
+          <figure class="pr__ex">
+            <p class="kicker">Pavyzdys iš atsiliepimo</p>
+            <blockquote class="serif">„{pavyzdys.tekstas}“</blockquote>
+            <figcaption>{pavyzdys.vardas}, Paslaugos.lt, {pavyzdys.data.slice(0, 7)}</figcaption>
+          </figure>
+        )}
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec sec--white rule-top">
+    <div class="wrap two">
+      <div class="sec-head">
+        <p class="kicker">Kaip sužinoti kainą greičiau</p>
+        <h2>Atsiųskite tai, ką matote</h2>
+        <ul class="ticks">
+          <li>2–3 nuotraukos iš toliau, kad matytųsi medis ir kas aplink</li>
+          <li>Adresas arba vietovė</li>
+          <li>Ar reikia išvežti medieną ir pašalinti kelmą</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn--primary" href={site.telefonasHref} data-loc="prices-call"><Icon name="phone" size={18} /> {site.telefonas}</a>
+          <button type="button" class="btn btn--line" data-quote>Gauti kainą</button>
+        </div>
+        <p class="mute">Nuotraukas galite siųsti el. paštu <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a>.</p>
+      </div>
+      <div>
+        <h2 class="pr__h2">Klausimai apie kainą</h2>
+        <Faq items={duk} />
+        <p class="mute pr__more">Plačiau: <a href="/tinklarastis/kiek-kainuoja-medzio-pasalinimas">Kiek kainuoja medžio pašalinimas Lietuvoje?</a></p>
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>
+<style>
+  .pr { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(32px, 5vw, 64px); align-items: start; }
+  .pr__grp + .pr__grp { margin-top: 40px; }
+  .pr__grp h2 { font-size: 1.7rem; margin-bottom: 12px; }
+  .pr__t { width: 100%; border-collapse: collapse; border-top: 2px solid var(--ink); }
+  .pr__t thead th { text-align: left; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); padding: 10px 0; font-weight: 700; }
+  .pr__t thead th:last-child, .pr__t td { text-align: right; }
+  .pr__t tbody th, .pr__t td { padding: 14px 0; border-top: 1px solid var(--line); vertical-align: top; }
+  .pr__t tbody th { text-align: left; font-weight: 560; padding-right: 16px; }
+  .pr__t tbody th a:hover { color: var(--timber); }
+  .pr__t td { font-weight: 700; white-space: nowrap; }
+  .pr__src { margin-top: 20px; font-size: .9rem; color: var(--mute); }
+  .pr__side { display: grid; gap: 20px; position: sticky; top: calc(var(--header-h) + 20px); }
+  .pr__h { font-size: 1.5rem; margin-bottom: 8px; }
+  .pr__ex { background: var(--ink); color: var(--paper); padding: 24px; display: grid; gap: 10px; }
+  .pr__ex blockquote { font-size: 1.3rem; line-height: 1.35; }
+  .pr__ex figcaption { color: var(--mute-light); font-size: .9rem; }
+  .two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .two .sec-head { gap: 18px; }
+  .two a:not(.btn) { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; word-break: break-all; }
+  .pr__h2 { font-size: 1.6rem; margin-bottom: 12px; }
+  .pr__more { margin-top: 16px; }
+  @media (max-width: 960px) { .pr, .two { grid-template-columns: 1fr; } .pr__side { position: static; } }
+</style>

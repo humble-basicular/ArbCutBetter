@@ -1,39 +1,22 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Icon from '@components/Icon.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
 import { site } from '@data/site.js';
 ---
 <BaseLayout title="Ačiū — ArbCut" description="Ačiū už užklausą — susisieksime artimiausiu metu." noindex={true}>
-  <header class="site-header is-scrolled" role="banner" style="position:static;">
-    <div class="site-header__inner container">
-      <a href="/" class="site-header__logo" aria-label="ArbCut — į pagrindinį puslapį">
-        <img src="/assets/logo-horizontal.svg" alt="ArbCut" class="site-header__logo-img" width="168" height="48" style="height:42px;width:auto;" />
-      </a>
-      <a href={site.telefonasHref} data-loc="success-top" class="btn btn--call" style="margin-left:auto;">
-        <Icon name="telefonas" size={16} stroke={2.5} /> Skambinti
-      </a>
-    </div>
-  </header>
-
-  <main id="main" class="success-main">
-    <div class="success-card">
-      <div class="success-card__icon" aria-hidden="true"><Icon name="atsakingai" size={32} stroke={2.5} /></div>
-      <h1 class="success-card__title">Ačiū už užklausą!</h1>
-      <div class="success-card__body">
-        <p>Susisieksime artimiausiu metu.</p>
-        <p>Jei reikia skubios pagalbos, skambinkite tiesiogiai:</p>
-        <a href={site.telefonasHref} data-loc="success-card" class="success-card__phone">{site.telefonas}</a>
+  <section class="ok on-dark">
+    <div class="wrap ok__in">
+      <p class="kicker">Užklausa gauta</p>
+      <h1>Ačiū! Susisieksime artimiausiu metu.</h1>
+      <p class="lead">Jei reikia skubiai, skambinkite tiesiogiai.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href={site.telefonasHref} data-loc="success-card"><Icon name="phone" size={18} /> {site.telefonas}</a>
+        <a class="btn btn--line" href="/">Į pradžią</a>
       </div>
-      <a href="/" class="btn btn--forest btn--large">← Grįžti į pagrindinį puslapį</a>
     </div>
-  </main>
+  </section>
 </BaseLayout>
-
 <style>
-  .success-main { min-height: calc(100svh - var(--header-height)); display: flex; align-items: center; justify-content: center; padding: var(--space-9) var(--gutter); }
-  .success-card { text-align: center; max-width: 520px; }
-  .success-card__icon { width: 72px; height: 72px; background: var(--color-forest); border-radius: 50%; display: grid; place-items: center; margin: 0 auto var(--space-6); color: #fff; }
-  .success-card__title { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: var(--space-4); }
-  .success-card__body { color: var(--color-text-muted); font-size: 1.05rem; margin-bottom: var(--space-7); }
-  .success-card__phone { display: block; margin-top: var(--space-3); font-weight: 600; color: var(--color-rust); font-size: 1.1rem; }
+  .ok { background: var(--ink); color: var(--paper); }
+  .ok__in { display: grid; gap: 20px; padding-block: clamp(72px, 12vw, 140px); }
 </style>

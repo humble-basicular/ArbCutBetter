@@ -1,28 +1,32 @@
 ---
 import '../styles/global.css';
-import { site } from '@data/site.js';
+import { site, PREVIEW } from '@data/site.js';
 import { localBusiness } from '@data/jsonld.js';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import QuoteDialog from '../components/QuoteDialog.astro';
+import MobileActions from '../components/MobileActions.astro';
+import Lightbox from '../components/Lightbox.astro';
 
-const { title, description, ogImage, noindex = false, schemas } = Astro.props;
+const { title, description, ogImage, noindex = false, schemas, bare = false } = Astro.props;
 const pageTitle = title || site.metaTitle;
 const desc = description || site.metaDescription;
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const ogImg = new URL(ogImage || site.ogImage, site.url).href;
-
-/* JSON-LD: puslapis gali perduoti savo schemas; numatyta — LocalBusiness (NAP+
-   reitingas+paslaugos). GEO §8: kiekvienas puslapis aiškiai apibrėžia KAS/KĄ/KUR. */
 const schemaList = schemas && schemas.length ? schemas : [localBusiness()];
+const robots = PREVIEW || noindex ? 'noindex, nofollow' : null;
+const B = '/assets/arbcut-upgrade-brand';
 ---
 <!doctype html>
 <html lang="lt">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{pageTitle}</title>
     <meta name="description" content={desc} />
-    <meta name="jw-site" content="arbcut" />
     <link rel="canonical" href={canonical} />
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {robots && <meta name="robots" content={robots} />}
+    {!PREVIEW && <meta name="jw-site" content="arbcut" />}
 
     <meta property="og:site_name" content="ArbCut" />
     <meta property="og:title" content={pageTitle} />
@@ -31,30 +35,29 @@ const schemaList = schemas && schemas.length ? schemas : [localBusiness()];
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="lt_LT" />
     <meta property="og:image" content={ogImg} />
-    <meta property="og:image:alt" content="ArbCut — medžių priežiūra ir aukštuminiai darbai" />
-
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={pageTitle} />
-    <meta name="twitter:description" content={desc} />
-    <meta name="twitter:image" content={ogImg} />
 
-    <meta name="theme-color" content="#15402B" />
-    <meta name="geo.region" content="LT" />
-    <meta name="geo.placename" content="Kaunas, Lietuva" />
+    <meta name="theme-color" content="#1d3227" />
+    <link rel="icon" href={`${B}/favicon.ico`} sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href={`${B}/favicon-32.png`} />
+    <link rel="icon" type="image/png" sizes="16x16" href={`${B}/favicon-16.png`} />
+    <link rel="apple-touch-icon" href={`${B}/apple-touch-icon.png`} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-    {schemaList.map((s) => (
-      <script type="application/ld+json" set:html={JSON.stringify(s)} />
-    ))}
+    {schemaList.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    <script is:inline>document.documentElement.classList.add('js');</script>
   </head>
   <body>
     <a href="#main" class="skip-link">Pereiti prie turinio</a>
-    <slot />
+    {!bare && <Header />}
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    {!bare && <Footer />}
+    <QuoteDialog />
+    <Lightbox />
+    <MobileActions />
     <script src="../scripts/site.js"></script>
-    <script>import '../scripts/inquiry-track.ts';</script>
+    {!PREVIEW && <script>import '../scripts/inquiry-track.ts';</script>}
+    {!PREVIEW && <script is:inline src="https://js.hcaptcha.com/1/api.js" async defer></script>}
   </body>
 </html>

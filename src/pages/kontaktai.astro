@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '@data/site.js';
+import { vietoves } from '@data/vietoves.js';
+import { localBusiness, breadcrumbs } from '@data/jsonld.js';
+---
+<BaseLayout
+  title="Kontaktai — ArbCut, Kaunas · +370 603 66901"
+  description="Susisiekite su ArbCut: +370 603 66901, aukstuminiai.darbai@yahoo.com. Kasdien 08:00–18:00. Bazė Kaune, išvykstame ir į kitus miestus."
+  schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Kontaktai', path: '/kontaktai' }])]}
+>
+  <PageHero title="Kontaktai" kicker="Susisiekite" lead="Greičiausia — paskambinti. Jei patogiau rašyti, užpildykite formą ir, jei galite, atsiųskite nuotraukų el. paštu." crumbs={[{ label: 'Kontaktai' }]} actions={false} />
+  <section class="sec">
+    <div class="wrap ct">
+      <div class="ct__info">
+        <a class="ct__big" href={site.telefonasHref} data-loc="contact-call"><Icon name="phone" size={28} /><span><small>Telefonas</small>{site.telefonas}</span></a>
+        <a class="ct__row" href={`mailto:${site.elPastas}`}><Icon name="mail" size={20} /><span><small>El. paštas</small>{site.elPastas}</span></a>
+        <div class="ct__row"><Icon name="clock" size={20} /><span><small>Darbo laikas</small>Kasdien 08:00–18:00</span></div>
+        <div class="ct__row"><Icon name="pin" size={20} /><span><small>Bazė</small>Kaunas, Kauno apskritis. Išvykstame ir į kitus miestus.</span></div>
+        <div class="ct__links">
+          <a class="link-arrow" href={site.facebook} target="_blank" rel="noopener">Facebook <Icon name="external" size={14} /></a>
+          <a class="link-arrow" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">Paslaugos.lt profilis <Icon name="external" size={14} /></a>
+        </div>
+        <div class="ct__towns">
+          <p class="kicker">Miestai</p>
+          <p>{vietoves.map((v, i) => <><a href={`/${v.slug}`}>{v.miestas}</a>{i < vietoves.length - 1 ? ' · ' : ''}</>)}</p>
+        </div>
+      </div>
+      <div class="panel ct__form">
+        <h2>Užklausa</h2>
+        <p class="mute">Atsakome darbo valandomis. Skubiu atveju skambinkite.</p>
+        <QuoteForm id="contact-form" prefix="c" />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+<style>
+  .ct { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .ct__info { display: grid; gap: 0; border-top: 2px solid var(--ink); }
+  .ct__big, .ct__row { display: flex; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .ct__big { font-family: var(--serif); font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.3rem); font-weight: 650; align-items: center; }
+  .ct__big:hover { color: var(--timber); }
+  .ct__row { font-weight: 560; word-break: break-word; }
+  .ct small { display: block; font-family: var(--sans); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); margin-bottom: 2px; }
+  .ct__row svg, .ct__big svg { flex: 0 0 auto; margin-top: 4px; color: var(--timber); }
+  .ct__links { display: flex; gap: 24px; flex-wrap: wrap; padding: 18px 0; }
+  .ct__towns { padding-top: 8px; display: grid; gap: 8px; }
+  .ct__towns a { text-decoration: underline; text-underline-offset: 3px; }
+  .ct__form { display: grid; gap: 12px; border-top: 6px solid var(--ink); }
+  .ct__form h2 { font-size: 1.8rem; }
+  @media (max-width: 960px) { .ct { grid-template-columns: 1fr; } }
+</style>

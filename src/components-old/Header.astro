@@ -1,0 +1,81 @@
+---
+/* 4.1 Lipnus header — du būsenos (virš hero / scrolled). Logika site.js. */
+const nav = [
+  { href: '/#paslaugos', label: 'Paslaugos' },
+  { href: '/galerija', label: 'Galerija' },
+  { href: '/#apie', label: 'Apie' },
+  { href: '/#duk', label: 'DUK' },
+  { href: '/#kontaktai', label: 'Kontaktai' },
+];
+---
+<header class="site-header" id="top" role="banner">
+  <div class="site-header__inner container">
+    <a href="/" class="site-header__logo" aria-label="ArbCut — į pradžią">
+      <img src="/assets/logo-horizontal-light.svg" alt="ArbCut" class="site-header__logo-img site-header__logo--light" width="168" height="48" />
+      <img src="/assets/logo-horizontal.svg" alt="" class="site-header__logo-img site-header__logo--dark" width="168" height="48" aria-hidden="true" />
+    </a>
+
+    <nav class="site-nav" aria-label="Pagrindinis meniu">
+      <ul class="site-nav__list" role="list">
+        {nav.map((n) => <li><a href={n.href} class="site-nav__link">{n.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <button type="button" class="btn btn--call site-header__cta" data-modal-trigger aria-haspopup="dialog">Palikti užklausą</button>
+
+    <button class="hamburger" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="hamburger__bar"></span><span class="hamburger__bar"></span><span class="hamburger__bar"></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobilusis meniu" hidden>
+  <nav class="mobile-menu__nav">
+    <ul class="mobile-menu__list" role="list">
+      {nav.map((n) => <li><a href={n.href} class="mobile-menu__link">{n.label}</a></li>)}
+    </ul>
+    <button type="button" class="btn btn--call btn--large mobile-menu__cta" data-modal-trigger aria-haspopup="dialog">Palikti užklausą</button>
+  </nav>
+</div>
+
+<style>
+  .site-header { position: fixed; inset: 0 0 auto 0; z-index: 1000; height: var(--header-height); transition: background var(--t-slow), box-shadow var(--t-slow), border-color var(--t-slow); border-bottom: 1px solid transparent; }
+  .site-header.is-scrolled { background: rgba(244,239,230,0.95); backdrop-filter: blur(12px); border-bottom-color: var(--color-border); }
+  .site-header__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: var(--space-5); }
+
+  .site-header__logo { display: inline-flex; align-items: center; }
+  .site-header__logo-img { height: 42px; width: auto; }
+  .site-header__logo--dark { display: none; }
+  .is-scrolled .site-header__logo--light { display: none; }
+  .is-scrolled .site-header__logo--dark { display: block; }
+
+  .site-nav__list { display: flex; align-items: center; gap: var(--space-2); }
+  .site-nav__link { position: relative; padding: 8px 12px; font-weight: 500; color: var(--color-text-light); text-shadow: 0 1px 8px rgba(0,0,0,0.4); transition: color var(--t-base); }
+  .is-scrolled .site-nav__link { color: var(--color-forest); text-shadow: none; }
+  .site-nav__link::after { content: ''; position: absolute; left: 12px; right: 12px; bottom: 2px; height: 2px; background: var(--color-rust); transform: scaleX(0); transform-origin: left; transition: transform var(--t-base); }
+  .site-nav__link:hover::after, .site-nav__link.is-active::after { transform: scaleX(1); }
+
+  .site-header__cta { padding: 11px 20px; font-size: 0.95rem; }
+
+  /* Burgeris — 3 brūkšniai, animuojasi į X (aria-expanded) */
+  .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
+  .hamburger__bar { width: 26px; height: 3px; background: var(--color-text-light); border-radius: 2px; transform-origin: center; transition: transform var(--t-base), opacity var(--t-base), background var(--t-base); }
+  .is-scrolled .hamburger__bar { background: var(--color-forest); }
+  .hamburger[aria-expanded="true"] .hamburger__bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger[aria-expanded="true"] .hamburger__bar:nth-child(2) { opacity: 0; }
+  .hamburger[aria-expanded="true"] .hamburger__bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  /* Išskleidžiamas (dropdown) meniu po headeriu */
+  .mobile-menu { position: fixed; top: var(--header-height); left: 0; right: 0; z-index: 999; background: rgba(244,239,230,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border); box-shadow: var(--shadow-card); padding: var(--space-3) var(--gutter) var(--space-5); display: none; }
+  .mobile-menu.is-open { display: block; animation: menuDrop 0.22s ease both; }
+  @keyframes menuDrop { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
+  .mobile-menu__list { display: flex; flex-direction: column; }
+  .mobile-menu__link { display: block; padding: 14px 6px; font-family: var(--font-display); font-size: 1.2rem; text-transform: uppercase; color: var(--color-forest); border-bottom: 1px solid var(--color-border); transition: color var(--t-base); }
+  .mobile-menu__link:hover, .mobile-menu__link:active { color: var(--color-rust); }
+  .mobile-menu__cta { width: 100%; margin-top: var(--space-4); }
+
+  @media (max-width: 860px) {
+    .site-nav, .site-header__cta { display: none; }
+    .hamburger { display: flex; }
+  }
+</style>

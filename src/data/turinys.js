@@ -7,7 +7,7 @@ export const apie = {
   eyebrow: 'APIE MUS',
   antraste: 'ARBCUT — medžių priežiūros meistrai',
   lead:
-    'Kvalifikuotas arboristas aukštalipys su komanda esame pasiruošę jums padėti! Nupjausime, susmulkinsime, šakas sudėsime krūvomis, panaikinsime kelmą, sutvarkysime aplinką, viską galime išvežti.',
+    'Kvalifikuotas arboristas aukštalipys su komanda esame pasiruošę jums padėti! Nupjausime, šakas sudėsime krūvomis, panaikinsime kelmą, sutvarkysime aplinką, viską galime išvežti.',
   detail:
     'Pavojų keliančių avarinių medžių pjovimas prie pastatų ar elektros laidų ir kitų kliūčių. Medžių pjovimas, genėjimas ir medžių lajos formavimas aukštyje arboristiniu būdu naudojant alpinistinę įrangą arba autobokštelį kurį turime savo. Medžių lajos stabilizavimo sistemų montavimas ir priežiūra. Kelmų naikinimas, šalinimas — frezavimas ar išrovimas. Nuosavu autobokšteliu galime atlikti įvairius darbus iki 20 metrų, aukščiau naudojant alpinistinę įrangą.',
 };
@@ -49,7 +49,7 @@ export const kodel = [
   },
   {
     antraste: 'Švariai',
-    tekstas: 'Po darbų galime išvešti šakas ir medieną, sutvarkyti aplinką pagal jūsų poreikius ir susitarimą.',
+    tekstas: 'Po darbų galime išvežti šakas ir medieną, sutvarkyti aplinką pagal jūsų poreikius ir susitarimą.',
     ikona: 'svariai',
   },
   {
@@ -61,8 +61,8 @@ export const kodel = [
 
 export const duk = [
   {
-    klausimas: 'Ar dirbate visoje Lietuvoje?',
-    atsakymas: 'Taip, išvykstame į visus Lietuvos regionus. Didesniems objektams sutariame individualiai.',
+    klausimas: 'Kur dirbate?',
+    atsakymas: 'Mūsų bazė — Kaunas, dažniausiai dirbame Kaune ir Kauno apskrityje. Išvykstame ir į kitus Lietuvos miestus; tolimesnį išvykimą suderiname iš anksto, o kelių kaimynų darbus galime atlikti per vieną atvykimą.',
   },
   {
     klausimas: 'Ar galite dirbti prie elektros linijų?',
@@ -71,11 +71,11 @@ export const duk = [
   {
     klausimas: 'Ar išsivežate medieną ir šakas?',
     atsakymas:
-      'Taip, po darbų galime sutvarkyti teritoriją, išvešti šakas ir medieną Kaune ir Kauno rajone pagal jūsų poreikius ir susitarimą. Toliau už Kauno rajono nupjauname ir paliekame šakas bei medieną krūvoje.',
+      'Taip, po darbų galime sutvarkyti teritoriją, išvežti šakas ir medieną Kaune ir Kauno rajone pagal jūsų poreikius ir susitarimą. Toliau už Kauno rajono nupjauname ir paliekame šakas bei medieną krūvoje.',
   },
   {
-    klausimas: 'Koks yra darbų įkainis?',
-    atsakymas: 'Kaina priklauso nuo darbų apimties ir sudėtingumo. Susisiekite — pateiksime individualų pasiūlymą.',
+    klausimas: 'Kiek kainuoja medžio pašalinimas?',
+    atsakymas: 'Medžių pjovimas ir genėjimas — nuo 50 €, kelmų frezavimas — nuo 75 €, išvežimas — nuo 80 €. Galutinė kaina priklauso nuo medžio dydžio, vietos, prieigos ir išvežimo. Darbą įvertiname vietoje arba pagal nuotraukas ar vaizdo įrašą.',
   },
   {
     klausimas: 'Ar dirbate savaitgaliais?',

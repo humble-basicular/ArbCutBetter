@@ -1,62 +1,59 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Header from '@components/Header.astro';
-import PageHero from '@components/PageHero.astro';
-import CtaBand from '@components/CtaBand.astro';
-import Footer from '@components/Footer.astro';
-import StickyCall from '@components/StickyCall.astro';
-import InquiryModal from '@components/InquiryModal.astro';
-import ChatWidget from '@components/ChatWidget.astro';
-import Lightbox from '@components/Lightbox.astro';
-import { galerijaVisos } from '@data/galerija.js';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Sequences from '../components/Sequences.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { galerijosKategorijos, galerijosAlt } from '@data/paslaugu-turinys.js';
 import { localBusiness, breadcrumbs } from '@data/jsonld.js';
-
-const title = 'Darbų galerija — ArbCut | Medžių pjovimas ir aukštuminiai darbai';
-const description = 'ArbCut atliktų darbų nuotraukos: pavojingų medžių pjovimas, genėjimas, kelmų naikinimas ir aukštuminiai darbai su autobokšteliu visoje Lietuvoje.';
-const schemas = [
-  localBusiness(),
-  breadcrumbs([
-    { name: 'Pradžia', path: '/' },
-    { name: 'Galerija', path: '/galerija' },
-  ]),
-];
+const G = (n) => `/assets/images/galerija/galerija-${String(n).padStart(2, '0')}.jpg`;
+const tiles = galerijosKategorijos.flatMap((k) => k.nr.map((n) => ({ src: G(n), cat: k.id, alt: galerijosAlt[k.id] })));
 ---
-<BaseLayout title={title} description={description} schemas={schemas}>
-  <Header />
-  <main id="main">
-    <PageHero
-      eyebrow="Mūsų darbai"
-      title="Darbų galerija"
-      subtitle={`${galerijaVisos.length} realios atliktų darbų nuotraukos — medžių pjovimas, genėjimas, kelmų naikinimas ir aukštuminiai darbai.`}
-      crumbs={[{ name: 'Pradžia', path: '/' }, { name: 'Galerija' }]}
-    />
+<BaseLayout
+  title="Atlikti darbai: medžių pjovimas ir darbai aukštyje | ArbCut"
+  description="Realios ArbCut darbų nuotraukos: pavojingų medžių pjovimas dalimis, audros padariniai, darbai aukštyje, kelmų frezavimas ir gyvatvorės."
+  schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Darbai', path: '/galerija' }])]}
+>
+  <PageHero title="Atlikti darbai" kicker="Realios nuotraukos" lead="Nuotraukos iš mūsų darbų — be stockinių vaizdų. Pirmiausia trys darbai nuo pradžios iki pabaigos, žemiau — visa galerija pagal darbų tipą." crumbs={[{ label: 'Darbai' }]} />
 
-    <section class="section section--card-bg" aria-label="Visos darbų nuotraukos">
-      <div class="gallery-page__grid" role="list">
-        {galerijaVisos.map((g, i) => (
-          <button class="gallery__item" class:list={[{ 'gallery__item--tall': g.tall }]} role="listitem"
-            data-src={g.src} data-caption={g.caption} aria-label={`Atidaryti nuotrauką ${i + 1}: ${g.alt}`}>
-            <img src={g.src} alt={`${g.alt} ${i + 1}`} loading="lazy" class="grain-photo" />
-          </button>
-        ))}
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Darbo eiga</p><h2>Nuo pradžios iki sutvarkytos vietos</h2></div>
+      <Sequences />
+    </div>
+  </section>
+
+  <section class="sec sec--white rule-top">
+    <div class="wrap">
+      <div class="sec-head sec-head--split">
+        <div><p class="kicker">Galerija</p><h2>Visos nuotraukos</h2></div>
+        <p class="mute"><span data-gallery-count>{tiles.length}</span> nuotr.</p>
       </div>
-    </section>
-
-    <CtaBand />
-  </main>
-  <Footer />
-  <StickyCall />
-  <InquiryModal />
-  <ChatWidget />
-  <Lightbox />
+      <div class="flt" role="group" aria-label="Rodyti nuotraukas">
+        <button type="button" data-filter="visi" aria-pressed="true">Visos</button>
+        {galerijosKategorijos.map((k) => <button type="button" data-filter={k.id} aria-pressed="false">{k.pavadinimas} <small>{k.nr.length}</small></button>)}
+      </div>
+      <ul role="list" class="gal" data-lb-group>
+        {tiles.map((t) => (
+          <li data-cat={t.cat}>
+            <button type="button" data-lightbox={t.src} data-caption={t.alt} aria-label={`Padidinti: ${t.alt}`}>
+              <img src={t.src} alt={t.alt} width="283" height="230" loading="lazy" decoding="async" />
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  <CtaBand />
 </BaseLayout>
-
 <style>
-  .gallery-page__grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: 12px; max-width: var(--max-width); margin: 0 auto; padding-inline: var(--gutter); }
-  .gallery__item { position: relative; overflow: hidden; border-radius: var(--radius); cursor: pointer; background: var(--color-forest-deep); }
-  .gallery__item--tall { grid-row: span 2; }
-  .gallery__item img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--t-slow); }
-  .gallery__item:hover img { transform: scale(1.06); }
-  @media (max-width: 1023px) { .gallery-page__grid { grid-template-columns: repeat(3, 1fr); } .gallery__item--tall { grid-row: span 1; } }
-  @media (max-width: 680px) { .gallery-page__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; } }
+  .flt { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .flt button { min-height: 44px; padding: 8px 16px; border: 1px solid var(--line); background: var(--paper); font-weight: 600; }
+  .flt button small { color: var(--mute); font-weight: 500; margin-left: 4px; }
+  .flt button[aria-pressed='true'] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .flt button[aria-pressed='true'] small { color: var(--mute-light); }
+  .gal { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(46%, 200px), 1fr)); gap: 10px; }
+  .gal li[hidden] { display: none; }
+  .gal button { display: block; width: 100%; aspect-ratio: 283 / 230; overflow: hidden; background: var(--paper-2); }
+  .gal img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+  .gal button:hover img { transform: scale(1.04); }
 </style>

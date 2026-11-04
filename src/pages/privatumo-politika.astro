@@ -1,10 +1,6 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Header from '@components/Header.astro';
-import PageHero from '@components/PageHero.astro';
-import Footer from '@components/Footer.astro';
-import StickyCall from '@components/StickyCall.astro';
-import InquiryModal from '@components/InquiryModal.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
 import { site } from '@data/site.js';
 import { breadcrumbs } from '@data/jsonld.js';
 
@@ -13,12 +9,9 @@ const description = 'Kaip ArbCut renka ir naudoja per svetainės užklausos form
 const schemas = [breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Privatumo politika', path: '/privatumo-politika' }])];
 ---
 <BaseLayout title={title} description={description} noindex={true} schemas={schemas}>
-  <Header />
-  <main id="main">
-    <PageHero eyebrow="Teisinė informacija" title="Privatumo politika"
-      crumbs={[{ name: 'Pradžia', path: '/' }, { name: 'Privatumo politika' }]} />
-    <section class="section section--cream">
-      <div class="container legal prose">
+    <PageHero kicker="Teisinė informacija" title="Privatumo politika" crumbs={[{ label: 'Privatumo politika' }]} actions={false} />
+    <section class="sec">
+      <div class="wrap"><div class="prose">
         <p><em>Atnaujinta: 2026 m.</em></p>
         <p>Ši privatumo politika paaiškina, kaip {site.pavadinimas} ({site.savininkas}) tvarko asmens duomenis, pateiktus per šios svetainės užklausos formą ar susisiekus telefonu bei el. paštu.</p>
 
@@ -44,25 +37,12 @@ const schemas = [breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Privatum
         <p>Galite bet kada kreiptis ir paprašyti susipažinti su savo duomenimis, juos ištaisyti arba ištrinti. Tam susisiekite: <a href={site.telefonasHref} data-loc="privacy-rights">{site.telefonas}</a> arba <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a>.</p>
 
         <h2>Slapukai</h2>
-        <p>Svetainė nenaudoja sekimo ar rinkodaros slapukų. Funkciniai trečiųjų šalių komponentai (pvz. „hCaptcha", „Google Fonts") gali naudoti techninius slapukus savo veikimui užtikrinti.</p>
+        <p>Svetainė nenaudoja sekimo ar rinkodaros slapukų. Funkciniai trečiųjų šalių komponentai (pvz. „hCaptcha") gali naudoti techninius slapukus savo veikimui užtikrinti.</p>
         <p>Anonimiškai skaičiuojame, kiek kartų paspaudžiamas skambučio mygtukas, atidaroma ir išsiunčiama užklausos forma (puslapis, mygtuko vieta, ar atėjote iš paieškos, ir ar įrenginys mobilus). Nenaudojame slapukų, nefiksuojame IP adreso ir jokių asmens duomenų.</p>
 
         <h2>Kontaktai</h2>
         <p>{site.pavadinimas}, {site.savininkas}<br />Tel.: <a href={site.telefonasHref} data-loc="privacy-contact">{site.telefonas}</a><br />El. paštas: <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
-      </div>
+      </div></div>
     </section>
-  </main>
-  <Footer />
-  <StickyCall />
-  <InquiryModal />
 </BaseLayout>
 
-<style>
-  .legal { max-width: 760px; }
-  .prose h2 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); color: var(--color-forest); margin: var(--space-6) 0 var(--space-3); text-transform: uppercase; }
-  .prose p { margin-bottom: var(--space-4); line-height: 1.8; }
-  .prose ul { margin: 0 0 var(--space-4) var(--space-5); display: grid; gap: 8px; }
-  .prose li { list-style: disc; }
-  .prose a { color: var(--color-rust); font-weight: 600; }
-  .prose strong { color: var(--color-forest); }
-</style>

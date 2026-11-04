@@ -1,104 +1,62 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Header from '@components/Header.astro';
-import PageHero from '@components/PageHero.astro';
-import CtaBand from '@components/CtaBand.astro';
-import Footer from '@components/Footer.astro';
-import StickyCall from '@components/StickyCall.astro';
-import InquiryModal from '@components/InquiryModal.astro';
-import ChatWidget from '@components/ChatWidget.astro';
-import Icon from '@components/Icon.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Icon from '../../components/Icon.astro';
 import { straipsniai } from '@data/straipsniai.js';
-import { site } from '@data/site.js';
 import { localBusiness, articleSchema, faqPage, breadcrumbs } from '@data/jsonld.js';
 
 export function getStaticPaths() {
   return straipsniai.map((s) => ({ params: { slug: s.slug }, props: { s } }));
 }
 const { s } = Astro.props;
-const kiti = straipsniai.filter((x) => x.slug !== s.slug).slice(0, 2);
-
-const title = `${s.title} | ArbCut`;
+const kiti = straipsniai.filter((x) => x.slug !== s.slug);
+const fmt = new Date(s.data).toLocaleDateString('lt-LT', { year: 'numeric', month: 'long', day: 'numeric' });
 const schemas = [
   localBusiness(),
   articleSchema(s),
   ...(s.duk && s.duk.length ? [faqPage(s.duk)] : []),
-  breadcrumbs([
-    { name: 'Pradžia', path: '/' },
-    { name: 'Tinklaraštis', path: '/tinklarastis' },
-    { name: s.title, path: `/tinklarastis/${s.slug}` },
-  ]),
+  breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Tinklaraštis', path: '/tinklarastis' }, { name: s.title, path: `/tinklarastis/${s.slug}` }]),
 ];
 ---
-<BaseLayout title={title} description={s.aprasymas} schemas={schemas}>
-  <Header />
-  <main id="main">
-    <PageHero
-      eyebrow={`Tinklaraštis · ${s.skaitymas}`}
-      title={s.title}
-      crumbs={[{ name: 'Pradžia', path: '/' }, { name: 'Tinklaraštis', path: '/tinklarastis' }, { name: s.title }]}
-    />
-
-    <section class="section section--cream">
-      <div class="container article">
-        <article class="article__body prose js-reveal-scroll" set:html={s.turinys} />
-
-        {s.duk && s.duk.length > 0 && (
-          <div class="article__faq js-reveal-scroll">
-            <h2>Dažni klausimai</h2>
-            {s.duk.map((q) => (
-              <details class="article__faq-item">
-                <summary>{q.klausimas}</summary>
-                <p>{q.atsakymas}</p>
-              </details>
-            ))}
+<BaseLayout title={`${s.title} | ArbCut`} description={s.aprasymas} schemas={schemas}>
+  <PageHero title={s.title} kicker={`${fmt} · ${s.skaitymas}`} crumbs={[{ label: 'Tinklaraštis', href: '/tinklarastis' }, { label: s.title }]} actions={false} />
+  <section class="sec">
+    <div class="wrap art">
+      <article class="prose" set:html={s.turinys} />
+      <aside class="art__side">
+        <div class="panel">
+          <p class="serif art__q">Turite klausimą apie savo medį?</p>
+          <p class="mute">Atsiųskite nuotrauką arba paskambinkite.</p>
+          <div class="art__btns">
+            <a class="btn btn--primary" href="tel:+37060366901" data-loc="blog-cta"><Icon name="phone" size={18} /> +370 603 66901</a>
+            <button type="button" class="btn btn--line" data-quote>Gauti kainą</button>
           </div>
-        )}
-
-        <div class="article__cta js-reveal-scroll">
-          <p>Turite klausimą apie savo medį?</p>
-          <a href={site.telefonasHref} data-loc="blog-cta" class="btn btn--call btn--large"><Icon name="telefonas" size={20} stroke={2.5} /> Skambinti {site.telefonas}</a>
         </div>
-
-        {kiti.length > 0 && (
-          <div class="article__more js-reveal-scroll">
-            <h2>Skaitykite taip pat</h2>
-            <ul role="list">
-              {kiti.map((k) => (
-                <li><a href={`/tinklarastis/${k.slug}`}><Icon name="rodykle" size={16} stroke={2.5} /> {k.title}</a></li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-    </section>
-
-    <CtaBand />
-  </main>
-  <Footer />
-  <StickyCall />
-  <InquiryModal />
-  <ChatWidget />
+      </aside>
+    </div>
+  </section>
+  {s.duk && s.duk.length > 0 && (
+    <section class="sec sec--white rule-top"><div class="wrap art2"><h2>Dažni klausimai</h2><Faq items={s.duk} /></div></section>
+  )}
+  <section class="sec">
+    <div class="wrap">
+      <p class="kicker">Skaitykite taip pat</p>
+      <ul role="list" class="more">{kiti.map((k) => <li><a href={`/tinklarastis/${k.slug}`}>{k.title}<Icon name="arrow" size={16} /></a></li>)}</ul>
+    </div>
+  </section>
+  <CtaBand />
 </BaseLayout>
-
 <style>
-  .article { max-width: 760px; }
-  .prose :global(h2) { font-size: clamp(1.5rem, 2.4vw, 2rem); color: var(--color-forest); margin: var(--space-7) 0 var(--space-4); text-transform: uppercase; }
-  .prose :global(p) { margin-bottom: var(--space-4); font-size: 1.1rem; line-height: 1.8; color: var(--color-text); }
-  .prose :global(ul) { margin: 0 0 var(--space-5) var(--space-5); display: grid; gap: 10px; }
-  .prose :global(li) { list-style: disc; font-size: 1.08rem; line-height: 1.7; padding-left: 4px; }
-  .prose :global(strong) { color: var(--color-forest); }
-
-  .article__faq { margin-top: var(--space-8); }
-  .article__faq h2 { font-size: 1.6rem; color: var(--color-forest); margin-bottom: var(--space-4); text-transform: uppercase; }
-  .article__faq-item { border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--space-4) var(--space-5); margin-bottom: var(--space-3); background: var(--color-bg-card); }
-  .article__faq-item summary { font-weight: 700; color: var(--color-forest); cursor: pointer; }
-  .article__faq-item p { margin-top: var(--space-3); color: var(--color-text-muted); }
-
-  .article__cta { margin-top: var(--space-8); text-align: center; background: var(--color-bg-sand); border-radius: var(--radius); padding: var(--space-7); }
-  .article__cta p { font-family: var(--font-display); font-size: 1.5rem; color: var(--color-forest); margin-bottom: var(--space-4); text-transform: uppercase; }
-
-  .article__more { margin-top: var(--space-8); }
-  .article__more h2 { font-size: 1.3rem; color: var(--color-forest); margin-bottom: var(--space-4); text-transform: uppercase; }
-  .article__more a { display: inline-flex; align-items: center; gap: 8px; color: var(--color-rust); font-weight: 600; padding: 6px 0; }
+  .art { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .art .prose { font-size: 1.1rem; }
+  .art__side { position: sticky; top: calc(var(--header-h) + 20px); }
+  .art__q { font-size: 1.3rem; font-weight: 620; margin-bottom: 6px; }
+  .art__btns { display: grid; gap: 10px; margin-top: 16px; }
+  .art2 { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 40px; }
+  .more { border-top: 2px solid var(--ink); margin-top: 12px; }
+  .more a { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.2rem; font-weight: 600; }
+  .more a:hover { color: var(--timber); }
+  @media (max-width: 960px) { .art, .art2 { grid-template-columns: 1fr; } .art__side { position: static; } }
 </style>

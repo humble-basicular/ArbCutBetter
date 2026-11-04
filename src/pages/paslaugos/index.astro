@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import ServiceIndex from '../../components/ServiceIndex.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { localBusiness, breadcrumbs } from '@data/jsonld.js';
+---
+<BaseLayout
+  title="Paslaugos: medžių pjovimas, genėjimas, kelmai, autobokštelis | ArbCut"
+  description="Visos ArbCut paslaugos: pavojingų medžių pjovimas, audros padariniai, genėjimas, lajos stabilizavimas, kelmų frezavimas, išvežimas, gyvatvorės ir darbai aukštyje iki 20 m."
+  schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Paslaugos', path: '/paslaugos' }])]}
+>
+  <PageHero
+    title="Paslaugos"
+    kicker="Medžiai ir darbai aukštyje"
+    lead="Dvylika paslaugų, kurias atliekame patys: nuo vieno pavojingo medžio prie namo iki latakų valymo autobokšteliu. Pasirinkite paslaugą — rasite, kada kreiptis, kaip dirbame ir kas lemia kainą."
+    crumbs={[{ label: 'Paslaugos' }]}
+  />
+  <section class="sec"><div class="wrap"><ServiceIndex /></div></section>
+  <CtaBand title="Nerandate savo atvejo?" text="Papasakokite, ką reikia padaryti aukštyje ar su medžiu — dažniausiai sprendimą randame." />
+</BaseLayout>

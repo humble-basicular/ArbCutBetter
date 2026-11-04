@@ -1,0 +1,12 @@
+---
+/* DUK — natūralus <details>, veikia ir be JS. */
+const { items = [] } = Astro.props;
+---
+<div class="faq">
+  {items.map((q) => (
+    <details>
+      <summary>{q.klausimas}</summary>
+      <div class="faq-a"><p>{q.atsakymas}{q.nuoroda && <> <a href={q.nuoroda}>Skaityti plačiau</a></>}</p></div>
+    </details>
+  ))}
+</div>

@@ -1,0 +1,17 @@
+---
+import { site } from '@data/site.js';
+import Icon from './Icon.astro';
+---
+<div class="mact" aria-label="Greiti veiksmai">
+  <a class="mact__call" href={site.telefonasHref} data-loc="sticky-call"><Icon name="phone" size={20} /> Skambinti</a>
+  <button type="button" class="mact__quote" data-quote>Gauti kainą</button>
+</div>
+<style>
+  .mact { display: none; }
+  @media (max-width: 860px) {
+    .mact { position: fixed; left: 0; right: 0; bottom: 0; z-index: 800; display: grid; grid-template-columns: 1fr 1fr; padding-bottom: env(safe-area-inset-bottom); background: var(--ink-2); box-shadow: 0 -6px 18px rgba(0,0,0,.18); }
+    .mact a, .mact button { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 60px; font-weight: 700; font-size: 1.02rem; }
+    .mact__call { background: var(--timber); color: #fff; }
+    .mact__quote { color: var(--paper); }
+  }
+</style>

@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Photo from '../components/Photo.astro';
+import Reviews from '../components/Reviews.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '@data/site.js';
+import { atsiliepimuKiekis, patirtisMetai } from '@data/atsiliepimai.js';
+import { atrinkti } from '@data/atrinkti.js';
+import { localBusiness, breadcrumbs } from '@data/jsonld.js';
+const reviews = atrinkti({ n: 3, min: 200, max: 700 }).slice(0, 3);
+---
+<BaseLayout
+  title="Apie ArbCut — arboristas aukštalipys Mantas Gerulis su komanda"
+  description="ArbCut — arboristas aukštalipys Mantas Gerulis su komanda. Alpinistinė įranga, nuosavas autobokštelis iki 20 m, bazė Kaune. 122 atsiliepimai Paslaugos.lt."
+  schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Apie', path: '/apie' }])]}
+>
+  <PageHero
+    title="Mantas Gerulis ir ArbCut komanda"
+    kicker="Apie mus"
+    lead={`Esame arboristai aukštalipiai iš Kauno. Pjauname, genime ir prižiūrime medžius ten, kur reikia lipti ar dirbti aukštyje — prie namų, laidų, kapinėse ir ankštuose kiemuose. Paslaugos.lt profilyje nurodyta ${patirtisMetai} metų patirtis.`}
+    crumbs={[{ label: 'Apie' }]}
+    photo="mantas-portretas"
+    photoAlt="Mantas Gerulis su arboristo įranga"
+    photoPos="50% 20%"
+  />
+
+  <section class="sec">
+    <div class="wrap ab">
+      <div class="ab__txt">
+        <h2>Kaip dirbame</h2>
+        <p class="lead">Už darbą nuo pirmo skambučio iki sutvarkyto kiemo atsakome patys. Telefonu kalbatės su Mantu, o darbus jis atlieka kartu su komanda.</p>
+        <dl class="vals">
+          <div><dt>Saugiai</dt><dd>Medžius prie pastatų ir laidų pjauname dalimis ir nuleidžiame virvėmis. Dirbame su profesionalia alpinizmo įranga.</dd></div>
+          <div><dt>Atsakingai</dt><dd>Kainą ir darbų apimtį sutariame iš anksto. Klientai atsiliepimuose dažnai mini, kad darbai atlikti už sutartą kainą.</dd></div>
+          <div><dt>Tvarkingai</dt><dd>Po darbų surenkame šakas ir sutvarkome aplinką. Kaune ir Kauno rajone medieną išvežame.</dd></div>
+          <div><dt>Operatyviai</dt><dd>Kasdien 08:00–18:00, įskaitant savaitgalius. Po audrų stengiamės atvykti kuo greičiau.</dd></div>
+        </dl>
+      </div>
+      <div class="ab__ph">
+        <div class="ph"><Photo name="du-arboristai-lajoje" alt="Du ArbCut arboristai dirba didelio medžio lajoje" sizes="(max-width: 860px) 50vw, 22vw" position="50% 35%" /></div>
+        <div class="ph"><Photo name="maumedis-ziema" alt="Arboristas pjauna aukštą medį žiemą" sizes="(max-width: 860px) 50vw, 22vw" position="50% 25%" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--ink on-dark">
+    <div class="wrap eq">
+      <div class="sec-head">
+        <p class="kicker">Įranga</p>
+        <h2>Su kuo dirbame</h2>
+      </div>
+      <ul role="list" class="eq__list">
+        <li><div class="ph eq__ph"><Photo name="autobokstelis-pusyne" alt="ArbCut autobokštelis tarp aukštų pušų" sizes="(max-width: 860px) 100vw, 30vw" /></div><h3>Nuosavas autobokštelis iki 20 m</h3><p>Medžių pjovimas ir genėjimas, latakai, dažymas, iškabos — be technikos nuomos ir pastolių.</p></li>
+        <li><div class="ph eq__ph"><Photo name="pusis-alpinistas" alt="Arboristas su alpinistine įranga aukštoje pušyje" sizes="(max-width: 860px) 100vw, 30vw" position="50% 25%" /></div><h3>Alpinistinė įranga ir virvės</h3><p>Kai bokštelis neprivažiuoja ar reikia aukščiau nei 20 m — lipame į medį ir nuleidžiame dalis virvėmis.</p></li>
+        <li><div class="ph eq__ph"><img src="/assets/images/galerija/galerija-73.jpg" alt="Fiskaras kraunantis šakas" width="283" height="230" loading="lazy" /></div><h3>Fiskaras išvežimui</h3><p>Kaune ir Kauno rajone šakas ir medieną išvežame patys (talpa nuo 20 m³).</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec sec--paper2">
+    <div class="wrap"><Reviews items={reviews} heading={`${atsiliepimuKiekis} atsiliepimai — keli iš jų`} /></div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap ab2">
+      <div>
+        <p class="kicker">Rekvizitai ir kontaktai</p>
+        <h2>Susisiekite tiesiogiai</h2>
+      </div>
+      <ul role="list" class="ab2__list">
+        <li><span>Telefonas</span><a href={site.telefonasHref} data-loc="about-call">{site.telefonas}</a></li>
+        <li><span>El. paštas</span><a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></li>
+        <li><span>Darbo laikas</span><strong>Kasdien 08:00–18:00</strong></li>
+        <li><span>Bazė</span><strong>Kaunas, Kauno apskritis</strong></li>
+        <li><span>Facebook</span><a href={site.facebook} target="_blank" rel="noopener">MesGalimeTaiPadaryti <Icon name="external" size={14} /></a></li>
+        <li><span>Atsiliepimai</span><a href={site.atsiliepimai.profilis} target="_blank" rel="noopener">Paslaugos.lt profilis <Icon name="external" size={14} /></a></li>
+      </ul>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>
+<style>
+  .ab { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
+  .ab__txt { display: grid; gap: 20px; }
+  .vals { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; margin-top: 8px; }
+  .vals div { padding: 18px 0; border-top: 1px solid var(--line); }
+  .vals dt { font-family: var(--serif); font-weight: 650; font-size: 1.25rem; margin-bottom: 4px; }
+  .vals dd { margin: 0; color: #33443a; font-size: .98rem; }
+  .ab__ph { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .ab__ph .ph { aspect-ratio: 3 / 5; }
+  .ab__ph .ph:last-child { margin-top: 48px; }
+  .eq__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .eq__list li { display: grid; gap: 12px; align-content: start; }
+  .eq__ph { aspect-ratio: 4 / 3; }
+  .eq__ph img { width: 100%; height: 100%; object-fit: cover; }
+  .eq__list p { color: var(--mute-light); }
+  .ab2 { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 72px); }
+  .ab2__list { border-top: 2px solid var(--ink); }
+  .ab2__list li { display: grid; grid-template-columns: 140px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .ab2__list span { color: var(--mute); }
+  .ab2__list a { font-weight: 650; display: inline-flex; gap: 6px; align-items: center; word-break: break-all; }
+  .ab2__list a:hover { color: var(--timber); }
+  @media (max-width: 960px) { .ab, .ab2 { grid-template-columns: 1fr; } .eq__list { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) { .vals { grid-template-columns: 1fr; } .ab2__list li { grid-template-columns: 1fr; gap: 2px; } }
+</style>

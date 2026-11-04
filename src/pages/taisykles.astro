@@ -1,10 +1,6 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Header from '@components/Header.astro';
-import PageHero from '@components/PageHero.astro';
-import Footer from '@components/Footer.astro';
-import StickyCall from '@components/StickyCall.astro';
-import InquiryModal from '@components/InquiryModal.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
 import { site } from '@data/site.js';
 import { breadcrumbs } from '@data/jsonld.js';
 
@@ -13,12 +9,9 @@ const description = 'ArbCut svetainės naudojimosi taisyklės ir bendrosios sąl
 const schemas = [breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Taisyklės', path: '/taisykles' }])];
 ---
 <BaseLayout title={title} description={description} noindex={true} schemas={schemas}>
-  <Header />
-  <main id="main">
-    <PageHero eyebrow="Teisinė informacija" title="Naudojimosi taisyklės"
-      crumbs={[{ name: 'Pradžia', path: '/' }, { name: 'Taisyklės' }]} />
-    <section class="section section--cream">
-      <div class="container legal prose">
+    <PageHero kicker="Teisinė informacija" title="Naudojimosi taisyklės" crumbs={[{ label: 'Naudojimosi taisyklės' }]} actions={false} />
+    <section class="sec">
+      <div class="wrap"><div class="prose">
         <p><em>Atnaujinta: 2026 m.</em></p>
         <p>Šios taisyklės taikomos naudojantis {site.pavadinimas} svetaine. Naudodamiesi svetaine sutinkate su žemiau išdėstytomis sąlygomis.</p>
 
@@ -36,18 +29,7 @@ const schemas = [breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Taisykl�
 
         <h2>Kontaktai</h2>
         <p>{site.pavadinimas}, {site.savininkas}<br />Tel.: <a href={site.telefonasHref} data-loc="terms">{site.telefonas}</a><br />El. paštas: <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
-      </div>
+      </div></div>
     </section>
-  </main>
-  <Footer />
-  <StickyCall />
-  <InquiryModal />
 </BaseLayout>
 
-<style>
-  .legal { max-width: 760px; }
-  .prose h2 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); color: var(--color-forest); margin: var(--space-6) 0 var(--space-3); text-transform: uppercase; }
-  .prose p { margin-bottom: var(--space-4); line-height: 1.8; }
-  .prose a { color: var(--color-rust); font-weight: 600; }
-  .prose strong { color: var(--color-forest); }
-</style>

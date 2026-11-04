@@ -1,0 +1,27 @@
+---
+/* Galutinis CTA prieš formą (konversijos akcentas). Fono nuotrauka + overlay. */
+import { site } from '@data/site.js';
+import Icon from './Icon.astro';
+const bg = '/assets/images/gallery/wrok3.jpg';
+---
+<section class="cta-band" style={`--cta-bg:url('${bg}')`} aria-label="Susisiekite">
+  <div class="container cta-band__inner js-reveal-scroll">
+    <h2 class="cta-band__title">Turite pavojingą ar peraugusį medį? Sutvarkysime.</h2>
+    <p class="cta-band__text">Paskambinkite arba palikite užklausą — įvertinsime ir pasiūlysime aiškią kainą.</p>
+    <div class="cta-band__btns">
+      <a href={site.telefonasHref} data-loc="cta-band" class="btn btn--call btn--large btn--pulse"><Icon name="telefonas" size={20} stroke={2.5} /> Skambinti {site.telefonas}</a>
+      <button type="button" class="btn btn--outline-light btn--large" data-modal-trigger aria-haspopup="dialog">Palikti užklausą</button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-band { position: relative; padding-block: clamp(80px, 11vw, 140px); background: var(--cta-bg) center/cover no-repeat; isolation: isolate; }
+  .cta-band::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(120deg, rgba(14,42,28,0.9) 0%, rgba(14,42,28,0.64) 100%); }
+  .cta-band::after { content: ''; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at center, rgba(14,26,20,0.45) 0%, rgba(14,26,20,0) 70%); }
+  .cta-band__inner { max-width: 760px; text-align: center; margin-inline: auto; color: var(--color-text-light); }
+  .cta-band__title { color: var(--color-text-light); font-size: clamp(2rem, 4.5vw, 3.4rem); margin-bottom: var(--space-4); }
+  .cta-band__text { opacity: 0.88; margin-bottom: var(--space-6); font-size: 1.1rem; }
+  .cta-band__btns { display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; }
+  @media (max-width: 520px) { .cta-band__btns .btn { width: 100%; } }
+</style>

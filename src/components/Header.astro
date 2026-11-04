@@ -1,81 +1,154 @@
 ---
-/* 4.1 Lipnus header — du būsenos (virš hero / scrolled). Logika site.js. */
-const nav = [
-  { href: '/#paslaugos', label: 'Paslaugos' },
-  { href: '/galerija', label: 'Galerija' },
-  { href: '/#apie', label: 'Apie' },
-  { href: '/#duk', label: 'DUK' },
-  { href: '/#kontaktai', label: 'Kontaktai' },
-];
----
-<header class="site-header" id="top" role="banner">
-  <div class="site-header__inner container">
-    <a href="/" class="site-header__logo" aria-label="ArbCut — į pradžią">
-      <img src="/assets/logo-horizontal-light.svg" alt="ArbCut" class="site-header__logo-img site-header__logo--light" width="168" height="48" />
-      <img src="/assets/logo-horizontal.svg" alt="" class="site-header__logo-img site-header__logo--dark" width="168" height="48" aria-hidden="true" />
-    </a>
+/* Viršutinė kontaktų juosta + pagrindinė antraštė su paslaugų meniu.
+   Mobiliai: meniu atsidaro per visą ekraną, paslaugos — sąrašu. */
+import { site } from '@data/site.js';
+import { paslaugos } from '@data/paslaugos.js';
+import { grupes, detales } from '@data/paslaugu-turinys.js';
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
 
-    <nav class="site-nav" aria-label="Pagrindinis meniu">
-      <ul class="site-nav__list" role="list">
-        {nav.map((n) => <li><a href={n.href} class="site-nav__link">{n.label}</a></li>)}
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const nav = [
+  { href: '/galerija', label: 'Darbai' },
+  { href: '/kainos', label: 'Kainos' },
+  { href: '/apie', label: 'Apie' },
+  { href: '/kontaktai', label: 'Kontaktai' },
+];
+const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
+const isActive = (href) => path === href || path.startsWith(href + '/');
+const servicesActive = path.startsWith('/paslaugos');
+---
+<div class="ubar on-dark">
+  <div class="wrap ubar__in">
+    <span class="ubar__item"><Icon name="pin" size={16} /> Kaunas · išvykstame ir į kitus miestus</span>
+    <span class="ubar__item ubar__hours"><Icon name="clock" size={16} /> {site.darboLaikas.replace('Pirmadienis–Sekmadienis', 'Kasdien')}</span>
+    <a class="ubar__item ubar__mail" href={`mailto:${site.elPastas}`}><Icon name="mail" size={16} /> {site.elPastas}</a>
+  </div>
+</div>
+
+<header class="hdr" id="top">
+  <div class="wrap hdr__in">
+    <a href="/" class="hdr__logo" aria-label="ArbCut — į pradžią"><Logo tone="dark" height={44} /></a>
+
+    <nav class="hdr__nav" aria-label="Pagrindinis meniu">
+      <ul role="list" class="hdr__list">
+        <li class="hdr__drop">
+          <button type="button" class:list={['hdr__link', 'hdr__dropbtn', { 'is-active': servicesActive }]} aria-expanded="false" aria-controls="svc-menu">
+            Paslaugos <Icon name="chevron" size={16} />
+          </button>
+          <div class="svc" id="svc-menu" hidden>
+            <div class="svc__in">
+              {grupes.map((g) => (
+                <div class="svc__col">
+                  <p class="svc__head">{g.pavadinimas}</p>
+                  <ul role="list">
+                    {g.slugs.map((s) => (
+                      <li><a href={`/paslaugos/${s}`} class="svc__a" aria-current={path === `/paslaugos/${s}` ? 'page' : undefined}>
+                        <span>{detales[s]?.trumpas || byslug[s].pavadinimas}</span>
+                        <small>{byslug[s].kaina}</small>
+                      </a></li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+              <div class="svc__col svc__col--cta">
+                <p class="svc__head">Nežinote, ko reikia?</p>
+                <p>Atsiųskite nuotrauką ar paskambinkite — pasakysime, kaip spręsti.</p>
+                <a class="btn btn--ink btn--sm" href={site.telefonasHref} data-loc="nav-services-call"><Icon name="phone" size={18} /> {site.telefonas}</a>
+                <a class="link-arrow" href="/paslaugos">Visos paslaugos <Icon name="arrow" size={16} /></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        {nav.map((n) => (
+          <li><a href={n.href} class:list={['hdr__link', { 'is-active': isActive(n.href) }]} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a></li>
+        ))}
       </ul>
     </nav>
 
-    <button type="button" class="btn btn--call site-header__cta" data-modal-trigger aria-haspopup="dialog">Palikti užklausą</button>
-
-    <button class="hamburger" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu">
-      <span class="hamburger__bar"></span><span class="hamburger__bar"></span><span class="hamburger__bar"></span>
-    </button>
+    <div class="hdr__actions">
+      <a class="hdr__tel" href={site.telefonasHref} data-loc="header-call"><Icon name="phone" size={18} /> <span>{site.telefonas}</span></a>
+      <button type="button" class="btn btn--primary btn--sm hdr__quote" data-quote>Gauti kainą</button>
+      <button type="button" class="hdr__burger" aria-expanded="false" aria-controls="mnav" aria-label="Atidaryti meniu">
+        <Icon name="menu" size={26} />
+      </button>
+    </div>
   </div>
 </header>
 
-<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobilusis meniu" hidden>
-  <nav class="mobile-menu__nav">
-    <ul class="mobile-menu__list" role="list">
-      {nav.map((n) => <li><a href={n.href} class="mobile-menu__link">{n.label}</a></li>)}
+<div class="mnav on-dark" id="mnav" hidden>
+  <div class="mnav__top">
+    <a href="/" aria-label="ArbCut — į pradžią"><Logo tone="light" height={38} /></a>
+    <button type="button" class="mnav__close" aria-label="Uždaryti meniu"><Icon name="close" size={26} /></button>
+  </div>
+  <nav class="mnav__body" aria-label="Mobilusis meniu">
+    {grupes.map((g) => (
+      <div class="mnav__grp">
+        <p class="mnav__head">{g.pavadinimas}</p>
+        <ul role="list">
+          {g.slugs.map((s) => <li><a href={`/paslaugos/${s}`}>{detales[s]?.trumpas || byslug[s].pavadinimas}</a></li>)}
+        </ul>
+      </div>
+    ))}
+    <ul role="list" class="mnav__main">
+      <li><a href="/paslaugos">Visos paslaugos</a></li>
+      {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+      <li><a href="/atsiliepimai">Atsiliepimai</a></li>
     </ul>
-    <button type="button" class="btn btn--call btn--large mobile-menu__cta" data-modal-trigger aria-haspopup="dialog">Palikti užklausą</button>
   </nav>
+  <div class="mnav__foot">
+    <a class="btn btn--primary" href={site.telefonasHref} data-loc="mnav-call"><Icon name="phone" size={18} /> Skambinti {site.telefonas}</a>
+    <button type="button" class="btn btn--line" data-quote>Gauti kainą</button>
+  </div>
 </div>
 
 <style>
-  .site-header { position: fixed; inset: 0 0 auto 0; z-index: 1000; height: var(--header-height); transition: background var(--t-slow), box-shadow var(--t-slow), border-color var(--t-slow); border-bottom: 1px solid transparent; }
-  .site-header.is-scrolled { background: rgba(244,239,230,0.95); backdrop-filter: blur(12px); border-bottom-color: var(--color-border); }
-  .site-header__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: var(--space-5); }
+  .ubar { background: var(--ink-2); color: var(--mute-light); font-size: .86rem; }
+  .ubar__in { display: flex; gap: 28px; align-items: center; min-height: 38px; }
+  .ubar__item { display: inline-flex; align-items: center; gap: 8px; }
+  .ubar__mail { margin-left: auto; }
+  .ubar__mail:hover { color: var(--paper); }
+  @media (max-width: 860px) { .ubar__mail, .ubar__hours { display: none; } .ubar__in { justify-content: center; } }
 
-  .site-header__logo { display: inline-flex; align-items: center; }
-  .site-header__logo-img { height: 42px; width: auto; }
-  .site-header__logo--dark { display: none; }
-  .is-scrolled .site-header__logo--light { display: none; }
-  .is-scrolled .site-header__logo--dark { display: block; }
+  .hdr { position: sticky; top: 0; z-index: 900; background: var(--paper); border-bottom: 1px solid var(--line); transition: box-shadow var(--t); }
+  .hdr.is-stuck { box-shadow: 0 6px 20px rgba(20, 35, 27, .08); }
+  .hdr__in { display: flex; align-items: center; gap: 28px; height: var(--header-h); }
+  .hdr__logo { flex: 0 0 auto; display: block; }
+  .hdr__nav { margin-left: auto; }
+  .hdr__list { display: flex; align-items: center; gap: 4px; }
+  .hdr__link { display: inline-flex; align-items: center; gap: 4px; padding: 10px 12px; font-weight: 560; font-size: .98rem; color: var(--ink); border-bottom: 2px solid transparent; }
+  .hdr__link:hover, .hdr__link.is-active { border-bottom-color: var(--timber); }
+  .hdr__dropbtn svg { transition: transform var(--t); }
+  .hdr__dropbtn[aria-expanded='true'] svg { transform: rotate(180deg); }
+  .hdr__actions { display: flex; align-items: center; gap: 14px; }
+  .hdr__tel { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--ink); white-space: nowrap; }
+  .hdr__tel:hover { color: var(--timber); }
+  .hdr__burger { display: none; width: 48px; height: 48px; place-items: center; color: var(--ink); }
 
-  .site-nav__list { display: flex; align-items: center; gap: var(--space-2); }
-  .site-nav__link { position: relative; padding: 8px 12px; font-weight: 500; color: var(--color-text-light); text-shadow: 0 1px 8px rgba(0,0,0,0.4); transition: color var(--t-base); }
-  .is-scrolled .site-nav__link { color: var(--color-forest); text-shadow: none; }
-  .site-nav__link::after { content: ''; position: absolute; left: 12px; right: 12px; bottom: 2px; height: 2px; background: var(--color-rust); transform: scaleX(0); transform-origin: left; transition: transform var(--t-base); }
-  .site-nav__link:hover::after, .site-nav__link.is-active::after { transform: scaleX(1); }
+  .hdr__drop { position: static; }
+  .svc { position: absolute; left: 0; right: 0; top: 100%; background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); box-shadow: 0 24px 40px rgba(20, 35, 27, .12); }
+  .svc__in { max-width: var(--wrap); margin: 0 auto; padding: 28px var(--gutter) 32px; display: grid; grid-template-columns: 1fr 1fr .9fr; gap: 40px; }
+  .svc__head { font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--timber); margin-bottom: 10px; }
+  .svc__a { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 1px solid var(--paper-2); font-weight: 560; }
+  .svc__a small { color: var(--mute); font-weight: 450; font-size: .86rem; white-space: nowrap; }
+  .svc__a:hover span, .svc__a[aria-current] span { color: var(--timber); }
+  .svc__col--cta { background: var(--paper); padding: 22px; display: grid; gap: 14px; align-content: start; }
+  .svc__col--cta p:not(.svc__head) { color: var(--mute); font-size: .95rem; }
 
-  .site-header__cta { padding: 11px 20px; font-size: 0.95rem; }
+  .mnav { position: fixed; inset: 0; z-index: 1500; background: var(--ink); color: var(--paper); display: flex; flex-direction: column; overflow-y: auto; }
+  .mnav[hidden] { display: none; }
+  .mnav__top { display: flex; justify-content: space-between; align-items: center; padding: 14px var(--gutter); border-bottom: 1px solid var(--line-dark); }
+  .mnav__close { width: 48px; height: 48px; display: grid; place-items: center; }
+  .mnav__body { padding: 8px var(--gutter) 24px; display: grid; gap: 22px; }
+  .mnav__head { font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--sand); margin: 14px 0 4px; }
+  .mnav__grp a, .mnav__main a { display: block; padding: 11px 0; border-bottom: 1px solid var(--line-dark); font-size: 1.08rem; }
+  .mnav__main a { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; }
+  .mnav__foot { margin-top: auto; padding: 16px var(--gutter) 24px; display: grid; gap: 10px; border-top: 1px solid var(--line-dark); }
 
-  /* Burgeris — 3 brūkšniai, animuojasi į X (aria-expanded) */
-  .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
-  .hamburger__bar { width: 26px; height: 3px; background: var(--color-text-light); border-radius: 2px; transform-origin: center; transition: transform var(--t-base), opacity var(--t-base), background var(--t-base); }
-  .is-scrolled .hamburger__bar { background: var(--color-forest); }
-  .hamburger[aria-expanded="true"] .hamburger__bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-  .hamburger[aria-expanded="true"] .hamburger__bar:nth-child(2) { opacity: 0; }
-  .hamburger[aria-expanded="true"] .hamburger__bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-
-  /* Išskleidžiamas (dropdown) meniu po headeriu */
-  .mobile-menu { position: fixed; top: var(--header-height); left: 0; right: 0; z-index: 999; background: rgba(244,239,230,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border); box-shadow: var(--shadow-card); padding: var(--space-3) var(--gutter) var(--space-5); display: none; }
-  .mobile-menu.is-open { display: block; animation: menuDrop 0.22s ease both; }
-  @keyframes menuDrop { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
-  .mobile-menu__list { display: flex; flex-direction: column; }
-  .mobile-menu__link { display: block; padding: 14px 6px; font-family: var(--font-display); font-size: 1.2rem; text-transform: uppercase; color: var(--color-forest); border-bottom: 1px solid var(--color-border); transition: color var(--t-base); }
-  .mobile-menu__link:hover, .mobile-menu__link:active { color: var(--color-rust); }
-  .mobile-menu__cta { width: 100%; margin-top: var(--space-4); }
-
-  @media (max-width: 860px) {
-    .site-nav, .site-header__cta { display: none; }
-    .hamburger { display: flex; }
+  @media (max-width: 1080px) { .hdr__tel span { display: none; } }
+  @media (max-width: 920px) {
+    .hdr__nav, .hdr__quote, .hdr__tel { display: none; }
+    .hdr__burger { display: grid; }
+    .hdr__in { justify-content: space-between; height: 68px; }
   }
 </style>

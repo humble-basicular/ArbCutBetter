@@ -32,7 +32,7 @@ export const paslaugos = [
     aprasymas: 'Profesionalus genėjimas, sausų ir pavojingų šakų šalinimas bei lajos formavimas, kad medis liktų sveikas ir saugus.',
     seo: 'Profesionalus genėjimas pailgina medžio gyvenimą ir sumažina riziką: pašaliname sausas, sergančias ar trinčiai linkusias šakas, formuojame lają ir prašviesiname vainiką. Dirbame arboristiniu būdu — alpinistine įranga arba autobokšteliu — todėl pasiekiame ir aukštas, sunkiai prieinamas šakas nepažeisdami medžio. Tinkamas genėjimo laikas ir pjūvio vieta lemia, ar medis greitai užgis, todėl visada paaiškiname, ką ir kodėl darome.',
     kaina: 'nuo 50 €',
-    nuotrauka: '/assets/images/paslaugos/medziu-genejimas.jpg',
+    nuotrauka: '/assets/images/galerija/galerija-02.jpg',
     ikona: 'genejimas',
     featured: false,
   },

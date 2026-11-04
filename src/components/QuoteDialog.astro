@@ -1,0 +1,31 @@
+---
+/* Vienas užklausos dialogas visai svetainei. Bet koks [data-quote] jį atidaro;
+   data-service="<slug>" iš anksto parenka paslaugą. */
+import { site } from '@data/site.js';
+import QuoteForm from './QuoteForm.astro';
+import Icon from './Icon.astro';
+---
+<dialog class="qd" id="quote-dialog" aria-labelledby="qd-title">
+  <div class="qd__in">
+    <div class="qd__head">
+      <div>
+        <p class="kicker">Užklausa</p>
+        <h2 id="qd-title">Papasakokite, ką reikia padaryti</h2>
+      </div>
+      <button type="button" class="qd__x" data-quote-close aria-label="Uždaryti"><Icon name="close" size={24} /></button>
+    </div>
+    <p class="qd__alt">Greičiausia — paskambinti: <a href={site.telefonasHref} data-loc="dialog-call">{site.telefonas}</a></p>
+    <QuoteForm id="dialog-form" prefix="d" />
+  </div>
+</dialog>
+
+<style>
+  .qd { width: min(640px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); padding: 0; border: 0; border-radius: var(--radius); background: var(--white); color: var(--text); box-shadow: 0 30px 80px rgba(0,0,0,.35); }
+  .qd::backdrop { background: rgba(20, 35, 27, .72); }
+  .qd__in { padding: clamp(20px, 4vw, 36px); display: grid; gap: 14px; }
+  .qd__head { display: flex; justify-content: space-between; gap: 16px; align-items: start; }
+  .qd__head h2 { font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem); margin-top: 6px; }
+  .qd__x { width: 44px; height: 44px; display: grid; place-items: center; flex: 0 0 auto; color: var(--ink); }
+  .qd__alt { color: var(--mute); }
+  .qd__alt a { color: var(--ink); font-weight: 700; white-space: nowrap; }
+</style>

@@ -1,98 +1,97 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Header from '@components/Header.astro';
-import PageHero from '@components/PageHero.astro';
-import Process from '@components/Process.astro';
-import Reviews from '@components/Reviews.astro';
-import CtaBand from '@components/CtaBand.astro';
-import ContactSection from '@components/ContactSection.astro';
-import Footer from '@components/Footer.astro';
-import StickyCall from '@components/StickyCall.astro';
-import InquiryModal from '@components/InquiryModal.astro';
-import ChatWidget from '@components/ChatWidget.astro';
-import Icon from '@components/Icon.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Reviews from '../components/Reviews.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
 import { vietoves } from '@data/vietoves.js';
 import { paslaugos } from '@data/paslaugos.js';
-import { site } from '@data/site.js';
-import { localBusiness, breadcrumbs } from '@data/jsonld.js';
+import { grupes, detales } from '@data/paslaugu-turinys.js';
+import { duk } from '@data/turinys.js';
+import { atrinkti } from '@data/atrinkti.js';
+import { localBusiness, breadcrumbs, faqPage } from '@data/jsonld.js';
 
 export function getStaticPaths() {
   return vietoves.map((v) => ({ params: { vietove: v.slug }, props: { v } }));
 }
 const { v } = Astro.props;
-const topPaslaugos = paslaugos.slice(0, 6);
-
-const title = `Medžių pjovimas ${v.miestas} — arboristas ArbCut | ${site.telefonas}`;
-const description = `Medžių pjovimas, genėjimas, pavojingų medžių šalinimas ir aukštuminiai darbai ${v.miestas} ir aplink. ${v.intro || ''} Nemokamas įvertinimas.`;
-const schemas = [
-  localBusiness(),
-  breadcrumbs([
-    { name: 'Pradžia', path: '/' },
-    { name: `Medžių pjovimas ${v.miestas}`, path: `/${v.slug}` },
-  ]),
+const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
+const kitos = vietoves.filter((x) => x.slug !== v.slug);
+const reviews = atrinkti({ n: 3, min: 140, max: 480 });
+const isBase = !!v.pagrindinis;
+const townFaq = [
+  isBase
+    ? { klausimas: `Ar išvežate medieną ${v.kur}?`, atsakymas: 'Taip. Kaune ir Kauno rajone po darbų išvežame šakas ir medieną nuosavu fiskaru (talpa nuo 20 m³). Kas išvežama ir už kokią kainą, sutariame iš anksto.' }
+    : { klausimas: `Ar išvežate medieną ${v.kur}?`, atsakymas: 'Medienos išvežimą fiskaru atliekame Kaune ir Kauno rajone. Kitur medį nupjauname, sutvarkome, o šakas ir medieną sukrauname tvarkingoje krūvoje.' },
+  { klausimas: `Kaip greitai galite atvykti ${v.kur}?`, atsakymas: isBase ? 'Kaunas — mūsų bazė, todėl čia atvykstame greičiausiai. Tikslų laiką pasakome telefonu pagal tos dienos darbus.' : 'Išvykimo datą suderiname iš anksto. Avariniu atveju paskambinkite — pasakysime, kada realiai galime būti.' },
+  ...duk.filter((q) => /elektros|savaitgal/.test(q.klausimas)),
 ];
+const title = `Medžių pjovimas ${v.kur} — arboristas aukštalipys | ArbCut`;
+const description = `Medžių pjovimas ${v.kur}: pavojingi medžiai prie namų ir laidų, genėjimas, kelmų frezavimas, darbai autobokšteliu iki 20 m. ${isBase ? 'Išvežame medieną.' : ''} +370 603 66901.`.replace('  ', ' ');
 ---
-<BaseLayout title={title} description={description} schemas={schemas}>
-  <Header />
-  <main id="main">
-    <PageHero
-      eyebrow={`Arboristas · ${v.miestas}`}
-      title={`Medžių pjovimas ${v.miestas}`}
-      subtitle={v.intro}
-      crumbs={[{ name: 'Pradžia', path: '/' }, { name: v.miestas }]}
-    />
-
-    <section class="section section--cream">
-      <div class="container loc">
-        <div class="loc__text js-reveal-scroll">
-          <span class="eyebrow">Medžių priežiūra {v.miestas}</span>
-          <p class="loc__lead">{v.tekstas}</p>
-          <a href={site.telefonasHref} data-loc="town-cta" class="btn btn--call btn--large">
-            <Icon name="telefonas" size={20} stroke={2.5} /> Skambinti {site.telefonas}
-          </a>
-        </div>
-
-        <div class="loc__services js-reveal-scroll">
-          <h2 class="loc__services-title">Paslaugos {v.miestas} ir aplink</h2>
-          <ul class="loc__list" role="list">
-            {topPaslaugos.map((p) => (
-              <li>
-                <a href={`/paslaugos/${p.slug}`} class="loc__link">
-                  <Icon name={p.ikona} size={20} />
-                  <span>{p.pavadinimas}</span>
-                  <span class="loc__price">{p.kaina}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
+<BaseLayout title={title} description={description} schemas={[localBusiness(), faqPage(townFaq), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: `Medžių pjovimas ${v.kur}`, path: `/${v.slug}` }])]}>
+  <PageHero
+    title={`Medžių pjovimas ${v.kur}`}
+    kicker={isBase ? 'Mūsų bazė' : `Arboristas aukštalipys · ${v.miestas}`}
+    lead={v.intro}
+    crumbs={[{ label: `Medžių pjovimas ${v.kur}` }]}
+    photo={isBase ? 'pjovimas-prie-laidu' : 'pusis-alpinistas'}
+    photoAlt="Arboristas pjauna aukštą pušį dalimis"
+    photoPos="50% 30%"
+  />
+  <section class="sec">
+    <div class="wrap town">
+      <div class="town__txt">
+        <h2>{isBase ? 'Kaunas ir Kauno rajonas' : `Ką darome ${v.kur}`}</h2>
+        <p class="lead">{v.tekstas}</p>
+        <div class="town__note">
+          {isBase
+            ? <p><strong>Išvežame patys.</strong> Kaune ir Kauno rajone šakas ir medieną išvežame fiskaru — kiemas lieka tvarkingas.</p>
+            : <p><strong>Medienos išvežimas</strong> — tik Kaune ir Kauno rajone. {v.kur} medieną ir šakas sukrauname tvarkingoje krūvoje.</p>}
         </div>
       </div>
-    </section>
-
-    <Process />
-    <Reviews limit={6} />
-    <CtaBand />
-    <ContactSection />
-  </main>
-  <Footer />
-  <StickyCall />
-  <InquiryModal />
-  <ChatWidget />
-  <script src="https://js.hcaptcha.com/1/api.js?recaptchacompat=off" async defer is:inline></script>
+      <div class="town__svc">
+        {grupes.map((g) => (
+          <div>
+            <p class="kicker">{g.pavadinimas}</p>
+            <ul role="list">
+              {g.slugs.filter((s) => isBase || s !== 'saku-isvezimas').map((s) => (
+                <li><a href={`/paslaugos/${s}`}><span>{detales[s].trumpas}</span><small>{byslug[s].kaina}</small><Icon name="arrow" size={16} /></a></li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+  <section class="sec sec--paper2"><div class="wrap"><Reviews items={reviews} heading="Ką sako klientai" /></div></section>
+  <section class="sec">
+    <div class="wrap two">
+      <div class="sec-head"><p class="kicker">DUK</p><h2>Klausimai apie darbus {v.kur}</h2></div>
+      <Faq items={townFaq} />
+    </div>
+  </section>
+  <section class="sec sec--white rule-top">
+    <div class="wrap">
+      <p class="kicker">Kiti miestai</p>
+      <ul role="list" class="others">{kitos.map((k) => <li><a href={`/${k.slug}`}>Medžių pjovimas {k.kur}</a></li>)}</ul>
+    </div>
+  </section>
+  <CtaBand title={`Medis ${v.kur}? Aptarkime.`} />
 </BaseLayout>
-
 <style>
-  .loc { display: grid; grid-template-columns: 1.3fr 1fr; gap: var(--space-8); align-items: start; }
-  .loc__lead { font-size: 1.12rem; line-height: 1.8; color: var(--color-text); margin: var(--space-4) 0 var(--space-6); }
-
-  .loc__services { background: var(--color-bg-card); border: 1px solid var(--color-border); border-top: 4px solid var(--color-rust); border-radius: var(--radius); padding: var(--space-5); box-shadow: var(--shadow-card); }
-  .loc__services-title { font-size: 1.2rem; color: var(--color-forest); margin-bottom: var(--space-4); }
-  .loc__list { display: grid; gap: 4px; }
-  .loc__link { display: flex; align-items: center; gap: 10px; padding: 11px 12px; border-radius: var(--radius-sm); color: var(--color-text); transition: background var(--t-base); }
-  .loc__link svg { color: var(--color-rust); flex: 0 0 auto; }
-  .loc__link span:first-of-type { flex: 1; font-size: 0.95rem; }
-  .loc__price { font-weight: 700; color: var(--color-forest); font-size: 0.9rem; white-space: nowrap; }
-  .loc__link:hover { background: var(--color-bg-sand); }
-
-  @media (max-width: 900px) { .loc { grid-template-columns: 1fr; } }
+  .town { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .town__txt { display: grid; gap: 20px; }
+  .town__note { padding: 16px 18px; background: var(--white); border-left: 4px solid var(--timber); }
+  .town__svc { display: grid; gap: 28px; }
+  .town__svc ul { border-top: 2px solid var(--ink); margin-top: 8px; }
+  .town__svc a { display: grid; grid-template-columns: 1fr auto 18px; gap: 14px; align-items: center; padding: 12px 2px; border-bottom: 1px solid var(--line); font-weight: 600; }
+  .town__svc small { color: var(--mute); font-weight: 450; }
+  .town__svc a:hover span { color: var(--timber); }
+  .two { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .others { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .others a { display: inline-block; padding: 9px 14px; border: 1px solid var(--line); background: var(--paper); font-weight: 560; }
+  .others a:hover { border-color: var(--ink); }
+  @media (max-width: 960px) { .town, .two { grid-template-columns: 1fr; } }
 </style>

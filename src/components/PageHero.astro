@@ -1,55 +1,47 @@
 ---
-/* Vidinio puslapio hero (paslaugos / vietovės): breadcrumb + antraštė + CTA.
-   Fonas — reali nuotrauka su giliu žaliu perdengimu (be Ken Burns, kompaktiškas). */
+/* Vidinių puslapių antraštė: tamsus plotas, trupiniai, H1, įvadas, veiksmai, nuotrauka. */
 import { site } from '@data/site.js';
+import Photo from './Photo.astro';
 import Icon from './Icon.astro';
-const { eyebrow, title, subtitle, image, crumbs = [] } = Astro.props;
-const bg = image || '/assets/images/gallery/hero.jpg';
+const { title, kicker, lead, crumbs = [], photo, photoAlt = '', photoPos = '50% 40%', service = '', actions = true } = Astro.props;
 ---
-<section class="page-hero" style={`--bg:url('${bg}')`}>
-  <div class="container page-hero__inner">
-    {crumbs.length > 0 && (
-      <nav class="breadcrumbs" aria-label="Naršymo kelias">
-        <ol class="breadcrumbs__list" role="list">
-          {crumbs.map((c, i) => (
-            <li class="breadcrumbs__item">
-              {c.path ? <a href={c.path}>{c.name}</a> : <span aria-current="page">{c.name}</span>}
-              {i < crumbs.length - 1 && <span class="breadcrumbs__sep" aria-hidden="true">/</span>}
-            </li>
-          ))}
-        </ol>
-      </nav>
-    )}
-
-    {eyebrow && <span class="page-hero__eyebrow">{eyebrow}</span>}
-    <h1 class="page-hero__title">{title}</h1>
-    {subtitle && <p class="page-hero__subtitle">{subtitle}</p>}
-
-    <div class="page-hero__ctas">
-      <a href={site.telefonasHref} data-loc="page-hero" class="btn btn--call btn--large">
-        <Icon name="telefonas" size={20} stroke={2.5} /> {site.telefonas}
-      </a>
-      <button type="button" class="btn btn--outline-light btn--large" data-modal-trigger aria-haspopup="dialog">Palikti užklausą</button>
+<section class:list={['phero', 'on-dark', { 'phero--photo': photo }]}>
+  <div class="wrap phero__in">
+    <div class="phero__txt">
+      {crumbs.length > 0 && (
+        <nav aria-label="Naršymo kelias"><ol class="crumbs" role="list">
+          <li><a href="/">Pradžia</a></li>
+          {crumbs.map((c) => <li>{c.href ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}</li>)}
+        </ol></nav>
+      )}
+      {kicker && <p class="kicker">{kicker}</p>}
+      <h1>{title}</h1>
+      {lead && <p class="lead">{lead}</p>}
+      <slot />
+      {actions && (
+        <div class="btn-row phero__btns">
+          <a class="btn btn--primary" href={site.telefonasHref} data-loc="page-hero-call"><Icon name="phone" size={18} /> {site.telefonas}</a>
+          <button type="button" class="btn btn--line" data-quote data-service={service}>Gauti kainą</button>
+        </div>
+      )}
     </div>
+    {photo && (
+      <div class="phero__ph ph"><Photo name={photo} alt={photoAlt} sizes="(max-width: 860px) 100vw, 40vw" loading="eager" fetchpriority="high" position={photoPos} /></div>
+    )}
   </div>
 </section>
-
 <style>
-  .page-hero { position: relative; background: var(--color-forest-deep); color: var(--color-text-light); padding-top: calc(var(--header-height) + 64px); padding-bottom: var(--space-8); overflow: hidden; }
-  .page-hero::before { content: ''; position: absolute; inset: 0; background-image: var(--bg); background-size: cover; background-position: center; opacity: 0.28; }
-  .page-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(105deg, rgba(14,42,28,0.92), rgba(14,42,28,0.7)); }
-  .page-hero__inner { position: relative; z-index: 1; max-width: 880px; }
-
-  .breadcrumbs { margin-bottom: var(--space-5); }
-  .breadcrumbs__list { display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85rem; }
-  .breadcrumbs__item { display: inline-flex; gap: 8px; align-items: center; color: rgba(241,236,224,0.7); }
-  .breadcrumbs__item a { color: var(--color-amber); }
-  .breadcrumbs__item a:hover { text-decoration: underline; }
-  .breadcrumbs__sep { color: rgba(241,236,224,0.4); }
-
-  .page-hero__eyebrow { display: inline-block; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.78rem; color: var(--color-amber); margin-bottom: var(--space-3); }
-  .page-hero__title { font-size: clamp(2rem, 4.5vw, 3.6rem); color: #fff; text-transform: uppercase; line-height: 1.05; overflow-wrap: break-word; }
-  .page-hero__subtitle { margin-top: var(--space-4); font-size: clamp(1.05rem, 1.6vw, 1.3rem); color: rgba(241,236,224,0.9); max-width: 640px; }
-  .page-hero__ctas { display: flex; gap: var(--space-4); flex-wrap: wrap; margin-top: var(--space-6); }
-  @media (max-width: 600px) { .page-hero__ctas .btn { width: 100%; } }
+  .phero { background: var(--ink); color: var(--paper); }
+  .phero__in { display: grid; gap: 40px; padding-block: clamp(40px, 6vw, 72px); }
+  .phero--photo .phero__in { grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); align-items: stretch; padding-bottom: 0; }
+  .phero__txt { display: grid; gap: 18px; align-content: center; padding-bottom: clamp(40px, 6vw, 72px); }
+  .phero--photo .phero__txt { padding-bottom: clamp(40px, 6vw, 72px); }
+  .phero h1 { max-width: 20ch; }
+  .phero__btns { margin-top: 8px; }
+  .phero__ph { min-height: 320px; }
+  .phero__ph :global(img) { position: absolute; inset: 0; }
+  @media (max-width: 860px) {
+    .phero--photo .phero__in { grid-template-columns: 1fr; gap: 0; }
+    .phero__ph { min-height: 0; aspect-ratio: 4 / 3; margin-inline: calc(var(--gutter) * -1); }
+  }
 </style>

@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '@data/site.js';
+import { atsiliepimuKiekis, atsiliepimuVidurkis, atsiliepimuSinchronizuota } from '@data/atsiliepimai.js';
+import { suTekstu } from '@data/atrinkti.js';
+import { localBusiness, breadcrumbs } from '@data/jsonld.js';
+const fmt = (d) => new Date(d).toLocaleDateString('lt-LT', { year: 'numeric', month: 'long' });
+const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
+---
+<BaseLayout
+  title={`Atsiliepimai apie ArbCut — ${rating} iš 5, ${atsiliepimuKiekis} atsiliepimai Paslaugos.lt`}
+  description={`Klientų atsiliepimai apie ArbCut ir Mantą Gerulį iš Paslaugos.lt profilio: ${rating} iš 5, ${atsiliepimuKiekis} atsiliepimai. Originalūs tekstai su data.`}
+  schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Atsiliepimai', path: '/atsiliepimai' }])]}
+>
+  <PageHero title="Atsiliepimai" kicker="Paslaugos.lt" lead={`Visi žemiau esantys atsiliepimai parašyti mūsų profilyje Paslaugos.lt. Tekstai pateikti originalūs, nekeisti. Profilio įvertinimas — ${rating} iš 5 (${atsiliepimuKiekis} atsiliepimai, duomenys ${atsiliepimuSinchronizuota}).`} crumbs={[{ label: 'Atsiliepimai' }]} actions={false}>
+    <div class="btn-row">
+      <a class="btn btn--primary" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">Profilis Paslaugos.lt <Icon name="external" size={16} /></a>
+      <a class="btn btn--line" href={site.atsiliepimai.paliktiUrl} target="_blank" rel="noopener">Parašyti atsiliepimą</a>
+    </div>
+  </PageHero>
+  <section class="sec">
+    <div class="wrap">
+      <p class="mute all__n">Rodoma {suTekstu.length} atsiliepimai su tekstu.</p>
+      <ul role="list" class="all">
+        {suTekstu.map((a) => (
+          <li>
+            {a.zvaigzdes && <span class="all__s" aria-label={`${a.zvaigzdes} iš 5`}>{Array.from({ length: a.zvaigzdes }).map(() => <Icon name="star" size={14} />)}</span>}
+            <blockquote>{a.tekstas.split('\n').map((l) => <p>{l}</p>)}</blockquote>
+            <p class="all__m"><strong>{a.vardas}</strong>{a.paslaugaPavadinimas && <> · {a.paslaugaPavadinimas}</>} · {fmt(a.data)}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  <CtaBand />
+</BaseLayout>
+<style>
+  .all__n { margin-bottom: 20px; }
+  .all { columns: 3 300px; column-gap: 16px; }
+  .all li { break-inside: avoid; margin-bottom: 16px; background: var(--white); border: 1px solid var(--line); padding: 20px; display: grid; gap: 10px; }
+  .all__s { display: flex; gap: 2px; color: var(--timber); }
+  .all blockquote { display: grid; gap: 8px; color: #2b3a31; }
+  .all__m { font-size: .86rem; color: var(--mute); }
+  .all__m strong { color: var(--ink); text-transform: capitalize; }
+</style>

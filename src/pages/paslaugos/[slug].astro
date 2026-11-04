@@ -1,151 +1,183 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Header from '@components/Header.astro';
-import PageHero from '@components/PageHero.astro';
-import Process from '@components/Process.astro';
-import Reviews from '@components/Reviews.astro';
-import CtaBand from '@components/CtaBand.astro';
-import ContactSection from '@components/ContactSection.astro';
-import Footer from '@components/Footer.astro';
-import StickyCall from '@components/StickyCall.astro';
-import InquiryModal from '@components/InquiryModal.astro';
-import ChatWidget from '@components/ChatWidget.astro';
-import Icon from '@components/Icon.astro';
-import { paslaugos } from '@data/paslaugos.js';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import Faq from '../../components/Faq.astro';
+import Reviews from '../../components/Reviews.astro';
+import Sequences from '../../components/Sequences.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Icon from '../../components/Icon.astro';
 import { site } from '@data/site.js';
-import { atsiliepimuKiekis, atsiliepimuVidurkis } from '@data/atsiliepimai.js';
-import { localBusiness, serviceSchema, breadcrumbs } from '@data/jsonld.js';
+import { paslaugos, getPaslauga } from '@data/paslaugos.js';
+import { detales, sekos, grupes } from '@data/paslaugu-turinys.js';
+import { vietoves } from '@data/vietoves.js';
+import { atrinkti } from '@data/atrinkti.js';
+import { serviceSchema, faqPage, breadcrumbs, localBusiness } from '@data/jsonld.js';
 
 export function getStaticPaths() {
-  return paslaugos.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+  return paslaugos.map((p) => ({ params: { slug: p.slug } }));
 }
-const { p } = Astro.props;
-const kitos = paslaugos.filter((x) => x.slug !== p.slug).slice(0, 6);
 
-/* Privalumai — ikona „outline box" + paryškintas įvadinis žodis */
-const privalumai = [
-  { ikona: 'skydas', lead: 'Saugiai', text: 'alpinistinė įranga ir autobokštelis iki 20 m' },
-  { ikona: 'vieta', lead: 'Visoje Lietuvoje', text: 'atvykstame į visus regionus' },
-  { ikona: 'tvarka', lead: 'Tvarkinga', text: 'po darbų sutvarkome teritoriją' },
-  { ikona: 'zvaigzde', lead: `${atsiliepimuVidurkis.toFixed(1).replace('.', ',')} įvertinimas`, text: `${atsiliepimuKiekis} klientų atsiliepimai` },
-];
-
-const title = `${p.pavadinimas} — ArbCut | Visoje Lietuvoje`;
-const description = `${p.aprasymas} Kaina ${p.kaina}. Skambinkite ${site.telefonas} — nemokamas įvertinimas.`;
+const { slug } = Astro.params;
+const p = getPaslauga(slug);
+const d = detales[slug];
+const grupe = grupes.find((g) => g.slugs.includes(slug));
+const reviews = atrinkti({ slug, n: 3, min: 60, max: 520 });
+const hasSeq = sekos.some((s) => s.paslauga === slug);
+const heroPhoto = {
+  'avariniu-medziu-pjovimas': ['pjovimas-prie-laidu', 'Arboristas pjauna aukštą pušį šalia elektros laidų', '50% 30%'],
+  'audros-isverstu-medziu-salinimas': ['medis-prie-laidu-ziema', 'Medžio pjovimas žiemą šalia laidų ir namo', '50% 40%'],
+  'medziu-genejimas': ['lajoje-vasara', 'Arboristas dirba žaliuojančio medžio lajoje', '50% 30%'],
+  'medziu-lajos-stabilizavimas': ['du-arboristai-lajoje', 'Du arboristai didelio medžio lajoje', '50% 35%'],
+  'kelmu-naikinimas-frezavimas': null,
+  'saku-isvezimas': null,
+  'gyvatvoriu-karpymas': null,
+  'darbai-su-autoboksteliu': ['autobokstelis-prie-namo', 'Autobokštelis dirba prie namo', '50% 60%'],
+  'lietvamzdziu-stogo-valymas': ['autobokstelis-prie-namo', 'Autobokštelis prie namo stogo', '70% 30%'],
+  'dazymo-darbai-aukstyje': ['autobokstelis-prie-namo', 'Darbas aukštyje nuo autobokštelio', '75% 35%'],
+  'reklaminiu-iskabu-montavimas': ['autobokstelis-pusyne', 'Autobokštelis tarp aukštų pušų', '50% 40%'],
+  'kiti-aukstuminiai-darbai': ['maumedis-ziema', 'Arboristas aukštai medyje žiemą', '50% 25%'],
+}[slug] || [];
+const kitos = grupe.slugs.filter((s) => s !== slug);
+const susijusios = d.susijusios.map(getPaslauga);
 const schemas = [
   localBusiness(),
   serviceSchema(p),
-  breadcrumbs([
-    { name: 'Pradžia', path: '/' },
-    { name: 'Paslaugos', path: '/#paslaugos' },
-    { name: p.pavadinimas, path: `/paslaugos/${p.slug}` },
-  ]),
+  faqPage(d.duk),
+  breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Paslaugos', path: '/paslaugos' }, { name: d.h1, path: `/paslaugos/${slug}` }]),
 ];
 ---
-<BaseLayout title={title} description={description} ogImage={p.nuotrauka} schemas={schemas}>
-  <Header />
-  <main id="main">
-    <PageHero
-      eyebrow="Paslauga"
-      title={p.pavadinimas}
-      subtitle={p.aprasymas}
-      crumbs={[{ name: 'Pradžia', path: '/' }, { name: 'Paslaugos', path: '/#paslaugos' }, { name: p.pavadinimas }]}
-    />
+<BaseLayout title={d.title} description={d.description} schemas={schemas} ogImage={p.nuotrauka}>
+  <PageHero
+    title={d.h1}
+    kicker={`${grupe.pavadinimas} · ${p.kaina}`}
+    lead={d.ivadas}
+    crumbs={[{ label: 'Paslaugos', href: '/paslaugos' }, { label: d.trumpas }]}
+    photo={heroPhoto[0]}
+    photoAlt={heroPhoto[1]}
+    photoPos={heroPhoto[2]}
+    service={slug}
+  />
 
-    <section class="section section--cream">
-      <div class="container svc">
-        <div class="svc__main">
-          <div class="svc__price js-reveal-scroll">
-            <span class="svc__price-icon" aria-hidden="true"><Icon name={p.ikona} size={26} /></span>
-            <div class="svc__price-body">
-              <span class="svc__price-label">Kaina</span>
-              <span class="svc__price-value">{p.kaina}</span>
-            </div>
-            <p class="svc__price-note">Tiksli kaina — įvertinus darbą vietoje arba pagal nuotraukas. Įvertinimas nemokamas.</p>
-          </div>
-
-          <div class="svc__text js-reveal-scroll">
-            <p>{p.seo}</p>
-          </div>
-
-          <ul class="svc__benefits js-reveal-scroll" role="list">
-            {privalumai.map((b) => (
-              <li>
-                <span class="svc__benefit-icon" aria-hidden="true"><Icon name={b.ikona} size={22} /></span>
-                <span class="svc__benefit-text"><strong>{b.lead}</strong><span>{b.text}</span></span>
-              </li>
+  <section class="sec">
+    <div class="wrap svc">
+      <div class="svc__main">
+        <div class="svc__block">
+          <h2>Kada kreiptis</h2>
+          <ul class="ticks">{d.tinka.map((t) => <li>{t}</li>)}</ul>
+        </div>
+        <div class="svc__block">
+          <h2>Kaip atliekame darbą</h2>
+          <ol class="steps" role="list">{d.eiga.map((t) => <li>{t}</li>)}</ol>
+        </div>
+        <div class="svc__block">
+          <h2>Mūsų darbai</h2>
+          <ul role="list" class="svc__gal" data-lb-group>
+            {d.nuotraukos.map((src) => (
+              <li><button type="button" class="svc__ph" data-lightbox={src} data-caption={`${d.trumpas} — ArbCut darbas`} aria-label="Padidinti nuotrauką">
+                <img src={src} alt={`${d.trumpas} — ArbCut darbas`} width="283" height="230" loading="lazy" decoding="async" />
+              </button></li>
             ))}
           </ul>
-
-          <a href={site.telefonasHref} data-loc="service-cta" class="btn btn--call btn--large js-reveal-scroll">
-            <Icon name="telefonas" size={20} stroke={2.5} /> Skambinti {site.telefonas}
-          </a>
+          <a class="link-arrow" href="/galerija">Visa darbų galerija <Icon name="arrow" size={16} /></a>
         </div>
+      </div>
 
-        <aside class="svc__aside">
-          <div class="svc__aside-card js-reveal-scroll">
-            <h2 class="svc__aside-title">Kitos paslaugos</h2>
-            <ul class="svc__list" role="list">
-              {kitos.map((k) => (
-                <li><a href={`/paslaugos/${k.slug}`}>{k.pavadinimas}</a></li>
-              ))}
-            </ul>
+      <aside class="svc__side" aria-label="Kaina ir užklausa">
+        <div class="panel svc__card">
+          <p class="kicker">Kaina</p>
+          <p class="svc__price serif">{p.kaina}</p>
+          <p class="svc__src">Kaina „nuo“ — pagal Paslaugos.lt profilį. Galutinė kaina priklauso nuo:</p>
+          <ul class="ticks">{d.kaina.map((t) => <li>{t}</li>)}</ul>
+          <hr />
+          <p class="svc__h">Ką paruošti užklausai</p>
+          <ul class="svc__prep">{d.paruosti.map((t) => <li>{t}</li>)}</ul>
+          <div class="svc__btns">
+            <button type="button" class="btn btn--primary" data-quote data-service={slug}>Aptarti darbą</button>
+            <a class="btn btn--line" href={site.telefonasHref} data-loc="service-side-call"><Icon name="phone" size={18} /> {site.telefonas}</a>
           </div>
-        </aside>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  {hasSeq && (
+    <section class="sec sec--white rule-top">
+      <div class="wrap">
+        <div class="sec-head"><p class="kicker">Darbo eiga</p><h2>Taip tai atrodo realiai</h2></div>
+        <Sequences only={[slug]} />
       </div>
     </section>
+  )}
 
-    <Process />
-    <Reviews limit={3} paslauga={p.slug} />
-    <CtaBand />
-    <ContactSection />
-  </main>
-  <Footer />
-  <StickyCall />
-  <InquiryModal />
-  <ChatWidget />
-  <script src="https://js.hcaptcha.com/1/api.js?recaptchacompat=off" async defer is:inline></script>
+  <section class="sec sec--paper2">
+    <div class="wrap"><Reviews items={reviews} heading="Atsiliepimai po panašių darbų" /></div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap two">
+      <div class="sec-head">
+        <p class="kicker">DUK</p>
+        <h2>Klausimai apie {d.trumpas.toLowerCase()}</h2>
+      </div>
+      <Faq items={d.duk} />
+    </div>
+  </section>
+
+  <section class="sec sec--white rule-top">
+    <div class="wrap two">
+      <div>
+        <p class="kicker">Susijusios paslaugos</p>
+        <h2 class="rel__h">Dažnai užsakoma kartu</h2>
+        <ul role="list" class="rel">
+          {susijusios.map((s) => (
+            <li><a href={`/paslaugos/${s.slug}`}><span>{detales[s.slug].h1}</span><small>{s.kaina}</small><Icon name="arrow" size={16} /></a></li>
+          ))}
+        </ul>
+        {kitos.length > 0 && (
+          <p class="rel__more">Kitos {grupe.pavadinimas.toLowerCase()} paslaugos: {kitos.filter((k) => !d.susijusios.includes(k)).map((k, i, arr) => <><a href={`/paslaugos/${k}`}>{detales[k].trumpas}</a>{i < arr.length - 1 ? ', ' : ''}</>)}</p>
+        )}
+      </div>
+      <div>
+        <p class="kicker">Kur dirbame</p>
+        <h2 class="rel__h">Kaunas ir kiti miestai</h2>
+        <p class="mute">Bazė — Kaunas. Medienos išvežimas — Kaune ir Kauno rajone.</p>
+        <ul role="list" class="towns">
+          {vietoves.map((v) => <li><a href={`/${v.slug}`}>{v.miestas}</a></li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand title={`${d.trumpas}: aptarkime jūsų atvejį`} service={slug} />
 </BaseLayout>
 
 <style>
-  .svc { display: grid; grid-template-columns: 1fr 300px; gap: var(--space-8); align-items: start; }
-
-  /* „Outline box" ikonos stilius (švarus, su rėmeliu) */
-  .svc__price-icon,
-  .svc__benefit-icon {
-    flex: 0 0 auto; display: grid; place-items: center;
-    border: 1.5px solid var(--color-rust); background: rgba(219,122,34,0.07);
-    color: var(--color-rust); border-radius: 12px;
-  }
-
-  /* Kaina */
-  .svc__price { display: grid; grid-template-columns: auto 1fr; gap: 4px var(--space-5); align-items: center; background: var(--color-bg-card); border: 1px solid var(--color-border); border-left: 4px solid var(--color-rust); border-radius: var(--radius); padding: var(--space-5) var(--space-6); box-shadow: var(--shadow-card); margin-bottom: var(--space-6); }
-  .svc__price-icon { width: 56px; height: 56px; }
-  .svc__price-label { display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-text-muted); font-weight: 700; }
-  .svc__price-value { display: block; font-family: var(--font-display); font-size: clamp(2rem, 4vw, 2.6rem); color: var(--color-forest); line-height: 1; margin-top: 4px; }
-  .svc__price-note { grid-column: 1 / -1; margin-top: var(--space-3); font-size: 0.9rem; color: var(--color-text-muted); }
-
-  .svc__text { font-size: 1.1rem; line-height: 1.8; color: var(--color-text); margin-bottom: var(--space-6); }
-
-  /* Privalumai — ikona outline box + tekstas */
-  .svc__benefits { margin-bottom: var(--space-6); display: grid; gap: var(--space-3); }
-  .svc__benefits li { display: flex; align-items: center; gap: var(--space-4); }
-  .svc__benefit-icon { width: 44px; height: 44px; }
-  .svc__benefit-text strong { display: block; color: var(--color-forest); font-size: 1.05rem; }
-  .svc__benefit-text > span { color: var(--color-text-muted); font-size: 0.95rem; }
-
-  /* Šoninė juosta — teksto nuorodos */
-  .svc__aside-card { position: sticky; top: calc(var(--header-height) + 16px); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--space-5) var(--space-6); box-shadow: var(--shadow-card); }
-  .svc__aside-title { font-size: 1.2rem; color: var(--color-forest); margin-bottom: var(--space-3); }
-  .svc__list li { border-bottom: 1px solid var(--color-border); }
-  .svc__list li:last-child { border-bottom: none; }
-  .svc__list a { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 0; color: var(--color-text); font-size: 0.98rem; line-height: 1.35; transition: color var(--t-base); }
-  .svc__list a::after { content: '›'; color: var(--color-rust); font-size: 1.2rem; opacity: 0; transform: translateX(-4px); transition: opacity var(--t-base), transform var(--t-base); }
-  .svc__list a:hover { color: var(--color-rust); }
-  .svc__list a:hover::after { opacity: 1; transform: none; }
-
-  @media (max-width: 900px) {
-    .svc { grid-template-columns: 1fr; }
-    .svc__aside-card { position: static; }
-  }
+  .svc { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: clamp(32px, 5vw, 64px); align-items: start; }
+  .svc__main { display: grid; gap: clamp(40px, 5vw, 56px); }
+  .svc__block { display: grid; gap: 18px; }
+  .svc__side { position: sticky; top: calc(var(--header-h) + 20px); }
+  .svc__card { display: grid; gap: 14px; border-top: 6px solid var(--ink); }
+  .svc__price { font-size: 2.4rem; font-weight: 650; line-height: 1; }
+  .svc__src { font-size: .9rem; color: var(--mute); }
+  .svc__card .ticks { font-size: .95rem; gap: 8px; }
+  .svc__card hr { border: 0; border-top: 1px solid var(--line); margin: 6px 0; }
+  .svc__h { font-weight: 700; }
+  .svc__prep { padding-left: 1.1em; font-size: .95rem; color: #33443a; display: grid; gap: 4px; }
+  .svc__btns { display: grid; gap: 10px; margin-top: 6px; }
+  .svc__gal { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 12px; }
+  .svc__ph { display: block; width: 100%; aspect-ratio: 283 / 230; overflow: hidden; background: var(--paper-2); }
+  .svc__ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+  .svc__ph:hover img { transform: scale(1.03); }
+  .two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .rel__h { margin: 8px 0 18px; font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); }
+  .rel { border-top: 2px solid var(--ink); }
+  .rel a { display: grid; grid-template-columns: 1fr auto 18px; gap: 14px; align-items: center; padding: 14px 2px; border-bottom: 1px solid var(--line); font-weight: 600; }
+  .rel small { color: var(--mute); font-weight: 450; }
+  .rel a:hover span { color: var(--timber); }
+  .rel__more { margin-top: 16px; color: var(--mute); }
+  .rel__more a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  .towns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .towns a { display: inline-block; padding: 9px 14px; border: 1px solid var(--line); background: var(--paper); font-weight: 560; }
+  .towns a:hover { border-color: var(--ink); }
+  @media (max-width: 960px) { .svc, .two { grid-template-columns: 1fr; } .svc__side { position: static; } }
 </style>

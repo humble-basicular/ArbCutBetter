@@ -1,25 +1,22 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
 import { site } from '@data/site.js';
 ---
 <BaseLayout title="Puslapis nerastas — ArbCut" description="Tokio puslapio nėra." noindex={true}>
-  <main id="main" class="nf">
-    <div class="container nf__inner">
-      <span class="nf__code">404</span>
-      <h1>Puslapis nerastas</h1>
-      <p>Atsiprašome, tokio puslapio nėra. Grįžkite į pradžią arba paskambinkite.</p>
-      <div class="nf__btns">
-        <a href="/" class="btn btn--forest btn--large">Į pradžią</a>
-        <a href={site.telefonasHref} data-loc="not-found" class="btn btn--call btn--large">{site.telefonas}</a>
+  <section class="nf on-dark">
+    <div class="wrap nf__in">
+      <p class="kicker">404</p>
+      <h1>Tokio puslapio nėra</h1>
+      <p class="lead">Galbūt nuoroda pasenusi. Pradėkite nuo paslaugų arba paskambinkite.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/paslaugos">Paslaugos</a>
+        <a class="btn btn--line" href={site.telefonasHref} data-loc="not-found"><Icon name="phone" size={18} /> {site.telefonas}</a>
       </div>
     </div>
-  </main>
+  </section>
 </BaseLayout>
-
 <style>
-  .nf { min-height: 86vh; display: grid; place-items: center; text-align: center; background: var(--color-forest-deep); color: var(--color-text-light); }
-  .nf__code { font-family: var(--font-display); font-size: clamp(5rem, 18vw, 11rem); color: var(--color-rust); line-height: 1; }
-  .nf h1 { color: var(--color-text-light); margin: 8px 0 14px; }
-  .nf p { opacity: 0.85; max-width: 440px; margin: 0 auto var(--space-6); }
-  .nf__btns { display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; }
+  .nf { background: var(--ink); color: var(--paper); }
+  .nf__in { display: grid; gap: 20px; padding-block: clamp(72px, 12vw, 140px); }
 </style>

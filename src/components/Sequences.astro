@@ -1,0 +1,43 @@
+---
+/* Darbo eiga nuotraukose. Mažos originalios nuotraukos — rodomos kortelėmis, ne ištemptos. */
+import { sekos } from '@data/paslaugu-turinys.js';
+import Icon from './Icon.astro';
+const { only } = Astro.props;
+const list = only ? sekos.filter((s) => only.includes(s.paslauga)) : sekos;
+---
+<div class="sq">
+  {list.map((s) => (
+    <article class="sq__item">
+      <header class="sq__h">
+        <h3>{s.pavadinimas}</h3>
+        <a class="link-arrow" href={`/paslaugos/${s.paslauga}`}>Apie šią paslaugą <Icon name="arrow" size={16} /></a>
+      </header>
+      <ol role="list" class="sq__frames" style={`--n:${s.kadrai.length}`}>
+        {s.kadrai.map((k, i) => (
+          <li>
+            <button type="button" class="sq__ph" data-lightbox={k.src} data-caption={k.tekstas} aria-label={`Padidinti: ${k.tekstas}`}>
+              <img src={k.src} alt={k.tekstas} loading="lazy" decoding="async" width="283" height="230" />
+            </button>
+            <p><span class="sq__i">{i + 1}</span>{k.tekstas}</p>
+          </li>
+        ))}
+      </ol>
+    </article>
+  ))}
+</div>
+<style>
+  .sq { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(32px, 4vw, 48px); }
+  .sq__item { min-width: 0; }
+  .sq__h { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .sq__frames { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 14px; }
+  .sq__frames li { display: grid; gap: 10px; align-content: start; }
+  .sq__ph { display: block; width: 100%; aspect-ratio: 283 / 230; overflow: hidden; background: var(--paper-2); }
+  .sq__ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+  .sq__ph:hover img { transform: scale(1.03); }
+  .sq__frames p { font-size: .93rem; color: #33443a; display: flex; gap: 10px; align-items: baseline; }
+  .sq__i { font-family: var(--serif); font-weight: 650; color: var(--timber); }
+  @media (max-width: 760px) {
+    .sq__frames { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scroll-padding-inline: var(--gutter); }
+    .sq__frames li { scroll-snap-align: start; }
+  }
+</style>

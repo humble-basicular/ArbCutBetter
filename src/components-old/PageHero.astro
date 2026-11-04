@@ -1,0 +1,55 @@
+---
+/* Vidinio puslapio hero (paslaugos / vietovės): breadcrumb + antraštė + CTA.
+   Fonas — reali nuotrauka su giliu žaliu perdengimu (be Ken Burns, kompaktiškas). */
+import { site } from '@data/site.js';
+import Icon from './Icon.astro';
+const { eyebrow, title, subtitle, image, crumbs = [] } = Astro.props;
+const bg = image || '/assets/images/gallery/hero.jpg';
+---
+<section class="page-hero" style={`--bg:url('${bg}')`}>
+  <div class="container page-hero__inner">
+    {crumbs.length > 0 && (
+      <nav class="breadcrumbs" aria-label="Naršymo kelias">
+        <ol class="breadcrumbs__list" role="list">
+          {crumbs.map((c, i) => (
+            <li class="breadcrumbs__item">
+              {c.path ? <a href={c.path}>{c.name}</a> : <span aria-current="page">{c.name}</span>}
+              {i < crumbs.length - 1 && <span class="breadcrumbs__sep" aria-hidden="true">/</span>}
+            </li>
+          ))}
+        </ol>
+      </nav>
+    )}
+
+    {eyebrow && <span class="page-hero__eyebrow">{eyebrow}</span>}
+    <h1 class="page-hero__title">{title}</h1>
+    {subtitle && <p class="page-hero__subtitle">{subtitle}</p>}
+
+    <div class="page-hero__ctas">
+      <a href={site.telefonasHref} data-loc="page-hero" class="btn btn--call btn--large">
+        <Icon name="telefonas" size={20} stroke={2.5} /> {site.telefonas}
+      </a>
+      <button type="button" class="btn btn--outline-light btn--large" data-modal-trigger aria-haspopup="dialog">Palikti užklausą</button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .page-hero { position: relative; background: var(--color-forest-deep); color: var(--color-text-light); padding-top: calc(var(--header-height) + 64px); padding-bottom: var(--space-8); overflow: hidden; }
+  .page-hero::before { content: ''; position: absolute; inset: 0; background-image: var(--bg); background-size: cover; background-position: center; opacity: 0.28; }
+  .page-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(105deg, rgba(14,42,28,0.92), rgba(14,42,28,0.7)); }
+  .page-hero__inner { position: relative; z-index: 1; max-width: 880px; }
+
+  .breadcrumbs { margin-bottom: var(--space-5); }
+  .breadcrumbs__list { display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85rem; }
+  .breadcrumbs__item { display: inline-flex; gap: 8px; align-items: center; color: rgba(241,236,224,0.7); }
+  .breadcrumbs__item a { color: var(--color-amber); }
+  .breadcrumbs__item a:hover { text-decoration: underline; }
+  .breadcrumbs__sep { color: rgba(241,236,224,0.4); }
+
+  .page-hero__eyebrow { display: inline-block; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.78rem; color: var(--color-amber); margin-bottom: var(--space-3); }
+  .page-hero__title { font-size: clamp(2rem, 4.5vw, 3.6rem); color: #fff; text-transform: uppercase; line-height: 1.05; overflow-wrap: break-word; }
+  .page-hero__subtitle { margin-top: var(--space-4); font-size: clamp(1.05rem, 1.6vw, 1.3rem); color: rgba(241,236,224,0.9); max-width: 640px; }
+  .page-hero__ctas { display: flex; gap: var(--space-4); flex-wrap: wrap; margin-top: var(--space-6); }
+  @media (max-width: 600px) { .page-hero__ctas .btn { width: 100%; } }
+</style>

@@ -1,0 +1,9 @@
+---
+/* Logotipas: sugeneruotas ženklas + išlaikytas „ArbCut" žodinis ženklas.
+   tone="dark" — tamsus ant šviesaus fono; tone="light" — šviesus ant tamsaus. */
+const { tone = 'dark', height = 44 } = Astro.props;
+const src = tone === 'light'
+  ? '/assets/arbcut-upgrade-brand/logo-horizontal-light.png'
+  : '/assets/arbcut-upgrade-brand/logo-horizontal-dark.png';
+---
+<img class="logo" src={src} alt="ArbCut" height={height} style={`height:${height}px;width:auto`} decoding="async" />
