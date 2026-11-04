@@ -1,6 +1,6 @@
 # ArbCut work board
 
-## 4 November 2026 — bespoke redesign, PREPARING
+## 4 November 2026 — bespoke redesign, IN PROGRESS (lead started 16:40 EET)
 
 - Owner: Claude Opus 5.5, Ultrathink, new AI Powerhouse autonomous top-level thread.
 - Branch: `design/arbcut-upgrade-20261104`; T3 creates and binds a separate worktree from local `main`.
@@ -11,6 +11,8 @@
 - Output: one complete multi-page redesign at a running preview URL; no production deployment, push, merge, DNS/account/GBP/CRM writes or customer messages. No paid API/tool/purchase without approval.
 - Acceptance: distinct intentional design, truthful Lithuanian content, useful service coverage/internal links, all real useful URLs mapped, isolated form tests, mobile/desktop interaction and accessibility/performance checks, noindex preview, no fabricated evidence, full raw/source protection.
 - Task brief: `.agents/handoffs/2026-11-04-arbcut-upgrade-approved.md`.
+
+- Stage log: `arbcut-brand-mark` delegated 4 Nov to Codex `gpt-6.1-sol` (medium), isolated worktree, owns only `public/assets/arbcut-upgrade-brand/**`, soft budget 1.5M input tokens (estimate; no comparable history).
 
 ## Requests / interfaces
 
