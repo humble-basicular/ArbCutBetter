@@ -26,7 +26,7 @@ All pages use `BaseLayout`: skip link → Header → `main#main` page content �
 | `pages/index.astro` | Hero (H1 + short callback form) → Emergency → Services → Moments → Press → SendPhotos → ReviewBoard → AreaMap → “Klausimai prieš skambinant” with call/SMS/quote and `Faq(dukPradzia, openFirst)` |
 | `pages/paslaugos/index.astro` | PageHero “Paslaugos” → ServiceIndex grouped ordered service rows → CtaBand “Nerandate savo atvejo?” |
 | `pages/paslaugos/[slug].astro` | PageHero `d.h1` → main: “Kada kreiptis”, “Kaip atliekame darbą”, “Mūsų darbai”; parallel price/preparation/quote aside → conditional job Sequences “Taip tai atrodo realiai” → selected reviews → service FAQ → related services and same-group remainder alongside town links → service-aware CtaBand |
-| `pages/[vietove].astro` | localized PageHero → town introduction and removal restriction alongside grouped services → reviews → town FAQ → other towns → localized CtaBand |
+| `pages/[vietove].astro` | localized PageHero → town introduction, branch/timber hauling restriction and stacking alternative alongside grouped services → reviews → town FAQ → other towns → localized CtaBand |
 | `pages/apie.astro` | PageHero → “Kaip dirbame” values/photos → “Su kuo dirbame” equipment → selected reviews → “Susisiekite tiesiogiai” contact facts → CtaBand |
 | `pages/kainos.astro` | PageHero → grouped linked price tables with provenance; parallel price factors and conditional real review example → photo preparation instructions alongside price FAQ + price article link → CtaBand |
 | `pages/galerija.astro` | PageHero → “Nuo pradžios iki sutvarkytos vietos” / Sequences → “Visos nuotraukos” category filters/count/grid → CtaBand |
@@ -37,7 +37,7 @@ All pages use `BaseLayout`: skip link → Header → `main#main` page content �
 | privacy / terms | PageHero (actions disabled) → complete legal prose in existing heading order; no page CtaBand |
 | success / 404 | status heading and explanation → call plus home/services recovery links respectively; retain noindex |
 
-`src/data/paslaugu-turinys.js::{grupes,detales,sekos,galerijosKategorijos,galerijosAlt}` owns service grouping, titles/descriptions/H1, introductions, eligibility, steps, price factors, preparation, images, related slugs, FAQs and job sequences. Preserve each keyed record and its array order, not merely template labels. `src/data/turinys.js::{duk,dukPradzia}`, `src/data/vietoves.js::{turinys,vietoves}`, `src/data/straipsniai.js::straipsniai` and `src/data/spauda.js` likewise own verbatim body copy, town grammar, article markup and sourced press quotes. These data files remain the exhaustive content oracle; this report does not paraphrase them into replacement copy.
+`src/data/paslaugu-turinys.js::{grupes,detales,sekos,galerijosKategorijos,galerijosAlt}` owns service grouping, titles/descriptions/H1, introductions, eligibility, steps, price factors, preparation, images, related slugs, FAQs and job sequences. Preserve each keyed record and its array order, not merely template labels. `src/data/turinys.js::{duk,dukPradzia}`, `src/data/vietoves.js::{turinys,vietoves}`, `src/data/straipsniai.js::straipsniai` and `src/data/spauda.js` likewise own verbatim body copy, town grammar, article markup and sourced press quotes. These data files together with inline page/component template strings remain the exhaustive content oracle; this report does not paraphrase them into replacement copy.
 
 ## Internal-link contract (requirements)
 
@@ -49,7 +49,7 @@ All pages use `BaseLayout`: skip link → Header → `main#main` page content �
 
 ## Metadata and schema (requirements)
 
-`BaseLayout.astro::{pageTitle,desc,canonical,ogImg,schemaList,robots}` owns LT document language, per-page title/description, production-origin canonical derived from pathname, OG name/title/description/type/URL/locale/image and Twitter large-image card. Keep page-specific props exactly, including dynamic service `d.title/d.description`, city title/description with base-only removal claim, article title/description/date and service image override. Styling tokens/fonts/theme-color/favicon artwork are visual choices, not SEO copy; updating an approved logo requires coherent asset/schema references.
+`BaseLayout.astro::{pageTitle,desc,canonical,ogImg,schemaList,robots}` owns LT document language, per-page title/description, production-origin canonical derived from pathname, OG name/title/description/type/URL/locale/image and Twitter large-image card. Keep page-specific props exactly, including dynamic service `d.title/d.description`, city title/description including the base-only hauling sentence in the description, article title/description/date and service image override. Styling tokens/fonts/theme-color/favicon artwork are visual choices, not SEO copy; updating an approved logo requires coherent asset/schema references.
 
 `src/data/jsonld.js::{localBusiness,faqPage,serviceSchema,articleSchema,breadcrumbs}`: retain LandscapingBusiness `/#business`, NAP/founder/geo/hours/areaServed/catalog/sameAs; service provider reference and conditional EUR offer description; FAQ exact visible question/answer pairs; BlogPosting author/publisher/date/headline/image; ordered absolute BreadcrumbList. No AggregateRating or Review schema: baseline explicitly excludes third-party reviews. Legal pages supply breadcrumbs alone; fallback business schema only applies when no explicit schema array is supplied. Home = business+home FAQ; service = business+service+FAQ+breadcrumbs; town/prices = business+their FAQ+breadcrumbs; articles = business+article+optional FAQ+breadcrumbs; other ordinary pages = business+breadcrumbs.
 
@@ -57,7 +57,7 @@ All pages use `BaseLayout`: skip link → Header → `main#main` page content �
 
 ## Conversion and interaction (requirements)
 
-`site.js::site`: preserve Mantas Gerulis, +370 603 66901 / `tel:+37060366901` / `sms:+37060366901`, existing Yahoo email, daily 08:00–18:00, Kaunas base, 20 m own lift, removal only Kaunas/Kaunas district, source-qualified prices and review facts. No new 24/7, guaranteed arrival, coverage or certification promises.
+`site.js::site`: preserve Mantas Gerulis, +370 603 66901 / `tel:+37060366901` / `sms:+37060366901`, existing Yahoo email, daily 08:00–18:00, Kaunas base, 20 m own lift, branch and timber hauling by fiskaras truck only in Kaunas/Kaunas district, source-qualified prices and review facts. No new 24/7, guaranteed arrival, coverage or certification promises.
 
 `QuoteForm.astro`: homepage short variant requires telephone (≥8 digits); optional problem message. Full dialog/contact form requires name, telephone and message; optional service/locality; preserve submitted field names, service option values/slugs, labels/autocomplete, photo instructions via SMS/email (no upload field). Production remains POST Web3Forms with existing keys/subject/from_name, honeypot, hCaptcha and `/success` redirect. Preview omits provider credentials/captcha and prevents network submission; displays explicitly unsent status and increments `__arbcutPreviewSubmits`. Preserve error alert, invalid-field focus and success-status focus. No production success is claimed here.
 
@@ -338,3 +338,16 @@ Expressions below are exact source anchors, not rendered replacement copy. For f
 60: <a href={`/paslaugos/${s}`} class="board__row">
 71: <p class="board__foot">Valandinis darbas nuo 20 €/h. <a href="/kainos">Kas lemia kainą</a> · <a href="/paslaugos">Visos paslaugos</a></p>
 ```
+
+
+## Review corrections and inline content anchors
+
+Lead verified these against `bb63bd8` after Claude review round 1. Tree cutting/removal is offered outside Kaunas; only branch/timber hauling has the Kaunas/Kaunas district restriction. Do not confuse `išvežimas` with `šalinimas`.
+
+- `src/pages/[vietove].astro:24–27`: town FAQ branches on `isBase`. Base answer promises agreed hauling with own fiskaras (capacity from 20 m³); elsewhere the exact answer is “Medienos išvežimą fiskaru atliekame Kaune ir Kauno rajone. Kitur medį nupjauname, sutvarkome, o šakas ir medieną sukrauname tvarkingoje krūvoje.” Preserve visible FAQ and its schema together.
+- `src/pages/[vietove].astro:50–51`: base note begins “Išvežame patys.”; elsewhere begins “Medienos išvežimas” and specifies Kaunas/Kaunas district only, followed by localized stacking on site. Preserve both branches.
+- `src/components/home/AreaMap.astro:27`: base city subtitle “Bazė, išvežame medieną”; other cities use localized tree-cutting text.
+- `src/components/home/AreaMap.astro:33`: “Šakų ir medienos išvežimas fiskaru tik Kaune ir Kauno rajone.” followed by “Kitur medį supjauname, o šakas ir medieną sukrauname tvarkingomis krūvomis.”
+- Existing unqualified source wording: `src/data/turinys.js:10` says “viską galime išvežti”; line 52 says “galime išvežti šakas ir medieną”. Preserve and flag the missing geographic qualification; whether these particular exports render has not been verified. These are source ambiguities, not authorization to change copy.
+
+Review scope: round 1 checked hauling, homepage order, indexing and Google configuration; route arrays, schema details, conversion behavior and remaining template order were not fully independently reviewed. Source analysis does not establish runtime behavior.
