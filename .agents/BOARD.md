@@ -59,3 +59,8 @@
 - Deep-study retry1 commit3935e5c:20/252 chunks viewed, Genz desktop plus first4 mobile; incomplete. Lead spot-checked3 raw images confirming repeated brand devices and fixed-header obstruction. Retry2 (last) targets one complete Puetz homepage desktop/mobile with interactions to establish workable throughput; full inventory remains pending.
 
 - Retry2 final result bacc344/6886314: Puetz homepage visual analysis at both widths with recovered footer;48/252original chunks now viewed,204remain. Full inventory NOT complete. Lead directly verified Resources hover, loaded quote panel and actual mobile toggle state; wrote evidence in research report. Two retry limit exhausted; no further child retries. Next owner lead for remaining coverage and evidence consolidation.
+
+## Continuation — preserved SEO/design contract
+- Lead now Codex (gpt-6-astra); retains remaining Hook visual study after exhausted retries. No repeat delegation of that stage.
+- Independent bounded stage `v4-preserved-content-contract`: Codex gpt-6.1-sol medium owns only `.agents/research/v4-preserved-content-contract.md`; reads bb63bd8 routes/components and existing brief. Output: source-cited route/template, heading, internal-link and conversion constraints for the visual redesign. No website edits. Lead verifies report against baseline before acceptance.
+- Full visual inventory remains incomplete. This stage does not replace it. Proposal follows research.
