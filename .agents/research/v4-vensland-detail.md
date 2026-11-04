@@ -113,7 +113,7 @@ Shared pattern, seen on all 10:
 | `/paslaugos/vejos-skarifikavimas/` | both | 4 lines, `VEJOS` alone | 1: red scarifier | Single photo leaves most of the row blank |
 | `/paslaugos/vejos-lyginimas-levelingas/` | both | 3 lines | 2: sand cart, sanded lawn | Clear process evidence, but no before/after pairing |
 | `/paslaugos/vejos-tresimas-purskimas/` | both | 4 lines, `Ę Š Ž Ų` in caps | 0 | Same tight heading as irrigation. H1 drops `Vilniaus rajone` |
-| `/paslaugos/zoles-pjovimas/` | both | Viewed, 2 panels at 0.75 scale | 1: striped lawn | Viewed, 1 native 4-column sheet; seams apply |
+| `/paslaugos/zoles-pjovimas/` | both | 3 lines, `Ž` starts the H1 | 1: striped lawn | Most attractive result photo, still small |
 | `/paslaugos/apleistu-sklypu-tvarkymas/` | both | 4 lines | 1: cleared site by fence | Honest mid-job photo; a before/after would prove more. 6 lines at 390 |
 | `/paslaugos/mini-ekskavatoriaus-paslaugos/` | both | 5 lines | 1: excavator on prepared ground | **Defect at 390:** H1 breaks mid-word, `EKSKAVATORIAU / S PASLAUGOS` |
 | `/paslaugos/gyvatvoriu-sodinimas-prieziura/` | both | 5 lines | 1: planted hedge | Longest H1, with `bei` instead of `ir`; dull overcast photo |
