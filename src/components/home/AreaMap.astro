@@ -1,0 +1,106 @@
+---
+/* Aptarnavimo zona: 9 miestai (nuorodos į vietovių puslapius) + schema pagal tikras koordinates.
+   Google žemėlapis įkeliamas tik paspaudus (privatumas, jokių užklausų iš anksto). */
+import { vietoves } from '@data/vietoves.js';
+import Icon from '../Icon.astro';
+/* Apytikslės miestų centrų koordinatės (lat, lng) */
+const geo = {
+  Kaunas: [54.897, 23.886], Vilnius: [54.687, 25.28], 'Panevėžys': [55.734, 24.357], 'Marijampolė': [54.559, 23.354],
+  Alytus: [54.396, 24.046], Jonava: [55.083, 24.279], 'Kėdainiai': [55.288, 23.974], 'Kazlų Rūda': [54.749, 23.49], 'Tauragė': [55.252, 22.29],
+};
+const L0 = 20.9, T0 = 56.5, KX = 64, KY = 111;
+const pt = ([lat, lng]) => [Math.round((lng - L0) * KX), Math.round((T0 - lat) * KY)];
+const K = pt(geo.Kaunas);
+const lab = { Jonava: 'r', 'Kėdainiai': 'r', 'Kazlų Rūda': 'l', 'Marijampolė': 'l', Alytus: 'r', Kaunas: 'l', Vilnius: 'r', 'Panevėžys': 'r', 'Tauragė': 'r' };
+const q = encodeURIComponent('Kaunas, Lietuva');
+---
+<section class="area dark" id="vietoves" aria-labelledby="area-h">
+  <div class="wrap area__grid">
+    <div class="area__txt">
+      <h2 id="area-h">Kur važiuojame</h2>
+      <p class="lead">Bazė Kaune. Dirbame Kaune, Kauno rajone ir iki 200 km aplink. Į tolimesnius miestus važiuojame suderinę datą iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.</p>
+      <ul role="list" class="area__list">
+        {vietoves.map((v) => (
+          <li class:list={{ 'is-base': v.pagrindinis }}>
+            <a href={`/${v.slug}`}>
+              <span class="area__city">{v.miestas}</span>
+              <span class="area__sub">{v.pagrindinis ? 'Bazė, išvežame medieną' : `Medžių pjovimas ${v.kur}`}</span>
+              <Icon name="arrow" size={22} />
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p class="area__note"><strong>Šakų ir medienos išvežimas fiskaru tik Kaune ir Kauno rajone.</strong> Kitur medį supjauname, o šakas ir medieną sukrauname tvarkingomis krūvomis.</p>
+    </div>
+
+    <div class="area__map">
+      <div class="area__frame" data-map>
+        <svg viewBox="0 0 400 300" class="area__svg" aria-hidden="true" focusable="false">
+          <circle cx={K[0]} cy={K[1]} r="200" class="ring" />
+          <circle cx={K[0]} cy={K[1]} r="100" class="ring ring--in" />
+          <text x={K[0] + 6} y={K[1] - 103} class="ring-l">100 km</text>
+          <text x={K[0] + 6} y={K[1] - 203 < 12 ? 14 : K[1] - 203} class="ring-l">200 km</text>
+          {vietoves.map((v) => {
+            const [x, y] = pt(geo[v.miestas]);
+            const r = lab[v.miestas] === 'r';
+            return (
+              <g class:list={['town', { 'town--base': v.pagrindinis }]}>
+                {!v.pagrindinis && <line x1={K[0]} y1={K[1]} x2={x} y2={y} />}
+                <circle cx={x} cy={y} r={v.pagrindinis ? 7 : 4.5} />
+                <text x={r ? x + 9 : x - 9} y={y + 4} text-anchor={r ? 'start' : 'end'}>{v.miestas}</text>
+              </g>
+            );
+          })}
+        </svg>
+        <div class="area__load">
+          <button type="button" class="btn btn--primary btn--sm" data-map-load data-src={`https://www.google.com/maps?q=${q}&z=8&output=embed`}><Icon name="pin" size={20} /> Rodyti Google žemėlapyje</button>
+          <p>Žemėlapis įkeliamas tik paspaudus.</p>
+        </div>
+      </div>
+      <p class="area__cap">Schema pagal miestų koordinates. Apskritimai: atstumas tiesia linija nuo Kauno.</p>
+    </div>
+  </div>
+</section>
+<style>
+  .area { background: var(--f1); padding-block: var(--sec); }
+  .area__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
+  .area__txt { display: grid; gap: 22px; }
+  .area h2 { font-size: clamp(2.6rem, 1.4rem + 4.4vw, 5.6rem); font-weight: 700; }
+  .area__list { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .area__list a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 10px; align-items: center; padding: 12px 16px; background: var(--f0); min-height: 64px; transition: background var(--t); }
+  .area__list a:hover { background: var(--f2); }
+  .area__list .is-base { grid-column: 1 / -1; }
+  .area__list .is-base a { background: var(--rust); color: var(--f0); }
+  .area__list .is-base a:hover { background: var(--rust-h); }
+  .area__city { font-family: var(--display); font-weight: 600; font-size: 1.6rem; text-transform: uppercase; line-height: 1.05; }
+  .is-base .area__city { font-size: 2.2rem; }
+  .area__sub { grid-column: 1; font-size: .95rem; color: var(--on-dark-2); }
+  .is-base .area__sub { color: var(--f0); font-weight: 600; }
+  .area__list a :global(svg) { grid-column: 2; grid-row: 1 / span 2; color: var(--amber); }
+  .is-base a :global(svg) { color: var(--f0); }
+  .area__note { border-left: 6px solid var(--amber); padding: 4px 0 4px 18px; color: var(--on-dark-2); }
+  .area__note strong { color: var(--cream); }
+
+  .area__frame { position: relative; aspect-ratio: 4 / 3; background: var(--f0); overflow: hidden; }
+  .area__frame :global(iframe) { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .area__svg { width: 100%; height: 100%; }
+  .ring { fill: rgba(240, 169, 74, .07); stroke: var(--amber); stroke-width: 1.2; stroke-dasharray: 4 4; }
+  .ring--in { fill: rgba(240, 169, 74, .08); }
+  .ring-l { fill: var(--amber); font: 600 9px var(--sans); }
+  .town line { stroke: rgba(246, 241, 230, .25); stroke-width: 1; }
+  .town circle { fill: var(--cream); }
+  .town text { fill: var(--cream); font: 600 11px var(--sans); }
+  .town--base circle { fill: var(--rust); stroke: var(--f0); stroke-width: 2; }
+  .town--base text { font: 700 14px var(--display); text-transform: uppercase; fill: var(--amber); }
+  .area__load { position: absolute; left: 16px; bottom: 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+  .area__load p { font-size: .92rem; color: var(--on-dark-2); }
+  .area__cap { margin-top: 10px; font-size: .92rem; color: var(--on-dark-2); }
+  @media (max-width: 960px) { .area__grid { grid-template-columns: 1fr; } }
+  @media (max-width: 480px) {
+    .area__list { grid-template-columns: 1fr; }
+    .area__city { font-size: 1.4rem; }
+    .area__frame { aspect-ratio: 1 / 1; }
+    .area__svg { transform: scale(1.35); transform-origin: 46% 42%; }
+    .area__load { left: 10px; right: 10px; bottom: 10px; }
+  }
+</style>

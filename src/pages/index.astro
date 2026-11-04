@@ -8,6 +8,7 @@ import Moments from '../components/home/Moments.astro';
 import Press from '../components/home/Press.astro';
 import SendPhotos from '../components/home/SendPhotos.astro';
 import ReviewBoard from '../components/home/ReviewBoard.astro';
+import AreaMap from '../components/home/AreaMap.astro';
 import Icon from '../components/Icon.astro';
 import ServiceIndex from '../components/ServiceIndex.astro';
 import Sequences from '../components/Sequences.astro';
@@ -41,22 +42,7 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 
   <ReviewBoard />
 
-  <!-- Kur dirbame -->
-  <section class="sec">
-    <div class="wrap area">
-      <div>
-        <p class="kicker">Kur dirbame</p>
-        <h2>Bazė — Kaunas. Išvykstame ir toliau.</h2>
-        <p class="lead">Dažniausiai dirbame Kaune ir Kauno apskrityje. Į kitus miestus išvykstame suderinę datą iš anksto — kelių kaimynų darbus galima atlikti per vieną atvykimą.</p>
-        <p class="area__note"><strong>Medienos išvežimas</strong> — tik Kaune ir Kauno rajone. Kitur medį nupjauname, sutvarkome, o šakas ir medieną sukrauname krūvoje.</p>
-      </div>
-      <ul role="list" class="area__list">
-        {vietoves.map((v) => (
-          <li><a href={`/${v.slug}`}><span>{v.miestas}</span><small>{v.pagrindinis ? 'Bazė' : 'Medžių pjovimas'}</small><Icon name="arrow" size={16} /></a></li>
-        ))}
-      </ul>
-    </div>
-  </section>
+  <AreaMap />
 
   <!-- DUK -->
   <section class="sec sec--white rule-top">
@@ -74,16 +60,9 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 </BaseLayout>
 
 <style>
-  .area { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
-  .area > div { display: grid; gap: 18px; }
-  .area__note { padding: 16px 18px; background: var(--white); border-left: 4px solid var(--timber); }
-  .area__list { border-top: 2px solid var(--ink); }
-  .area__list a { display: grid; grid-template-columns: 1fr auto 20px; gap: 16px; align-items: center; padding: 14px 4px; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.2rem; font-weight: 600; }
-  .area__list small { font-family: var(--sans); font-size: .85rem; color: var(--mute); font-weight: 450; }
-  .area__list a:hover span { color: var(--timber); }
   .faqwrap { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
 
   @media (max-width: 960px) {
-    .area, .faqwrap { grid-template-columns: 1fr; }
+    .faqwrap { grid-template-columns: 1fr; }
   }
 </style>

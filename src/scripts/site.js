@@ -249,6 +249,16 @@
     }
   });
 
+  /* Google žemėlapis — tik paspaudus */
+  $$('[data-map-load]').forEach((b) => b.addEventListener('click', () => {
+    const box = b.closest('[data-map]');
+    const f = document.createElement('iframe');
+    f.src = b.dataset.src; f.title = 'ArbCut aptarnavimo zona Google žemėlapyje'; f.loading = 'lazy';
+    f.referrerPolicy = 'no-referrer-when-downgrade'; f.allowFullscreen = true;
+    box.replaceChildren(f);
+    f.setAttribute('tabindex', '0'); f.focus();
+  }));
+
   /* Mobili juosta pasitraukia, kol fokusas formos lauke */
   document.addEventListener('focusin', (e) => {
     if (e.target.matches && e.target.matches('input, textarea, select')) document.documentElement.classList.add('is-typing');
