@@ -54,7 +54,7 @@
       else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     }
   });
-  mnav && $$('a', mnav).forEach((a) => a.addEventListener('click', () => { mnav.hidden = true; document.documentElement.style.overflow = ''; }));
+  mnav && $$('a', mnav).forEach((a) => a.addEventListener('click', () => setMnav(false)));
 
   /* Užklausos dialogas */
   const dlg = $('#quote-dialog');
@@ -68,7 +68,10 @@
       const opt = $$('option', sel).find((o) => o.dataset.slug === slugWanted);
       if (opt) sel.value = opt.value;
     }
-    if (mnav && !mnav.hidden) { mnav.hidden = true; document.documentElement.style.overflow = ''; }
+    if (mnav && !mnav.hidden) {
+      if (trigger && mnav.contains(trigger)) lastTrigger = burger;
+      setMnav(false);
+    }
     if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
     const first = $('input:not([type=hidden]):not(.sr-only)', dlg);
     first && setTimeout(() => first.focus(), 30);

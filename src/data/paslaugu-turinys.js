@@ -364,7 +364,7 @@ export const detales = {
     description:
       'Lietaus latakų ir lietvamzdžių valymas nuo lapų, stogo dangos valymas nuo samanų; žiemą — sniego, ledo ir varveklių šalinimas. Kaina nuo 4 €/m.',
     ivadas:
-      'Užsikimšę latakai ir lietvamzdžiai sukelia drėgmės problemų ir gadina fasadą. Išvalome latakus nuo lapų ir sąnašų, prabėgame lietvamzdžius, nuvalome stogo dangą nuo samanų ir nešvarumų. Žiemą šaliname sniegą, ledą ir varveklius nuo stogų.',
+      'Užsikimšę latakai ir lietvamzdžiai sukelia drėgmės problemų ir gadina fasadą. Išvalome latakus nuo lapų ir sąnašų, taip pat lietvamzdžius, nuvalome stogo dangą nuo samanų ir nešvarumų. Žiemą šaliname sniegą, ledą ir varveklius nuo stogų.',
     tinka: [
       'Latakai prisipildė lapų ir vanduo bėga per kraštą',
       'Ant stogo dangos samanos',

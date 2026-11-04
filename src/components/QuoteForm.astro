@@ -31,7 +31,7 @@ const { id = 'quote-form', prefix = 'q', service = '' } = Astro.props;
     </div>
     <div class="qf__f">
       <label for={`${prefix}-tel`}>Telefonas <span aria-hidden="true">*</span></label>
-      <input id={`${prefix}-tel`} name="Telefonas" type="tel" autocomplete="tel" inputmode="tel" required placeholder="+370 6__ _____" />
+      <input id={`${prefix}-tel`} name="Telefonas" type="tel" autocomplete="tel" inputmode="tel" required pattern="(?:[^0-9]*[0-9]){8,}[^0-9]*" placeholder="+370 6__ _____" />
     </div>
   </div>
   <div class="qf__row">

@@ -7,6 +7,8 @@ import Footer from '../components/Footer.astro';
 import QuoteDialog from '../components/QuoteDialog.astro';
 import MobileActions from '../components/MobileActions.astro';
 import Lightbox from '../components/Lightbox.astro';
+import fontSans from '@fontsource-variable/archivo/files/archivo-latin-wdth-normal.woff2?url';
+import fontSerif from '@fontsource-variable/source-serif-4/files/source-serif-4-latin-opsz-normal.woff2?url';
 
 const { title, description, ogImage, noindex = false, schemas, bare = false } = Astro.props;
 const pageTitle = title || site.metaTitle;
@@ -37,6 +39,8 @@ const B = '/assets/arbcut-upgrade-brand';
     <meta property="og:image" content={ogImg} />
     <meta name="twitter:card" content="summary_large_image" />
 
+    <link rel="preload" href={fontSans} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={fontSerif} as="font" type="font/woff2" crossorigin />
     <meta name="theme-color" content="#1d3227" />
     <link rel="icon" href={`${B}/favicon.ico`} sizes="48x48" />
     <link rel="icon" type="image/png" sizes="32x32" href={`${B}/favicon-32.png`} />

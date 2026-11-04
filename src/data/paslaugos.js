@@ -100,7 +100,7 @@ export const paslaugos = [
     slug: 'lietvamzdziu-stogo-valymas',
     pavadinimas: 'Lietvamzdžių ir stogo dangos valymas',
     aprasymas: 'Lietaus latakų, lietvamzdžių ir stogo dangos valymas nuo lapų, samanų ir nešvarumų — su autobokšteliu.',
-    seo: 'Užsikimšę latakai ir lietvamzdžiai sukelia drėgmės problemų ir gadina fasadą. Išvalome namų lietaus latakus nuo lapų ir kitų sąnašų, prabėgame lietvamzčius, nuvalome stogo dangą nuo samanų ir nešvarumų. Dirbame su autobokšteliu, todėl pasiekiame ir aukštų bei sudėtingų stogų vietas. Kaina nuo 4 € už metrą; žiemą papildomai šaliname sniegą, ledą ir varveklius nuo stogų.',
+    seo: 'Užsikimšę latakai ir lietvamzdžiai sukelia drėgmės problemų ir gadina fasadą. Išvalome namų lietaus latakus nuo lapų ir kitų sąnašų, taip pat lietvamzdžius, nuvalome stogo dangą nuo samanų ir nešvarumų. Dirbame su autobokšteliu, todėl pasiekiame ir aukštų bei sudėtingų stogų vietas. Kaina nuo 4 € už metrą; žiemą papildomai šaliname sniegą, ledą ir varveklius nuo stogų.',
     kaina: 'nuo 4 €/m',
     nuotrauka: '/assets/images/paslaugos/lietvamzdziu-stogo-valymas.jpg',
     ikona: 'lasai',

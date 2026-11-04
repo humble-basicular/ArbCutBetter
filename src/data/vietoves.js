@@ -35,7 +35,7 @@ const turinys = {
   'medziu-pjovimas-jonava': {
     intro: 'Jonavoje — greitai pasiekiama iš Kauno, visi aukštuminiai darbai.',
     tekstas:
-      'Jonava yra visai šalia Kauno, todėl čia atvykstame greitai ir patogiai — tinka ir skubiems, avariniams iškvietimams. Atliekame pavojingų medžių pjovimą, genėjimą, kelmų naikinimą bei kitus aukštuminius darbus nuosavu autobokšteliu. Kadangi esame netoli, darbų datą suderinti paprasta; medieną ir šakas po darbų sukrauname tvarkingoje krūvoje, o dėl išvežimo galima pasitarti atskirai.',
+      'Jonava yra visai šalia Kauno, todėl čia atvykstame greitai ir patogiai — tinka ir skubiems, avariniams iškvietimams. Atliekame pavojingų medžių pjovimą, genėjimą, kelmų naikinimą bei kitus aukštuminius darbus nuosavu autobokšteliu. Kadangi esame netoli, darbų datą suderinti paprasta; medieną ir šakas po darbų sukrauname tvarkingoje krūvoje, o medienos ir šakų išvežimą atliekame tik Kaune ir Kauno rajone.',
   },
   'medziu-pjovimas-kedainiai': {
     intro: 'Kėdainiuose — sodybų medžiai, arti Kauno rajono.',
