@@ -64,3 +64,5 @@
 - Lead now Codex (gpt-6-astra); retains remaining Hook visual study after exhausted retries. No repeat delegation of that stage.
 - Independent bounded stage `v4-preserved-content-contract`: Codex gpt-6.1-sol medium owns only `.agents/research/v4-preserved-content-contract.md`; reads bb63bd8 routes/components and existing brief. Output: source-cited route/template, heading, internal-link and conversion constraints for the visual redesign. No website edits. Lead verifies report against baseline before acceptance.
 - Full visual inventory remains incomplete. This stage does not replace it. Proposal follows research.
+- Contract report returned at 1d64c7f. Lead source spot-check confirms homepage order, empty Google placeId and About metadata 122. Potential material ambiguity: report says removal only Kaunas; baseline means hauling branches/timber away, not tree cutting. Cross-provider review pending before acceptance.
+- Review owner Claude2 Opus 5.5 medium; read-only baseline/report review, no file ownership. Lead owns corrections and acceptance. Stage v4-preserved-content-contract, review round 1.
