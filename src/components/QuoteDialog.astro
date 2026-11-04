@@ -8,24 +8,21 @@ import Icon from './Icon.astro';
 <dialog class="qd" id="quote-dialog" aria-labelledby="qd-title">
   <div class="qd__in">
     <div class="qd__head">
-      <div>
-        <p class="kicker">Užklausa</p>
-        <h2 id="qd-title">Papasakokite, ką reikia padaryti</h2>
-      </div>
-      <button type="button" class="qd__x" data-quote-close aria-label="Uždaryti"><Icon name="close" size={24} /></button>
+      <h2 id="qd-title">Gauti kainą</h2>
+      <button type="button" class="qd__x" data-quote-close aria-label="Uždaryti"><Icon name="close" size={26} /></button>
     </div>
-    <p class="qd__alt">Greičiausia — paskambinti: <a href={site.telefonasHref} data-loc="dialog-call">{site.telefonas}</a></p>
+    <p class="qd__alt">Greičiausia paskambinti: <a href={site.telefonasHref} data-loc="dialog-call">{site.telefonas}</a></p>
     <QuoteForm id="dialog-form" prefix="d" />
   </div>
 </dialog>
 
 <style>
-  .qd { width: min(640px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); padding: 0; border: 0; border-radius: var(--radius); background: var(--white); color: var(--text); box-shadow: 0 30px 80px rgba(0,0,0,.35); }
-  .qd::backdrop { background: rgba(20, 35, 27, .72); }
+  .qd { width: min(680px, calc(100vw - 20px)); max-height: calc(100dvh - 20px); padding: 0; border: 0; border-top: 8px solid var(--rust); border-radius: var(--radius); background: var(--cream); color: var(--text); box-shadow: 0 30px 80px rgba(0,0,0,.45); }
+  .qd::backdrop { background: rgba(8, 16, 12, .8); }
   .qd__in { padding: clamp(20px, 4vw, 36px); display: grid; gap: 14px; }
-  .qd__head { display: flex; justify-content: space-between; gap: 16px; align-items: start; }
-  .qd__head h2 { font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem); margin-top: 6px; }
-  .qd__x { width: 44px; height: 44px; display: grid; place-items: center; flex: 0 0 auto; color: var(--ink); }
-  .qd__alt { color: var(--mute); }
-  .qd__alt a { color: var(--ink); font-weight: 700; white-space: nowrap; }
+  .qd__head { display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+  .qd__head h2 { font-size: clamp(2rem, 1.6rem + 1.4vw, 2.8rem); }
+  .qd__x { width: 48px; height: 48px; display: grid; place-items: center; flex: 0 0 auto; background: var(--f1); color: var(--cream); }
+  .qd__alt { color: var(--text-2); font-size: 1.1rem; }
+  .qd__alt a { color: var(--f1); font-family: var(--display); font-weight: 600; font-size: 1.35rem; white-space: nowrap; }
 </style>

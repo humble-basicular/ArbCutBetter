@@ -17,6 +17,7 @@ export const site = {
   // --- Kontaktai (ŠVENTI — nekeisk be kliento) ---
   telefonas: '+370 603 66901',
   telefonasHref: 'tel:+37060366901',
+  smsHref: 'sms:+37060366901',
   elPastas: 'aukstuminiai.darbai@yahoo.com',
   facebook: 'https://www.facebook.com/MesGalimeTaiPadaryti/',
 
@@ -71,7 +72,24 @@ export const site = {
 
   // --- Atsiliepimai (paslaugos.lt — klientas dar neturi Google Business profilio) ---
   // Kai bus Google profilis, užpildyk googlePlaceId ir reviewUrl persijungs automatiškai.
-  google: { placeId: '' },
+  /* Google verslo profilis (dar nesukurtas). Užpildžius placeId:
+     atsiranda Google įvertinimo blokas ir „Palikite atsiliepimą Google“.
+     Raktas — PUBLIC_GOOGLE_MAPS_KEY aplinkos kintamasis (ne repozitorijoje). */
+  google: {
+    placeId: '',
+    get mapsKey() { return import.meta.env.PUBLIC_GOOGLE_MAPS_KEY || ''; },
+    get reviewUrl() { return this.placeId ? `https://search.google.com/local/writereview?placeid=${this.placeId}` : ''; },
+  },
+  /* Paslaugos.lt profilio faktai (2026-11-04) */
+  profilis: {
+    nuo: 2019,
+    lankytojai: '19 335',
+    skambuciai: '1 192',
+    laiskai: '108',
+    nuotraukos: 93,
+    spindulys: 'Kaunas, +200 km aplink',
+    kainaNuo: 'nuo 20 €/h',
+  },
   atsiliepimai: {
     profilis: 'https://paslaugos.lt/mantas-gerulis-aa777',     // viešas profilis (skaityti)
     paliktiUrl: 'https://paslaugos.lt/atsiliepimas/aa777',     // „palikti atsiliepimą" forma

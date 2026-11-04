@@ -1,6 +1,6 @@
 ---
-/* Viršutinė kontaktų juosta + pagrindinė antraštė su paslaugų meniu.
-   Mobiliai: meniu atsidaro per visą ekraną, paslaugos — sąrašu. */
+/* Antraštė: tamsi juosta, telefonas visada matomas (ir mobiliai).
+   Paslaugų meniu desktop'e, pilno ekrano meniu mobiliai. */
 import { site } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
 import { grupes, detales } from '@data/paslaugu-turinys.js';
@@ -11,6 +11,7 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const nav = [
   { href: '/galerija', label: 'Darbai' },
   { href: '/kainos', label: 'Kainos' },
+  { href: '/atsiliepimai', label: 'Atsiliepimai' },
   { href: '/apie', label: 'Apie' },
   { href: '/kontaktai', label: 'Kontaktai' },
 ];
@@ -18,23 +19,18 @@ const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
 const isActive = (href) => path === href || path.startsWith(href + '/');
 const servicesActive = path.startsWith('/paslaugos');
 ---
-<div class="ubar on-dark">
-  <div class="wrap ubar__in">
-    <span class="ubar__item"><Icon name="pin" size={16} /> Kaunas · išvykstame ir į kitus miestus</span>
-    <span class="ubar__item ubar__hours"><Icon name="clock" size={16} /> {site.darboLaikas.replace('Pirmadienis–Sekmadienis', 'Kasdien')}</span>
-    <a class="ubar__item ubar__mail" href={`mailto:${site.elPastas}`}><Icon name="mail" size={16} /> {site.elPastas}</a>
-  </div>
-</div>
-
 <header class="hdr" id="top">
-  <div class="wrap hdr__in">
-    <a href="/" class="hdr__logo" aria-label="ArbCut — į pradžią"><Logo tone="dark" height={44} /></a>
+  <div class="hdr__in">
+    <a href="/" class="hdr__logo" aria-label="ArbCut, į pradžią">
+      <Logo tone="light" height={44} class="hdr__logo-full" />
+      <Logo mark height={40} class="hdr__logo-mark" />
+    </a>
 
     <nav class="hdr__nav" aria-label="Pagrindinis meniu">
       <ul role="list" class="hdr__list">
         <li class="hdr__drop">
           <button type="button" class:list={['hdr__link', 'hdr__dropbtn', { 'is-active': servicesActive }]} aria-expanded="false" aria-controls="svc-menu">
-            Paslaugos <Icon name="chevron" size={16} />
+            Paslaugos <Icon name="chevron" size={18} />
           </button>
           <div class="svc" id="svc-menu" hidden>
             <div class="svc__in">
@@ -52,10 +48,10 @@ const servicesActive = path.startsWith('/paslaugos');
                 </div>
               ))}
               <div class="svc__col svc__col--cta">
-                <p class="svc__head">Nežinote, ko reikia?</p>
-                <p>Atsiųskite nuotrauką ar paskambinkite — pasakysime, kaip spręsti.</p>
-                <a class="btn btn--ink btn--sm" href={site.telefonasHref} data-loc="nav-services-call"><Icon name="phone" size={18} /> {site.telefonas}</a>
-                <a class="link-arrow" href="/paslaugos">Visos paslaugos <Icon name="arrow" size={16} /></a>
+                <p class="svc__head">Nežinote, kaip vadinasi darbas?</p>
+                <p>Nufotografuokite medį ir atsiųskite. Pasakysime, ką daryti ir kiek kainuos.</p>
+                <a class="btn btn--primary btn--sm" href={site.smsHref} data-loc="nav-sms"><Icon name="sms" size={20} /> Siųsti SMS</a>
+                <a class="link-arrow" href="/paslaugos">Visos paslaugos</a>
               </div>
             </div>
           </div>
@@ -67,21 +63,32 @@ const servicesActive = path.startsWith('/paslaugos');
     </nav>
 
     <div class="hdr__actions">
-      <a class="hdr__tel" href={site.telefonasHref} data-loc="header-call"><Icon name="phone" size={18} /> <span>{site.telefonas}</span></a>
+      <a class="hdr__tel" href={site.telefonasHref} data-loc="header-call">
+        <span class="hdr__tel-l">Skambinkite kasdien 08–18</span>
+        <span class="hdr__tel-n"><Icon name="phone" size={22} />{site.telefonas}</span>
+      </a>
       <button type="button" class="btn btn--primary btn--sm hdr__quote" data-quote>Gauti kainą</button>
       <button type="button" class="hdr__burger" aria-expanded="false" aria-controls="mnav" aria-label="Atidaryti meniu">
-        <Icon name="menu" size={26} />
+        <Icon name="menu" size={28} />
       </button>
     </div>
   </div>
 </header>
 
-<div class="mnav on-dark" id="mnav" hidden>
+<div class="mnav" id="mnav" hidden>
   <div class="mnav__top">
-    <a href="/" aria-label="ArbCut — į pradžią"><Logo tone="light" height={38} /></a>
-    <button type="button" class="mnav__close" aria-label="Uždaryti meniu"><Icon name="close" size={26} /></button>
+    <a href="/" aria-label="ArbCut, į pradžią"><Logo tone="light" height={36} /></a>
+    <button type="button" class="mnav__close" aria-label="Uždaryti meniu"><Icon name="close" size={28} /></button>
+  </div>
+  <div class="mnav__call">
+    <a class="mnav__tel" href={site.telefonasHref} data-loc="mnav-call"><Icon name="phone" size={26} /> {site.telefonas}</a>
+    <p>Kasdien 08:00–18:00</p>
   </div>
   <nav class="mnav__body" aria-label="Mobilusis meniu">
+    <ul role="list" class="mnav__main">
+      <li><a href="/paslaugos">Paslaugos</a></li>
+      {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+    </ul>
     {grupes.map((g) => (
       <div class="mnav__grp">
         <p class="mnav__head">{g.pavadinimas}</p>
@@ -90,65 +97,74 @@ const servicesActive = path.startsWith('/paslaugos');
         </ul>
       </div>
     ))}
-    <ul role="list" class="mnav__main">
-      <li><a href="/paslaugos">Visos paslaugos</a></li>
-      {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
-      <li><a href="/atsiliepimai">Atsiliepimai</a></li>
-    </ul>
   </nav>
   <div class="mnav__foot">
-    <a class="btn btn--primary" href={site.telefonasHref} data-loc="mnav-call"><Icon name="phone" size={18} /> Skambinti {site.telefonas}</a>
-    <button type="button" class="btn btn--line" data-quote>Gauti kainą</button>
+    <a class="btn btn--line" href={site.smsHref} data-loc="mnav-sms"><Icon name="sms" size={20} /> Siųsti nuotraukas SMS</a>
+    <button type="button" class="btn btn--primary" data-quote>Gauti kainą</button>
   </div>
 </div>
 
 <style>
-  .ubar { background: var(--ink-2); color: var(--mute-light); font-size: .86rem; }
-  .ubar__in { display: flex; gap: 28px; align-items: center; min-height: 38px; }
-  .ubar__item { display: inline-flex; align-items: center; gap: 8px; }
-  .ubar__mail { margin-left: auto; }
-  .ubar__mail:hover { color: var(--paper); }
-  @media (max-width: 860px) { .ubar__mail, .ubar__hours { display: none; } .ubar__in { justify-content: center; } }
-
-  .hdr { position: sticky; top: 0; z-index: 900; background: var(--paper); border-bottom: 1px solid var(--line); transition: box-shadow var(--t); }
-  .hdr.is-stuck { box-shadow: 0 6px 20px rgba(20, 35, 27, .08); }
-  .hdr__in { display: flex; align-items: center; gap: 28px; height: var(--header-h); }
+  .hdr { position: sticky; top: 0; z-index: 900; background: var(--f0); color: var(--cream); border-bottom: 1px solid #1d3326; }
+  .hdr :focus-visible { outline-color: var(--amber); }
+  .hdr__in { max-width: 1480px; margin: 0 auto; padding-inline: var(--gutter); display: flex; align-items: center; gap: 28px; height: var(--header-h); }
   .hdr__logo { flex: 0 0 auto; display: block; }
-  .hdr__nav { margin-left: auto; }
-  .hdr__list { display: flex; align-items: center; gap: 4px; }
-  .hdr__link { display: inline-flex; align-items: center; gap: 4px; padding: 10px 12px; font-weight: 560; font-size: .98rem; color: var(--ink); border-bottom: 2px solid transparent; }
-  .hdr__link:hover, .hdr__link.is-active { border-bottom-color: var(--timber); }
+  .hdr__logo :global(.hdr__logo-mark) { display: none; }
+  .hdr__nav { margin-right: auto; }
+  .hdr__list { display: flex; align-items: center; gap: 2px; }
+  .hdr__link { display: inline-flex; align-items: center; gap: 4px; padding: 10px 12px; font-weight: 600; font-size: 1.06rem; color: var(--cream); border-bottom: 3px solid transparent; }
+  .hdr__link:hover, .hdr__link.is-active { border-bottom-color: var(--rust); }
   .hdr__dropbtn svg { transition: transform var(--t); }
   .hdr__dropbtn[aria-expanded='true'] svg { transform: rotate(180deg); }
-  .hdr__actions { display: flex; align-items: center; gap: 14px; }
-  .hdr__tel { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--ink); white-space: nowrap; }
-  .hdr__tel:hover { color: var(--timber); }
-  .hdr__burger { display: none; width: 48px; height: 48px; place-items: center; color: var(--ink); }
+  .hdr__actions { display: flex; align-items: center; gap: 18px; margin-left: auto; }
+  .hdr__tel { display: grid; justify-items: end; line-height: 1; white-space: nowrap; }
+  .hdr__tel-l { font-size: .88rem; color: var(--on-dark-2); margin-bottom: 5px; font-weight: 600; }
+  .hdr__tel-n { display: inline-flex; align-items: center; gap: 8px; font-family: var(--display); font-weight: 600; font-size: 1.85rem; letter-spacing: .01em; color: var(--amber); }
+  .hdr__tel:hover .hdr__tel-n { color: #ffc77a; }
+  .hdr__burger { display: none; width: 48px; height: 48px; place-items: center; color: var(--cream); margin-right: -8px; }
 
   .hdr__drop { position: static; }
-  .svc { position: absolute; left: 0; right: 0; top: 100%; background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); box-shadow: 0 24px 40px rgba(20, 35, 27, .12); }
-  .svc__in { max-width: var(--wrap); margin: 0 auto; padding: 28px var(--gutter) 32px; display: grid; grid-template-columns: 1fr 1fr .9fr; gap: 40px; }
-  .svc__head { font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--timber); margin-bottom: 10px; }
-  .svc__a { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 1px solid var(--paper-2); font-weight: 560; }
-  .svc__a small { color: var(--mute); font-weight: 450; font-size: .86rem; white-space: nowrap; }
-  .svc__a:hover span, .svc__a[aria-current] span { color: var(--timber); }
-  .svc__col--cta { background: var(--paper); padding: 22px; display: grid; gap: 14px; align-content: start; }
-  .svc__col--cta p:not(.svc__head) { color: var(--mute); font-size: .95rem; }
+  .svc { position: absolute; left: 0; right: 0; top: 100%; background: var(--cream); color: var(--text); box-shadow: 0 30px 50px rgba(6, 14, 10, .4); border-top: 4px solid var(--rust); }
+  .svc :focus-visible { outline-color: var(--rust); }
+  .svc__in { max-width: var(--wrap); margin: 0 auto; padding: 32px var(--gutter) 36px; display: grid; grid-template-columns: 1fr 1fr .9fr; gap: 44px; }
+  .svc__head { font-family: var(--display); font-size: 1.35rem; font-weight: 600; text-transform: uppercase; margin-bottom: 10px; color: var(--f1); }
+  .svc__a { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); font-weight: 600; }
+  .svc__a small { color: var(--bark); font-weight: 700; font-size: .95rem; white-space: nowrap; }
+  .svc__a:hover span, .svc__a[aria-current] span { color: var(--bark); text-decoration: underline; text-decoration-color: var(--rust); text-underline-offset: 4px; }
+  .svc__col--cta { background: var(--f1); color: var(--cream); padding: 26px; display: grid; gap: 16px; align-content: start; }
+  .svc__col--cta .svc__head { color: var(--cream); }
+  .svc__col--cta p:not(.svc__head) { color: var(--on-dark-2); }
+  .svc__col--cta .link-arrow { color: var(--cream); text-decoration-color: var(--amber); }
+  .svc__col--cta :focus-visible { outline-color: var(--amber); }
 
-  .mnav { position: fixed; inset: 0; z-index: 1500; background: var(--ink); color: var(--paper); display: flex; flex-direction: column; overflow-y: auto; }
+  .mnav { position: fixed; inset: 0; z-index: 1500; background: var(--f0); color: var(--cream); display: flex; flex-direction: column; overflow-y: auto; }
+  .mnav :focus-visible { outline-color: var(--amber); }
   .mnav[hidden] { display: none; }
-  .mnav__top { display: flex; justify-content: space-between; align-items: center; padding: 14px var(--gutter); border-bottom: 1px solid var(--line-dark); }
-  .mnav__close { width: 48px; height: 48px; display: grid; place-items: center; }
-  .mnav__body { padding: 8px var(--gutter) 24px; display: grid; gap: 22px; }
-  .mnav__head { font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--sand); margin: 14px 0 4px; }
-  .mnav__grp a, .mnav__main a { display: block; padding: 11px 0; border-bottom: 1px solid var(--line-dark); font-size: 1.08rem; }
-  .mnav__main a { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; }
-  .mnav__foot { margin-top: auto; padding: 16px var(--gutter) 24px; display: grid; gap: 10px; border-top: 1px solid var(--line-dark); }
+  .mnav__top { display: flex; justify-content: space-between; align-items: center; padding: 12px var(--gutter); min-height: 64px; }
+  .mnav__close { width: 48px; height: 48px; display: grid; place-items: center; margin-right: -8px; }
+  .mnav__call { padding: 8px var(--gutter) 20px; border-bottom: 1px solid #1d3326; }
+  .mnav__tel { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 2.1rem; color: var(--amber); }
+  .mnav__call p { color: var(--on-dark-2); margin-top: 2px; }
+  .mnav__body { padding: 12px var(--gutter) 24px; display: grid; gap: 26px; }
+  .mnav__main a { display: block; padding: 8px 0; font-family: var(--display); font-weight: 600; font-size: 1.9rem; text-transform: uppercase; line-height: 1.1; }
+  .mnav__head { font-family: var(--display); font-size: 1.15rem; font-weight: 600; text-transform: uppercase; color: var(--amber); margin-bottom: 4px; }
+  .mnav__grp a { display: block; padding: 10px 0; border-bottom: 1px solid #1d3326; font-size: 1.1rem; }
+  .mnav__foot { position: sticky; bottom: 0; margin-top: auto; padding: 14px var(--gutter) calc(16px + env(safe-area-inset-bottom)); display: grid; gap: 10px; background: var(--f0); border-top: 1px solid #1d3326; }
 
-  @media (max-width: 1080px) { .hdr__tel span { display: none; } }
-  @media (max-width: 920px) {
-    .hdr__nav, .hdr__quote, .hdr__tel { display: none; }
+  @media (max-width: 1260px) { .hdr__tel-l { display: none; } .hdr__link { padding-inline: 9px; } .hdr__in { gap: 20px; } }
+  @media (max-width: 1120px) {
+    .hdr__nav, .hdr__quote { display: none; }
     .hdr__burger { display: grid; }
-    .hdr__in { justify-content: space-between; height: 68px; }
+  }
+  @media (max-width: 860px) {
+    .hdr__logo :global(img.hdr__logo-full) { height: 32px; width: auto; }
+    .hdr__actions { gap: 8px; }
+    .hdr__tel-n { font-size: 1.32rem; gap: 6px; }
+    .hdr__tel-n :global(svg) { width: 18px; height: 18px; }
+  }
+  @media (max-width: 370px) {
+    .hdr__logo :global(.hdr__logo-full) { display: none; }
+    .hdr__logo :global(.hdr__logo-mark) { display: block; height: 36px; width: auto; }
+    .hdr__in { gap: 10px; }
   }
 </style>

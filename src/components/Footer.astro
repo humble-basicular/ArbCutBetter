@@ -2,20 +2,29 @@
 import { site } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
 import { grupes, detales } from '@data/paslaugu-turinys.js';
+import { vietoves } from '@data/vietoves.js';
 import { atsiliepimuKiekis, atsiliepimuVidurkis } from '@data/atsiliepimai.js';
+import { lrt, valstietis } from '@data/spauda.js';
 import Logo from './Logo.astro';
 import Icon from './Icon.astro';
 const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
 const year = new Date().getFullYear();
+const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 ---
-<footer class="ftr on-dark">
+<footer class="ftr">
+  <div class="wrap ftr__call">
+    <p class="ftr__call-h">Medis kelia nerimą? Skambinkite.</p>
+    <a class="ftr__tel" href={site.telefonasHref} data-loc="footer-call-big">{site.telefonas}</a>
+    <p class="ftr__call-s">Kasdien 08:00–18:00 · nuotraukas SMS žinute tuo pačiu numeriu arba <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
+  </div>
   <div class="wrap ftr__grid">
     <div class="ftr__brand">
       <Logo tone="light" height={46} />
-      <p>Arboristas aukštalipys {site.savininkas} su komanda. Medžių pjovimas, genėjimas, kelmai ir darbai aukštyje iki 20 m.</p>
+      <p><strong>ArbCut</strong>, arboristas aukštalipys {site.savininkas} su komanda. Bazė Kaune, dirbame iki 200 km aplink.</p>
       <a class="ftr__rep" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">
-        <Icon name="star" size={16} /> {atsiliepimuVidurkis.toFixed(1).replace('.', ',')} · {atsiliepimuKiekis} atsiliepimai Paslaugos.lt <Icon name="external" size={14} />
+        <Icon name="star" size={18} /> {rating} iš 5 · {atsiliepimuKiekis} atsiliepimai Paslaugos.lt <Icon name="external" size={15} />
       </a>
+      <p class="ftr__press">Apie mus rašė <a href={lrt.url} target="_blank" rel="noopener">LRT.lt</a> ir <a href={valstietis.url} target="_blank" rel="noopener">Valstietis.lt</a></p>
     </div>
     {grupes.map((g) => (
       <div>
@@ -24,19 +33,23 @@ const year = new Date().getFullYear();
       </div>
     ))}
     <div>
+      <p class="ftr__h">Miestai</p>
+      <ul role="list">{vietoves.map((v) => <li><a href={`/${v.slug}`}>Medžių pjovimas {v.kur}</a></li>)}</ul>
+    </div>
+    <div>
       <p class="ftr__h">Kontaktai</p>
       <ul role="list" class="ftr__contact">
-        <li><a href={site.telefonasHref} data-loc="footer-call"><Icon name="phone" size={16} /> {site.telefonas}</a></li>
-        <li><a href={`mailto:${site.elPastas}`}><Icon name="mail" size={16} /> {site.elPastas}</a></li>
-        <li><Icon name="clock" size={16} /> Kasdien 08:00–18:00</li>
-        <li><Icon name="pin" size={16} /> Kaunas, Kauno apskritis</li>
+        <li><a href={site.telefonasHref} data-loc="footer-call"><Icon name="phone" size={18} /> {site.telefonas}</a></li>
+        <li><a href={site.smsHref}><Icon name="sms" size={18} /> SMS su nuotraukomis</a></li>
+        <li><a href={`mailto:${site.elPastas}`}><Icon name="mail" size={18} /> {site.elPastas}</a></li>
+        <li><Icon name="clock" size={18} /> Kasdien 08:00–18:00</li>
+        <li><Icon name="pin" size={18} /> Kaunas, +200 km aplink</li>
       </ul>
-      <p class="ftr__h ftr__h--sp">Svetainė</p>
-      <ul role="list">
-        <li><a href="/galerija">Darbai</a></li>
-        <li><a href="/atsiliepimai">Atsiliepimai</a></li>
+      <ul role="list" class="ftr__more">
+        <li><a href="/galerija">Darbų nuotraukos</a></li>
         <li><a href="/kainos">Kainos</a></li>
-        <li><a href="/apie">Apie</a></li>
+        <li><a href="/atsiliepimai">Atsiliepimai</a></li>
+        <li><a href="/apie">Apie Mantą</a></li>
         <li><a href="/tinklarastis">Patarimai</a></li>
         <li><a href={site.facebook} target="_blank" rel="noopener">Facebook</a></li>
       </ul>
@@ -48,19 +61,29 @@ const year = new Date().getFullYear();
   </div>
 </footer>
 <style>
-  .ftr { background: var(--ink-2); color: var(--mute-light); padding-top: clamp(56px, 7vw, 88px); font-size: .97rem; }
-  .ftr__grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1.1fr; gap: 40px; padding-bottom: 48px; }
-  .ftr__brand { display: grid; gap: 18px; align-content: start; }
-  .ftr__brand p { max-width: 30ch; }
-  .ftr__rep { display: inline-flex; align-items: center; gap: 8px; color: var(--paper); font-weight: 600; }
-  .ftr__rep svg:first-child { color: var(--sand); }
-  .ftr__h { font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--sand); margin-bottom: 12px; }
-  .ftr__h--sp { margin-top: 26px; }
-  .ftr li + li { margin-top: 8px; }
-  .ftr a:hover { color: var(--paper); }
+  .ftr { background: var(--f0); color: var(--on-dark-2); font-size: 1.02rem; }
+  .ftr :focus-visible { outline-color: var(--amber); }
+  .ftr a:hover { color: var(--cream); text-decoration: underline; text-underline-offset: 3px; }
+  .ftr__call { padding-block: clamp(56px, 7vw, 96px) clamp(40px, 5vw, 64px); display: grid; gap: 10px; border-bottom: 1px solid #1d3326; }
+  .ftr__call-h { font-family: var(--display); font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.4rem); font-weight: 600; text-transform: uppercase; color: var(--cream); line-height: 1; }
+  .ftr__tel { font-family: var(--display); font-weight: 700; font-size: clamp(3rem, 1.2rem + 7.6vw, 8.5rem); line-height: .95; color: var(--amber); letter-spacing: -.005em; justify-self: start; }
+  .ftr__tel:hover { color: #ffc77a; text-decoration: none !important; }
+  .ftr__call-s a { color: var(--cream); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+  .ftr__grid { display: grid; grid-template-columns: 1.35fr 1fr 1fr 1fr 1.1fr; gap: 36px; padding-block: 52px; }
+  .ftr__brand { display: grid; gap: 16px; align-content: start; }
+  .ftr__brand p { max-width: 32ch; }
+  .ftr__brand strong { color: var(--cream); }
+  .ftr__rep { display: inline-flex; align-items: center; gap: 8px; color: var(--cream); font-weight: 700; }
+  .ftr__rep svg:first-child { color: var(--amber); }
+  .ftr__press a { color: var(--cream); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+  .ftr__h { font-family: var(--display); font-size: 1.3rem; font-weight: 600; text-transform: uppercase; color: var(--cream); margin-bottom: 12px; }
+  .ftr li + li { margin-top: 7px; }
   .ftr__contact li { display: flex; align-items: center; gap: 10px; }
-  .ftr__contact a { display: inline-flex; align-items: center; gap: 10px; color: var(--paper); word-break: break-all; }
-  .ftr__base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 20px; border-top: 1px solid var(--line-dark); font-size: .88rem; }
-  @media (max-width: 960px) { .ftr__grid { grid-template-columns: 1fr 1fr; } .ftr__brand { grid-column: 1 / -1; } }
-  @media (max-width: 520px) { .ftr__grid { grid-template-columns: 1fr; } }
+  .ftr__contact a { display: inline-flex; align-items: center; gap: 10px; color: var(--cream); overflow-wrap: anywhere; }
+  .ftr__contact svg { flex: 0 0 auto; color: var(--amber); }
+  .ftr__more { margin-top: 22px; }
+  .ftr__base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 22px; border-top: 1px solid #1d3326; font-size: .95rem; }
+  @media (max-width: 1100px) { .ftr__grid { grid-template-columns: 1fr 1fr 1fr; } .ftr__brand { grid-column: 1 / -1; } }
+  @media (max-width: 640px) { .ftr__grid { grid-template-columns: 1fr 1fr; gap: 32px 20px; } }
+  @media (max-width: 400px) { .ftr__grid { grid-template-columns: 1fr; } }
 </style>

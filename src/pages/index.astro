@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Photo from '../components/Photo.astro';
+import Hero from '../components/home/Hero.astro';
+import Emergency from '../components/home/Emergency.astro';
 import Icon from '../components/Icon.astro';
 import ServiceIndex from '../components/ServiceIndex.astro';
 import Sequences from '../components/Sequences.astro';
@@ -23,45 +25,8 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   description="Arboristas aukštalipys Mantas Gerulis su komanda: pavojingų medžių pjovimas dalimis, genėjimas, kelmų frezavimas ir darbai nuosavu autobokšteliu iki 20 m. +370 603 66901."
   schemas={[localBusiness(), faqPage(duk)]}
 >
-  <!-- HERO: situacija → paslauga, reali Manto nuotrauka -->
-  <section class="hero on-dark">
-    <div class="hero__l">
-      <div class="hero__txt">
-        <p class="kicker">Arboristas aukštalipys {site.savininkas} su komanda</p>
-        <h1>Medis kelia nerimą? Nuimsime jį saugiai&nbsp;— dalimis.</h1>
-        <p class="lead">Pjauname pavojingus medžius prie namų, tvorų ir elektros laidų, genime, frezuojame kelmus. Dirbame alpinistine įranga ir nuosavu autobokšteliu iki 20&nbsp;m.</p>
-        <div class="btn-row">
-          <a class="btn btn--primary" href={site.telefonasHref} data-loc="hero-call"><Icon name="phone" size={18} /> {site.telefonas}</a>
-          <button type="button" class="btn btn--line" data-quote>Gauti kainą</button>
-        </div>
-      </div>
-      <nav class="sit" aria-labelledby="sit-h">
-        <p class="sit__h" id="sit-h">Koks jūsų atvejis?</p>
-        <ul role="list" class="sit__list">
-          {situacijos.map((s) => (
-            <li><a href={`/paslaugos/${s.slug}`}>{s.tekstas}<Icon name="arrow" size={18} /></a></li>
-          ))}
-        </ul>
-      </nav>
-    </div>
-    <div class="hero__r ph">
-      <Photo name="mantas-portretas" alt="Arboristas Mantas Gerulis su alpinistine įranga ir pjūklu" sizes="(max-width: 960px) 100vw, 45vw" loading="eager" fetchpriority="high" position="50% 22%" />
-      <a class="hero__badge" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">
-        <span class="serif hero__badge-n">{rating}</span>
-        <span><strong>{atsiliepimuKiekis} atsiliepimai</strong><br />Paslaugos.lt profilyje <Icon name="external" size={13} /></span>
-      </a>
-    </div>
-  </section>
-
-  <!-- Faktai -->
-  <section class="facts" aria-label="Svarbiausi faktai">
-    <div class="wrap facts__in">
-      <div><strong>Dalimis, virvėmis</strong><span>prie pastatų ir laidų</span></div>
-      <div><strong>Autobokštelis iki 20 m</strong><span>nuosavas, aukščiau — alpinistinė įranga</span></div>
-      <div><strong>Išvežame medieną</strong><span>Kaune ir Kauno rajone</span></div>
-      <div><strong>{patirtisMetai} m. patirtis</strong><span>kasdien 08:00–18:00</span></div>
-    </div>
-  </section>
+  <Hero />
+  <Emergency />
 
   <!-- Paslaugos -->
   <section class="sec" id="paslaugos">
@@ -150,28 +115,6 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 </BaseLayout>
 
 <style>
-  .hero { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); background: var(--ink); color: var(--paper); min-height: min(760px, calc(100svh - 114px)); }
-  .hero__l { display: grid; gap: 36px; align-content: center; padding: clamp(40px, 6vw, 80px) clamp(24px, 5vw, 72px) clamp(40px, 5vw, 64px) max(var(--gutter), calc((100vw - var(--wrap)) / 2 + var(--gutter))); }
-  .hero__txt { display: grid; gap: 20px; }
-  .hero h1 { max-width: 15ch; }
-  .sit__h { font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--sand); margin-bottom: 12px; }
-  .sit__list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-  .sit__list a { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 54px; padding: 12px 16px; border: 1px solid var(--line-dark); font-weight: 600; transition: background var(--t), border-color var(--t); }
-  .sit__list a:hover { background: var(--ink-3); border-color: var(--sand); }
-  .sit__list a svg { color: var(--sand); flex: 0 0 auto; transition: transform var(--t); }
-  .sit__list a:hover svg { transform: translateX(3px); }
-  .hero__r { min-height: 420px; }
-  .hero__r :global(img) { position: absolute; inset: 0; }
-  .hero__badge { position: absolute; left: 24px; bottom: 24px; display: flex; align-items: center; gap: 14px; background: var(--paper); color: var(--ink); padding: 14px 18px; line-height: 1.3; font-size: .92rem; box-shadow: 0 10px 30px rgba(0,0,0,.2); }
-  .hero__badge-n { font-size: 2.4rem; font-weight: 650; line-height: 1; }
-
-  .facts { background: var(--paper); border-bottom: 1px solid var(--line); }
-  .facts__in { display: grid; grid-template-columns: repeat(4, 1fr); }
-  .facts__in > div { display: grid; gap: 2px; padding: 22px 24px; border-left: 1px solid var(--line); }
-  .facts__in > div:first-child { border-left: 0; padding-left: 0; }
-  .facts strong { font-size: 1.05rem; }
-  .facts span { color: var(--mute); font-size: .92rem; }
-
   .how { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
   .how__ph { display: grid; grid-template-columns: 1.4fr 1fr; gap: 12px; align-items: end; }
   .how__big { aspect-ratio: 4 / 5; }
@@ -189,19 +132,6 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   .faqwrap { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
 
   @media (max-width: 960px) {
-    .hero { grid-template-columns: 1fr; min-height: 0; }
-    .hero__l { padding: 40px var(--gutter); }
-    .hero__r { order: -1; min-height: 0; aspect-ratio: 4 / 3; }
-    .facts__in { grid-template-columns: 1fr 1fr; }
-    .facts__in > div { padding: 16px 0 16px 16px; }
-    .facts__in > div:nth-child(odd) { border-left: 0; padding-left: 0; }
-    .facts__in > div:nth-child(n+3) { border-top: 1px solid var(--line); }
     .how, .area, .faqwrap { grid-template-columns: 1fr; }
-  }
-  @media (max-width: 520px) {
-    .sit__list { grid-template-columns: 1fr; }
-    .hero__r { aspect-ratio: 1 / 1; }
-    .hero__badge { left: 12px; bottom: 12px; padding: 10px 14px; }
-    .hero__badge-n { font-size: 1.9rem; }
   }
 </style>

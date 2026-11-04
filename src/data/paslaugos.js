@@ -21,7 +21,7 @@ export const paslaugos = [
     pavadinimas: 'Darbai su autobokšteliu (iki 20 m)',
     aprasymas: 'Aukštuminiai darbai iki 20 metrų nuosavu autobokšteliu — greitai, saugiai ir be papildomos technikos nuomos.',
     seo: 'Turime nuosavą autobokštelį, kuriuo saugiai pasiekiame iki 20 metrų aukštį. Tai leidžia greitai ir tvarkingai atlikti medžių pjovimą, genėjimą, dažymo, valymo ar montavimo darbus aukštyje be papildomos technikos nuomos. Kai reikia dar aukščiau arba bokštelis nepasiekia dėl ankštos aplinkos, dirbame alpinistine įranga ir virvėmis. Nuosava technika reiškia mažesnę kainą jums ir lankstesnį darbų grafiką.',
-    kaina: 'pagal projektą',
+    kaina: 'nuo 150 €',
     nuotrauka: '/assets/images/Technika.jpg',
     ikona: 'autobokstelis',
     featured: true,

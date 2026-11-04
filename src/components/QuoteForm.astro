@@ -1,13 +1,15 @@
 ---
 /* Užklausos forma. Gamyboje — esamas Web3Forms + hCaptcha kontraktas (raktai site.js).
-   Peržiūroje (PREVIEW) — forma inertiška: niekur nesiunčia, parodo bandomąją būseną. */
+   Peržiūroje (PREVIEW) — forma inertiška: niekur nesiunčia, parodo bandomąją būseną.
+   variant="short" — tik telefonas ir „kas negerai“ (pradžios puslapio kortelė). */
 import { site, PREVIEW } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
 import Icon from './Icon.astro';
-const { id = 'quote-form', prefix = 'q', service = '' } = Astro.props;
+const { id = 'quote-form', prefix = 'q', service = '', variant = 'full', submit } = Astro.props;
+const short = variant === 'short';
 ---
 <form
-  class="qf"
+  class:list={['qf', { 'qf--short': short }]}
   id={id}
   data-loc={id}
   method="POST"
@@ -18,51 +20,66 @@ const { id = 'quote-form', prefix = 'q', service = '' } = Astro.props;
   {!PREVIEW && (
     <>
       <input type="hidden" name="access_key" value={site.web3formsKey} />
-      <input type="hidden" name="subject" value="Nauja užklausa iš ArbCut svetainės" />
+      <input type="hidden" name="subject" value={short ? 'Prašo perskambinti (ArbCut svetainė)' : 'Nauja užklausa iš ArbCut svetainės'} />
       <input type="hidden" name="from_name" value="ArbCut svetainė" />
       <input type="hidden" name="redirect" value="https://arbcut.lt/success" />
       <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" aria-hidden="true" />
     </>
   )}
-  <div class="qf__row">
-    <div class="qf__f">
-      <label for={`${prefix}-name`}>Vardas <span aria-hidden="true">*</span></label>
-      <input id={`${prefix}-name`} name="Vardas" type="text" autocomplete="name" required />
-    </div>
-    <div class="qf__f">
-      <label for={`${prefix}-tel`}>Telefonas <span aria-hidden="true">*</span></label>
-      <input id={`${prefix}-tel`} name="Telefonas" type="tel" autocomplete="tel" inputmode="tel" required pattern="(?:[^0-9]*[0-9]){8,}[^0-9]*" placeholder="+370 6__ _____" />
-    </div>
-  </div>
-  <div class="qf__row">
-    <div class="qf__f">
-      <label for={`${prefix}-svc`}>Paslauga</label>
-      <select id={`${prefix}-svc`} name="Paslauga" data-service-select>
-        <option value="">Dar nežinau / kita</option>
-        {paslaugos.map((p) => <option value={p.pavadinimas} data-slug={p.slug} selected={p.slug === service}>{p.pavadinimas}</option>)}
-      </select>
-    </div>
-    <div class="qf__f">
-      <label for={`${prefix}-city`}>Vietovė</label>
-      <input id={`${prefix}-city`} name="Vietovė" type="text" autocomplete="address-level2" placeholder="pvz. Kaunas, Garliava" />
-    </div>
-  </div>
-  <div class="qf__f">
-    <label for={`${prefix}-msg`}>Kas reikalinga? <span aria-hidden="true">*</span></label>
-    <textarea id={`${prefix}-msg`} name="Žinutė" rows="4" required placeholder="Pvz.: aukšta eglė prie namo, šalia laidai, reikia išvežti medieną."></textarea>
-  </div>
-  <p class="qf__note">Nuotraukas galite atsiųsti el. paštu <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a> — taip įvertinti greičiau.</p>
+  {short ? (
+    <>
+      <div class="qf__f">
+        <label for={`${prefix}-tel`}>Jūsų telefonas <span aria-hidden="true">*</span></label>
+        <input id={`${prefix}-tel`} name="Telefonas" type="tel" autocomplete="tel" inputmode="tel" required pattern="(?:[^0-9]*[0-9]){8,}[^0-9]*" placeholder="+370 6__ _____" />
+      </div>
+      <div class="qf__f">
+        <label for={`${prefix}-msg`}>Kas negerai su medžiu?</label>
+        <textarea id={`${prefix}-msg`} name="Žinutė" rows="2" placeholder="Pvz.: pasvirusi eglė virš garažo, šalia laidai"></textarea>
+      </div>
+    </>
+  ) : (
+    <>
+      <div class="qf__row">
+        <div class="qf__f">
+          <label for={`${prefix}-name`}>Vardas <span aria-hidden="true">*</span></label>
+          <input id={`${prefix}-name`} name="Vardas" type="text" autocomplete="name" required />
+        </div>
+        <div class="qf__f">
+          <label for={`${prefix}-tel`}>Telefonas <span aria-hidden="true">*</span></label>
+          <input id={`${prefix}-tel`} name="Telefonas" type="tel" autocomplete="tel" inputmode="tel" required pattern="(?:[^0-9]*[0-9]){8,}[^0-9]*" placeholder="+370 6__ _____" />
+        </div>
+      </div>
+      <div class="qf__row">
+        <div class="qf__f">
+          <label for={`${prefix}-svc`}>Paslauga</label>
+          <select id={`${prefix}-svc`} name="Paslauga" data-service-select>
+            <option value="">Dar nežinau / kita</option>
+            {paslaugos.map((p) => <option value={p.pavadinimas} data-slug={p.slug} selected={p.slug === service}>{p.pavadinimas}</option>)}
+          </select>
+        </div>
+        <div class="qf__f">
+          <label for={`${prefix}-city`}>Vietovė</label>
+          <input id={`${prefix}-city`} name="Vietovė" type="text" autocomplete="address-level2" placeholder="pvz. Kaunas, Garliava" />
+        </div>
+      </div>
+      <div class="qf__f">
+        <label for={`${prefix}-msg`}>Kas reikalinga? <span aria-hidden="true">*</span></label>
+        <textarea id={`${prefix}-msg`} name="Žinutė" rows="4" required placeholder="Pvz.: aukšta eglė prie namo, šalia laidai, reikia išvežti medieną."></textarea>
+      </div>
+      <p class="qf__note">Nuotraukas atsiųskite SMS žinute <a href={site.smsHref}>{site.telefonas}</a> arba el. paštu <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a>. Pagal jas kainą pasakome tiksliau.</p>
+    </>
+  )}
   {!PREVIEW && <div class="h-captcha" data-sitekey={site.hcaptchaSiteKey}></div>}
-  <p class="qf__err" role="alert" hidden>Užpildykite pažymėtus laukus.</p>
+  <p class="qf__err" role="alert" hidden>{short ? 'Įrašykite telefono numerį (bent 8 skaitmenys).' : 'Užpildykite pažymėtus laukus.'}</p>
   <div class="qf__foot">
-    <button type="submit" class="btn btn--primary">Siųsti užklausą <Icon name="arrow" size={18} /></button>
-    <span class="qf__req"><span aria-hidden="true">*</span> privalomi laukai</span>
+    <button type="submit" class="btn btn--primary qf__btn">{submit || (short ? 'Prašau perskambinti' : 'Siųsti užklausą')} <Icon name="arrow" size={20} /></button>
+    {!short && <span class="qf__req"><span aria-hidden="true">*</span> privalomi laukai</span>}
   </div>
   <div class="qf__done" role="status" hidden tabindex="-1">
-    <p class="serif">Ačiū, užklausa paruošta.</p>
+    <p class="qf__done-h">Ačiū, užklausa paruošta.</p>
     {PREVIEW
       ? <p>Tai peržiūros versija: užklausa <strong>niekur neišsiųsta</strong>. Paleidus svetainę ji keliaus Mantui el. paštu.</p>
-      : <p>Susisieksime artimiausiu metu. Skubiai — skambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>}
+      : <p>Perskambinsime darbo valandomis. Skubiai skambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>}
   </div>
 </form>
 
@@ -70,22 +87,26 @@ const { id = 'quote-form', prefix = 'q', service = '' } = Astro.props;
   .qf { display: grid; gap: 16px; }
   .qf__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .qf__f { display: grid; gap: 6px; }
-  .qf label { font-size: .9rem; font-weight: 620; }
-  .qf label span { color: var(--timber); }
+  .qf label { font-size: 1rem; font-weight: 700; }
+  .qf label span { color: var(--rust-h); }
   .qf input, .qf select, .qf textarea {
-    width: 100%; min-height: 50px; padding: 12px 14px; background: #fff; border: 1.5px solid var(--line); border-radius: var(--radius);
+    width: 100%; min-height: 54px; padding: 12px 14px; background: #fff; color: var(--text); font-size: 1.1rem;
+    border: 2px solid #b9ad97; border-radius: var(--radius);
     transition: border-color var(--t), box-shadow var(--t);
   }
   .qf textarea { resize: vertical; min-height: 110px; }
-  .qf input:focus, .qf select:focus, .qf textarea:focus { outline: none; border-color: var(--ink); box-shadow: 0 0 0 3px rgba(164, 83, 43, .25); }
+  .qf--short textarea { min-height: 76px; }
+  .qf input::placeholder, .qf textarea::placeholder { color: #6b6f68; }
+  .qf input:focus, .qf select:focus, .qf textarea:focus { outline: none; border-color: var(--f1); box-shadow: 0 0 0 3px rgba(219, 122, 34, .45); }
   .qf [aria-invalid='true'] { border-color: #b3261e; }
-  .qf__note { font-size: .9rem; color: var(--mute); }
-  .qf__note a { color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; word-break: break-all; }
-  .qf__err { color: #b3261e; font-weight: 600; font-size: .95rem; }
+  .qf__note { font-size: 1rem; color: var(--text-2); }
+  .qf__note a { color: var(--bark); font-weight: 700; text-decoration: underline; text-decoration-color: var(--rust); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  .qf__err { color: #b3261e; font-weight: 700; }
   .qf__foot { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
-  .qf__req { font-size: .85rem; color: var(--mute); }
-  .qf__done { padding: 18px 20px; background: var(--paper); border-left: 4px solid var(--ink); display: grid; gap: 6px; }
-  .qf__done .serif { font-size: 1.3rem; font-weight: 620; }
+  .qf--short .qf__btn { width: 100%; }
+  .qf__req { font-size: .95rem; color: var(--mute); }
+  .qf__done { padding: 18px 20px; background: #fff; border-left: 6px solid var(--rust); display: grid; gap: 6px; }
+  .qf__done-h { font-family: var(--display); font-size: 1.5rem; font-weight: 600; text-transform: uppercase; }
   .qf.is-done > :not(.qf__done) { display: none; }
   .qf .h-captcha { overflow: hidden; }
   @media (max-width: 560px) { .qf__row { grid-template-columns: 1fr; } }

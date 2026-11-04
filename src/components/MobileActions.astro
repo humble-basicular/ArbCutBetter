@@ -1,17 +1,25 @@
 ---
+/* Apatinė mobili juosta: skambutis pagrindinis, SMS su nuotraukomis antras. */
 import { site } from '@data/site.js';
 import Icon from './Icon.astro';
 ---
 <div class="mact" aria-label="Greiti veiksmai">
-  <a class="mact__call" href={site.telefonasHref} data-loc="sticky-call"><Icon name="phone" size={20} /> Skambinti</a>
-  <button type="button" class="mact__quote" data-quote>Gauti kainą</button>
+  <a class="mact__call" href={site.telefonasHref} data-loc="sticky-call"><Icon name="phone" size={22} /><span>Skambinti <b>{site.telefonas}</b></span></a>
+  <a class="mact__sms" href={site.smsHref} data-loc="sticky-sms" aria-label="Siųsti nuotraukas SMS žinute"><Icon name="camera" size={22} /><span>Nuotraukos</span></a>
 </div>
 <style>
   .mact { display: none; }
   @media (max-width: 860px) {
-    .mact { position: fixed; left: 0; right: 0; bottom: 0; z-index: 800; display: grid; grid-template-columns: 1fr 1fr; padding-bottom: env(safe-area-inset-bottom); background: var(--ink-2); box-shadow: 0 -6px 18px rgba(0,0,0,.18); }
-    .mact a, .mact button { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 60px; font-weight: 700; font-size: 1.02rem; }
-    .mact__call { background: var(--timber); color: #fff; }
-    .mact__quote { color: var(--paper); }
+    .mact { position: fixed; left: 0; right: 0; bottom: 0; z-index: 800; display: grid; grid-template-columns: minmax(0, 1fr) auto; padding-bottom: env(safe-area-inset-bottom); background: var(--f0); box-shadow: 0 -8px 24px rgba(0,0,0,.28); }
+    .mact a { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 64px; font-family: var(--display); text-transform: uppercase; font-weight: 600; font-size: 1.15rem; letter-spacing: .01em; }
+    .mact__call { background: var(--rust); color: var(--f0); padding-inline: 12px; white-space: nowrap; }
+    .mact__call b { font-weight: 700; }
+    .mact__sms { color: var(--cream); padding-inline: 18px; border-left: 1px solid #1d3326; }
+    .mact :focus-visible { outline: 3px solid var(--amber); outline-offset: -3px; }
+  }
+  @media (max-width: 440px) {
+    .mact__call span { font-size: 1.05rem; }
+    .mact__sms span { display: none; }
+    .mact__sms { padding-inline: 20px; }
   }
 </style>
