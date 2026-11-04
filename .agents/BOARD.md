@@ -40,3 +40,7 @@
 - Reference study initial pass INCOMPLETE: old contact sheet only; missing fresh/mobile captures and Glassperts/Betono visual inspection. User explicitly requires every page and actual screenshots. Continuing same child session for full visual coverage; no implementation authorized. Required output: URL-by-URL coverage manifest, fresh desktop/mobile screenshots and observations, explicit inaccessible-page gaps.
 
 - Lead takeover checkpoint: fresh capture batch running, full study NOT accepted; no implementation. Handoff: .agents/handoffs/2026-11-04-2036-v4-visual-study-incomplete.md. Codex2 session 92%; exact captures and actual inspection separated.
+
+## 4 November — captured-page visual analysis
+- Capture batch finished: 183 records including superseded errors, 1666 screenshots. Glassperts unavailable; exact results in /tmp/arbcut-v4-study/capture-manifest.json.
+- Lead Codex2 owns board/handoffs and eventual questions/proposal. Claude2 design analyst owns only /tmp/arbcut-v4-study/design-analysis.md and design-inspection.json; read-only website scope. Input: saved actual screenshots, existing lead ledger and design brief. Output: per-page visual observations and coverage ledger, grounded recommendations/questions. Acceptance: actually view each captured page at desktop/mobile, distinguish unavailable and uninspected; no implementation before user approval.
