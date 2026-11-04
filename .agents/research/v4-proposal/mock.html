@@ -1,0 +1,98 @@
+<!doctype html><html lang="lt"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+:root{--sp:#0F3B2C;--or:#F2801F;--pale:#EEF3EC;--ink:#13241C;--mute:#4B5A51}
+*{box-sizing:border-box;margin:0}
+.lbl{font:600 12px/1.4 var(--font-sans,system-ui);color:var(--muted-foreground);margin:18px 0 8px;letter-spacing:.02em}
+.fr{border-radius:var(--radius,10px);overflow:hidden;background:#fff}
+.d{width:1200px;zoom:.6;font-family:Archivo,sans-serif;color:var(--ink);font-variation-settings:"wdth" 100}
+.w{max-width:1200px;margin:0 auto;padding:0 56px}
+header{display:flex;align-items:center;gap:36px;height:84px;background:#fff;padding:0 56px}
+.logo{font:900 30px Archivo;font-variation-settings:"wdth" 125;color:var(--sp);letter-spacing:-.02em}
+.logo b{color:var(--or)}
+nav{display:flex;gap:26px;font-size:16px;font-weight:500}
+.hp{margin-left:auto;text-align:right;font-size:12px;color:var(--mute)}
+.hp b{display:block;font-size:22px;color:var(--sp);font-variation-settings:"wdth" 112}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:12px;font-weight:700;padding:14px 22px;font-size:16px}
+.bo{background:var(--or);color:var(--sp)}
+.bs{background:var(--sp);color:#fff}
+.hero{background:var(--pale);position:relative;padding:56px 0 150px}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.k{font-size:18px;color:var(--mute);margin-bottom:18px}.k b{color:var(--ink)}
+h1{font:850 66px/1.02 Archivo;font-variation-settings:"wdth" 118;letter-spacing:-.025em;color:var(--sp)}
+.lead{font-size:19px;line-height:1.55;color:var(--ink);margin:22px 0 28px;max-width:560px}
+.tel{display:inline-flex;align-items:center;gap:16px;background:var(--or);color:var(--sp);border-radius:16px;padding:14px 28px 14px 22px;box-shadow:0 10px 24px -12px rgba(242,128,31,.9)}
+.tel small{display:block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.tel b{font-size:34px;font-weight:800;font-variation-settings:"wdth" 108}
+.ic{width:46px;height:46px;border-radius:50%;background:var(--sp);display:grid;place-items:center;color:var(--or);font-size:22px}
+.st{display:flex;gap:14px;margin-top:34px}
+.s{width:104px;height:104px;border-radius:50%;background:#fff;display:grid;place-content:center;text-align:center;box-shadow:0 6px 18px -10px rgba(15,59,44,.5)}
+.s b{font:800 30px/1 Archivo;font-variation-settings:"wdth" 70;color:var(--sp)}
+.s span{font:600 11px/1.2 Archivo;font-variation-settings:"wdth" 80;color:var(--mute);margin-top:4px;padding:0 10px}
+.s.o{background:var(--sp)}.s.o b{color:var(--or)}.s.o span{color:#cfe0d6}
+.art{position:relative;height:600px}
+.arch{position:absolute;right:0;top:0;width:410px;height:580px;border-radius:205px 205px 22px 22px;overflow:hidden;background:#cdd}
+.arch img{width:100%;height:100%;object-fit:cover;transform:scale(1.04)}
+.disc{position:absolute;left:-10px;bottom:-30px;width:300px;height:300px;border-radius:50%;background:var(--or)}
+.man{position:absolute;left:0;bottom:-120px;width:270px;filter:drop-shadow(0 18px 24px rgba(0,0,0,.25))}
+.qb{position:absolute;left:56px;right:56px;bottom:-62px;background:#fff;border-radius:20px;padding:24px 30px;box-shadow:0 30px 60px -30px rgba(15,59,44,.45);display:grid;grid-template-columns:220px 1fr 1.4fr auto;gap:18px;align-items:end;z-index:3}
+.qb h2{font:850 30px/1 Archivo;font-variation-settings:"wdth" 115;color:var(--sp)}.qb p{font-size:14px;color:var(--mute);margin-top:6px}
+.f label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+.f div{height:50px;border:1.5px solid #c9d3cc;border-radius:10px;padding:14px;font-size:15px;color:#8a978f}
+.sos{background:var(--or);padding:118px 0 54px;color:var(--sp)}
+.sg{display:flex;align-items:center;justify-content:space-between}
+.sos h2{font:850 46px/1.05 Archivo;font-variation-settings:"wdth" 118;letter-spacing:-.02em}
+.sos p{font-size:17px;margin-top:10px}
+.sos a{white-space:nowrap;font:800 42px Archivo;font-variation-settings:"wdth" 108;background:var(--sp);color:#fff;border-radius:16px;padding:16px 30px}
+.sv{background:#fff;padding:80px 0}
+.h2{font:850 48px/1.05 Archivo;font-variation-settings:"wdth" 118;letter-spacing:-.02em;color:var(--sp);margin-bottom:34px}
+.tg{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:20px}
+.t{position:relative;border-radius:20px;overflow:hidden;height:380px}
+.t img{width:100%;height:100%;object-fit:cover}
+.t .c{position:absolute;left:14px;right:14px;bottom:14px;background:#fff;border-radius:14px;padding:16px 18px}
+.t h3{font:800 21px/1.15 Archivo;font-variation-settings:"wdth" 108;color:var(--sp)}
+.t .p{position:absolute;top:14px;right:14px;background:var(--or);color:var(--sp);font-weight:800;border-radius:30px;padding:7px 14px;font-size:15px}
+.t span{font-size:14px;color:var(--mute)}
+.m{width:390px;zoom:.78;font-family:Archivo,sans-serif;color:var(--ink);background:var(--pale);border-radius:28px;overflow:hidden;box-shadow:0 0 0 10px #111}
+.m header{height:62px;padding:0 18px;gap:0}.m .logo{font-size:24px}
+.mm{margin-left:auto;display:flex;gap:8px}.mm i{width:42px;height:42px;border-radius:12px;background:var(--pale);display:grid;place-items:center;font-style:normal;color:var(--sp);font-weight:800}
+.mm i.o{background:var(--or)}
+.mb{padding:22px 18px 0}.m h1{font-size:38px}.m .lead{font-size:16px;margin:14px 0 18px}
+.m .tel{width:100%}.m .tel b{font-size:27px}
+.m .st{gap:8px;margin-top:20px}.m .s{width:82px;height:82px}.m .s b{font-size:22px}.m .s span{font-size:9.5px;padding:0 6px}
+.ma{position:relative;height:420px;margin-top:26px}
+.m .arch{width:250px;height:380px;right:18px}.m .disc{width:190px;height:190px;left:8px;bottom:0}.m .man{width:170px;left:14px;bottom:-14px}
+.mq{background:#fff;margin:0 12px;border-radius:18px;padding:20px;position:relative;z-index:3;transform:translateY(-30px);box-shadow:0 20px 40px -24px rgba(15,59,44,.5)}
+.mq h2{font:850 26px Archivo;font-variation-settings:"wdth" 115;color:var(--sp)}
+.mq .f{margin-top:12px}
+.row{display:flex;gap:24px;align-items:flex-start}
+</style></head><body>
+<div class="lbl">DESKTOP · 1440 (scaled) — hero, emergency band, start of services</div>
+<div class="fr"><div class="d">
+<header><div class="logo">Arb<b>Cut</b></div><nav><span>Paslaugos ▾</span><span>Darbai</span><span>Kainos</span><span>Atsiliepimai</span><span>Apie</span><span>Kontaktai</span></nav><div class="hp">Skambinkite kasdien 08–18<b>+370 603 66901</b></div><span class="btn bo">Gauti kainą</span></header>
+<section class="hero"><div class="w hg"><div>
+<p class="k">Arboristas aukštalipys <b>Mantas Gerulis</b> su komanda</p>
+<h1>Medžių pjovimas ir darbai aukštyje Kaune</h1>
+<p class="lead">Pavojingus medžius prie namų, laidų ir kapų pjauname dalimis ir nuleidžiame virvėmis. Turime savo autobokštelį iki 20 m. Važiuojame iki 200 km nuo Kauno.</p>
+<a class="tel"><span class="ic">✆</span><span><small>Skambinkite</small><b>+370 603 66901</b></span></a>
+<div class="st"><div class="s o"><b>5,0</b><span>123 atsiliepimai Paslaugos.lt</span></div><div class="s"><b>15</b><span>metų patirtis</span></div><div class="s"><b>20 m</b><span>savas bokštelis</span></div><div class="s"><b>LRT</b><span>rašė apie Mantą</span></div></div>
+</div><div class="art"><div class="arch"><img src="/tmp/arbcut-v4-proposal/m/arch.jpg"></div><div class="disc"></div><img class="man" src="/tmp/arbcut-v4-proposal/m/mantas.png"></div></div>
+<div class="qb"><div><h2>Kiek kainuos?</h2><p>Palikite numerį. Perskambinsime darbo valandomis.</p></div><div class="f"><label>Jūsų telefonas *</label><div>+370 6__ _____</div></div><div class="f"><label>Kas negerai su medžiu?</label><div>Pvz.: pasvirusi eglė virš garažo</div></div><span class="btn bs" style="height:50px">Prašau perskambinti →</span></div>
+</section>
+<section class="sos"><div class="w sg"><div><h2>Medis nuvirto ar tuoj virs?</h2><p><b>Kasdien 08:00–18:00</b>, ir savaitgaliais · Audros padarinių šalinimas, nuo 50 €</p></div><a>✆ +370 603 66901</a></div></section>
+<section class="sv"><div class="w"><h2 class="h2">Ką darome ir kiek kainuoja</h2><div class="tg">
+<div class="t"><img src="/tmp/arbcut-v4-proposal/m/t2.jpg"><span class="p">nuo 50 €</span><div class="c"><h3>Pavojingi medžiai</h3><span>Plačiau apie paslaugą →</span></div></div>
+<div class="t"><img src="/tmp/arbcut-v4-proposal/m/t3.jpg"><span class="p">nuo 50 €</span><div class="c"><h3>Genėjimas</h3><span>Plačiau apie paslaugą →</span></div></div>
+<div class="t"><img src="/tmp/arbcut-v4-proposal/m/t1.jpg"><span class="p">nuo 150 €</span><div class="c"><h3>Autobokštelis iki 20 m</h3><span>Plačiau apie paslaugą →</span></div></div>
+</div></div></section>
+</div></div>
+<div class="lbl">PHONE · 390 — first screen and form</div>
+<div class="row"><div class="m">
+<header><div class="logo">Arb<b>Cut</b></div><div class="mm"><i class="o">✆</i><i>☰</i></div></header>
+<div class="mb"><h1>Medžių pjovimas ir darbai aukštyje Kaune</h1><p class="lead">Pavojingus medžius prie namų, laidų ir kapų pjauname dalimis ir nuleidžiame virvėmis.</p>
+<a class="tel"><span class="ic">✆</span><span><small>Skambinkite</small><b>+370 603 66901</b></span></a>
+<div class="st"><div class="s o"><b>5,0</b><span>123 atsil. Paslaugos.lt</span></div><div class="s"><b>15</b><span>metų patirtis</span></div><div class="s"><b>20 m</b><span>savas bokštelis</span></div><div class="s"><b>LRT</b><span>rašė apie Mantą</span></div></div></div>
+<div class="ma"><div class="arch"><img src="/tmp/arbcut-v4-proposal/m/arch.jpg"></div><div class="disc"></div><img class="man" src="/tmp/arbcut-v4-proposal/m/mantas.png"></div>
+<div class="mq"><h2>Kiek kainuos?</h2><div class="f"><label>Jūsų telefonas *</label><div>+370 6__ _____</div></div><div class="f" style="margin-top:10px"><label>Kas negerai su medžiu?</label><div>Pvz.: pasvirusi eglė</div></div><span class="btn bs" style="margin-top:14px;width:100%;justify-content:center">Prašau perskambinti →</span></div>
+</div></div>
+</body></html>
