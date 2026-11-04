@@ -225,12 +225,12 @@ Reading: the small H1 keeps exact service and region wording while the large H2 
 | Check | Result |
 |---|---|
 | Services hover | White dropdown, five links, overlaps headline; label turns red |
-| Resources | Parent has no href; opens on hover. Touch behaviour on desktop widths untested |
+| Resources | Parent has no href. Its dropdown was not opened or tested |
 | Fixed header | `position: fixed`, 0.3 s transition |
 | Red CTA | #c01931, white, 16 px, radius 0, padding 12 x 36, soft shadow, `transition: all`. Links to `/contact/`, no dialog |
 | Instant Roof Quote | Slide-out wrapper 1,152 px wide loading `app.roofle.com`. No `role` or `aria-modal`; close control is a `div`. Screenshot caught the transition, so its contents were not seen |
 | Mobile menu | `button.menu-toggle`, opens as above. Wrapper `aria-expanded` read false while open, but that wrapper measured 0 x 0, so this may be the wrong element. Unresolved |
-| FAQ | Clicking the H3 toggles it; one open at a time. H3 has `tabindex=-1` and no `aria-expanded` was found. Keyboard not tested |
+| FAQ | Clicking one H3 revealed its answer and page height dropped 172 px, which suggests the open item closed (inferred). H3 has `tabindex=-1` and no `aria-expanded` was found. Keyboard not tested |
 | Motion | Reduced-motion rule exists; no scroll-animation markers found. Actual motion not tested |
 | Hero image | `fetchpriority=high`, responsive 1536 and 768 variants; about 1,439 px natural shown at 645 px on desktop |
 
