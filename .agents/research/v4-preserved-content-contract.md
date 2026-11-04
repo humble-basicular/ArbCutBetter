@@ -19,7 +19,7 @@ The brief's user decision is “Keep copy, section order, SEO and function from 
 
 ## Template order and content ownership (requirements)
 
-All pages use `BaseLayout`: skip link → Header → `main#main` page content → Footer → shared quote dialog/lightbox/mobile actions. `PageHero` renders breadcrumbs → kicker → H1 → lead → slot → optional call/quote controls, with optional real photograph. Keep action-disabled variants. Preserve one page H1 and baseline heading text/levels; the appendix records literal headings and dynamic expressions.
+All baseline pages use `BaseLayout` without passing `bare` (confirmed by baseline search); the layout supports an unused `bare` variant suppressing Header/Footer: skip link → Header → `main#main` page content → Footer → shared quote dialog/lightbox/mobile actions. `PageHero` renders breadcrumbs → kicker → H1 → lead → slot → optional call/quote controls, with optional real photograph. Keep action-disabled variants. Preserve one page H1 and baseline heading text/levels; the appendix records literal headings and dynamic expressions.
 
 | Template/source | Required content sequence after shared header |
 |---|---|
@@ -37,7 +37,7 @@ All pages use `BaseLayout`: skip link → Header → `main#main` page content �
 | privacy / terms | PageHero (actions disabled) → complete legal prose in existing heading order; no page CtaBand |
 | success / 404 | status heading and explanation → call plus home/services recovery links respectively; retain noindex |
 
-`src/data/paslaugu-turinys.js::{grupes,detales,sekos,galerijosKategorijos,galerijosAlt}` owns service grouping, titles/descriptions/H1, introductions, eligibility, steps, price factors, preparation, images, related slugs, FAQs and job sequences. Preserve each keyed record and its array order, not merely template labels. `src/data/turinys.js::{duk,dukPradzia}`, `src/data/vietoves.js::{turinys,vietoves}`, `src/data/straipsniai.js::straipsniai` and `src/data/spauda.js` likewise own verbatim body copy, town grammar, article markup and sourced press quotes. These data files together with inline page/component template strings remain the exhaustive content oracle; this report does not paraphrase them into replacement copy.
+`src/data/paslaugu-turinys.js::{grupes,detales,sekos,galerijosKategorijos,galerijosAlt}` owns service grouping, titles/descriptions/H1, introductions, eligibility, steps, price factors, preparation, images, related slugs, FAQs and job sequences. Preserve each keyed record and its array order, not merely template labels. `src/data/turinys.js::{duk,dukPradzia}`, `src/data/vietoves.js::{turinys,vietoves}`, `src/data/straipsniai.js::straipsniai` and `src/data/spauda.js` likewise own verbatim body copy, town grammar, article markup and sourced press quotes. `src/data/paslaugos.js::paslaugos` owns service names, descriptions, SEO descriptions, prices, images and featured flags; `src/data/site.js` owns shared business configuration and `src/data/galerija.js` owns gallery data. These data files together with inline page/component template strings remain the exhaustive content oracle; this report does not paraphrase them into replacement copy.
 
 ## Internal-link contract (requirements)
 
@@ -351,3 +351,14 @@ Lead verified these against `bb63bd8` after Claude review round 1. Tree cutting/
 - Existing unqualified source wording: `src/data/turinys.js:10` says “viską galime išvežti”; line 52 says “galime išvežti šakas ir medieną”. Preserve and flag the missing geographic qualification; whether these particular exports render has not been verified. These are source ambiguities, not authorization to change copy.
 
 Review scope: round 1 checked hauling, homepage order, indexing and Google configuration; route arrays, schema details, conversion behavior and remaining template order were not fully independently reviewed. Source analysis does not establish runtime behavior.
+
+
+## Lead resolution after final review
+
+Both review rounds requested changes; no third delegated review. Lead resolved the remaining findings against baseline source:
+- `paslaugos.js` content ownership is explicit above. All 12 slug declarations were read and match the inventory.
+- `paslaugos.js` emergency-cutting `seo` includes a nationwide claim and unqualified hauling; hedge-trimming `seo` also offers hauling without geographic qualification. These join the source ambiguities above; the list is not an exhaustive copy audit. Preserve and flag, do not silently rewrite.
+- `[slug].astro` calls `serviceSchema(p)`, confirming the emergency service description flows into JSON-LD.
+- Baseline search finds `bare` only in BaseLayout declaration/Header/Footer conditionals, not page callers; no current page exception.
+- Lead read QuoteForm markup: required/optional fields, short/full variants, production Web3Forms/hCaptcha and inert preview match the report. Service option submitted value is the service name; slug is `data-slug`, not the submitted value.
+- Cross-provider review checked metadata/schema helpers and indexing. Full interaction-script review, complete per-page schema matrix and runtime behavior remain unverified; this is a source-derived design aid, not a certified regression specification.

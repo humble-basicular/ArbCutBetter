@@ -66,3 +66,5 @@
 - Full visual inventory remains incomplete. This stage does not replace it. Proposal follows research.
 - Contract report returned at 1d64c7f. Lead source spot-check confirms homepage order, empty Google placeId and About metadata 122. Potential material ambiguity: report says removal only Kaunas; baseline means hauling branches/timber away, not tree cutting. Cross-provider review pending before acceptance.
 - Review owner Claude2 Opus 5.5 medium; read-only baseline/report review, no file ownership. Lead owns corrections and acceptance. Stage v4-preserved-content-contract, review round 1.
+- Final contract review requested changes; lead corrected content owners and recorded additional service-schema hauling ambiguity. No further review delegation. Lead verified all 12 service slugs, unused bare prop and QuoteForm markup. Contract remains source-derived aid with runtime/script gaps explicit.
+- Lead resumed visual study: actually viewed Genz mobile panels02–05 and recorded detailed observations in v4-hook-deep-study.md. Footer/live behavior and full inventory remain incomplete.

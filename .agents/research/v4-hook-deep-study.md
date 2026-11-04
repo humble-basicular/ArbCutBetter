@@ -319,3 +319,15 @@ Direct inspection after child commit6886314. T3 preview opened successfully but 
 - Lead also viewed previous `puetz/d0.jpg` composite and `band20.jpg` footer recovery. Those support the photo/owner composition and actual recovered footer, not independent verification of every child section.
 
 Design implications: preserve a single clear task within overlays; prevent unrelated floating widgets competing above it; provide explicit accessible control names/state; test real mobile content rendering before concluding content is absent. These are proposed acceptance checks, not website edits.
+
+## Lead continuation — Genz mobile panels 02–05
+
+Actually viewed saved panels `/tmp/arbcut-v4-deep-hook/panels/genz__home__390__02.jpg` through `05.jpg` on continuation. These are multi-column screenshot composites, each strip a mobile viewport; magenta padding is capture layout, not website design. No new live interaction claims. No aggregate chunk count updated without ledger reconciliation.
+
+- Panel02: HomePulse comparison keeps three columns at mobile width. Blue/red rounded price cells, yellow credit band and tilted yellow plan labels sustain identity, but narrow columns force substantial wrapping. Full-width learn/call actions follow. Coupon card uses radial blue background and dashed yellow inset border; value proposition section follows with red cards and circular yellow overlapping icons. ArbCut prices need legible value/qualification association without this many competing motifs.
+- Panel03: financing, military and community benefit cards stack with generous white gaps, consistent yellow actions and circular icon overlaps. Grey media areas and a blank-to-grey project image are visible; loading status is unknown. Project text and location tag remain readable. Reviews switch to a blue ray background, white rounded card, red stars, blue author and Google mark. Clear source hierarchy is useful; blank capture areas require live confirmation.
+- Panel04: review actions, red summary box on blue, then white contact form with red offset backing and slogan mark. Both Read more/Read less are visible in the summary capture (behavior untested). Form shows first/last name, email, phone, service select and long consent text; guarantee badge overlaps its lower edge. Individual guarantee rows then area heading. Dense marketing/form requirements create a very long mobile section; ArbCut should retain its simpler existing form contract.
+- Panel05: city coverage remains a compact two-column linked list with red location icons, blue underlined labels and full-width service-area button. Useful example of crawlable locality links presented as useful navigation, not hidden SEO text.
+- Across panels fixed announcement/logo/action header occupies roughly the top fifth of each 900px capture and obscures content at some scroll positions. Do not infer footer completion from panel05; it ends at service areas.
+
+Unverified: missing intervals due to capture stride/header obstruction, mobile footer, form/menu/accordion behavior and lazy media. These panels add actual inspection but do not complete the Genz homepage or full reference study.
