@@ -18,3 +18,5 @@
 - Do not run `sync:auto` or `sync:atsiliepimai`: README says auto-sync can commit/push/deploy. Existing review sync and production configuration are outside scope.
 
 4 Nov launch accepted: thread mcp:41604850-e9c0-49c4-9ef8-21c06bd2ac37 in ArbCut project mcp:10858f70-cbdc-4588-8d5b-7ca92ae4f70a, explicit Claude Opus5.5/ultrathink, autonomous full access, isolated branch design/arbcut-upgrade-20261104 from localmain e820558. Launch status preparing; source bootstrap/handoff committed, no code or production deployment. New thread owns completion and its branding/review children.
+
+4 Nov 19:00 EET: preview ready, awaiting user review. Branch design/arbcut-upgrade-20261104, app commit 32986e5, Codex review approved, not merged or deployed. Handoff on that branch: .agents/handoffs/2026-11-04-1900-arbcut-preview-ready.md. Production launch not authorized.
