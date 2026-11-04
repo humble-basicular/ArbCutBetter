@@ -55,3 +55,5 @@
 - Acceptance: separate discovered/captured/actually viewed/interacted states per URL and viewport; every section examined at readable scale; typography, spacing, composition, imagery, branding and responsive implementation evidenced; no invented observations; inaccessible pages explicit. Lead reviews evidence before accepting. Exact design proposal still requires user approval before implementation.
 
 - Hook deep-study initial result NOT ACCEPTED as full study: ten article screenshots viewed, >=2253 sitemap URLs discovered, 17 live page-widths captured but none viewed. Commits 5d997db/9633859. Retry must inspect existing captures first, document every section, then proceed in completed page batches; no silent scope reduction.
+
+- Deep-study retry1 commit3935e5c:20/252 chunks viewed, Genz desktop plus first4 mobile; incomplete. Lead spot-checked3 raw images confirming repeated brand devices and fixed-header obstruction. Retry2 (last) targets one complete Puetz homepage desktop/mobile with interactions to establish workable throughput; full inventory remains pending.
