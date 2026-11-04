@@ -1,5 +1,9 @@
 # ArbCut work board
 
+## 4 November 2026 — homepage v3 rebuild, READY FOR LEAD REVIEW
+
+- Owner: Claude (design sub-agent). Branch `design/arbcut-upgrade-20261104`. Homepage + shared header/footer/tokens/review system rebuilt; other pages build but are not redesigned. Handoff: `.agents/handoffs/2026-11-04-2000-arbcut-homepage-v3.md`.
+
 ## 4 November 2026 — bespoke redesign, PREVIEW READY, awaiting user review (commit 32986e5)
 
 - Owner: Claude Opus 5.5, Ultrathink, new AI Powerhouse autonomous top-level thread.
