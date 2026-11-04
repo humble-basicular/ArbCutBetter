@@ -26,8 +26,11 @@ const profileUrl = id ? `https://www.google.com/maps/place/?q=place_id:${id}` : 
     <div class="gp__slot">
       <p class="gp__status">Ruošiamas</p>
       <p>Mantas kuria ArbCut Google verslo profilį. Kai jis bus paskelbtas, šioje vietoje matysite Google įvertinimą ir naujausius atsiliepimus tiesiai iš Google.</p>
-      <div class="gp__ghost" aria-hidden="true"><span></span><span></span><span></span></div>
-      <p class="gp__note">Peržiūros žyma: įrašius profilio ID (<code>site.google.placeId</code>), čia atsiras Google elementas ir mygtukas „Palikite atsiliepimą Google“.</p>
+      <ul class="gp__details" role="list">
+        <li><Icon name="pin" size={22} /><span><strong>Verslo informacija</strong>Kontaktai ir darbo laikas vienoje vietoje.</span></li>
+        <li><Icon name="star" size={22} /><span><strong>Klientų patirtys</strong>Google įvertinimas ir naujausi atsiliepimai.</span></li>
+        <li><Icon name="external" size={22} /><span><strong>Jūsų atsiliepimas</strong>Nuoroda pasidalyti savo patirtimi.</span></li>
+      </ul>
     </div>
   </div>
 ) : null}
@@ -43,8 +46,10 @@ const profileUrl = id ? `https://www.google.com/maps/place/?q=place_id:${id}` : 
   .gp__write { margin: 0 20px 20px; }
   .gp--empty .gp__slot { color: var(--text-2); }
   .gp__status { font-family: var(--display); font-weight: 600; font-size: 2.2rem; text-transform: uppercase; color: var(--text); line-height: 1.12; }
-  .gp__ghost { display: grid; gap: 10px; margin-top: 6px; }
-  .gp__ghost span { display: block; height: 64px; background: repeating-linear-gradient(135deg, #f1ece1 0 10px, #ebe4d6 10px 20px); }
-  .gp__note { font-size: .92rem; border-top: 1px solid #e6dece; padding-top: 12px; }
-  .gp__note code { font-size: .88rem; background: #f1ece1; padding: 1px 5px; }
+  .gp--empty .gp__slot { min-height: 0; padding: 24px; gap: 18px; }
+  .gp__status { border-left: 6px solid var(--rust); padding-left: 14px; }
+  .gp__details { display: grid; border-top: 1px solid var(--line); }
+  .gp__details li { display: flex; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .gp__details :global(svg) { flex-shrink: 0; color: var(--f2); margin-top: 3px; }
+  .gp__details strong { display: block; color: var(--text); }
 </style>
