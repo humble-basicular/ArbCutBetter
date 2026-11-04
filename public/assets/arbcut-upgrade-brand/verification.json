@@ -1,0 +1,169 @@
+{
+  "apple-touch-icon.png": {
+    "size": [
+      180,
+      180
+    ],
+    "mode": "RGB",
+    "corner_alpha": null
+  },
+  "concept-comparison.png": {
+    "size": [
+      1000,
+      380
+    ],
+    "mode": "RGB",
+    "corner_alpha": null
+  },
+  "favicon-16.png": {
+    "size": [
+      16,
+      16
+    ],
+    "mode": "RGBA",
+    "corner_alpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "favicon-32.png": {
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "corner_alpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "icon-192.png": {
+    "size": [
+      192,
+      192
+    ],
+    "mode": "RGB",
+    "corner_alpha": null
+  },
+  "icon-512.png": {
+    "size": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "corner_alpha": null
+  },
+  "logo-horizontal-dark-large.png": {
+    "size": [
+      1401,
+      352
+    ],
+    "mode": "RGBA",
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "logo-horizontal-dark.png": {
+    "size": [
+      354,
+      88
+    ],
+    "mode": "RGBA",
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "logo-horizontal-light-large.png": {
+    "size": [
+      1401,
+      352
+    ],
+    "mode": "RGBA",
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "logo-horizontal-light.png": {
+    "size": [
+      354,
+      88
+    ],
+    "mode": "RGBA",
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "mark-dark.png": {
+    "size": [
+      996,
+      1152
+    ],
+    "mode": "RGBA",
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "mark-light.png": {
+    "size": [
+      996,
+      1152
+    ],
+    "mode": "RGBA",
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "preview-sheet.png": {
+    "size": [
+      1200,
+      860
+    ],
+    "mode": "RGB",
+    "corner_alpha": null
+  },
+  "favicon.ico": {
+    "sizes": [
+      [
+        16,
+        16
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        48,
+        48
+      ]
+    ]
+  },
+  "originals_byte_identical": {
+    "concept-1.png": "ac8a59f55b02bd5e36cd43ef0e54cf320625544952267b2e4330eeac3cc169d1",
+    "concept-2.png": "bcc1bea13b383ccf3bd89f8a1d0bf3008713c89737fe661c2fea72eeb84f1a96",
+    "concept-3.png": "05972e458ee8c762f2fbdc46807db6707f5bd4401c99cb9f2faa6a446c135420"
+  },
+  "bytes_excluding_originals": 1035672,
+  "originals_bytes": 2322571
+}
