@@ -46,3 +46,10 @@
 - Lead Codex2 owns board/handoffs and eventual questions/proposal. Claude2 design analyst owns only /tmp/arbcut-v4-study/design-analysis.md and design-inspection.json; read-only website scope. Input: saved actual screenshots, existing lead ledger and design brief. Output: per-page visual observations and coverage ledger, grounded recommendations/questions. Acceptance: actually view each captured page at desktop/mobile, distinguish unavailable and uninspected; no implementation before user approval.
 
 - Overview analysis milestone: lead closed 20 missing ArbCut sheets; combined 37 ArbCut/22 VensLand/25 Betono routes at two widths, four Hook homepages plus article. Glassperts inaccessible; interaction/detail audit incomplete. See 2026-11-04-v4-study-overview-complete.md. Design questions next; no implementation.
+
+## 4 November — expanded exhaustive reference study
+- User rejected overview depth: all article examples and all parts/pages must be examined, with reusable findings for agency work. No implementation yet.
+- Decisions: clean photographic direction accepted; current logo rejected, prepare three variants later; original/new photography possible.
+- Stage 1 owner Claude2: Hook article/example discovery, full public URL inventory, actual section screenshots and visual/interaction analysis. Owns only /tmp/arbcut-v4-deep-hook/ and .agents/research/v4-hook-deep-study.md. No website edits or board changes.
+- Stage 2 owner Codex2 lead: deeper existing ArbCut/VensLand/Betono/Glassperts study, coverage reconciliation, reusable design rules and proposal. Owns board/handoffs and separate research outputs. Inputs: prior captures and named reference sites; no need to recapture unchanged evidence.
+- Acceptance: separate discovered/captured/actually viewed/interacted states per URL and viewport; every section examined at readable scale; typography, spacing, composition, imagery, branding and responsive implementation evidenced; no invented observations; inaccessible pages explicit. Lead reviews evidence before accepting. Exact design proposal still requires user approval before implementation.
