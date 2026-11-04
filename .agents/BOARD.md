@@ -1,5 +1,9 @@
 # ArbCut work board
 
+## 4 November 2026 — homepage v3 fixes and private hosting, IN PROGRESS
+
+- Owner: Codex implementation sub-agent; owns src/**, public/** and this branch’s .agents/. Six approved fixes, responsive checks, isolated noindex Cloudflare preview. No push/merge.
+
 ## 4 November 2026 — homepage v3 rebuild, READY FOR LEAD REVIEW
 
 - Owner: Claude (design sub-agent). Branch `design/arbcut-upgrade-20261104`. Homepage + shared header/footer/tokens/review system rebuilt; other pages build but are not redesigned. Handoff: `.agents/handoffs/2026-11-04-2000-arbcut-homepage-v3.md`.
