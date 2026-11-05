@@ -1,41 +1,14 @@
-# Bear’s Plumbing — sheet coverage complete; fullsize study PARTIAL
+# Bear’s Plumbing — bulk reference study
 
-**Current fullsize status (budget stop, 2026-11-05): 17/17 named semantic one-offs inspected at both widths; Conroe main-water locality also complete; Conroe toilet locality complete at 1440, partial at 390. 18 complete pages + 1 partial; 37 complete page-width sets; 38 first viewports + 300 source segments + 1 iframe patch actually opened (339 source images, 170 displayed images/strips). All earlier zero-fullsize statements are historical. Contact sheets remain 46/46, not repeated. Required template/outlier study is NOT complete. Exact opened and unopened file ledgers at end.**
+Saved-capture research only. Contact sheets: **46/46**, all 155 documents represented at 1440/390; not repeated in this continuation. Fullsize status and exact remaining files are maintained at the end. “Opened” means actual image inspection, not manifest discovery; black/obscured captures remain unjudgeable. Root: `~/.ai-powerhouse/research-captures/arbcut-v4/`. Mobile source frames are opened in native 390px columns, three side by side; gray strip padding is not page content. No browser actions, recaptures or submissions.
 
-**Historical worker checkpoint:  30/46 sheets opened (15/23 per width), 144/155 pages represented at both widths, 288 page previews. Remaining: 16 sheets / 11 pages / 22 previews, t11–t18. Fullsize 0; first viewports 0; no site-completion claim.**
-
-**Latest lead state: 46/46 sheets actually opened, 23/23 per width, all 155 pages represented at both widths (310 previews). Lead directly opened the final 16 t11–t18 sheets. Fullsize 0; first viewports 0; interactions unverified. Historical partial counts below are superseded.**
-
-## Lead completion: t11–t18, sheet scale only
-
-Both 1440 and 390 sheets were opened for every group below; citations are `_sheets/bearsplumbing.net/<width>/<sheet>.jpg`, cell 1 unless stated otherwise. All observations are preview-scale, not fullsize verification.
-
-- **t11-_1-0**, cells1–2, membership/pricing-guide: membership uses alternating work-photo/text bands and a team photo before final CTA; pricing uses three desktop price/category cards stacked on mobile. Desktop membership has a white band before footer; keep the existing embed/capture caveat. Transfer clear grouped pricing; avoid repeated wave separators and paired CTAs on every band.
-- **t12-blog_x-0**, cells1–2: filtration/repiping articles use shared branded hero, narrow reading column, technical photos, multiple subheads, comparison tables, map/footer; a red-headed loading widget sits beside content on desktop and above it on mobile. Tables and exact text need fullsize checks.
-- **t13-blog_x-0**, cells1–2: drain-damage/rooter articles share that article frame, using trench/equipment photos and a second inline image. Mobile is a long text run followed by full link-rich footer; do not infer exact readability metrics from previews.
-- **t14-one-off-0**, about-us: van/team portraits and owner portrait alternate with story copy; historical monochrome group photos add specificity. Mobile retains images and narrative. Real team history is more transferable than the generic mascot hero.
-- **t15-one-off-0**, careers: worker photo and group-event photo introduce dense role/requirements copy; mobile stacks into a lengthy reading run before CTA/map/footer. Role copy and application behaviour unverified.
-- **t16-one-off-0**, giving-back: community/group photos alternate with explanatory bands; map/footer follow. The mobile preview visibly repeats header/review/chat overlays at frame joins; this is a capture-state limitation, not proof of duplicated live page sections.
-- **t17-home-0**, home: service cards → dark intro/contact form band → company/van introduction → large manufacturer logo panel → offer cards → review → area cards → article cards → map/footer. Mobile stacks all modules and an extensive locality list. The manufacturer panel is visibly oversized relative to neighboring modules; exact credential entitlement was not checked. Desktop and mobile reorder form/copy within the dark band.
-- **t18-one-off-0**, thank-you: standalone dark confirmation with logo, short message, red homepage-return action and van image; no ordinary navigation/footer visible in these previews. No submission was performed to reach it.
-
-All 16 final sheets now have viewed flags. Required fullsize backlog below remains entirely outstanding; add every one-off above and both differing examples in t12/t13, membership embed band and mobile overlay comparisons. This completes only contact-sheet coverage, not site research.
-
-Stage: sheets only, 2026-11-05. Input inventory: 155 captured documents + 1 file (file count supplied by lead; not visually reviewed). Group script: 155 pages / 19 groups; heuristic groups are NOT reliable semantic templates. Fullsize pages opened: **0**, first viewports opened: **0**. No interactions checked. No site-completion claim.
-
-## Evidence convention and limits
-
-Raw root `~/.ai-powerhouse/research-captures/arbcut-v4/`. Sheet citations below use `_sheets/bearsplumbing.net/<width>/<sheet>.jpg`, cell numbers are 1-based, row-major; each cell’s wrapped columns read left to right. Source citations use `bearsplumbing.net/<slug>/<width>/segment-*.jpg` (all segments composing that preview). They refer to previews, NOT separately opened fullsize images. Exact text, typography metrics, image provenance, link functionality, accessibility and fixed-UI dimensions remain unverified. Gray space after a page ends is sheet padding, not website whitespace.
-
-Mobile capture limitation: many cells contain repeated header/chat/review UI at frame boundaries. This is visible in the stitched previews, but does not establish that the live page repeats those elements in document flow. Treat overlap/interruptions as capture-state observations; inspect raw frames/records before defect claims.
-
-Blank checker rerun `MIN1440=300`: only `membership/1440`, y6312 h456. Its record has iframe x0 y6379 w1440 h320, `ok:true`, plus patch `iframe-0-0.jpg`; overlap is evidence of an embed-related capture possibility, not proof of either site defect or successful rendering. Fullsize and 390 comparison pending.
+## Sheet-scale observations (historical evidence; NOT fullsize credit)
 
 ## t00 — long locality service pages (47)
 
 Viewed all 3 desktop + 3 mobile sheets `t00-area_x-{0,1,2}`. Sequence visible: shared dark hero with red diagonal, bear mascot/van; pale proof strip; intro/service-link list with red form on desktop right; review cards on dark band; three alternating photo/text bands; mascot-led centered dark CTA; five numbered process items; driving directions + map; FAQ rows; map/content-card tail on longer variants; dark link-rich footer. Mobile stacks form after intro and numbered cards vertically, making a very long run. Evidence: sheet0 cells1–3 (Conroe water/sewer/toilet), sheet1 cells1–3 (Montgomery), sheet2 cells2–4 (Willis), both widths; sources `bearsplumbing.net/area__conroe-tx-main-water-line-repair/{1440,390}/segment-*.jpg` and corresponding sewer/toilet slugs.
 
-Variation/outliers: sheet0 cells5/9/14 are shorter general-plumber pages (Cypress/Houston/Jersey Village), cells12/20 water-heater pages (Houston/Magnolia), with different narrative/photo sequences and less of the long service-list/review sequence. These are semantic variants grouped together, not established defects. Sheet1 cell16 onwards and sheet2 cell1 show a larger map/card tail than some neighbors. All group flags remain fullsize backlog.
+Variation/outliers: sheet0 cells5/9/14 are shorter general-plumber pages (Cypress/Houston/Jersey Village), cells12/20 water-heater pages (Houston/Magnolia), with different narrative/photo sequences and less of the long service-list/review sequence. These are semantic variants grouped together, not established defects. Sheet1 cell16 onwards and sheet2 cell1 show a larger map/card tail than some neighbors. Current unresolved examples/outliers are enumerated only in the final residual ledger.
 
 Copy (design principle): subject-related job photography alternates with explanation; visible red form contrasts strongly with white reading surface; same hero assets unify local routes. Avoid (judgment): near-identical giant hero on every locality and many red/black button pairs create repetition; long link lists before form are costly on mobile; repeated wave edges and mascot CTA are more decoration than ArbCut needs. Do not copy the mascot or pictograms under the user’s rules.
 
@@ -61,120 +34,15 @@ Copy: plain white article canvas, topic photo, subheads that break long reading 
 
 Viewed `t04-service_x-0` both widths. Similar t02 sequence, but single broad review card, often gray rather than white alternating bands; bathtub/shower have five picture sections; other topics use three plus mascot CTA. Sink cell7 is flagged skeleton deviation and a shorter four-image sequence without the same centered CTA pattern. Main-water/toilet/heater cells5/9/10 add area navigation below FAQ. Gas-line `repai` and `repair` cells2/3 look compositionally near-identical at both widths; URL/canonical/content equivalence NOT verified. Source `bearsplumbing.net/service__{bathtub-installation,sink-installation,gas-line-repai,gas-line-repair}/{1440,390}/segment-*.jpg`.
 
-Copy: fixtures are shown clearly in room/context photos, not just branded graphics. Avoid: gray-on-dark rhythm and repeated wave boundaries make long narratives visually monotonous; initial navigation/form delay repeats on mobile. Add both gas-line URLs to fullsize comparison backlog; never silently deduplicate.
+Copy: fixtures are shown clearly in room/context photos, not just branded graphics. Avoid: gray-on-dark rhythm and repeated wave boundaries make long narratives visually monotonous; initial navigation/form delay repeats on mobile. Both gas-line URLs remain distinct pending items in the final residual ledger; never silently deduplicate.
 
 ## t05 — category archive (7)
 
-Viewed `t05-blog_x-0` both widths. Compact header → “Category: Uncategorized” → three vertically arranged article previews with red titles, large topic photos and excerpts (last page two) → pagination → map/footer. Unlike article/blog-index heroes, this archive starts directly with content. Cell7 is a short final page, a sensible apparent explanation for its height flag; fullsize still required. Sources `bearsplumbing.net/blog__category__uncategorized/{1440,390}/segment-*.jpg` (cell1) and `bearsplumbing.net/blog__category__uncategorized__page__7/{1440,390}/segment-*.jpg` (cell7). Copy: immediate topic imagery and short preview navigation. Avoid: generic “Uncategorized” heading gives readers little useful orientation. Repeated floating UI in mobile limits text/overlap judgment.
+Viewed `t05-blog_x-0` both widths. Compact header → “Category: Uncategorized” → three vertically arranged article previews with red titles, large topic photos and excerpts (last page two) → pagination → map/footer. Unlike article/blog-index heroes, this archive starts directly with content. Cell7 is a short final page, a sensible apparent explanation for its height flag; fullsize subsequently inspected in continuation J. Sources `bearsplumbing.net/blog__category__uncategorized/{1440,390}/segment-*.jpg` (cell1) and `bearsplumbing.net/blog__category__uncategorized__page__7/{1440,390}/segment-*.jpg` (cell7). Copy: immediate topic imagery and short preview navigation. Avoid: generic “Uncategorized” heading gives readers little useful orientation. Repeated floating UI in mobile limits text/overlap judgment.
 
 ## t06 — paginated blog index (6)
 
-Viewed `t06-blog_x-0` both widths. All six pages have a large pale curved empty-looking region ABOVE the branded Blog hero, followed by proof strip/search region → three article cards across (two on final page) → pagination → map/footer. Mobile stacks cards individually and retains the large pale upper region. This is a visible captured-layout anomaly, not a proven live defect: compare record structure and raw first viewports before attributing cause. Sources `bearsplumbing.net/blog__page__2/{1440,390}/segment-*.jpg` (cell1) and `bearsplumbing.net/blog__page__7/{1440,390}/segment-*.jpg` (cell6); other cells page3–6 show the same upper shape. Copy: photo/title/excerpt cards and visible pagination. Avoid: large branding/empty-looking region delays the actual article choices, especially on mobile. Fullsize backlog adds all six pages because the anomaly is shared but not verified.
-
-## Historical first-stop coverage (superseded by latest state above)
-
-Stopped exploring immediately after user reported stage input 761,038 > soft 750,000. **22/46 sheets opened: 11/23 at 1440, 11/23 at 390.** These contain **131 distinct pages at each width = 262 page previews**. The remaining **24 pages / 48 page previews / 24 sheets** were NOT opened. Fullsize pages: **0/155**; raw first viewports: **0/310**; no individual source segment was opened separately. No optional membership fullsize inspection was performed. “Viewed” means contact-sheet image opened and visually inspected at overview scale only; no claim that every word or small component was readable.
-
-The generated 46 sheets and groups are external artifacts. Exact opened sheet keys follow (append `.jpg` under `_sheets/bearsplumbing.net/`):
-
-- 1440: `1440/t00-area_x-0`, `1440/t00-area_x-1`, `1440/t00-area_x-2`, `1440/t01-area_x-0`, `1440/t01-area_x-1`, `1440/t02-service_x-0`, `1440/t02-service_x-1`, `1440/t03-blog_x-0`, `1440/t04-service_x-0`, `1440/t05-blog_x-0`, `1440/t06-blog_x-0`
-- 390: `390/t00-area_x-0`, `390/t00-area_x-1`, `390/t00-area_x-2`, `390/t01-area_x-0`, `390/t01-area_x-1`, `390/t02-service_x-0`, `390/t02-service_x-1`, `390/t03-blog_x-0`, `390/t04-service_x-0`, `390/t05-blog_x-0`, `390/t06-blog_x-0`
-
-| Group | Pages | Meaning (heuristic) | 1440 sheets opened | 390 sheets opened |
-|---|---:|---|---:|---:|
-| t00 | 47 | Long locality service; some shorter semantic variants | 3/3 | 3/3 |
-| t01 | 25 | Short plumber/heater locality | 2/2 | 2/2 |
-| t02 | 21 | Service / multi-review narrative | 2/2 | 2/2 |
-| t03 | 13 | Articles | 1/1 | 1/1 |
-| t04 | 12 | Service / wide-review narrative | 1/1 | 1/1 |
-| t05 | 7 | Category archive | 1/1 | 1/1 |
-| t06 | 6 | Blog pagination | 1/1 | 1/1 |
-| t07 | 5 | Mixed standalone pages (NOT one template) | 1/1 | 1/1 |
-| t08 | 3 | Area / financing / privacy mixed | 1/1 | 1/1 |
-| t09 | 3 | Articles | 1/1 | 1/1 |
-| t10 | 2 | Legal pages | 1/1 | 1/1 |
-| t11 | 2 | Membership / pricing; not yet inspected | 0/1 | 0/1 |
-| t12 | 2 | Articles; not yet inspected | 0/1 | 0/1 |
-| t13 | 2 | Articles; not yet inspected | 0/1 | 0/1 |
-| t14 | 1 | About | 0/1 | 0/1 |
-| t15 | 1 | Careers | 0/1 | 0/1 |
-| t16 | 1 | Giving back | 0/1 | 0/1 |
-| t17 | 1 | Home | 0/1 | 0/1 |
-| t18 | 1 | Thank you | 0/1 | 0/1 |
-
-### Historical first-stop unopened queue (t07–t10 subsequently opened)
-
-- 1440: `1440/t07-_1-0`, `1440/t08-_1-0`, `1440/t09-blog_x-0`, `1440/t10-_1-0`, `1440/t11-_1-0`, `1440/t12-blog_x-0`, `1440/t13-blog_x-0`, `1440/t14-one-off-0`, `1440/t15-one-off-0`, `1440/t16-one-off-0`, `1440/t17-home-0`, `1440/t18-one-off-0`
-- 390: `390/t07-_1-0`, `390/t08-_1-0`, `390/t09-blog_x-0`, `390/t10-_1-0`, `390/t11-_1-0`, `390/t12-blog_x-0`, `390/t13-blog_x-0`, `390/t14-one-off-0`, `390/t15-one-off-0`, `390/t16-one-off-0`, `390/t17-home-0`, `390/t18-one-off-0`
-
-### All required fullsize backlog (no fullsize credit taken)
-
-Every listed page requires **both 1440 and 390, first-viewport.jpg plus EVERY segment named in its record.json**. Resolve capture anomalies before quality judgments. This is the minimum required follow-up under the bulk brief; it does not claim exhaustive fullsize coverage of all 155 documents.
-
-Standalone semantic one-offs, including those hidden inside mixed automatic groups:
-
-- `home`, `about-us`, `contact-us`, `service`, `area`, `blog`, `sitemap`, `specials`, `financing`, `privacy-policy`, `cookie-policy`, `terms-of-service`, `membership`, `pricing-guide`, `careers`, `giving-back`, `thank-you`
-
-Two differing examples per multi-page automatic group (minimum queue, not completed selection approval; all members of mixed groups must be treated by their semantic page purpose):
-
-- t00: `area__conroe-tx-main-water-line-repair`, `area__conroe-tx-toilet-repair-and-installation`
-- t01: `area__conroe-tx-plumber`, `area__conroe-tx-water-heater-repair`
-- t02: `service__drain-cleaning`, `service__shower-valve-replacement`
-- t03: `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx`, `blog__how-bears-plumbing-delivers-5-star-service-every-time`
-- t04: `service__bathtub-installation`, `service__sink-installation`
-- t05: `blog__category__uncategorized`, `blog__category__uncategorized__page__7`
-- t06: `blog__page__2`, `blog__page__7`
-- t07: `blog`, `contact-us`
-- t08: `area`, `financing`
-- t09: `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx`, `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners`
-- t10: `cookie-policy`, `terms-of-service`
-- t11: `membership`, `pricing-guide`
-- t12: `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx`, `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx`
-- t13: `blog__7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes`, `blog__how-professional-rooter-services-solve-severe-plumbing-blockages-in-spring-tx`
-
-Every groups.json flagged page (14 unique; all remain unresolved at fullsize):
-
-- `area__cypress-tx-plumber`: height-outlier(6716 vs mean 9130)
-- `area__houston-tx-plumber`: height-outlier(6767 vs mean 9130)
-- `area__houston-tx-water-heater-repair`: height-outlier(7024 vs mean 9130)
-- `area__jersey-village-tx-plumber`: height-outlier(6767 vs mean 9130)
-- `area__magnolia-tx-water-heater-repair`: height-outlier(6955 vs mean 9130)
-- `service__plumbing-repair`: height-outlier(9528 vs mean 7370)
-- `service__sewer-line-repair`: height-outlier(9262 vs mean 7370)
-- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx`: height-outlier(7862 vs mean 5756)
-- `blog__how-bears-plumbing-delivers-5-star-service-every-time`: height-outlier(3425 vs mean 5756)
-- `service__sink-installation`: skeleton-deviates(0.75)
-- `blog__category__uncategorized__page__7`: height-outlier(2581 vs mean 3230)
-- `sitemap`: skeleton-deviates(0.75)
-- `financing`: skeleton-deviates(0.75)
-- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners`: skeleton-deviates(0.79)
-
-Additional sheet/lead anomaly queue:
-
-- `membership/1440`, y6312 h456 blank-band flag; inspect corresponding 390, first viewports, iframe patch and surrounding sections; do not label site defect.
-- `blog__page__2` through `blog__page__7`: pale curved upper space on every pagination preview, both widths.
-- `service__gas-line-repai` AND `service__gas-line-repair`: visually similar distinct routes; compare without deduplication.
-- `blog__10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx` and short service article `blog__how-bears-plumbing-delivers-5-star-service-every-time`: red-headed loading widget in preview; clarify embed state.
-- `area__the-woodlands-tx-main-water-line-repair` and `area__tomball-tx-toilet-repair-and-installation`: enlarged map/card tail variants; inspect content rather than treating them as errors.
-- Repeated floating UI affects many 390 previews throughout t00–t06. All 131 inspected pages retain a mobile capture-state limitation. Before using a page as a final reference, inspect its actual frames and fixed-element records; this sheet pass cannot clear overlaps.
-- t11–t18 still have no visual anomaly assessment. Finish remaining 16 sheets before finalizing outlier selection. No inference that unviewed pages are normal.
-
-### Candidate screenshots for later fullsize review (not approved/exported)
-
-These are source locations identified from sheets, not actual fullsize selections. Exact segment and y crops must be chosen after opening fullsize.
-
-1. `bearsplumbing.net/area__conroe-tx-main-water-line-repair/1440/segment-*.jpg`: intro/form + review-band sequence (t00 sheet0 cell1).
-2. `bearsplumbing.net/area__conroe-tx-main-water-line-repair/390/segment-*.jpg`: cost of initial list/form stacking (same cell).
-3. `bearsplumbing.net/service__shower-valve-replacement/1440/segment-*.jpg`: additional photo section within standard service rhythm (t02 sheet0 cell16).
-4. `bearsplumbing.net/blog__still-got-it-bear-in-the-field-solving-tough-sewer-line-issues/1440/segment-*.jpg`: worker image within article format (t03 cell9).
-5. `bearsplumbing.net/blog__page__2/390/segment-*.jpg`: upper pale region + hero delay (t06 cell1).
-6. `bearsplumbing.net/service__bathtub-installation/1440/segment-*.jpg`: topic-led photo narrative, wide review (t04 cell1).
-
-Done · bounded partial sheet analysis saved. Verified · 22 actual image opens, flags reconciled to opened groups, counts checked. Not verified · remaining 24 sheets, every required fullsize page/first viewport, interactions, exact typography/copy, live defects, inventory file contents. Next · lead finishes sheets first, then required fullsize backlog. No commit under stage’s explicit no-commit constraint.
-
-## Resumed sheet-only pass — t07 and t08
-
-Actually opened `t07-_1-0` and `t08-_1-0` at BOTH 1440/390 (4 new sheets). No fullsize opened.
+Viewed `t06-blog_x-0` both widths. All six pages have a large pale curved empty-looking region ABOVE the branded Blog hero, followed by proof strip/search region → three article cards across (two on final page) → pagination → map/footer. Mobile stacks cards individually and retains the large pale upper region. This is a visible captured-layout anomaly, not a proven live defect: compare record structure and raw first viewports before attributing cause. Sources `bearsplumbing.net/blog__page__2/{1440,390}/segment-*.jpg` (cell1) and `bearsplumbing.net/blog__page__7/{1440,390}/segment-*.jpg` (cell6); other cells page3–6 show the same upper shape. Copy: photo/title/excerpt cards and visible pagination. Avoid: large branding/empty-looking region delays the actual article choices, especially on mobile. Fullsize pages2/7 were subsequently inspected in continuation J; pages3–6 remain pending in the final ledger.
 
 ### t07 — mixed standalone pages (5)
 
@@ -186,33 +54,33 @@ Copy: visible contact details beside the form; image-led service selection; site
 
 `t08-_1-0` cells1/2/3 both widths. Area: hero/proof → van above locality-link cards (3 columns desktop, one mobile) → paired actions → map/footer. Financing: hero/proof → intro → alternating photo/text “How it works” / options and eligibility → FAQ → mascot “Call to Action” panel → map/footer. Privacy: shared hero/proof followed by a very long plain white legal-text column; footer preserved. Sources `bearsplumbing.net/{area,financing,privacy-policy}/{1440,390}/segment-*.jpg`.
 
-Copy: locality cards group related service links beneath the place name, more usable than an undifferentiated link wall. Financing separates process/options/eligibility rather than only pushing a button. Avoid: repeating van and many wave boundaries; generic visible “Call to Action” heading warrants readable copy verification. Privacy is visibly far longer, not a missing-content defect. Financing skeleton flag looks consistent with its distinct purpose, but remains in fullsize queue. People photos are visible; their authenticity/provenance is unknown.
+Copy: locality cards group related service links beneath the place name, more usable than an undifferentiated link wall. Financing separates process/options/eligibility rather than only pushing a button. Avoid: repeating van and many wave boundaries; generic visible “Call to Action” heading warrants readable copy verification. Privacy is visibly far longer, not a missing-content defect. Financing skeleton flag was subsequently resolved by its distinct fullsize content below. People photos are visible; their authenticity/provenance is unknown.
 
 ### t09 — three technical articles
 
 Actually opened `t09-blog_x-0` at BOTH widths (2 new sheets). Cells1–3: maintenance, inspection checklist, hydro-jetting. Same branded hero/proof → red-headed sidebar widget / article column → lead technical photo → subhead/paragraph/list units → second technical photo → conclusion and footer. Desktop cell2 visibly has a sidebar contents list where cells1/3 show loading indicators; desktop map band also differs, while mobile cell2 shows a loading indicator and map. Treat these as captured-state differences, not functional conclusions. Sources `bearsplumbing.net/blog__{prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx,professional-plumbing-inspection-checklist-for-conroe-tx-homeowners,why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx}/{1440,390}/segment-*.jpg`.
 
-Copy: technical equipment images complement the topic and break text runs. Avoid (judgment): repetitive generic branded hero before the specific article, and apparent widget inconsistency. Cell2 skeleton flag stays unresolved pending fullsize; include all three in anomaly follow-up to compare widget/map states. Repeated mobile floating UI remains a capture limitation.
+Copy: technical equipment images complement the topic and break text runs. Avoid (judgment): repetitive generic branded hero before the specific article, and apparent widget inconsistency. The final ledger controls which of these article anomalies still lack fullsize inspection. Repeated mobile floating UI remains a capture limitation.
 
 ### t10 — legal documents (2)
 
 Actually opened `t10-_1-0` at BOTH widths (2 new sheets), cell1 cookie-policy, cell2 terms-of-service. Shared hero/proof → plain white legal reading surface with uppercase subhead hierarchy and lists → map/footer. Terms is substantially longer; mobile stacks the same text-heavy structure and footer links. Sources `bearsplumbing.net/{cookie-policy,terms-of-service}/{1440,390}/segment-*.jpg`. Copy: restrained white reading surface is more appropriate for dense policies than decorative cards. Avoid: large marketing hero before utilitarian legal text; repeated floating widgets obscure portions of the captured mobile reading surface. No legal accuracy, text completeness, or actual live obstruction assessed.
 
-## Latest stopping point — continuation budget steer
+## Lead completion: t11–t18, sheet scale only
 
-User reported 254,122 > 250,000 soft stage input budget; stopped image exploration after the in-flight t09/t10 batch. This continuation opened **8 sheets** (t07–t10, both widths), **13 additional pages / 26 previews**. Combined with prior 22: **30/46 sheets**, **15/23 at each width**, **144/155 pages at both widths / 288 previews**. Remaining **16 sheets / 11 distinct pages / 22 previews**. No previous sheet was reopened; no sheets regenerated; no fullsize/first-viewport images opened; no browser/recapture/commit/delegation.
+Both 1440 and 390 sheets were opened for every group below; citations are `_sheets/bearsplumbing.net/<width>/<sheet>.jpg`, cell 1 unless stated otherwise. All observations are preview-scale, not fullsize verification.
 
-Exact current unopened sheet keys (append `.jpg` under `_sheets/bearsplumbing.net/`):
+- **t11-_1-0**, cells1–2, membership/pricing-guide: membership uses alternating work-photo/text bands and a team photo before final CTA; pricing uses three desktop price/category cards stacked on mobile. Desktop membership has a white band before footer; keep the existing embed/capture caveat. Transfer clear grouped pricing; avoid repeated wave separators and paired CTAs on every band.
+- **t12-blog_x-0**, cells1–2: filtration/repiping articles use shared branded hero, narrow reading column, technical photos, multiple subheads, comparison tables, map/footer; a red-headed loading widget sits beside content on desktop and above it on mobile. Filtration and repiping tables were subsequently inspected in continuations K/L.
+- **t13-blog_x-0**, cells1–2: drain-damage/rooter articles share that article frame, using trench/equipment photos and a second inline image. Mobile is a long text run followed by full link-rich footer; do not infer exact readability metrics from previews.
+- **t14-one-off-0**, about-us: van/team portraits and owner portrait alternate with story copy; historical monochrome group photos add specificity. Mobile retains images and narrative. Real team history is more transferable than the generic mascot hero.
+- **t15-one-off-0**, careers: worker photo and group-event photo introduce dense role/requirements copy; mobile stacks into a lengthy reading run before CTA/map/footer. Role copy and application behaviour unverified.
+- **t16-one-off-0**, giving-back: community/group photos alternate with explanatory bands; map/footer follow. The mobile preview visibly repeats header/review/chat overlays at frame joins; this is a capture-state limitation, not proof of duplicated live page sections.
+- **t17-home-0**, home: service cards → dark intro/contact form band → company/van introduction → large manufacturer logo panel → offer cards → review → area cards → article cards → map/footer. Mobile stacks all modules and an extensive locality list. The manufacturer panel is visibly oversized relative to neighboring modules; exact credential entitlement was not checked. Desktop and mobile reorder form/copy within the dark band.
+- **t18-one-off-0**, thank-you: standalone dark confirmation with logo, short message, red homepage-return action and van image; no ordinary navigation/footer visible in these previews. No submission was performed to reach it.
 
-- 1440: `1440/t11-_1-0`, `1440/t12-blog_x-0`, `1440/t13-blog_x-0`, `1440/t14-one-off-0`, `1440/t15-one-off-0`, `1440/t16-one-off-0`, `1440/t17-home-0`, `1440/t18-one-off-0`
-- 390: `390/t11-_1-0`, `390/t12-blog_x-0`, `390/t13-blog_x-0`, `390/t14-one-off-0`, `390/t15-one-off-0`, `390/t16-one-off-0`, `390/t17-home-0`, `390/t18-one-off-0`
 
-All one-off, two-differing-per-group and 14 flagged-page fullsize backlog above remains pending unchanged. Additional follow-up from this continuation: pale upper curved region on all t07 utility pages; financing generic “Call to Action” heading; t09 sidebar/map state differences (all three articles). t11–t18 remain visually unknown, including membership; its y6312 h456 blank band still requires fullsize and 390 comparison and is NOT established as a site defect.
-
-Done · continuation’s eight-sheet evidence saved. Verified · actual opens and index counts reconciled. Not verified · remaining 16 sheets, all required fullsize/first viewports, interactions, live defects and readable copy/typography. Next · lead resumes t11–t18 sheet queue before fullsize. No commit under explicit stage restriction.
-
-
-## Fullsize continuation — 2026-11-05 (supersedes historical zero-fullsize status)
+## Fullsize study — 2026-11-05
 
 No sheets repeated. Saved first viewports and individual desktop segments opened as-is; mobile source images opened in unscaled 390px columns, three per strip under `/tmp/bearsplumbing.net-strips/`. Gray padding in these strips is not site content. Only explicitly ledgered files receive fullsize credit.
 
@@ -408,13 +276,13 @@ Privacy, cookies and terms preserve a plain white reading surface with subheads 
 - `terms-of-service/390/`: `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`.
 - `terms-of-service/390/`: `segment-014348.jpg`, `segment-015192.jpg`, `segment-016036.jpg`.
 
-### Long locality template t00 — readable comparison (second page mobile partial)
+### Long locality template t00 — readable comparison
 
 Both Conroe water-line and toilet pages have service-specific H1 and intro, a long all-service navigation list beside red form, reviews, three subject-photo/text bands, mascot-led CTA, five steps, driving directions/map, FAQ, desktop job-map/cards, then map/footer. Mobile list precedes form; numbered process cards stack vertically and each CTA pair becomes two wide buttons. Copy actual job photos, clear service/locality heading, short process and evidence with place names. Avoid keyword-heavy repetitive reassurance in every band, huge all-service list before enquiry, and generic process cards that say little about what actually happens.
 
 **Concrete copy mismatch:** water-line page review heading says “WHY CONROE, TX RESIDENTS CHOOSE OUR TOILET REPAIR AND INSTALLATION SERVICES” (`area__conroe-tx-main-water-line-repair/1440/segment-000000.jpg`, y0–2400; mobile `segment-003376.jpg`, y3376). Its numbered-process heading says “FAST AND DEPENDABLE TOILET REPAIR SERVICES IN CONROE, TX” above WATER LINE HEALTH EVALUATION / main-line steps (`1440/segment-004800.jpg`, y4800; `390/segment-009284.jpg`, y9284). These are readable content-topic mismatches, not sticky-frame duplication. Avoid copying this templating error.
 
-Desktop water-line `segment-007200.jpg` y7200 shows geographic job markers and four detailed job-photo cards (e.g. Conroe attic leak), stronger local proof than generic city copy if the jobs are authentic. Mobile `segment-012660.jpg`/`segment-013504.jpg` y12660/13504 moves from FAQ straight to ordinary map/footer; job widget is not visibly present in that saved sequence. Different widget load/capture states prevent concluding it is deliberately hidden by responsive CSS. Toilet desktop `segment-007200.jpg` has some job-card images blank; do not assert broken live images without further records. Toilet mobile has not yet been viewed past `segment-010972.jpg`.
+Desktop water-line `segment-007200.jpg` y7200 shows geographic job markers and four detailed job-photo cards (e.g. Conroe attic leak), stronger local proof than generic city copy if the jobs are authentic. Mobile `segment-012660.jpg`/`segment-013504.jpg` y12660/13504 moves from FAQ straight to ordinary map/footer; job widget is not visibly present in that saved sequence. Different widget load/capture states prevent concluding it is deliberately hidden by responsive CSS. Toilet desktop `segment-007200.jpg` has some job-card images blank; do not assert broken live images without further records. Toilet mobile tail was completed in continuation F; it reaches FAQ, map and complete footer without the desktop job-card block in the saved sequence.
 
 ### Record-derived measurements and remaining interpretation limits
 
@@ -451,105 +319,284 @@ Saved interaction inventory and `bulk-interactions.json` site entry were read: h
 - `area__conroe-tx-toilet-repair-and-installation/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
 - `area__conroe-tx-toilet-repair-and-installation/390/`: `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`.
 
-### Current coverage reconciliation
 
-| Scope | Actual state |
-|---|---|
-| Contact sheets | Existing 46/46, 23 per width, 155 documents represented; no sheet reopened or flags changed |
-| Named semantic one-offs | 17/17 opened at both widths, every recorded segment + first viewport |
-| Additional complete locality | Conroe main-water, both widths |
-| Partial locality | Conroe toilet: all 1440; 390 first viewport + segments through y10972 only |
-| Required flagged pages | Sitemap and financing fullsize opened; other 12 flagged pages unseen fullsize |
-| Template evidence | t00 one complete example + differing example desktop complete/mobile partial; t10 two legal examples complete; mixed groups' standalone pages handled by purpose. t01–t06, t09, t12–t13 examples remain unseen |
-| Source image opens | 38 first viewports, 300 segments, 1 iframe patch = 339 files, displayed as 170 images/strips |
-| Mobile content not judgeable | Black terminal frames on contact, service, blog, sitemap, specials; saved sticky/chat overlays on giving-back/legal pages; not live defect findings |
-| Interactions | JSON/inventory read only; zero interaction images visually checked |
+## Continuation F — t00 tail and t01 differing examples
 
-### Exact required fullsize remainder at budget stop
+Conroe toilet mobile tail now actually inspected through copyright; no black ending. t01 plumber/heater pages differ from t00: no all-service intro list/review block/process cards; five alternating work-photo/copy bands, then FAQ/map/footer (heater also area text). Desktop opening left copy is vertically centred beside tall form, producing substantial empty area above it; mobile removes that vertical gap and stacks short local intro then form. Both retain readable footer links. Evidence `area__conroe-tx-{plumber,water-heater-repair}/1440/segment-000000.jpg` y0–2400 and corresponding `390/segment-000844.jpg` y844.
 
-Every row below is **UNOPENED**, not a ledger of viewed evidence. Root as above. Generated solely from the existing backlog and saved file manifests; no visual credit. There are 35 wholly unviewed queued pages plus the unfinished Conroe toilet mobile tail (36 pages with gaps). Includes every remaining flagged page and the sheet anomaly additions (pagination 2–7, both gas-line routes, tankless widget, map-tail variants, hydro-jetting comparison). All listed source files still need actual opens.
+Copy: specific local context (Conroe older downtown versus Grand Central Park / clay soil) and a named recent-job story with symptom, diagnosis and outcome, e.g. plumber `1440/segment-002400.jpg` y2400 and heater same segment. These are company claims, not independently authenticated jobs. Avoid generic five-band repetition and padding that makes two introductory paragraphs occupy an entire desktop column. Topic photos differ meaningfully: repair/install worker versus heater components and crew; both cleaner than t00's unrelated service navigation.
 
-- `area__conroe-tx-toilet-repair-and-installation/390/`: `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`, `segment-014348.jpg`, `segment-015192.jpg`.
-- `area__conroe-tx-plumber/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `area__conroe-tx-plumber/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
-- `area__conroe-tx-water-heater-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `area__conroe-tx-water-heater-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
-- `service__drain-cleaning/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`.
-- `service__drain-cleaning/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`.
-- `service__shower-valve-replacement/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`.
-- `service__shower-valve-replacement/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`.
-- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`.
-- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`.
-- `blog__how-bears-plumbing-delivers-5-star-service-every-time/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
-- `blog__how-bears-plumbing-delivers-5-star-service-every-time/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
-- `service__bathtub-installation/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`.
-- `service__bathtub-installation/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`.
-- `service__sink-installation/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `service__sink-installation/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
-- `blog__category__uncategorized/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
-- `blog__category__uncategorized/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`.
-- `blog__category__uncategorized__page__7/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
-- `blog__category__uncategorized__page__7/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
-- `blog__page__2/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
-- `blog__page__2/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
-- `blog__page__7/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
-- `blog__page__7/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
-- `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
-- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
-- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`.
-- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`.
-- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`.
-- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`.
-- `blog__7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `blog__7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
-- `blog__how-professional-rooter-services-solve-severe-plumbing-blockages-in-spring-tx/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `blog__how-professional-rooter-services-solve-severe-plumbing-blockages-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`.
-- `area__cypress-tx-plumber/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `area__cypress-tx-plumber/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
-- `area__houston-tx-plumber/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `area__houston-tx-plumber/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
-- `area__houston-tx-water-heater-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `area__houston-tx-water-heater-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
-- `area__jersey-village-tx-plumber/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `area__jersey-village-tx-plumber/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
-- `area__magnolia-tx-water-heater-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `area__magnolia-tx-water-heater-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
-- `service__plumbing-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`.
-- `service__plumbing-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`, `segment-014348.jpg`.
-- `service__sewer-line-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`.
-- `service__sewer-line-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`, `segment-014348.jpg`.
-- `service__gas-line-repai/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `service__gas-line-repai/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`.
-- `service__gas-line-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `service__gas-line-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`.
-- `blog__10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `blog__10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`.
-- `area__the-woodlands-tx-main-water-line-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`, `segment-009600.jpg`.
-- `area__the-woodlands-tx-main-water-line-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`, `segment-014348.jpg`, `segment-015192.jpg`, `segment-016036.jpg`, `segment-016880.jpg`.
-- `area__tomball-tx-toilet-repair-and-installation/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`, `segment-009600.jpg`.
-- `area__tomball-tx-toilet-repair-and-installation/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`, `segment-014348.jpg`, `segment-015192.jpg`, `segment-016036.jpg`, `segment-016880.jpg`.
-- `blog__page__3/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
-- `blog__page__3/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
-- `blog__page__4/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
-- `blog__page__4/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
-- `blog__page__5/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
-- `blog__page__5/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
-- `blog__page__6/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
-- `blog__page__6/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
-- `blog__why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
-- `blog__why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`.
+### Exact fullsize file ledger, batch F
 
-### Six fullsize screenshot candidates (no exports made)
+- `area__conroe-tx-toilet-repair-and-installation/390/`: `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`.
+- `area__conroe-tx-toilet-repair-and-installation/390/`: `segment-014348.jpg`, `segment-015192.jpg`.
+- `area__conroe-tx-plumber/1440/`: `first-viewport.jpg`.
+- `area__conroe-tx-plumber/1440/`: `segment-000000.jpg`.
+- `area__conroe-tx-plumber/1440/`: `segment-002400.jpg`.
+- `area__conroe-tx-plumber/1440/`: `segment-004800.jpg`.
+- `area__conroe-tx-plumber/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `area__conroe-tx-plumber/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `area__conroe-tx-plumber/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `area__conroe-tx-plumber/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `area__conroe-tx-plumber/390/`: `segment-009284.jpg`, `segment-010128.jpg`.
+- `area__conroe-tx-water-heater-repair/1440/`: `first-viewport.jpg`.
+- `area__conroe-tx-water-heater-repair/1440/`: `segment-000000.jpg`.
+- `area__conroe-tx-water-heater-repair/1440/`: `segment-002400.jpg`.
+- `area__conroe-tx-water-heater-repair/1440/`: `segment-004800.jpg`.
+- `area__conroe-tx-water-heater-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `area__conroe-tx-water-heater-repair/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `area__conroe-tx-water-heater-repair/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `area__conroe-tx-water-heater-repair/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `area__conroe-tx-water-heater-repair/390/`: `segment-009284.jpg`, `segment-010128.jpg`.
+- `service__drain-cleaning/1440/`: `first-viewport.jpg`.
+- `service__drain-cleaning/1440/`: `segment-000000.jpg`.
+- `service__drain-cleaning/1440/`: `segment-002400.jpg`.
+- `service__drain-cleaning/1440/`: `segment-004800.jpg`.
 
-1. `bearsplumbing.net/home/1440/first-viewport.jpg`, y0: branded van/crew plus recognisable source marks beside action; darkened crew and mascot dominate.
-2. `bearsplumbing.net/home/1440/segment-002400.jpg`, y2400: identifiable people/equipment versus oversized soft supplier panel.
-3. `bearsplumbing.net/pricing-guide/390/segment-002532.jpg`, y2532: readable category/option/starting-price hierarchy.
-4. `bearsplumbing.net/about-us/1440/segment-002400.jpg`, y2400: next generation, office person and family archive as company-specific artefacts.
-5. `bearsplumbing.net/area__conroe-tx-main-water-line-repair/1440/segment-007200.jpg`, y7200: local job-photo cards/map; captured mobile absence caveat required.
-6. `bearsplumbing.net/giving-back/390/segment-004220.jpg`, y4220: saved sticky/chat overlap; illustrates capture limitation, not a proven permanent live defect.
+## Continuation G — t02 service examples
 
-Stopped image exploration immediately on user budget steer (reported 4,282,486 > 4,000,000 stage input tokens). No assertion that required study is finished. Only this report was edited; external sheet flags already complete, no change needed. Temporary unscaled review strips/manifests live only under `/tmp/bearsplumbing.net-strips/`. No source/public/script/ledger/board/handoff edits, delegation, messages, recaptures, submissions or commits. Lead retains review/commit ownership under explicit task restriction.
+Drain-cleaning and shower-valve replacement are complete at both widths, including first viewport and all recorded segments. Both use the service-list/form introduction, reviews, alternating photo/copy bands, repeated paired actions, FAQ, map and full footer. Drain's four photos show the same worker/job with different crops (`service__drain-cleaning/1440/segment-002400.jpg` and `segment-004800.jpg`); do not interpret them as four separate jobs. Shower uses finished-room photos rather than close evidence of valve work (`service__shower-valve-replacement/1440/segment-002400.jpg`). Copy: useful symptoms, causes and inspect/protect-tile/test-temperature procedure. Avoid redundant imagery, long unrelated service navigation before the mobile form, and repeated actions after every band.
 
-Done · smallest complete result: all 17 named one-offs and one locality fully opened, exact partial/gap ledger saved. Verified · actual file opens reconciled against saved manifests, 339 sources / 170 displays. Not verified · full required template/outlier scope, interaction visuals, live causes, inaccessible black-tail content, 360px and end-to-end submissions. Next · lead verifies/commits report and resumes ONLY exact unopened rows above if further research is authorised.
+Shower mobile records visibly repeat the sticky logo/menu and chat/accessibility widgets over copy and actions (`390/segment-005908.jpg`, `segment-007596.jpg`); this is the saved segmented-capture state, not proof of permanent live obstruction. The final `segment-012660.jpg` reaches copyright; gray strip padding is outside the source image. The first viewport repeats UPFRONT PRICING twice within one frame, as on home. No interaction inference from static FAQ state.
+
+### Exact fullsize file ledger, batch G
+
+- `service__drain-cleaning/1440/`: `segment-007200.jpg`.
+- `service__drain-cleaning/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `service__drain-cleaning/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `service__drain-cleaning/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `service__drain-cleaning/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `service__drain-cleaning/390/`: `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`.
+- `service__drain-cleaning/390/`: `segment-011816.jpg`.
+- `service__shower-valve-replacement/1440/`: `first-viewport.jpg`.
+- `service__shower-valve-replacement/1440/`: `segment-000000.jpg`.
+- `service__shower-valve-replacement/1440/`: `segment-002400.jpg`.
+- `service__shower-valve-replacement/1440/`: `segment-004800.jpg`.
+- `service__shower-valve-replacement/1440/`: `segment-007200.jpg`.
+- `service__shower-valve-replacement/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `service__shower-valve-replacement/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `service__shower-valve-replacement/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `service__shower-valve-replacement/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `service__shower-valve-replacement/390/`: `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`.
+- `service__shower-valve-replacement/390/`: `segment-011816.jpg`, `segment-012660.jpg`.
+
+## Continuation H — t03 long and short articles
+
+Both emergency-sewer and five-star-service articles are complete at both widths. Shared blog hero uses title/date, crew background, van/mascot, then desktop four-benefit strip; mobile removes that strip and stacks TOC above the article. Desktop reserves an empty left column after the TOC; mobile body uses readable inset text. TOC displays a loading spinner in both desktop initial segments (`blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/1440/segment-000000.jpg`; five-star equivalent); emergency mobile `segment-000844.jpg` also shows it. This is a captured loading state, not proof the live TOC never resolves.
+
+The long article has key takeaways, symptom checklist, seven numbered options, two large plumbing images, inline source/service links and six plain-text FAQ answers (`1440/segment-002400.jpg`, `segment-004800.jpg`; mobile y1688–10128). The short article has one branded technician image and five compact service promises (`blog__how-bears-plumbing-delivers-5-star-service-every-time/1440/segment-000000.jpg`), but visible literal `**` precedes its concluding sentence (also mobile `segment-002532.jpg`). Copy: numbered decision-support sections and succinct summary bullets. Avoid a generic giant promotional hero, empty desktop sidebar, unrendered formatting and unsupported absolute five-star claims. Source-link accuracy, job/photo provenance and factual plumbing advice were not independently checked. Previous/next labels truncate severely on mobile (`390/segment-010128.jpg` emergency; `segment-002532.jpg` five-star). Both maps and copyright endings are visible; no black tail in these two records.
+
+### Exact fullsize file ledger, batch H
+
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/1440/`: `first-viewport.jpg`.
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/1440/`: `segment-000000.jpg`.
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/1440/`: `segment-002400.jpg`.
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/1440/`: `segment-004800.jpg`.
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/1440/`: `segment-007200.jpg`.
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/390/`: `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`.
+- `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx/390/`: `segment-011816.jpg`, `segment-012660.jpg`.
+- `blog__how-bears-plumbing-delivers-5-star-service-every-time/1440/`: `first-viewport.jpg`.
+- `blog__how-bears-plumbing-delivers-5-star-service-every-time/1440/`: `segment-000000.jpg`.
+- `blog__how-bears-plumbing-delivers-5-star-service-every-time/1440/`: `segment-002400.jpg`.
+- `blog__how-bears-plumbing-delivers-5-star-service-every-time/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `blog__how-bears-plumbing-delivers-5-star-service-every-time/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `blog__how-bears-plumbing-delivers-5-star-service-every-time/390/`: `segment-004220.jpg`, `segment-005064.jpg`.
+
+## Continuation I — t04 installation examples
+
+Bathtub and sink are complete at both widths. Compared with t02, these have gray/black photo bands, one wide desktop review (same water-heater testimonial), and installation-specific body structure. Bathtub has five room/fixture photos plus a final mascot scheduling band; sink has three bands (styles/materials, installation procedure, company difference) before FAQ. Evidence `service__bathtub-installation/1440/segment-002400.jpg`, `segment-004800.jpg`; `service__sink-installation/1440/segment-002400.jpg`. Both mobile sequences preserve image-before-copy order and end at copyright (`390/segment-013504.jpg` bathtub; `segment-010128.jpg` sink).
+
+Copy: explicit installation scope and material choices, plus repair/replacement symptoms (`service__sink-installation/1440/segment-000000.jpg`). Avoid generic water-heater review on unrelated installation pages, large all-service directory before the mobile form, and low-separation black text on medium-gray bands. The gray is visible in both widths, but no contrast ratio was measured. Finished-room images do not establish completed company jobs; sink's hands-on plumbing photo and branded van are more concrete visual subjects. FAQ has first answer expanded in saved static frames; transitions await saved interaction inspection.
+
+### Exact fullsize file ledger, batch I
+
+- `service__bathtub-installation/1440/`: `first-viewport.jpg`.
+- `service__bathtub-installation/1440/`: `segment-000000.jpg`.
+- `service__bathtub-installation/1440/`: `segment-002400.jpg`.
+- `service__bathtub-installation/1440/`: `segment-004800.jpg`.
+- `service__bathtub-installation/1440/`: `segment-007200.jpg`.
+- `service__bathtub-installation/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `service__bathtub-installation/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `service__bathtub-installation/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `service__bathtub-installation/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `service__bathtub-installation/390/`: `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`.
+- `service__bathtub-installation/390/`: `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`.
+- `service__sink-installation/1440/`: `first-viewport.jpg`.
+- `service__sink-installation/1440/`: `segment-000000.jpg`.
+- `service__sink-installation/1440/`: `segment-002400.jpg`.
+- `service__sink-installation/1440/`: `segment-004800.jpg`.
+- `service__sink-installation/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `service__sink-installation/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `service__sink-installation/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `service__sink-installation/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `service__sink-installation/390/`: `segment-009284.jpg`, `segment-010128.jpg`.
+
+## Continuation J — category archive and blog pagination
+
+Category root and category page 7 are complete at both widths: plain white archive, magenta linked titles, huge full-width images, excerpts ending `[…]`, then small Next/Previous links. Root has three posts; last category page has two. No branded hero or search. Evidence `blog__category__uncategorized/1440/segment-000000.jpg` and `blog__category__uncategorized__page__7/1440/segment-000000.jpg`; mobile y0–1688. This is a distinct archive presentation, not a missing-page skeleton. Copy the clear content-led start; avoid exposing “Uncategorized” as the reader-facing topic and using near-full-screen images between every excerpt.
+
+Blog pages 2 and 7 are complete as recorded at both widths. Their large pale curved empty band precedes the branded hero (`blog__page__2/{1440,390}/first-viewport.jpg`, page7 equivalents), consistent with the blog one-off. Search and three-column cards follow on desktop; mobile one-column cards. Page7 has two cards, leaving the third desktop column empty. Numeric pagination highlights the current page; page7 still visibly offers Next (destination not checked). Unlike category endings, mobile blog2/7 ends in black capture content (`390/segment-005064.jpg`) before the later footer navigation/copyright can be confirmed. All recorded frames opened; end-of-footer remains unverified. Repeated header is a segmented sticky capture state. Copy compact cards and current-page indicator; avoid first-viewport dead space and oversized promotional chrome ahead of article discovery. Search/pagination behaviour remains untested.
+
+### Exact fullsize file ledger, batch J
+
+- `blog__category__uncategorized/1440/`: `first-viewport.jpg`.
+- `blog__category__uncategorized/1440/`: `segment-000000.jpg`.
+- `blog__category__uncategorized/1440/`: `segment-002400.jpg`.
+- `blog__category__uncategorized/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `blog__category__uncategorized/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `blog__category__uncategorized/390/`: `segment-004220.jpg`.
+- `blog__category__uncategorized__page__7/1440/`: `first-viewport.jpg`.
+- `blog__category__uncategorized__page__7/1440/`: `segment-000000.jpg`.
+- `blog__category__uncategorized__page__7/1440/`: `segment-002400.jpg`.
+- `blog__category__uncategorized__page__7/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `blog__category__uncategorized__page__7/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `blog__page__2/1440/`: `first-viewport.jpg`.
+- `blog__page__2/1440/`: `segment-000000.jpg`.
+- `blog__page__2/1440/`: `segment-002400.jpg`.
+- `blog__page__2/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `blog__page__2/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `blog__page__2/390/`: `segment-004220.jpg`, `segment-005064.jpg`.
+- `blog__page__7/1440/`: `first-viewport.jpg`.
+- `blog__page__7/1440/`: `segment-000000.jpg`.
+- `blog__page__7/1440/`: `segment-002400.jpg`.
+- `blog__page__7/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `blog__page__7/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `blog__page__7/390/`: `segment-004220.jpg`, `segment-005064.jpg`.
+
+## Continuation K — additional article variants and outliers
+
+Maintenance and Conroe inspection articles are complete at both widths: the same semantic article template as the t03 examples. Maintenance is six sections plus a four-item visit checklist, without an article FAQ; Conroe has six sections, provider criteria bullets and a diagnostic-equipment image. Evidence respective `1440/segment-002400.jpg` and mobile y3376–5908. Copy: clear scope/expectation sections; avoid labelling a primarily prose article a “checklist” without a usable inspection list. Conroe desktop TOC is loaded and includes irrelevant hero-benefit headings Local/Workmanship/Upfront/On-Time before the article headings (`1440/segment-000000.jpg`); mobile TOC still shows spinner (`390/segment-000844.jpg`). This variation reinforces loading-state caveats. Conroe desktop ends with a white band where mobile renders map; its desktop record has no `iframes` or `iframePatches` field, so cause is unknown and no live defect is established. Both mobile footers reach copyright.
+
+Water-filtration article is also complete at both widths, with five numbered reasons, key-point bullets, three-column system comparison table, four-step process and four plain-text FAQ answers. Evidence `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/1440/segment-002400.jpg`, `segment-004800.jpg`; mobile `segment-005064.jpg`/`segment-005908.jpg` table. All three table columns fit within mobile inset, but narrow cells make long text wrap heavily. Copy a genuine option comparison and numbered process; avoid using unverified health/savings claims as proof. Its TOC spinner, maps and full copyright ending are visible in saved frames; no interaction or factual validation inferred.
+
+### Exact fullsize file ledger, batch K
+
+- `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/1440/`: `first-viewport.jpg`.
+- `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/1440/`: `segment-000000.jpg`.
+- `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/1440/`: `segment-002400.jpg`.
+- `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/1440/`: `segment-004800.jpg`.
+- `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners/1440/`: `first-viewport.jpg`.
+- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners/1440/`: `segment-000000.jpg`.
+- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners/1440/`: `segment-002400.jpg`.
+- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners/1440/`: `segment-004800.jpg`.
+- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/1440/`: `first-viewport.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/1440/`: `segment-000000.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/1440/`: `segment-002400.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/1440/`: `segment-004800.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/1440/`: `segment-007200.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/390/`: `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`.
+- `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/390/`: `segment-011816.jpg`.
+
+## Continuation L — repiping article; budget stop
+
+Repiping is complete at both widths, through every segment and first viewport. It shares the filtration article structure: key points, symptom list, explanatory sections, three-column comparison, five-step process, second technical photo, four plain-text FAQs and final action paragraph. Evidence `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/1440/segment-002400.jpg` and `segment-004800.jpg`; mobile `segment-005064.jpg`/`segment-005908.jpg` comparison. The four material rows remain within mobile width; dense wrapping makes the table much taller. Copy the repair-versus-replacement decision section and material comparison structure. Avoid treating promotional health/material/performance claims or equipment photography as independently verified evidence. TOC spinner is visible in both widths. Both map and copyright ending render; no black tail here. No saved interaction images opened before the explicit budget stop.
+
+### Exact fullsize file ledger, batch L
+
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/1440/`: `first-viewport.jpg`.
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/1440/`: `segment-000000.jpg`.
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/1440/`: `segment-002400.jpg`.
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/1440/`: `segment-004800.jpg`.
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/1440/`: `segment-007200.jpg`.
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`.
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/390/`: `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`.
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/390/`: `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`.
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/390/`: `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`.
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/390/`: `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`.
+- `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/390/`: `segment-011816.jpg`.
+## Current coverage and exact residual gaps — authoritative checkpoint
+
+**Stopped exploring on the user's 6M soft-budget steer. Required study remains partial.** All historical sheet notes above describe sheet-scale evidence only; the ledgers A–L are the sole fullsize-open credit. No obsolete zero-fullsize or unopened-sheet queue applies.
+
+| Evidence class | Actually inspected | Remaining / limitation |
+|---|---:|---|
+| Contact sheets | 46/46; 155 documents represented at both widths | No sheet repeat in this continuation |
+| Required/sheet-anomaly fullsize queue | 35/54 pages, both widths, every recorded segment + first viewport | 19 completely unopened pages, exact files below |
+| Fullsize static source JPGs | 611/956: 70 first viewports + 541 segments | 345 unopened source JPGs |
+| Additional membership iframe patch | 1 opened; white | Desktop map remains visually unrecovered |
+| Saved interaction JPGs | 0/88 | All 88 unopened; inventory below |
+| Live actions / submitted forms | 0 | Explicitly outside this saved-evidence task |
+
+The fullsize total including the patch is **612 actual source-file opens** (339 at the prior checkpoint + 273 added in this continuation). Images/strips displayed: 310 including patch (140 added); each native 390 strip credits only its named source frames. A previous 12-display output was truncated before visual delivery; those files were subsequently reopened in smaller batches and credited only after receipt. No unseen file receives visual credit. Current native-strip queue3 checkpoint is **164/340 displays**, next index 164: `blog__7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes/1440/first-viewport.jpg`. Temporary queue manifests are convenience aids; the exact source ledger here is durable.
+
+Complete pages (recorded coverage, not assurance of unobscured live content): `about-us`, `area`, `area__conroe-tx-main-water-line-repair`, `area__conroe-tx-plumber`, `area__conroe-tx-toilet-repair-and-installation`, `area__conroe-tx-water-heater-repair`, `blog`, `blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx`, `blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx`, `blog__category__uncategorized`, `blog__category__uncategorized__page__7`, `blog__how-bears-plumbing-delivers-5-star-service-every-time`, `blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx`, `blog__page__2`, `blog__page__7`, `blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx`, `blog__professional-plumbing-inspection-checklist-for-conroe-tx-homeowners`, `careers`, `contact-us`, `cookie-policy`, `financing`, `giving-back`, `home`, `membership`, `pricing-guide`, `privacy-policy`, `service`, `service__bathtub-installation`, `service__drain-cleaning`, `service__shower-valve-replacement`, `service__sink-installation`, `sitemap`, `specials`, `terms-of-service`, `thank-you`.
+
+### Unopened static files — 345 source JPGs on 19 pages
+
+All entries below are **pending, not inspected**. Paths are relative to `~/.ai-powerhouse/research-captures/arbcut-v4/bearsplumbing.net/`; neither width nor first viewport may be inferred from another page. Both gas-line spellings stay separate. This is the remaining required/example/outlier queue, not all 155 sitemap documents.
+
+- **PENDING** `blog__7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `blog__7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
+- **PENDING** `blog__how-professional-rooter-services-solve-severe-plumbing-blockages-in-spring-tx/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `blog__how-professional-rooter-services-solve-severe-plumbing-blockages-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`.
+- **PENDING** `area__cypress-tx-plumber/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `area__cypress-tx-plumber/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
+- **PENDING** `area__houston-tx-plumber/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `area__houston-tx-plumber/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
+- **PENDING** `area__houston-tx-water-heater-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `area__houston-tx-water-heater-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
+- **PENDING** `area__jersey-village-tx-plumber/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `area__jersey-village-tx-plumber/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
+- **PENDING** `area__magnolia-tx-water-heater-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `area__magnolia-tx-water-heater-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`.
+- **PENDING** `service__plumbing-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`.
+- **PENDING** `service__plumbing-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`, `segment-014348.jpg`.
+- **PENDING** `service__sewer-line-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`.
+- **PENDING** `service__sewer-line-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`, `segment-014348.jpg`.
+- **PENDING** `service__gas-line-repai/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `service__gas-line-repai/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`.
+- **PENDING** `service__gas-line-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `service__gas-line-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`.
+- **PENDING** `blog__10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `blog__10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`.
+- **PENDING** `area__the-woodlands-tx-main-water-line-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`, `segment-009600.jpg`.
+- **PENDING** `area__the-woodlands-tx-main-water-line-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`, `segment-014348.jpg`, `segment-015192.jpg`, `segment-016036.jpg`, `segment-016880.jpg`.
+- **PENDING** `area__tomball-tx-toilet-repair-and-installation/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`, `segment-009600.jpg`.
+- **PENDING** `area__tomball-tx-toilet-repair-and-installation/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`, `segment-012660.jpg`, `segment-013504.jpg`, `segment-014348.jpg`, `segment-015192.jpg`, `segment-016036.jpg`, `segment-016880.jpg`.
+- **PENDING** `blog__page__3/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
+- **PENDING** `blog__page__3/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
+- **PENDING** `blog__page__4/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
+- **PENDING** `blog__page__4/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
+- **PENDING** `blog__page__5/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
+- **PENDING** `blog__page__5/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
+- **PENDING** `blog__page__6/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`.
+- **PENDING** `blog__page__6/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`.
+- **PENDING** `blog__why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
+- **PENDING** `blog__why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`.
+
+### Saved interaction evidence — 88 JPGs still unopened
+
+All files in the following six directories are pending visual inspection (relative to the site root). Saved JSON inventory/method was read previously; it does not verify the pictured outcome. No new browser action or form submission is authorized or performed.
+
+- **PENDING** `_interactions/contact-_contact_us_/1440/` (17): `01-initial.jpg`, `02-dropdown-0.jpg`, `03-dropdown-1.jpg`, `04-dropdown-2.jpg`, `05-dropdown-3.jpg`, `06-dropdown-4.jpg`, `07-dropdown-5.jpg`, `08-dropdown-6.jpg`, `09-dropdown-7.jpg`, `10-cta-open-96.jpg`, `11-form-0-empty-focus.jpg`, `12-form-0-invalid.jpg`, `13-scroll-0.3.jpg`, `14-scroll-0.7.jpg`, `15-hover-button.jpg`, `16-hover-card.jpg`, `17-reduced-motion.jpg`.
+- **PENDING** `_interactions/contact-_contact_us_/390/` (9): `01-initial.jpg`, `02-menu-open.jpg`, `03-menu-close.jpg`, `04-cta-open-3.jpg`, `05-form-0-empty-focus.jpg`, `06-form-0-invalid.jpg`, `07-scroll-0.3.jpg`, `08-scroll-0.7.jpg`, `09-reduced-motion.jpg`.
+- **PENDING** `_interactions/home-_/1440/` (19): `01-initial.jpg`, `02-dropdown-0.jpg`, `03-dropdown-1.jpg`, `04-dropdown-2.jpg`, `05-dropdown-3.jpg`, `06-dropdown-4.jpg`, `07-dropdown-5.jpg`, `08-dropdown-6.jpg`, `09-dropdown-7.jpg`, `10-cta-open-96.jpg`, `11-form-0-empty-focus.jpg`, `12-form-0-invalid.jpg`, `13-slider-t0.jpg`, `14-slider-t5.jpg`, `15-scroll-0.3.jpg`, `16-scroll-0.7.jpg`, `17-hover-button.jpg`, `18-hover-card.jpg`, `19-reduced-motion.jpg`.
+- **PENDING** `_interactions/home-_/390/` (11): `01-initial.jpg`, `02-menu-open.jpg`, `03-menu-close.jpg`, `04-cta-open-3.jpg`, `05-form-0-empty-focus.jpg`, `06-form-0-invalid.jpg`, `07-slider-t0.jpg`, `08-slider-t5.jpg`, `09-scroll-0.3.jpg`, `10-scroll-0.7.jpg`, `11-reduced-motion.jpg`.
+- **PENDING** `_interactions/service-_service_bathtub_installation_/1440/` (20): `01-initial.jpg`, `02-dropdown-0.jpg`, `03-dropdown-1.jpg`, `04-dropdown-2.jpg`, `05-dropdown-3.jpg`, `06-dropdown-4.jpg`, `07-dropdown-5.jpg`, `08-dropdown-6.jpg`, `09-dropdown-7.jpg`, `10-cta-open-96.jpg`, `11-form-0-empty-focus.jpg`, `12-form-0-invalid.jpg`, `13-faq-open.jpg`, `14-slider-t0.jpg`, `15-slider-t5.jpg`, `16-scroll-0.3.jpg`, `17-scroll-0.7.jpg`, `18-hover-button.jpg`, `19-hover-card.jpg`, `20-reduced-motion.jpg`.
+- **PENDING** `_interactions/service-_service_bathtub_installation_/390/` (12): `01-initial.jpg`, `02-menu-open.jpg`, `03-menu-close.jpg`, `04-cta-open-3.jpg`, `05-form-0-empty-focus.jpg`, `06-form-0-invalid.jpg`, `07-faq-open.jpg`, `08-slider-t0.jpg`, `09-slider-t5.jpg`, `10-scroll-0.3.jpg`, `11-scroll-0.7.jpg`, `12-reduced-motion.jpg`.
+
+### Interpretation limits and next owner
+
+- Black terminal mobile capture content prevents confirming final footer navigation/copyright on contact, service directory, blog root/pages2/7, sitemap and specials. All recorded static frames for these completed pages were opened; the obscured pixels remain unknown. Other pending pages have not yet been assessed for black tails.
+- Repeated mobile sticky headers/chat/accessibility UI are the saved segmented-capture state. Do not turn repeated overlays or a missing loaded widget into permanent live-site defect claims. Membership desktop white iframe patch remains white despite the saved success flag; its mobile map renders. Conroe inspection desktop map region is white, with no top-level iframe/patch record; cause unknown.
+- Menu/dropdown/booking CTA outcome, focus/validation, FAQ transitions, carousel timing, hover, reduced motion and any gallery/lightbox remain visually unverified. Static expanded answers are not transition tests; thank-you static capture is not evidence of a submitted form.
+- Exact colors/spacing tokens, contrast ratios, accessible-name/keyboard behaviour, destination functionality, current live state, content originality, photo/job authenticity, commercial/licensing/ratings and plumbing/health/financial factual claims were not independently verified.
+- Lead owns verification and commits. Research continuation, if authorized after this stop, starts at the first pending source file, completes the 19 pages, then opens the 88 saved interaction JPGs and reconciles their JSON without live actions. No other files, flags, source/public/scripts/board/handoff, commit or external action changed in this continuation.
+
+Verification at stop: all 611 static ledger paths exist, are unique and exactly match the viewed queue manifests; each of the 35 completed pages matches both saved records' entire segment list plus first viewport. Exact pending static files are disjoint from viewed files. Contact-sheet index readback: 46/46 entries have `viewed:true`, with 155 cells per width; flags unchanged. Entire 54-page queue also matches all 956 recorded source files, and all pending paths exist. `git diff --check` passed at stop; no product tests apply to this Markdown-only research change.
