@@ -82,6 +82,7 @@ function requeueFromLedger(site) {
   for (const [slug, e] of Object.entries(site.L.urls)) {
     if (!('widths' in e) && e.status !== 'capped') continue;
     site.pageCount++;
+    try { if (new URL(e.url).origin !== site.L.origin) e.url = site.L.origin + new URL(e.url).pathname; } catch {} // e.g. domain moved (Glassperts)
     if (e.status === 'queued-headed') { site.headedQueue.push(slug); continue; }
     if (['queued', 'running'].includes(e.status) || (e.status === 'failed') || (e.status === 'blocked' && RETRY_BLOCKED)) { e.status = 'queued'; e.attempts = 0; site.queue.push(slug); }
   }
