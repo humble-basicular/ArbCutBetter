@@ -129,22 +129,55 @@ Saved states, not live passes. Keyboard, focus trap, motion and 360 stay unknown
 
 **Retry stop (soft budget steer 3,066,974 > 3,000,000).** No native page displays were opened this retry. Interaction images only. Unseen sources are listed in `native-progress.json`; the page queue is unchanged.
 
+### Retry 2 (2026-11-06, final): saved interactions, visibly viewed in batches of 3
+Saved states only.
+
+| Source | Visible outcome |
+|---|---|
+| `contact-_contact_/1440/12-scroll-0.7.jpg` | Accordion rows and article cards at rest; phone (656) 208-2276 in the header |
+| `contact-_contact___390-strip-01` | Long consent prose: two blocks take about 310 px; a blank run then follows before the submit area in the source segment. Fixed bar present |
+| `faq-_faq_/1440/01–05` | **Saved-state panels on faq:** all 4 menus open. On the pale-green hero the white panel has a clear edge, unlike the white contact page. Current section stays green while another is open; FAQs row shows the pale-green hover |
+| `faq-_faq_/1440/07-scroll-0.7.jpg` | About Us panel persists after scroll and covers article headings: a test leftover, not a site state |
+| `faq-_faq___390-strip-00` | Rest and scroll frames; chips and Load More not operated |
+| `faq-_faq___390-strip-01` | Answers readable at 390; badge sits over body copy |
+| `gallery-_projects_/1440/02–05` | **Saved-state panels on projects** (4 menus). Card images load across frames: 2 of the first 3 blank in `03`, all 3 by `04`. Saved projects page only; not applied to other pages |
+| `gallery-_projects_/1440/07-scroll-0.7.jpg` | Test-left About Us panel over article cards; phone (656) 232-2569 |
+| `gallery-_projects_/1440/11-reduced-motion.jpg`, `gallery-_projects___390-strip-00/01` | Attempt frame rendered, Load More at rest, not operated. 390: single-column cards, 7 chips over 4 rows |
+| `service-_roofing_calculator_/1440/01–05` | **Saved-state panels on calculator** (4 menus). Step "Page 1 of 3" at rest; plain field with no label inside it |
+| `service-_roofing_calculator_/1440/07-scroll-0.3.jpg` | Page 1 includes steepness and material questions; the first material tile is blank in this frame (lazy state or missing image: unproven). Steepness line figures are pictograms: rule 6 |
+| `service-_roofing_calculator_/1440/08-scroll-0.7.jpg` | Page 1 ends with skylights and chimneys counts, then "Next": seven-ish questions before any result. Next left-aligned, pure black. Next not operated, so steps 2–3 and any price stay unseen |
+| `service-_roofing_calculator___390-strip-00/01` | 195 px choice cards in a single column at 390, each about 325 px tall including whitespace: a long run. Badge covers MENU |
+
+**All 66 interaction displays are now visibly viewed.** Across all folders: filters, Load More, accordions, lightbox, video and calculator progress were never operated in any frame. `dropdown` frames prove saved panel states on 5 pages, not hover or keyboard behaviour.
+
+**Added Copy:** progressive-loading card grid keeps captions visible while photos arrive (`gallery-_projects_/1440/02–04`), saved state only. Current-section green in the nav (`faq-_faq_/1440/02`).
+
+**Added Avoid:** long estimator page before any feedback (`service-_roofing_calculator_/1440/01`, `07`, `08`); line-figure steepness pictograms (`07-scroll-0.3.jpg`, rule 6); 7 filter chips over 4 rows at 390 (`gallery-_projects___390-strip-00`); consent prose dominating the mobile form (`contact-_contact___390-strip-01`).
+
+**Native page closed in retry 2: `free-commercial-roof-audit`** (first viewport + 3 segments at 1440, 4 strips at 390). A true campaign page, not a locality clone. Reviews slot empty here at both widths (`segment-000000.jpg`, `display/free-commercial-roof-audit/390-strip-01`); cause not shown for this page. Map loaded in the saved frames.
+
+**Added Copy:** a stated offer with a concrete value beside the form flow ("$499 Value", `segment-000000.jpg`), which works only if true; real lift truck and building photo; form fields limited to five; process steps named at 390 (`390-strip-01`).
+
+**Added Avoid:** full green wash over the hero photo, with text over it at 390 (`first-viewport.jpg`, `390-strip-00`, rule 11); form only reached in the third frame at 390; icon-blob process pictograms (`390-strip-01`, rule 6); unattributed "Studies show" claims of 35 years and 43% (`segment-000000.jpg`), and "up to 10 years" lower down (`segment-002400.jpg`): rule 3; three identical "Download Our Guide" buttons, target unverified.
+
+**Retry 2 stop (soft budget steer 4,197,908 > 4,000,000).** Retry cap exhausted; lead owns the residue. Semantic refinement: no tier or alias changed this retry; all 200 remaining pages keep their original reasons and flags.
+
 ### Semantic refinement of the 212-page queue
 `native/selection.json` keeps all 212 pages with every original reason and flag; nothing was removed.
 
 | Tier | Pages | Meaning | Native state |
 |---|---:|---|---|
-| T1 functional/one-off | 23 | home, contact, calculator, financing, projects, faq, about, services, audit, careers, job, team, founder, products, referrals, videos, blog, 404, accessibility, 3 policy pages, award post | **11 closed, 12 not started** |
+| T1 functional/one-off | 23 | home, contact, calculator, financing, projects, faq, about, services, audit, careers, job, team, founder, products, referrals, videos, blog, 404, accessibility, 3 policy pages, award post | **12 closed, 11 not started** |
 | T2 two differing examples per family | 14 | 7 semantic families × 2 | 0 |
 | T3 actual visual outliers | 12 | county clone, Orlando, Westlake, brown metal, Tina, restaurants post, table/mobile articles, snowy article, solar-panels | 0 |
 | T4 residual | 163 | mostly `skeleton-deviates` heuristics on editorial/locality pages; flagged, not designs | 0 |
 
 ### Coverage and limits
-- **Closed at both widths (first viewport + all segments): 11 pages:** home, contact, roofing-calculator, financing, projects, about, services, faq, 404 (`blog__reasons-you-need-an-annual-roof-inspection-in-florida`), our-team, careers. **81 of 404 prepared page displays opened (144 source files).**
-- **Interactions after retry 1: 39 of 66 prepared displays viewed:** 51 unique source JPGs seen, 12 byte-identical copies of those, **35 of 98 unseen**, listed in `native/native-progress.json`.
-- **Remaining: 201 pages** (12 T1, 14 T2, 12 T3, 163 T4), 3,613 files, listed with reasons, flags and exact files in `native-progress.json` → `remaining`. Prepared displays not opened: `remainingDisplaysPrepared`.
-- **Still open:** gradient panels and empty review/project slots on any page other than home; `roofing`, `gutters`, `solar-panels`, county pages; 10 blank-band flags except where home is covered; Orlando photos; article tables at 390; policy-loader pages; calculator steps 2–3; FAQ/gallery filters and Load More; lightbox; video; keyboard; 360 width; child-span styles; logo/photo provenance.
-- Stopped at the soft budget steer (2,220,496 > 2,000,000).
+- **Closed at both widths (first viewport + all segments): 12 pages:** home, contact, roofing-calculator, financing, projects, about, services, faq, 404 (`blog__reasons-you-need-an-annual-roof-inspection-in-florida`), our-team, careers, free-commercial-roof-audit. **89 of 404 prepared page displays opened (160 source files).**
+- **Interactions after retry 2: 66 of 66 prepared displays viewed:** 85 unique source JPGs seen, 13 byte-identical copies, **0 of 98 unseen.**
+- **Remaining: 200 pages** (11 T1, 14 T2, 12 T3, 163 T4), 3,597 files, listed with reasons, flags and exact files in `native-progress.json` → `remaining`. Prepared displays not opened: `remainingDisplaysPrepared`.
+- **Still open:** gradient panels and empty review/project slots on any page other than home; `roofing`, `gutters`, `solar-panels`, county pages; 10 blank-band flags except where home is covered; Orlando photos; article tables at 390; policy-loader pages; calculator steps 2–3; FAQ/gallery filters and Load More; lightbox; video; keyboard; focus trap; motion; 360 viewport; child-span styles; logo/photo provenance.
+- Final stop at the soft budget steer (4,197,908 > 4,000,000). Keyboard, focus trap, motion, 360 viewport and live behaviour remain unknown.
 - 1440×2400 segments arrived at 1200×2000, so small print at 1440 was not read at true scale. 390 strips and 1440×900 frames arrived at full size.
 - Older overview text below is historical where it conflicts with this section. "Native opened 0 / interaction passes 0" described that earlier stage.
 
@@ -281,3 +314,8 @@ Done · 104-sheet overview stage. Verified · opened-sheet/cell accounting, queu
 ## Lead verification of retry1 — ordinal20
 
 Verified39/66interactiondisplayflags,51distinctseenJPGsources+12byte-identicalcopiesofseenimages,35unseenoriginalJPGs(27pendingdisplays). Recomputedall13duplicate byte equalities, with12currentlyanchoredtoseensources;lastduplicatepairremainsunseen. Everypreparedpage/interactiondisplay and source path exists. Nativecoverageunchanged81/404displays144sources11completepairs;remaining201pages3613sourcefiles. Workerimagejudgments attributed,nofreshleadvisualpass. Withdrawninitialmedia-removednotesremainexcluded. "360px mobilecard" refers to card width inside390capture,not a360viewporttest. No invalid-submit/keyboard/motion/livepass claimed. OneFINALretry2allowed,next exactfalseflags;leadownsresidueaftercap.
+
+
+## Lead verification of FINALretry2 — ordinal21
+
+Verified66/66interactiondisplayflags,85directlyseenJPGsources+13byte-identicalcopies=98originalJPGs,zero unseen. Recomputedall13duplicatebyteequalitiesandcheckedanchorsareseensources. Allpreparedpage/interactiondisplay andsourcepaths exist. Currentnativecoverage12wholepairs89/404pagedisplays160sourceJPGs;remaining200pages3597files,315prepareddisplaysunopened. Workerpixeljudgmentsattributed,nosecondleadvisualpass. Saved-interactioninspectionclosed,notlivebehaviorverification;calculatorlatersteps/filter/LoadMore/lightbox/video/keyboard360/motionremainunknown. Originalwithdrawnnotesexcluded. FINALretrycapexhausted:NOthirdchildretry;leadownsallnativefunctional/template/outlier/aliasresidue,exactnative-progress.jsonremainingqueueandmanifestfalseflags.
