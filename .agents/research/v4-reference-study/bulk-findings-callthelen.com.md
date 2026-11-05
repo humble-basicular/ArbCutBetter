@@ -2,6 +2,41 @@
 
 Analyst: Claude research sub-agent, 2026-11-05. Stage: sheets only, stopped by the soft input budget (about 1.62M of 1.4M) after finishing sheet scope. **All 48 contact sheets viewed; 0 full-size segments, 0 first viewports, 0 interaction images opened. Whole-site study is incomplete.** Evidence is about 200 px page previews plus record.json. Small text, logos and small defects are not verified. Paths are relative to `~/.ai-powerhouse/research-captures/arbcut-v4/`. Sheet paths are under `_sheets/callthelen.com/`.
 
+## Native stage, 2026-11-05 (PARTIAL; stopped at the soft budget steer, 2,026,888 > 2,000,000)
+
+The 48/48 overview stays as it was. **Native coverage: 2 of 49 selected pages complete at both widths (`home`, `about`); 17 of 407 prepared displays opened.** The other 47 pages were prepared but not viewed. Manifest and queue: `_sheets/callthelen.com/native/` (`selection.json`, `manifest.json` where each display is marked opened only after it was viewed, `native-stage-remaining.json`, and strips under `display/<slug>/`). No interaction images were opened, no live interaction was run, no 360 check was done, and no keyboard or motion checks were done.
+
+Side effect: running `bulk-blank-check.py` rewrote the shared `research-captures/arbcut-v4/_blank-check.json` so that it holds only callthelen results. A copy is in `native/blank-check-min1440-300.json`. The file's previous contents were not preserved.
+
+### Verified at native size (home, about; 1440 segments plus 390 strips of three frames)
+- **The hero photo is darkened until the subject almost disappears** (`callthelen.com/home/1440/first-viewport.jpg`): a branded van under a navy overlay. Only the van's outline reads. This breaks rule 11. The headline is a cream condensed caps line with an orange script eyebrow, one teal "Schedule Service" button and the orange phone number. At 390 (`home/390/first-viewport.jpg`) the same hero fits within the first frame.
+- **Home has no H1** (record: the first heading at 390 is H2 "HVAC + Plumbing Services in Minneapolis & the Twin Cities"). The hero line is not a heading. The descriptive H2 is good SEO copy in the wrong level. Confirmed in `home/390/record.json`, `dom.headings`.
+- **"Every visit" band, left half empty:** at 390 the frame shows a broken-image box (`native/display/home/390-strip-01.jpg`, middle frame). `home/390/record.json` lists 5 images with `src:""`, `complete:false`. So the captured DOM has an empty image source. The live site was not checked, so this is a capture-time missing image, not a proven site defect.
+- **Reviews section is a heading with nothing under it** at both widths (`home/1440/segment-002400.jpg`, y≈2,800–3,500 page; `home/390` strip-02 middle frame). The paragraph "See what homeowners say…" is followed directly by the financing band. Whether the widget loads later on the live site: I do not know. The lesson still holds: a proof promise with nothing under it.
+- **Map header artefact confirmed:** the top of the 1440 map iframe shows the site's own logo and nav painted inside the frame (`home/1440/segment-004800.jpg`, y≈640; `about/1440/segment-002400.jpg`, y≈970), while the Google UI "4.9 ★ (1,025)" and "Open in Maps" render below it. 390 maps are clean. This is an `iframePatches` capture artefact (record: 1 patch at x120 y5444 476×408), not a site defect.
+- **Fixed UI at 390:** one sticky header about 94 px tall (phone pictogram, centred logo, hamburger), visible in `home/390/first-viewport.jpg`. There is no bottom call bar. Record `fixed`: `uk-sticky uk-sticky-fixed` plus the off-canvas menu. Height is measured from the image; the record has no height field.
+- **Locality list mixes linked and plain towns:** 8 linked (blue: Albertville, Elk River, Golden Valley, Maple Grove, Minneapolis, Plymouth, Robbinsdale, Rogers) and 9 plain black. The full list is kept at 390 (`home/390` strip-04 left frame). The footer has no service or locality columns, only office addresses, licences and 5 "Helpful Links" buttons.
+- **About:** the H1 "ABOUT US" sits over a pale "Thelen" script watermark, then a navy strip "See why your local community loves working with us!" whose only action is "Schedule Service". The strip promises proof but gives none. Two real crew photos in branded clothing (`about/1440/segment-000000.jpg` y≈540 and y≈1,570) are the strongest assets. Founder Nick Thelen is named in the copy, but no identifiable photo of him was seen. The 4 "Why choose" cards are text-only. The "MN Best Silver Winner 2026" mark sits beside "Schedule Service" (y≈940) and is readable at native size.
+- **Closing stack measured on about 1440:** resources, then map and towns, then footer, from y≈2,580 to the page end at 4,894. That is about 2,300 px of shared modules on a page whose own content ends near 2,460.
+
+### Copy (native-verified)
+1. **Real crew in branded clothing as the main imagery** (`about/1440/segment-000000.jpg`). The ArbCut equivalent is Mantas on the job.
+2. **A real third-party award next to the action** (MN Best mark beside "Schedule Service", `about/1440/segment-000000.jpg` y≈940; `home/1440/segment-002400.jpg` y≈100). The mark is used as supplied, which fits rule 1.
+3. **4-step sequence becomes a vertical card stack at 390** (`home/390` strip-02 left frame), matching rule 19.
+
+### Avoid (native-verified)
+1. A darkened hero photo (rule 11).
+2. A reviews heading with no visible review content beneath it, and a "community loves us" strip with no proof.
+3. SVG medallion pictograms on cards: faucet, fan, drain, card, gear and pencil (`home/1440/segment-000000.jpg` y≈1,180; rule 6).
+4. Script eyebrow on every section, plus notched card sides, dotted corners and a watermark: 4 or more devices (rule 9).
+5. No H1 on home.
+
+### Remaining gates (exact)
+- 47 prepared pages unviewed, in this order: `contact` (its 1440 first viewport was **not** viewed; the read was declined at the steer), reviews, specials, financing, careers, maintenance-plan, blog, service-area, site-map, services, faqs, glossary, accessibility, maintenance-agreements, both job pages, 5 service pillar/child pages, 7 city/service-area pages, 8 blog posts, blog__page__2/13, 9 archive samples. The list with flags and reasons is in `native-stage-remaining.json`.
+- Not settled: whether the empty-`src` image and the empty reviews slot are a capture problem or the live site; empty `faqs`/`services`; the 4 404s; blank bands (65 pages flagged at 1440, mostly about 370 px at the reviews slot, plus a 1,008 px band in blog posts); heading glyphs; the city mismatch on service pages.
+- Resolved by record only, no images needed: `offers`→`/specials`, `our-locations`→`/service-area/` and `filtration-systems`→`/water-filtration/` share the final URL, title and height. The duplicate topic pairs have different titles (`boiler-vs-furnace` vs `-2`, `heat-not-working-in-house` vs `-2`).
+- Interactions: 61 saved images, 0 opened. Live, 360, keyboard and motion: none performed.
+
 ## Coverage
 
 | Item | Status |
@@ -103,3 +138,6 @@ None opened at full size, so these are candidates to confirm:
 2. Interaction images (menu, form states, FAQ).
 3. Fixed element heights at 390, hero composition and the logo at readable scale.
 4. Resolve the reviews band, "Every visit" band, map and heading-glyph questions.
+
+## Lead verification and side-effect limit
+Leadparsednative/manifest.json:17opened/390pending/407totaldisplays;all407displaypathsandlistedsourcesexist. Home/aboutworkerclaimsareattributed,nosecondfullleadvisualpassatallowancecheckpoint. NativecoverageisPARTIAL. Sharedexternal`_blank-check.json`wasoverwrittenbychildrunningbriefstep0;childreportspriorcontentslost. Per-sitecopyexistsatnative/blank-check-min1440-300.json. Exactpriorglobalcontentsrecoveryunverified; do not claim raws/sourcecaptureslost or originalglobalrestored. FutureworkersmustNOT runblankcheckerorotherhelperwithsharedoutput; useexistingper-siteevidence. Globalderivedartifactrecovery/remediationremainsleadqueue.
