@@ -49,3 +49,8 @@ The 1006 handoff contains earlier tooling/session details. The named brief, lear
 
 ## User steering after checkpoint
 Design depends on the niche. Current synthesis must distinguish general principles from trade/audience-specific visual choices. Later, identify missed niches and propose two comparable sites per additional niche for the user to inspect. Wait for the user's approval before analysing those candidates. Do not expand the current research now. This direction is also recorded in the main study report; no niches or candidates have been selected yet.
+
+## Final allowance checkpoint
+Warning confirmed Codex2 session 80% at 08:13:29 UTC, weekly 28%, reset 09:01:15 UTC (11:01:15 Vilnius). Refreshed orchestrator capabilities: enabled compatible account `codex` offers the pinned `gpt-6.1-sol`; its latest reading at 08:11:15 UTC is session 0%, weekly 40%, with session reset 09:01:03 UTC. On a later continuation, refresh again and prefer that compatible account with **high** reasoning preserved if this account has insufficient allowance. No account/model switch or new stage was started: original user instruction says checkpoint and stop around 80%.
+
+User niche-direction commit **9dd5d73** follows evidence/review commit **6b00f24**. All requested safe edits are complete; working tree checked clean after final checkpoint commit. Next remains Puetz `/services/`, then the existing captured-only queue; additional niche candidates are a later approval-gated phase.

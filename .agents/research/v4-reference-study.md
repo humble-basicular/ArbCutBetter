@@ -22,12 +22,12 @@ Polish does not excuse weak information: very long mobile review cards, repetiti
 
 ## Review status
 
+Initial Claude Opus 5.5 medium evidence audit stopped at its 60k soft budget before reading the report or opening images. It returned no content findings and is **not an approval**. This budget was an estimate and proved insufficient for session overhead. No claim has been accepted on that review. A subsequent [Puetz audit](v4-reference-study/puetz-audit.md) by Claude Opus 5.5 medium approved the explicitly partial milestone: ledger recomputed and nine images checked, with no blockers. Lead applied its two optional wording corrections. This is a bounded spot-check, not independent verification of every screenshot or completion of the website study.
+
+No website implementation, submissions, messages, paid APIs, push, merge or deploy.
+
 ## Later research — user direction, 5 November
 
 Design depends on the niche. In the current synthesis, distinguish broadly useful design principles from choices whose suitability depends on the trade, audience and service. A successful-looking construction or HVAC site does not automatically establish the right visual treatment for arborist work. No conversion success is established without supporting evidence.
 
 After the current study, identify niches the reference set missed and suggest two comparable reference sites for each additional niche for the user to look over. **Present the candidate sites first; wait for the user's approval before analysing them.** This is a later phase, not permission to expand the current research now. The missing niches and candidate sites have not yet been selected.
-
-Initial Claude Opus 5.5 medium evidence audit stopped at its 60k soft budget before reading the report or opening images. It returned no content findings and is **not an approval**. This budget was an estimate and proved insufficient for session overhead. No claim has been accepted on that review. A subsequent [Puetz audit](v4-reference-study/puetz-audit.md) by Claude Opus 5.5 medium approved the explicitly partial milestone: ledger recomputed and nine images checked, with no blockers. Lead applied its two optional wording corrections. This is a bounded spot-check, not independent verification of every screenshot or completion of the website study.
-
-No website implementation, submissions, messages, paid APIs, push, merge or deploy.
