@@ -1,4 +1,8 @@
-# Veterans Contracting — bounded saved-sheet overview (PARTIAL)
+# Veterans Contracting — saved-sheet overview (PARTIAL: 58/100)
+
+**Current status (supersedes the historical milestone below):** 34 new sheets actually opened, all cells checked; cumulative 58/100 (29/50 per width), 442 slugs represented at both widths / 884 cell-width observations. Exactly 42 unopened sheets remain. Full-size pages 0; interactions 0. Stopped on the user’s soft-budget steer. Exact new-open manifest and remaining queue: external `_sheets/veteranscontractingllc.com/milestone-02-manifest.json`; provisional full-size/interaction backlog: `milestone-02-backlog.json`.
+
+## Historical milestone 01 (24/100; retained as evidence)
 
 ## Scope and evidence
 First milestone only: target 24 existing contact sheets (12 paired 1440/390 selections); whole overview and whole-site study explicitly **PARTIAL**. No regeneration, live browsing, interaction, full-size page inspection or source edits. Sheet flags mean each contact-sheet cell was visually checked at thumbnail scale, not that its page was read full size. Capture root: `~/.ai-powerhouse/research-captures/arbcut-v4/`; sheet root: `_sheets/veteranscontractingllc.com/`. Citations below use sheet key + cell + visual region, not invented document offsets.
@@ -76,3 +80,47 @@ These are **contact-sheet candidates**, not final report screenshots; no raw pag
 6. `_sheets/veteranscontractingllc.com/390/t00-tag_x-0.jpg`, c8 vs c9: sparse/populated archive contrast.
 
 No browser, recapture, forms, consent, paid API, messages, delegation, commits, board/handoff, source/public, capture records or ledgers were changed. Lead owns verification, commit and continuation with the same model/effort on a compatible account.
+
+## Continuation — remaining-sheet inspection (stopped on budget steer)
+
+**Observation:** `1440/t00-tag_x-1..5.jpg`, every c1–20, and matching `390` sheets were actually opened. All have archive layout, not 100 new one-off designs. Sheet 1 repeats the lead/grid imagery throughout; sheet 2 mobile c11 (roofing-company-raleigh) has image-empty card regions while its neighbours populate. Sheet 3 c10–14/c16–20 and sheets 4–5 show different paginated story-image sets under a repeated lead story. Footer remains present. These are saved visual observations, not verified archive filtering or image failures. All 200 new cell-width observations are thumbnail-only.
+
+**Observation:** `1440/t00-tag_x-6..11.jpg` and `390/t00-tag_x-6..11.jpg`, each c1–20, checked. Author/category/service-type/tag pagination retains title/lead/sidebar-grid/footer structure. Page-5 image sets differ from page-2/3/4 sets (e.g. sheet 6 c9/c13/c17). Mobile `390/t00-tag_x-9.jpg` c14 (gutters/page/2) is image-sparse below lead, unlike adjacent c15–17 and its desktop counterpart. Sheet 10 c17 desktop header looks unusually light/sparse; full-size metadata check pending. No whole-cell error screen observed.
+
+**Observation, final saved batch:** `1440/t00-tag_x-12.jpg` and `390/t00-tag_x-12.jpg`, every c1–20: roof-damage/inspection/overhang/repair tag pagination shows the same archive scaffold, populated image grids and blue footer block; story sets change across page numbers. `1440/t00-tag_x-13.jpg` and `390/t00-tag_x-13.jpg`, every c1–20: repairs/replacement/sheathing/vents/roofer tag pages repeat that structure, with populated pictures and long mobile stacks. `1440/t00-tag_x-14.jpg` and `390/t00-tag_x-14.jpg`, every c1–20: Raleigh/Richmond roofer/company pagination remains an archive composition, not locality service landing design. `1440/t00-tag_x-15.jpg` and `390/t00-tag_x-15.jpg`, every c1–20: contractor/materials/roofing/siding/storm/Kentucky-program tag pagination has populated article imagery; mobile c18–20 show more repeated blue chat bubbles along the strip. `1440/t00-tag_x-16.jpg` and `390/t00-tag_x-16.jpg`, every c1–20: TPO/brand/veteran/vinyl/warranty pages repeat populated archives; mobile c18 has more white space above the lead. `1440/t00-tag_x-17.jpg` and `390/t00-tag_x-17.jpg`, every c1–20: warranty/wind tags transition into daily-date pagination at c6; photo sets differ but layout persists. No whole-cell blocked/error screen observed in this new batch. Exact text, filter correctness and simultaneous widget count remain unverified.
+
+**Taste (provisional):** The repeated large photo → article title pattern gives archive cards a clear scan order, but its single-column mobile run is very long (`390/t00-tag_x-12.jpg` c1–20, whole cells). For ArbCut, use concise project/service navigation instead of transferring this archive volume. Repeated blue chat prompts visually distract from the reading sequence (`390/t00-tag_x-15.jpg` c18–20, throughout strips); fixed UI behaviour requires first-viewport and interaction checks before a stronger judgment.
+
+## Current verified coverage and exact continuation
+
+| Group | Pages in index | Sheets inspected / total at 1440 | Sheets inspected / total at 390 | Cells inspected per width |
+|---|---:|---:|---:|---:|
+| t00 | 486 | 18/25 | 18/25 | 360 |
+| t01 | 124 | 0/7 | 0/7 | 0 |
+| t02 | 71 | 0/4 | 0/4 | 0 |
+| t03 | 56 | 1/3 | 1/3 | 20 |
+| t04 | 18 | 1/1 | 1/1 | 18 |
+| t05 | 10 | 1/1 | 1/1 | 10 |
+| t06 | 8 | 1/1 | 1/1 | 8 |
+| t07 | 7 | 1/1 | 1/1 | 7 |
+| t08 | 7 | 1/1 | 1/1 | 7 |
+| t09 | 6 | 1/1 | 1/1 | 6 |
+| t10 | 2 | 1/1 | 1/1 | 2 |
+| t11 | 2 | 1/1 | 1/1 | 2 |
+| t12 | 1 | 1/1 | 1/1 | 1 |
+| t13 | 1 | 1/1 | 1/1 | 1 |
+| t14 | 1 | 0/1 | 0/1 | 0 |
+
+New opens: **17 sheets at 1440 + 17 at 390 = 34**, 340 new slugs / 680 new cell-width observations. Combined with inherited milestone 01: **58 sheets, 442 slugs at both widths, 884 cell-width observations**. The prior 24 sheets were not reopened. These are thumbnail overview checks only.
+
+Remaining queue: **42 sheets, 21 per width**: t00 sheets 18–24 (14 images), all t01 sheets 0–6 (14 images), all t02 sheets 0–3 (8 images), t03 sheets 1–2 (4 images), t14 sheet 0 (2 images). Exact absolute paths, every cell number/slug/URL and false viewed state are preserved in `milestone-02-manifest.json#/remaining`. No capture or sheet was regenerated.
+
+## Full-size and interaction backlog — metadata, not completion credit
+
+`milestone-02-backlog.json` contains an exact **433-page provisional union**, each with reasons, URL and both required widths. This is deliberately conservative: all `groups.json` flags are retained as metadata; they are not 433 observed defects, semantic one-offs, or 433 independent template designs. This queue remains provisional because 42 sheets are unseen. No full-size first viewport or segment has been opened in this child. Every selected page requires the first viewport and every saved segment at both widths; no thumbnail substitutes.
+
+Semantic priorities are home/contact representation comparison; about; financing; get-instant-quote; careers and privacy (concealed in t03); singular thin location destinations; national/service and city/detail/hub contrasts; image-rich t11 versus sparse t04 service captures; locality-heading mismatches; article reading layouts; populated versus sparse archives and differing pagination sets. All 486 t00 members are an algorithmic archive mixture, **not 486 one-off pages**. Exact group flags and page-specific reasons are listed in the backlog, not inferred from the group label.
+
+Later authorised interaction work: global mobile menu/desktop dropdowns, phone/quote targets and focus; forms and validation without submission (including careers/financing), map estimator, FAQ, work gallery/lightbox/slider, review/visualizer widgets, archive category/pagination relevance, sharing, image loading, fixed UI and reduced motion. None was performed. No record-based font/colour/height measurement was undertaken here. 360px, discovery cap/linked files and image provenance remain unverified.
+
+Scope: only this report, external Veterans index `viewed` flags and new Veterans progress/backlog manifests changed. Original milestone 01 remains unchanged. No commits: the lead verifies and commits, as required by this child brief. Budget 600k was an estimate; the user reported 675133 input tokens and instructed the stop. This is partial research, not whole-site completion.
