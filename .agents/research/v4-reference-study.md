@@ -78,3 +78,7 @@ New seen differences:categorypage prioritises5linkedservicecards;ductless-ac use
 ### Smock direct continuation checkpoint
 
 [Individual findings](v4-reference-study/smock-findings.md) now credit14exactdocumentURLs at1440/390:28widths,245segments,112numberedsheets and28firstviewports actually opened throughfooter. All13viewedserviceURLs are individually recorded;7services still unviewed. Inventory268records/265documents remains provisional.251documents,shopstates,KMLandinteractions remain uninspected. No template substitutions or full-site claim. Next `/heat-pump-repair/`; continuing on a compatible account after80%sessioncheckpoint.
+
+### Account continuation milestone
+
+Exact ledger now17documents/34widths/296segments/135opened sheets, including heat-pump repair,replacement and heating. All numbered sheets at1440/390 actually opened.248known documents remain; no captured-only backlog at this commit. Next humidifiers,hvac,indoor-air-quality,water-heater-replacement; fourremainingservices,then allotherdocuments/localities/articles. Discovery268records remains provisional. No interim review or website changes.

@@ -30,10 +30,10 @@
       "manufacturer": 1,
       "water-heater-replacement locality (URL classification; unverified template)": 10
     },
-    "capturedWidths": 34,
-    "viewedWidths": 34,
-    "viewedSegments": 296,
-    "viewedSheets": 135
+    "capturedWidths": 42,
+    "viewedWidths": 38,
+    "viewedSegments": 331,
+    "viewedSheets": 151
   },
   "urls": [
     {
@@ -55,6 +55,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -65,8 +67,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -381,6 +389,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -391,8 +401,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -447,6 +463,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -457,8 +475,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -713,6 +737,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -723,8 +749,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -971,6 +1003,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -981,8 +1015,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -1237,6 +1277,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -1247,8 +1289,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -1495,6 +1543,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -1505,8 +1555,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -1740,6 +1796,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -1750,8 +1808,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -2029,6 +2093,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -2039,8 +2105,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -2214,6 +2286,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -2222,8 +2296,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-repair/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-replacement/390/record.json",
@@ -4108,6 +4188,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -4116,8 +4198,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-repair/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-replacement/390/record.json",
@@ -5595,6 +5683,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -5603,8 +5693,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-repair/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-replacement/390/record.json",
@@ -8400,6 +8496,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -8410,8 +8508,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -8497,6 +8601,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -8507,8 +8613,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -8563,6 +8675,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -8573,8 +8687,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -8629,6 +8749,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -8639,8 +8761,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -8887,6 +9015,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -8897,8 +9027,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -9124,6 +9260,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -9134,8 +9272,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -9382,6 +9526,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -9392,8 +9538,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -9448,6 +9600,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -9458,8 +9612,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -9514,6 +9674,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -9524,8 +9686,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -9772,6 +9940,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -9782,8 +9952,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -10030,6 +10206,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -10040,8 +10218,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -10296,6 +10480,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -10306,8 +10492,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -10554,6 +10746,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -10564,8 +10758,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -10812,6 +11012,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -10822,8 +11024,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11070,6 +11278,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11080,8 +11290,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11323,6 +11539,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11333,8 +11551,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11349,23 +11573,223 @@
       "widths": [
         {
           "width": 1440,
-          "status": "not requested",
-          "captured": false,
-          "viewed": false,
+          "status": 200,
+          "captured": true,
+          "viewed": true,
           "interacted": false,
-          "record": null,
-          "segments": [],
-          "sheets": []
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+          "documentHeight": 7842,
+          "segments": [
+            {
+              "file": "segment-000000.jpg",
+              "y": 0,
+              "height": 2400,
+              "viewed": true
+            },
+            {
+              "file": "segment-002400.jpg",
+              "y": 2400,
+              "height": 2400,
+              "viewed": true
+            },
+            {
+              "file": "segment-004800.jpg",
+              "y": 4800,
+              "height": 2400,
+              "viewed": true
+            },
+            {
+              "file": "segment-007200.jpg",
+              "y": 7200,
+              "height": 642,
+              "viewed": true
+            }
+          ],
+          "sheets": [
+            {
+              "file": "sheet-0.jpg",
+              "members": [
+                "first-viewport.jpg",
+                "segment-000000.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-1.jpg",
+              "members": [
+                "segment-002400.jpg",
+                "segment-004800.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-2.jpg",
+              "members": [
+                "segment-007200.jpg"
+              ],
+              "viewed": true
+            }
+          ],
+          "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440",
+          "error": null
         },
         {
           "width": 390,
-          "status": "not requested",
-          "captured": false,
-          "viewed": false,
+          "status": 200,
+          "captured": true,
+          "viewed": true,
           "interacted": false,
-          "record": null,
-          "segments": [],
-          "sheets": []
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+          "documentHeight": 10991,
+          "segments": [
+            {
+              "file": "segment-000000.jpg",
+              "y": 0,
+              "height": 844,
+              "actualScrollY": 0,
+              "viewed": true
+            },
+            {
+              "file": "segment-000844.jpg",
+              "y": 844,
+              "height": 844,
+              "actualScrollY": 844,
+              "viewed": true
+            },
+            {
+              "file": "segment-001688.jpg",
+              "y": 1688,
+              "height": 844,
+              "actualScrollY": 1688,
+              "viewed": true
+            },
+            {
+              "file": "segment-002532.jpg",
+              "y": 2532,
+              "height": 844,
+              "actualScrollY": 2532,
+              "viewed": true
+            },
+            {
+              "file": "segment-003376.jpg",
+              "y": 3376,
+              "height": 844,
+              "actualScrollY": 3376,
+              "viewed": true
+            },
+            {
+              "file": "segment-004220.jpg",
+              "y": 4220,
+              "height": 844,
+              "actualScrollY": 4220,
+              "viewed": true
+            },
+            {
+              "file": "segment-005064.jpg",
+              "y": 5064,
+              "height": 844,
+              "actualScrollY": 5064,
+              "viewed": true
+            },
+            {
+              "file": "segment-005908.jpg",
+              "y": 5908,
+              "height": 844,
+              "actualScrollY": 5908,
+              "viewed": true
+            },
+            {
+              "file": "segment-006752.jpg",
+              "y": 6752,
+              "height": 844,
+              "actualScrollY": 6752,
+              "viewed": true
+            },
+            {
+              "file": "segment-007596.jpg",
+              "y": 7596,
+              "height": 844,
+              "actualScrollY": 7596,
+              "viewed": true
+            },
+            {
+              "file": "segment-008440.jpg",
+              "y": 8440,
+              "height": 844,
+              "actualScrollY": 8440,
+              "viewed": true
+            },
+            {
+              "file": "segment-009284.jpg",
+              "y": 9284,
+              "height": 844,
+              "actualScrollY": 9284,
+              "viewed": true
+            },
+            {
+              "file": "segment-010128.jpg",
+              "y": 10128,
+              "height": 844,
+              "actualScrollY": 10128,
+              "viewed": true
+            },
+            {
+              "file": "segment-010972.jpg",
+              "y": 10972,
+              "height": 19,
+              "actualScrollY": 10147,
+              "viewed": true
+            }
+          ],
+          "sheets": [
+            {
+              "file": "sheet-0.jpg",
+              "members": [
+                "first-viewport.jpg",
+                "segment-000000.jpg",
+                "segment-000844.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-1.jpg",
+              "members": [
+                "segment-001688.jpg",
+                "segment-002532.jpg",
+                "segment-003376.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-2.jpg",
+              "members": [
+                "segment-004220.jpg",
+                "segment-005064.jpg",
+                "segment-005908.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-3.jpg",
+              "members": [
+                "segment-006752.jpg",
+                "segment-007596.jpg",
+                "segment-008440.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-4.jpg",
+              "members": [
+                "segment-009284.jpg",
+                "segment-010128.jpg",
+                "segment-010972.jpg"
+              ],
+              "viewed": true
+            }
+          ],
+          "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390",
+          "error": null
         }
       ],
       "representativeMappings": []
@@ -11389,6 +11813,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11399,8 +11825,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11455,6 +11887,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11465,8 +11899,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11521,6 +11961,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11531,8 +11973,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11587,6 +12035,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11597,8 +12047,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11613,23 +12069,215 @@
       "widths": [
         {
           "width": 1440,
-          "status": "not requested",
-          "captured": false,
-          "viewed": false,
+          "status": 200,
+          "captured": true,
+          "viewed": true,
           "interacted": false,
-          "record": null,
-          "segments": [],
-          "sheets": []
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
+          "documentHeight": 7937,
+          "segments": [
+            {
+              "file": "segment-000000.jpg",
+              "y": 0,
+              "height": 2400,
+              "viewed": true
+            },
+            {
+              "file": "segment-002400.jpg",
+              "y": 2400,
+              "height": 2400,
+              "viewed": true
+            },
+            {
+              "file": "segment-004800.jpg",
+              "y": 4800,
+              "height": 2400,
+              "viewed": true
+            },
+            {
+              "file": "segment-007200.jpg",
+              "y": 7200,
+              "height": 737,
+              "viewed": true
+            }
+          ],
+          "sheets": [
+            {
+              "file": "sheet-0.jpg",
+              "members": [
+                "first-viewport.jpg",
+                "segment-000000.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-1.jpg",
+              "members": [
+                "segment-002400.jpg",
+                "segment-004800.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-2.jpg",
+              "members": [
+                "segment-007200.jpg"
+              ],
+              "viewed": true
+            }
+          ],
+          "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440",
+          "error": null
         },
         {
           "width": 390,
-          "status": "not requested",
-          "captured": false,
-          "viewed": false,
+          "status": 200,
+          "captured": true,
+          "viewed": true,
           "interacted": false,
-          "record": null,
-          "segments": [],
-          "sheets": []
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+          "documentHeight": 10776,
+          "segments": [
+            {
+              "file": "segment-000000.jpg",
+              "y": 0,
+              "height": 844,
+              "actualScrollY": 0,
+              "viewed": true
+            },
+            {
+              "file": "segment-000844.jpg",
+              "y": 844,
+              "height": 844,
+              "actualScrollY": 844,
+              "viewed": true
+            },
+            {
+              "file": "segment-001688.jpg",
+              "y": 1688,
+              "height": 844,
+              "actualScrollY": 1688,
+              "viewed": true
+            },
+            {
+              "file": "segment-002532.jpg",
+              "y": 2532,
+              "height": 844,
+              "actualScrollY": 2532,
+              "viewed": true
+            },
+            {
+              "file": "segment-003376.jpg",
+              "y": 3376,
+              "height": 844,
+              "actualScrollY": 3376,
+              "viewed": true
+            },
+            {
+              "file": "segment-004220.jpg",
+              "y": 4220,
+              "height": 844,
+              "actualScrollY": 4220,
+              "viewed": true
+            },
+            {
+              "file": "segment-005064.jpg",
+              "y": 5064,
+              "height": 844,
+              "actualScrollY": 5064,
+              "viewed": true
+            },
+            {
+              "file": "segment-005908.jpg",
+              "y": 5908,
+              "height": 844,
+              "actualScrollY": 5908,
+              "viewed": true
+            },
+            {
+              "file": "segment-006752.jpg",
+              "y": 6752,
+              "height": 844,
+              "actualScrollY": 6752,
+              "viewed": true
+            },
+            {
+              "file": "segment-007596.jpg",
+              "y": 7596,
+              "height": 844,
+              "actualScrollY": 7596,
+              "viewed": true
+            },
+            {
+              "file": "segment-008440.jpg",
+              "y": 8440,
+              "height": 844,
+              "actualScrollY": 8440,
+              "viewed": true
+            },
+            {
+              "file": "segment-009284.jpg",
+              "y": 9284,
+              "height": 844,
+              "actualScrollY": 9284,
+              "viewed": true
+            },
+            {
+              "file": "segment-010128.jpg",
+              "y": 10128,
+              "height": 648,
+              "actualScrollY": 9932.5,
+              "viewed": true
+            }
+          ],
+          "sheets": [
+            {
+              "file": "sheet-0.jpg",
+              "members": [
+                "first-viewport.jpg",
+                "segment-000000.jpg",
+                "segment-000844.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-1.jpg",
+              "members": [
+                "segment-001688.jpg",
+                "segment-002532.jpg",
+                "segment-003376.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-2.jpg",
+              "members": [
+                "segment-004220.jpg",
+                "segment-005064.jpg",
+                "segment-005908.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-3.jpg",
+              "members": [
+                "segment-006752.jpg",
+                "segment-007596.jpg",
+                "segment-008440.jpg"
+              ],
+              "viewed": true
+            },
+            {
+              "file": "sheet-4.jpg",
+              "members": [
+                "segment-009284.jpg",
+                "segment-010128.jpg"
+              ],
+              "viewed": true
+            }
+          ],
+          "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390",
+          "error": null
         }
       ],
       "representativeMappings": []
@@ -11653,6 +12301,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11665,6 +12315,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11719,6 +12373,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11731,6 +12387,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11785,6 +12445,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11797,6 +12459,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11851,6 +12517,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11863,6 +12531,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11917,6 +12589,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11929,6 +12603,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -11983,6 +12661,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -11995,6 +12675,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12049,6 +12733,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12061,6 +12747,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12115,6 +12805,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12127,6 +12819,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12181,6 +12877,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12193,6 +12891,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12247,6 +12949,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12259,6 +12963,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12344,6 +13052,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12356,6 +13066,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12410,6 +13124,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12422,6 +13138,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12476,6 +13196,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12488,6 +13210,10 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12542,6 +13268,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12552,8 +13280,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12568,23 +13302,194 @@
       "widths": [
         {
           "width": 1440,
-          "status": "not requested",
-          "captured": false,
+          "status": 200,
+          "captured": true,
           "viewed": false,
           "interacted": false,
-          "record": null,
-          "segments": [],
-          "sheets": []
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
+          "documentHeight": 6448,
+          "segments": [
+            {
+              "file": "segment-000000.jpg",
+              "y": 0,
+              "height": 2400,
+              "viewed": false
+            },
+            {
+              "file": "segment-002400.jpg",
+              "y": 2400,
+              "height": 2400,
+              "viewed": false
+            },
+            {
+              "file": "segment-004800.jpg",
+              "y": 4800,
+              "height": 1648,
+              "viewed": false
+            }
+          ],
+          "sheets": [
+            {
+              "file": "sheet-0.jpg",
+              "members": [
+                "first-viewport.jpg",
+                "segment-000000.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-1.jpg",
+              "members": [
+                "segment-002400.jpg",
+                "segment-004800.jpg"
+              ],
+              "viewed": false
+            }
+          ],
+          "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440",
+          "error": null
         },
         {
           "width": 390,
-          "status": "not requested",
-          "captured": false,
+          "status": 200,
+          "captured": true,
           "viewed": false,
           "interacted": false,
-          "record": null,
-          "segments": [],
-          "sheets": []
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+          "documentHeight": 9351,
+          "segments": [
+            {
+              "file": "segment-000000.jpg",
+              "y": 0,
+              "height": 844,
+              "actualScrollY": 0,
+              "viewed": false
+            },
+            {
+              "file": "segment-000844.jpg",
+              "y": 844,
+              "height": 844,
+              "actualScrollY": 844,
+              "viewed": false
+            },
+            {
+              "file": "segment-001688.jpg",
+              "y": 1688,
+              "height": 844,
+              "actualScrollY": 1688,
+              "viewed": false
+            },
+            {
+              "file": "segment-002532.jpg",
+              "y": 2532,
+              "height": 844,
+              "actualScrollY": 2532,
+              "viewed": false
+            },
+            {
+              "file": "segment-003376.jpg",
+              "y": 3376,
+              "height": 844,
+              "actualScrollY": 3376,
+              "viewed": false
+            },
+            {
+              "file": "segment-004220.jpg",
+              "y": 4220,
+              "height": 844,
+              "actualScrollY": 4220,
+              "viewed": false
+            },
+            {
+              "file": "segment-005064.jpg",
+              "y": 5064,
+              "height": 844,
+              "actualScrollY": 5064,
+              "viewed": false
+            },
+            {
+              "file": "segment-005908.jpg",
+              "y": 5908,
+              "height": 844,
+              "actualScrollY": 5908,
+              "viewed": false
+            },
+            {
+              "file": "segment-006752.jpg",
+              "y": 6752,
+              "height": 844,
+              "actualScrollY": 6752,
+              "viewed": false
+            },
+            {
+              "file": "segment-007596.jpg",
+              "y": 7596,
+              "height": 844,
+              "actualScrollY": 7596,
+              "viewed": false
+            },
+            {
+              "file": "segment-008440.jpg",
+              "y": 8440,
+              "height": 844,
+              "actualScrollY": 8440,
+              "viewed": false
+            },
+            {
+              "file": "segment-009284.jpg",
+              "y": 9284,
+              "height": 67,
+              "actualScrollY": 8507,
+              "viewed": false
+            }
+          ],
+          "sheets": [
+            {
+              "file": "sheet-0.jpg",
+              "members": [
+                "first-viewport.jpg",
+                "segment-000000.jpg",
+                "segment-000844.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-1.jpg",
+              "members": [
+                "segment-001688.jpg",
+                "segment-002532.jpg",
+                "segment-003376.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-2.jpg",
+              "members": [
+                "segment-004220.jpg",
+                "segment-005064.jpg",
+                "segment-005908.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-3.jpg",
+              "members": [
+                "segment-006752.jpg",
+                "segment-007596.jpg",
+                "segment-008440.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-4.jpg",
+              "members": [
+                "segment-009284.jpg"
+              ],
+              "viewed": false
+            }
+          ],
+          "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390",
+          "error": null
         }
       ],
       "representativeMappings": []
@@ -12639,6 +13544,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12649,8 +13556,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12704,6 +13617,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12714,8 +13629,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12770,6 +13691,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12780,8 +13703,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12867,6 +13796,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -12877,8 +13808,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -12996,6 +13933,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -13006,8 +13945,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -13061,6 +14006,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -13071,8 +14018,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -13127,6 +14080,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -13137,8 +14092,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -13193,6 +14154,8 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-scrubbers/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-repair/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/hvac/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/ac-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-repair/390/record.json",
@@ -13203,8 +14166,14 @@
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/furnace-maintenance/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heat-pump-maintenance/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/controls-and-thermostats/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/humidifiers/1440/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/390/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/air-cleaning-services/1440/record.json",
         "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/heating/390/record.json",
@@ -13219,23 +14188,215 @@
       "widths": [
         {
           "width": 1440,
-          "status": "not requested",
-          "captured": false,
+          "status": 200,
+          "captured": true,
           "viewed": false,
           "interacted": false,
-          "record": null,
-          "segments": [],
-          "sheets": []
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
+          "documentHeight": 7906,
+          "segments": [
+            {
+              "file": "segment-000000.jpg",
+              "y": 0,
+              "height": 2400,
+              "viewed": false
+            },
+            {
+              "file": "segment-002400.jpg",
+              "y": 2400,
+              "height": 2400,
+              "viewed": false
+            },
+            {
+              "file": "segment-004800.jpg",
+              "y": 4800,
+              "height": 2400,
+              "viewed": false
+            },
+            {
+              "file": "segment-007200.jpg",
+              "y": 7200,
+              "height": 706,
+              "viewed": false
+            }
+          ],
+          "sheets": [
+            {
+              "file": "sheet-0.jpg",
+              "members": [
+                "first-viewport.jpg",
+                "segment-000000.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-1.jpg",
+              "members": [
+                "segment-002400.jpg",
+                "segment-004800.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-2.jpg",
+              "members": [
+                "segment-007200.jpg"
+              ],
+              "viewed": false
+            }
+          ],
+          "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440",
+          "error": null
         },
         {
           "width": 390,
-          "status": "not requested",
-          "captured": false,
+          "status": 200,
+          "captured": true,
           "viewed": false,
           "interacted": false,
-          "record": null,
-          "segments": [],
-          "sheets": []
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+          "documentHeight": 10470,
+          "segments": [
+            {
+              "file": "segment-000000.jpg",
+              "y": 0,
+              "height": 844,
+              "actualScrollY": 0,
+              "viewed": false
+            },
+            {
+              "file": "segment-000844.jpg",
+              "y": 844,
+              "height": 844,
+              "actualScrollY": 844,
+              "viewed": false
+            },
+            {
+              "file": "segment-001688.jpg",
+              "y": 1688,
+              "height": 844,
+              "actualScrollY": 1688,
+              "viewed": false
+            },
+            {
+              "file": "segment-002532.jpg",
+              "y": 2532,
+              "height": 844,
+              "actualScrollY": 2532,
+              "viewed": false
+            },
+            {
+              "file": "segment-003376.jpg",
+              "y": 3376,
+              "height": 844,
+              "actualScrollY": 3376,
+              "viewed": false
+            },
+            {
+              "file": "segment-004220.jpg",
+              "y": 4220,
+              "height": 844,
+              "actualScrollY": 4220,
+              "viewed": false
+            },
+            {
+              "file": "segment-005064.jpg",
+              "y": 5064,
+              "height": 844,
+              "actualScrollY": 5064,
+              "viewed": false
+            },
+            {
+              "file": "segment-005908.jpg",
+              "y": 5908,
+              "height": 844,
+              "actualScrollY": 5908,
+              "viewed": false
+            },
+            {
+              "file": "segment-006752.jpg",
+              "y": 6752,
+              "height": 844,
+              "actualScrollY": 6752,
+              "viewed": false
+            },
+            {
+              "file": "segment-007596.jpg",
+              "y": 7596,
+              "height": 844,
+              "actualScrollY": 7596,
+              "viewed": false
+            },
+            {
+              "file": "segment-008440.jpg",
+              "y": 8440,
+              "height": 844,
+              "actualScrollY": 8440,
+              "viewed": false
+            },
+            {
+              "file": "segment-009284.jpg",
+              "y": 9284,
+              "height": 844,
+              "actualScrollY": 9284,
+              "viewed": false
+            },
+            {
+              "file": "segment-010128.jpg",
+              "y": 10128,
+              "height": 342,
+              "actualScrollY": 9626,
+              "viewed": false
+            }
+          ],
+          "sheets": [
+            {
+              "file": "sheet-0.jpg",
+              "members": [
+                "first-viewport.jpg",
+                "segment-000000.jpg",
+                "segment-000844.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-1.jpg",
+              "members": [
+                "segment-001688.jpg",
+                "segment-002532.jpg",
+                "segment-003376.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-2.jpg",
+              "members": [
+                "segment-004220.jpg",
+                "segment-005064.jpg",
+                "segment-005908.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-3.jpg",
+              "members": [
+                "segment-006752.jpg",
+                "segment-007596.jpg",
+                "segment-008440.jpg"
+              ],
+              "viewed": false
+            },
+            {
+              "file": "sheet-4.jpg",
+              "members": [
+                "segment-009284.jpg",
+                "segment-010128.jpg"
+              ],
+              "viewed": false
+            }
+          ],
+          "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390",
+          "error": null
         }
       ],
       "representativeMappings": []
@@ -13245,7 +14406,9 @@
       "pageType": "water-heater-replacement locality (URL classification; unverified template)",
       "classificationBasis": "URL and homepage link label; visual confirmation only when widths viewed",
       "sources": [
-        "https://smockhvac.com/page-sitemap.xml"
+        "https://smockhvac.com/page-sitemap.xml",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json"
       ],
       "widths": [
         {
@@ -13276,7 +14439,9 @@
       "pageType": "water-heater-replacement locality (URL classification; unverified template)",
       "classificationBasis": "URL and homepage link label; visual confirmation only when widths viewed",
       "sources": [
-        "https://smockhvac.com/page-sitemap.xml"
+        "https://smockhvac.com/page-sitemap.xml",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json"
       ],
       "widths": [
         {
@@ -13307,7 +14472,9 @@
       "pageType": "water-heater-replacement locality (URL classification; unverified template)",
       "classificationBasis": "URL and homepage link label; visual confirmation only when widths viewed",
       "sources": [
-        "https://smockhvac.com/page-sitemap.xml"
+        "https://smockhvac.com/page-sitemap.xml",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json"
       ],
       "widths": [
         {
@@ -13338,7 +14505,9 @@
       "pageType": "water-heater-replacement locality (URL classification; unverified template)",
       "classificationBasis": "URL and homepage link label; visual confirmation only when widths viewed",
       "sources": [
-        "https://smockhvac.com/page-sitemap.xml"
+        "https://smockhvac.com/page-sitemap.xml",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json"
       ],
       "widths": [
         {
@@ -13369,7 +14538,9 @@
       "pageType": "water-heater-replacement locality (URL classification; unverified template)",
       "classificationBasis": "URL and homepage link label; visual confirmation only when widths viewed",
       "sources": [
-        "https://smockhvac.com/page-sitemap.xml"
+        "https://smockhvac.com/page-sitemap.xml",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json"
       ],
       "widths": [
         {
@@ -13400,7 +14571,9 @@
       "pageType": "water-heater-replacement locality (URL classification; unverified template)",
       "classificationBasis": "URL and homepage link label; visual confirmation only when widths viewed",
       "sources": [
-        "https://smockhvac.com/page-sitemap.xml"
+        "https://smockhvac.com/page-sitemap.xml",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json"
       ],
       "widths": [
         {
@@ -13431,7 +14604,9 @@
       "pageType": "water-heater-replacement locality (URL classification; unverified template)",
       "classificationBasis": "URL and homepage link label; visual confirmation only when widths viewed",
       "sources": [
-        "https://smockhvac.com/page-sitemap.xml"
+        "https://smockhvac.com/page-sitemap.xml",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json"
       ],
       "widths": [
         {
@@ -13462,7 +14637,9 @@
       "pageType": "water-heater-replacement locality (URL classification; unverified template)",
       "classificationBasis": "URL and homepage link label; visual confirmation only when widths viewed",
       "sources": [
-        "https://smockhvac.com/page-sitemap.xml"
+        "https://smockhvac.com/page-sitemap.xml",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json"
       ],
       "widths": [
         {
@@ -13493,7 +14670,9 @@
       "pageType": "water-heater-replacement locality (URL classification; unverified template)",
       "classificationBasis": "URL and homepage link label; visual confirmation only when widths viewed",
       "sources": [
-        "https://smockhvac.com/page-sitemap.xml"
+        "https://smockhvac.com/page-sitemap.xml",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json"
       ],
       "widths": [
         {
@@ -13524,7 +14703,9 @@
       "pageType": "water-heater-replacement locality (URL classification; unverified template)",
       "classificationBasis": "URL and homepage link label; visual confirmation only when widths viewed",
       "sources": [
-        "https://smockhvac.com/page-sitemap.xml"
+        "https://smockhvac.com/page-sitemap.xml",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
+        "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json"
       ],
       "widths": [
         {
