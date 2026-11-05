@@ -77,7 +77,42 @@ Side effect: running `bulk-blank-check.py` rewrote the shared `research-captures
 - **Interactions:** visual judgement of all 61 saved interaction images.
 - **Not done at all:** 360, keyboard, motion and live-site checks.
 
-## Coverage
+## Final retry: saved interactions (61 of 61 source images viewed, 2026-11-05)
+
+These outcomes come from looking at the saved images, not from file names. The displays and the source-to-display map are in `native/interactions-manifest.json`, which holds 45 displays: 390 frames in strips of 3, and the 1440 hover crops combined into one image per folder. No live action, no form submit, no keyboard or 360 test was run; every finding is about the saved state only.
+
+| Interaction (folders: home, contact, service-area at 1440/390; home-fix 390) | Visible outcome |
+|---|---|
+| Desktop dropdowns, Cooling / Drain Cleaning / Plumbing | **Pass ×3 per page**: a white panel with an orange rule and 4 items (`home-_/1440/05–07`) |
+| Heating dropdown | **Caught mid-fade**: semi-transparent panel, 9 items barely legible over the hero (`home-_/1440/04-dropdown-7.jpg`) |
+| About (dropdown-5/6) | **Inconclusive**: the label changes colour but no panel appears in any of the 3 folders |
+| Schedule Service CTA modal | **Pass**: the modal opens over a dimmed page. The close control is an **empty outlined square with no visible ×** (`home-_/1440/08-cta-open-55.jpg`, top right), and the submit is the default blue "Send Message" |
+| Contact form focus | **Inconclusive**: the modal from the previous step is still fading over the page (`contact-_contact_/1440/09`) |
+| Contact form invalid | **Attempt, no visible feedback**: "invalid-email" is typed, with no red state and no message (1440 `10`, 390 strip-00). No submit was made, so submit-time validation is untested |
+| Mobile menu (`home-fix/390`) | **Pass**: a navy off-canvas panel with an orange × and accordion groups; the About group expands to About / Service Area / Reviews / Maintenance Plan / Financing / Specials / Blog / Careers. No phone or CTA appears in the captured part of the panel |
+| Scroll 0.3 / 0.7 | Sections reveal on scroll: headings grey, cards absent or fading (`home-_/1440/10`, `service-_service_area_/1440/10`) |
+| Reduced motion (`14`/`16`) | **Attempt, mixed**: home 1440 still shows service cards mid-fade (`home-_/1440/14-reduced-motion.jpg`). Contact and service-area frames look fully rendered |
+| Hovers | Contact: the card medallion turns **teal** (navy at rest) = a visible hover change. Every nav crop shows only the logo, so nav hover is inconclusive. The button crops have no baseline |
+
+**Artefacts the interaction images resolve:**
+- **"Every visit" band (1440):** the scroll frames show a real technician photo in a curved frame on both home (`home-_/1440/09-scroll-0.3.jpg`) and contact (`contact-_contact_/1440/11-scroll-0.3.jpg`). So the empty left half in the native 1440 segments was lazy-load or reveal timing for those two pages at 1440. The 390 empty-`src` box is still open: no 390 frame shows the image.
+- **Empty outlined map box:** the service-area sequence goes from an empty outlined box (`01`) to a spinner (`02–04`) to a loaded Google card (`06`). This is iframe load timing, not a site defect.
+- **Reviews slot on home/contact:** still unresolved. The loaded widget on `/reviews/` is only a candidate explanation (lead clarification), and no interaction frame shows the home or contact reviews slot loaded.
+- **Contact hero:** in `contact-_contact_/1440/01-initial.jpg` the navy hero and H1 are not painted yet, while the native first viewport shows them. This is capture timing.
+
+**Copy:**
+1. **Short dropdown panels**, about 4 items, with whole-word labels.
+2. **Accordion mobile menu** that keeps every service link reachable (rule 21 spirit).
+
+**Avoid:**
+1. **A modal close control with no visible ×.**
+2. **Default blue form submit** that ignores the brand.
+3. **No inline validation feedback** on a typed invalid email.
+4. **Scroll-reveal that hides content** until it is triggered and still animates under reduced motion. For ArbCut, render content visible by default.
+
+**Final retry stop (soft budget steer 4,097,967 > 4,000,000).** Page displays are unchanged this retry: **57 of 407 opened, 350 unseen**. Every unseen path is listed in `native/native-stage-remaining.json` → `unseenPageDisplays`, and the original flags and reasons are kept in `remainingQueueInOrder`. Not started: finishing the 4 partly opened pages (17 displays: services, faqs and 404 each have `1440/segment-002400` plus 390 strips 01–02; air-conditioning has `1440/segment-002400/004800/007200` plus 390 strips 01–05), careers and the job pages, service-area, the two-example pairs for pillars, localities and blog, and the genuine outliers. The lead owns the remainder; there is no third retry.
+
+## Historical overview coverage (before native stages above)
 
 | Item | Status |
 |---|---|
@@ -184,3 +219,6 @@ Leadparsednative/manifest.json:17opened/390pending/407totaldisplays;all407displa
 
 ## Lead verification of resume1
 Manifest57opened/350pending/407totaldisplays,6complete/4partial/39unopenedpagesverified;allsource/displaypathsremainpresent. Theseareworker-attributedvisualfindings,nosecondleadvisualpassatallowancecheckpoint. Loadedreviewwidgetonreviewspageversusemptyhome/contactsupportsacapture/widget-loadingcandidate,notaconclusivecauseorlivestatus. Partialpagesdonotgainunseenclosingsegmentcredit. Savedinteractions0/61remainpending;finalretry2prioritizesthem. Priorhistoricalstopsectionsretainprovenance,notcurrentcompletion.
+
+## Current lead verification after finalretry2
+Interactionmanifest45openeddisplays61uniquesources/allpathsverified;pagequeueunchanged57opened350unseen407total. Sixcompletepagepairs/fourpartial/39unopenedworker-attributed;noindependentleadvisualpassatallowancecheckpoint. Savedinvalid-emailframeisnotanewleadtypingaction,nosubmissionpassclaimed. Latepaintedtechnician/mapframes supportload-timingcandidate,notindependentcausalproofaboutlivestate. Two-retrycapEXHAUSTED;leadowns17remainingdisplaystofinishpartialsplusothergenuinenative/template/outliergates. Oldercoverage/stoppingsectionsarehistorical. All61savedimageinspectionclosed,livekeyboardvalidationmotionandremainingnativeuncertaintyexplicit. Sharedderivedblanksummaryrecoveryremainsunverified.
