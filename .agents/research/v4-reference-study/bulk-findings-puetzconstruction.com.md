@@ -1,4 +1,6 @@
-# Puetz bulk visual analysis — partial at budget stop
+# Puetz bulk visual analysis — partial after continuation
+
+**Latest verified boundary:**46/46 overview sheets remain viewed;38 new pages are now complete at both widths (76 page-width rows), plus33 separately attributed inherited studies. This continuation actually opened111 of the requested283 previously unopened artifacts. Total opened artifacts369/541;172 artifacts across17 selected routes remain. Whole-site brief gates are not met. The first budget-stop section is historical; use the final coverage section below.
 
 Evidence root P: `/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com`; S: sibling `_sheets/puetzconstruction.com`. Research only; saved evidence, no browser actions. Generated groups/sheets using existing scripts on 2026-11-05. This report supersedes no prior evidence: inherited observations remain attributed to `puetz-*.md`.
 
@@ -128,20 +130,20 @@ Brand devices visible across complete commercial samples: six recurring motifs�
 
 Mobile observation: desktop hero photo/claims and side form become photo → centred locality/title/prose/proof → form. Current first viewports show a persistent bottom Menu/phone dock that reduces reading space; measured fixed-element height is not yet extracted. Native strips hide fixed UI by capture design, so first-viewport evidence is required. Large all-caps headings wrap to3–4 lines;390 already looks dense.360 is not captured. Phone numbers vary between captures/widths; call tracking is a possible explanation, not a verified wrong-number defect.
 
-## Six candidate screenshots for the lead
+## Six candidate screenshots for the lead — updated after continuation
 
-These are candidates from actually opened evidence, not a substitute for the unfinished home/projects/current-oneoff pass.
+All six files below were actually opened. Source attribution and reuse rights remain unverified.
 
-| # | Exact path | Why |
+| # | Exact path / offset | Why |
 |---|---|---|
-|1| P/commercial__albert-lea/1440/first-viewport.jpg | Complete service photo/form/review composition. |
-|2| S/native390/commercial__austin/strip-00.jpg | Native mobile hero-to-form-to-proof adaptation. |
-|3| P/commercial__bloomington/1440/segment-000000.jpg | Process card rhythm and transition to financing, alongside hero context. |
-|4| P/commercial__faribault/1440/segment-002400.jpg | Office map/locality links and visible wrong-city copy; useful anti-pattern. |
-|5| P/bathroom-remodel-cost/1440/first-viewport.jpg | Branded404 recovery with direct service destinations. |
-|6| P/blog__flat-roof-flashing/1440/segment-002400.jpg | Blank body slot discrepancy; pair with390 source frames from manifest before judging design. |
+|1| P/home/1440/segment-002400.jpg, y2400 | Owner/dog cutout, personal signature, navy promise band, crew/customer photo and review proof: strongest distinctive trust composition. |
+|2| P/home/390/first-viewport.jpg, y0 | Shows the actual mobile cost of chat bubble, Text us button, quote edge tab and bottom dock overlapping content. |
+|3| P/commercial__albert-lea/1440/first-viewport.jpg, y0 | Service-relevant roof photography with adjacent compact enquiry and review ribbon. |
+|4| P/projects/1440/segment-000000.jpg, y0 | Six-image gallery, filters, Load more and the following blank spacing; clear project-proof strengths and gaps. |
+|5| S/native390/decks-patios__owatonna-mn/strip-01.jpg, source segment y in manifest | Native mobile supplier-logo stack and service/process sequence; strong anti-pattern for irrelevant oversized proof. |
+|6| P/decks-patios__cannon-falls-mn/1440/segment-002400.jpg, y2400 | Empty photograph box and excessive logo detour; compare mobile strip-02 before diagnosing a site defect. |
 
-## Explicit unfinished checks / capture and interaction gaps
+## First-stop unfinished checks — historical, superseded by final boundary
 
 - Whole-site analysis is **not complete**. All overview cells are inspected, but the current home/projects one-offs,30 selected new pages, roofing/siding variants and all remaining outliers above still need required full-depth inspection. Two differing examples exist for articles and commercial cities; this has not been demonstrated for every current semantic template.
 - Current folder count254 versus ledger brief253 captured pages +1file is unreconciled. Do not report254 distinct successful HTML URLs. Canonical/redirect aliases and file status need a read-only ledger reconciliation.
@@ -151,3 +153,83 @@ These are candidates from actually opened evidence, not a substitute for the unf
 - Lead should complete these gates and verify the report before committing. This stage ends at the user’s soft budget steer; it does not meet the brief’s whole-site completion threshold.
 
 Done:46-sheet overview and 25 new complete page pairs · Verified: actual image opens, explicit per-file manifest and sheet flags · Not verified: remaining 30-page queue, interaction evidence, numerical tokens, ledger reconciliation · Next: lead completes outstanding brief gates and verifies/commits.
+
+## Authorised continuation — observations and exact progress
+
+The earlier budget-stop section above is a historical checkpoint, superseded by the final coverage below. Resumed the exact283-artifact queue without repeating overview sheets or settled pages. First63 queued artifacts now actually opened: remaining commercial Owatonna, Preston, Red Wing, Wabasha, Waterloo, Winona and Cannon Falls deck are complete at both widths. Manifest openedImages/source-segment flags were updated after opens; original capture files remain untouched.
+
+Commercial follow-up: all six city pages retain the same sales/proof/map/project/FAQ/blog shell. Preston ribbon says “Preston, WI” but hero paragraph explicitly says Minnesota weather (P/commercial__preston/{1440,390}/first-viewport.jpg, y0); Wabasha also labels WI, requiring editorial verification rather than an inferred geographic correction. Winona's “thousands of completed projects” is a visible claim, not independently established proof (P/commercial__winona/1440/segment-000000.jpg, y0–2399).
+
+Cannon Falls deck (P/decks-patios__cannon-falls-mn/1440/segment-002400.jpg, y2400) has a large empty rounded/shadowed photograph region; native390 strip-02 shows the actual terrace/sofa photo. Desktop closing CTA at segment-004800.jpg has gradient with no crew photo, while mobile strip-03 has crew. These are width/capture discrepancies, cause unknown pending record inspection. Supplier marks appear as a tall uneven stack at BOTH widths (desktop segments000000/002400, mobile strip-01), repeating EDCO/PlyGem/CertainTeed variants and creating a long detour before process. Do not copy that presentation. Hero/closing text repeatedly calls the company Puetz Roofing on a deck page; materials names CertainTeed/LP SmartSide rather than explaining deck options. Photo-rich deck content and a Yelp-style Daniel review ribbon differ from the commercial city's Google-style Kaitlin ribbon.
+
+## Continuation findings — newly completed one-offs and roofing example
+
+**Home, complete current capture at both widths:** white architectural-linework copy panel beside an in-progress house with a Puetz jobsite banner → horizontal five-control enquiry → horizontal supplier marks → five photo service cards → navy owner/dog cutout and signed promise → crew/customer photograph and short sales copy → review carousel → process → state-shaped service-region band → porch service summary → three projects → populated project/review map → FAQ with first answer expanded → blog/crew CTA/footer. On mobile the owner promise copy appears before the owner portrait; service cards/projects/process stack. The home supplier marks form a clipped horizontal row, unlike the tall vertical stacks on deck/roofing city captures (P/home/1440/segment-000000.jpg; S/native390/home/strip-00.jpg). No carousel motion was tested.
+
+The identifiable owner, signature, informal dog photograph, crew/customer photo, actual jobsite banner and work imagery are more distinctive than generic excellence claims. Copy the principle of named people beside accountable evidence, not this company's assets or absolute “clients never have to call us back” promise. A bold personal band provides a useful visual pause after repeated cards (P/home/1440/segment-002400.jpg, y2400; mobile strip-01). Taste: use the equivalent ArbCut owner/crew evidence only when provided and verified.
+
+The current home map is populated with job/review markers and a project card, so earlier blank-map observations no longer describe these files (P/home/1440/segment-004800.jpg, y4800, continuing segment-007200.jpg; mobile strips03–04). It is visually denser proof than an office map but does not independently verify job locations or review authenticity. Header body says363+ five-star Google reviews, review widget says over375, map widget shows374; record the visible differences without treating any count as verified business truth.
+
+**Home first-viewport obstruction:** desktop chat prompt covers part of the enquiry area and quote tooltip covers hero photo. Mobile chat prompt covers body copy, Text us floats above Menu/phone dock, and Instant Roof Quote consumes the right edge (P/home/{1440,390}/first-viewport.jpg, y0). These are competing contact systems. Adopt one clear primary action plus a restrained phone affordance; avoid stacking every acquisition widget. The segment strips deliberately hide fixed UI and cannot be used to judge this cost.
+
+**Projects, complete current capture at both widths:** title says “Our Roofing Highlight Reel” although filters include Concrete, Decks, New Construction, Remodeling and Siding. Six initial photos show two houses, foundation, framing and two interiors; no visible per-job captions, service labels, dates or outcomes. Two desktop columns become one mobile column, filters wrap into centred rows. The image scale and uncluttered gallery are useful; category/title mismatch and absent project context weaken evidence (P/projects/{1440,390}/first-viewport.jpg;1440/segment-000000.jpg, y0). Blank white space follows Load more at both widths, with desktop checker y1984/304px. The cause remains unknown; no interaction or iframe record check was completed. Mobile's saved segments use older2400px frames, making its three-frame strip tall; no new recapture was made.
+
+**Owatonna deck, complete at both widths:** same five-control hero and Daniel review ribbon as Cannon Falls, but terrace photo is visible on both widths, hero/financing/locality prose is shorter and locally named, and the closing crew photo renders on desktop. It still repeats the tall supplier-logo stack and general related-service cards, including suppliers not explained as deck material options (P/decks-patios__owatonna-mn/1440/segments000000/002400; S/native390/decks-patios__owatonna-mn/strip-01.jpg). The source filenames are `segment-000000.jpg` and `segment-002400.jpg`; the next three steps are identical to commercial pages. No visible FAQ appears on these two deck captures.
+
+**Albert Lea roofing, complete at both widths:** photo/form → snow-construction image and generic value copy → Daniel review → general services/supplier stack → process → roof photo plus four long numbered reasons for hiring a full-service firm → office map/satisfaction copy → generic blog/crew CTA/footer. The construction snow image shows work context but no caption establishes a roofing result. Hero text “reigns supreme” and “create havens” supplies enthusiasm instead of concrete scope, roof systems, response times or local case evidence (P/roofing__albert-lea/{1440,390}/first-viewport.jpg;1440/segment-000000.jpg). Its numbered argument headings grow to several lines at390; the generic prose and repeated logos materially extend the page. Avoid that density and unsupported superlative copy.
+
+**Owatonna roofing, partial only:** first-viewport and desktop segment-000000.jpg actually opened. It differs from Albert Lea by adding John H. proof beneath the hero and Cody S. beneath the first content split, with close-up installation photo. Hero names Steele County/prarie-weather context; local relevance is visible, factual accuracy is unverified. Every later desktop segment and all390 files remain unopened. Do not infer the rest of its page from its first segment.
+
+## Final coverage boundary after the second budget steer
+
+This continuation opened exactly**111 previously unopened artifacts**. It completed**13 additional page pairs**, bringing the new-pass total to**38 complete pages /76 page-width rows**, with every required first viewport and segment represented in S/fullsize-manifest.json. Total new-pass artifact opens are**369/541**. No previously settled sheet/page pair was reopened.33 inherited route pairs remain separately attributed with the previously disclosed timestamp/native-resolution limitations; no new provenance audit was performed.
+
+Additional complete route pairs: `commercial__owatonna`, `commercial__preston`, `commercial__red-wing`, `commercial__wabasha`, `commercial__waterloo`, `commercial__winona`, `decks-patios__cannon-falls-mn`, `decks-patios__owatonna-mn`, `home`, `kitchen-layout-ideas`, `kitchen-remodel-ideas`, `projects`, `roofing__albert-lea`. The two kitchen aliases render the same branded404 recovery shell and footer; neither is a functioning article (actual first viewports and full segments both widths in manifest).
+
+| Group | Pages | Newly complete pairs | Inherited reported pairs | Current flags still without complete/inherited full-depth evidence |
+|---|---:|---:|---:|---:|
+| t00 — blog/* | 158 | 12 | 0 | 0 |
+| t01 — decks-patios/* | 26 | 2 | 0 | 12 |
+| t02 — commercial/* | 17 | 16 | 0 | 0 |
+| t03 — blog/* | 10 | 0 | 10 | 0 |
+| t04 — roofing/* | 10 | 1 | 0 | 2 |
+| t05 — /1 | 9 | 0 | 9 | 0 |
+| t06 — /1 | 7 | 5 | 0 | 2 |
+| t07 — /1 | 7 | 0 | 7 | 0 |
+| t08 — /1 | 3 | 0 | 3 | 0 |
+| t09 — commercial/* | 2 | 0 | 2 | 0 |
+| t10 — one-off | 1 | 0 | 1 | 0 |
+| t11 — home | 1 | 1 | 0 | 0 |
+| t12 — one-off | 1 | 1 | 0 | 0 |
+| t13 — one-off | 1 | 0 | 1 | 0 |
+| t14 — one-off | 1 | 0 | 0 | 0 |
+
+**Remaining172 exact artifacts /17 selected routes:**
+
+- `roofing__owatonna`: 1440, 390.
+- `roofing__st-charles`: 1440, 390.
+- `siding__albert-lea`: 1440, 390.
+- `siding__austin`: 1440, 390.
+- `siding__bloomington`: 1440, 390.
+- `siding__decorah`: 1440, 390.
+- `siding__eau-claire`: 1440, 390.
+- `siding__la-crosse`: 1440, 390.
+- `siding__mankato`: 1440, 390.
+- `siding__mason-city`: 1440, 390.
+- `siding__menomonie`: 1440, 390.
+- `siding__owatonna`: 1440, 390.
+- `siding__red-wing`: 1440, 390.
+- `siding__waterloo`: 1440, 390.
+- `siding__winona`: 1440, 390.
+- `small-bathroom-remodel`: 1440, 390.
+- `walk-in-shower-ideas`: 1440, 390.
+
+Next unopened artifact: `P/roofing__owatonna/1440/segment-002400.jpg`. Only its first viewport and segment-000000 were opened; the rest of the queue is authoritative in S/view-progress.json. Source-segment viewed flags in the external manifest were set only after corresponding image opens, and raw records remain untouched.
+
+**Remaining brief gates:** finish these172 images; inspect existing interaction JPGs and their recorded states; extract numerical H1/H2/body/colour/fixed-element values; reconcile254 capture directories against253 ledger pages +1file read-only; verify inherited coverage against unchanged files and ensure two differing samples per semantic template plus all one-offs/outliers are satisfied. Native390 and1440 capture differences above have unknown causes. Whole-site analysis is explicitly not complete.
+
+Numerical-token caveat for the pending extraction: a recorded H1/H2 element can be a parent containing a styled child span. Parent computed font/size/weight may not describe the visible child text. Report recorded parent values as such unless saved child data exists; do not estimate child values from a screenshot or call the parent value the rendered text token. No new numerical values were extracted at this stop.
+
+Existing interactions and record-token/ledger work were not started before the user's second stop instruction. No browser, recapture, submission, delegation, script/ledger/source/public/board/handoff edit or commit was performed. Lead verification/commit remains separate.
+
+Done:46-sheet overview retained;13 additional full page pairs completed · Verified:111 new actual opens,369 total artifact entries,76 complete width rows · Not verified:172 artifacts and remaining brief gates · Next: lead continues exact queue, verifies and commits.
