@@ -20,6 +20,12 @@ You analyse ONE reference website from saved screenshots so the lead can write a
 4. Pull numbers from record.json, not from guessing: H1/H2 font, size, weight, line-height, colours; page heights; fixed-element heights.
 5. Describe, at readable scale and with evidence: hero composition, typography scale and pairing, colour system and where each colour is used, spacing rhythm, section sequence per template, imagery (real vs stock, crop, overlays), brand devices (count them), trust/proof (which official marks, where, beside which action), CTA system (labels, repetition, placement), forms, service/locality/blog templates, internal linking and footer, mobile adaptations (what collapses well/badly), fixed UI cost on mobile, what looks premium vs slop, and quality defects.
 
+## Efficiency (budget is finite; the VensLand pass ran out at 2M)
+- Read several images per turn (parallel Read calls); avoid one-image turns.
+- 390 frames: build native-resolution strips of 3 consecutive frames side by side (1170 px wide, PIL, write to `/tmp/<site>-strips/`) and view those; that counts as full size. 1440 segments: view as-is.
+- Write findings to the output file incrementally (after each template), so a budget stop still leaves a usable file.
+- Prioritise: all sheets first, then one-off pages, then template examples, then flagged pages.
+
 ## Output (the only file you write)
 `.agents/research/v4-reference-study/bulk-findings-<site>.md`:
 - Coverage table: templates (id, name, count), sheets viewed (n/n per width), pages viewed full size (slug + widths), flagged pages and what they were, pages that could not be judged and why.
