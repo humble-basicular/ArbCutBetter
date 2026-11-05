@@ -34,3 +34,7 @@ Analyst brief: `.agents/research/v4-reference-study/bulk-analyst-brief.md` (step
 - Analyst runs cost ~$0.4–0.75 each (stage_outcomes); the soft tokenBudget, not cost, cut them short. Next analyst rounds: budget ~8M and split big sites by template groups.
 - Allowance 13:23: Claude session 90%, Claude2 84%/79% weekly, Codex 84%, Codex2 38%/34%. Until 16:20 EET dispatch analysts to Codex2 only.
 - Full-size completion still owed for: VensLand (localities/services), Home Front (all but home 1440), and after recaptures settle. 
+
+## Update ~14:55 EET
+- Recaptures done: iframe 123 OK, first-window 234 OK, 0 fail/blocked. True Air findings committed (49fc940, Codex2 did 28 pages full size both widths — best throughput; use Codex2 high, tokenBudget ~8M).
+- Bears capture DONE (155). Dispatch FAILED: t3-code MCP rejected its Authorization header → user must reconnect (`/mcp`). Pending dispatch: stage `v4-analyst-bearsplumbing.net`, Codex2 gpt-6.1-sol high, 8M, brief = bulk-analyst-brief.md (+ note iframe recaptures, 782px overflow page, view key interaction shots).
