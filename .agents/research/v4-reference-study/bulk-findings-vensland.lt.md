@@ -1,11 +1,13 @@
 # Stage-B findings: vensland.lt
 
-Date: 2026-11-05. Analyst: Claude Opus 5.5 (research sub-agent). Read-only.
-**Status: second pass on the current site (recapture 10:53–10:57Z). All sheets viewed. Most required full-size views are done, but the stage budget stopped the pass before all of them. Gaps are in section 1.**
+Date: 2026-11-05. Initial analyst: Claude Opus 5.5; incremental gap pass: Codex (research sub-agent). Offline capture review only.
+**Status: bounded incremental gap pass by Codex, 2026-11-05. Prior sheet/full-size coverage is inherited, not repeated. Capture timestamps are mixed: 10:53–10:57Z plus desktop replacements at 11:11–11:20Z and Vilnius mobile at 11:20Z. Exact additions and residual gaps are in section 1.**
 
 Standing: this is the agency's own build, so it is the build to beat. Per `vensland-baseline.md`, the user does not treat it as a winning example. Nothing here is evidence for the winning formula.
 
 Paths are relative to `~/.ai-powerhouse/research-captures/arbcut-v4/`. Y values are file pixels read by eye, so they are approximate. `record` means the number comes from `record.json`.
+
+Inherited findings below retain the previous analyst’s observations. Where a desktop capture was overwritten, inherited y offsets are not freshly verified; use the incremental evidence log for capture-specific claims.
 
 Change tags against the first pass (commit ff43fb1): **[CHANGED]** the site or my reading differs now, **[HOLDS]** rechecked on current captures, **[NEW]** first seen in this pass, **[LEGACY ONLY]** not recaptured, so it may be out of date.
 
@@ -27,14 +29,16 @@ The 07:30Z captures were an older build. Current state on all templates:
 
 | What it looks like | Cause | Evidence |
 |---|---|---|
-| Whole sections blank on `home` and `vilnius` at 1440 | Scroll-reveal content did not fire. These two pages started the capture run at 10:53:01. Text and tiles are missing while the band backgrounds remain | `vensland.lt/home/1440/segment-002400.jpg`, `.../segment-007200.jpg` |
-| Faded or washed-out blocks on `home` and `vilnius` at 390 | Same reveal, caught partway through | `vensland.lt/home/390/segment-000844.jpg`, `-001688.jpg` |
+| Earlier `home` and `vilnius` at 1440 had whole sections blank | **Superseded evidence:** records now say 11:14:14.915Z (`home`) and 11:20:06.518Z (`vilnius`). All five replacement segments of each were opened in this pass: about, services, gallery, reviews, prices and areas now render. Sticky FAQ media remains absent at desktop | Current `home/1440/segment-000000.jpg` through `segment-009600.jpg`; same five offsets for `vilnius/1440` |
+| Faded/blank blocks at 390 | Earlier home evidence remains inherited. **Vilnius replacement still has artefacts**, despite capturedAt 11:20:21.617Z: faded about/service content at offsets 002532–004220; 005064 and 005908 are entirely pale bands. No live test was performed; these captures cannot establish site failure | `vensland.lt/vilnius/390/segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg` |
 | Blank left half of the FAQ at 1440 | `v3-faq__media` is sticky, so it was hidden during segment capture. The photo card shows at 390 | `vensland.lt/paslaugos/1440/segment-007200.jpg` y≈800–1300 |
 | Empty right column on Kontaktai at 1440 | `v3-quote` is sticky and was hidden the same way. It shows in the first viewport | `vensland.lt/kontaktai/1440/segment-000000.jpg` |
 | White band under the utility strip | Header hidden during capture | All `segment-000000.jpg` files |
 | Black gallery frame at 390 | Early frame; the 1440 shot shows the photo loaded | `vensland.lt/_interactions/home-_/390/11-gallery-open.jpg` |
 
-Blank-row check on all 50 page/width captures: only `home` and `vilnius` stand out at 1440 (0.56 and 0.54 of rows flat, against about 0.22–0.23 for the other full-length pages). `vilnius` also stands out mildly at 390 (0.18 against 0.13–0.14). **Use `paslaugos` as the home reference and `trakai` as the locality reference.**
+The earlier 50-capture blank-row ratios described superseded files; they are not measurements of the replacements. This pass read `capturedAt`, `dom.pageHeight` and `iframePatches` in the records rather than rerunning scripts. The 11:xx desktop replacement records have `iframePatches: []`; the Vilnius mobile replacement has no such key. Neither establishes that every reveal/sticky item rendered. Riešė's desktop FAQ has an empty left column, while `riese/390/segment-012660.jpg` and `segment-013504.jpg` show its photo/phone card; its map consent panel explicitly asks the user to load Google Maps and is not a missing-map defect.
+
+**Timestamp boundary:** twelve home/locality desktop records were replaced at 11:11:42.819–11:20:06.518Z (all ten localities, `home`, `paslaugos`). This pass opened replacement segments for `home`, `riese`, `vilnius`, plus the replacement `paslaugos` first viewport. Previous complete desktop segment coverage of `paslaugos` and `trakai` belongs to the preceding captures, not independently verified replacements. No sheet was reopened; existing sheet flags record prior viewing, not a new audit of later captures.
 
 ## 1. Coverage
 
@@ -52,17 +56,31 @@ Blank-row check on all 50 page/width captures: only `home` and `vilnius` stand o
 
 | Page | 1440 | 390 |
 |---|---|---|
-| `paslaugos` (home reference) | 5/5 segments; first viewport **not** viewed | 21/21 frames in strips; first viewport **not** viewed |
-| `trakai` | First viewport + 5/5 | First viewport + 22/22 |
+| `paslaugos` (home reference) | 5/5 inherited preceding capture; replacement first viewport now viewed | 21/21 inherited + first viewport now viewed |
+| `trakai` | First viewport + 5/5 inherited preceding capture; replacement not reopened | First viewport + 22/22 inherited |
 | `vejos-irengimas` | First viewport + 3/3 | First viewport + 11/11 |
-| `laistymo-sistemos` | 3/3; first viewport **not** viewed | First viewport + 9/9 |
-| `kontaktai` | First viewport + 1/2 (footer segment not viewed) | First viewport + 6/6 |
-| `privatumo-politika` | 1/1; first viewport **not** viewed | First viewport + 5/5 |
-| `author…` 404 | First viewport; segment via sheet | First viewport; segment via sheet |
-| `home` | First viewport + 3/5 (artefacts) | First viewport + 9/21 |
-| `mini-ekskavatoriaus` | 2/3; first viewport **not** viewed | First viewport + 6/10 |
-| `vilnius` | First viewport only (artefacts) | First viewport only |
-| 8 other localities, 7 other services | Sheet only | Sheet only |
+| `laistymo-sistemos` | 3/3 inherited + first viewport now viewed | First viewport + 9/9 inherited |
+| `kontaktai` | First viewport + 2/2; final 57-px segment now viewed | First viewport + 6/6 inherited |
+| `privatumo-politika` | 1/1 inherited + first viewport now viewed | First viewport + 5/5 inherited |
+| `author…` 404 | First viewport inherited + 1/1 segment now viewed | First viewport inherited + 1/1 segment now viewed |
+| `home` | First viewport inherited; all 5/5 replacement segments now viewed | First viewport + 9/21 inherited; 12 unresolved filenames |
+| `mini-ekskavatoriaus` | 3/3 + first viewport; final segment/FV now viewed | First viewport + 6/10 inherited; 4 unresolved filenames |
+| `vilnius` | Replacement first viewport + 5/5 now viewed | Replacement first viewport + 22/22 now viewed; reveal artefacts persist |
+| `riese` | First viewport + 5/5 (incremental pass) | First viewport + 22/22 (incremental pass) |
+| `vejos-lyginimas-levelingas` | First viewport + 3/3 now viewed | First viewport + 10/10 now viewed |
+| 7 other localities, 6 other services | Sheet only (prior sheets) | Sheet only (prior sheets) |
+
+### Incremental evidence log (this pass only)
+
+- `riese/1440`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`, `segment-009600.jpg`; record capturedAt `2026-11-05T11:18:45.693Z`.
+- `riese/390`: `first-viewport.jpg` and all 22 `segment-*.jpg`, offsets `000000, 000844, 001688, 002532, 003376, 004220, 005064, 005908, 006752, 007596, 008440, 009284, 010128, 010972, 011816, 012660, 013504, 014348, 015192, 016036, 016880, 017724`; record capturedAt `2026-11-05T10:53:54.406Z`. Viewed in eight native 390-wide side-by-side strips; grey padding after the final frame is strip padding, not page content.
+- `vilnius`: `first-viewport.jpg` at both widths; all five 1440 segments, offsets `000000, 002400, 004800, 007200, 009600`; all 22 mobile segments at the same exact offsets listed for Riešė above (eight native strips). Record capturedAt `2026-11-05T11:20:06.518Z` / `2026-11-05T11:20:21.617Z` respectively. These replace the previously viewed first viewports; they are new capture evidence.
+- `paslaugos__vejos-lyginimas-levelingas`: both `first-viewport.jpg`; all three 1440 segments, offsets `000000, 002400, 004800`; all ten 390 segments, offsets `000000, 000844, 001688, 002532, 003376, 004220, 005064, 005908, 006752, 007596` (four native strips). Record capturedAt `2026-11-05T10:55:30.853Z` / `2026-11-05T10:55:38.590Z`.
+- `home/1440`: all five replacement segments, offsets `000000, 002400, 004800, 007200, 009600`; capturedAt `2026-11-05T11:14:14.915Z`. These are replacement-version views, not repeats of the earlier captures.
+- First-viewport gaps filled: `paslaugos/{1440,390}/first-viewport.jpg`; `paslaugos__laistymo-sistemos/1440/first-viewport.jpg`; `privatumo-politika/1440/first-viewport.jpg`; `paslaugos__mini-ekskavatoriaus-paslaugos/1440/first-viewport.jpg`.
+- Other segment gaps filled: `kontaktai/1440/segment-002400.jpg` (57 px, plain dark footer tail; no additional content); `paslaugos__mini-ekskavatoriaus-paslaugos/1440/segment-004800.jpg`; `author__tomas-venslovas24gmail-com/{1440,390}/segment-000000.jpg` (one at each width).
+- **This incremental pass: 87 source images opened = 76 segment files + 11 first viewports; 54 of the mobile segments were viewed in 20 native side-by-side strips.** Full-depth additions: Riešė and levelling at both widths, Vilnius replacements at both widths, home replacement desktop; remaining first-viewport/utility gaps as above. This is an image-view count, not 87 unique pages.
+- All 12 sheet flags were already true; no sheets reopened and no flag edits needed. Earlier partial `home`/`mini` counts do not identify the viewed filenames. Do not infer which frames remain unseen from those counts.
 
 **Flagged pages:**
 - `paslaugos`: height outlier, because it is the home page grouped with localities.
@@ -97,14 +115,19 @@ Header → short photo hero (y124, h427) → 3 contact cards crossing the hero e
 Home template plus a local block after the trust band: `Trakai ir apylinkės`, a short paragraph, `Visos paslaugos ir vietovės`, and a black card with `Dažni darbai Trakuose` and neighbour chips. 11,705–11,749 px at 1440, 17,981–18,135 px at 390 (`record`). **[HOLDS]**
 - **What varies (Trakai read in full):** hero chip, lime H1 line, sub copy, local block, the outlined current place, `Taip pat:` line.
 - **What does not vary:** the 10 localities look identical on the sheets, with the same photos and reviews.
-- **Earlier correction narrowed:** I said the `Dažni darbai` lines are identical on Vilnius, Trakai and Riešė. That came from the old build. On the current build I have read only Trakai.
+- **Incremental Riešė check:** `riese/1440/segment-000000.jpg` y≈1200–1500 and `riese/390/segment-001688.jpg` show renewal-focused local copy (scarifying, CORE aeration, spreading sand and levelling), with Didžioji Riešė, Bukiškis and Lavoriškės chips. The black card lists installation/irrigation, aeration and scarifying. Do not restore the old claim that all local copy is identical: Trakai, Riešė and Vilnius have now been read, while seven other localities remain sheet-only.
+- Riešė keeps the same generic gallery/reviews and complete 10-service/10-locality footer; no pictured job is visibly attributed to Riešė. `riese/1440/segment-004800.jpg`, `segment-009600.jpg`; `riese/390/segment-009284.jpg` through `segment-017724.jpg`. Its map is an explicit consent panel, not a failed/blank map.
+
+- **Vilnius locality variation now visible:** private-house and apartment-yard copy mentions new/renewed lawn and irrigation; chips add Pilaitė, Pašilaičiai, Fabijoniškės, Antakalnis and Valakampiai. Its three common-work labels match Riešė (installation/irrigation, CORE aeration, scarifying), but the paragraph and neighbours differ. Same gallery/reviews, with no visible locality attribution. `vilnius/1440/segment-000000.jpg` y≈1200–1550, `segment-004800.jpg`; footer/active Vilnius row in `segment-009600.jpg`. Mobile whole-page completeness is limited by Trap 2.
 
 ### Service (t01) **[CHANGED: rebuilt]**
 Hero with no form, house visible → thin grass edge → breadcrumb → problem copy + `Kaip…` process card → `Kas įeina į paslaugą` + `Ką gaunate` on a paper band → `Mūsų atlikti darbai` → `Ką atsiųsti užklausoje` beside the form → FAQ → `Susijusios paslaugos` (3–4 photo cards, `Plačiau`) → `Visos paslaugos` → footer.
 - **Heights:** 4,892–5,648 px at 1440, 7,538–8,769 px at 390 (`record`).
-- **Better than before:** body starts near y≈930 at 390 instead of about 1,800. Related links are photo cards, not plain text cards. The FAQ has 1–3 rows on the sheets (`vejos-lyginimas` looks like one).
+- **Better than before:** body starts near y≈930 at 390 instead of about 1,800. Related links are photo cards, not plain text cards. The FAQ has 1–3 rows on the sheets; `vejos-lyginimas-levelingas` is now confirmed to have exactly one visible row at both widths.
 - **Still weak:** the same hero on every service. Job photos stay about 320 px wide at 1440 with the right side empty. The FAQ leaves the right third empty. At 390 the first form sits low, near y≈4,220 on `vejos-irengimas`.
 - **Skeleton variant:** `laistymo-sistemos` and `vejos-tresimas-purskimas` have no `Mūsų atlikti darbai` section (`record`, sim 0.956).
+
+**Levelling variant [NEW, full-depth]:** Two job photos have captions below (`Smėlio vežimėlis vejos levelingui`, `Veja po levelingo su smėliu`), rather than text on the photographs. At desktop they occupy only the left portion; mobile stacks them at readable width. One closed FAQ row asks whether levelling includes excavating the whole plot. Form prompts ask for unevenness photos/depth, sand delivery access, existing sand/mix and timing. Related cards are aeration, scarifying and fertilising. `paslaugos__vejos-lyginimas-levelingas/1440/segment-000000.jpg` y≈2200–2400 and `segment-002400.jpg` y≈0–2100; `390/segment-002532.jpg` through `segment-005908.jpg`. The form starts at approximately document y≈4,140 on the mobile frames, after those prompts. No rating/source mark appears beside it. Taste: retain the specific preparation prompts and captions; improve the amount and placement of real proof rather than cloning this layout.
 
 ### Legal and utility
 - **Privacy:** plain reading column with header and full footer. H1 is sentence case. **[HOLDS]**
@@ -115,7 +138,7 @@ Hero with no form, house visible → thin grass edge → breadcrumb → problem 
 
 | Item | 1440 | 390 |
 |---|---|---|
-| H1 | 65.6/75.44 white, uppercase | 35.88/41.26 |
+| H1 element (computed; not child spans) | 65.6/75.44 white; visibly uppercase | 35.88/41.26 |
 | H2 section | 44/47.52, sentence case | 29.6/31.97 |
 | H2 reviews | 60.8/65.66, uppercase | 38.4/41.47 |
 | H2 final CTA | 54.4/58.75, uppercase | 32/34.56 |
@@ -180,7 +203,7 @@ Grass edge, double-slash eyebrow, diagonal hatch, green left rule, logo tab, arr
 20. **Dock covers content. [HOLDS]** Green and white buttons in a dark container cover the rating panel heading while scrolling. `vensland.lt/_interactions/home-_/390/14-slider-t5.jpg`.
 
 **Withdrawn or not rechecked:**
-- **One-question FAQ. [CHANGED]** Most service pages now have 2–3 rows; only `vejos-lyginimas` may still have one.
+- **One-question FAQ narrowed. [CHANGED]** Not a general service-template claim: levelling is now visually confirmed to have one row at both widths; the other sheet variants show 2–3.
 - **Tight heading under the sidebar. [CHANGED]** That layout is gone.
 - **Mobile gallery viewer and 360 tightness. [LEGACY ONLY]** Not recaptured.
 
@@ -196,11 +219,14 @@ Grass edge, double-slash eyebrow, diagonal hatch, green left rule, logo tab, arr
 2. `vensland.lt/paslaugos__mini-ekskavatoriaus-paslaugos/1440/segment-002400.jpg`: service-specific prompts beside the form.
 3. `vensland.lt/paslaugos__vejos-irengimas/1440/first-viewport.jpg`: hero with the house visible, to compare with #4.
 4. `vensland.lt/home/1440/first-viewport.jpg`: compact form, covering the house.
-5. `vensland.lt/paslaugos/1440/segment-004800.jpg`: real gallery beside the over-weighted rating panel.
+5. `vensland.lt/home/1440/segment-004800.jpg`: replacement viewed this pass; real gallery above the over-weighted rating panel.
 6. `vensland.lt/paslaugos__mini-ekskavatoriaus-paslaugos/390/first-viewport.jpg`: mid-word H1 break.
 
-## 6. Remaining work (lead)
-- Recapture `home` and `vilnius` so scroll reveal completes.
-- Rerun interactions on one service page, at 360, and for the Kontaktai CTA at 390. Step 2 needs a way to display it without submitting.
-- Full-size views still owed: first viewports listed in section 1, `kontaktai/1440/segment-002400.jpg`, `mini/1440/segment-004800.jpg`, the remaining `home` and `mini` frames, and `vilnius` once recaptured.
-- Recapture `aciu` and the 404 probe if current versions are needed.
+## 6. Exact residual gaps (lead)
+- **No first-viewport gaps remain among the named representative pages in the table**, counting inherited first viewports. Replacement desktop first viewport of `home` and both first/segments of `trakai` were not reopened; `paslaugos` replacement desktop segments were not reopened. Their prior viewed flags/counts must not be treated as fresh validation of replacement files.
+- **Partial mobile pages:** `home/390` has 12/21 frames outstanding; `paslaugos__mini-ekskavatoriaus-paslaugos/390` has 4/10 outstanding. I do not know the exact remaining filenames: the preceding report records counts only, and raw record `viewed` flags are false even for known viewed pages. Reconcile the previous analyst's image-view history before opening more; do not assume the first N were viewed. No ambiguous frame was reopened in this pass.
+- **Only prior-sheet coverage:** localities `avizieniai`, `juodsiliai`, `lentvaris`, `maisiagala`, `nemencine`, `pagiriai`, `rudamina`; services `paslaugos__apleistu-sklypu-tvarkymas`, `paslaugos__gyvatvoriu-sodinimas-prieziura`, `paslaugos__vejos-aeravimas-core`, `paslaugos__vejos-skarifikavimas`, `paslaugos__vejos-tresimas-purskimas`, `paslaugos__zoles-pjovimas`. No new full-size coverage claimed for these 13 pages.
+- **Capture limitations:** Vilnius mobile remains faded at offsets 002532–004220 and blank at 005064/005908 even after its 11:20Z replacement. Sticky FAQ desktop media is absent on the inspected home/locality captures; the contact desktop sticky form was already evidenced by its first viewport/interactions. Earlier home mobile artefact evidence is inherited. Any recapture is lead-owned; none was performed here.
+- **Behaviour still unknown/current capture absent:** form step 2 visually, current service interactions, 360 width, Kontaktai CTA at 390 (timeout), `aciu` and the separate 404 probe. The captured author 404 is fully viewed at both widths; it does not replace those absent routes.
+- **Numbers/typography:** section 3 contains inherited computed values, not new measurements of child text styles. A parent H1 colour cannot establish the lime child span colour; the visible lime place line is screenshot evidence. Exact font family behind aliases remains unknown. No new metrics were inferred from parent computed styles.
+- No browser, recapture, submissions, delegated tasks or commits. Only this report was edited; all 12 external sheet flags were already true and were left unchanged. Lead verifies and commits.
