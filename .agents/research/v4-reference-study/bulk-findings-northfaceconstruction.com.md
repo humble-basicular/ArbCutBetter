@@ -107,3 +107,54 @@ Photo provenance: whether a photo is real company work or stock **cannot be esta
 
 ## Limitations
 Sheet previews are about 200 px wide per page: small text, logos and small defects are not readable, so no claim here about exact copy, official-mark files or alignment is verified. Headings quoted from sheets are large text only; those from record.json are marked. Full-size, first-viewport and interaction images remain unopened. Not whole-site-complete: 1 failed URL (`/blog/ridge-vent/`), orphan pages undiscoverable. The 1.4M pass-2 budget was an estimate based on pass 1's 78 sheets costing ~3.8M input, not measured for this pass; the stop signal reported 1,511,353.
+
+## Pass 3 — native full-size study (in progress, written incrementally)
+Method: 1440 files opened directly; 390 files opened as native 3-frame side-by-side strips (`/tmp/northface-strips/<slug>__390__NN.jpg`, built by `/tmp/nf-scripts/strips.py`; order = first-viewport, then segments ascending). Every display and its exact source files: `_sheets/northfaceconstruction.com/native-display-manifest.json`. All paths below relative to `northfaceconstruction.com/`.
+
+**Capture note, both widths, every page so far:** the 390 `segment-000000.jpg` still shows the fixed bottom bar (phone + "Schedule Appointment") over content, same as `first-viewport.jpg`; later 390 segments do not. The brief's "fixed UI hidden" is not true for segment 0 here. Saved sticky record (`bulk-interactions.json`, home/services/contact/projects/faq @390): `#masthead` 0–86 px + `#mobile-handler` top 722, height 122 → **208 px of 844 fixed (24.6 %)**, measured, both scroll fractions 0.3 and 0.7. @1440 header 110 px.
+
+### about (1440: fv + 2 segs; 390: 8/8 files)
+- Hero: "Made In Minnesota" 5-photo collage (team meal, family walk, crew at polar plunge, drone roof shot, roofer thumbs-up) on pale-blue diagonal; video pill with Josh's face "LEARN ABOUT NORTHFACE" (`about/1440/first-viewport.jpg`). Real-looking crew photos, casual, not staged.
+- Branded fleet group photo (~40 staff in grey polos with branded trucks) heading the story (`about/1440/segment-000000.jpg` y≈680–1030). Story text uses concrete dated facts: founded January 10th 2010, licence 2013, first employee 2017, 100 projects next year, 150 by 2019. **Copy:** dated milestones as proof instead of adjectives.
+- Founders card: Josh & Katie Swisher with baby, white card crossing a navy diagonal (`segment-000000.jpg` y≈1560–2000).
+- Then articles row (3 cards, dates 2025) → stock-looking couple-on-sofa CTA "Let's Make You a Customer for Life" (`about/1440/segment-002400.jpg` y≈905–1375) → footer.
+- 390: collage keeps 5 photos but the 3rd is cut by the right viewport edge (`about/390/first-viewport.jpg`, `segment-000000.jpg`); founders text centred in card. **Mobile footer** has logo, phone, email, 2 office cards, socials only; About/Resources/Services columns are gone (`about/390/segment-004220.jpg`, `-005064.jpg`). Confirms learnings §3 at native scale.
+- Footer @1440 (`about/1440/segment-002400.jpg` y≈1400–2000): 5 columns, 2 office cards with addresses, one phone (763) 433-2269 on this capture.
+
+### reviews (1440: fv + 2 segs; 390: 8/8)
+- Blue gradient header band "Hear From Our Happy Customers", then a 3-column masonry of 9 cards, each "Name | Google Review", 5 yellow stars, initials disc or photo avatar (`reviews/1440/segment-000000.jpg`).
+- **No Google logo, no aggregate numerical rating, no total review count, no link to the profile** anywhere on the page (both widths). "Google Review" is text only. Under rule 1 this is exactly the home-made form to avoid.
+- **Defect:** the first card "Michael W. | Google Review" carries FAQ copy, not a review: "Of course! Even if your insurance claim is approved, you will have an out-of-pocket deductible…" (`reviews/1440/first-viewport.jpg` y≈660–745; same at 390 `reviews/390/segment-000000.jpg`). Fabricated-looking proof; a warning for ArbCut rule 3.
+- 390: single column, 9 cards ≈ 5 screens; reviews stay visible (rule 24 ok).
+
+### team (1440: fv + 3 segs; 390: 10/10)
+- Blue header band "Meet the Northface Team" → the same fleet group photo as about → "Big or Small, We Build Them All" paragraph → "Get To Know Our Team" 3-column grid of **8** cards over a navy diagonal (`team/1440/segment-000000.jpg` y≈1080–2000, `segment-002400.jpg` y≈0–380).
+- 7 of 8 headshots share one shoot: outdoor green bokeh, black polo with GAF "Master Elite" patch + Northface logo, several in branded caps. **Copy:** a uniform shoot is what makes staff photos read as one brand; the GAF patch is a real third-party mark worn, not a badge drawn.
+- **Avoid:** 8th card (Joey Langemeier) is a black-and-white formal/wedding photo (`team/1440/segment-002400.jpg` y≈0–300), breaking the set. "+" expanders on 5 of 8 cards only (Dylan, Jeff, Brian have none): inconsistent affordance. The expand state is not captured.
+- 390: "Get To Know Our **Team**" — the second line "Team" is overlapped/clipped by the navy diagonal (`team/390/segment-000844.jpg` y≈430–500, in strip `team__390__00.jpg` pane 3). **Confirmed real at native scale** (rule 18 analogue: decoration must not cover a heading).
+
+### Saved interaction records (metrics read; 0 of 100 interaction images opened)
+From `bulk-interactions.json` (5 pages × 2 widths) and `bulk-interactions-fix.json`:
+- **Successful records (status done):** forms, sliders (home/services: carousel text changed t0→t5), sticky, hover, motion; fix-pass desktop dropdowns (About/Services/Resources, `home-fix/1440/dropdown-1..3.jpg`) and fix-pass mobile menu (`home-fix/390/mobile-menu-1-open.jpg`). Visual success of these states is **not verified**: images unopened.
+- **Errors / attempts:** first-pass desktop-dropdowns @1440 and mobile-menu @390 on all 5 pages, plus CTA on home/contact, ended "browser.newContext: Target page… closed". `round2-*` folders are empty. FAQ and gallery checks "not-present" everywhere (no accordion/lightbox control matched), so FAQ toggles seen on sheets are untested.
+- Forms (home, contact): 8 fields — Name*, Phone*, Email*, Zip Code*, service select, "How you heard" select, consent checkbox, submit (+ Facebook/Comments text). **No field has `required`**; empty and invalid states both returned `valid: true, messages: []`, i.e. no native validation; any JS validation not captured. Inconclusive for the visible state until `05/06-form-*` images are viewed.
+- Hover: yellow `#EDB32B` button → mid-blue `#5784E1` with white text; cards and nav show no hover change.
+- Motion: no running animations normally; reduced-motion shows short CSS transitions (0.01 s). No scroll-reveal opacity < 1 recorded.
+- Header phone differs per load in saved text: (763) 284-8603, 265-7544, 292-2340, while page captures show 433-2269 — consistent with the number-rotation observation above (still inference).
+- Not available: 360 width, keyboard focus order, live validation messages, motion over time (only two frames).
+
+## Coverage (after pass 3, budget stop)
+| Item | Status |
+|---|---|
+| Contact sheets | 108/108 (passes 1–2), not reopened |
+| Pages closed at native size, every first viewport + all segments, both widths | **3: about, reviews, team** (36 source files via 20 displays) |
+| Home | Not reopened in pass 3. Prior study viewed a **different, earlier live capture** (`/tmp/arbcut-v4-deep-hook/panels/northface__home__1440__00–07.jpg`, fresh mobile m00–m28, `../v4-hook-deep-study.md` §"Northface fresh mobile + desktop recovery"); bulk files `home/*` remain unopened |
+| Interaction images | 0/100 opened; records read (above) |
+| Remaining exact queue | `_sheets/northfaceconstruction.com/native-progress.json`: **94 pages, 1,805 files**, with original flags/reasons; plus 100 interaction images |
+| Capture artefacts | 390 segment-000000 includes fixed bottom bar (seen on all 3 pages); blank bands, 336-px bands, schedule-appointment iframe still unchecked |
+| Failed / not captured | `/blog/ridge-vent/` (1440 redirect loop); 360 width; orphan pages |
+
+Next pages in priority: contact, schedule-appointment (iframe), services, projects, projects__the-browns-exterior-remodel, financing, careers, faq, one 404, then two-per-type examples (`roofing`, `siding__minnetonka`, `gutters__lino-lakes`, `blog__window-insulation`, `blog__siding-color-trends`) and the interaction images `home-fix/*`, `contact-_contact_/*/0[3-6]-form-*`.
+
+### Lead verification of pass3
+Manifest20displays/36sourcesverifiedallpresent;leadopenedreviews/1440/first-viewport.jpg directly. CardsDOshowfivegoldstars,soabovewordingclarifiedtoabsentaggregateNUMERICALrating,totalcount/profilelink. FirstMichaelW.carddoescontaininsurance-deductible/financingFAQ-likecopy;thisconfirmscapturedcontentmismatch,notitslivecauseoractualreviewauthenticity. Threepagepairs remainboundedpartial;94nativepages/100savedinteractionimagespendingpermanifest.
