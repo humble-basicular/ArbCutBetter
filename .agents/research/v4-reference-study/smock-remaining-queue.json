@@ -1,12 +1,7 @@
 {
   "scope": "Every individual URL; no template substitutions",
-  "remainingDocuments": 248,
-  "remainingServices": [
-    "https://smockhvac.com/humidifiers/",
-    "https://smockhvac.com/hvac/",
-    "https://smockhvac.com/indoor-air-quality/",
-    "https://smockhvac.com/water-heater-replacement/"
-  ],
+  "remainingDocuments": 244,
+  "remainingServices": [],
   "remainingOtherRecords": [
     "https://smockhvac.com/about/",
     "https://smockhvac.com/assessment-results/",

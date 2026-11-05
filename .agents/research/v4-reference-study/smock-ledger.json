@@ -31,9 +31,9 @@
       "water-heater-replacement locality (URL classification; unverified template)": 10
     },
     "capturedWidths": 42,
-    "viewedWidths": 38,
-    "viewedSegments": 331,
-    "viewedSheets": 151
+    "viewedWidths": 42,
+    "viewedSegments": 363,
+    "viewedSheets": 166
   },
   "urls": [
     {
@@ -13304,7 +13304,7 @@
           "width": 1440,
           "status": 200,
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "interacted": false,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440/record.json",
           "documentHeight": 6448,
@@ -13313,19 +13313,19 @@
               "file": "segment-000000.jpg",
               "y": 0,
               "height": 2400,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-002400.jpg",
               "y": 2400,
               "height": 2400,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-004800.jpg",
               "y": 4800,
               "height": 1648,
-              "viewed": false
+              "viewed": true
             }
           ],
           "sheets": [
@@ -13335,7 +13335,7 @@
                 "first-viewport.jpg",
                 "segment-000000.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-1.jpg",
@@ -13343,7 +13343,7 @@
                 "segment-002400.jpg",
                 "segment-004800.jpg"
               ],
-              "viewed": false
+              "viewed": true
             }
           ],
           "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/1440",
@@ -13353,7 +13353,7 @@
           "width": 390,
           "status": 200,
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "interacted": false,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390/record.json",
           "documentHeight": 9351,
@@ -13363,84 +13363,84 @@
               "y": 0,
               "height": 844,
               "actualScrollY": 0,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-000844.jpg",
               "y": 844,
               "height": 844,
               "actualScrollY": 844,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-001688.jpg",
               "y": 1688,
               "height": 844,
               "actualScrollY": 1688,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-002532.jpg",
               "y": 2532,
               "height": 844,
               "actualScrollY": 2532,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-003376.jpg",
               "y": 3376,
               "height": 844,
               "actualScrollY": 3376,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-004220.jpg",
               "y": 4220,
               "height": 844,
               "actualScrollY": 4220,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-005064.jpg",
               "y": 5064,
               "height": 844,
               "actualScrollY": 5064,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-005908.jpg",
               "y": 5908,
               "height": 844,
               "actualScrollY": 5908,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-006752.jpg",
               "y": 6752,
               "height": 844,
               "actualScrollY": 6752,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-007596.jpg",
               "y": 7596,
               "height": 844,
               "actualScrollY": 7596,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-008440.jpg",
               "y": 8440,
               "height": 844,
               "actualScrollY": 8440,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-009284.jpg",
               "y": 9284,
               "height": 67,
               "actualScrollY": 8507,
-              "viewed": false
+              "viewed": true
             }
           ],
           "sheets": [
@@ -13451,7 +13451,7 @@
                 "segment-000000.jpg",
                 "segment-000844.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-1.jpg",
@@ -13460,7 +13460,7 @@
                 "segment-002532.jpg",
                 "segment-003376.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-2.jpg",
@@ -13469,7 +13469,7 @@
                 "segment-005064.jpg",
                 "segment-005908.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-3.jpg",
@@ -13478,14 +13478,14 @@
                 "segment-007596.jpg",
                 "segment-008440.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-4.jpg",
               "members": [
                 "segment-009284.jpg"
               ],
-              "viewed": false
+              "viewed": true
             }
           ],
           "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/indoor-air-quality/390",
@@ -14190,7 +14190,7 @@
           "width": 1440,
           "status": 200,
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "interacted": false,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440/record.json",
           "documentHeight": 7906,
@@ -14199,25 +14199,25 @@
               "file": "segment-000000.jpg",
               "y": 0,
               "height": 2400,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-002400.jpg",
               "y": 2400,
               "height": 2400,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-004800.jpg",
               "y": 4800,
               "height": 2400,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-007200.jpg",
               "y": 7200,
               "height": 706,
-              "viewed": false
+              "viewed": true
             }
           ],
           "sheets": [
@@ -14227,7 +14227,7 @@
                 "first-viewport.jpg",
                 "segment-000000.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-1.jpg",
@@ -14235,14 +14235,14 @@
                 "segment-002400.jpg",
                 "segment-004800.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-2.jpg",
               "members": [
                 "segment-007200.jpg"
               ],
-              "viewed": false
+              "viewed": true
             }
           ],
           "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/1440",
@@ -14252,7 +14252,7 @@
           "width": 390,
           "status": 200,
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "interacted": false,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390/record.json",
           "documentHeight": 10470,
@@ -14262,91 +14262,91 @@
               "y": 0,
               "height": 844,
               "actualScrollY": 0,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-000844.jpg",
               "y": 844,
               "height": 844,
               "actualScrollY": 844,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-001688.jpg",
               "y": 1688,
               "height": 844,
               "actualScrollY": 1688,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-002532.jpg",
               "y": 2532,
               "height": 844,
               "actualScrollY": 2532,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-003376.jpg",
               "y": 3376,
               "height": 844,
               "actualScrollY": 3376,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-004220.jpg",
               "y": 4220,
               "height": 844,
               "actualScrollY": 4220,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-005064.jpg",
               "y": 5064,
               "height": 844,
               "actualScrollY": 5064,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-005908.jpg",
               "y": 5908,
               "height": 844,
               "actualScrollY": 5908,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-006752.jpg",
               "y": 6752,
               "height": 844,
               "actualScrollY": 6752,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-007596.jpg",
               "y": 7596,
               "height": 844,
               "actualScrollY": 7596,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-008440.jpg",
               "y": 8440,
               "height": 844,
               "actualScrollY": 8440,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-009284.jpg",
               "y": 9284,
               "height": 844,
               "actualScrollY": 9284,
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "segment-010128.jpg",
               "y": 10128,
               "height": 342,
               "actualScrollY": 9626,
-              "viewed": false
+              "viewed": true
             }
           ],
           "sheets": [
@@ -14357,7 +14357,7 @@
                 "segment-000000.jpg",
                 "segment-000844.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-1.jpg",
@@ -14366,7 +14366,7 @@
                 "segment-002532.jpg",
                 "segment-003376.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-2.jpg",
@@ -14375,7 +14375,7 @@
                 "segment-005064.jpg",
                 "segment-005908.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-3.jpg",
@@ -14384,7 +14384,7 @@
                 "segment-007596.jpg",
                 "segment-008440.jpg"
               ],
-              "viewed": false
+              "viewed": true
             },
             {
               "file": "sheet-4.jpg",
@@ -14392,7 +14392,7 @@
                 "segment-009284.jpg",
                 "segment-010128.jpg"
               ],
-              "viewed": false
+              "viewed": true
             }
           ],
           "evidenceDirectory": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/water-heater-replacement/390",

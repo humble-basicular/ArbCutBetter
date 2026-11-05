@@ -123,3 +123,5 @@
 - Lead direct batch complete: furnace-repair,furnace-replacement,heat-pump-maintenance at1440/390,24sheets/52segments individually viewed. Totals14documents/28widths/245segments/112sheets;251documents remain. No captured-only backlog. Account codex80% at09:43UTC; hand over to compatible codex2 with GPT6.1Solhigh preserved. Latest alternative reading0%session/28%weekly09:21UTC is older,not a fresh measurement. No new substantial work on current account.
 
 - Account-continuation owner Codex2 GPT-6.1-Sol high, sequential exclusive worktree research/arbcut-v4-reference-study. Live Codex2 usage0%session/28%weekly09:47UTC. Remaining exact service URLs first, then all other documents; no fanout/review until whole site complete. Parent makes no concurrent edits.
+
+- Account-continuation service milestone: all20inventoriedSmockservice/categoryURLs individuallyopened1440/390;total21documents/42widths/363segments/166sheets.244known documents plus states/KML/interactions remain. Next/about/,assessment-results,blog;no interimreview,no sourceedits.

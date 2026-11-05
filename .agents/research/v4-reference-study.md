@@ -82,3 +82,7 @@ New seen differences:categorypage prioritises5linkedservicecards;ductless-ac use
 ### Account continuation milestone
 
 Exact ledger now17documents/34widths/296segments/135opened sheets, including heat-pump repair,replacement and heating. All numbered sheets at1440/390 actually opened.248known documents remain; no captured-only backlog at this commit. Next humidifiers,hvac,indoor-air-quality,water-heater-replacement; fourremainingservices,then allotherdocuments/localities/articles. Discovery268records remains provisional. No interim review or website changes.
+
+### All inventoried service URLs individually inspected
+
+Smock21documents/42widths/363segments/166opened sheets/42firstviewports. Home plus all20inventoriedservices/categories now seen in full at1440/390; no representative substitutions.244known documents remain(24localities,200articles,20otherdocuments),plus2shopstates/KML/interactions. Inventory268records remains provisional. Next/about/,/assessment-results/,/blog/. [Individual rows](v4-reference-study/smock-findings.md#account-continuation--individually-opened-complete-routes) record distinctions and limitations. Checks pass; final review only when entire site done.
