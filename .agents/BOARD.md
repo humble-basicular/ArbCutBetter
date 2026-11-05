@@ -299,3 +299,5 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 ## Ordinal21 — Greentek final result / no active workers / safe checkpoint
 - GreentekFINALretry2terminalPARTIAL12completepairs89/404displays160sources;66/66interactiondisplays85directsources13verifiedbytecopies=98,0unseen. Leadallpaths/flags/partitions/13duplicateequalitiesverified,nofreshleadvisualpass.200pages3597sourcefiles/315prepareddisplaysremaining;oneoffs11/templateexamples14/outliers12/residual163. LEADOWNEDafterretrycap,NOthirdchildretry. Allworkers terminal/noactivechildren.
 - Codex90%22:41UTC,codex2last97%,no newsubstantialCodexwork. CheckpointpreservesGPT6.1Sol/high;earliestlistedcompatibleCodexreset01:24:17UTC,then02:40UTC. Claude90%/Claude294%session93%weekly;nonewlargeClaude stages. RequiredClaudeOpus5.5mediumdesign/frontendstillwaitsverifiedresearchsynthesisanditscompatibleallowance.
+
+- Ordinal22: resume-index metadata consolidated at 04a3d41;8 current manifests parsed/hashed, no coverage changed. No active workers, lead95%checkpoint; source ordinal21 queues remain.

@@ -1,0 +1,5 @@
+# ArbCut ordinal22 allowance checkpoint
+Whole objective unfinished; no active workers.
+Resume index committed at 04a3d41: `.agents/research/v4-reference-study/research-resume-index.json`. Eight current manifest paths parsed and SHA256 recorded; source ordinal21 handoff retains full queues/IDs/constraints. Metadata consolidation only, no new pixels inspected, no gate waived or completed. All native research residue/synthesis/designbrain/frontend/acceptance/review/localpreview remain as ordinal21.
+
+Codex95% warning22:43UTC, codex2last97%;no substantial work started. PinnedleadGPT6.1Sol/highcodex/codex2. Earliest listed compatible reset01:24:17UTCcodex2 (03:24Vilnius),then02:40UTCcodex. RequiredClaudeOpus5.5mediumdesign stage still afterverifiedsynthesis;no provider/model substitution,paid calls or new threads. Continuation checkpoint with exact remainingWork recorded after this commit. Read this index and ordinal21 handoff first at recovery; refresh actual allowance, don't loop new unchanged checkpoints or start duplicate workers.
