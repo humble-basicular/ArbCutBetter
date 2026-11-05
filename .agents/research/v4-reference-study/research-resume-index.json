@@ -1,0 +1,98 @@
+{
+  "generatedAtUTC": "2026-11-05T22:44:14.696845+00:00",
+  "objectiveStatus": "unfinished",
+  "activeWorkers": [],
+  "scope": "Resume index only, compiled from ordinal21 handoff plus currently present metadata. No image inspections or pending gates waived. Counts in status descriptions are inherited verified milestones, not new visual review.",
+  "sourceHandoff": ".agents/handoffs/2026-11-06-ordinal21-final-worker-checkpoint.md",
+  "sites": [
+    {
+      "site": "greentekroofing.com",
+      "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/greentekroofing.com/native/native-progress.json",
+      "sha256": "0dcf82948a72ab6f1fca500f7796462ac949c78a24b6c76026bd52a1031cd290",
+      "owner": "lead",
+      "status": "retry cap exhausted;12 pairs,98 interaction JPGs accounted;200 pages3597files pending",
+      "nativeGateOpen": true,
+      "report": ".agents/research/v4-reference-study/bulk-findings-greentekroofing.com.md"
+    },
+    {
+      "site": "theglassperts.com",
+      "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/theglassperts.com/native/page-manifest.json",
+      "sha256": "9b9fbff58d04ffeaf1a9977271e18acb842b1ad2c263393b083ac92f29373a75",
+      "owner": "lead",
+      "status": "retry cap exhausted;9 pairs,94 interactions;96 queue entries25prepared displays pending",
+      "nativeGateOpen": true,
+      "report": ".agents/research/v4-reference-study/bulk-findings-theglassperts.com.md"
+    },
+    {
+      "site": "veteranscontractingllc.com",
+      "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/veteranscontractingllc.com/native-stage-remaining.json",
+      "sha256": "41a727e4195307c7267aee16c9d1b31f3ed3d6d8d0e1efd34a11f520270c8f84",
+      "owner": "lead",
+      "status": "retry cap exhausted;32pairs98interactions;22selected+29refinement candidates pending",
+      "nativeGateOpen": true,
+      "report": ".agents/research/v4-reference-study/bulk-findings-veteranscontractingllc.com.md"
+    },
+    {
+      "site": "callthelen.com",
+      "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/callthelen.com/native/native-stage-remaining.json",
+      "sha256": "e09e890109c5750b0ec8b5a82170b0d13448bba1966cc0484725262c6fc756bd",
+      "owner": "lead",
+      "status": "retry cap exhausted;10pairs61interactions;39pages333displays pending",
+      "nativeGateOpen": true,
+      "report": ".agents/research/v4-reference-study/bulk-findings-callthelen.com.md"
+    },
+    {
+      "site": "northfaceconstruction.com",
+      "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/northfaceconstruction.com/native-progress.json",
+      "sha256": "a8dc3fc49aa9d10fabba3f1ddb7d005c7854a7a462f422a6431a4d65e251ce2d",
+      "owner": "lead",
+      "status": "retry cap exhausted;12pairs100interactions;85pages1695files pending",
+      "nativeGateOpen": true,
+      "report": ".agents/research/v4-reference-study/bulk-findings-northfaceconstruction.com.md"
+    },
+    {
+      "site": "smockhvac.com",
+      "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/smockhvac.com/native/progress.json",
+      "sha256": "4ef336abccb3230d79addf8cce5ec2d51a8002ce2030d79d5680641f9272974f",
+      "owner": "lead",
+      "status": "retry cap exhausted;29freshpairs+30historical,114interactions;product-comparison/archive gates pending",
+      "nativeGateOpen": true,
+      "report": ".agents/research/v4-reference-study/bulk-findings-smockhvac.com.md"
+    },
+    {
+      "site": "genzryan.com",
+      "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/genzryan.com/native/native-remaining.json",
+      "sha256": "adf6e13f90373a002427c7941dcb80f04f6711d3d3671772017206852ce9e536",
+      "owner": "lead or authorized retry1",
+      "status": "initial terminal,2retries available;8newpairs69interactions;160pages2790files pending,56prepared displays",
+      "nativeGateOpen": true,
+      "report": ".agents/research/v4-reference-study/bulk-findings-genzryan.com.md"
+    },
+    {
+      "site": "puetzconstruction.com",
+      "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/puetzconstruction.com/view-progress.json",
+      "sha256": "bbeeffef87205f0fa5e5a1d71c73a5affa52cf37aacf5829b8835e987f4f18df",
+      "owner": "lead",
+      "status": "prior retry cap;151saved interactions inspected;semantic/provenance acceptance remains",
+      "nativeGateOpen": true,
+      "report": ".agents/research/v4-reference-study/bulk-findings-puetzconstruction.com.md"
+    }
+  ],
+  "globalPending": [
+    "baseline/Bears iframe patch/Puetz acceptance dispositions",
+    "semantic one-offs, two differing examples per real template, actual outliers; do not equate URL bins with designs",
+    "verified cross-site synthesis",
+    "required Claude Opus5.5/medium design brain and implementation spec",
+    "complete preserved37route frontend",
+    "Codex acceptance checks, other-engine review, local noindex preview"
+  ],
+  "leadRouting": {
+    "driver": "codex",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "high",
+    "eligibleInstanceIds": [
+      "codex",
+      "codex_codex2"
+    ]
+  }
+}
