@@ -1,0 +1,47 @@
+# Puetz: blog, article and locality evidence
+
+Partial second US milestone. Five additional routes viewed through the footer at both 1440×900 and 390×844: **10 page/width records, 47 document segments and 10 first viewports**. With the [initial eight inner routes](puetz-inner-pages.md), fresh Puetz evidence totals **13 routes, 26 page/width records and 94 document segments**. The earlier homepage is separate. Twelve other captured routes remain unviewed. No submissions.
+
+Evidence root `P` = `/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/`. Each route/width contains first-viewport, ordered 2400px segments, stitched preview, labelled sheets and DOM/style metadata in `record.json`. All numbered sheets specified below were opened in original detail, not merely generated. Grey areas beyond the bottom of a segment in a sheet are sheet padding, not website whitespace.
+
+## Blog hub: /blog/
+
+Evidence: `P/blog/{1440,390}/sheet-{0,1}.jpg`; [desktop opening](puetz-blog-desktop.jpg). Heights 4,294/7,782px.
+
+Desktop opens with a featured storm-damage article on a large, darkened fallen-tree/roof photograph: small ribbon, author/read-time metadata, display heading, excerpt and Learn More. This is an editorial entry point, without the service-page form. Topic buttons follow, then nine image-led article cards in three columns, Load More, crew CTA and the common footer. Each card carries a clear title, author/read time, short excerpt and small action. Mobile moves the feature photograph above the centred text, then stacks cards into one column. The same display font, navy selected buttons, tan ribbon and crew/footer system keep it recognisably Puetz.
+
+Judgement: the feature-plus-index composition communicates that this is a reading resource, while the photographs make topics concrete. But the category taxonomy is visibly untidy: several near-duplicates for decking, commercial roofing and windows. On mobile these numerous filter buttons take a substantial block before the first ordinary card. A useful index needs a short, coherent taxonomy, not every historical tag exposed as a category. Filtering and Load More were not exercised on this route.
+
+## Two complete article examples
+
+Evidence: `P/blog__andersen-windows-cost/{1440,390}/sheet-{0,1,2}.jpg` and `P/blog__composite-decking-vs-wood/{1440,390}/sheet-{0,1,2}.jpg`. [Mobile opening](puetz-article-mobile.jpg), [mobile price table segment](puetz-comparison-mobile.jpg). Heights respectively 10,463/12,688px and 11,231/14,221px.
+
+Both share the same article shell: wide subject photograph → white title panel overlapping its lower edge on desktop → author/date/read time → pale grey author biography with a small portrait → narrow article column → share controls → related reading → crew CTA/footer. Mobile removes the overlap and puts image, centred title and metadata in sequence. The author panel remains before the answer and becomes a long mobile block. No article-side lead form or sidebar is visible. Paragraphs, bullets, relevant inline photos and generous vertical gaps separate topics. Black display H2s differ from lighter uppercase Sen H3s. At 390, the captured article H1/H2 are 30px/36px line height, and H3 is 30px Sen/36px; those are measured styles in the records.
+
+The articles are genuinely different content examples within that shell. The windows article explains cost factors and has a three-column comparison table with four product-series rows, followed by savings and local considerations. The decking article compares seven dimensions through numbered subheadings and prose/bullets, then personal decision criteria and misconceptions. It has no summary comparison table. Their photographs depict the topic at useful reading-column width rather than decorating every paragraph with an icon. Related links change with subject, although the same featured storm-damage article appears in both tails.
+
+Judgement: a restrained reading column, clear headings and relevant photos give information room to be useful. The windows table makes alternatives directly comparable and its note explains what the displayed figures include; this is a stronger information pattern than the financing page's general pitch. At mobile width the table remains within the visible content width, but narrow columns make tall, heavily wrapped rows. A compact comparison summary deserves a deliberate mobile treatment. The screenshots do not establish price accuracy, current supplier terms or that these images show Puetz's own jobs.
+
+Weaknesses: the biography delays the actual answer by more than a mobile screen, and the two long articles have no visible linked contents/quick-answer block. Both become long reading journeys before the final CTA. The decking text's climate/location section names Lake City and then describes “Florida's climate”, inconsistent with this Minnesota site's context. This is observed copy inconsistency, not a fact-check of its technical claims. Visual polish and owner attribution do not guarantee editorial reliability.
+
+Reusable rule: keep article identity consistent while supporting the actual information format—cost table, comparison, how-to, examples. Put a useful answer and orientation early; keep author credibility available without making it an obstacle. Price presentation can be learned here, but a dedicated public service-pricing page remains unstudied.
+
+## Two locality pages: /roofing/winona/ and /roofing/rochester/
+
+Evidence: `P/roofing__winona/{1440,390}/sheet-{0,1,2}.jpg`; `P/roofing__rochester/1440/sheet-{0,1,2}.jpg` and `/390/sheet-{0,1}.jpg`. [Winona opening](puetz-winona-desktop.jpg), [Rochester mobile middle](puetz-rochester-mobile.jpg). Heights 9,581/13,308px and 7,986/11,747px.
+
+Common family: localised ribbon/H1 and display sales heading over a different house photograph for each town; three compact claim rows; a white enquiry form on the right; pale drawing background. Mobile separates the photo strip, black copy/claim rows and form. Process cards, testimony ribbons, locality/map region, related reading and crew/footer components recur. This supports a shared visual system, not identical content order.
+
+Winona is more service-specific: storm/insurance repair band, repair-versus-replace explanation with work photo, process, a local-climate band, roof-work explanation, three roof-project images, locality region, five local FAQ prompts, roof-related articles and closing CTA. Rochester instead follows its opening with a general experience pitch and snowy framing photo, three broader service cards, process, a long four-reasons construction-company essay, locality region, blog and closing CTA. It does not show Winona's local FAQ or recent-project module. Calling every roofing locality an identical template would conceal a material difference.
+
+Judgement: Winona gives a visitor more explicit decision help and service evidence than Rochester's generic benefits essay. The useful principle is meaningful local/service content inside a coherent system. It does not prove the photographed house or projects belong to that locality, or verify the licence, response-time, supplier or insurance claims. Do not turn company claims into independently certified facts.
+
+Capture caveats: both locality captures show a tall, repeated, unevenly sized vertical stack of manufacturer marks, including duplicates. The Winona mobile storm-inspection button also runs beyond the visible right edge. The raised locality/map rectangle remains blank. These are observed rendered states. Carousel initialisation, overflow width and map loading have not been diagnosed; **do not adopt them as intentional layout or conclude the source site always looks this way**. The stacked marks need a normal live-state check before the site is judged on that area. No request blocking or animation suppression was used by the capture script; only content visibility was forced and fixed/sticky overlays hidden after the original first viewport.
+
+Reusable rule: a locality page needs specific local decision help and relevant work/proof, while retaining the service site's typography, imagery and component language. A city-name substitution alone cannot supply that substance. Preserve all required locality links in ArbCut regardless of this reference's mobile footer omissions.
+
+## Exact limits and next evidence
+
+[Ledger](puetz-ledger.json): 245 URL rows; 241 sitemap entries include one excluded KML; four additional legal/probe entries. Fifty fresh page/width records captured, 26 viewed; the remaining **24 page/width records are captured only**. Representative mappings for unviewed URLs remain empty. Two viewed article examples and two viewed locality examples establish differences, not coverage of all 162 articles or all locality variants.
+
+Next unviewed unique route: `/services/`, then `/commercial/`, `/decks-patios/`, `/siding/`, `/remodels-additions/`, `/leadership/`, `/careers/`, `/instant-roof-estimate/`, `/privacy-policy/`, `/accessibility/`, `/sms-terms/`, and the actual 404 probe. All already have sheets in the durable store. Discover any additional unique page types from the exact inventory; do not infer completion from this batch. Motion/reduced-motion, the 360px menu, complete filter results, estimator interaction, validation, success and map states remain incomplete. No thank-you URL is known. Independent review is pending.

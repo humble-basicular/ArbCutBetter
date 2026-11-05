@@ -131,14 +131,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog/1440/record.json",
           "height": 4294,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog/390/record.json",
           "height": 7782,
           "error": null
@@ -146,7 +146,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/blog/andersen-100-series-windows/",
@@ -203,14 +203,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__andersen-windows-cost/1440/record.json",
           "height": 10463,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__andersen-windows-cost/390/record.json",
           "height": 12688,
           "error": null
@@ -218,7 +218,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/blog/architectural-shingles-vs-3-tab/",
@@ -947,14 +947,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__composite-decking-vs-wood/1440/record.json",
           "height": 11231,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__composite-decking-vs-wood/390/record.json",
           "height": 14221,
           "error": null
@@ -962,7 +962,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/blog/condensation-on-windows/",
@@ -5363,14 +5363,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/roofing__rochester/1440/record.json",
           "height": 7986,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/roofing__rochester/390/record.json",
           "height": 11747,
           "error": null
@@ -5378,7 +5378,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/roofing/st-charles/",
@@ -5435,14 +5435,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/roofing__winona/1440/record.json",
           "height": 9581,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/roofing__winona/390/record.json",
           "height": 13308,
           "error": null
@@ -5450,7 +5450,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/services/",
