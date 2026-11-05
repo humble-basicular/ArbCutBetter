@@ -1,5 +1,8 @@
 # ArbCut v4 — whole-site reference study
 
+> **User scope correction, 5 Nov: EVERY public page, individually.** The original permission to sample templates is superseded. Every service, locality, article and other public page on the agreed domains requires full capture AND actual readable inspection at1440/390 through footer. No representative mappings substitute for reviewed URLs. Puetz35fresh routes/246discovered URLs is PARTIAL literal URL coverage, never a completed site; prior “initial page-type pass” describes only a partial milestone. Smock remains incomplete until every discovered public page is inspected. Canonical duplicates require evidence; none assumed. Wider backlog includes remaining Puetz and all agreed reference domains. Success pages must not be discovered by submission.
+
+
 Status: **IN PROGRESS; US-led synthesis pending.**
 
 ## Direction from the user
@@ -55,3 +58,11 @@ These are design judgements supported by Puetz evidence, awaiting comparison wit
 | Prices/success | I do not know: no verified public service-price or success-page reference from Puetz. Financing is not transparent pricing; no submission was made. | [Financing](v4-reference-study/puetz-inner-pages.md) |
 
 Puetz's particular navy/red/tan, construction drawings, ribbons, supplier set and regional copy are trade/brand choices, not a visual prescription for arborists. Shared type/colour/photo treatment creates coherence; repeated identical page composition does not establish quality. Later sources must test these provisional rules.
+
+## Smock — exhaustive URL coverage, partial
+
+[Individually inspected pages and findings](v4-reference-study/smock-findings.md), [exact URL/width ledger](v4-reference-study/smock-ledger.json), [public discovery sources](v4-reference-study/smock-discovery.json). Ordinary T3 preview and headed Chrome load successfully; historic headless403 is not current whole-site inaccessibility. Current discovery union:268URL records =265document URLs,2distinct shop fragment states,1KML resource. No canonical duplicates assumed. Sitemap200posts/63pages/1KML; nav adds legal links and app states. Every article/locality remains individually queued.
+
+First coherent batch: homepage,AC replacement,air cleaning,each at1440/390,fully opened through footer:3document URLs/6widths/59segments/26sheets. No interactions claimed. Mobile CDP layout defect is superseded with actual scrolled-viewport captures; failed attempt preserved outside counts. A second service batch proceeds in lexical service order; none is marked viewed until its actual sheets are opened. Site remains partial; no representative credit and no conversion claims.
+
+Seen home/service comparison supports shared visual vocabulary with page-specific content, while missing mobile footer columns and long repeated promotional blocks recur in Puetz. Smock's red curves, equipment,maintenance plans and coupons belong to its HVAC identity. Every remaining service and all other public URLs still require inspection; page-type similarity does not close a URL. Final site review belongs to lead, not requested by worker.
