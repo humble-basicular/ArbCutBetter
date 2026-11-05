@@ -1,0 +1,1698 @@
+{
+ "brief": ".agents/handoffs/2026-11-05-1205-bulk-capture-brief.md",
+ "sites": {
+  "veteranscontractingllc.com": {
+   "origin": "https://veteranscontractingllc.com",
+   "sitemaps": [],
+   "urls": {
+    "granule-loss": {
+     "url": "https://veteranscontractingllc.com/granule-loss/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/granule-loss/"
+    },
+    "best-roof-shingles": {
+     "url": "https://veteranscontractingllc.com/best-roof-shingles/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/best-roof-shingles/"
+    },
+    "smart-financing-for-your-roof-replacement-with-service-finance-company": {
+     "url": "https://veteranscontractingllc.com/smart-financing-for-your-roof-replacement-with-service-finance-company/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/smart-financing-for-your-roof-replacement-with-service-finance-company/"
+    },
+    "commercial-roof-maintenance": {
+     "url": "https://veteranscontractingllc.com/commercial-roof-maintenance/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/commercial-roof-maintenance/"
+    },
+    "from-combat-controller-to-contractor-how-daniel-roberts-found-his-next-mission-in-roofing": {
+     "url": "https://veteranscontractingllc.com/from-combat-controller-to-contractor-how-daniel-roberts-found-his-next-mission-in-roofing/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/from-combat-controller-to-contractor-how-daniel-roberts-found-his-next-mission-in-roofing/"
+    },
+    "blog": {
+     "url": "https://veteranscontractingllc.com/blog/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/blog/"
+    },
+    "best-siding-for-house": {
+     "url": "https://veteranscontractingllc.com/best-siding-for-house/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/best-siding-for-house/"
+    },
+    "roof-pitch": {
+     "url": "https://veteranscontractingllc.com/roof-pitch/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/roof-pitch/"
+    },
+    "roof-sheathing-thickness": {
+     "url": "https://veteranscontractingllc.com/roof-sheathing-thickness/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/roof-sheathing-thickness/"
+    },
+    "winter-proof-your-roof-and-gutters-how-to-prevent-ice-dams-and-cold-weather-damage": {
+     "url": "https://veteranscontractingllc.com/winter-proof-your-roof-and-gutters-how-to-prevent-ice-dams-and-cold-weather-damage/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/winter-proof-your-roof-and-gutters-how-to-prevent-ice-dams-and-cold-weather-damage/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 10
+   }
+  },
+  "greentekroofing.com": {
+   "origin": "https://greentekroofing.com",
+   "sitemaps": [],
+   "urls": {
+    "home": {
+     "url": "https://greentekroofing.com/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/"
+    },
+    "blog__emergency-roof-tarp-service-in-tampa-fast-protection-when-every-minute-counts": {
+     "url": "https://greentekroofing.com/blog/emergency-roof-tarp-service-in-tampa-fast-protection-when-every-minute-counts/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/emergency-roof-tarp-service-in-tampa-fast-protection-when-every-minute-counts/"
+    },
+    "blog__storm-damage-roof-repair-in-tampa-a-homeowners-guide-to-fast-recovery-in-2026": {
+     "url": "https://greentekroofing.com/blog/storm-damage-roof-repair-in-tampa-a-homeowners-guide-to-fast-recovery-in-2026/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/storm-damage-roof-repair-in-tampa-a-homeowners-guide-to-fast-recovery-in-2026/"
+    },
+    "blog__spring-roof-maintenance-checklist-for-tampa-bay-homeowners": {
+     "url": "https://greentekroofing.com/blog/spring-roof-maintenance-checklist-for-tampa-bay-homeowners/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/spring-roof-maintenance-checklist-for-tampa-bay-homeowners/"
+    },
+    "blog__types-of-roofs-florida": {
+     "url": "https://greentekroofing.com/blog/types-of-roofs-florida/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/types-of-roofs-florida/"
+    },
+    "blog__how-to-spot-hail-damage-on-a-florida-roof-and-what-insurance-will-cover": {
+     "url": "https://greentekroofing.com/blog/how-to-spot-hail-damage-on-a-florida-roof-and-what-insurance-will-cover/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/how-to-spot-hail-damage-on-a-florida-roof-and-what-insurance-will-cover/"
+    },
+    "blog__what-to-do-after-roof-storm-damage-in-florida-homeowner-checklist": {
+     "url": "https://greentekroofing.com/blog/what-to-do-after-roof-storm-damage-in-florida-homeowner-checklist/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/what-to-do-after-roof-storm-damage-in-florida-homeowner-checklist/"
+    },
+    "blog__does-homeowners-insurance-cover-roof-leaks-in-florida-what-every-homeowner-needs-to-know-in-2026": {
+     "url": "https://greentekroofing.com/blog/does-homeowners-insurance-cover-roof-leaks-in-florida-what-every-homeowner-needs-to-know-in-2026/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/does-homeowners-insurance-cover-roof-leaks-in-florida-what-every-homeowner-needs-to-know-in-2026/"
+    },
+    "blog__my-safe-florida-home-grant-how-to-apply-and-get-up-to-10000-in-2026": {
+     "url": "https://greentekroofing.com/blog/my-safe-florida-home-grant-how-to-apply-and-get-up-to-10000-in-2026/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/my-safe-florida-home-grant-how-to-apply-and-get-up-to-10000-in-2026/"
+    },
+    "blog__are-solar-panels-worth-it-in-florida-real-numbers-for-tampa-homeowners": {
+     "url": "https://greentekroofing.com/blog/are-solar-panels-worth-it-in-florida-real-numbers-for-tampa-homeowners/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/are-solar-panels-worth-it-in-florida-real-numbers-for-tampa-homeowners/"
+    },
+    "blog__blog-lutz-high-wind-fastening-patterns-for-asphalt-roofing": {
+     "url": "https://greentekroofing.com/blog/blog-lutz-high-wind-fastening-patterns-for-asphalt-roofing/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-lutz-high-wind-fastening-patterns-for-asphalt-roofing/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 11
+   }
+  },
+  "betonogaminiai.lt": {
+   "origin": "https://betonogaminiai.lt",
+   "sitemaps": [],
+   "urls": {
+    "home": {
+     "url": "https://betonogaminiai.lt/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/"
+    },
+    "paslaugos__transporto-paslaugos": {
+     "url": "https://betonogaminiai.lt/paslaugos/transporto-paslaugos/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/paslaugos/transporto-paslaugos/"
+    },
+    "apie-mus": {
+     "url": "https://betonogaminiai.lt/apie-mus/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/apie-mus/"
+    },
+    "betono-gaminiai__suliniu-ziedai": {
+     "url": "https://betonogaminiai.lt/betono-gaminiai/suliniu-ziedai/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/betono-gaminiai/suliniu-ziedai/"
+    },
+    "paslaugos__lietaus-nuoteku-surinkimo-sitemos": {
+     "url": "https://betonogaminiai.lt/paslaugos/lietaus-nuoteku-surinkimo-sitemos/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/paslaugos/lietaus-nuoteku-surinkimo-sitemos/"
+    },
+    "betono-gaminiai__betoniniai-suliniu-dangciai": {
+     "url": "https://betonogaminiai.lt/betono-gaminiai/betoniniai-suliniu-dangciai/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/betono-gaminiai/betoniniai-suliniu-dangciai/"
+    },
+    "paslaugos": {
+     "url": "https://betonogaminiai.lt/paslaugos/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/paslaugos/"
+    },
+    "kontaktai": {
+     "url": "https://betonogaminiai.lt/kontaktai/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/kontaktai/"
+    },
+    "betono-gaminiai": {
+     "url": "https://betonogaminiai.lt/betono-gaminiai/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/betono-gaminiai/"
+    },
+    "galerija": {
+     "url": "https://betonogaminiai.lt/galerija/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/galerija/"
+    },
+    "paslaugos__vietine-kanalizacijos-irengimas": {
+     "url": "https://betonogaminiai.lt/paslaugos/vietine-kanalizacijos-irengimas/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://www.betonogaminiai.lt/paslaugos/vietine-kanalizacijos-irengimas/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 11
+   }
+  },
+  "bearsplumbing.net": {
+   "origin": "https://bearsplumbing.net",
+   "sitemaps": [],
+   "urls": {
+    "blog__expert-tips-for-maintaining-your-water-lines-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/expert-tips-for-maintaining-your-water-lines-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/expert-tips-for-maintaining-your-water-lines-in-spring-tx/"
+    },
+    "home": {
+     "url": "https://bearsplumbing.net/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/"
+    },
+    "blog__10-signs-you-need-a-sewer-line-inspection-for-your-the-woodlands-tx-home": {
+     "url": "https://bearsplumbing.net/blog/10-signs-you-need-a-sewer-line-inspection-for-your-the-woodlands-tx-home/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/10-signs-you-need-a-sewer-line-inspection-for-your-the-woodlands-tx-home/"
+    },
+    "blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx": {
+     "url": "https://bearsplumbing.net/blog/5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/"
+    },
+    "blog__toilet-replacement-signs-the-woodlands-tx": {
+     "url": "https://bearsplumbing.net/blog/toilet-replacement-signs-the-woodlands-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/toilet-replacement-signs-the-woodlands-tx/"
+    },
+    "blog__signs-you-need-fast-water-heater-repair-in-magnolia-tx": {
+     "url": "https://bearsplumbing.net/blog/signs-you-need-fast-water-heater-repair-in-magnolia-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/signs-you-need-fast-water-heater-repair-in-magnolia-tx/"
+    },
+    "blog": {
+     "url": "https://bearsplumbing.net/blog/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/"
+    },
+    "blog__why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx/"
+    },
+    "blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/7-reliable-emergency-sewer-line-repair-options-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/7-reliable-emergency-sewer-line-repair-options-in-spring-tx/"
+    },
+    "blog__10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx/"
+    },
+    "blog__7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes": {
+     "url": "https://bearsplumbing.net/blog/7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes/"
+    },
+    "blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 12
+   }
+  },
+  "northfaceconstruction.com": {
+   "origin": "https://northfaceconstruction.com",
+   "sitemaps": [],
+   "urls": {
+    "blog__roof-scupper": {
+     "url": "https://northfaceconstruction.com/blog/roof-scupper/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/roof-scupper/"
+    },
+    "home": {
+     "url": "https://northfaceconstruction.com/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/"
+    },
+    "blog__replacing-rotten-wood-siding": {
+     "url": "https://northfaceconstruction.com/blog/replacing-rotten-wood-siding/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/replacing-rotten-wood-siding/"
+    },
+    "blog__roof-decking": {
+     "url": "https://northfaceconstruction.com/blog/roof-decking/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/roof-decking/"
+    },
+    "blog__roof-flashing": {
+     "url": "https://northfaceconstruction.com/blog/roof-flashing/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/roof-flashing/"
+    },
+    "blog__flat-roof-snow-removal": {
+     "url": "https://northfaceconstruction.com/blog/flat-roof-snow-removal/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/flat-roof-snow-removal/"
+    },
+    "blog__flat-roof-house": {
+     "url": "https://northfaceconstruction.com/blog/flat-roof-house/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/flat-roof-house/"
+    },
+    "blog__butterfly-roof": {
+     "url": "https://northfaceconstruction.com/blog/butterfly-roof/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/butterfly-roof/"
+    },
+    "blog__most-durable-siding": {
+     "url": "https://northfaceconstruction.com/blog/most-durable-siding/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/most-durable-siding/"
+    },
+    "blog__f-wave-shingles": {
+     "url": "https://northfaceconstruction.com/blog/f-wave-shingles/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/f-wave-shingles/"
+    },
+    "blog__best-gutter-guards": {
+     "url": "https://northfaceconstruction.com/blog/best-gutter-guards/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/best-gutter-guards/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 11
+   }
+  },
+  "homefrontexteriorsmn.com": {
+   "origin": "https://homefrontexteriorsmn.com",
+   "sitemaps": [],
+   "urls": {
+    "home": {
+     "url": "https://homefrontexteriorsmn.com/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/"
+    },
+    "blog__storm-damage-or-normal-wear-how-to-tell-when-your-roof-needs-professional-help": {
+     "url": "https://homefrontexteriorsmn.com/blog/storm-damage-or-normal-wear-how-to-tell-when-your-roof-needs-professional-help/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/blog/storm-damage-or-normal-wear-how-to-tell-when-your-roof-needs-professional-help/"
+    },
+    "blog__5-reasons-to-schedule-a-fall-roof-inspection-before-winter": {
+     "url": "https://homefrontexteriorsmn.com/blog/5-reasons-to-schedule-a-fall-roof-inspection-before-winter/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/blog/5-reasons-to-schedule-a-fall-roof-inspection-before-winter/"
+    },
+    "blog__how-often-should-you-replace-your-roof-a-homeowners-guide-by-material-and-climate": {
+     "url": "https://homefrontexteriorsmn.com/blog/how-often-should-you-replace-your-roof-a-homeowners-guide-by-material-and-climate/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/blog/how-often-should-you-replace-your-roof-a-homeowners-guide-by-material-and-climate/"
+    },
+    "blog__winter-damage-is-already-affecting-your-roof-heres-what-to-know": {
+     "url": "https://homefrontexteriorsmn.com/blog/winter-damage-is-already-affecting-your-roof-heres-what-to-know/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/blog/winter-damage-is-already-affecting-your-roof-heres-what-to-know/"
+    },
+    "blog__preparing-your-home-for-2026-smart-planning-starts-now": {
+     "url": "https://homefrontexteriorsmn.com/blog/preparing-your-home-for-2026-smart-planning-starts-now/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/blog/preparing-your-home-for-2026-smart-planning-starts-now/"
+    },
+    "blog__ice-dams-101": {
+     "url": "https://homefrontexteriorsmn.com/blog/ice-dams-101/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/blog/ice-dams-101/"
+    },
+    "blog__how-drone-thermal-imaging-protects-your-home": {
+     "url": "https://homefrontexteriorsmn.com/blog/how-drone-thermal-imaging-protects-your-home/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/blog/how-drone-thermal-imaging-protects-your-home/"
+    },
+    "blog__why-winter-roof-leaks-are-harder-to-spot-and-more-urgent-to-fix": {
+     "url": "https://homefrontexteriorsmn.com/blog/why-winter-roof-leaks-are-harder-to-spot-and-more-urgent-to-fix/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/blog/why-winter-roof-leaks-are-harder-to-spot-and-more-urgent-to-fix/"
+    },
+    "blog__is-your-home-ready-for-a-freeze-thaw-cycle-december-checklist-for-minnesota-homeowners": {
+     "url": "https://homefrontexteriorsmn.com/blog/is-your-home-ready-for-a-freeze-thaw-cycle-december-checklist-for-minnesota-homeowners/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/blog/is-your-home-ready-for-a-freeze-thaw-cycle-december-checklist-for-minnesota-homeowners/"
+    },
+    "blog__how-snow-and-ice-affect-your-home-protecting-your-investment-this-winter": {
+     "url": "https://homefrontexteriorsmn.com/blog/how-snow-and-ice-affect-your-home-protecting-your-investment-this-winter/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/blog/how-snow-and-ice-affect-your-home-protecting-your-investment-this-winter/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 11
+   }
+  },
+  "genzryan.com": {
+   "origin": "https://genzryan.com",
+   "sitemaps": [],
+   "urls": {
+    "home": {
+     "url": "https://genzryan.com/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/"
+    },
+    "blog__gas-boiler-replacement": {
+     "url": "https://genzryan.com/blog/gas-boiler-replacement/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/gas-boiler-replacement/"
+    },
+    "blog__ac-runs-all-day-minnesota": {
+     "url": "https://genzryan.com/blog/ac-runs-all-day-minnesota/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/ac-runs-all-day-minnesota/"
+    },
+    "blog__parts-of-a-boiler": {
+     "url": "https://genzryan.com/blog/parts-of-a-boiler/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/parts-of-a-boiler/"
+    },
+    "blog__can-a-heat-pump-really-handle-minnesotas-brutal-winter-what-twin-cities-homeowners-should-know": {
+     "url": "https://genzryan.com/blog/can-a-heat-pump-really-handle-minnesotas-brutal-winter-what-twin-cities-homeowners-should-know/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/can-a-heat-pump-really-handle-minnesotas-brutal-winter-what-twin-cities-homeowners-should-know/"
+    },
+    "blog__types-of-water-heaters": {
+     "url": "https://genzryan.com/blog/types-of-water-heaters/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/types-of-water-heaters/"
+    },
+    "blog__boiler-cleaning": {
+     "url": "https://genzryan.com/blog/boiler-cleaning/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/boiler-cleaning/"
+    },
+    "blog__ac-repair-or-replacement-in-the-twin-cities-whats-smarter-for-summer-savings": {
+     "url": "https://genzryan.com/blog/ac-repair-or-replacement-in-the-twin-cities-whats-smarter-for-summer-savings/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/ac-repair-or-replacement-in-the-twin-cities-whats-smarter-for-summer-savings/"
+    },
+    "blog__check-valve": {
+     "url": "https://genzryan.com/blog/check-valve/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/check-valve/"
+    },
+    "blog__what-is-a-float-switch": {
+     "url": "https://genzryan.com/blog/what-is-a-float-switch/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/what-is-a-float-switch/"
+    },
+    "blog__hard-water-plumbing-minnesota": {
+     "url": "https://genzryan.com/blog/hard-water-plumbing-minnesota/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/hard-water-plumbing-minnesota/"
+    },
+    "blog__blog-clogged-drains-causes-warning-signs": {
+     "url": "https://genzryan.com/blog/blog-clogged-drains-causes-warning-signs/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/blog/blog-clogged-drains-causes-warning-signs/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 12
+   }
+  },
+  "smockhvac.com": {
+   "origin": "https://smockhvac.com",
+   "sitemaps": [],
+   "urls": {
+    "blog__how-long-does-hvac-installation-take": {
+     "url": "https://smockhvac.com/blog/how-long-does-hvac-installation-take/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://smockhvac.com/blog/how-long-does-hvac-installation-take/"
+    },
+    "blog__central-air-vs-ductless": {
+     "url": "https://smockhvac.com/blog/central-air-vs-ductless/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://smockhvac.com/blog/central-air-vs-ductless/"
+    },
+    "blog__ac-making-loud-noise": {
+     "url": "https://smockhvac.com/blog/ac-making-loud-noise/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://smockhvac.com/blog/ac-making-loud-noise/"
+    },
+    "blog__home-hvac-system-cost": {
+     "url": "https://smockhvac.com/blog/home-hvac-system-cost/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://smockhvac.com/blog/home-hvac-system-cost/"
+    },
+    "blog__hvac-companies-in-md": {
+     "url": "https://smockhvac.com/blog/hvac-companies-in-md/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://smockhvac.com/blog/hvac-companies-in-md/"
+    },
+    "blog__dual-fuel-heat-pump": {
+     "url": "https://smockhvac.com/blog/dual-fuel-heat-pump/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://smockhvac.com/blog/dual-fuel-heat-pump/"
+    },
+    "blog__heat-pump-installation-cost-frederick-faq": {
+     "url": "https://smockhvac.com/blog/heat-pump-installation-cost-frederick-faq/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://smockhvac.com/blog/heat-pump-installation-cost-frederick-faq/"
+    },
+    "blog__deciding-between-repairing-replacing-ac-system": {
+     "url": "https://smockhvac.com/blog/deciding-between-repairing-replacing-ac-system/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://smockhvac.com/blog/deciding-between-repairing-replacing-ac-system/"
+    },
+    "blog__hvac-system-lifespan": {
+     "url": "https://smockhvac.com/blog/hvac-system-lifespan/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://smockhvac.com/blog/hvac-system-lifespan/"
+    },
+    "blog__ac-repair-cost-gaithersburg-faq": {
+     "url": "https://smockhvac.com/blog/ac-repair-cost-gaithersburg-faq/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://smockhvac.com/blog/ac-repair-cost-gaithersburg-faq/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 10
+   }
+  },
+  "trueairconditioningandheating.com": {
+   "origin": "https://trueairconditioningandheating.com",
+   "sitemaps": [],
+   "urls": {
+    "home": {
+     "url": "https://trueairconditioningandheating.com/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/"
+    },
+    "blog__right-sizing-your-ac": {
+     "url": "https://trueairconditioningandheating.com/blog/right-sizing-your-ac/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/blog/right-sizing-your-ac/"
+    },
+    "blog__ac-freezing-up-causes": {
+     "url": "https://trueairconditioningandheating.com/blog/ac-freezing-up-causes/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/blog/ac-freezing-up-causes/"
+    },
+    "blog__when-to-consider-mini-split": {
+     "url": "https://trueairconditioningandheating.com/blog/when-to-consider-mini-split/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/blog/when-to-consider-mini-split/"
+    },
+    "blog__signs-of-poor-air-quality": {
+     "url": "https://trueairconditioningandheating.com/blog/signs-of-poor-air-quality/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/blog/signs-of-poor-air-quality/"
+    },
+    "blog__stocked-truck-same-day": {
+     "url": "https://trueairconditioningandheating.com/blog/stocked-truck-same-day/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/blog/stocked-truck-same-day/"
+    },
+    "blog__how-long-ac-installation": {
+     "url": "https://trueairconditioningandheating.com/blog/how-long-ac-installation/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/blog/how-long-ac-installation/"
+    },
+    "blog__what-to-expect-ac-service": {
+     "url": "https://trueairconditioningandheating.com/blog/what-to-expect-ac-service/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/blog/what-to-expect-ac-service/"
+    },
+    "blog__how-mini-splits-work": {
+     "url": "https://trueairconditioningandheating.com/blog/how-mini-splits-work/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/blog/how-mini-splits-work/"
+    },
+    "blog__lower-home-humidity": {
+     "url": "https://trueairconditioningandheating.com/blog/lower-home-humidity/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/blog/lower-home-humidity/"
+    },
+    "blog__choosing-an-hvac-company": {
+     "url": "https://trueairconditioningandheating.com/blog/choosing-an-hvac-company/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://trueairconditioningandheating.com/blog/choosing-an-hvac-company/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 11
+   }
+  },
+  "glassexpertsfl.com": {
+   "origin": "https://glassexpertsfl.com",
+   "sitemaps": [],
+   "urls": {
+    "the-ultimate-guide-to-sliding-glass-door-maintenance": {
+     "url": "https://glassexpertsfl.com/the-ultimate-guide-to-sliding-glass-door-maintenance/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/the-ultimate-guide-to-sliding-glass-door-maintenance/"
+    },
+    "blogs": {
+     "url": "https://glassexpertsfl.com/blogs/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/blogs/"
+    },
+    "key-steps-in-the-window-installation-process": {
+     "url": "https://glassexpertsfl.com/key-steps-in-the-window-installation-process/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/key-steps-in-the-window-installation-process/"
+    },
+    "sliding-glass-door-repair-vs-replacement-know-the-signs": {
+     "url": "https://glassexpertsfl.com/sliding-glass-door-repair-vs-replacement-know-the-signs/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/sliding-glass-door-repair-vs-replacement-know-the-signs/"
+    },
+    "common-issues-with-sliding-glass-doors-and-how-to-fix-them": {
+     "url": "https://glassexpertsfl.com/common-issues-with-sliding-glass-doors-and-how-to-fix-them/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/common-issues-with-sliding-glass-doors-and-how-to-fix-them/"
+    },
+    "how-to-identify-problems-that-require-sliding-glass-door-repair": {
+     "url": "https://glassexpertsfl.com/how-to-identify-problems-that-require-sliding-glass-door-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/how-to-identify-problems-that-require-sliding-glass-door-repair/"
+    },
+    "how-to-replace-rollers-on-sliding-glass-door": {
+     "url": "https://glassexpertsfl.com/how-to-replace-rollers-on-sliding-glass-door/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/how-to-replace-rollers-on-sliding-glass-door/"
+    },
+    "window-repair-for-commercial-property-what-to-expect": {
+     "url": "https://glassexpertsfl.com/window-repair-for-commercial-property-what-to-expect/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/window-repair-for-commercial-property-what-to-expect/"
+    },
+    "patio-door-roller-replacement": {
+     "url": "https://glassexpertsfl.com/patio-door-roller-replacement/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/patio-door-roller-replacement/"
+    },
+    "how-to-choose-the-best-sliding-glass-door-repair": {
+     "url": "https://glassexpertsfl.com/how-to-choose-the-best-sliding-glass-door-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/how-to-choose-the-best-sliding-glass-door-repair/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 10
+   }
+  },
+  "puetzconstruction.com": {
+   "origin": "https://puetzconstruction.com",
+   "sitemaps": [],
+   "urls": {
+    "home": {
+     "url": "https://puetzconstruction.com/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/"
+    },
+    "blog__exterior-french-doors": {
+     "url": "https://puetzconstruction.com/blog/exterior-french-doors/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/exterior-french-doors/"
+    },
+    "blog__condensation-on-windows": {
+     "url": "https://puetzconstruction.com/blog/condensation-on-windows/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/condensation-on-windows/"
+    },
+    "blog__how-to-winterize-your-home": {
+     "url": "https://puetzconstruction.com/blog/how-to-winterize-your-home/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/how-to-winterize-your-home/"
+    },
+    "blog__triple-pane-windows": {
+     "url": "https://puetzconstruction.com/blog/triple-pane-windows/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/triple-pane-windows/"
+    },
+    "blog__energy-efficient-windows-cut-winter-bills": {
+     "url": "https://puetzconstruction.com/blog/energy-efficient-windows-cut-winter-bills/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/energy-efficient-windows-cut-winter-bills/"
+    },
+    "blog__bay-window": {
+     "url": "https://puetzconstruction.com/blog/bay-window/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/bay-window/"
+    },
+    "blog__storm-door": {
+     "url": "https://puetzconstruction.com/blog/storm-door/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/storm-door/"
+    },
+    "blog__black-windows": {
+     "url": "https://puetzconstruction.com/blog/black-windows/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/black-windows/"
+    },
+    "blog__kitchen-remodel-cost": {
+     "url": "https://puetzconstruction.com/blog/kitchen-remodel-cost/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/kitchen-remodel-cost/"
+    },
+    "blog__bathroom-remodel-cost": {
+     "url": "https://puetzconstruction.com/blog/bathroom-remodel-cost/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/bathroom-remodel-cost/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 11
+   }
+  },
+  "callthelen.com": {
+   "origin": "https://callthelen.com",
+   "sitemaps": [],
+   "urls": {
+    "home": {
+     "url": "https://callthelen.com/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/"
+    },
+    "blog__how-to-prevent-frozen-pipes": {
+     "url": "https://callthelen.com/blog/how-to-prevent-frozen-pipes/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/how-to-prevent-frozen-pipes/"
+    },
+    "blog__why-is-my-ac-leaking-water": {
+     "url": "https://callthelen.com/blog/why-is-my-ac-leaking-water/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/why-is-my-ac-leaking-water/"
+    },
+    "blog__recommended-thermostat-settings-for-summer": {
+     "url": "https://callthelen.com/blog/recommended-thermostat-settings-for-summer/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/recommended-thermostat-settings-for-summer/"
+    },
+    "blog__thermostat-replacement": {
+     "url": "https://callthelen.com/blog/thermostat-replacement/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/thermostat-replacement/"
+    },
+    "blog": {
+     "url": "https://callthelen.com/blog/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/"
+    },
+    "blog__thermostat-fan-settings-should-i-set-it-to-auto-or-on": {
+     "url": "https://callthelen.com/blog/thermostat-fan-settings-should-i-set-it-to-auto-or-on/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/thermostat-fan-settings-should-i-set-it-to-auto-or-on/"
+    },
+    "blog__chemical-drain-cleaners-vs-hydro-jetting-which-is-safer": {
+     "url": "https://callthelen.com/blog/chemical-drain-cleaners-vs-hydro-jetting-which-is-safer/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/chemical-drain-cleaners-vs-hydro-jetting-which-is-safer/"
+    },
+    "blog__why-you-are-running-out-of-hot-water-quickly": {
+     "url": "https://callthelen.com/blog/why-you-are-running-out-of-hot-water-quickly/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/why-you-are-running-out-of-hot-water-quickly/"
+    },
+    "blog__5-signs-you-need-professional-drain-cleaning": {
+     "url": "https://callthelen.com/blog/5-signs-you-need-professional-drain-cleaning/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/5-signs-you-need-professional-drain-cleaning/"
+    },
+    "blog__why-is-my-furnace-making-a-banging-or-whistling-noise": {
+     "url": "https://callthelen.com/blog/why-is-my-furnace-making-a-banging-or-whistling-noise/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/why-is-my-furnace-making-a-banging-or-whistling-noise/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 11
+   }
+  }
+ },
+ "updatedAt": "2026-11-05T12:16:45.793Z"
+}

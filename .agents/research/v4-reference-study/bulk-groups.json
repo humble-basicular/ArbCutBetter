@@ -1,0 +1,354 @@
+{
+ "vensland.lt": {
+  "pages": 24,
+  "templates": [
+   {
+    "id": "t00",
+    "name": "/1",
+    "count": 11,
+    "rep": "avizieniai",
+    "patterns": {
+     "/1": 11
+    },
+    "members": [
+     {
+      "slug": "avizieniai",
+      "url": "https://vensland.lt/avizieniai/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Avi\u017eieniuose \u2013 VensLand",
+      "h1440": 11927,
+      "h390": 18249,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "juodsiliai",
+      "url": "https://vensland.lt/juodsiliai/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Juod\u0161iliuose \u2013 VensLand",
+      "h1440": 11927,
+      "h390": 18193,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "lentvaris",
+      "url": "https://vensland.lt/lentvaris/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Lentvaryje \u2013 VensLand",
+      "h1440": 11927,
+      "h390": 18193,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "maisiagala",
+      "url": "https://vensland.lt/maisiagala/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Mai\u0161iagaloje \u2013 VensLand",
+      "h1440": 11927,
+      "h390": 18225,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "nemencine",
+      "url": "https://vensland.lt/nemencine/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Nemen\u010din\u0117je \u2013 VensLand",
+      "h1440": 11927,
+      "h390": 18253,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "pagiriai",
+      "url": "https://vensland.lt/pagiriai/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Pagiriuose \u2013 VensLand",
+      "h1440": 11927,
+      "h390": 18221,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "privatumo-politika",
+      "url": "https://vensland.lt/privatumo-politika/",
+      "title": "Privatumo politika \u2013 VensLand",
+      "h1440": 2087,
+      "h390": 3227,
+      "pat": "/1",
+      "sim": 0.727,
+      "flags": [
+       "skeleton-deviates(0.73)",
+       "height-outlier(2087 vs mean 11036)",
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "riese",
+      "url": "https://vensland.lt/riese/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Rie\u0161\u0117je \u2013 VensLand",
+      "h1440": 11927,
+      "h390": 18237,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "rudamina",
+      "url": "https://vensland.lt/rudamina/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Rudaminoje \u2013 VensLand",
+      "h1440": 11927,
+      "h390": 18193,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "trakai",
+      "url": "https://vensland.lt/trakai/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Trakuose \u2013 VensLand",
+      "h1440": 11927,
+      "h390": 18193,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "vilnius",
+      "url": "https://vensland.lt/vilnius/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Vilniuje \u2013 VensLand",
+      "h1440": 11971,
+      "h390": 18347,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "t01",
+    "name": "paslaugos/*",
+    "count": 10,
+    "rep": "paslaugos__apleistu-sklypu-tvarkymas",
+    "patterns": {
+     "paslaugos/*": 10
+    },
+    "members": [
+     {
+      "slug": "paslaugos__apleistu-sklypu-tvarkymas",
+      "url": "https://vensland.lt/paslaugos/apleistu-sklypu-tvarkymas/",
+      "title": "Apleist\u0173 sklyp\u0173 tvarkymas Vilniuje ir Vilniaus rajone \u2013 VensLand",
+      "h1440": 3939,
+      "h390": 6146,
+      "pat": "paslaugos/*",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "paslaugos__gyvatvoriu-sodinimas-prieziura",
+      "url": "https://vensland.lt/paslaugos/gyvatvoriu-sodinimas-prieziura/",
+      "title": "Gyvatvori\u0173 sodinimas ir prie\u017ei\u016bra Vilniuje bei Vilniaus rajone \u2013 VensLand",
+      "h1440": 3980,
+      "h390": 6268,
+      "pat": "paslaugos/*",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "paslaugos__laistymo-sistemos",
+      "url": "https://vensland.lt/paslaugos/laistymo-sistemos/",
+      "title": "Laistymo sistem\u0173 \u012frengimas Vilniuje ir Vilniaus rajone \u2013 VensLand",
+      "h1440": 3544,
+      "h390": 5860,
+      "pat": "paslaugos/*",
+      "sim": 1.0,
+      "flags": [
+       "height-outlier(3544 vs mean 3862)",
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "paslaugos__mini-ekskavatoriaus-paslaugos",
+      "url": "https://vensland.lt/paslaugos/mini-ekskavatoriaus-paslaugos/",
+      "title": "Mini ekskavatoriaus paslaugos Vilniuje ir Vilniaus rajone \u2013 VensLand",
+      "h1440": 3980,
+      "h390": 6269,
+      "pat": "paslaugos/*",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "paslaugos__vejos-aeravimas-core",
+      "url": "https://vensland.lt/paslaugos/vejos-aeravimas-core/",
+      "title": "Vejos aeravimas CORE b\u016bdu Vilniuje ir Vilniaus rajone \u2013 VensLand",
+      "h1440": 3845,
+      "h390": 6381,
+      "pat": "paslaugos/*",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "paslaugos__vejos-irengimas",
+      "url": "https://vensland.lt/paslaugos/vejos-irengimas/",
+      "title": "Vejos \u012frengimas Vilniuje ir Vilniaus rajone \u2013 VensLand",
+      "h1440": 3953,
+      "h390": 6478,
+      "pat": "paslaugos/*",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "paslaugos__vejos-lyginimas-levelingas",
+      "url": "https://vensland.lt/paslaugos/vejos-lyginimas-levelingas/",
+      "title": "Vejos lyginimas Vilniuje ir Vilniaus rajone \u2013 VensLand",
+      "h1440": 3912,
+      "h390": 6355,
+      "pat": "paslaugos/*",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "paslaugos__vejos-skarifikavimas",
+      "url": "https://vensland.lt/paslaugos/vejos-skarifikavimas/",
+      "title": "Vejos skarifikavimas Vilniuje ir Vilniaus rajone \u2013 VensLand",
+      "h1440": 3939,
+      "h390": 6122,
+      "pat": "paslaugos/*",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "paslaugos__vejos-tresimas-purskimas",
+      "url": "https://vensland.lt/paslaugos/vejos-tresimas-purskimas/",
+      "title": "Vejos tr\u0119\u0161imas ir pur\u0161kimas nuo pikt\u017eoli\u0173 Vilniuje \u2013 VensLand",
+      "h1440": 3585,
+      "h390": 5848,
+      "pat": "paslaugos/*",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     },
+     {
+      "slug": "paslaugos__zoles-pjovimas",
+      "url": "https://vensland.lt/paslaugos/zoles-pjovimas/",
+      "title": "\u017dol\u0117s pjovimas Vilniuje ir Vilniaus rajone \u2013 VensLand",
+      "h1440": 3939,
+      "h390": 6021,
+      "pat": "paslaugos/*",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "t02",
+    "name": "one-off",
+    "count": 1,
+    "rep": "aciu",
+    "patterns": {
+     "/1": 1
+    },
+    "members": [
+     {
+      "slug": "aciu",
+      "url": "https://vensland.lt/aciu/",
+      "title": "U\u017eklausos b\u016bsena \u2013 VensLand",
+      "h1440": 900,
+      "h390": 844,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "t03",
+    "name": "one-off",
+    "count": 1,
+    "rep": "arbcut-reference-study-not-found",
+    "patterns": {
+     "/1": 1
+    },
+    "members": [
+     {
+      "slug": "arbcut-reference-study-not-found",
+      "url": "https://vensland.lt/arbcut-reference-study-not-found/",
+      "title": "Puslapis nerastas \u2013 VensLand",
+      "h1440": 900,
+      "h390": 844,
+      "pat": "/1",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record",
+       "http-404"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "t04",
+    "name": "home",
+    "count": 1,
+    "rep": "home",
+    "patterns": {
+     "home": 1
+    },
+    "members": [
+     {
+      "slug": "home",
+      "url": "https://vensland.lt/",
+      "title": "Vejos \u012frengimas ir prie\u017ei\u016bra Vilniuje ir Vilniaus rajone | VensLand",
+      "h1440": 11401,
+      "h390": 17510,
+      "pat": "home",
+      "sim": 1.0,
+      "flags": [
+       "legacy-record"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

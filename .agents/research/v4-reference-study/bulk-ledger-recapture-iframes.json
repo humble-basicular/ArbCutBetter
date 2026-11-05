@@ -1,0 +1,1535 @@
+{
+ "brief": ".agents/handoffs/2026-11-05-1205-bulk-capture-brief.md",
+ "sites": {
+  "veteranscontractingllc.com": {
+   "origin": "https://veteranscontractingllc.com",
+   "sitemaps": [],
+   "urls": {
+    "blog": {
+     "url": "https://veteranscontractingllc.com/blog/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/blog/"
+    },
+    "home": {
+     "url": "https://veteranscontractingllc.com/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://veteranscontractingllc.com/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 2
+   }
+  },
+  "greentekroofing.com": {
+   "origin": "https://greentekroofing.com",
+   "sitemaps": [],
+   "urls": {
+    "blog__are-solar-panels-worth-it-in-florida-real-numbers-for-tampa-homeowners": {
+     "url": "https://greentekroofing.com/blog/are-solar-panels-worth-it-in-florida-real-numbers-for-tampa-homeowners/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/are-solar-panels-worth-it-in-florida-real-numbers-for-tampa-homeowners/"
+    },
+    "blog__blog-climate-factors-that-influence-roofing-system-lifespan-in-thonotosassa-fl": {
+     "url": "https://greentekroofing.com/blog/blog-climate-factors-that-influence-roofing-system-lifespan-in-thonotosassa-fl/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-climate-factors-that-influence-roofing-system-lifespan-in-thonotosassa-fl/"
+    },
+    "blog__blog-commercial-flat-roof-maintenance-plans-for-davenport-property-owners": {
+     "url": "https://greentekroofing.com/blog/blog-commercial-flat-roof-maintenance-plans-for-davenport-property-owners/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-commercial-flat-roof-maintenance-plans-for-davenport-property-owners/"
+    },
+    "blog__blog-commercial-roof-coating-systems-for-flat-roofs-in-davenport": {
+     "url": "https://greentekroofing.com/blog/blog-commercial-roof-coating-systems-for-flat-roofs-in-davenport/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-commercial-roof-coating-systems-for-flat-roofs-in-davenport/"
+    },
+    "blog__blog-commercial-roof-insulation-options-for-flat-roof-systems-in-davenport": {
+     "url": "https://greentekroofing.com/blog/blog-commercial-roof-insulation-options-for-flat-roof-systems-in-davenport/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-commercial-roof-insulation-options-for-flat-roof-systems-in-davenport/"
+    },
+    "blog__blog-commercial-roof-leak-detection-methods-for-buildings-in-davenport": {
+     "url": "https://greentekroofing.com/blog/blog-commercial-roof-leak-detection-methods-for-buildings-in-davenport/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-commercial-roof-leak-detection-methods-for-buildings-in-davenport/"
+    },
+    "blog__blog-fish-hawk-fl-cool-roof-materials-that-help-reduce-energy-costs": {
+     "url": "https://greentekroofing.com/blog/blog-fish-hawk-fl-cool-roof-materials-that-help-reduce-energy-costs/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-fish-hawk-fl-cool-roof-materials-that-help-reduce-energy-costs/"
+    },
+    "blog__blog-fish-hawk-standing-seam-metal-roof-installation-basics": {
+     "url": "https://greentekroofing.com/blog/blog-fish-hawk-standing-seam-metal-roof-installation-basics/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-fish-hawk-standing-seam-metal-roof-installation-basics/"
+    },
+    "blog__blog-how-roofing-system-components-in-wesley-chapel-fl-work-together-to-prevent-leaks": {
+     "url": "https://greentekroofing.com/blog/blog-how-roofing-system-components-in-wesley-chapel-fl-work-together-to-prevent-leaks/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-how-roofing-system-components-in-wesley-chapel-fl-work-together-to-prevent-leaks/"
+    },
+    "blog__blog-indicators-that-roof-deck-replacement-is-required-in-thonotosassa-fl": {
+     "url": "https://greentekroofing.com/blog/blog-indicators-that-roof-deck-replacement-is-required-in-thonotosassa-fl/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-indicators-that-roof-deck-replacement-is-required-in-thonotosassa-fl/"
+    },
+    "blog__blog-lutz-asphalt-shingle-nailing-patterns-that-prevent-blow-off": {
+     "url": "https://greentekroofing.com/blog/blog-lutz-asphalt-shingle-nailing-patterns-that-prevent-blow-off/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-lutz-asphalt-shingle-nailing-patterns-that-prevent-blow-off/"
+    },
+    "blog__blog-lutz-high-wind-fastening-patterns-for-asphalt-roofing": {
+     "url": "https://greentekroofing.com/blog/blog-lutz-high-wind-fastening-patterns-for-asphalt-roofing/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-lutz-high-wind-fastening-patterns-for-asphalt-roofing/"
+    },
+    "blog__blog-lutz-roof-edge-installation-errors-that-lead-to-wind-damage": {
+     "url": "https://greentekroofing.com/blog/blog-lutz-roof-edge-installation-errors-that-lead-to-wind-damage/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-lutz-roof-edge-installation-errors-that-lead-to-wind-damage/"
+    },
+    "blog__blog-lutz-structural-load-considerations-when-re-roofing-a-home": {
+     "url": "https://greentekroofing.com/blog/blog-lutz-structural-load-considerations-when-re-roofing-a-home/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-lutz-structural-load-considerations-when-re-roofing-a-home/"
+    },
+    "blog__blog-metal-roofing-fasteners-and-clip-systems-used-in-oldsmar-coastal-homes": {
+     "url": "https://greentekroofing.com/blog/blog-metal-roofing-fasteners-and-clip-systems-used-in-oldsmar-coastal-homes/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-metal-roofing-fasteners-and-clip-systems-used-in-oldsmar-coastal-homes/"
+    },
+    "blog__blog-modified-bitumen-roofing-systems-for-commercial-buildings-in-davenport": {
+     "url": "https://greentekroofing.com/blog/blog-modified-bitumen-roofing-systems-for-commercial-buildings-in-davenport/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-modified-bitumen-roofing-systems-for-commercial-buildings-in-davenport/"
+    },
+    "blog__blog-moisture-intrusion-through-poorly-sealed-roof-penetrations-in-lutz-fl": {
+     "url": "https://greentekroofing.com/blog/blog-moisture-intrusion-through-poorly-sealed-roof-penetrations-in-lutz-fl/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-moisture-intrusion-through-poorly-sealed-roof-penetrations-in-lutz-fl/"
+    },
+    "blog__blog-oldsmar-clay-tile-vs-concrete-tile-roofing-systems": {
+     "url": "https://greentekroofing.com/blog/blog-oldsmar-clay-tile-vs-concrete-tile-roofing-systems/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-oldsmar-clay-tile-vs-concrete-tile-roofing-systems/"
+    },
+    "blog__blog-oldsmar-stone-coated-steel-roofing-vs-traditional-metal-roofing": {
+     "url": "https://greentekroofing.com/blog/blog-oldsmar-stone-coated-steel-roofing-vs-traditional-metal-roofing/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-oldsmar-stone-coated-steel-roofing-vs-traditional-metal-roofing/"
+    },
+    "blog__blog-oldsmar-tile-roof-underlayment-systems-that-improve-leak-protection": {
+     "url": "https://greentekroofing.com/blog/blog-oldsmar-tile-roof-underlayment-systems-that-improve-leak-protection/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-oldsmar-tile-roof-underlayment-systems-that-improve-leak-protection/"
+    },
+    "blog__blog-optimizing-roof-vent-placement-for-balanced-attic-airflow-in-wesley-chapel-fl": {
+     "url": "https://greentekroofing.com/blog/blog-optimizing-roof-vent-placement-for-balanced-attic-airflow-in-wesley-chapel-fl/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-optimizing-roof-vent-placement-for-balanced-attic-airflow-in-wesley-chapel-fl/"
+    },
+    "blog__blog-roofing-layer-systems-used-in-wesley-chapel-to-prevent-water-intrusion": {
+     "url": "https://greentekroofing.com/blog/blog-roofing-layer-systems-used-in-wesley-chapel-to-prevent-water-intrusion/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-roofing-layer-systems-used-in-wesley-chapel-to-prevent-water-intrusion/"
+    },
+    "blog__blog-signs-a-roof-was-installed-over-compromised-decking-in-thonotosassa-fl": {
+     "url": "https://greentekroofing.com/blog/blog-signs-a-roof-was-installed-over-compromised-decking-in-thonotosassa-fl/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-signs-a-roof-was-installed-over-compromised-decking-in-thonotosassa-fl/"
+    },
+    "blog__blog-standing-seam-metal-roofing-benefits-for-coastal-homes-in-oldsmar-fl": {
+     "url": "https://greentekroofing.com/blog/blog-standing-seam-metal-roofing-benefits-for-coastal-homes-in-oldsmar-fl/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-standing-seam-metal-roofing-benefits-for-coastal-homes-in-oldsmar-fl/"
+    },
+    "blog__blog-stone-coated-metal-roofing-systems-for-homes-in-oldsmar": {
+     "url": "https://greentekroofing.com/blog/blog-stone-coated-metal-roofing-systems-for-homes-in-oldsmar/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-stone-coated-metal-roofing-systems-for-homes-in-oldsmar/"
+    },
+    "blog__blog-thonotosassa-fl-improper-roof-deck-ventilation-and-its-effect-on-shingle-lifespan": {
+     "url": "https://greentekroofing.com/blog/blog-thonotosassa-fl-improper-roof-deck-ventilation-and-its-effect-on-shingle-lifespan/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-thonotosassa-fl-improper-roof-deck-ventilation-and-its-effect-on-shingle-lifespan/"
+    },
+    "blog__blog-thonotosassa-fl-roof-deck-nailing-patterns-that-improve-structural-strength": {
+     "url": "https://greentekroofing.com/blog/blog-thonotosassa-fl-roof-deck-nailing-patterns-that-improve-structural-strength/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-thonotosassa-fl-roof-deck-nailing-patterns-that-improve-structural-strength/"
+    },
+    "blog__blog-thonotosassa-fl-structural-weak-points-found-during-professional-roof-inspections": {
+     "url": "https://greentekroofing.com/blog/blog-thonotosassa-fl-structural-weak-points-found-during-professional-roof-inspections/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-thonotosassa-fl-structural-weak-points-found-during-professional-roof-inspections/"
+    },
+    "blog__blog-thonotosassa-roof-valley-construction-methods-that-improve-drainage": {
+     "url": "https://greentekroofing.com/blog/blog-thonotosassa-roof-valley-construction-methods-that-improve-drainage/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-thonotosassa-roof-valley-construction-methods-that-improve-drainage/"
+    },
+    "blog__blog-tile-roof-maintenance-strategies-for-homes-in-oldsmar-fl": {
+     "url": "https://greentekroofing.com/blog/blog-tile-roof-maintenance-strategies-for-homes-in-oldsmar-fl/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-tile-roof-maintenance-strategies-for-homes-in-oldsmar-fl/"
+    },
+    "blog__blog-tpo-vs-modified-bitumen-roofing-systems-for-commercial-buildings-in-davenport": {
+     "url": "https://greentekroofing.com/blog/blog-tpo-vs-modified-bitumen-roofing-systems-for-commercial-buildings-in-davenport/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-tpo-vs-modified-bitumen-roofing-systems-for-commercial-buildings-in-davenport/"
+    },
+    "blog__blog-tree-debris-impact-on-roofing-materials-during-storms-in-lutz-fl": {
+     "url": "https://greentekroofing.com/blog/blog-tree-debris-impact-on-roofing-materials-during-storms-in-lutz-fl/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-tree-debris-impact-on-roofing-materials-during-storms-in-lutz-fl/"
+    },
+    "blog__blog-underlayment-failure-points-in-fish-hawk-beneath-asphalt-roofing-systems": {
+     "url": "https://greentekroofing.com/blog/blog-underlayment-failure-points-in-fish-hawk-beneath-asphalt-roofing-systems/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-underlayment-failure-points-in-fish-hawk-beneath-asphalt-roofing-systems/"
+    },
+    "blog__blog-uv-radiation-effects-on-asphalt-roofing-materials-in-fish-hawk-fl": {
+     "url": "https://greentekroofing.com/blog/blog-uv-radiation-effects-on-asphalt-roofing-materials-in-fish-hawk-fl/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-uv-radiation-effects-on-asphalt-roofing-materials-in-fish-hawk-fl/"
+    },
+    "blog__blog-wesley-chapel-fl-installation-details-that-determine-roof-durability": {
+     "url": "https://greentekroofing.com/blog/blog-wesley-chapel-fl-installation-details-that-determine-roof-durability/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-wesley-chapel-fl-installation-details-that-determine-roof-durability/"
+    },
+    "blog__blog-wesley-chapel-fl-roof-edge-reinforcement-techniques-for-wind-resistance": {
+     "url": "https://greentekroofing.com/blog/blog-wesley-chapel-fl-roof-edge-reinforcement-techniques-for-wind-resistance/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-wesley-chapel-fl-roof-edge-reinforcement-techniques-for-wind-resistance/"
+    },
+    "blog__blog-wesley-chapel-fl-secondary-water-barrier-systems-for-storm-prone-areas": {
+     "url": "https://greentekroofing.com/blog/blog-wesley-chapel-fl-secondary-water-barrier-systems-for-storm-prone-areas/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/blog-wesley-chapel-fl-secondary-water-barrier-systems-for-storm-prone-areas/"
+    },
+    "blog__does-homeowners-insurance-cover-roof-leaks-in-florida-what-every-homeowner-needs-to-know-in-2026": {
+     "url": "https://greentekroofing.com/blog/does-homeowners-insurance-cover-roof-leaks-in-florida-what-every-homeowner-needs-to-know-in-2026/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/does-homeowners-insurance-cover-roof-leaks-in-florida-what-every-homeowner-needs-to-know-in-2026/"
+    },
+    "blog__emergency-roof-tarp-service-in-tampa-fast-protection-when-every-minute-counts": {
+     "url": "https://greentekroofing.com/blog/emergency-roof-tarp-service-in-tampa-fast-protection-when-every-minute-counts/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/emergency-roof-tarp-service-in-tampa-fast-protection-when-every-minute-counts/"
+    },
+    "blog__how-to-spot-hail-damage-on-a-florida-roof-and-what-insurance-will-cover": {
+     "url": "https://greentekroofing.com/blog/how-to-spot-hail-damage-on-a-florida-roof-and-what-insurance-will-cover/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/how-to-spot-hail-damage-on-a-florida-roof-and-what-insurance-will-cover/"
+    },
+    "blog__my-safe-florida-home-grant-how-to-apply-and-get-up-to-10000-in-2026": {
+     "url": "https://greentekroofing.com/blog/my-safe-florida-home-grant-how-to-apply-and-get-up-to-10000-in-2026/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/my-safe-florida-home-grant-how-to-apply-and-get-up-to-10000-in-2026/"
+    },
+    "blog__spring-roof-maintenance-checklist-for-tampa-bay-homeowners": {
+     "url": "https://greentekroofing.com/blog/spring-roof-maintenance-checklist-for-tampa-bay-homeowners/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/spring-roof-maintenance-checklist-for-tampa-bay-homeowners/"
+    },
+    "blog__storm-damage-roof-repair-in-tampa-a-homeowners-guide-to-fast-recovery-in-2026": {
+     "url": "https://greentekroofing.com/blog/storm-damage-roof-repair-in-tampa-a-homeowners-guide-to-fast-recovery-in-2026/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/storm-damage-roof-repair-in-tampa-a-homeowners-guide-to-fast-recovery-in-2026/"
+    },
+    "blog__types-of-roofs-florida": {
+     "url": "https://greentekroofing.com/blog/types-of-roofs-florida/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/types-of-roofs-florida/"
+    },
+    "blog__what-to-do-after-roof-storm-damage-in-florida-homeowner-checklist": {
+     "url": "https://greentekroofing.com/blog/what-to-do-after-roof-storm-damage-in-florida-homeowner-checklist/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://greentekroofing.com/blog/what-to-do-after-roof-storm-damage-in-florida-homeowner-checklist/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 45
+   }
+  },
+  "bearsplumbing.net": {
+   "origin": "https://bearsplumbing.net",
+   "sitemaps": [],
+   "urls": {
+    "area__cypress-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/cypress-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/cypress-tx-water-heater-repair/"
+    },
+    "area__houston-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/houston-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/houston-tx-water-heater-repair/"
+    },
+    "area__jersey-village-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/jersey-village-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/jersey-village-tx-water-heater-repair/"
+    },
+    "area__magnolia-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/magnolia-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/magnolia-tx-plumber/"
+    },
+    "area__magnolia-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/magnolia-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/magnolia-tx-water-heater-repair/"
+    },
+    "area__montgomery-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/montgomery-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/montgomery-tx-plumber/"
+    },
+    "area__montgomery-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/montgomery-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/montgomery-tx-water-heater-repair/"
+    },
+    "area__new-caney-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/new-caney-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/new-caney-tx-plumber/"
+    },
+    "area__new-caney-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/new-caney-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/new-caney-tx-water-heater-repair/"
+    },
+    "area__oak-ridge-north-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/oak-ridge-north-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/oak-ridge-north-tx-plumber/"
+    },
+    "area__oak-ridge-north-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/oak-ridge-north-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/oak-ridge-north-tx-water-heater-repair/"
+    },
+    "area__pinehurst-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/pinehurst-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/pinehurst-tx-plumber/"
+    },
+    "area__pinehurst-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/pinehurst-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/pinehurst-tx-water-heater-repair/"
+    },
+    "area__porter-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/porter-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/porter-tx-plumber/"
+    },
+    "area__porter-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/porter-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/porter-tx-water-heater-repair/"
+    },
+    "area__shenandoah-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/shenandoah-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/shenandoah-tx-plumber/"
+    },
+    "area__shenandoah-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/shenandoah-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/shenandoah-tx-water-heater-repair/"
+    },
+    "area__the-woodlands-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/the-woodlands-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/the-woodlands-tx-plumber/"
+    },
+    "area__the-woodlands-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/the-woodlands-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/the-woodlands-tx-water-heater-repair/"
+    },
+    "area__tomball-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/tomball-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/tomball-tx-plumber/"
+    },
+    "area__tomball-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/tomball-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/tomball-tx-water-heater-repair/"
+    },
+    "area__willis-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/willis-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/willis-tx-plumber/"
+    },
+    "area__willis-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/willis-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/willis-tx-water-heater-repair/"
+    },
+    "area__woodbranch-tx-plumber": {
+     "url": "https://bearsplumbing.net/area/woodbranch-tx-plumber/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/woodbranch-tx-plumber/"
+    },
+    "area__woodbranch-tx-water-heater-repair": {
+     "url": "https://bearsplumbing.net/area/woodbranch-tx-water-heater-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/area/woodbranch-tx-water-heater-repair/"
+    },
+    "blog__10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx/"
+    },
+    "blog__10-signs-you-need-a-sewer-line-inspection-for-your-the-woodlands-tx-home": {
+     "url": "https://bearsplumbing.net/blog/10-signs-you-need-a-sewer-line-inspection-for-your-the-woodlands-tx-home/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/10-signs-you-need-a-sewer-line-inspection-for-your-the-woodlands-tx-home/"
+    },
+    "blog__5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx": {
+     "url": "https://bearsplumbing.net/blog/5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/5-reasons-homeowners-choose-water-filtration-installation-in-tomball-tx/"
+    },
+    "blog__7-reliable-emergency-sewer-line-repair-options-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/7-reliable-emergency-sewer-line-repair-options-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/7-reliable-emergency-sewer-line-repair-options-in-spring-tx/"
+    },
+    "blog__7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes": {
+     "url": "https://bearsplumbing.net/blog/7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/7-top-causes-of-drain-pipe-damage-in-magnolia-tx-homes/"
+    },
+    "blog__expert-tips-for-maintaining-your-water-lines-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/expert-tips-for-maintaining-your-water-lines-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/expert-tips-for-maintaining-your-water-lines-in-spring-tx/"
+    },
+    "blog__fast-solutions-for-clogged-toilet-emergencies-in-cypress-tx": {
+     "url": "https://bearsplumbing.net/blog/fast-solutions-for-clogged-toilet-emergencies-in-cypress-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/fast-solutions-for-clogged-toilet-emergencies-in-cypress-tx/"
+    },
+    "blog__how-bears-plumbing-delivers-5-star-service-every-time": {
+     "url": "https://bearsplumbing.net/blog/how-bears-plumbing-delivers-5-star-service-every-time/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/how-bears-plumbing-delivers-5-star-service-every-time/"
+    },
+    "blog__how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/how-home-repiping-improves-water-pressure-and-plumbing-efficiency-in-spring-tx/"
+    },
+    "blog__how-professional-rooter-services-solve-severe-plumbing-blockages-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/how-professional-rooter-services-solve-severe-plumbing-blockages-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/how-professional-rooter-services-solve-severe-plumbing-blockages-in-spring-tx/"
+    },
+    "blog__how-to-fix-common-faucet-problems-in-the-woodlands-tx": {
+     "url": "https://bearsplumbing.net/blog/how-to-fix-common-faucet-problems-in-the-woodlands-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/how-to-fix-common-faucet-problems-in-the-woodlands-tx/"
+    },
+    "blog__prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx/"
+    },
+    "blog__signs-you-need-fast-water-heater-repair-in-magnolia-tx": {
+     "url": "https://bearsplumbing.net/blog/signs-you-need-fast-water-heater-repair-in-magnolia-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/signs-you-need-fast-water-heater-repair-in-magnolia-tx/"
+    },
+    "blog__still-got-it-bear-in-the-field-solving-tough-sewer-line-issues": {
+     "url": "https://bearsplumbing.net/blog/still-got-it-bear-in-the-field-solving-tough-sewer-line-issues/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/still-got-it-bear-in-the-field-solving-tough-sewer-line-issues/"
+    },
+    "blog__toilet-replacement-signs-the-woodlands-tx": {
+     "url": "https://bearsplumbing.net/blog/toilet-replacement-signs-the-woodlands-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/toilet-replacement-signs-the-woodlands-tx/"
+    },
+    "blog__top-benefits-of-professional-drain-cleaning-services-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/top-benefits-of-professional-drain-cleaning-services-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/top-benefits-of-professional-drain-cleaning-services-in-spring-tx/"
+    },
+    "blog__warning-signs-you-need-immediate-gas-line-repair-in-tomball-tx": {
+     "url": "https://bearsplumbing.net/blog/warning-signs-you-need-immediate-gas-line-repair-in-tomball-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/warning-signs-you-need-immediate-gas-line-repair-in-tomball-tx/"
+    },
+    "blog__why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx": {
+     "url": "https://bearsplumbing.net/blog/why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx/"
+    },
+    "blog__why-licensed-plumbers-matter": {
+     "url": "https://bearsplumbing.net/blog/why-licensed-plumbers-matter/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/blog/why-licensed-plumbers-matter/"
+    },
+    "home": {
+     "url": "https://bearsplumbing.net/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://bearsplumbing.net/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 45
+   }
+  },
+  "northfaceconstruction.com": {
+   "origin": "https://northfaceconstruction.com",
+   "sitemaps": [],
+   "urls": {
+    "blog__f-wave-shingles": {
+     "url": "https://northfaceconstruction.com/blog/f-wave-shingles/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/f-wave-shingles/"
+    },
+    "blog__how-much-snow-can-a-roof-hold": {
+     "url": "https://northfaceconstruction.com/blog/how-much-snow-can-a-roof-hold/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/how-much-snow-can-a-roof-hold/"
+    },
+    "blog__how-to-fix-leaking-gutters": {
+     "url": "https://northfaceconstruction.com/blog/how-to-fix-leaking-gutters/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/how-to-fix-leaking-gutters/"
+    },
+    "blog__ice-dam-removal-guide": {
+     "url": "https://northfaceconstruction.com/blog/ice-dam-removal-guide/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/ice-dam-removal-guide/"
+    },
+    "blog__most-durable-siding": {
+     "url": "https://northfaceconstruction.com/blog/most-durable-siding/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://northfaceconstruction.com/blog/most-durable-siding/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 5
+   }
+  },
+  "homefrontexteriorsmn.com": {
+   "origin": "https://homefrontexteriorsmn.com",
+   "sitemaps": [],
+   "urls": {
+    "drone-thermal-scan": {
+     "url": "https://homefrontexteriorsmn.com/drone-thermal-scan/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/drone-thermal-scan/"
+    },
+    "minnetonka-mn": {
+     "url": "https://homefrontexteriorsmn.com/minnetonka-mn/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/minnetonka-mn/"
+    },
+    "owatonna-mn": {
+     "url": "https://homefrontexteriorsmn.com/owatonna-mn/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://homefrontexteriorsmn.com/owatonna-mn/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 3
+   }
+  },
+  "genzryan.com": {
+   "origin": "https://genzryan.com",
+   "sitemaps": [],
+   "urls": {
+    "home": {
+     "url": "https://genzryan.com/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://genzryan.com/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 1
+   }
+  },
+  "glassexpertsfl.com": {
+   "origin": "https://glassexpertsfl.com",
+   "sitemaps": [],
+   "urls": {
+    "4-tips-to-fixing-a-sliding-door": {
+     "url": "https://glassexpertsfl.com/4-tips-to-fixing-a-sliding-door/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/4-tips-to-fixing-a-sliding-door/"
+    },
+    "helpful-fix-to-squeaking-sliding-door": {
+     "url": "https://glassexpertsfl.com/helpful-fix-to-squeaking-sliding-door/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://glassexpertsfl.com/helpful-fix-to-squeaking-sliding-door/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 2
+   }
+  },
+  "puetzconstruction.com": {
+   "origin": "https://puetzconstruction.com",
+   "sitemaps": [],
+   "urls": {
+    "blog__roof-inspection-checklist": {
+     "url": "https://puetzconstruction.com/blog/roof-inspection-checklist/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/blog/roof-inspection-checklist/"
+    },
+    "projects": {
+     "url": "https://puetzconstruction.com/projects/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://puetzconstruction.com/projects/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 2
+   }
+  },
+  "vensland.lt": {
+   "origin": "https://vensland.lt",
+   "sitemaps": [],
+   "urls": {
+    "avizieniai": {
+     "url": "https://vensland.lt/avizieniai/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/avizieniai/"
+    },
+    "home": {
+     "url": "https://vensland.lt/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/"
+    },
+    "juodsiliai": {
+     "url": "https://vensland.lt/juodsiliai/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/juodsiliai/"
+    },
+    "lentvaris": {
+     "url": "https://vensland.lt/lentvaris/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/lentvaris/"
+    },
+    "maisiagala": {
+     "url": "https://vensland.lt/maisiagala/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/maisiagala/"
+    },
+    "nemencine": {
+     "url": "https://vensland.lt/nemencine/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/nemencine/"
+    },
+    "pagiriai": {
+     "url": "https://vensland.lt/pagiriai/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/pagiriai/"
+    },
+    "paslaugos": {
+     "url": "https://vensland.lt/paslaugos/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/#paslaugos",
+     "redirectTo": "https://vensland.lt/"
+    },
+    "riese": {
+     "url": "https://vensland.lt/riese/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/riese/"
+    },
+    "rudamina": {
+     "url": "https://vensland.lt/rudamina/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/rudamina/"
+    },
+    "trakai": {
+     "url": "https://vensland.lt/trakai/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/trakai/"
+    },
+    "vilnius": {
+     "url": "https://vensland.lt/vilnius/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/vilnius/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 12
+   }
+  },
+  "callthelen.com": {
+   "origin": "https://callthelen.com",
+   "sitemaps": [],
+   "urls": {
+    "blog__emergency-ac-repair": {
+     "url": "https://callthelen.com/blog/emergency-ac-repair/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "existing"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/blog/emergency-ac-repair/"
+    },
+    "home": {
+     "url": "https://callthelen.com/",
+     "source": "smoke-test",
+     "status": "captured",
+     "widths": {
+      "390": "existing",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://callthelen.com/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 2
+   }
+  }
+ },
+ "updatedAt": "2026-11-05T11:32:34.374Z"
+}

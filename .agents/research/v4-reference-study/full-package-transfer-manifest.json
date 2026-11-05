@@ -1,0 +1,157 @@
+{
+  "capturedAt": "2026-11-05T22:27:00+02:00",
+  "sourceBranch": "research/arbcut-v4-reference-study",
+  "sourceCommit": "04165dc",
+  "rawRoot": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4",
+  "rawRootExists": true,
+  "rawCapturePolicy": "Preserve in place; no deletion or copying of multi-GB originals. Git hashes below protect metadata only, not a full raw-file integrity audit.",
+  "metadata": [
+    {
+      "path": ".agents/research/v4-reference-study/bulk-groups.json",
+      "bytes": 8900,
+      "sha256": "c1ee88cc30b44d40de383ddb02b2e4263db653ff8b1358db569e0c3aa42517e9"
+    },
+    {
+      "path": ".agents/research/v4-reference-study/bulk-interactions-fix.json",
+      "bytes": 12581,
+      "sha256": "e9285c49f45a053447b273802c734b4629a6ceea295a8e45fed5df774fe52d0e"
+    },
+    {
+      "path": ".agents/research/v4-reference-study/bulk-interactions.json",
+      "bytes": 4408515,
+      "sha256": "66997b5dca26d85761294fc35f98e52036304e520348b7753e11362e06a54d70"
+    },
+    {
+      "path": ".agents/research/v4-reference-study/bulk-ledger-final-retry.json",
+      "bytes": 1559614,
+      "sha256": "130961ba0f32c7410609dfc8e92bda7a2a02df600b647146b230cea3a924e586"
+    },
+    {
+      "path": ".agents/research/v4-reference-study/bulk-ledger-recapture-first-window.json",
+      "bytes": 55120,
+      "sha256": "bfda59a77bbda67d6fd1a838a495a051e992db215a981ee4ed9e68edaa24e941"
+    },
+    {
+      "path": ".agents/research/v4-reference-study/bulk-ledger-recapture-iframes.json",
+      "bytes": 53397,
+      "sha256": "830e74df1e2d608328fe3f61fef9637c7f2ab8dd4fd11c6830103d4503a562ab"
+    },
+    {
+      "path": ".agents/research/v4-reference-study/bulk-ledger-vensland-recapture.json",
+      "bytes": 9843,
+      "sha256": "ef29207685375d3e1090c150ad1897f6686a6cfa4bc03a073e0c000d025e5cd9"
+    },
+    {
+      "path": ".agents/research/v4-reference-study/bulk-ledger.json",
+      "bytes": 1559456,
+      "sha256": "0988d53d9befa968d5039d267170950e888f68754f525c1c1eb995316aa6fdc0"
+    }
+  ],
+  "sheetIndexes": [
+    {
+      "site": "_backup-vensland.lt-legacy",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/_backup-vensland.lt-legacy/index.json",
+      "sheets": 14,
+      "viewed": 14,
+      "missingFiles": 6
+    },
+    {
+      "site": "bearsplumbing.net",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/bearsplumbing.net/index.json",
+      "sheets": 46,
+      "viewed": 46,
+      "missingFiles": 0
+    },
+    {
+      "site": "betonogaminiai.lt",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/betonogaminiai.lt/index.json",
+      "sheets": 20,
+      "viewed": 20,
+      "missingFiles": 0
+    },
+    {
+      "site": "callthelen.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/callthelen.com/index.json",
+      "sheets": 48,
+      "viewed": 48,
+      "missingFiles": 0
+    },
+    {
+      "site": "genzryan.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/genzryan.com/index.json",
+      "sheets": 80,
+      "viewed": 80,
+      "missingFiles": 0
+    },
+    {
+      "site": "glassexpertsfl.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/glassexpertsfl.com/index.json",
+      "sheets": 2,
+      "viewed": 2,
+      "missingFiles": 0
+    },
+    {
+      "site": "greentekroofing.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/greentekroofing.com/index.json",
+      "sheets": 104,
+      "viewed": 104,
+      "missingFiles": 0
+    },
+    {
+      "site": "homefrontexteriorsmn.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/homefrontexteriorsmn.com/index.json",
+      "sheets": 44,
+      "viewed": 44,
+      "missingFiles": 0
+    },
+    {
+      "site": "northfaceconstruction.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/northfaceconstruction.com/index.json",
+      "sheets": 108,
+      "viewed": 108,
+      "missingFiles": 0
+    },
+    {
+      "site": "puetzconstruction.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/puetzconstruction.com/index.json",
+      "sheets": 46,
+      "viewed": 46,
+      "missingFiles": 0
+    },
+    {
+      "site": "smockhvac.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/smockhvac.com/index.json",
+      "sheets": 66,
+      "viewed": 66,
+      "missingFiles": 0
+    },
+    {
+      "site": "theglassperts.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/theglassperts.com/index.json",
+      "sheets": 86,
+      "viewed": 86,
+      "missingFiles": 0
+    },
+    {
+      "site": "trueairconditioningandheating.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/trueairconditioningandheating.com/index.json",
+      "sheets": 24,
+      "viewed": 24,
+      "missingFiles": 0
+    },
+    {
+      "site": "vensland.lt",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/vensland.lt/index.json",
+      "sheets": 12,
+      "viewed": 12,
+      "missingFiles": 0
+    },
+    {
+      "site": "veteranscontractingllc.com",
+      "index": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/veteranscontractingllc.com/index.json",
+      "sheets": 100,
+      "viewed": 24,
+      "missingFiles": 0
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+ "brief": ".agents/handoffs/2026-11-05-1205-bulk-capture-brief.md",
+ "sites": {
+  "vensland.lt": {
+   "origin": "https://vensland.lt",
+   "sitemaps": [
+    {
+     "url": "https://vensland.lt/sitemap.xml",
+     "status": 200,
+     "type": "urlset",
+     "count": 23
+    },
+    {
+     "url": "https://vensland.lt/sitemap_index.xml",
+     "status": 404,
+     "note": "not a sitemap"
+    },
+    {
+     "url": "https://vensland.lt/wp-sitemap.xml",
+     "status": 200,
+     "type": "index",
+     "count": 2
+    },
+    {
+     "url": "https://vensland.lt/wp-sitemap-posts-page-1.xml",
+     "status": 200,
+     "type": "urlset",
+     "count": 3
+    },
+    {
+     "url": "https://vensland.lt/wp-sitemap-users-1.xml",
+     "status": 200,
+     "type": "urlset",
+     "count": 1
+    }
+   ],
+   "urls": {
+    "home": {
+     "url": "https://vensland.lt/",
+     "source": "home",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/"
+    },
+    "vilnius": {
+     "url": "https://vensland.lt/vilnius/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/vilnius/"
+    },
+    "avizieniai": {
+     "url": "https://vensland.lt/avizieniai/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/avizieniai/"
+    },
+    "riese": {
+     "url": "https://vensland.lt/riese/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/riese/"
+    },
+    "pagiriai": {
+     "url": "https://vensland.lt/pagiriai/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/pagiriai/"
+    },
+    "rudamina": {
+     "url": "https://vensland.lt/rudamina/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/rudamina/"
+    },
+    "juodsiliai": {
+     "url": "https://vensland.lt/juodsiliai/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/juodsiliai/"
+    },
+    "nemencine": {
+     "url": "https://vensland.lt/nemencine/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/nemencine/"
+    },
+    "lentvaris": {
+     "url": "https://vensland.lt/lentvaris/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/lentvaris/"
+    },
+    "trakai": {
+     "url": "https://vensland.lt/trakai/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/trakai/"
+    },
+    "maisiagala": {
+     "url": "https://vensland.lt/maisiagala/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/maisiagala/"
+    },
+    "paslaugos__vejos-irengimas": {
+     "url": "https://vensland.lt/paslaugos/vejos-irengimas/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/paslaugos/vejos-irengimas/"
+    },
+    "paslaugos__laistymo-sistemos": {
+     "url": "https://vensland.lt/paslaugos/laistymo-sistemos/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/paslaugos/laistymo-sistemos/"
+    },
+    "paslaugos__vejos-aeravimas-core": {
+     "url": "https://vensland.lt/paslaugos/vejos-aeravimas-core/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/paslaugos/vejos-aeravimas-core/"
+    },
+    "paslaugos__vejos-skarifikavimas": {
+     "url": "https://vensland.lt/paslaugos/vejos-skarifikavimas/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/paslaugos/vejos-skarifikavimas/"
+    },
+    "paslaugos__vejos-lyginimas-levelingas": {
+     "url": "https://vensland.lt/paslaugos/vejos-lyginimas-levelingas/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/paslaugos/vejos-lyginimas-levelingas/"
+    },
+    "paslaugos__vejos-tresimas-purskimas": {
+     "url": "https://vensland.lt/paslaugos/vejos-tresimas-purskimas/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/paslaugos/vejos-tresimas-purskimas/"
+    },
+    "paslaugos__zoles-pjovimas": {
+     "url": "https://vensland.lt/paslaugos/zoles-pjovimas/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/paslaugos/zoles-pjovimas/"
+    },
+    "paslaugos__apleistu-sklypu-tvarkymas": {
+     "url": "https://vensland.lt/paslaugos/apleistu-sklypu-tvarkymas/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/paslaugos/apleistu-sklypu-tvarkymas/"
+    },
+    "paslaugos__mini-ekskavatoriaus-paslaugos": {
+     "url": "https://vensland.lt/paslaugos/mini-ekskavatoriaus-paslaugos/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/paslaugos/mini-ekskavatoriaus-paslaugos/"
+    },
+    "paslaugos__gyvatvoriu-sodinimas-prieziura": {
+     "url": "https://vensland.lt/paslaugos/gyvatvoriu-sodinimas-prieziura/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/paslaugos/gyvatvoriu-sodinimas-prieziura/"
+    },
+    "kontaktai": {
+     "url": "https://vensland.lt/kontaktai/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/kontaktai/"
+    },
+    "privatumo-politika": {
+     "url": "https://vensland.lt/privatumo-politika/",
+     "source": "sitemap:https://vensland.lt/sitemap.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/privatumo-politika/"
+    },
+    "paslaugos": {
+     "url": "https://vensland.lt/paslaugos/",
+     "source": "sitemap:https://vensland.lt/wp-sitemap-posts-page-1.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 200,
+     "finalUrl": "https://vensland.lt/#paslaugos",
+     "redirectTo": "https://vensland.lt/"
+    },
+    "author__tomas-venslovas24gmail-com": {
+     "url": "https://vensland.lt/author/tomas-venslovas24gmail-com/",
+     "source": "sitemap:https://vensland.lt/wp-sitemap-users-1.xml",
+     "status": "captured",
+     "widths": {
+      "390": "captured",
+      "1440": "captured"
+     },
+     "attempts": 1,
+     "httpStatus": 404,
+     "finalUrl": "https://vensland.lt/author/tomas-venslovas24gmail-com/"
+    }
+   },
+   "capped": false,
+   "counts": {
+    "captured": 25
+   }
+  }
+ },
+ "updatedAt": "2026-11-05T10:56:44.617Z"
+}
