@@ -46,3 +46,6 @@ Before interpreting problematic states, check normal live rendering: locality ma
 
 ## Omitted context
 The 1006 handoff contains earlier tooling/session details. The named brief, learnings, reports and inherited coverage table retain the official site list and prior research. No need to reread unrelated repository files. The VensLand decode-repair subtree has only two supplementary Riese desktop segments actually viewed; do not expand its viewed count.
+
+## User steering after checkpoint
+Design depends on the niche. Current synthesis must distinguish general principles from trade/audience-specific visual choices. Later, identify missed niches and propose two comparable sites per additional niche for the user to inspect. Wait for the user's approval before analysing those candidates. Do not expand the current research now. This direction is also recorded in the main study report; no niches or candidates have been selected yet.
