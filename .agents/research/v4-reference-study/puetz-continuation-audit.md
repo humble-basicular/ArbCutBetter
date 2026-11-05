@@ -8,4 +8,12 @@ Nonblocking note: displayed footer telephone values vary across routes; call tra
 
 Stage outcomes: research initial $0.3136556, review $0.1082248; retry completing the next nine routes $0.4624188 (not yet independently audited). These are list-price estimates, not subscription charges. At this checkpoint known thread total lower bound $4.8229502, incomplete; two accepted stages; minimum per accepted stage $2.4114751, full figure unknown. Formal wasted cost $0; prior unproductive VensLand audit $0.0249246 remains explicitly unproductive despite terminal completed status.
 
+## Nine-route increment — second bounded approval
+
+Claude2 Opus5.5 medium approved `dfcd602..ed12cba` with no blockers. Task arbcut-puetz-remaining-review-20261105-r2, result acknowledged. Counts/classification/heights/flags recomputed; 10of28sheets opened. Opened1440: estimator0,careers0,accessibility0,siding1,404probe0;390: estimator0,careers0,404probe0,leadership0,sms-terms0. Eighteen other sheets were not reopened: all remodels/privacy sheets, remaining siding/leadership/careers/accessibility/SMS sheets. Tall mobile sheets displayed at about0.82scale, readable but not full size. Raw current records match committed ledger but are not historical snapshots; viewed flags do not themselves prove actual image inspection.
+
+Consequential sampled claims supported: no estimator controls in either captured width; recruiting form has native file input/Position but generic submit; accessibility/SMS retain sales tails;404status and recovery layout. Privacy tail, remodelling observations and some biographies remain outside this visual sample. No website changes or conversion claims.
+
+Nonblocking additions: careers also shows a Billy Reed Google ribbon before crew CTA;404has a quote edge tab absent from estimator captures. Compare in ordinary live rendering if investigating the missing tool; cause unknown. No unresolved blocking objections. No independent audit of later gap-closure or lead sampling work is implied.
+
 Verdict: approved

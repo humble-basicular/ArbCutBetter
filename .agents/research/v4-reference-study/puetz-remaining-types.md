@@ -1,6 +1,6 @@
 # Puetz: remaining captured page types
 
-Research only, 5 November 2026. **All nine queued routes inspected at 1440 and 390: 18 page/width records, 41 document segments, 18 first viewports, 28 numbered sheets.** Every sheet below was opened with the image viewer at original detail before its raw viewed flags changed. First viewports are included in each sheet-0. No live interactions were added. Stopped exploration on the user's second soft-stage-budget steer. This stage is not independently audited.
+Research only, 5 November 2026. **All nine queued routes inspected at 1440 and 390: 18 page/width records, 41 document segments, 18 first viewports, 28 numbered sheets.** Every sheet below was opened with the image viewer at original detail before its raw viewed flags changed. First viewports are included in each sheet-0. No live interactions were added. Stopped exploration on the user's second soft-stage-budget steer. A subsequent bounded Claude2 audit approved this increment: ten of28sheets visually sampled and metadata recomputed; see `puetz-continuation-audit.md`. This does not independently verify every sheet.
 
 Evidence root `P` = `/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/`. Paths below are exact relative paths under P; brace notation enumerates files. Sheets contain labelled ordered segments. Grey padding outside segment bounds is not website whitespace. Styles/status/heights below come from each matching `record.json`; observations come from the opened images. No inference of job ownership or third-party certification from photos/copy.
 
@@ -48,7 +48,7 @@ Judgement/rule: team pages gain specificity from names, roles, consistent portra
 
 ## Careers — seen
 
-A team group photograph replaces the residential hero image; the right-hand form is labelled Apply Now. Benefits name pay, family-friendly hours and growth opportunities. Visible fields are name, email, phone, native Choose File and Position selector. The red form action still says Get Started Today. A worker/framing photo accompanies a general Jack of All Trades hiring pitch and Apply Now action. Customer-review summary, generic blog links, customer-oriented crew CTA and footer follow. No salary range or detailed job requirements are visible in this initial page state.
+A team group photograph replaces the residential hero image; the right-hand form is labelled Apply Now. Benefits name pay, family-friendly hours and growth opportunities. Visible fields are name, email, phone, native Choose File and Position selector. The red form action still says Get Started Today. A worker/framing photo accompanies a general Jack of All Trades hiring pitch and Apply Now action. Customer-review summary, generic blog links, a Billy Reed Google-marked ribbon, customer-oriented crew CTA and footer follow. No salary range or detailed job requirements are visible in this initial page state.
 
 Mobile separates the team photo, recruitment pitch, benefits and application form, followed by the work photo and role pitch. The file field fits within the column; there is no visible descriptive resume/upload label or file-format guidance beside it in these sheets. No file was chosen, selector exercised or application sent.
 

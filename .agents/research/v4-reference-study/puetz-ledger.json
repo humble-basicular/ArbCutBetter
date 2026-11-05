@@ -79,7 +79,7 @@
     {
       "url": "https://puetzconstruction.com/accessibility/",
       "type": "unique-accessibility",
-      "source": "nav/footer",
+      "source": "captured-page link",
       "widths": {
         "1440": {
           "captured": true,
@@ -2122,23 +2122,23 @@
       "source": "sitemap",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__how-to-install-trex-decking/1440/record.json",
+          "height": 9532,
           "error": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__how-to-install-trex-decking/390/record.json",
+          "height": 11501,
           "error": null
         }
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/blog/how-to-measure-a-door-for-replacement/",
@@ -2386,23 +2386,23 @@
       "source": "sitemap",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__kitchen-remodel-ideas/1440/record.json",
+          "height": 12057,
           "error": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__kitchen-remodel-ideas/390/record.json",
+          "height": 14794,
           "error": null
         }
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/blog/low-maintenance-siding/",
@@ -2962,23 +2962,23 @@
       "source": "sitemap",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__roof-inspection-checklist/1440/record.json",
+          "height": 10015,
           "error": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__roof-inspection-checklist/390/record.json",
+          "height": 11592,
           "error": null
         }
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/blog/roof-inspection-cost/",
@@ -3562,23 +3562,23 @@
       "source": "sitemap",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__things-to-do-in-rochester-mn/1440/record.json",
+          "height": 9464,
           "error": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__things-to-do-in-rochester-mn/390/record.json",
+          "height": 10946,
           "error": null
         }
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/blog/tpo-membrane-roof/",
@@ -4901,6 +4901,30 @@
       "gap": null
     },
     {
+      "url": "https://puetzconstruction.com/decks-patios/st-charles/",
+      "type": "decks-patios-locality",
+      "source": "captured-page link",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
       "url": "https://puetzconstruction.com/decks-patios/winona-mn/",
       "type": "decks-patios-locality",
       "source": "sitemap",
@@ -5071,7 +5095,7 @@
     {
       "url": "https://puetzconstruction.com/privacy-policy/",
       "type": "unique-privacy-policy",
-      "source": "nav/footer",
+      "source": "captured-page link",
       "widths": {
         "1440": {
           "captured": true,
@@ -5771,14 +5795,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding__rochester/1440/record.json",
           "height": 7304,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding__rochester/390/record.json",
           "height": 10203,
           "error": null
@@ -5786,7 +5810,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/siding/waterloo/",
@@ -5843,14 +5867,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding__woodbury/1440/record.json",
           "height": 7261,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding__woodbury/390/record.json",
           "height": 10292,
           "error": null
@@ -5858,12 +5882,12 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/sms-terms/",
       "type": "unique-sms-terms",
-      "source": "nav/footer",
+      "source": "captured-page link",
       "widths": {
         "1440": {
           "captured": true,

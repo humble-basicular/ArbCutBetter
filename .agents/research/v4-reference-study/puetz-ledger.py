@@ -16,6 +16,6 @@ for u in sorted(known|extras):
  widths={}
  for w in [1440,390]:
   q=r/slug/str(w)/'record.json';d=json.loads(q.read_text()) if q.exists() else {};widths[str(w)]={'captured':bool(d.get('captureComplete')),'viewed':bool(d.get('viewed')),'record':str(q) if q.exists() else None,'height':d.get('documentHeight'),'error':d.get('error')}
- records.append({'url':u,'type':typ,'source':'sitemap' if u in known else '404-probe' if typ=='404' else 'nav/footer','widths':widths,'representedBy':[],'legacyHomeViewed':typ=='homepage','gap':None if all(v['viewed'] for v in widths.values()) else 'not yet fully inspected in this milestone' if typ!='excluded-geodata' else 'KML, not a page'})
+ records.append({'url':u,'type':typ,'source':'sitemap' if u in known else '404-probe' if typ=='404' else 'captured-page link','widths':widths,'representedBy':[],'legacyHomeViewed':typ=='homepage','gap':None if all(v['viewed'] for v in widths.values()) else 'not yet fully inspected in this milestone' if typ!='excluded-geodata' else 'KML, not a page'})
 out={'site':'puetzconstruction.com','sitemapURLs':len(known),'sources':a['sources'],'pages':records};Path('.agents/research/v4-reference-study/puetz-ledger.json').write_text(json.dumps(out,indent=2))
 print('URL rows',len(records),'captured widths',sum(v['captured'] for x in records for v in x['widths'].values()),'viewed widths',sum(v['viewed'] for x in records for v in x['widths'].values()))
