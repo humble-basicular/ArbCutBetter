@@ -4067,14 +4067,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/commercial/1440/record.json",
           "height": 7052,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/commercial/390/record.json",
           "height": 10824,
           "error": null
@@ -4082,7 +4082,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/commercial/albert-lea/",
@@ -4571,14 +4571,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/decks-patios/1440/record.json",
           "height": 9798,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/decks-patios/390/record.json",
           "height": 14660,
           "error": null
@@ -4586,7 +4586,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/decks-patios/albert-lea-mn/",
@@ -5459,14 +5459,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/services/1440/record.json",
           "height": 4955,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/services/390/record.json",
           "height": 7398,
           "error": null
@@ -5474,7 +5474,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/siding/",
