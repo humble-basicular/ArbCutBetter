@@ -11,3 +11,6 @@ Remaining overall: Smock semantic residue; Veteransretry1; leadNorthface12pairs8
 Fresh usage21:48UTC:codex16%session18%weekly, codex2last97%,Claude70%session62%weekly/Claude2 44%session89%weekly (21:44reading). No active worker before next launch.
 
 Accounting stage_outcomes modest sample: total listprice lowerbound9.82895,incomplete; accepted-stage cost null,wasted0 recorded for this thread, partial completed work not classified waste. No savings claim.
+
+## Veteransretry1 accepted21:50UTC
+Original continue rejected cross-account: "Continuing requires the original provider and model to reuse its native session." Rejected call started no worker. Same-stage retry1 new codex native sessionGPT6.1Sol/high acceptedRUNNING, taskId node:delegated-task:command%3Amcp%3A4b956a86-411f-422f-8c40-a56e758c40c8%3Adelegate-task%3Av4-veterans-native-closure-20261105-retry1-account-recovery. ONLY Veteransreport/externalownsite native files owned;lead owns others/commits. Smocknoactiveworker/retrycapexhausted. Lead ends for completion delivery; don't duplicate. Evidence commit760d0cb.
