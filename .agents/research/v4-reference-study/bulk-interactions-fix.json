@@ -1,0 +1,410 @@
+[
+ {
+  "site": "callthelen.com",
+  "url": "https://callthelen.com/",
+  "role": "home",
+  "check": "mobile-menu",
+  "width": 390,
+  "screenshots": [
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/callthelen.com/_interactions/home-fix/390/mobile-menu-0-before.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/callthelen.com/_interactions/home-fix/390/mobile-menu-1-open.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/callthelen.com/_interactions/home-fix/390/mobile-menu-2-submenu.jpg"
+  ],
+  "candidates": [
+   {
+    "i": 0,
+    "tag": "A",
+    "cls": "uk-navbar-toggle",
+    "aria": "Open menu",
+    "top": 5,
+    "left": 343,
+    "w": 32,
+    "h": 80,
+    "vis": true
+   },
+   {
+    "i": 1,
+    "tag": "DIV",
+    "cls": "uk-icon uk-navbar-toggle-icon",
+    "aria": "",
+    "top": 29,
+    "left": 343,
+    "w": 32,
+    "h": 32,
+    "vis": true
+   }
+  ],
+  "status": "done",
+  "toggle": {
+   "i": 0,
+   "tag": "A",
+   "cls": "uk-navbar-toggle",
+   "aria": "Open menu",
+   "top": 5,
+   "left": 343,
+   "w": 32,
+   "h": 80,
+   "vis": true
+  },
+  "visibleLinks": {
+   "before": 6,
+   "after": 25
+  },
+  "submenu": "A",
+  "menuText": [
+   "Skip to main content",
+   ".uk-navbar-toggle-icon svg>[class*=\"line-\"]{transition:0.2s ease-in-out;transition-property:transform, opacity;transform-origin:center;opacity:1}.uk-navbar-toggle-icon svg>.line-3{opacity:0}[aria-expanded=\"true\"].uk-navbar-toggle-icon svg>.line-3,[aria-expanded=\"true\"]>.uk-navbar-toggle-icon svg>.line-3{opacity:1}[aria-expanded=\"true\"].uk-navbar-toggle-icon svg>.line-2,[aria-expanded=\"true\"]>.uk-navbar-toggle-icon svg>.line-2{transform:rotate(45deg)}[aria-expanded=\"true\"].uk-navbar-toggle-icon svg>.line-3,[aria-expanded=\"true\"]>.uk-navbar-toggle-icon svg>.line-3{transform:rotate(-45deg)}[aria-expanded=\"true\"].uk-navbar-toggle-icon svg>.line-1,[aria-expanded=\"true\"]>.uk-navbar-toggle-icon svg>.line-1,[aria-expanded=\"true\"].uk-navbar-toggle-icon svg>.line-4,[aria-expanded=\"true\"]>.uk-navbar-toggle-icon svg>.line-4{opacity:0}[aria-expanded=\"true\"].uk-navbar-toggle-icon svg>.line-1,[aria-expanded=\"true\"]>.uk-navbar-toggle-icon svg>.line-1{transform:translateY(6px) scaleX(0)}[aria-expanded=\"true\"].uk-navbar-toggle-icon svg>.line-4,[aria-expanded=\"true\"]>.uk-navbar-toggle-icon svg>.line-4{transform:translateY(-6px) scaleX(0)}",
+   "Schedule Service",
+   "(763) 262-2181",
+   "About",
+   "About",
+   "Service Area",
+   "Reviews",
+   "Maintenance Plan",
+   "Financing",
+   "Specials",
+   "Blog",
+   "Careers",
+   "Heating",
+   "HVAC Services",
+   "HVAC Repair",
+   "Ductless Mini-Split",
+   "Boilers",
+   "Furnace Replacement",
+   "Furnace Maintenance",
+   "Indoor Air Quality",
+   "Duct Cleaning",
+   "Thermostat Repair",
+   "Cooling",
+   "AC Installation",
+   "AC Maintenance",
+   "AC Replacement"
+  ]
+ },
+ {
+  "site": "northfaceconstruction.com",
+  "url": "https://northfaceconstruction.com/",
+  "role": "home",
+  "check": "desktop-dropdowns",
+  "width": 1440,
+  "screenshots": [
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/northfaceconstruction.com/_interactions/home-fix/1440/desktop-dropdowns-0-before.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/northfaceconstruction.com/_interactions/home-fix/1440/dropdown-1.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/northfaceconstruction.com/_interactions/home-fix/1440/dropdown-2.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/northfaceconstruction.com/_interactions/home-fix/1440/dropdown-3.jpg"
+  ],
+  "items": [
+   {
+    "text": "About",
+    "x": 433.2734375,
+    "y": 74.5
+   },
+   {
+    "text": "Services",
+    "x": 524.78125,
+    "y": 74.5
+   },
+   {
+    "text": "Resources",
+    "x": 629.78125,
+    "y": 74.5
+   }
+  ],
+  "status": "done"
+ },
+ {
+  "site": "greentekroofing.com",
+  "url": "https://greentekroofing.com/",
+  "role": "home",
+  "check": "desktop-dropdowns",
+  "width": 1440,
+  "screenshots": [
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/greentekroofing.com/_interactions/home-fix/1440/desktop-dropdowns-0-before.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/greentekroofing.com/_interactions/home-fix/1440/dropdown-1.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/greentekroofing.com/_interactions/home-fix/1440/dropdown-2.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/greentekroofing.com/_interactions/home-fix/1440/dropdown-3.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/greentekroofing.com/_interactions/home-fix/1440/dropdown-4.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/greentekroofing.com/_interactions/home-fix/1440/dropdown-5.jpg"
+  ],
+  "items": [
+   {
+    "text": "Roofing Services",
+    "x": 487.6015625,
+    "y": 77.0625
+   },
+   {
+    "text": "Other Services",
+    "x": 630.8359375,
+    "y": 77.0625
+   },
+   {
+    "text": "Resources",
+    "x": 751.8046875,
+    "y": 77.0625
+   },
+   {
+    "text": "About Us",
+    "x": 853.6015625,
+    "y": 77.0625
+   },
+   {
+    "text": "Services",
+    "x": 2471.34375,
+    "y": 195.09375
+   }
+  ],
+  "status": "done"
+ },
+ {
+  "site": "homefrontexteriorsmn.com",
+  "url": "https://homefrontexteriorsmn.com/",
+  "role": "home",
+  "check": "desktop-dropdowns",
+  "width": 1440,
+  "screenshots": [
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/homefrontexteriorsmn.com/_interactions/home-fix/1440/desktop-dropdowns-0-before.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/homefrontexteriorsmn.com/_interactions/home-fix/1440/dropdown-1.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/homefrontexteriorsmn.com/_interactions/home-fix/1440/dropdown-2.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/homefrontexteriorsmn.com/_interactions/home-fix/1440/dropdown-3.jpg"
+  ],
+  "items": [
+   {
+    "text": "About",
+    "x": 245.0078125,
+    "y": 57.75
+   },
+   {
+    "text": "Resources",
+    "x": 359.828125,
+    "y": 57.75
+   },
+   {
+    "text": "Services",
+    "x": 484.375,
+    "y": 57.75
+   }
+  ],
+  "status": "done"
+ },
+ {
+  "site": "northfaceconstruction.com",
+  "url": "https://northfaceconstruction.com/",
+  "role": "home",
+  "check": "mobile-menu",
+  "width": 390,
+  "screenshots": [
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/northfaceconstruction.com/_interactions/home-fix/390/mobile-menu-0-before.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/northfaceconstruction.com/_interactions/home-fix/390/mobile-menu-try-0.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/northfaceconstruction.com/_interactions/home-fix/390/mobile-menu-1-open.jpg"
+  ],
+  "candidates": [
+   {
+    "i": 0,
+    "tag": "BUTTON",
+    "cls": "menu-toggle d-lg-none",
+    "aria": "",
+    "txt": "Menu",
+    "top": 34,
+    "left": 278.171875,
+    "w": 81.828125,
+    "h": 18,
+    "vis": true
+   },
+   {
+    "i": 1,
+    "tag": "A",
+    "cls": "",
+    "aria": "",
+    "txt": "Services",
+    "top": 209.5,
+    "left": 543,
+    "w": 66.9375,
+    "h": 19.5,
+    "vis": true
+   },
+   {
+    "i": 62,
+    "tag": "svg",
+    "cls": "",
+    "aria": "",
+    "txt": "",
+    "top": 29,
+    "left": 926,
+    "w": 15,
+    "h": 15,
+    "vis": true
+   },
+   {
+    "i": 63,
+    "tag": "svg",
+    "cls": "",
+    "aria": "",
+    "txt": "",
+    "top": 83,
+    "left": 751.5,
+    "w": 46,
+    "h": 46,
+    "vis": true
+   },
+   {
+    "i": 65,
+    "tag": "BUTTON",
+    "cls": "open-form-hide-toolbar",
+    "aria": "Setting toolbar",
+    "txt": "Hide Toolbar",
+    "top": 201,
+    "left": 808.765625,
+    "w": 95.828125,
+    "h": 23.234375,
+    "vis": true
+   }
+  ],
+  "method": "touch tap",
+  "status": "done",
+  "toggle": {
+   "i": 0,
+   "tag": "BUTTON",
+   "cls": "menu-toggle d-lg-none",
+   "aria": "",
+   "txt": "Menu",
+   "top": 34,
+   "left": 278.171875,
+   "w": 81.828125,
+   "h": 18,
+   "vis": true
+  },
+  "visibleLinks": {
+   "before": 3,
+   "after": 7
+  },
+  "menuText": [
+   "(763) 373-8367",
+   "Schedule Appointment",
+   "Home",
+   "Services",
+   "About",
+   "Contact"
+  ]
+ },
+ {
+  "site": "greentekroofing.com",
+  "url": "https://greentekroofing.com/",
+  "role": "home",
+  "check": "mobile-menu",
+  "width": 390,
+  "screenshots": [
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/greentekroofing.com/_interactions/home-fix/390/mobile-menu-0-before.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/greentekroofing.com/_interactions/home-fix/390/mobile-menu-try-0.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/greentekroofing.com/_interactions/home-fix/390/mobile-menu-try-1.jpg"
+  ],
+  "candidates": [
+   {
+    "i": 0,
+    "tag": "BUTTON",
+    "cls": "menu-toggle",
+    "aria": "",
+    "txt": "Menu",
+    "top": 781,
+    "left": 24,
+    "w": 73.375,
+    "h": 39,
+    "vis": true
+   },
+   {
+    "i": 1,
+    "tag": "DIV",
+    "cls": "hamburger",
+    "aria": "",
+    "txt": "",
+    "top": 793.5,
+    "left": 24,
+    "w": 18,
+    "h": 14,
+    "vis": true
+   }
+  ],
+  "method": "touch tap",
+  "status": "done",
+  "reason": "verified visually by lead: right drawer with 6 links (About Us, Services, Resources, Gallery, Materials + Products, Contact) opened by the bottom-bar MENU toggle; link-count heuristic missed it",
+  "openScreenshot": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/greentekroofing.com/_interactions/home-fix/390/mobile-menu-try-0.jpg"
+ },
+ {
+  "site": "puetzconstruction.com",
+  "url": "https://puetzconstruction.com/services/",
+  "role": "service",
+  "check": "mobile-menu",
+  "width": 390,
+  "screenshots": [
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/_interactions/service-fix/390/mobile-menu-0-before.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/_interactions/service-fix/390/mobile-menu-try-0.jpg",
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/_interactions/service-fix/390/mobile-menu-1-open.jpg"
+  ],
+  "candidates": [
+   {
+    "i": 0,
+    "tag": "BUTTON",
+    "cls": "menu-toggle",
+    "aria": "",
+    "txt": "menu",
+    "top": 780,
+    "left": 16,
+    "w": 94.984375,
+    "h": 40,
+    "vis": true
+   },
+   {
+    "i": 1,
+    "tag": "DIV",
+    "cls": "hamburger",
+    "aria": "",
+    "txt": "",
+    "top": 794,
+    "left": 81.984375,
+    "w": 16,
+    "h": 12,
+    "vis": true
+   }
+  ],
+  "method": "touch tap",
+  "status": "done",
+  "toggle": {
+   "i": 0,
+   "tag": "BUTTON",
+   "cls": "menu-toggle",
+   "aria": "",
+   "txt": "menu",
+   "top": 780,
+   "left": 16,
+   "w": 94.984375,
+   "h": 40,
+   "vis": true
+  },
+  "visibleLinks": {
+   "before": 3,
+   "after": 8
+  },
+  "menuText": [
+   "<img width=\"211\" height=\"70\" src=\"https://puetzconstruction.com/wp-content/uploads/2024/05/Puetz-Construction-Logo-Full-Color.svg\" class=\"custom-logo\" alt=\"Puetz logo\" decoding=\"async\" />",
+   "507-708-5483",
+   "<img width=\"9\" height=\"20\" src=\"https://puetzconstruction.com/wp-content/uploads/2026/08/Facebook-Solid.svg\" alt=\"\" class=\"social-links-item\"/>",
+   "<img width=\"18\" height=\"18\" src=\"https://puetzconstruction.com/wp-content/uploads/2026/08/Instagram-Solid.svg\" alt=\"\" class=\"social-links-item\"/>",
+   "<img width=\"512\" height=\"512\" src=\"https://puetzconstruction.com/wp-content/uploads/2026/08/tik-tok.svg\" alt=\"\" class=\"social-links-item\"/>",
+   "<img width=\"512\" height=\"512\" src=\"https://puetzconstruction.com/wp-content/uploads/2026/08/youtube.svg\" alt=\"\" class=\"social-links-item\"/>",
+   "About Us",
+   "Services"
+  ]
+ },
+ {
+  "site": "genzryan.com",
+  "url": "https://genzryan.com/",
+  "role": "home",
+  "check": "mobile-menu",
+  "width": 390,
+  "status": "done",
+  "screenshots": [
+   "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/genzryan.com/_interactions/home-fix/390/mobile-menu-1-open.jpg"
+  ],
+  "method": "Playwright locator click on .x-anchor-toggle after waitUntil load + scroll priming (one-off /tmp/genz-menu.mjs)",
+  "reason": "verified visually by lead: 320 px right off-canvas, logo, 8 items with accordion chevrons (Heating, Air Conditioning, Air Quality, Plumbing, Electrical, About Us, Contact Us, Free Instant Quote), full-width red SCHEDULE NOW + blue phone buttons; page behind dimmed"
+ }
+]
