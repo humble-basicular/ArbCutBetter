@@ -1,0 +1,557 @@
+{
+  "sitemapURLs": 22,
+  "pages": [
+    {
+      "url": "https://vensland.lt/",
+      "type": "home",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/vilnius/",
+      "type": "locality",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/vilnius/1440",
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/vilnius/390",
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/avizieniai/",
+      "type": "locality",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/avizieniai/1440",
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/avizieniai/390",
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/riese/",
+      "type": "locality",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [
+        "https://vensland.lt/vilnius/",
+        "https://vensland.lt/avizieniai/"
+      ],
+      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+    },
+    {
+      "url": "https://vensland.lt/pagiriai/",
+      "type": "locality",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [
+        "https://vensland.lt/vilnius/",
+        "https://vensland.lt/avizieniai/"
+      ],
+      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+    },
+    {
+      "url": "https://vensland.lt/rudamina/",
+      "type": "locality",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [
+        "https://vensland.lt/vilnius/",
+        "https://vensland.lt/avizieniai/"
+      ],
+      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+    },
+    {
+      "url": "https://vensland.lt/juodsiliai/",
+      "type": "locality",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [
+        "https://vensland.lt/vilnius/",
+        "https://vensland.lt/avizieniai/"
+      ],
+      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+    },
+    {
+      "url": "https://vensland.lt/nemencine/",
+      "type": "locality",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [
+        "https://vensland.lt/vilnius/",
+        "https://vensland.lt/avizieniai/"
+      ],
+      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+    },
+    {
+      "url": "https://vensland.lt/lentvaris/",
+      "type": "locality",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [
+        "https://vensland.lt/vilnius/",
+        "https://vensland.lt/avizieniai/"
+      ],
+      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+    },
+    {
+      "url": "https://vensland.lt/trakai/",
+      "type": "locality",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [
+        "https://vensland.lt/vilnius/",
+        "https://vensland.lt/avizieniai/"
+      ],
+      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+    },
+    {
+      "url": "https://vensland.lt/maisiagala/",
+      "type": "locality",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [
+        "https://vensland.lt/vilnius/",
+        "https://vensland.lt/avizieniai/"
+      ],
+      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+    },
+    {
+      "url": "https://vensland.lt/paslaugos/vejos-irengimas/",
+      "type": "service",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/paslaugos/laistymo-sistemos/",
+      "type": "service",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/paslaugos/vejos-aeravimas-core/",
+      "type": "service",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/paslaugos/vejos-skarifikavimas/",
+      "type": "service",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/paslaugos/vejos-lyginimas-levelingas/",
+      "type": "service",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/paslaugos/vejos-tresimas-purskimas/",
+      "type": "service",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/paslaugos/zoles-pjovimas/",
+      "type": "service",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/paslaugos/apleistu-sklypu-tvarkymas/",
+      "type": "service",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/paslaugos/mini-ekskavatoriaus-paslaugos/",
+      "type": "service",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/paslaugos/gyvatvoriu-sodinimas-prieziura/",
+      "type": "service",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "evidence": null,
+          "legacyViewed": true,
+          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/privatumo-politika/",
+      "type": "legal",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/privatumo-politika/1440",
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/privatumo-politika/390",
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/aciu/",
+      "type": "success-direct",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/aciu/1440",
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/aciu/390",
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    },
+    {
+      "url": "https://vensland.lt/arbcut-reference-study-not-found/",
+      "type": "404",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/arbcut-reference-study-not-found/1440",
+          "legacyViewed": false,
+          "legacyLimit": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/arbcut-reference-study-not-found/390",
+          "legacyViewed": false,
+          "legacyLimit": null
+        }
+      },
+      "representedBy": [],
+      "visualTemplateEquivalence": null
+    }
+  ]
+}
