@@ -21,3 +21,7 @@ Lead reads review notification, fixes material findings (max2rounds), commits ac
 Allowance12:02UTC:Codex2 80% resets14:47UTC;Codex84% resets14:01UTC;Claude96% resets14:20UTC;Claude2 84% resets15:39UTC,weekly79%. Stay bounded; refresh before substantial stage/handover. Preserve model/effort when switching accounts.
 ## Omitted context
 2026-11-05-1330-bulk-study-in-flight.md;1205-bulk-capture-brief.md;bulk-analyst-brief.md. Last research worker task suffix v4-homefront-fullsize-completion-20261105-1 completed, result acknowledged.
+
+## Update14:10EET
+Home Front corrections24a9819: parent H1 is not visible child scale; malformed LP source and failed Minnetonka source separated from placeholders. Review2 approved but reviewer did NOT verify records/screenshots; retain this limitation. Lead extracted both image entries independently. Review1 did substantive9image+coverage audit. No third review.
+Next async stage v4-vensland-bulk-gap-completion, request v4-vensland-bulk-gap-completion-1. Owns only VensLand findings/flags. Codex2 82%12:09UTC, Claude2 92%12:08UTC. Main ledger9sites stillqueued;first-window recapture ongoing. Costs list-price estimates: HomeFront worker$2.2170592;2reviews combined$0.2077614; whole thread known wasted$0.6175338; costCompletefalse so accepted-stage unit cost unavailable. These are not subscription charges.
