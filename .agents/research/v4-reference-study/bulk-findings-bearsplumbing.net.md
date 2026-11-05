@@ -577,7 +577,7 @@ Copy the concrete work photos, symptoms and scope; recent jobs could support loc
 - `service__gas-line-repai/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
 - `service__gas-line-repai/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`.
 
-## Current coverage and exact residual gaps — authoritative checkpoint
+## Historical worker checkpoint — superseded by final lead closure
 
 **Stopped image exploration on the user's final 8M soft-budget steer. Required study remains partial; no further retry assumed.** Contact-sheet notes above are historical sheet-scale evidence only. The actual-open ledgers are authoritative; all obsolete zero-fullsize and unopened-sheet queues have been removed or superseded. No image was reopened in this final retry; only prior pending paths were inspected.
 
@@ -596,7 +596,7 @@ Complete pages: `about-us`, `area`, `area__conroe-tx-main-water-line-repair`, `a
 
 ### Final worker queue — all 152 subsequently viewed by lead
 
-All entries are **pending, not inspected**. Paths relative to `~/.ai-powerhouse/research-captures/arbcut-v4/bearsplumbing.net/`. This is the remaining required/example/outlier queue, not all 155 sitemap pages. Both gas-line spellings are kept separate.
+All entries were pending at the worker stop; subsequently inspected by lead. Paths relative to `~/.ai-powerhouse/research-captures/arbcut-v4/bearsplumbing.net/`. This is the remaining required/example/outlier queue, not all 155 sitemap pages. Both gas-line spellings are kept separate.
 
 - **LEAD VIEWED** `service__gas-line-repair/1440/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`.
 - **LEAD VIEWED** `service__gas-line-repair/390/`: `first-viewport.jpg`, `segment-000000.jpg`, `segment-000844.jpg`, `segment-001688.jpg`, `segment-002532.jpg`, `segment-003376.jpg`, `segment-004220.jpg`, `segment-005064.jpg`, `segment-005908.jpg`, `segment-006752.jpg`, `segment-007596.jpg`, `segment-008440.jpg`, `segment-009284.jpg`, `segment-010128.jpg`, `segment-010972.jpg`, `segment-011816.jpg`.
@@ -619,7 +619,7 @@ All entries are **pending, not inspected**. Paths relative to `~/.ai-powerhouse/
 
 ### Original saved interaction inventory — all 88 subsequently viewed by lead
 
-The saved JSON inventory/method was read previously; it cannot establish the visual outcome. **None of these screenshots has been inspected.** Menu, dropdown, booking CTA, focus, validity, FAQ, sliders, hover and reduced-motion states remain visually unverified. A static reduced-motion image would not itself establish dynamic motion compliance; static thank-you is not proof of a submitted form. No live interaction or submission performed.
+The saved JSON inventory/method was read previously; it cannot establish the visual outcome. All 88 were subsequently inspected by the lead; the following inventory is retained for source mapping. Menu, dropdown, booking CTA, focus, validity, FAQ, sliders, hover and reduced-motion states remain visually unverified. A static reduced-motion image would not itself establish dynamic motion compliance; static thank-you is not proof of a submitted form. No live interaction or submission performed.
 
 - **LEAD VIEWED** `_interactions/contact-_contact_us_/1440/` (17): `01-initial.jpg`, `02-dropdown-0.jpg`, `03-dropdown-1.jpg`, `04-dropdown-2.jpg`, `05-dropdown-3.jpg`, `06-dropdown-4.jpg`, `07-dropdown-5.jpg`, `08-dropdown-6.jpg`, `09-dropdown-7.jpg`, `10-cta-open-96.jpg`, `11-form-0-empty-focus.jpg`, `12-form-0-invalid.jpg`, `13-scroll-0.3.jpg`, `14-scroll-0.7.jpg`, `15-hover-button.jpg`, `16-hover-card.jpg`, `17-reduced-motion.jpg`.
 - **LEAD VIEWED** `_interactions/contact-_contact_us_/390/` (9): `01-initial.jpg`, `02-menu-open.jpg`, `03-menu-close.jpg`, `04-cta-open-3.jpg`, `05-form-0-empty-focus.jpg`, `06-form-0-invalid.jpg`, `07-scroll-0.3.jpg`, `08-scroll-0.7.jpg`, `09-reduced-motion.jpg`.
@@ -630,16 +630,16 @@ The saved JSON inventory/method was read previously; it cannot establish the vis
 
 ### Remaining interpretation limits and next owner
 
-- Black terminal mobile content leaves final footer navigation/copyright unconfirmed on contact, service directory, blog root/pages2/7, sitemap and specials. Every recorded frame for those completed pages was opened; black pixels remain unknown. Pending pages have not yet been assessed for black tails.
+- Black terminal mobile content leaves final footer navigation/copyright unconfirmed on contact, service directory, blog root/pages2/7, sitemap and specials. Every recorded frame for those completed pages was opened; black pixels remain unknown. At the worker stop pending pages had not been assessed; lead subsequently inspected them and retained black-tail limits.
 - Repeated sticky header/chat/accessibility overlays are saved capture state. Widget differences do not establish intentional responsive hiding or a persistent live defect. Membership desktop iframe patch is white despite success flag; mobile map renders. Conroe inspection desktop white map region has no top-level iframe/patch record, cause unknown. Plumbing-repair's blank desktop job-map canvas and missing mobile job widget also remain state-limited observations.
-- Menu/dropdown/CTA outcomes, validation, FAQ transitions, timing, hover, reduced motion and gallery/lightbox lack visual verification. Existing static expanded FAQs are not transition tests. No saved interaction JPG has been opened, so JSON/status-to-visual reconciliation remains unfinished.
+- Menu/dropdown/CTA outcomes, validation, FAQ transitions, timing, hover, reduced motion and gallery/lightbox lack visual verification. Existing static expanded FAQs are not transition tests. At the worker stop no saved interaction JPG had been opened; final lead closure inspected all 88, so JSON/status-to-visual reconciliation remains unfinished.
 - Exact color/spacing tokens, contrast ratios, accessible names/keyboard behaviour, link functionality, current live state, content originality, photo/job authenticity and commercial/licensing/ratings/plumbing/health/financial claims were not independently verified.
 - **Lead owns review and commits.** No commit, browser action, recapture, submission, paid API, message, source/public/script, board or handoff write occurred. Only this report was edited; external sheet flags were read and remained unchanged. No further retry is assumed; if the remaining study is resumed by the lead, the exact pending ledgers above are the starting point.
 
 Stop verification: 804 static ledger paths exist, are unique and exactly match the visually credited manifest entries; all 45 complete pages match both saved records' full segment arrays plus first viewport. The 152 pending paths exist, are disjoint from viewed paths, and complete the 956-file queue. Membership patch exists and was inspected in the earlier stage. Sheet index readback 46/46 `viewed:true`. `git diff --check` passed after final write. No product tests apply to this Markdown-only study.
 
-## Lead direct closure in progress
-Actual display opens0–23 in `/tmp/bears-lead-closure/manifest.json` (source mapping preserved; viewed flags only after opens). Gas-line-repair completebothwidths: topical gas hardware/leak-detector photos, long service list before mobile form, full footer retained; firstFAQ expanded in savedstate,not transitionproof. Tankless-benefits article completebothwidths: red TableofContents spinner remains visible, no contents loaded; calm narrow article column, keytakeaways and plain-textFAQ; previous/next labels truncate at390. Technical claims unverified. Woodlands main-water-line desktop complete: reviews/process headings incorrectly refer to toilet repair despite main-water subject (`segment-000000.jpg`, `segment-004800.jpg`); direct copy mismatch,not captureartefact. Job-map section includes onephoto and threeblank image areas,loadingcauseunknown. Mobile stillpending. Sourcesexactfilenamesmappedinmanifest;continuingremainingqueue.
+## Historical lead progress — superseded by final closure
+Actual display opens0–23 in `/tmp/bears-lead-closure/manifest.json` (source mapping preserved; viewed flags only after opens). Gas-line-repair completebothwidths: topical gas hardware/leak-detector photos, long service list before mobile form, full footer retained; firstFAQ expanded in savedstate,not transitionproof. Tankless-benefits article completebothwidths: red TableofContents spinner remains visible, no contents loaded; calm narrow article column, keytakeaways and plain-textFAQ; previous/next labels truncate at390. Technical claims unverified. Woodlands main-water-line desktop complete: reviews/process headings incorrectly refer to toilet repair despite main-water subject (`segment-000000.jpg`, `segment-004800.jpg`); direct copy mismatch,not captureartefact. Job-map section includes onephoto and threeblank image areas,loadingcauseunknown. Mobile was pending at this historical point; subsequently inspected. Sourcesexactfilenamesmappedinmanifest;continuingremainingqueue.
 
 Lead opens24–57completed:WoodlandswaterlineandTomballtoiletbothwidths;blogpagination3/4bothwidths. Woodlands toilet-headingcopyerroralso visible390;bothlocalityjobmapsrender withstate-dependentphoto blanks,chat coversbottomparagraphs,andstickyheaderrepeats across390frames. Pagination3/4havehuge pale curvedregionbeforeheroatbothwidths,3articlecards,search,pagination,map/footer;mobileterminalframesblack,sofinalfooterunknownratherthanabsent. Exactsourcepaths:leadmanifestentries24–57. No interactioncredit.
 
@@ -667,4 +667,8 @@ Original `bulk-interactions.json` has100Bears entries:30done,61not-present,9erro
 
 ### Current limits
 
+Separate iframe patch images: besides the inspected membership patch, 61 other iframe JPGs associated with the 54 selected pages were not separately opened (reviewer file inventory). Page segments containing embedded content were inspected, but this does not establish patch-source completeness or explain blank maps/job photos.
+
 Required static sampling and original saved interaction-image inspection are complete; **live interaction verification is still partial/inconclusive**, especially menus/dropdowns/booking/FAQ/validation, keyboard, motion and galleries. Black mobiletails and widget/iframe rendering gaps remain explicit. No360width check, live content/credential/licence/rating verification, network diagnosis, accessibility/performance audit, assetlicensing or conversionstudy. No forms submitted. This is research evidence with knownlimits, not a claim that every feature works.
+
+Review correction: prior worker status tables are historical only. Final current totals are54selectedpages/108widths/956staticJPGs+1membershippatch,88savedinteractionJPGs. Menu-open still shows hamburger; X appears in menu-close; no navigation panel visible. Four-image/count audit verified byClaude;FAQsample not checked byreviewer,leadviewed directly.

@@ -1,6 +1,6 @@
-# Puetz bulk visual analysis — partial after continuation
+# Puetz bulk visual analysis — selected full-size pass complete; final gates pending
 
-**Latest verified boundary:**46/46 overview sheets remain viewed;38 new pages are now complete at both widths (76 page-width rows), plus33 separately attributed inherited studies. This continuation actually opened111 of the requested283 previously unopened artifacts. Total opened artifacts369/541;172 artifacts across17 selected routes remain. Whole-site brief gates are not met. The first budget-stop section is historical; use the final coverage section below.
+**Latest verified boundary:**46/46 overview sheets remain viewed. All55 selected new page pairs are complete:541/541 opened artifacts represent850 source segments across110 width rows, including every first viewport. FINALretry2 opened the exact172 previously unopened artifacts across17 routes, then28/151 existing interaction JPGs before the user requested the budget stop.33 inherited route studies remain separately attributed, with provenance/native-resolution limitations. Whole-site brief gates are not met. Earlier progress tables and “remaining” lists below are historical; the final FINALretry2 section is authoritative.
 
 Evidence root P: `/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com`; S: sibling `_sheets/puetzconstruction.com`. Research only; saved evidence, no browser actions. Generated groups/sheets using existing scripts on 2026-11-05. This report supersedes no prior evidence: inherited observations remain attributed to `puetz-*.md`.
 
@@ -233,3 +233,72 @@ Numerical-token caveat for the pending extraction: a recorded H1/H2 element can 
 Existing interactions and record-token/ledger work were not started before the user's second stop instruction. No browser, recapture, submission, delegation, script/ledger/source/public/board/handoff edit or commit was performed. Lead verification/commit remains separate.
 
 Done:46-sheet overview retained;13 additional full page pairs completed · Verified:111 new actual opens,369 total artifact entries,76 complete width rows · Not verified:172 artifacts and remaining brief gates · Next: lead continues exact queue, verifies and commits.
+
+## FINALretry2 — authoritative coverage at the final budget stop
+
+The exact saved queue beginning `P/roofing__owatonna/1440/segment-002400.jpg` is finished: **172/172 previously unopened artifacts actually opened**, without revisiting settled sheets or page pairs. A truncated tool-output batch was reopened before counting its images. Full-size total is now **541/541 artifacts,55 complete new routes,110 width rows,850 source segments**. Desktop sources were opened as-is with original detail; mobile native390 strips preserve three consecutive frames side by side, plus separate first viewports. Tool display scaling of tall images and the older2400px mobile segments remain disclosed limitations. Flags are derived in external S only; raw records were not changed.
+
+Exact source filenames, capture times, segment y/height and opened artifact paths remain in `S/fullsize-manifest.json`; `S/view-progress.json` now has an empty remaining-image queue, no next full-size image and no incomplete width rows. The46 overview flags are unchanged.33 inherited route studies are additional reported coverage, **not33 new native-resolution inspections**. Thus88 routes have selected or inherited detail evidence; the other166 capture folders have overview-only coverage. Full-size inspection of all254 folders was not the approved sampling requirement.
+
+Additional completed route pairs in this retry: `roofing__owatonna`, `roofing__st-charles`; `siding__albert-lea`, `siding__austin`, `siding__bloomington`, `siding__decorah`, `siding__eau-claire`, `siding__la-crosse`, `siding__mankato`, `siding__mason-city`, `siding__menomonie`, `siding__owatonna`, `siding__red-wing`, `siding__waterloo`, `siding__winona`; `small-bathroom-remodel`, `walk-in-shower-ideas`. All first viewports and every saved segment at1440/390 are represented. The last two URLs show the branded404 shell, six recovery service links and footer at both widths; neither supplies the article its URL suggests. The seven newly selected404 routes are now all complete.
+
+| Algorithmic group | Folders | New complete pairs | Inherited reported pairs | Flags outside both sets |
+|---|---:|---:|---:|---:|
+| t00 articles |158|12|0|0|
+| t01 decks/siding localities |26|14|0|0|
+| t02 commercial localities |17|16|0|0|
+| t03 mixed legacy articles/localities |10|0|10|0|
+| t04 roofing localities |10|3|0|0|
+| t05 mixed standalone |9|0|9|0|
+| t06 branded404 URLs |7|7|0|0|
+| t07 service/legal/leadership |7|0|7|0|
+| t08 reviews/FAQ/SMS |3|0|3|0|
+| t09 older commercial |2|0|2|0|
+| t10 blog index |1|0|1|0|
+| t11 home |1|1|0|0|
+| t12 projects |1|1|0|0|
+| t13 roofing Winona |1|0|1|0|
+| t14 siding Bloomington |1|1|0|0|
+
+This closes the selected-image queue and numerical group-flag membership check. It does **not** close the inherited same-file provenance gate or prove two differing examples for every semantic template: similarity bins combine unrelated subjects. The final semantic audit must use actual service/company/legal/utility structures and prior reports, not simply this table's totals.
+
+### Newly completed roofing evidence
+
+**Owatonna:** beyond the already viewed intro, a tan replacement/installation band names asphalt/metal options and GAF/Owens Corning, followed by process cards, a repair section with roof-stripping workers, a tan storm-inspection section with an aerial damage photo, St Charles office map/trust copy, four closed local FAQs, general blog cards and an Emily H. review over the crew CTA. Mobile stacks photos and copy, retaining the full service distinctions. This is materially richer than Albert Lea's generic reasons-to-hire text, although no caption establishes the photos as Owatonna jobs. Screenshot prose says5.0 across335 reviews while the desktop map shows375; these are visible inconsistent counts, not verified review totals. Sources: `P/roofing__owatonna/1440/segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`; corresponding `S/native390/roofing__owatonna/strip-00.jpg` through `strip-05.jpg` and first viewport. Exact y values are in the manifest.
+
+**St Charles:** replacement band → process → storm copy and large damaged-shingle photograph → tan repair band → office map/trust copy → five closed local FAQs → blog → Steve R. review/long local enquiry CTA → footer. Installation, exposed decking and damaged shingles provide service-relevant subjects, with no diagnostic annotations or job captions. Susan J., Jodi S. and Steve R. appear at different proof positions. Four vs five FAQs and differing repair/storm order distinguish it from Owatonna; the extra height is actual content. Same335-versus375 review-count mismatch. Sources: `P/roofing__st-charles/1440/segment-000000.jpg` through `segment-007200.jpg`; first viewport; `S/native390/roofing__st-charles/strip-00.jpg` through `strip-05.jpg` and390 first viewport. No FAQ was clicked in this pass.
+
+Copy the repair/replacement/storm separation and meaningful work-photo scale; for ArbCut use its own actual services and captioned outcomes. Avoid the repeated vertical supplier stack, unverified local-job implication and unsupported review counts.
+
+### Newly completed siding evidence
+
+The12 ordinary city variants share photo/form hero with LP Smartside/multiple-options/budget bullets → materials split → Daniel Anshus review ribbon → general Roofing/Siding/Remodels cards → tall duplicated supplier-logo stack → three process cards → team/financing prose plus house photo → St Charles office map/local-community prose → general blog → Billy Reed/crew CTA/footer. Hero copy at390 occupies many lines before proof and form. Materials name vinyl, fibre cement and engineered wood without a useful comparison; finance prose names Improvifi. These are visible content, not validated financing terms. Sources: all12 `P/siding__<city>/{1440,390}/first-viewport.jpg`, all source segments and native390 strips in the completed manifest; e.g. Albert Lea desktop `segment-000000.jpg`/`segment-002400.jpg`/`segment-004800.jpg`, mobile strips00–04.
+
+The photo changes do not establish local proof: Decorah's “premium materials” split shows winter framing and its siding-experts section shows an aerial roof (`P/siding__decorah/1440/segment-000000.jpg`, `segment-002400.jpg`; native390 strips00/02). Eau Claire's “Get to know the pros” and Menomonie's “Meet the experts” show houses without named people (`P/siding__eau-claire/1440/segment-002400.jpg`, `P/siding__menomonie/1440/segment-002400.jpg`; native390 strip02 for each). Mason City and La Crosse reuse the same double-garage house in their team sections; Owatonna's team photo repeats Mason City's hero house. House appearance alone does not identify asset ownership, stock origin or project city. Local “we live here”/“our home” claims accompany a map of the St Charles office; local residence/offices are unverified. Preserve matched service, person and job captions in ArbCut rather than these generic proof substitutions.
+
+**Bloomington is a distinct layout:** residential-materials split/Jodi S. ribbon → process → team/finance/large house → map/local copy → blog → related services/supplier stack → four closed FAQs on pests, older homes, permits and winters → Deb D./crew CTA/footer. Mobile preserves that order with stacked sections. Sources: `P/siding__bloomington/1440/segment-000000.jpg`, `segment-002400.jpg`, `segment-004800.jpg`, `segment-007200.jpg`;390 first viewport and `S/native390/siding__bloomington/strip-00.jpg` through `strip-04.jpg`. This closes the singleton's full-depth requirement; answers/interactions remain untested.
+
+**Waterloo copy mismatch:** the gold ribbon says “Siding Installation In Waterloo, MN” while the hero body says “Waterloo, IA”; community copy later refers to Iowa. Both widths show the contradiction (`P/siding__waterloo/1440/first-viewport.jpg`; `S/native390/siding__waterloo/strip-00.jpg`, left frame/ribbon and left-frame body). Do not infer the intended state from this audit; verify target service area before reuse. Red Wing also has conspicuously generous space between hero prose and proof bullets (`P/siding__red-wing/1440/first-viewport.jpg`; native390 strip00); cause unknown. No new desktop/mobile missing-photo discrepancy was observed on the completed siding routes.
+
+### Saved interactions —28 opened,123 remain
+
+`S/interaction-review-progress.json` enumerates all151 existing JPGs under `P/_interactions`, `P/interactions`, `P/gap-closure`, with exact28 opened paths,123 remaining paths and next image. Opens stopped after `_interactions/faq-_faq_/1440/10-hover-button.jpg`; next is `11-hover-nav.jpg`. This is separate from the completed541-artifact page manifest. No browser actions or submissions occurred.
+
+Actually viewed: all18 estimator/contact-labelled images under `_interactions/contact-_instant_roof_estimate_/{1440,390}`, and the first10 desktop FAQ images. The “contact” folder is the estimator page, not the contact enquiry form. Desktop About/Services/Resources dropdown images show white shadowed menus, red active/hover labels and stacked destinations. Footer-link dropdown attempts06/07 simply show footer states. Estimator mobile files named menu-open/menu-close still show the page, without a visible menu; filenames alone do not establish success. Saved scroll states show the sticky desktop header and mobile bottom menu/phone dock. The estimator screenshots show heading/FAQ/crew/footer with no usable quote-input tool. Static reduced-motion JPGs cannot establish animation behaviour. FAQ initial/scroll states show topic filters, expanded text answers and Load more; the viewed subset contains no demonstrated filter transition or completed load-more action. Financing answer names both FinTurf and Improvifi, so varying mentions elsewhere do not alone prove a provider contradiction.
+
+Read-only JSON inspected: `P/interactions/1440/record.json`, `P/interactions/390/record.json`, `P/gap-closure/record.json`, `P/gap-closure/controls/record.json`. The interactions records claim roofing/financing query-filter URLs and prior viewed overviews; corresponding JPGs have **not yet been opened in this pass**. Recorded contact fields have `ariaRequired:"true"` but native `required:false`; this does not establish successful validation or submission. Gap-closure records show estimator inputs limited to the menu button, a reCAPTCHA frame and a zero-size empty frame; the360 menu attempt logged a timeout. Controls record's FAQ-title HTML is unchanged before/after, insufficient to prove whether an answer panel elsewhere expanded. A reduced-motion record says media true/animations empty; one static state cannot prove a site-wide motion preference implementation. These records are saved historical evidence, not fresh tests. `interactions/360/record.json` remains unread in this pass.
+
+### Remaining gates and ownership
+
+- Lead: open the exact123 remaining interaction JPGs, read the remaining saved JSON/state metadata and reconcile attempted versus visibly successful transitions. Gallery/filter/load-more/menu/validation states, slider timing and reduced-motion behaviour remain partly or wholly unverified; no submission or recapture is authorised here.
+- Lead: extract numerical H1/H2/body/colour/fixed-element values from saved records. **Not done.** Parent computed heading styles can differ from styled child spans; do not report parent values as the actual visible child typography. No numeric style token was inferred from screenshots.
+- Lead: reconcile254 capture directories versus253 ledger pages +1file read-only. **Not done.** Do not silently equate folders, ledger URLs and file entries.
+- Lead: finish the33 inherited studies' timestamp/same-file provenance audit and semantic one-off/two-differing-example/outlier gates. Prior metadata and reports are reused with their disclosed720px desktop/native-resolution limitations; no fresh hash identity proof was established. All current flagged folders fall in the new or inherited sets, but inheritance is not automatically native full-size verification.
+- Lead: retain unknown capture causes, pin the deck comparison table's exact frame if required, and verify the six existing candidate screenshot choices. Empty image/video/map slots, current-versus-legacy differences, localisation claims, review counts, factual/safety/pricing content and conversion effectiveness remain unverified. No whole-site-complete claim.
+
+Only this owned report and external Puetz manifest/progress artifacts were edited. No raw capture record, script, ledger, source/public, board or handoff edit; no browser, recapture, submission, delegation, commit, paid API, message, push, merge or deploy. The lead verifies and commits, per the task's explicit ownership restriction.
+
+Done: exact172-image queue and55 selected full-size pairs · Verified: actual image opens;541 manifest entries/850 source segments/110 complete width rows;28 saved interaction opens · Not verified:123 interaction JPGs, numerical style extraction, ledger reconciliation, inherited provenance/semantic gates and capture/live causes · Next: lead completes residual gates, verifies and commits; no third sub-agent retry.
+
+## Lead record reconciliation in progress
+Lead readback:110fullsize-manifest rows all opened=true;all listed display files present. Mainledger253capturedHTMLentries+1file(`locations.kml`). Rawfoldersalso contain synthetic `arbcut-reference-study-not-found`404probe and `interactions`metadata directory;neither is an additional discoveredpublicHTMLURL. Grouped254pages versus253captured is consistent with an extra probe,not254verifiedpublicURLs;exactgroupmembership reconciliation stillpending. No newinteractionviewcredit.
