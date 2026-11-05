@@ -1,0 +1,961 @@
+{
+  "provenance": {
+    "note": "New derived reconstruction from CURRENT saved captures at default450/520; not recovered historical byte identity, no visual inspection credit. Existing shared callthelen-only summary backed up and left unchanged.",
+    "sourceScript": ".agents/research/v4-reference-study/bulk-blank-check.py",
+    "sourceSHA256": "771495fd5960522010ad523ecf27b898d36fb72941cda3b8f65688a2c8b192cf",
+    "MIN1440": 450,
+    "MIN390": 520,
+    "startedUnix": 1793916195.6635258,
+    "status": "complete",
+    "finishedUnix": 1793916281.018811,
+    "flaggedPageWidths": 108,
+    "perSite": {
+      "bearsplumbing.net": 1,
+      "callthelen.com": 5,
+      "genzryan.com": 1,
+      "glassexpertsfl.com": 1,
+      "greentekroofing.com": 10,
+      "homefrontexteriorsmn.com": 1,
+      "northfaceconstruction.com": 3,
+      "puetzconstruction.com": 1,
+      "smockhvac.com": 2,
+      "theglassperts.com": 14,
+      "trueairconditioningandheating.com": 1,
+      "vensland.lt": 2,
+      "veteranscontractingllc.com": 66
+    },
+    "activeOnlyFlaggedPageWidths": 107,
+    "excludedArchivedFlaggedPageWidths": {
+      "smockhvac.com/_superseded/390": {
+        "actualRecord": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/_superseded/home-390-cdp-layout-defect/record.json",
+        "bands": [
+          [
+            6696,
+            756
+          ]
+        ],
+        "reason": "archived/superseded capture excluded from active summary"
+      }
+    },
+    "filterNote": "Original algorithm includes a superseded Smock layout-defect backup; active-only derived companion excludes underscore-prefixed archive slug. Raw108algorithm output preserved."
+  },
+  "rawRoot": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4",
+  "priorGlobalIdentityRecovered": false,
+  "priorGlobalIdentityNote": "Bounded file search found current shared overwritten callthelen-only file and per-site copy, no historical full summary. New reconstruction replaces cross-site analysis operationally but is NOT byte restoration. Existing shared file preserved unchanged.",
+  "reconstructedRawSHA256": "bd3115582890ede8cc90482d868cb806dd8541dbafb2628b1f328c56d0cd20bb",
+  "activeOnlySHA256": "96c4095317fadfda72671e1feac564d0dbd4b6856caca3d6e27f6325a1964982",
+  "preservedOverwrittenSHA256": "d7fdf219340d26c7b878648d1a7c4c50b3c9219ce176ed64efbaf198ba6d380a",
+  "activeFlaggedPageWidths": {
+    "veteranscontractingllc.com/Raleigh/1440": [
+      [
+        6592,
+        600
+      ],
+      [
+        12080,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/atlanta/1440": [
+      [
+        5832,
+        680
+      ],
+      [
+        11328,
+        664
+      ]
+    ],
+    "veteranscontractingllc.com/atlanta/390": [
+      [
+        6752,
+        637
+      ]
+    ],
+    "veteranscontractingllc.com/best-siding-for-house/1440": [
+      [
+        2696,
+        520
+      ],
+      [
+        6328,
+        624
+      ]
+    ],
+    "veteranscontractingllc.com/chicago/1440": [
+      [
+        6064,
+        672
+      ]
+    ],
+    "veteranscontractingllc.com/chicago/390": [
+      [
+        7739,
+        661
+      ]
+    ],
+    "veteranscontractingllc.com/clearwater/1440": [
+      [
+        6584,
+        608
+      ],
+      [
+        12080,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/contact/1440": [
+      [
+        2456,
+        472
+      ],
+      [
+        4824,
+        480
+      ],
+      [
+        8536,
+        488
+      ],
+      [
+        9104,
+        488
+      ],
+      [
+        9600,
+        456
+      ],
+      [
+        13192,
+        712
+      ]
+    ],
+    "veteranscontractingllc.com/contact/390": [
+      [
+        10407,
+        557
+      ]
+    ],
+    "veteranscontractingllc.com/designeyeq/1440": [
+      [
+        1768,
+        624
+      ],
+      [
+        2400,
+        1117
+      ]
+    ],
+    "veteranscontractingllc.com/designeyeq/390": [
+      [
+        2532,
+        836
+      ]
+    ],
+    "veteranscontractingllc.com/gutters/1440": [
+      [
+        5072,
+        672
+      ],
+      [
+        7312,
+        719
+      ]
+    ],
+    "veteranscontractingllc.com/gutters/390": [
+      [
+        4387,
+        629
+      ]
+    ],
+    "veteranscontractingllc.com/home/1440": [
+      [
+        2456,
+        472
+      ],
+      [
+        4824,
+        480
+      ],
+      [
+        8536,
+        488
+      ],
+      [
+        9104,
+        488
+      ],
+      [
+        9600,
+        456
+      ],
+      [
+        13192,
+        712
+      ]
+    ],
+    "veteranscontractingllc.com/home/390": [
+      [
+        10407,
+        557
+      ]
+    ],
+    "veteranscontractingllc.com/home-visualizer/1440": [
+      [
+        1768,
+        624
+      ],
+      [
+        2400,
+        1117
+      ]
+    ],
+    "veteranscontractingllc.com/home-visualizer/390": [
+      [
+        2532,
+        836
+      ]
+    ],
+    "veteranscontractingllc.com/lexington/1440": [
+      [
+        6528,
+        664
+      ],
+      [
+        14488,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/lexington/390": [
+      [
+        7803,
+        629
+      ]
+    ],
+    "veteranscontractingllc.com/locations__atlanta/1440": [
+      [
+        5832,
+        680
+      ],
+      [
+        11328,
+        664
+      ]
+    ],
+    "veteranscontractingllc.com/locations__atlanta/390": [
+      [
+        6752,
+        637
+      ]
+    ],
+    "veteranscontractingllc.com/locations__atlanta__services__gutters/1440": [
+      [
+        5096,
+        672
+      ],
+      [
+        7320,
+        743
+      ]
+    ],
+    "veteranscontractingllc.com/locations__atlanta__services__gutters/390": [
+      [
+        4459,
+        597
+      ]
+    ],
+    "veteranscontractingllc.com/locations__atlanta__services__residential-roofing/1440": [
+      [
+        1936,
+        456
+      ],
+      [
+        5056,
+        672
+      ],
+      [
+        7280,
+        743
+      ]
+    ],
+    "veteranscontractingllc.com/locations__chicago/1440": [
+      [
+        6064,
+        672
+      ]
+    ],
+    "veteranscontractingllc.com/locations__chicago/390": [
+      [
+        7739,
+        661
+      ]
+    ],
+    "veteranscontractingllc.com/locations__chicago__services__gutters/1440": [
+      [
+        5096,
+        672
+      ],
+      [
+        7320,
+        743
+      ]
+    ],
+    "veteranscontractingllc.com/locations__chicago__services__gutters/390": [
+      [
+        4507,
+        549
+      ]
+    ],
+    "veteranscontractingllc.com/locations__chicago__services__multi-family-roofing/1440": [
+      [
+        5968,
+        504
+      ],
+      [
+        7200,
+        479
+      ]
+    ],
+    "veteranscontractingllc.com/locations__chicago__services__residential-roofing/1440": [
+      [
+        1936,
+        456
+      ],
+      [
+        5064,
+        664
+      ],
+      [
+        7280,
+        743
+      ]
+    ],
+    "veteranscontractingllc.com/locations__clearwater/1440": [
+      [
+        6584,
+        608
+      ],
+      [
+        12080,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/locations__clearwater__services__gutters/1440": [
+      [
+        5096,
+        672
+      ],
+      [
+        7320,
+        743
+      ]
+    ],
+    "veteranscontractingllc.com/locations__clearwater__services__gutters/390": [
+      [
+        4507,
+        549
+      ]
+    ],
+    "veteranscontractingllc.com/locations__clearwater__services__residential-roofing/1440": [
+      [
+        1936,
+        456
+      ],
+      [
+        5056,
+        672
+      ],
+      [
+        7280,
+        743
+      ]
+    ],
+    "veteranscontractingllc.com/locations__clearwater__services__residential-roofing/390": [
+      [
+        4220,
+        549
+      ]
+    ],
+    "veteranscontractingllc.com/locations__lexington/1440": [
+      [
+        6528,
+        664
+      ],
+      [
+        14488,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/locations__lexington/390": [
+      [
+        7803,
+        629
+      ]
+    ],
+    "veteranscontractingllc.com/locations__lexington__services__gutters/390": [
+      [
+        4515,
+        541
+      ]
+    ],
+    "veteranscontractingllc.com/locations__lexington__services__residential-roofing-2/1440": [
+      [
+        1936,
+        456
+      ],
+      [
+        5056,
+        672
+      ],
+      [
+        7280,
+        743
+      ]
+    ],
+    "veteranscontractingllc.com/locations__lexington__services__residential-roofing-2/390": [
+      [
+        4220,
+        573
+      ]
+    ],
+    "veteranscontractingllc.com/locations__lexington__services__siding/1440": [
+      [
+        4936,
+        664
+      ],
+      [
+        7200,
+        695
+      ]
+    ],
+    "veteranscontractingllc.com/locations__raleigh/1440": [
+      [
+        6592,
+        600
+      ],
+      [
+        12080,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/locations__raleigh__services__gutters/1440": [
+      [
+        5104,
+        664
+      ],
+      [
+        7320,
+        743
+      ]
+    ],
+    "veteranscontractingllc.com/locations__raleigh__services__gutters/390": [
+      [
+        4459,
+        597
+      ]
+    ],
+    "veteranscontractingllc.com/locations__raleigh__services__multi-family-roofing/1440": [
+      [
+        5968,
+        504
+      ],
+      [
+        7200,
+        479
+      ]
+    ],
+    "veteranscontractingllc.com/locations__raleigh__services__residential-roofing/1440": [
+      [
+        1936,
+        456
+      ],
+      [
+        5080,
+        672
+      ],
+      [
+        7296,
+        750
+      ]
+    ],
+    "veteranscontractingllc.com/locations__raleigh__services__residential-roofing/390": [
+      [
+        4220,
+        541
+      ]
+    ],
+    "veteranscontractingllc.com/locations__raleigh__services__siding/1440": [
+      [
+        4936,
+        664
+      ],
+      [
+        7200,
+        695
+      ]
+    ],
+    "veteranscontractingllc.com/locations__richmond/1440": [
+      [
+        6520,
+        672
+      ],
+      [
+        14488,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/locations__richmond/390": [
+      [
+        7803,
+        629
+      ]
+    ],
+    "veteranscontractingllc.com/locations__richmond__services__gutters/1440": [
+      [
+        5096,
+        672
+      ],
+      [
+        7320,
+        743
+      ]
+    ],
+    "veteranscontractingllc.com/locations__richmond__services__gutters/390": [
+      [
+        4507,
+        549
+      ]
+    ],
+    "veteranscontractingllc.com/locations__richmond__services__residential-roofing/1440": [
+      [
+        1936,
+        456
+      ],
+      [
+        5056,
+        672
+      ],
+      [
+        7280,
+        743
+      ]
+    ],
+    "veteranscontractingllc.com/locations__richmond__services__residential-roofing/390": [
+      [
+        4220,
+        573
+      ]
+    ],
+    "veteranscontractingllc.com/locations__richmond__services__siding/1440": [
+      [
+        4936,
+        664
+      ],
+      [
+        7200,
+        695
+      ]
+    ],
+    "veteranscontractingllc.com/multi-family-roofing/1440": [
+      [
+        5856,
+        480
+      ]
+    ],
+    "veteranscontractingllc.com/projects/1440": [
+      [
+        504,
+        920
+      ]
+    ],
+    "veteranscontractingllc.com/raleigh-nc/1440": [
+      [
+        6592,
+        600
+      ],
+      [
+        12080,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/raleigh-nc__about/1440": [
+      [
+        6592,
+        600
+      ],
+      [
+        12080,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/raleigh-nc__contact/1440": [
+      [
+        6592,
+        600
+      ],
+      [
+        12080,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/richmond/1440": [
+      [
+        6520,
+        672
+      ],
+      [
+        14488,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/richmond/390": [
+      [
+        7803,
+        629
+      ]
+    ],
+    "veteranscontractingllc.com/richmond-ky/1440": [
+      [
+        6520,
+        672
+      ],
+      [
+        14488,
+        727
+      ]
+    ],
+    "veteranscontractingllc.com/richmond-ky/390": [
+      [
+        7803,
+        629
+      ]
+    ],
+    "veteranscontractingllc.com/roofing/1440": [
+      [
+        5056,
+        680
+      ],
+      [
+        7399,
+        670
+      ]
+    ],
+    "veteranscontractingllc.com/siding/1440": [
+      [
+        4928,
+        672
+      ],
+      [
+        7216,
+        709
+      ]
+    ],
+    "greentekroofing.com/blog__blog-climate-factors-that-influence-roofing-system-lifespan-in-thonotosassa-fl/1440": [
+      [
+        5736,
+        592
+      ]
+    ],
+    "greentekroofing.com/blog__blog-commercial-flat-roof-maintenance-plans-for-davenport-property-owners/1440": [
+      [
+        7848,
+        592
+      ]
+    ],
+    "greentekroofing.com/blog__blog-tree-canopy-problems-in-thonotosassa-fl-how-falling-debris-damages-shingles-and-flashing/1440": [
+      [
+        3264,
+        592
+      ]
+    ],
+    "greentekroofing.com/commercial-roofing/1440": [
+      [
+        12584,
+        1576
+      ],
+      [
+        14400,
+        1408
+      ]
+    ],
+    "greentekroofing.com/commercial-roofing__pasco-county/1440": [
+      [
+        14856,
+        1568
+      ]
+    ],
+    "greentekroofing.com/commercial-roofing__sarasota-county/1440": [
+      [
+        14856,
+        1568
+      ]
+    ],
+    "greentekroofing.com/home/1440": [
+      [
+        12152,
+        1568
+      ],
+      [
+        13776,
+        616
+      ],
+      [
+        14400,
+        976
+      ],
+      [
+        15432,
+        1360
+      ]
+    ],
+    "greentekroofing.com/roofing/1440": [
+      [
+        6576,
+        616
+      ],
+      [
+        7200,
+        952
+      ],
+      [
+        8208,
+        1384
+      ],
+      [
+        14856,
+        1568
+      ]
+    ],
+    "greentekroofing.com/solar-panels/1440": [
+      [
+        12000,
+        1408
+      ]
+    ],
+    "greentekroofing.com/windows-doors/1440": [
+      [
+        12000,
+        1480
+      ]
+    ],
+    "bearsplumbing.net/membership/1440": [
+      [
+        6312,
+        456
+      ]
+    ],
+    "northfaceconstruction.com/blog__roof-types/1440": [
+      [
+        21832,
+        672
+      ],
+      [
+        22648,
+        680
+      ]
+    ],
+    "northfaceconstruction.com/schedule-appointment/1440": [
+      [
+        1040,
+        1352
+      ],
+      [
+        2400,
+        816
+      ]
+    ],
+    "northfaceconstruction.com/schedule-appointment/390": [
+      [
+        940,
+        740
+      ],
+      [
+        1688,
+        836
+      ],
+      [
+        2532,
+        677
+      ]
+    ],
+    "homefrontexteriorsmn.com/minnetonka-mn/1440": [
+      [
+        1328,
+        456
+      ]
+    ],
+    "genzryan.com/blog__how-to-clean-condenser-coils/1440": [
+      [
+        3408,
+        552
+      ]
+    ],
+    "smockhvac.com/blog__heat-pump-replacement/1440": [
+      [
+        8216,
+        456
+      ]
+    ],
+    "trueairconditioningandheating.com/blog__signs-of-poor-air-quality/1440": [
+      [
+        6312,
+        496
+      ]
+    ],
+    "theglassperts.com/broken-window-lock-repair-miami/1440": [
+      [
+        3448,
+        560
+      ]
+    ],
+    "theglassperts.com/commercial-window-installation-naples/1440": [
+      [
+        4800,
+        544
+      ]
+    ],
+    "theglassperts.com/condensation-between-glass-panes-miami/1440": [
+      [
+        3272,
+        568
+      ]
+    ],
+    "theglassperts.com/custom-glass-cutting-tampa/390": [
+      [
+        13743,
+        597
+      ]
+    ],
+    "theglassperts.com/decorative-glass-installation-tampa/390": [
+      [
+        13504,
+        589
+      ]
+    ],
+    "theglassperts.com/emergency-glass-repair-miami/1440": [
+      [
+        5800,
+        560
+      ]
+    ],
+    "theglassperts.com/emergency-window-repair-naples/1440": [
+      [
+        3280,
+        560
+      ]
+    ],
+    "theglassperts.com/glass-cutting-service-tampa/390": [
+      [
+        13687,
+        653
+      ]
+    ],
+    "theglassperts.com/homestead-fl/1440": [
+      [
+        936,
+        1456
+      ],
+      [
+        2400,
+        1494
+      ]
+    ],
+    "theglassperts.com/safety-glass-installation-tampa/390": [
+      [
+        13735,
+        605
+      ]
+    ],
+    "theglassperts.com/shop-window-repair-miami/1440": [
+      [
+        3448,
+        568
+      ]
+    ],
+    "theglassperts.com/tempered-glass-installation-tampa/390": [
+      [
+        14412,
+        677
+      ]
+    ],
+    "theglassperts.com/window-installation-tampa/390": [
+      [
+        14348,
+        605
+      ]
+    ],
+    "theglassperts.com/window-repair-orlando/1440": [
+      [
+        3296,
+        568
+      ]
+    ],
+    "puetzconstruction.com/blog__flat-roof-flashing/1440": [
+      [
+        3880,
+        696
+      ]
+    ],
+    "glassexpertsfl.com/helpful-fix-to-squeaking-sliding-door/1440": [
+      [
+        5709,
+        582
+      ]
+    ],
+    "vensland.lt/avizieniai/1440": [
+      [
+        2400,
+        1960
+      ]
+    ],
+    "vensland.lt/vilnius/390": [
+      [
+        5064,
+        836
+      ],
+      [
+        5908,
+        836
+      ]
+    ],
+    "callthelen.com/author__kevin__page__10/1440": [
+      [
+        34016,
+        640
+      ],
+      [
+        37032,
+        672
+      ]
+    ],
+    "callthelen.com/blog__emergency-ac-repair/1440": [
+      [
+        6576,
+        616
+      ]
+    ],
+    "callthelen.com/blog__how-does-a-tankless-water-heater-work/1440": [
+      [
+        6024,
+        1008
+      ]
+    ],
+    "callthelen.com/category__articles__page__11/1440": [
+      [
+        38400,
+        528
+      ],
+      [
+        39112,
+        656
+      ]
+    ],
+    "callthelen.com/category__articles__page__2/1440": [
+      [
+        46984,
+        640
+      ]
+    ]
+  },
+  "verification": "JSON/counts108raw107active1archived,threshold checks,108captureComplete references (one archive resolved through actual record directory),shared file bytes unchanged from backup. No visual claims/automatic defects."
+}
