@@ -1,6 +1,140 @@
 # GreenTek saved-capture sheet study
 
-Scope: sheet overview only. Raw captures/records unchanged; no browser or interactions. Initial 429 captured pages + 5 linked files and integrity verification are lead-supplied, not visual-quality approval. Existing 104 sheets are reused.
+Scope: inherited 104-sheet overview plus the partial native study below. Raw captures/records unchanged; no live browser or live interaction passes. Initial 429 captured pages + 5 linked files and integrity verification are lead-supplied, not visual-quality approval. The historical overview after the native section retains its original scope; current native coverage is in `native/native-progress.json`.
+
+<!-- native-stage:start -->
+## Native stage, 2026-11-05 (independent research sub-agent; PARTIAL, see coverage below)
+
+Evidence root `C = ~/.ai-powerhouse/research-captures/arbcut-v4`. Maps: `_sheets/greentekroofing.com/native/` (`selection.json` = all 212 queued pages, tier, every original reason/flag; `manifest.json` = display→source map, `opened` only after a visible read; `native-progress.json` = exact queue). The 212-page, 3,757-file queue is a provisional review queue, **not 212 designs**. No browser, recapture, interaction script, form submit or live check was run.
+
+**Integrity note.** A first pass requested all 66 interaction displays, but those Read results returned `[media removed: request limit]`. Notes written then are withdrawn (`native/withdrawn-notes-interactions.md`, not evidence). Only the images listed below were visibly re-read.
+
+### Saved interactions actually viewed
+Under `C/greentekroofing.com/_interactions/`. Saved states only, not live passes. The `round2-*` folders hold 0 JPGs.
+
+| Interaction | Visible outcome |
+|---|---|
+| Desktop dropdown, home (`home-_/1440/02-dropdown-0.jpg`) | **Saved-state pass:** white rounded panel, 4 whole-word items, label turns green. Ledger says `error` for home `desktop-dropdowns`; a later dropdown frame exists regardless |
+| Mobile menu (`display/_interactions/home-fix__390-strip-00.jpg`, try-0/try-1) | **Saved-state pass:** white drawer over a dimmed page, About Us, Services, Resources, Gallery, Materials + Products, Contact; MENU icon becomes ×; second frame closed. Sub-menu expansion not shown; no phone or quote inside the drawer, though the bar stays visible |
+| Invalid email, home (`home-_/1440/07-form-0-invalid.jpg`) | **Attempt, no visible feedback:** "invalid-email" typed, no error state. No submit, so submit-time validation is untested. The About Us panel is open in the same frame, a leftover of the test, not a site state |
+| Project slider (`home-_/1440/09-slider-t5.jpg`) | **Resolves the gallery artefact:** five 288 px full-bleed tiles in one row with town and name, all with loaded photos. A slide change is not shown |
+| Reviews (`home-_/1440/10-scroll-0.3.jpg`) | **Resolves the empty review zone on home at 1440:** loaded widget with Google, Facebook, Yelp, BBB tabs, "Excellent 4.7 \| 696 reviews", named reviewer cards with Google marks, Write a review. Other pages not shown |
+
+| Invalid phone, contact (`contact-_contact_/1440/10-form-0-invalid.jpg`, `contact-_contact___390-strip-00`) | **Attempt, no visible feedback:** "invalid-phone" typed at both widths, no error state. No submit |
+| Calculator focus (`service-_roofing_calculator_/1440/06-form-0-empty-focus.jpg`) | Number spinner appears, no clear focus ring. Only page 1 of 3 exists in any viewed frame, so steps 2–3 and a result are unseen. **Not a calculator pass** |
+| Project cards (`gallery-_projects_/1440/01-initial.jpg` → `06-scroll-0.3.jpg`) | **Lazy-load shown:** white image areas with dark caption gradient, then real photos. Supports the gradient-panel explanation; Load More itself was not exercised |
+| Map (`contact-_contact_/1440/11-scroll-0.3.jpg`) | Place card shows a spinner; it is filled on `contact/1440/segment-000000.jpg`. Timing |
+| Reduced motion (`contact …/16`, `faq …/11`, `service …/11`, `home-_/1440/15`) | **Attempt:** all four frames fully rendered, no mid-fade. A still proves nothing about motion itself |
+| Hover (`display/_interactions/hover-crops.jpg`) | **Inconclusive:** crops have no baseline; the ledger's home `hover` before/after values for button and card are identical. Nav label is green |
+| FAQ chips, Load More, gallery filters, FAQ expansion | **No frame viewed shows any of them operated** |
+
+Scroll frames also show the header losing its black bar (83 px, ledger agrees) and the phone reading (813) 750-0941, where the same page's first frames read (813) 333-1963 (`home-_/1440/02` vs `07`). So the number changes within a session, not only on the 404. **Five numbers seen across frames:** (813) 333-1963, (813) 750-0941, (656) 208-2276 (`contact-_contact_/1440/11-scroll-0.3.jpg`, header and contact card together), (656) 232-2569 (`gallery-_projects_/1440/06-scroll-0.3.jpg`), (656) 650-0280 (`service-_roofing_calculator_/1440/06-form-0-empty-focus.jpg`). The footer legal line separately lists (813) 851-3409. Call tracking is plausible; I do not know the cause.
+
+**Copy:**
+1. **Source-tabbed review widget with real marks** (`home-_/1440/10-scroll-0.3.jpg`): rule 1, with named people.
+2. **One-row project strip, town + name on each photo** (`home-_/1440/09-slider-t5.jpg`); captions sit on the photo, which rule 14 would move below.
+3. **Mobile bottom bar: MENU left, phone pill right** (`home-fix__390-strip-00`): thumb reach, but no quote action (rule 17).
+
+**Avoid:**
+1. **Hero overlay flattens the roof** (`home/1440/first-viewport.jpg`): grey cast across the subject; rule 11 weaker case, photo still readable.
+2. **Phone number that changes during a visit.**
+3. **Rating badge over the map card** (`home-_/1440/09-slider-t5.jpg`): rule 18.
+4. **Validation remains unverified:** typing an invalid email without submitting does not establish a validation defect.
+
+### Native pages viewed so far (first viewport + all segments at both widths)
+11 pages: `home`, `contact`, `roofing-calculator`, `financing`, `projects`, `about`, `services`, `faq`, `our-team`, `careers`, and the captured 404 at `blog__reasons-you-need-an-annual-roof-inspection-in-florida`. Scale caveat: 1440×2400 segments were delivered to me at 1200×2000 (0.83×); 1440×900 first viewports and 390 strips at full size. Small print at 1440 was read from the 390 frames where possible.
+
+**Corrections to the overview text below (these replace it):**
+- **The "huge shared project gallery" is a capture artefact on home, not a site layout.** In `home/1440/segment-007200…016800` the project slides stack at full page width. The ledger's home `sliders` record shows `tns-item` slides with `data-lazy-src` and an empty SVG placeholder, and its `motion` record puts the CTA band at y=10277 at 1440, against a recorded document height of 23484. So the capture's height overstates the page by about 13,000 px at 1440. Treat recorded heights of pages carrying this block as inflated.
+- **The grey gradient panels are unloaded slides with the caption gradient on them**, not media defects: Gene's, Fernando's and Kenneth's panels are grey on home (`home/1440/segment-012000…014400`), yet the same projects show real photos on `projects/1440/segment-000000.jpg`, and Gene's loads at 390 on home (`display/home/390-strip-04`). Shown for home. `roofing`, `gutters`, `solar-panels` and the county pages stay open until viewed.
+- **Empty review zones:** the slot is empty in `home/1440/segment-002400.jpg`, `display/home/390-strip-02` and `services/1440/segment-000000.jpg`. The ledger's home `motion` record lists `ti-review-item` nodes, so a third-party widget exists in the DOM; whether it paints is decided only by the interaction frames.
+- **Mobile footers drop the link columns** on all six pages: logo, phone, email, address, legal line, socials only (`display/home/390-strip-07/08`, `contact`, `roofing-calculator`, `financing`, `projects`, `about` last strips). The 1440 footers carry About, Services and Resources lists. The overview's "stacked link list" remark was about t00 articles and is not confirmed here.
+- **Fixed geometry exists in the interaction ledger** (`bulk-interactions.json`, home `sticky`): 1440 header 82.66 px after scroll; 390 header 96.25 px + bottom bar 87 px = **183.25 px** of an 844 px viewport, plus the rating badge. The first viewport at 1440 shows 120 px (black bar + nav, measured on the image).
+
+**Home.** Real aerial house under a mid overlay: the roof reads at 1440, softer at 390 (`home/1440/segment-000000.jpg`, `display/home/390-strip-00`). Small descriptive H1 "Tampa Bay's #1 Roofing Company", large "This is Smart Roofing" (rule 22 pattern). At 1440 the form crosses the hero edge and the proof dock hangs from its base, beside the action (rule 4). At 390 the form starts in the second frame, so the first screen is text only. Sequence (ledger `motion` section list plus footer): hero, 3 service cards, marks row, text/photo, calculator band, reviews, process, Florida map, owner, finance, phone video, products, projects, local links, FAQ, articles, CTA, footer: **18 bands**, too many for a local trade. At 1440 process shows only icons and STEP 1–5; step names appear only at 390 (`display/home/390-strip-02`), so desktop names are unverified.
+
+**Contact.** Centred form over a faint solar-cell line pattern, crossing into green, then address/hours/phone cards, map, FAQ. 9 fields + 2 consent blocks; fields are pills here but rounded rectangles in the home hero. About 100 px of blank sits above Terms | Privacy, likely the reCAPTCHA slot (unproven). French bulldog in a white shirt beside the form at 1440, absent at 390.
+
+**Calculator.** Plain questions, required marks, 3 steps, large image choices (`roofing-calculator/1440/segment-000000.jpg`). Square checkboxes for a Yes/No choice. "Next" is left-aligned and pure black while other buttons are dark grey. 390 keeps 195 px single-column cards, so page 1 runs across about 6 frames.
+
+**Financing.** Offers show the real Regions mark and FDIC mark, with the disclosure directly under each offer (`financing/1440/segment-000000.jpg`). Same paragraph appears twice. Offer cards are bank banners in another green.
+
+**Projects.** Nine real roofs, name + town on each card; 3-up at 1440, single column at 390. Filter chips take 4 rows (about 240 px) at 390. "Lakeland . FL" typo.
+
+**About.** A man in a "Greentek Gives Back" T-shirt holding a dark tray of roofing material against the sky (`about/1440/first-viewport.jpg`); uncaptioned, so the overview's "founder" label is unverified. Story with hard facts: 2017, 3 employees, "4000+ homeowners". Five oversized value words, leaf crossing a black band, team-with-schoolchildren photo, community marks.
+
+**Copy findings (native-verified):**
+1. **Owner cut-out on black with signature and a first-person quote** (`home/1440/segment-002400.jpg`, document y≈4400–4790): the Puetz/Home Front move again; holds at 390 (`display/home/390-strip-03`). Matches rule 8.
+2. **Disclosure attached to each offer** (`financing/1440/segment-000000.jpg`).
+3. **Locality links as underlined two-line navigation beside the map** (`home/1440/segment-019200.jpg`, `display/home/390-strip-06`): rule 23, survives at 390.
+4. **Image-choice estimator steps** in plain words (`roofing-calculator/1440/segment-000000.jpg`), as a pattern for a quote form; use photos rather than its diagrams (rule 6).
+5. **Real branded vehicle in a real street** (`home/1440/segment-021600.jpg`, article card): ArbCut's lift equivalent.
+6. **Company video framed in a phone**, captioned John Franco (`home/1440/segment-004800.jpg`): a real person rather than a stock scene. It is an image here; whether anything plays is unverified.
+
+**Avoid findings (native-verified):**
+1. **Contradictory financing copy:** "partnered exclusively with Regions" (`financing/1440/segment-000000.jpg`) vs FAQ "Service Finance, Ygrene, Improvifi, and Acorn" (`faq/1440/first-viewport.jpg`). Rule 5 applied to claims.
+2. **Broken proof sentence:** "that has allowed GreenTek Roofing & Solar has helped over 4000+ homeowners" (`about/1440/segment-000000.jpg`).
+3. **Mobile footer loses crawl links** on six pages: breaks rule 21, same fault as Northface.
+4. **Marks row stacks at 390:** seven marks in a left-aligned column, about 500 px (`display/home/390-strip-01`); community marks the same on about (`display/about/390-strip-01`). Puetz's warning again.
+5. **Line-icon process steps** on a pale bar (`home/1440/segment-002400.jpg`): rule 6. At 390 black text on mid green, tight spacing (`display/home/390-strip-02`).
+6. **Stock-looking couple on a sofa** on financing (`financing/1440/first-viewport.jpg`); origin unknown, weakest image beside so many real roofs.
+7. **Too many devices:** curved edges, solar-cell pattern, leaves, Florida map, phone, dog, hand underline, tilted banners. Rule 9 allows two.
+8. **Three green treatments on photos:** full green wash on hero and featured card hides the worker (`roofing-calculator/1440/first-viewport.jpg`, article card); rule 11.
+
+**Services** (`services/1440/first-viewport.jpg`, `segment-000000…004800`, `display/services/390-strip-00…03`). Five service cards plus a calculator card as sixth tile on a pale panel; whole page is a short index. "Real Customer Projects in Your Area" heading has nothing under it at either width (`services/1440/segment-002400.jpg`, `display/services/390-strip-02`), and reviews are empty too. Unresolved; the project slot may be the same lazy content. Best image on the site: worker on a ladder beside the branded lift-bed truck (`services/1440/segment-000000.jpg`).
+
+**FAQ** (`faq/1440/…`, `display/faq/390-strip-00/01`). Seven category chips, answers open on the page, not accordions, then Load More. Readable 860 px measure. Chips take 3 rows at 390.
+
+**404** (`blog__reasons…/1440/first-viewport.jpg`, `segment-000000.jpg`, strips). Branded: "This Page Doesn't Have A Green Light From Greentek!", Return To Homepage, five service pills. Confirmed as a 404, no article. **The phone differs by capture: (813) 750-0941 at 1440, (656) 208-2276 at 390**, against (813) 333-1963 on the other pages viewed, in the header/bar and footer together. Call tracking is plausible; I do not know the cause. Only here so far does a MetalOps "Certified Installer" badge appear in the footer, and "Storm Damage" and the phone pill collide at 390 (`display/…/390-strip-00`, middle frame, fixed bar overlapping content in scroll).
+
+**Our team** (`our-team/1440/…`, strips). Nine cards, real names and roles. Chips include a filter of one ("Lead Commercial Estimator"). Plain white-wall portraits work better than the two composites: people and dogs pasted on one aerial roof (Austin Bernard; Kilo & Kobe, "Greentek Mascot/Head Napper"). Filter and info-dot behaviour unseen.
+
+**Careers** (`careers/1440/…`, strips). Dark-left overlay on a house and branded truck, application form on the right with a default browser "Choose File" control. Hero text sits over the bright sky and roof at 390 with weaker contrast (`display/careers/390-strip-00`). One role card. Crew photo on a roof in hi-vis and straw hats is real and strong (`careers/1440/segment-000000.jpg`).
+
+**Added Copy:**
+7. **Crew and truck photos as identity** (`careers/1440/segment-000000.jpg`, `services/1440/segment-000000.jpg`): rule 8; ArbCut's equivalent is Mantas, his lift and his gear.
+8. **Named team cards with role** (`our-team/1440/segment-000000.jpg`), if ArbCut ever has more than Mantas to show.
+9. **A 404 that routes to services** (`blog__reasons…/1440/first-viewport.jpg`).
+10. **Answers visible without a click on the FAQ page** (`faq/1440/segment-000000.jpg`): content stays crawlable and readable.
+
+**Added Avoid:**
+9. **Same section stack on every page:** fisherman CTA, three-card articles and footer repeat on all 11 pages viewed; the unrelated father-and-son fishing photo closes a page about roofs. Origin unknown.
+10. **Headings with nothing under them** (reviews, projects on `services`).
+11. **Pasted composites** on the team page: reads as fake beside real photos.
+12. **Default file input** inside a styled form (`careers/1440/first-viewport.jpg`).
+13. **"Get Started" used for every action**, alongside Get In Touch, Get Your Estimate, Schedule An Inspection, Start Your Project, Get Your New Roof, Ready? Let's Get Started!, Let's Get Started: rule 25 (`home/1440/segment-000000…019200`).
+14. **Fixed rating badge covering text and the MENU control** in the 390 first viewports of all 11 pages viewed (`display/*/390-strip-00`); some scrolled frames show it absent, so timing or dismissal rules are unknown. Also over body copy at 1440 (`services/1440/first-viewport.jpg`, "that matches…" clipped): rule 18.
+15. **Recoloured Facebook/Google/BBB marks in single green** in the hero dock (`home/1440/segment-000000.jpg`): rules 1 and 7. Hand-made ratings text ("4.7 RATING") next to them.
+16. **Proof mismatch to check:** rating badge "4.7 | 696 reviews" vs Google card "4.7 (527)" (`contact/1440/segment-000000.jpg`). Different sources possible; both on one page. Rule 5.
+
+### Semantic refinement of the 212-page queue
+`native/selection.json` keeps all 212 pages with every original reason and flag; nothing was removed.
+
+| Tier | Pages | Meaning | Native state |
+|---|---:|---|---|
+| T1 functional/one-off | 23 | home, contact, calculator, financing, projects, faq, about, services, audit, careers, job, team, founder, products, referrals, videos, blog, 404, accessibility, 3 policy pages, award post | **11 closed, 12 not started** |
+| T2 two differing examples per family | 14 | 7 semantic families × 2 | 0 |
+| T3 actual visual outliers | 12 | county clone, Orlando, Westlake, brown metal, Tina, restaurants post, table/mobile articles, snowy article, solar-panels | 0 |
+| T4 residual | 163 | mostly `skeleton-deviates` heuristics on editorial/locality pages; flagged, not designs | 0 |
+
+### Coverage and limits
+- **Closed at both widths (first viewport + all segments): 11 pages:** home, contact, roofing-calculator, financing, projects, about, services, faq, 404 (`blog__reasons-you-need-an-annual-roof-inspection-in-florida`), our-team, careers. **81 of 404 prepared page displays opened (144 source files).**
+- **Interactions: 18 of 66 prepared displays viewed:** 28 unique source JPGs seen, 10 byte-identical copies of those, **60 of 98 unseen**, listed in `native/native-progress.json`.
+- **Remaining: 201 pages** (12 T1, 14 T2, 12 T3, 163 T4), 3,613 files, listed with reasons, flags and exact files in `native-progress.json` → `remaining`. Prepared displays not opened: `remainingDisplaysPrepared`.
+- **Still open:** gradient panels and empty review/project slots on any page other than home; `roofing`, `gutters`, `solar-panels`, county pages; 10 blank-band flags except where home is covered; Orlando photos; article tables at 390; policy-loader pages; calculator steps 2–3; FAQ/gallery filters and Load More; lightbox; video; keyboard; 360 width; child-span styles; logo/photo provenance.
+- Stopped at the soft budget steer (2,220,496 > 2,000,000).
+- 1440×2400 segments arrived at 1200×2000, so small print at 1440 was not read at true scale. 390 strips and 1440×900 frames arrived at full size.
+- Older overview text below is historical where it conflicts with this section. "Native opened 0 / interaction passes 0" described that earlier stage.
+
+### Candidate screenshots (now viewed)
+1. `greentekroofing.com/home/1440/segment-002400.jpg`: owner cut-out and signature, document y≈4400–4790.
+2. `greentekroofing.com/_interactions/home-_/1440/10-scroll-0.3.jpg`: review widget with real source marks.
+3. `greentekroofing.com/financing/1440/segment-000000.jpg`: disclosure attached to each offer.
+4. `greentekroofing.com/services/1440/segment-000000.jpg`: worker and branded truck.
+5. `greentekroofing.com/home/1440/segment-012000.jpg`: capture artefact, not to be read as design.
+6. `greentekroofing.com/home/390/first-viewport.jpg` (in `display/home/390-strip-00`): badge over MENU and fixed-UI cost.
+
+<!-- native-stage:end -->
 
 ## Incremental observations
 - t00 desktop sheets 0–5 (120 cells): green photographic title band, narrow overlapping white article surface, interspersed roofing images, map, optional curved photo CTA, black footer. Content density and image frequency vary considerably. Sheet 0 cell 11 (restaurants) is unusually short; sheet 2 cell 3 unusually long.
