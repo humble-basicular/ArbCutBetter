@@ -1,6 +1,6 @@
 """Contact sheets: per site / template / width, ~20 whole-page previews per image (each page stitched from its
 segments and scaled; long pages wrap into side-by-side columns inside their cell so mobile strips stay legible).
-Input: bulk-groups.json (run bulk-group.py first) + captures. Output: <ROOT>/_sheets/<site>/<width>/<tid>-<n>.jpg and
+Input: <ROOT>/_sheets/<site>/groups.json (run bulk-group.py first) + captures. Output: <ROOT>/_sheets/<site>/<width>/<tid>-<n>.jpg and
 <ROOT>/_sheets/<site>/index.json mapping each sheet cell number to slug/url. Usage: python3 bulk-contact-sheets.py [site ...]
 Existing sheets are rebuilt only when their membership changed (pass --force to rebuild all).
 """
@@ -61,7 +61,8 @@ def page_image(d, width):
 
 
 def build(site, force=False):
-    groups = json.loads((HERE / 'bulk-groups.json').read_text()).get(site)
+    gp = ROOT / '_sheets' / site / 'groups.json'
+    groups = json.loads(gp.read_text()) if gp.exists() else None
     if not groups:
         print('no groups for', site)
         return
@@ -105,6 +106,5 @@ def build(site, force=False):
 
 if __name__ == '__main__':
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
-    groups = json.loads((HERE / 'bulk-groups.json').read_text())
-    for site in args or sorted(groups):
+    for site in args or sorted(p.parent.name for p in (ROOT / '_sheets').glob('*/groups.json')):
         build(site, '--force' in sys.argv)

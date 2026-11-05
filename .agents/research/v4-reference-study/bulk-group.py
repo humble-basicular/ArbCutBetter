@@ -1,6 +1,6 @@
 """Group each site's captured pages into templates by skeleton similarity + URL pattern; flag outliers.
 Input: ~/.ai-powerhouse/research-captures/arbcut-v4/<site>/<slug>/<width>/record.json (1440 drives grouping).
-Output: bulk-groups.json next to this script (+ printed summary). Usage: python3 bulk-group.py [site ...]
+Output: <ROOT>/_sheets/<site>/groups.json per site (+ printed summary). Usage: python3 bulk-group.py [site ...]
 Records from older scripts have no skeleton; they are grouped by URL pattern + heading structure and marked legacy.
 """
 import json, sys, re, statistics
@@ -9,7 +9,6 @@ from difflib import SequenceMatcher
 
 ROOT = Path.home() / '.ai-powerhouse/research-captures/arbcut-v4'
 HERE = Path(__file__).resolve().parent
-OUT = HERE / 'bulk-groups.json'
 JOIN, OUTLIER = 0.72, 0.80
 
 
@@ -110,19 +109,20 @@ def group(site):
 
 
 def main():
-    sites = sys.argv[1:] or sorted(d.name for d in ROOT.iterdir() if d.is_dir() and '.' in d.name)
-    data = json.loads(OUT.read_text()) if OUT.exists() else {}
+    sites = sys.argv[1:] or sorted(d.name for d in ROOT.iterdir() if d.is_dir() and '.' in d.name and not d.name.startswith('_'))
     for site in sites:
         if not (ROOT / site).exists():
             continue
         ts = group(site)
-        data[site] = {'pages': sum(t['count'] for t in ts), 'templates': ts}
+        data = {site: {'pages': sum(t['count'] for t in ts), 'templates': ts}}
         flagged = sum(1 for t in ts for m in t['members'] if any(not f.startswith(('legacy', 'one-width')) for f in m['flags']))
         print(f"{site}: {data[site]['pages']} pages → {len(ts)} templates "
               f"({sum(1 for t in ts if t['count'] == 1)} one-offs), {flagged} flagged")
         for t in ts[:8]:
             print(f"   {t['id']} {t['name']:<28} n={t['count']:<4} rep={t['rep'][:50]}")
-    OUT.write_text(json.dumps(data, indent=1))
+        out = ROOT / '_sheets' / site / 'groups.json'
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(data[site], indent=1))
 
 
 if __name__ == '__main__':
