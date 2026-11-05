@@ -6,18 +6,20 @@
       "type": "home",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/home/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/home/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -32,14 +34,16 @@
           "viewed": true,
           "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/vilnius/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
           "captured": true,
           "viewed": true,
           "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/vilnius/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -54,14 +58,16 @@
           "viewed": true,
           "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/avizieniai/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
           "captured": true,
           "viewed": true,
           "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/avizieniai/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -72,218 +78,212 @@
       "type": "locality",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/riese/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": "Original composition viewed; incomplete photo paint corrected by supplementary decode-repair/vensland.lt/riese/1440/segment-004800.jpg and segment-007200.jpg, both opened."
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/riese/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
-      "representedBy": [
-        "https://vensland.lt/vilnius/",
-        "https://vensland.lt/avizieniai/"
-      ],
-      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+      "representedBy": [],
+      "visualTemplateEquivalence": null
     },
     {
       "url": "https://vensland.lt/pagiriai/",
       "type": "locality",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/pagiriai/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/pagiriai/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
-      "representedBy": [
-        "https://vensland.lt/vilnius/",
-        "https://vensland.lt/avizieniai/"
-      ],
-      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+      "representedBy": [],
+      "visualTemplateEquivalence": null
     },
     {
       "url": "https://vensland.lt/rudamina/",
       "type": "locality",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/rudamina/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/rudamina/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
-      "representedBy": [
-        "https://vensland.lt/vilnius/",
-        "https://vensland.lt/avizieniai/"
-      ],
-      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+      "representedBy": [],
+      "visualTemplateEquivalence": null
     },
     {
       "url": "https://vensland.lt/juodsiliai/",
       "type": "locality",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/juodsiliai/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/juodsiliai/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
-      "representedBy": [
-        "https://vensland.lt/vilnius/",
-        "https://vensland.lt/avizieniai/"
-      ],
-      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+      "representedBy": [],
+      "visualTemplateEquivalence": null
     },
     {
       "url": "https://vensland.lt/nemencine/",
       "type": "locality",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/nemencine/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/nemencine/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
-      "representedBy": [
-        "https://vensland.lt/vilnius/",
-        "https://vensland.lt/avizieniai/"
-      ],
-      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+      "representedBy": [],
+      "visualTemplateEquivalence": null
     },
     {
       "url": "https://vensland.lt/lentvaris/",
       "type": "locality",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/lentvaris/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/lentvaris/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
-      "representedBy": [
-        "https://vensland.lt/vilnius/",
-        "https://vensland.lt/avizieniai/"
-      ],
-      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+      "representedBy": [],
+      "visualTemplateEquivalence": null
     },
     {
       "url": "https://vensland.lt/trakai/",
       "type": "locality",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/trakai/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/trakai/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
-      "representedBy": [
-        "https://vensland.lt/vilnius/",
-        "https://vensland.lt/avizieniai/"
-      ],
-      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+      "representedBy": [],
+      "visualTemplateEquivalence": null
     },
     {
       "url": "https://vensland.lt/maisiagala/",
       "type": "locality",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/maisiagala/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/maisiagala/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
-      "representedBy": [
-        "https://vensland.lt/vilnius/",
-        "https://vensland.lt/avizieniai/"
-      ],
-      "visualTemplateEquivalence": "inferred from previous HTML comparison; unsampled routes not visually verified"
+      "representedBy": [],
+      "visualTemplateEquivalence": null
     },
     {
       "url": "https://vensland.lt/paslaugos/vejos-irengimas/",
       "type": "service",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__vejos-irengimas/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__vejos-irengimas/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -294,18 +294,20 @@
       "type": "service",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__laistymo-sistemos/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__laistymo-sistemos/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -316,18 +318,20 @@
       "type": "service",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__vejos-aeravimas-core/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__vejos-aeravimas-core/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -338,18 +342,20 @@
       "type": "service",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__vejos-skarifikavimas/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__vejos-skarifikavimas/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -360,18 +366,20 @@
       "type": "service",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__vejos-lyginimas-levelingas/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__vejos-lyginimas-levelingas/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -382,18 +390,20 @@
       "type": "service",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__vejos-tresimas-purskimas/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__vejos-tresimas-purskimas/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -404,18 +414,20 @@
       "type": "service",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__zoles-pjovimas/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__zoles-pjovimas/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -426,18 +438,20 @@
       "type": "service",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__apleistu-sklypu-tvarkymas/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__apleistu-sklypu-tvarkymas/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -448,18 +462,20 @@
       "type": "service",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__mini-ekskavatoriaus-paslaugos/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__mini-ekskavatoriaus-paslaugos/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -470,18 +486,20 @@
       "type": "service",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__gyvatvoriu-sodinimas-prieziura/1440",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "evidence": null,
+          "captured": true,
+          "viewed": true,
+          "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/paslaugos__gyvatvoriu-sodinimas-prieziura/390",
           "legacyViewed": true,
-          "legacyLimit": "seam strips and clipped FAQ gaps; see v4-vensland-detail.md"
+          "legacyLimit": "Historical seam gaps superseded by fresh viewed document segments",
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -496,14 +514,16 @@
           "viewed": true,
           "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/privatumo-politika/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
           "captured": true,
           "viewed": true,
           "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/privatumo-politika/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -518,14 +538,16 @@
           "viewed": true,
           "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/aciu/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
           "captured": true,
           "viewed": true,
           "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/aciu/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
       "representedBy": [],
@@ -540,14 +562,16 @@
           "viewed": true,
           "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/arbcut-reference-study-not-found/1440",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         },
         "390": {
           "captured": true,
           "viewed": true,
           "evidence": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/vensland.lt/arbcut-reference-study-not-found/390",
           "legacyViewed": false,
-          "legacyLimit": null
+          "legacyLimit": null,
+          "captureCaveat": null
         }
       },
       "representedBy": [],

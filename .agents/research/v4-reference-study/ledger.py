@@ -9,7 +9,7 @@ for url in urls+['https://vensland.lt/aciu/','https://vensland.lt/arbcut-referen
  widths={}
  for w in [1440,390]:
   p=r/slug/str(w)/'record.json';fresh=json.loads(p.read_text()) if p.exists() else None
-  widths[str(w)]={'captured':bool(fresh),'viewed':bool(fresh and fresh.get('viewed')),'evidence':str(p.parent) if fresh else None,'legacyViewed':typ in ['home','service'],'legacyLimit':'seam strips and clipped FAQ gaps; see v4-vensland-detail.md' if typ in ['home','service'] else None}
+  widths[str(w)]={'captured':bool(fresh),'viewed':bool(fresh and fresh.get('viewed')),'evidence':str(p.parent) if fresh else None,'legacyViewed':typ in ['home','service'],'legacyLimit':'Historical seam gaps superseded by fresh viewed document segments' if fresh and fresh.get('viewed') and typ in ['home','service'] else None,'captureCaveat':fresh.get('captureCaveat') if fresh else None}
  ledger.append({'url':url,'type':typ,'widths':widths,'representedBy':['https://vensland.lt/vilnius/','https://vensland.lt/avizieniai/'] if typ=='locality' and not any(v['viewed'] for v in widths.values()) else [],'visualTemplateEquivalence':'inferred from previous HTML comparison; unsampled routes not visually verified' if typ=='locality' and not any(v['viewed'] for v in widths.values()) else None})
 Path('.agents/research/v4-reference-study/vensland-ledger.json').write_text(json.dumps({'sitemapURLs':len(urls),'pages':ledger},indent=2,ensure_ascii=False))
 print('sitemap',len(urls),'ledger',len(ledger))

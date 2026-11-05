@@ -20,7 +20,10 @@ for(const url of urls)for(const width of [1440,390]){
   for(let y=0;y<before;y+=650){await page.evaluate(y=>scrollTo(0,y),y);await page.waitForTimeout(80)}
   await page.waitForTimeout(350);const after=await page.evaluate(()=>document.documentElement.scrollHeight);if(after===before)break;
  }
- await page.evaluate(()=>scrollTo(0,0));await page.evaluate(()=>document.fonts.ready);await page.waitForTimeout(300);
+ // Wait for initiated visible lazy images to decode; scrolling alone can catch progressive JPEG strips.
+ await page.evaluate(async()=>{await Promise.all([...document.images].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0}).map(e=>Promise.race([e.decode().catch(()=>{}),new Promise(resolve=>setTimeout(resolve,12000))])))});
+ await page.waitForLoadState('networkidle',{timeout:5000}).catch(()=>{});
+ await page.evaluate(()=>scrollTo(0,0));await page.evaluate(()=>document.fonts.ready);await page.waitForTimeout(900);
  r.dom=await page.evaluate(()=>{
  const style=e=>{const s=getComputedStyle(e);return {font:s.fontFamily,size:s.fontSize,weight:s.fontWeight,lineHeight:s.lineHeight,color:s.color,bg:s.backgroundColor}};
  return {title:document.title,pageHeight:document.documentElement.scrollHeight,scrollWidth:document.documentElement.scrollWidth,headings:[...document.querySelectorAll('h1,h2,h3')].map(e=>({tag:e.tagName,text:e.textContent.trim(),...style(e)})),links:[...document.querySelectorAll('a[href]')].map(e=>({text:e.textContent.trim(),url:e.href})),forms:[...document.forms].map(f=>({action:f.action,fields:[...f.elements].map(e=>({tag:e.tagName,type:e.type,name:e.name,required:e.required,placeholder:e.placeholder}))})),images:[...document.images].map(e=>({src:e.currentSrc,alt:e.alt,width:e.naturalWidth,height:e.naturalHeight,complete:e.complete})),schema:[...document.querySelectorAll('script[type="application/ld+json"]')].map(e=>e.textContent),animations:[...document.getAnimations()].map(a=>({type:a.constructor.name,playState:a.playState})),fixed:[...document.querySelectorAll('body *')].filter(e=>['fixed','sticky'].includes(getComputedStyle(e).position)).map(e=>({tag:e.tagName,id:e.id,class:e.className,text:e.textContent.trim().slice(0,90)}))};

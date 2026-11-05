@@ -4,6 +4,7 @@ import json
 root=Path.home()/'.ai-powerhouse/research-captures/arbcut-v4/vensland.lt'
 for record in root.glob('*/*/record.json'):
  r=json.loads(record.read_text()); d=record.parent
+ if not isinstance(r,dict) or (d/'sheets.json').exists():continue
  ims=[('first-viewport.jpg',None)]+[(s['file'],s['y']) for s in r['segments']]
  # readable sheets; do not use these as stitched previews
  cols=2 if r['width']==1440 else 3
