@@ -209,6 +209,7 @@ async function captureWidth(url, width, dir, isHeaded) {
           const { data } = await cdp.send('Page.captureScreenshot', { format: 'jpeg', quality: 75, captureBeyondViewport: true, clip: { x: 0, y, width, height: h, scale: 1 } });
           fs.writeFileSync(`${dir}/${name}`, Buffer.from(data, 'base64')); r.segments.push({ file: name, y, height: h, viewed: false });
         }
+        await patchIframes(page, r, dir, width, height);
       } else {
         for (let y = 0; y < r.documentHeight; y += height) {
           const h = Math.min(height, r.documentHeight - y), name = `segment-${String(y).padStart(6, '0')}.jpg`;
@@ -226,6 +227,28 @@ async function captureWidth(url, width, dir, isHeaded) {
   finally { await context.close().catch(() => {}); }
   if (r.errorKind !== 'file') fs.writeFileSync(`${dir}/record.json`, JSON.stringify(r, null, 2));
   return r;
+}
+
+
+// Cross-origin iframes (maps, video, widgets) paint blank in CDP beyond-viewport clips. Screenshot each visible
+// iframe inside the viewport (fixed UI already hidden) and paste it into the document segments.
+async function patchIframes(page, r, dir, width, height) {
+  const frames = await page.evaluate(() => [...document.querySelectorAll('iframe')].map(f => { const b = f.getBoundingClientRect(), s = getComputedStyle(f); return { x: Math.max(0, b.left), y: Math.round(b.top + scrollY), w: Math.min(b.width, innerWidth - Math.max(0, b.left)), h: Math.round(b.height), src: (f.src || '').slice(0, 120), ok: s.display !== 'none' && s.visibility !== 'hidden' && +s.opacity > 0 && b.width > 100 && b.height > 60 }; }).filter(f => f.ok));
+  r.iframes = frames; r.iframeCheck = 'patched';
+  const patches = [];
+  for (const [i, f] of frames.entries()) {
+    for (let off = 0; off < f.h; off += height - 100) {
+      const docY = f.y + off, h = Math.min(height - 100, f.h - off);
+      await page.evaluate(y => scrollTo(0, y), Math.max(0, docY - 50)); await page.waitForTimeout(off ? 400 : 2000);
+      const sy = await page.evaluate(() => scrollY); const vy = docY - sy;
+      if (vy < 0 || vy + h > height) continue;
+      const file = `iframe-${i}-${off}.jpg`;
+      await page.screenshot({ path: `${dir}/${file}`, type: 'jpeg', quality: 75, clip: { x: f.x, y: vy, width: f.w, height: h } });
+      patches.push({ file, x: f.x, y: docY, w: f.w, h });
+    }
+  }
+  if (patches.length) await pexec('python3', [path.join(HERE, 'bulk-iframe-patch.py'), dir, JSON.stringify(patches), JSON.stringify(r.segments)]);
+  r.iframePatches = patches;
 }
 
 function readRecord(dir) { try { return JSON.parse(fs.readFileSync(`${dir}/record.json`, 'utf8')); } catch { return null; } }
