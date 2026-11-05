@@ -37,6 +37,46 @@ Side effect: running `bulk-blank-check.py` rewrote the shared `research-captures
 - Resolved by record only, no images needed: `offers`→`/specials`, `our-locations`→`/service-area/` and `filtration-systems`→`/water-filtration/` share the final URL, title and height. The duplicate topic pairs have different titles (`boiler-vs-furnace` vs `-2`, `heat-not-working-in-house` vs `-2`).
 - Interactions: 61 saved images, 0 opened. Live, 360, keyboard and motion: none performed.
 
+## Native stage, resume (2026-11-05; PARTIAL, stopped at the soft budget steer 3,007,145 > 3,000,000)
+
+**Coverage after the resume:** 57 of 407 prepared displays opened, which is 40 more than the 17 from the first pass.
+- **Complete at both widths (6):** home, about, contact, reviews, specials, financing.
+- **Partly opened (4):** `services`, `faqs` and `maintenance-agreements` (404) each have 3 of 6 displays opened: 1440 first viewport, 1440 `segment-000000` and 390 strip-00. `air-conditioning` has 3 of 11 opened: 1440 first viewport, 1440 `segment-000000` and 390 strip-00. The displays I did not open hold only the shared resources, map and footer stack, which was seen on the 6 complete pages, but they are still counted as **not viewed**.
+- **Unopened pages (39):** listed in `native/native-stage-remaining.json`.
+- **Saved interactions:** 61 images in 4 folders (contact 16+6, home 14+4, service-area 14+4, home-fix mobile menu 3), **0 opened**. Five folders hold no images: faq-missing, gallery-missing and the three round2 folders.
+- **Not performed:** live checks, 360, keyboard and motion. No helper that writes outside `native/` was run in this resume.
+- **Notes:** `native/notes-resume.md`.
+
+### Gates resolved on screen
+- **Contact** (`contact/1440/segment-000000.jpg`): 3 offices with "get directions" links, phone and hours on the left; a form card on the right. The submit is Gravity Forms' default blue "Send Message" (y≈1,280), which is off-brand next to the teal and orange buttons. Asterisks are shown, but the record has `required:false` on every field. At 390 the form starts only after the addresses and social links. The hero "CONTACT OUR TEAM TODAY!" is not an H1; the record's first headings are the office H3s.
+- **Reviews** (`reviews/1440/segment-000000.jpg` y≈575–1,250): on this page the Google widget did render. White cards show the reviewer's avatar, name and date, the Google "G" mark, 5 stars, a verified tick, an excerpt, "Read more" and "Load more". The excerpts are unedited (one says "Thelan Mechanical"). There are 12 cards at 1440 and 3 at 390. There is no aggregate rating block. **So the empty reviews slot on home and contact is a widget that did not load in those captures; that is not proven to be a site defect.**
+- **Specials** (`specials/1440/segment-000000.jpg`): 7 cards, each with a large orange price, a label and a script link "schedule service". There are no expiry dates or terms. The 1440 grid is 3+3+1, leaving one card on its own row. At 390 the cards stack at about 238 px each. The top bar's "$89 AC Tune-Up" matches card 1.
+- **Financing** (`financing/1440/segment-000000.jpg`): the **best photo use on the site**, a sunlit, undarkened branded van (y≈540–1,030). Three partner cards carry the official Service Finance, Synchrony and GoodLeap logos beside "apply online", which follows rules 1 and 4. Copy drift: the home financing band names 2 partners, this page names 3.
+- **Services:** HTTP 200, but the page holds only the H1 and a breadcrumb, then the shared stack (`services/1440/first-viewport.jpg`). It is an empty hub as captured.
+- **FAQs:** HTTP 200. The main column is empty. The sidebar shows default WordPress widgets: a search with a grey default button, Recent Posts, and "No comments to show." (`faqs/1440/first-viewport.jpg`; at 390 the sidebar stacks first). This is a template leak. Whether the live page now has content: I do not know.
+- **404** (`maintenance-agreements`, status 404): branded "THIS PAGE DOESN'T EXIST!" with a "RETURN HOME" button. There is no search, no service links and no phone in the page body. The other 3 404 pages share its height and status in the records; they were not opened. Whether anything links to them was not checked.
+- **City mismatch confirmed:** `air-conditioning/1440/first-viewport.jpg` shows the line "…SERVICES PROVIDED IN MINNEAPOLIS" (not a heading) above the H1 "AIR CONDITIONING SERVICES IN ST. MICHAEL, MN" (y≈260 vs y≈830). The same order appears at 390 (strip-00). Records show pillar pages mixing St. Michael, Big Lake and Minneapolis; for example, the water-heater-repair H1 says St. Michael while its first H2 says Big Lake.
+- **Hero proof on service pages:** "EXCELLENT ★★★★★ 4.9 | 1,024 reviews" with no Google mark, while the map card says 4.9 (1,025). The count drifts by one between widgets. "Angie's List Super Service Award Winner" is a plain text bullet, not the official mark.
+- **Capture artefact, not site layout:** in `air-conditioning/1440/segment-000000.jpg` the hero form loses its card and title, leaving bare inputs floating (y≈340–820). The card is sticky and was hidden during the segment pass. The first viewport shows the real layout.
+
+### Copy (added)
+1. **Official partner logos inside the cards they belong to,** each beside its action (financing).
+2. **A real Google review wall with the G mark, names and dates,** and "Load more" on mobile instead of hiding reviews (reviews page).
+3. **Undarkened real-vehicle photo** (financing): the counter-example to the dark heroes.
+4. **Price-first offer cards** that stack cleanly at 390 (specials). For ArbCut, add terms and dates.
+
+### Avoid (added)
+1. A display line naming one city sitting above an H1 naming another.
+2. Public pages that are empty or show default widgets (`/services/`, `/faqs/`), and a default-styled form submit.
+3. Award claims written as text bullets, and rating counts that disagree between widgets.
+4. A 404 page with no route back into services or to the phone number.
+
+### Remaining gates (exact)
+- **Unopened pages (39):** reviewing these is the next step. Template pairs first (pillar and child, cities, service area, jobs, blog), then the outliers (glossary, site-map, the blank-band blog posts), then the archive samples. The order is in `native-stage-remaining.json`.
+- **Partly opened pages:** the unopened displays of the 4 partial pages.
+- **Interactions:** visual judgement of all 61 saved interaction images.
+- **Not done at all:** 360, keyboard, motion and live-site checks.
+
 ## Coverage
 
 | Item | Status |
@@ -141,3 +181,6 @@ None opened at full size, so these are candidates to confirm:
 
 ## Lead verification and side-effect limit
 Leadparsednative/manifest.json:17opened/390pending/407totaldisplays;all407displaypathsandlistedsourcesexist. Home/aboutworkerclaimsareattributed,nosecondfullleadvisualpassatallowancecheckpoint. NativecoverageisPARTIAL. Sharedexternal`_blank-check.json`wasoverwrittenbychildrunningbriefstep0;childreportspriorcontentslost. Per-sitecopyexistsatnative/blank-check-min1440-300.json. Exactpriorglobalcontentsrecoveryunverified; do not claim raws/sourcecaptureslost or originalglobalrestored. FutureworkersmustNOT runblankcheckerorotherhelperwithsharedoutput; useexistingper-siteevidence. Globalderivedartifactrecovery/remediationremainsleadqueue.
+
+## Lead verification of resume1
+Manifest57opened/350pending/407totaldisplays,6complete/4partial/39unopenedpagesverified;allsource/displaypathsremainpresent. Theseareworker-attributedvisualfindings,nosecondleadvisualpassatallowancecheckpoint. Loadedreviewwidgetonreviewspageversusemptyhome/contactsupportsacapture/widget-loadingcandidate,notaconclusivecauseorlivestatus. Partialpagesdonotgainunseenclosingsegmentcredit. Savedinteractions0/61remainpending;finalretry2prioritizesthem. Priorhistoricalstopsectionsretainprovenance,notcurrentcompletion.
