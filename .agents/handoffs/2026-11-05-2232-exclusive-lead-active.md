@@ -22,3 +22,10 @@ No publish/send/deploy/push/merge/real form/paid action. One bounded child start
 Same exclusive lead receives child result, verifies/commits and proceeds with whole objective. Read2227handoff for exact per-site queues; do not use old research-only restrictions as build approval gates.
 ## Omitted context
 Source thread mcp:4e899a5b-8e1f-4232-a3f5-941665e8d1de, .agents/research/v4-reference-study/full-package-transfer-manifest.json and2227handoff. Historical1404note latest section has prior exact milestone. Retrieve progressively.
+
+## Update22:35EET — retry1 active; prior task terminal
+- Prior worker returned34new sheetopens,58/100total,42remain. Lead verified index58true/all100files/new34+remaining42exact partition; no independent reinspection claimed. Report+board committed4e2207d. Fullsize/interactions still0.
+- Active task NOW node:delegated-task:command%3Amcp%3A89104520-eb67-49dc-8b00-81d96e038194%3Adelegate-task%3Aarbcut-v4-veterans-overview-closure-20261105-retry1, same native session as initial, attemptretry1, sameGPT6.1Sol/high. Budget1.1M estimated from reported675133input/34sheets; scoped exact42remainingmilestone02, no repeats. Completion will deliver; do not poll/duplicate.
+- Durable objective active updated by ordinal2, revision command:mcp:89104520-eb67-49dc-8b00-81d96e038194:thread-update:mcp%3A23a8f983-c0be-4c74-a5c6-83f941890b60:continuation:arbcut-progress-veterans58-20261105; progressKey veterans58-flags-and-76-partition-verified. All later stages preserved.
+- Codex2 at13%20:31UTC, other models still limited on20:28readings. Refresh after stage. Initial stage$0.4301812listprice; ownthread total$0.5886976lowerbound/costCompletefalse; automatic acceptedstage counter not full research acceptance.
+- Next lead accepts retry image/manifest coverage then remaining gates. Puetz previous2retries exhausted; lead must own123savedinteractions/styles/provenance/reconciliation, not third disguised childretry. No src/public/build/SEO checks yet.
