@@ -27,3 +27,10 @@ Analyst brief: `.agents/research/v4-reference-study/bulk-analyst-brief.md` (step
 ## Next (lead)
 1. On each SITE DONE: run analyst for that site. When main + recapture end: per-site counts line to user; `MIN1440=300 python3 bulk-blank-check.py`; recapture remaining flagged; blocked → headed/T3 preview.
 2. After all findings: write cross-site winning formula into `.agents/research/v4-reference-study.md` (read `v4-learnings.md` first), ≤40 key JPGs <300 KB in git, coverage ledger per site; Codex review ("Verdict:" line), max 2 rounds.
+
+## Update 13:25 EET (lead Claude session at 90%, resets 16:20 EET)
+- Home Front analyst done (partial: all 44 sheets, full size only home 1440) → committed. True Air analyst running on Codex2.
+- New capture defect: early-run pages (captured before 10:32Z, heavy swap) had unloaded photos (CSS backgrounds/lazy). Fixed going forward (`1cb7fb1`, bg-image preload; main capture restarted, PID 8964). `/tmp/recapture2.sh` waits for the iframe side recapture, then moves 233 first-window page-widths to `_backup-first-window/` and recaptures them (ledger `bulk-ledger-recapture-first-window.json`, log `bulk-run-recapture2.log`).
+- Analyst runs cost ~$0.4–0.75 each (stage_outcomes); the soft tokenBudget, not cost, cut them short. Next analyst rounds: budget ~8M and split big sites by template groups.
+- Allowance 13:23: Claude session 90%, Claude2 84%/79% weekly, Codex 84%, Codex2 38%/34%. Until 16:20 EET dispatch analysts to Codex2 only.
+- Full-size completion still owed for: VensLand (localities/services), Home Front (all but home 1440), and after recaptures settle. 
