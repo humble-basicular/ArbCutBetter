@@ -8,3 +8,7 @@ Next final Smockretry2 uses existing retry1 task ID and GPT6.1Sol/high; owns ONL
 Remaining after Smock: Veteransretry1; leadNorthface/Thelen after retry caps; Greentek remaining; Genz/Glassperts/baselines; shared overwritten derived blank summary recovery with honest provenance; cross-site synthesis, required ClaudeOpus5.5medium designbrain/fullfrontend, Codex checks,otherengine review and local noindex preview. No site acceptance/build yet. No production actions.
 
 Known accounting from modest stage_outcomes: total list-price lower bound$8.6816288,incomplete; wastedCostUsd0 for this thread's recorded failed/interrupted/cancelled stages (partial completed stages are not classified as waste). CostPerAcceptedStage null; tool stage counters do NOT imply complete research acceptance.
+
+## Smock final retry accepted, 21:42UTC
+- Original native continue rejected: "Continuing requires the original provider and model to reuse its native session." No run started by that rejected call. New compatible codex session keeps GPT6.1Sol/high, same stage v4-smock-native-closure, attempt retry; this counts FINALretry2, not new retry budget.
+- ACTIVE taskId node:delegated-task:command%3Amcp%3A4b956a86-411f-422f-8c40-a56e758c40c8%3Adelegate-task%3Av4-smock-native-closure-20261105-retry2-account-recovery. AcceptedRUNNING. Correct site smockhvac.com; ONLY .agents/research/v4-reference-study/bulk-findings-smockhvac.com.md + external ownsite native paths owned. No other active workers. Lead ends for completion delivery; do not poll/duplicate/edit worker file.
