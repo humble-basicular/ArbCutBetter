@@ -83,14 +83,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/accessibility/1440/record.json",
           "height": 2160,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/accessibility/390/record.json",
           "height": 2165,
           "error": null
@@ -98,7 +98,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/arbcut-reference-study-not-found/",
@@ -107,14 +107,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/arbcut-reference-study-not-found/1440/record.json",
           "height": 1748,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/arbcut-reference-study-not-found/390/record.json",
           "height": 1671,
           "error": null
@@ -122,7 +122,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/blog/",
@@ -4043,14 +4043,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/careers/1440/record.json",
           "height": 3678,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/careers/390/record.json",
           "height": 4630,
           "error": null
@@ -4058,7 +4058,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/commercial/",
@@ -5003,14 +5003,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/instant-roof-estimate/1440/record.json",
           "height": 2351,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/instant-roof-estimate/390/record.json",
           "height": 2211,
           "error": null
@@ -5018,7 +5018,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/leadership/",
@@ -5027,14 +5027,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/leadership/1440/record.json",
           "height": 6221,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/leadership/390/record.json",
           "height": 9017,
           "error": null
@@ -5042,7 +5042,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/locations.kml",
@@ -5075,14 +5075,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/privacy-policy/1440/record.json",
           "height": 4158,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/privacy-policy/390/record.json",
           "height": 5941,
           "error": null
@@ -5090,7 +5090,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/projects/",
@@ -5123,14 +5123,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/remodels-additions/1440/record.json",
           "height": 6281,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/remodels-additions/390/record.json",
           "height": 9553,
           "error": null
@@ -5138,7 +5138,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/roofing/",
@@ -5483,14 +5483,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding/1440/record.json",
           "height": 7162,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding/390/record.json",
           "height": 11394,
           "error": null
@@ -5498,7 +5498,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/siding/albert-lea/",
@@ -5867,14 +5867,14 @@
       "widths": {
         "1440": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/sms-terms/1440/record.json",
           "height": 3110,
           "error": null
         },
         "390": {
           "captured": true,
-          "viewed": false,
+          "viewed": true,
           "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/sms-terms/390/record.json",
           "height": 3478,
           "error": null
@@ -5882,7 +5882,7 @@
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/windows-doors/",
