@@ -28,3 +28,8 @@ Next async stage v4-vensland-bulk-gap-completion, request v4-vensland-bulk-gap-c
 
 ## Update14:16EET
 VensLand partial pass committed (see latest research commit):87image views;lead checked31explicit JPG citations all present,diffcheckpass. Home12/21mobileframes +mini4/10 remain but exact inherited filenames unknown; must not guess firstN. New bounded stage v4-vensland-mobile-closure on codex GPT6.1Solhigh (84%) owns VensLand report exclusively, reopens both whole mobile pages to establish exact provenance;request v4-vensland-mobile-closure-1. Codex2 now89%. Broad site analysis waits for captures/allowance;no new reviewer on Claude2 (92%).
+
+## Update14:19EET — latest state
+Mobile closure completed:home21segments+FV,mini10segments+FV actually viewed;lead independently counted31segmentfiles+2FV present,diffcheckpass. Report exact filenames and remaining fades/replacement/interaction gaps;13sheet-only pages are not a failure of approved template-sampling bulk brief. No active child tasks. MainPID8964alive;first-windowPID19023ended,recapture2log finalSUMMARY12:16:45UTC. Need final recapture ledger counts/blank check and refreshed sheets before claiming capture completeness. Do not restart recapture blindly.
+Latest allowance:Codex87%12:18UTC(reset14:01UTC),Codex2 90%12:15UTC(reset14:47UTC),Claude96%(reset14:20UTC),Claude2 92%(reset15:40UTC). Next owner lead:reconcile recapture outputs and completed-site sheets with focused commands,then remaining analysts using sufficient allowance,final synthesis/review. No ongoing delegated work to duplicate.
+Costs:VensLand gap pass$0.4869668;mobile closure$0.2341604 list-price estimates (both complete cost readings). Entire thread cost incomplete,known wasted$0.6175338;no reliable accepted-stage unit cost.
