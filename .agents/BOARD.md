@@ -127,3 +127,5 @@
 - Account-continuation service milestone: all20inventoriedSmockservice/categoryURLs individuallyopened1440/390;total21documents/42widths/363segments/166sheets.244known documents plus states/KML/interactions remain. Next/about/,assessment-results,blog;no interimreview,no sourceedits.
 
 - General-document milestone: Smock27documents/54widths/418segments/195sheets actuallyopened. Discovered3careerjobURLs,inventory271records/268documents;241documentsremain plusstates/KML/interactions. Next3jobURLs;no interimreview.
+
+- Account-continuation stoppedonuser5Msoftinputbudgetsteer afterclosingin-flightjobbatch. Stage+16exactURLs/+32widths/+191segments/+95sheets;Smocktotal30documents/60widths/436segments/207sheets,allopened1440/390. Inventory271records/268documents;238documentsremain(24localities,200articles,14others),plusshopstates/KML/interactions. Next/contact/,then/faq/,/financing/. All20inventoriedservicesfullyviewed;whole-sitePARTIAL. Noactivejobs,nointerimreview,noother-site/sourceedits. ParentCodexownsnextcontinuation.

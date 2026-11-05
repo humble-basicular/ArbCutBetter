@@ -90,3 +90,7 @@ Smock21documents/42widths/363segments/166opened sheets/42firstviewports. Home pl
 ### Discovery and general-document continuation
 
 27exactdocuments/54widths/418segments/195numberedsheets allopened. Sixnewgeneraldocuments:about,assessment-results,blog,careers,comfort-assessment,community-involvement. Careerslinks add3jobdocuments;inventory271records=268documents+2shopstates+KML.241documentsremain(24localities,200articles,17otherdocuments). No source/submission/upload/consent actions. NextthreejobURLs from careers;discovery is ongoing,not complete. See individual rows for audience-specific layouts and staticresults limitation.
+
+### Latest soft-budget checkpoint —30documents, exhaustive study incomplete
+
+Accountcontinuationadded16exactURLs individuallyseen1440/390,32widths/191segments/95sheets. Total30documents/60widths/436segments/207sheets/60firstviewports. Includesall20inventoriedservice/categoryURLs plus9general/jobdocumentsandhome. Discoveryadds3jobURLs;271records/268documents now.238documentsremain(24localities,200articles,14otherdocuments),plusshopstates/KML/interactions. No captured-onlybacklog oractivejob. Next/contact/,then/faq/,/financing/. User5Msoftbudgetsteer stoppedexploration; in-flightjobbatchclosed. No interimreview,sourcechanges,submission,upload,consent,spend,push,mergeordeploy. Exactqueue linkedabove;otheragreed-sitesbacklogunchanged.
