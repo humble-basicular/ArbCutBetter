@@ -32,7 +32,7 @@ Judgement: **let the work be the content**. The same brand survives without repl
 
 Evidence: `P/customer-reviews/{1440,390}/sheet-{0,1}.jpg`; [mobile first screen](puetz-reviews-mobile.jpg).
 
-A short olive/tan construction-drawing title band replaces a photo hero. Under a simple title, score/stars/count and a small Write a Review action, the actual review cards dominate: avatar/initial, reviewer, relative date, coloured Google G, red stars and text. Three masonry columns become one mobile column. The first review is extraordinarily long and occupies several mobile screens; the uneven desktop column heights leave substantial white space. Load More follows, then blog links/footer; this route does not need the large crew CTA to carry its identity.
+A short grey-olive construction-drawing title band replaces a photo hero. Under a simple title, score/stars/count and a small Write a Review action, the actual review cards dominate: avatar/initial, reviewer, relative date, coloured Google G, red stars and text. Three masonry columns become one mobile column. The first review is extraordinarily long and occupies several mobile screens; the uneven desktop column heights leave substantial white space. Load More follows, then blog links/footer; this route does not need the large crew CTA to carry its identity.
 
 Judgement: **source identity is attached to the testimony, and the testimony outweighs solicitation**. That directly supports the user’s official-proof preference. It is visual evidence of the displayed Google mark, not independent verification of every review or count. The unbounded first card is a mobile scanning defect; a polished proof module still needs controlled reading length.
 
@@ -90,7 +90,7 @@ Numbers: phone numbers differ between page sessions and widths. I do not know wh
 
 [URL-by-URL ledger](puetz-ledger.json) includes 241 freshly fetched sitemap entries: 162 posts, 78 page entries, and one KML entry. The latter is geodata, excluded from visual-page coverage. Additional same-site navigation/footer URLs and a 404 probe have their own rows; use the machine ledger for the current exact count. Initial plain HTTP sitemap fetch got 403; ordinary headed Chrome loaded the same public sitemap/index and three children with HTTP 200, without any challenge bypass.
 
-The eight routes above have both widths marked viewed. Homepage remains earlier evidence in `../v4-hook-deep-study.md`; do not add it to fresh counts. Locality templates, blog hub/articles, remaining unique services, careers, leadership, estimator, legal and utility states were not yet analysed for this milestone. New capture batch may have saved them, but that does not imply viewed. No thank-you URL has been established; do not guess one. Representative mappings remain unset until actual template comparisons are made. Full-site completion is not claimed.
+The eight routes above have both widths marked viewed. Homepage remains earlier evidence in `../v4-hook-deep-study.md`; do not add it to fresh counts. At the end of this first batch, locality templates and blog hub/articles were not yet analysed; the [second milestone](puetz-articles-localities.md) now supplies five additional fully viewed routes. Remaining unique services, careers, leadership, estimator, legal and utility states are captured but unviewed. No thank-you URL has been established; do not guess one. Representative mappings remain unset until actual template comparisons are made. Full-site completion is not claimed.
 
 ## Provisional rules to test against the other US sites
 

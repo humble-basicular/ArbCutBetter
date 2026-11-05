@@ -22,6 +22,6 @@ Polish does not excuse weak information: very long mobile review cards, repetiti
 
 ## Review status
 
-Initial Claude Opus 5.5 medium evidence audit stopped at its 60k soft budget before reading the report or opening images. It returned no content findings and is **not an approval**. This budget was an estimate and proved insufficient for session overhead. No claim has been accepted on that review. A narrower, adequately budgeted audit will accompany the US synthesis.
+Initial Claude Opus 5.5 medium evidence audit stopped at its 60k soft budget before reading the report or opening images. It returned no content findings and is **not an approval**. This budget was an estimate and proved insufficient for session overhead. No claim has been accepted on that review. A subsequent [Puetz audit](v4-reference-study/puetz-audit.md) by Claude Opus 5.5 medium approved the explicitly partial milestone: ledger recomputed and nine images checked, with no blockers. Lead applied its two optional wording corrections. This is a bounded spot-check, not independent verification of every screenshot or completion of the website study.
 
 No website implementation, submissions, messages, paid APIs, push, merge or deploy.
