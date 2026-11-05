@@ -170,6 +170,8 @@ async function captureWidth(url, width, dir, isHeaded) {
         await page.waitForTimeout(350); const after = await page.evaluate(() => document.documentElement.scrollHeight); if (after === before) break;
       }
       await page.evaluate(async () => { await Promise.all([...document.images].filter(e => { const r = e.getBoundingClientRect(); return r.width > 0 && r.height > 0; }).map(e => Promise.race([e.decode().catch(() => {}), new Promise(res => setTimeout(res, 12000))]))); });
+      // CSS background images (lazy-bg libraries) are not covered by img.decode(): preload every visible one.
+      await page.evaluate(async () => { const urls = new Set(); for (const e of document.querySelectorAll('body *')) { const b = e.getBoundingClientRect(); if (!b.width || !b.height) continue; for (const m of getComputedStyle(e).backgroundImage.matchAll(/url\(["']?([^"')]+)["']?\)/g)) if (!m[1].startsWith('data:')) urls.add(m[1]); } await Promise.all([...urls].slice(0, 300).map(u => new Promise(res => { const i = new Image(); i.onload = i.onerror = res; i.src = u; setTimeout(res, 10000); }))); });
       await page.waitForLoadState('networkidle', { timeout: 5000 }).catch(() => {});
       await page.evaluate(() => scrollTo(0, 0)); await page.evaluate(() => document.fonts.ready); await page.waitForTimeout(900);
       r.dom = await page.evaluate(() => {
