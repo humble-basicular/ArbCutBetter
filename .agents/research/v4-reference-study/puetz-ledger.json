@@ -4402,23 +4402,23 @@
       "source": "sitemap",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/commercial__rochester/1440/record.json",
+          "height": 6549,
           "error": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/commercial__rochester/390/record.json",
+          "height": 9951,
           "error": null
         }
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/commercial/wabasha/",
@@ -4498,23 +4498,23 @@
       "source": "sitemap",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/commercial__woodbury/1440/record.json",
+          "height": 6562,
           "error": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/commercial__woodbury/390/record.json",
+          "height": 10032,
           "error": null
         }
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/contact/",
@@ -4618,23 +4618,23 @@
       "source": "sitemap",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/decks-patios__arcadia-wi/1440/record.json",
+          "height": 7302,
           "error": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/decks-patios__arcadia-wi/390/record.json",
+          "height": 10277,
           "error": null
         }
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/decks-patios/austin-mn/",
@@ -4882,23 +4882,23 @@
       "source": "sitemap",
       "widths": {
         "1440": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/decks-patios__st-charles-mn/1440/record.json",
+          "height": 7251,
           "error": null
         },
         "390": {
-          "captured": false,
-          "viewed": false,
-          "record": null,
-          "height": null,
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/decks-patios__st-charles-mn/390/record.json",
+          "height": 10123,
           "error": null
         }
       },
       "representedBy": [],
       "legacyHomeViewed": false,
-      "gap": "not yet fully inspected in this milestone"
+      "gap": null
     },
     {
       "url": "https://puetzconstruction.com/decks-patios/winona-mn/",
@@ -5770,17 +5770,17 @@
       "source": "sitemap",
       "widths": {
         "1440": {
-          "captured": false,
+          "captured": true,
           "viewed": false,
-          "record": null,
-          "height": null,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding__rochester/1440/record.json",
+          "height": 7304,
           "error": null
         },
         "390": {
-          "captured": false,
+          "captured": true,
           "viewed": false,
-          "record": null,
-          "height": null,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding__rochester/390/record.json",
+          "height": 10203,
           "error": null
         }
       },
@@ -5842,17 +5842,17 @@
       "source": "sitemap",
       "widths": {
         "1440": {
-          "captured": false,
+          "captured": true,
           "viewed": false,
-          "record": null,
-          "height": null,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding__woodbury/1440/record.json",
+          "height": 7261,
           "error": null
         },
         "390": {
-          "captured": false,
+          "captured": true,
           "viewed": false,
-          "record": null,
-          "height": null,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding__woodbury/390/record.json",
+          "height": 10292,
           "error": null
         }
       },
