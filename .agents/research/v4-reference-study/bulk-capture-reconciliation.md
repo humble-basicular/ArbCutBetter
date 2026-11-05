@@ -49,3 +49,7 @@ Initial audit found21records absent under theglassperts.com. Follow-up located A
 - `theglassperts.com/window-repair-for-commercial-property-what-to-expect/1440/record.json`
 - `theglassperts.com/4-tips-to-fixing-a-sliding-door/1440/record.json`
 - `theglassperts.com/helpful-fix-to-squeaking-sliding-door/1440/record.json`
+
+## Final retry result
+
+Separate `bulk-ledger-final-retry.json` and external `bulk-final-retry.log` retain the retry boundary. Genz now412captured/18blocked/74files: previously blocked heating/boiler-installation captured both widths, redirecting to heating/boilers. Its fresh capture needs additive visual coverage. Northface remains409captured/1failed/20files. Repeated-block cutoff left some Genz URLs unattempted in this pass; status blocked does not prove every URL was retried headed. No bypass. Original ledger above remains a historical snapshot.
