@@ -5,7 +5,8 @@ import json, sys
 from pathlib import Path
 from PIL import Image
 ROOT = Path.home() / '.ai-powerhouse/research-captures/arbcut-v4'
-MIN = {1440: 450, 390: 520}
+import os
+MIN = {1440: int(os.environ.get('MIN1440', 450)), 390: int(os.environ.get('MIN390', 520))}
 def runs(path, seg_h):
     im = Image.open(path)
     if im.height >= 16: im.draft('L', (max(1, im.width // 8), max(1, im.height // 8)))
