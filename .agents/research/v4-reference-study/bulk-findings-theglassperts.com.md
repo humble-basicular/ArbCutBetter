@@ -314,3 +314,46 @@ All94savedinteractionJPGs now inspected:65 initialClaude views remain attributed
 - FAQ scrolls show navy question rows/white labels, gold active question and white answer panel; the right-lower Jivochat bar overlaps rows in desktop11/12. Mobile late scroll07shows footer QuickLinks and floating envelope widget. These saved overlaps are relevant warnings; no production-cause assertion. Direct hover crops show whiteBOOKONLINEongold and grayHomelabel, not matched-baseline hover changes.
 
 ArbCut: make FAQ expanded/collapsed states clear and verify real keyboard/touch behavior locally; retain useful regional hierarchy and keep chat controls clear of content. Do not turn invalid typing without feedback into a validation-defect claim. Nativeoneoffs/templateexamples/outliers/aliasrefinement remain open; all105queue entries have no new nativecredit from this closure. No live360/focus-trap/motion/submission pass claimed.
+
+---
+
+# Native page stage — retry1 (Claude research sub-agent, 2026-11-06)
+
+Interaction work is closed (94/94 per lead appendix above); not reopened. **Manifest created before any view:** R/`_sheets/theglassperts.com/native/page-manifest.json` — 8 functional pages (faqs, contact, book-service, areas, sitemap, about, testimonials, home), every first viewport + every segment at both widths mapped to 69 display files under `native/pages/<slug>/<width>/`. Displays are read-only derivations: 1440 segments cropped into ≤1200px-tall pieces at native width; 390 segments joined three-per-strip side by side at native size (gray 10px gutter between frames is packing, not page). `viewed` flips only after pixels return; `falseFlagChecks` records each original algorithmic flag and its outcome. **Iframe metadata correction:** all 1440 records (bulk-capture.mjs) have a root `iframes` list; all 390 records (scrolled-viewport method) have **no `iframes` field at all** — manifest marks `rootIframesField: absent`, which is not "zero iframes" (contact 390 pixels show three maps). All 8 pages resolve to raw host `theglassperts.com`; `blogs` (glassexpertsfl.com host) deferred.
+
+## faqs
+- **1440 (3/3 viewed: first-viewport, seg0–1200, seg1200–2359).** Shared 207px header; hero "FAQS" + BOOK ONLINE / phone ghost buttons; first question row visible at y≈798 inside the fold. Accordion: 1150px-wide navy rows (white bold title-case questions with chevrons), first row open — gold question, white answer panel with hairline border. 15 questions, most pairing a service with a city (Miami/Naples/Tampa/Orlando) — locality-SEO phrasing, short answers. Footer: charcoal, logo, Quick Links (4), Services We Offer (4 of 7 services), Contact Us (877-748-0365, Sales@glassexpertsfl.com) with small gold glyph icons; copyright bar + Facebook/Instagram/Google round icons. No form, no sidebar, no CTA after the FAQ — the page ends in footer after ~110px white.
+- Flag `height-outlier(2359)`: **real short page**, not capture loss.
+- **390 (3/3 viewed: first-viewport, strip 0–2532, strip 2532–3673).** Fold: 207px header + 510px hero; first question row starts y≈758 (only its first line in the fold). Accordion rows become 2–3-line bold questions (~85–115px each) in a 350px column with ~20px side margins; first answer open. 15 rows ≈ 1,700px of navy before the footer. Footer stacks logo → Quick Links → Services → Contact → copyright/social; ends ~3673px. Header is not hidden in 390 segments (repeats in segment 0) — no separate fixed-UI conclusion. The gray area right of the final strip frame is strip padding.
+- ArbCut: copy the plain readable accordion (clear open state with distinct colour + bordered answer); avoid city-stuffed question titles and an FAQ page with no follow-on CTA/form.
+
+## contact
+- **1440 (4/4 viewed).** First viewport = header + 500px decorative hero + only the top of the form card and first map; no address/local phone/form fields above the fold. Below: left white shadowed card flush to x=0 (two headings, then Name*, Phone*, Email, Address* with Street/Line 2/City/State=Florida, "What Service…*" textarea, gold Submit); right navy column, three stacked 630×300 maps each with an uppercase location label, pin/phone glyph rows: Miami 13991 SW 144th Ave #302 / (786) 558-7575; Naples 3201 Tamiami Trail N / (239) 350-5488; Orlando 4700 Millenia Blvd Ste 175-R / 407-214-3771. **Map pixels at 1440 are iframe patches** (`iframeCheck: patched`, 3 patches at x765, y792/1264/1736) — they show Google place cards with 4.9★ (212) Naples and 4.9★ (175) Orlando; these are patched third-party renders, not verified ratings. ~400px white gap below the card bottoms before the footer. Footer social row: Facebook icon rendered, Instagram/Google circles empty in this capture (icon-font/load timing; not a live defect claim).
+- **390 (3/3 viewed).** Fold = header + hero only (form starts ≈y844+). Card holds the full form at 350px width (~1,250px), then three map blocks (render visibly despite the absent iframe field), then footer; doc 4843px. Contact info sits ~2,000px below the fold.
+- Flag `height-outlier(2843)` at 1440: **real** — short utility page; not capture loss.
+- ArbCut: put phone/area/hours and the form in the first viewport of the contact page; one phone number; ask only name/phone/postcode/message.
+
+## Retry1 status at stop (budget steer 3.68M > 3.5M)
+
+**Native displays viewed: 13 / 69** in `native/page-manifest.json` (faqs 6/6, contact 7/7). Every view returned pixels; 0 media-removed. The attempted `book-service/1440/first-viewport.jpg` read was **rejected before display — never opened, no observations**.
+**Native queue credit:** 2 / 105 slugs complete at both widths (`faqs`, `contact`), first viewport + all segments. 103 not started. Flags: `faqs` and `contact` height-outlier flags → confirmed real short pages; all other flags `pending` in the manifest.
+
+**Exact unviewed functional displays (56), all prepared in the manifest:**
+- book-service: 1440 fv + 2 crops; 390 fv + 2 strips (6) — booking iframe present (1 root iframe, patched)
+- areas: 1440 fv + 2; 390 fv + 2 (6)
+- sitemap: 1440 fv + 3; 390 fv + 2 (7)
+- about: 1440 fv + 4; 390 fv + 4 (10)
+- testimonials: 1440 fv + 5; 390 fv + 4 (11)
+- home: 1440 fv + 7; 390 fv + 7 (16)
+- blogs (raw host glassexpertsfl.com) — not yet in the manifest.
+
+**Remaining semantic gates (none started):** two examples each for designed core service (`window-installation`, `window-repair`), core service editorial (`board-up-services`, `sliding-glass-door-repair`), rich locality (`collier-county__marco-island`, `miami-dade-county__kendall`), locality grid (`altamonte-springs`, `altamonte-springs-fl`), service-locality editorial, blog detail, blog index, date archive, plus outliers (`homestead-fl`, `broward-county__fort-lauderdale`, white-gap service pages) and alias refinement. The original 105-entry queue and its reasons are unchanged.
+
+**Unknown:** 360px, keyboard, motion, focus trap, live map/booking behaviour. Saved states only.
+
+Done · manifest of 69 displays + 13 viewed (2 pages fully). Verified · each logged display returned pixels; iframe field presence was checked in each record. Not verified · 56 displays, 103 queue slugs. Next (lead) · commit; book-service → home order; template examples after that. No commit, board, raw or shared-file change by me.
+
+
+## Lead verification of retry1 — ordinal18
+
+Manifest69prepared displays partitions13viewed/56unviewed, two complete pairs `faqs`/`contact`, **18unique original sourceJPGs**. Every display/source/record path exists. Verified each viewed1440segment crop group is contiguous from0tofull originalimageheight, so splitting into1200px pieces does not leave unseen segment gaps. Visual coverage remains worker-attributed, no new lead image reinspection. Nativequeue103/105notstarted;94savedinteractions remain inspected, not reopened. Rootiframe presence versus absent390field distinction preserved; absence is not zeroiframes. Contact address is **labelled required**; submit enforcement remains untested as recorded in the lead ordinal17 note. Two heightflags resolve to short utility pages at the saved-capture level, not blanket capture-fidelity proof.
