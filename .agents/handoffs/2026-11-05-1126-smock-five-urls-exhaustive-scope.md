@@ -1,0 +1,26 @@
+# Handoff: Smock five individual URLs, exhaustive scope retained
+From: codex research worker · To: parent Codex lead · Date:2026-11-05T11:26+02:00
+## Objective
+EVERY public page on agreed reference domains individually captured AND actually viewed in full at1440/390. Original two-template sampling permission superseded by user. No representative substitution. Current site Smock; every service first, remaining pages next, ALL localities/articles after. Puetz35fresh/246URLs is PARTIAL literal URL coverage, not completed site. Wider agreed-domain backlog remains.
+## User decisions & constraints
+Exclusive sequential research ownership in this worktree/branch. No fanouts/review requests/new threads. Ordinary browser approved; no paid APIs, bypass, submissions, uploads, quotes, consent, messages, src/public edits,push,merge,deploy. Stop on2Msoft input estimate exceeded(2154025reported); closed only in-flight batch after steer.
+## State
+- Done verified:5URLs individually through footer at1440/390: home,ac-replacement,air-cleaning-services,ac-maintenance,ac-repair.10widths/94segments/42numbered sheets/10firstviewports opened. No current captured-only backlog. Initial states only;0interactions completed.
+- Inventory268records:265document URLs,2shop fragment states,1KML.200post+63page+1KMLsitemap entries;home/captured links add legal/app states. Every URL classified provisionally by URL/link label, no canonical duplicates assumed.260documents remain(16services/categories,24localities,200articles,20others),plus2appstates/KML and interactions. Discovery union is not proof of exhaustive crawl.
+- Access:ordinary T3preview home opens;headed realChrome200all10widths. Historic headless403 does not establish current inaccessibility.
+- Capture defects:mobileCDPexpanded layout/blanktail retained at raw `_superseded/home-390-cdp-layout-defect/`,excluded. Corrected mobile uses actual scrolled viewport844pxshots;last home crop repaired locally after float728.5int error. DesktopCDP2xphysical pixels (2880widefor1440CSS);readable sheets were correct already;stitchedpreviews repaired by normalising toCSSdimensions. Checker accepts1x/2x. No viewed sheets replaced. Mobile initial home sheets have unused blank canvas;Smock-onlyscript sizes newer sheets tocontents.
+- Findings:shared visual system across changed home/service compositions supports provisionalPuetzcoherence observation. Long repeated promotional tails and missing mobile footer columns recur. Service-specific lists/FAQs vary individually. HVAC equipment,coupons,memberships/redcurves are niche/brand choices,noarboristprescription. ACreplacement hero discusses maintenance. Aircleaning links furnace articles;mobile review captured mid-transition,notalltextreadable. Mapsblankdesktop butrenderedmobile;causeunknown. Phone numbers vary across contexts,within-recordtel linksconsistent;causeunknown. No conversion claims.
+## Files & artifacts touched
+- Evidence commits c304bac(first3URLs/scope),ccf8718(final5URLbatch/checks). This handoff is a subsequent commit.
+- `.agents/research/v4-reference-study/smock-*`:discovery,ledger,findings,capture,sheets,queue runner,checker. Mainstudy prominent scope correction and Smock partial summary. Board stage logs. Prior Puetz files/scripts/raw untouched.
+- Raw `~/.ai-powerhouse/research-captures/arbcut-v4/smockhvac.com/`;nothing uploaded,no newtrackedimages.
+## Checks run
+`python3 .agents/research/v4-reference-study/smock-check.py` passes:268uniqueURLrecords,10viewedwidths,94orderedsegments with summedheightand1x/2xdimensions,42viewedsheets/exactmembership,22researchJPGs<300KB(max40),no src/publicdiffsincec62fc56. `git diff --check`passed. No independent audit claimed/requested. No active capture/queue session after79640completed.
+## Pending approvals / questions
+None for current research. Final review once per site belongs to lead; no worker review delegation. Niche candidates later need approval; no extra domains now.
+## External actions already taken
+Publicread-onlyT3/Chrome loads,sitemapfetches,captures,localreports/commits only. No submissions,sends,publishing,paidservices,push/merge/deploy. T3tab `tab_8_d36ed8f1-d952-42a4-88b7-a5f8651dabf1` holds home; no interactionperformed.
+## Next action + owner
+Parent/resumedworker:exact next `https://smockhvac.com/air-conditioning/`,then`https://smockhvac.com/air-scrubbers/`. Run `python3 .agents/research/v4-reference-study/smock-next-batch.py 2` for boundedmanifestservicequeue. It recomputesledger/refusescaptured-unviewedbacklog and NEVERmarksviewed. Openeverynewnumberedsheet at both widths,writeindividualURLfindings,thenmarkrawrecordsegments/sheets/firstViewportViewedandregenerateledger. Keepboundedcompletebatches;noall-servicessamplingcredit. Continueall16services thenother20docs thenall24localities/200articles;reconcilelinksasfound. Appstates/KML/404/publicsuccessdiscoveryinteractionsremainexplicit;neversubmit.
+## Omitted context
+0915brief,v4-learnings,Smockfindings holdconstraints/evidence. Usage refreshed09:24:56UTC:codex40%session/56%weekly,sessionreset14:01UTC. Claude1%session/43%weeklychecked09:21UTC;Claude2weekly72%. Currentaccountproviderunchanged;no switching/delegation. No fullsitecompletion estimate known.
