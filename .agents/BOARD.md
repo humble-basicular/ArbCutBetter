@@ -125,3 +125,5 @@
 - Account-continuation owner Codex2 GPT-6.1-Sol high, sequential exclusive worktree research/arbcut-v4-reference-study. Live Codex2 usage0%session/28%weekly09:47UTC. Remaining exact service URLs first, then all other documents; no fanout/review until whole site complete. Parent makes no concurrent edits.
 
 - Account-continuation service milestone: all20inventoriedSmockservice/categoryURLs individuallyopened1440/390;total21documents/42widths/363segments/166sheets.244known documents plus states/KML/interactions remain. Next/about/,assessment-results,blog;no interimreview,no sourceedits.
+
+- General-document milestone: Smock27documents/54widths/418segments/195sheets actuallyopened. Discovered3careerjobURLs,inventory271records/268documents;241documentsremain plusstates/KML/interactions. Next3jobURLs;no interimreview.
