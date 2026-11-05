@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url';
 const pexec = promisify(execFile);
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = process.env.CAPTURE_ROOT || `${os.homedir()}/.ai-powerhouse/research-captures/arbcut-v4`;
-const LEDGER = path.join(HERE, 'bulk-ledger.json');
+const LEDGER = process.env.BULK_LEDGER || path.join(HERE, 'bulk-ledger.json');
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const SITES = ['puetzconstruction.com', 'smockhvac.com', 'veteranscontractingllc.com', 'genzryan.com', 'northfaceconstruction.com', 'bearsplumbing.net', 'trueairconditioningandheating.com', 'homefrontexteriorsmn.com', 'callthelen.com', 'greentekroofing.com', 'theglassperts.com', 'vensland.lt', 'betonogaminiai.lt'];
 const WIDTHS = (process.env.CAPTURE_WIDTHS || '1440,390').split(',').map(Number);
