@@ -1,5 +1,24 @@
 # Bear’s Plumbing — bounded contact-sheet study (PARTIAL site research)
 
+**Historical worker checkpoint:  30/46 sheets opened (15/23 per width), 144/155 pages represented at both widths, 288 page previews. Remaining: 16 sheets / 11 pages / 22 previews, t11–t18. Fullsize 0; first viewports 0; no site-completion claim.**
+
+**Latest lead state: 46/46 sheets actually opened, 23/23 per width, all 155 pages represented at both widths (310 previews). Lead directly opened the final 16 t11–t18 sheets. Fullsize 0; first viewports 0; interactions unverified. Historical partial counts below are superseded.**
+
+## Lead completion: t11–t18, sheet scale only
+
+Both 1440 and 390 sheets were opened for every group below; citations are `_sheets/bearsplumbing.net/<width>/<sheet>.jpg`, cell 1 unless stated otherwise. All observations are preview-scale, not fullsize verification.
+
+- **t11-_1-0**, cells1–2, membership/pricing-guide: membership uses alternating work-photo/text bands and a team photo before final CTA; pricing uses three desktop price/category cards stacked on mobile. Desktop membership has a white band before footer; keep the existing embed/capture caveat. Transfer clear grouped pricing; avoid repeated wave separators and paired CTAs on every band.
+- **t12-blog_x-0**, cells1–2: filtration/repiping articles use shared branded hero, narrow reading column, technical photos, multiple subheads, comparison tables, map/footer; a red-headed loading widget sits beside content on desktop and above it on mobile. Tables and exact text need fullsize checks.
+- **t13-blog_x-0**, cells1–2: drain-damage/rooter articles share that article frame, using trench/equipment photos and a second inline image. Mobile is a long text run followed by full link-rich footer; do not infer exact readability metrics from previews.
+- **t14-one-off-0**, about-us: van/team portraits and owner portrait alternate with story copy; historical monochrome group photos add specificity. Mobile retains images and narrative. Real team history is more transferable than the generic mascot hero.
+- **t15-one-off-0**, careers: worker photo and group-event photo introduce dense role/requirements copy; mobile stacks into a lengthy reading run before CTA/map/footer. Role copy and application behaviour unverified.
+- **t16-one-off-0**, giving-back: community/group photos alternate with explanatory bands; map/footer follow. The mobile preview visibly repeats header/review/chat overlays at frame joins; this is a capture-state limitation, not proof of duplicated live page sections.
+- **t17-home-0**, home: service cards → dark intro/contact form band → company/van introduction → large manufacturer logo panel → offer cards → review → area cards → article cards → map/footer. Mobile stacks all modules and an extensive locality list. The manufacturer panel is visibly oversized relative to neighboring modules; exact credential entitlement was not checked. Desktop and mobile reorder form/copy within the dark band.
+- **t18-one-off-0**, thank-you: standalone dark confirmation with logo, short message, red homepage-return action and van image; no ordinary navigation/footer visible in these previews. No submission was performed to reach it.
+
+All 16 final sheets now have viewed flags. Required fullsize backlog below remains entirely outstanding; add every one-off above and both differing examples in t12/t13, membership embed band and mobile overlay comparisons. This completes only contact-sheet coverage, not site research.
+
 Stage: sheets only, 2026-11-05. Input inventory: 155 captured documents + 1 file (file count supplied by lead; not visually reviewed). Group script: 155 pages / 19 groups; heuristic groups are NOT reliable semantic templates. Fullsize pages opened: **0**, first viewports opened: **0**. No interactions checked. No site-completion claim.
 
 ## Evidence convention and limits
@@ -50,7 +69,7 @@ Viewed `t05-blog_x-0` both widths. Compact header → “Category: Uncategorized
 
 Viewed `t06-blog_x-0` both widths. All six pages have a large pale curved empty-looking region ABOVE the branded Blog hero, followed by proof strip/search region → three article cards across (two on final page) → pagination → map/footer. Mobile stacks cards individually and retains the large pale upper region. This is a visible captured-layout anomaly, not a proven live defect: compare record structure and raw first viewports before attributing cause. Sources `bearsplumbing.net/blog__page__2/{1440,390}/segment-*.jpg` (cell1) and `bearsplumbing.net/blog__page__7/{1440,390}/segment-*.jpg` (cell6); other cells page3–6 show the same upper shape. Copy: photo/title/excerpt cards and visible pagination. Avoid: large branding/empty-looking region delays the actual article choices, especially on mobile. Fullsize backlog adds all six pages because the anomaly is shared but not verified.
 
-## Coverage at budget steer — exact partial state
+## Historical first-stop coverage (superseded by latest state above)
 
 Stopped exploring immediately after user reported stage input 761,038 > soft 750,000. **22/46 sheets opened: 11/23 at 1440, 11/23 at 390.** These contain **131 distinct pages at each width = 262 page previews**. The remaining **24 pages / 48 page previews / 24 sheets** were NOT opened. Fullsize pages: **0/155**; raw first viewports: **0/310**; no individual source segment was opened separately. No optional membership fullsize inspection was performed. “Viewed” means contact-sheet image opened and visually inspected at overview scale only; no claim that every word or small component was readable.
 
@@ -68,10 +87,10 @@ The generated 46 sheets and groups are external artifacts. Exact opened sheet ke
 | t04 | 12 | Service / wide-review narrative | 1/1 | 1/1 |
 | t05 | 7 | Category archive | 1/1 | 1/1 |
 | t06 | 6 | Blog pagination | 1/1 | 1/1 |
-| t07 | 5 | Mixed standalone pages (NOT one template) | 0/1 | 0/1 |
-| t08 | 3 | Area / financing / privacy mixed | 0/1 | 0/1 |
-| t09 | 3 | Articles; not yet inspected | 0/1 | 0/1 |
-| t10 | 2 | Legal pages; not yet inspected | 0/1 | 0/1 |
+| t07 | 5 | Mixed standalone pages (NOT one template) | 1/1 | 1/1 |
+| t08 | 3 | Area / financing / privacy mixed | 1/1 | 1/1 |
+| t09 | 3 | Articles | 1/1 | 1/1 |
+| t10 | 2 | Legal pages | 1/1 | 1/1 |
 | t11 | 2 | Membership / pricing; not yet inspected | 0/1 | 0/1 |
 | t12 | 2 | Articles; not yet inspected | 0/1 | 0/1 |
 | t13 | 2 | Articles; not yet inspected | 0/1 | 0/1 |
@@ -81,7 +100,7 @@ The generated 46 sheets and groups are external artifacts. Exact opened sheet ke
 | t17 | 1 | Home | 0/1 | 0/1 |
 | t18 | 1 | Thank you | 0/1 | 0/1 |
 
-### Unopened sheets — exact next queue
+### Historical first-stop unopened queue (t07–t10 subsequently opened)
 
 - 1440: `1440/t07-_1-0`, `1440/t08-_1-0`, `1440/t09-blog_x-0`, `1440/t10-_1-0`, `1440/t11-_1-0`, `1440/t12-blog_x-0`, `1440/t13-blog_x-0`, `1440/t14-one-off-0`, `1440/t15-one-off-0`, `1440/t16-one-off-0`, `1440/t17-home-0`, `1440/t18-one-off-0`
 - 390: `390/t07-_1-0`, `390/t08-_1-0`, `390/t09-blog_x-0`, `390/t10-_1-0`, `390/t11-_1-0`, `390/t12-blog_x-0`, `390/t13-blog_x-0`, `390/t14-one-off-0`, `390/t15-one-off-0`, `390/t16-one-off-0`, `390/t17-home-0`, `390/t18-one-off-0`
@@ -136,7 +155,7 @@ Additional sheet/lead anomaly queue:
 - `blog__10-key-benefits-of-installing-a-tankless-water-heater-in-spring-tx` and short service article `blog__how-bears-plumbing-delivers-5-star-service-every-time`: red-headed loading widget in preview; clarify embed state.
 - `area__the-woodlands-tx-main-water-line-repair` and `area__tomball-tx-toilet-repair-and-installation`: enlarged map/card tail variants; inspect content rather than treating them as errors.
 - Repeated floating UI affects many 390 previews throughout t00–t06. All 131 inspected pages retain a mobile capture-state limitation. Before using a page as a final reference, inspect its actual frames and fixed-element records; this sheet pass cannot clear overlaps.
-- t07–t18 have no visual anomaly assessment yet. Finish all 24 unopened sheets before finalizing outlier selection. No inference that unviewed pages are normal.
+- t11–t18 still have no visual anomaly assessment. Finish remaining 16 sheets before finalizing outlier selection. No inference that unviewed pages are normal.
 
 ### Candidate screenshots for later fullsize review (not approved/exported)
 
@@ -150,3 +169,42 @@ These are source locations identified from sheets, not actual fullsize selection
 6. `bearsplumbing.net/service__bathtub-installation/1440/segment-*.jpg`: topic-led photo narrative, wide review (t04 cell1).
 
 Done · bounded partial sheet analysis saved. Verified · 22 actual image opens, flags reconciled to opened groups, counts checked. Not verified · remaining 24 sheets, every required fullsize page/first viewport, interactions, exact typography/copy, live defects, inventory file contents. Next · lead finishes sheets first, then required fullsize backlog. No commit under stage’s explicit no-commit constraint.
+
+## Resumed sheet-only pass — t07 and t08
+
+Actually opened `t07-_1-0` and `t08-_1-0` at BOTH 1440/390 (4 new sheets). No fullsize opened.
+
+### t07 — mixed standalone pages (5)
+
+Cells1–5 are blog, contact-us, service, sitemap, specials respectively. All have pale curved upper space before the branded hero, proof strip, main content, map and link-rich footer. Blog has three article cards; contact splits contact details/social links and red form (stacked on mobile); service uses a three-column image-card grid plus category controls (single-column mobile); sitemap is long two-column text navigation (stacked mobile); specials has five red coupon panels (3+2 desktop, vertical mobile). Sources `bearsplumbing.net/{blog,contact-us,service,sitemap,specials}/{1440,390}/segment-*.jpg`; exact cell mapping in `index.json`. These are distinct semantic one-offs, despite automatic grouping.
+
+Copy: visible contact details beside the form; image-led service selection; sitemap retains text navigation at mobile scale. Avoid (judgment): oversized shared branding delays short utility content; fifteen equal service tiles form a long mobile queue; coupon visual treatment is busy and not an ArbCut pattern. Upper pale region across all five is a capture/layout anomaly for fullsize inspection, not a proven live bug. No controls/links/coupon terms tested.
+
+### t08 — area, financing, privacy (3)
+
+`t08-_1-0` cells1/2/3 both widths. Area: hero/proof → van above locality-link cards (3 columns desktop, one mobile) → paired actions → map/footer. Financing: hero/proof → intro → alternating photo/text “How it works” / options and eligibility → FAQ → mascot “Call to Action” panel → map/footer. Privacy: shared hero/proof followed by a very long plain white legal-text column; footer preserved. Sources `bearsplumbing.net/{area,financing,privacy-policy}/{1440,390}/segment-*.jpg`.
+
+Copy: locality cards group related service links beneath the place name, more usable than an undifferentiated link wall. Financing separates process/options/eligibility rather than only pushing a button. Avoid: repeating van and many wave boundaries; generic visible “Call to Action” heading warrants readable copy verification. Privacy is visibly far longer, not a missing-content defect. Financing skeleton flag looks consistent with its distinct purpose, but remains in fullsize queue. People photos are visible; their authenticity/provenance is unknown.
+
+### t09 — three technical articles
+
+Actually opened `t09-blog_x-0` at BOTH widths (2 new sheets). Cells1–3: maintenance, inspection checklist, hydro-jetting. Same branded hero/proof → red-headed sidebar widget / article column → lead technical photo → subhead/paragraph/list units → second technical photo → conclusion and footer. Desktop cell2 visibly has a sidebar contents list where cells1/3 show loading indicators; desktop map band also differs, while mobile cell2 shows a loading indicator and map. Treat these as captured-state differences, not functional conclusions. Sources `bearsplumbing.net/blog__{prevent-costly-plumbing-emergencies-with-professional-plumbing-maintenance-in-spring-tx,professional-plumbing-inspection-checklist-for-conroe-tx-homeowners,why-hydro-jetting-is-more-effective-than-traditional-drain-cleaning-in-spring-tx}/{1440,390}/segment-*.jpg`.
+
+Copy: technical equipment images complement the topic and break text runs. Avoid (judgment): repetitive generic branded hero before the specific article, and apparent widget inconsistency. Cell2 skeleton flag stays unresolved pending fullsize; include all three in anomaly follow-up to compare widget/map states. Repeated mobile floating UI remains a capture limitation.
+
+### t10 — legal documents (2)
+
+Actually opened `t10-_1-0` at BOTH widths (2 new sheets), cell1 cookie-policy, cell2 terms-of-service. Shared hero/proof → plain white legal reading surface with uppercase subhead hierarchy and lists → map/footer. Terms is substantially longer; mobile stacks the same text-heavy structure and footer links. Sources `bearsplumbing.net/{cookie-policy,terms-of-service}/{1440,390}/segment-*.jpg`. Copy: restrained white reading surface is more appropriate for dense policies than decorative cards. Avoid: large marketing hero before utilitarian legal text; repeated floating widgets obscure portions of the captured mobile reading surface. No legal accuracy, text completeness, or actual live obstruction assessed.
+
+## Latest stopping point — continuation budget steer
+
+User reported 254,122 > 250,000 soft stage input budget; stopped image exploration after the in-flight t09/t10 batch. This continuation opened **8 sheets** (t07–t10, both widths), **13 additional pages / 26 previews**. Combined with prior 22: **30/46 sheets**, **15/23 at each width**, **144/155 pages at both widths / 288 previews**. Remaining **16 sheets / 11 distinct pages / 22 previews**. No previous sheet was reopened; no sheets regenerated; no fullsize/first-viewport images opened; no browser/recapture/commit/delegation.
+
+Exact current unopened sheet keys (append `.jpg` under `_sheets/bearsplumbing.net/`):
+
+- 1440: `1440/t11-_1-0`, `1440/t12-blog_x-0`, `1440/t13-blog_x-0`, `1440/t14-one-off-0`, `1440/t15-one-off-0`, `1440/t16-one-off-0`, `1440/t17-home-0`, `1440/t18-one-off-0`
+- 390: `390/t11-_1-0`, `390/t12-blog_x-0`, `390/t13-blog_x-0`, `390/t14-one-off-0`, `390/t15-one-off-0`, `390/t16-one-off-0`, `390/t17-home-0`, `390/t18-one-off-0`
+
+All one-off, two-differing-per-group and 14 flagged-page fullsize backlog above remains pending unchanged. Additional follow-up from this continuation: pale upper curved region on all t07 utility pages; financing generic “Call to Action” heading; t09 sidebar/map state differences (all three articles). t11–t18 remain visually unknown, including membership; its y6312 h456 blank band still requires fullsize and 390 comparison and is NOT established as a site defect.
+
+Done · continuation’s eight-sheet evidence saved. Verified · actual opens and index counts reconciled. Not verified · remaining 16 sheets, all required fullsize/first viewports, interactions, live defects and readable copy/typography. Next · lead resumes t11–t18 sheet queue before fullsize. No commit under explicit stage restriction.
