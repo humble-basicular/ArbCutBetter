@@ -142,3 +142,9 @@
 - Bears sheets returned partial22/46(viewed11/23perwidth),131pages represented;fullsize0. Lead confirms index46keys,22viewed and allsheetfiles present;partial findings committed. Same native worker retry1 closes remaining24sheets only,250kbounded budget;no fullsize expansion at92%allowance.
 - Bears sheet stage closed by lead:worker30/46;lead directlyopened final16(t11-t18bothwidths),all46flags true/all155pages represented. Fullsize0,interactions unverified;report remains PARTIALsite. No active children. Codex2at95%:checkpointonly,nextbroadstageaftercompatibleallowance refresh/reset.
 - 2026-11-05 15:01EET recovery: lead Codex reached95%;Codex2 96%;no compatible allowance for new analysis. PID8964capture verified alive;no new children/restarts. Latest handoff1404 has exact next-stage ownership/acceptance;resume after Codex16:01Vilnius reset,refresh capabilities first.
+
+## 5 November18:20EET — resumed after allowance reset
+- Lead verified Codex/Codex2 session0% and current ledger. Most site queues finished;Veterans547captured+147pending;Genz18blocked+1queued;Northface1failed. Capture status requires reconciliation beforefinalcounts.
+- Stage v4-bears-fullsize:Codex GPT6.1Solhigh owns only bulk-findings-bearsplumbing.net.md and external site's sheetflags;input46/46viewedsheets155pages;output actual fullsizeoneoffs/templateexamples/outliers andinteractionevidence,precisegaps. Lead owns checks/commits.
+- Stage v4-puetz-bulk-analysis:Codex2 GPT6.1Solhigh owns only bulk-findings-puetzconstruction.com.md and external Puetz sheets;reusepriorpuetznotes,inspectallcurrent sheets andrequired fullsize gaps,no templatecreditforunviewedfiles. No overlappingownership.
+- Acceptance both:exactactuallyopenedfiles/counts,screenshotcitations,captureartefacts distinguished,bulkbriefrequirements met or explicit residualgaps;no websiteedits/submissions/bypass/publish/push/merge/paidAPIs.
