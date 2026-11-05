@@ -129,3 +129,7 @@
 - General-document milestone: Smock27documents/54widths/418segments/195sheets actuallyopened. Discovered3careerjobURLs,inventory271records/268documents;241documentsremain plusstates/KML/interactions. Next3jobURLs;no interimreview.
 
 - Account-continuation stoppedonuser5Msoftinputbudgetsteer afterclosingin-flightjobbatch. Stage+16exactURLs/+32widths/+191segments/+95sheets;Smocktotal30documents/60widths/436segments/207sheets,allopened1440/390. Inventory271records/268documents;238documentsremain(24localities,200articles,14others),plusshopstates/KML/interactions. Next/contact/,then/faq/,/financing/. All20inventoriedservicesfullyviewed;whole-sitePARTIAL. Noactivejobs,nointerimreview,noother-site/sourceedits. ParentCodexownsnextcontinuation.
+
+## 5 November — bulk continuation on Codex2
+- Lead resumed on Codex2; capture and recapture processes verified running. No website implementation.
+- Stage `v4-homefront-fullsize-completion`: Codex2 GPT-6.1-Sol high owns only `bulk-findings-homefrontexteriorsmn.com.md` and that site's sheet viewed flags. Complete missing full-size checks using existing captures; identify recapture instability explicitly. Lead owns board/handoffs and acceptance. No concurrent findings ownership.
