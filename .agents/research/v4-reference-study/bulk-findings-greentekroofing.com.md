@@ -39,10 +39,10 @@ Scroll frames also show the header losing its black bar (83 px, ledger agrees) a
 1. **Hero overlay flattens the roof** (`home/1440/first-viewport.jpg`): grey cast across the subject; rule 11 weaker case, photo still readable.
 2. **Phone number that changes during a visit.**
 3. **Rating badge over the map card** (`home-_/1440/09-slider-t5.jpg`): rule 18.
-4. **Validation remains unverified:** typing an invalid email without submitting does not establish a validation defect.
+4. **No inline validation on a typed invalid email.**
 
 ### Native pages viewed so far (first viewport + all segments at both widths)
-11 pages: `home`, `contact`, `roofing-calculator`, `financing`, `projects`, `about`, `services`, `faq`, `our-team`, `careers`, and the captured 404 at `blog__reasons-you-need-an-annual-roof-inspection-in-florida`. Scale caveat: 1440×2400 segments were delivered to me at 1200×2000 (0.83×); 1440×900 first viewports and 390 strips at full size. Small print at 1440 was read from the 390 frames where possible.
+`home`, `contact`, `roofing-calculator`, `financing`, `projects`, `about`. Scale caveat: 1440×2400 segments were delivered to me at 1200×2000 (0.83×); 1440×900 first viewports and 390 strips at full size. Small print at 1440 was read from the 390 frames where possible.
 
 **Corrections to the overview text below (these replace it):**
 - **The "huge shared project gallery" is a capture artefact on home, not a site layout.** In `home/1440/segment-007200…016800` the project slides stack at full page width. The ledger's home `sliders` record shows `tns-item` slides with `data-lazy-src` and an empty SVG placeholder, and its `motion` record puts the CTA band at y=10277 at 1440, against a recorded document height of 23484. So the capture's height overstates the page by about 13,000 px at 1440. Treat recorded heights of pages carrying this block as inflated.
@@ -107,6 +107,28 @@ Scroll frames also show the header losing its black bar (83 px, ledger agrees) a
 15. **Recoloured Facebook/Google/BBB marks in single green** in the hero dock (`home/1440/segment-000000.jpg`): rules 1 and 7. Hand-made ratings text ("4.7 RATING") next to them.
 16. **Proof mismatch to check:** rating badge "4.7 | 696 reviews" vs Google card "4.7 (527)" (`contact/1440/segment-000000.jpg`). Different sources possible; both on one page. Rule 5.
 
+### Retry 1 (2026-11-06): further saved interactions, visibly viewed in batches of 3
+Saved states, not live passes. Keyboard, focus trap, motion and 360 stay unknown.
+
+| Source | Visible outcome |
+|---|---|
+| `home-_/1440/03–05`, `home-fix/1440/dropdown-2/3/4` | **Saved-state panels on home:** Other Services (3 items), Resources (5), About Us (4). `home-fix/1440/dropdown-5.jpg` hovers Materials + Products: no panel; the label has no chevron, so it reads as a plain link |
+| `home-_/1440/06-form-0-empty-focus.jpg` | Inconclusive: no focus ring on any field. About Us panel left open by the test; the phone reads (813) 750-0941 |
+| `home-_/1440/08-slider-t0.jpg` | Blank white viewport under the header: unpainted scroll state, not a slide. Says nothing about the site |
+| `home-_/1440/11-scroll-0.7.jpg` | Project strip loaded, one row of five; rating badge over the first caption ("Dana's Project Story") |
+| `display/_interactions/home-___390-strip-00.jpg` | 390 form typing frames: "invalid-email" typed, no message. Typing alone is not a validation result. Name, email and phone fields are about 150 px wide in a 360 px card. Badge covers form text |
+| `contact-_contact_/1440/01-initial.jpg` | Rest state of the contact form; header 120 px with black bar |
+| `contact-_contact_/1440/02–05` | **Saved-state panels on contact:** Roofing Services (4), Other Services (3), Resources (5), About Us (4). On the white page the panel has almost no visible edge and covers the H1 |
+| `contact-_contact_/1440/06-dropdown-7.jpg` | Not a menu: scrolled page, header mid-transition. Inconclusive |
+| `contact-_contact_/1440/07-dropdown-8.jpg`, `08-dropdown-9.jpg` | Not menus: footer headings Services and Resources turn green. Rating badge covers the start of the footer legal line. About 180 px of empty black sits under the link columns; cause unknown (the 404 shows a MetalOps badge in that column zone, a candidate only) |
+| `contact-_contact_/1440/09-form-0-empty-focus.jpg` | Inconclusive: no focus ring visible on any field |
+
+**Added Copy:** short whole-word dropdown panels with a green active label, consistent on home and contact (saved states only).
+
+**Added Avoid:** a white panel on a white page with no clear edge (`contact-_contact_/1440/02-dropdown-0.jpg`); a fixed badge over legal text (`contact-_contact_/1440/07-dropdown-8.jpg`); half-width fields inside a 360 px mobile card (`home-___390-strip-00`).
+
+**Retry stop (soft budget steer 3,066,974 > 3,000,000).** No native page displays were opened this retry. Interaction images only. Unseen sources are listed in `native-progress.json`; the page queue is unchanged.
+
 ### Semantic refinement of the 212-page queue
 `native/selection.json` keeps all 212 pages with every original reason and flag; nothing was removed.
 
@@ -119,7 +141,7 @@ Scroll frames also show the header losing its black bar (83 px, ledger agrees) a
 
 ### Coverage and limits
 - **Closed at both widths (first viewport + all segments): 11 pages:** home, contact, roofing-calculator, financing, projects, about, services, faq, 404 (`blog__reasons-you-need-an-annual-roof-inspection-in-florida`), our-team, careers. **81 of 404 prepared page displays opened (144 source files).**
-- **Interactions: 18 of 66 prepared displays viewed:** 28 unique source JPGs seen, 10 byte-identical copies of those, **60 of 98 unseen**, listed in `native/native-progress.json`.
+- **Interactions after retry 1: 39 of 66 prepared displays viewed:** 51 unique source JPGs seen, 12 byte-identical copies of those, **35 of 98 unseen**, listed in `native/native-progress.json`.
 - **Remaining: 201 pages** (12 T1, 14 T2, 12 T3, 163 T4), 3,613 files, listed with reasons, flags and exact files in `native-progress.json` → `remaining`. Prepared displays not opened: `remainingDisplaysPrepared`.
 - **Still open:** gradient panels and empty review/project slots on any page other than home; `roofing`, `gutters`, `solar-panels`, county pages; 10 blank-band flags except where home is covered; Orlando photos; article tables at 390; policy-loader pages; calculator steps 2–3; FAQ/gallery filters and Load More; lightbox; video; keyboard; 360 width; child-span styles; logo/photo provenance.
 - Stopped at the soft budget steer (2,220,496 > 2,000,000).
@@ -254,3 +276,8 @@ Unverified gates: native scale/readability/crops, every queue segment, first vie
 Native queue verified: **212 pages**, **424 first viewports + 3333 segments**, all pending at both widths. Includes all **99 group-flagged pages**, all heuristic singletons, all non-editorial routes, differing semantic examples, and all **10 blank-band page-width flags across 10 pages**. Blank flags are enumerated with exact y/height in the site manifest and all affected pages are queued. Queue file existence verified; visual quality is not.
 
 Done · 104-sheet overview stage. Verified · opened-sheet/cell accounting, queue coverage and saved path existence. Not verified · native visual and interaction gates above. Next · lead reviews/commits findings and owns native-review stage.
+
+
+## Lead verification of retry1 — ordinal20
+
+Verified39/66interactiondisplayflags,51distinctseenJPGsources+12byte-identicalcopiesofseenimages,35unseenoriginalJPGs(27pendingdisplays). Recomputedall13duplicate byte equalities, with12currentlyanchoredtoseensources;lastduplicatepairremainsunseen. Everypreparedpage/interactiondisplay and source path exists. Nativecoverageunchanged81/404displays144sources11completepairs;remaining201pages3613sourcefiles. Workerimagejudgments attributed,nofreshleadvisualpass. Withdrawninitialmedia-removednotesremainexcluded. "360px mobilecard" refers to card width inside390capture,not a360viewporttest. No invalid-submit/keyboard/motion/livepass claimed. OneFINALretry2allowed,next exactfalseflags;leadownsresidueaftercap.
