@@ -36,3 +36,6 @@ Costs:VensLand gap pass$0.4869668;mobile closure$0.2341604 list-price estimates 
 
 ## Update14:49EET
 Verified500widthrecords across iframe/first-window recapture ledgers:all records,FV,segments present;0gaps. This is file integrity,not image quality. Bears main queue complete155captured+1file;blankcheckMIN1440=300 flags membership/1440 y6312h456 only. Next stage v4-bears-contact-sheets on codex GPT6.1Solhigh request v4-bears-contact-sheets-1 owns only new Bears findings and external site sheet flags. All sheets first;no whole-site completion before required fullsize. Codex87%,Codex2 91%,Claude98%,Claude2 92%;bounded750kstage. Existing main capture continues8sites;no resubmitted recaptures.
+
+## Update14:54EET
+Bears partial sheet report committed;22/46sheets actuallyviewed,131pagesrepresented,0fullsize. Lead indexcheck46keys22viewed0missingfiles,diffcheckpass. Retry1 same native task on codex request v4-bears-contact-sheets-retry-1 closes ONLY remaining24sheets;250kbudget,no fullsize. Active originaltask node:delegated-task:command%3Amcp%3A942667c8-985e-4533-a341-af295756e26d%3Adelegate-task%3Av4-bears-contact-sheets-1 is completed;retryisnewtaskwithrequestsuffixabove. BothCodexaccounts92%,Claude98%,Claude2 92%. Stop substantialnewwork at95%;next sufficientcompatible resetCodex16:01EET. Capture continues independently. No whole-site acceptance.
