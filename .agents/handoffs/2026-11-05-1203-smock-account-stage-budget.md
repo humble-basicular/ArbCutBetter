@@ -36,3 +36,5 @@ Parent Codex resumes exclusive ownership, reads this note first, runs smock-next
 1145 handoff has previous account transition; 0915 brief only for wider-domain scope gaps. Findings hold shared visual system and compact exact-URL differences. New findings: recruitment pages use audience-specific layouts; About mobile exposes all values while desktop initial state hides two descriptions; assessment result is public static CTA, not verified workflow; gallery slides/closed FAQs remain untested. These are visual design judgements, not validated health/technical/conversion claims.
 
 Live compatible Codex2 usage12% session/30% weekly checked2026-11-05T10:02:26.621Z, session reset14:47:04UTC. Stop reason is user5M stage budget, not80% account threshold. Runtime remains GPT-6.1-Sol high; no model/account switch during stage. Parent has not edited concurrently.
+
+Final status check showed two untracked files not created by this stage: `.agents/research/v4-reference-study/bulk-capture.mjs` and `bulk-ledger.json`. Left untouched and uncommitted; origin not verified. Tracked stage changes are committed.
