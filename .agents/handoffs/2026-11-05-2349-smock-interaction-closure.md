@@ -1,0 +1,13 @@
+# ArbCut ordinal13 handoff
+Whole objective unfinished/active. Prior full-package2227handoff and2258queues remain binding, latest2343note preserves Greentek result.
+
+## 5 November23:49 EET — Smock native queue and saved interaction closure
+- FINAL Smockretry2terminal:27freshpairs411sources223displays (30historical separately);lead verified all source/display paths and actual opened partition, no second visual pass over worker pages. Lead directly inspected final50interactionJPGs through22nativepixelcompositions+3directcrops;114/114savedJPGs now inspected, exact outcomes in external native/interaction-progress.json and lead-interaction-displays/manifest.json. Empty remaining-interaction-queue.
+- Reference behavior stays bounded: round2FAQ/HVAC dialog visibly opens but closed-labelled frames still open; no closing pass; native missing-@ feedback visible desktopservice; mobile invalid entry alone not validation defect. No live360/keyboard/motion/submission claims. Smock semantic residue remains lead-owned after retrycap: two local roundups/comparisons and archive behavior. Suggested local slugs best-parks-in-maryland, best-restaurants-in-maryland; comparison examples best-air-conditioner-brands/best-mini-split-brands. Existing broader inventory preserves unviewed flags. No third worker retry.
+- Next v4-veterans-native-closure retry1: CodexGPT6.1Sol/high, owns ONLY Veterans findings/external ownsite native metadata. Input native-stage-remaining.json:22/54preparedpairs184/519displays313/904sources complete;32pairs591sources plus98interactions and29unselectedfunctionalvariants613files needing semantic refinement. Goal finish functional/sampling gates, not exhaustive800page native pass.3Msoftbudget estimate. Lead owns all other files/commits.
+
+Remaining overall: Smock semantic residue; Veteransretry1; leadNorthface12pairs85page1695filequeue after2retries and Thelen6complete4partial39unopened (17displays to finish partials), both61/100interactionqueues already closed; Greentek11pairs201pages3613files60unseen interactions; Genz/Glassperts/baselines; shared overwritten global derived blanksummary recovery with honest provenance; synthesis; required ClaudeOpus5.5mediumdesignbrain/frontend; Codex acceptance; otherenginereview; local noindex preview. No build acceptance yet, no production external actions.
+
+Fresh usage21:48UTC:codex16%session18%weekly, codex2last97%,Claude70%session62%weekly/Claude2 44%session89%weekly (21:44reading). No active worker before next launch.
+
+Accounting stage_outcomes modest sample: total listprice lowerbound9.82895,incomplete; accepted-stage cost null,wasted0 recorded for this thread, partial completed work not classified waste. No savings claim.
