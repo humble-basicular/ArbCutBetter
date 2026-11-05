@@ -133,3 +133,4 @@
 ## 5 November — bulk continuation on Codex2
 - Lead resumed on Codex2; capture and recapture processes verified running. No website implementation.
 - Stage `v4-homefront-fullsize-completion`: Codex2 GPT-6.1-Sol high owns only `bulk-findings-homefrontexteriorsmn.com.md` and that site's sheet viewed flags. Complete missing full-size checks using existing captures; identify recapture instability explicitly. Lead owns board/handoffs and acceptance. No concurrent findings ownership.
+- Home Front detail returned: 36 pages/72 widths/564 source images, all referenced files independently confirmed present; diff check passed. Capture and interaction gaps explicit; acceptance pending bounded Claude2 evidence audit. Codex2 session80%, Codex84%, Claude96%, Claude2 84% (12:02UTC).
