@@ -209,3 +209,108 @@ At most six; these are contact sheets, not approved native-size screenshots:
 6. R/`_sheets/theglassperts.com/390/t24-one-off-0.jpg` — review feed/maps structure.
 
 Done · 88-sheet overview and URL/width reconciliation. Verified · opened-image manifest, all 948 cell mappings, parseable records/nonempty referenced first/segment JPGs. Not verified · full-size/copy/contrast/fixed UI/live interactions/discovery completeness. Next · lead verifies, commits/reviews, then owns the 105-entry native-size queue. No commit, board or handoff edit performed. The 3.6M soft-budget figure was a planning estimate supplied by the lead, not measured Glassperts usage; no claim of measured cost.
+
+---
+
+# Native stage (2026-11-06, Claude research sub-agent) — STOPPED AT BUDGET STEER (partial)
+
+Scope: saved-state inspection only. No browser, recapture, blank-check, grouping or global helper was run. Interaction JPGs live under R/`theglassperts.com/_interactions/` (94 files: home 25, services 21, contact 25, faqs 23, gallery-missing 0 — empty 1440/390 dirs). All interaction URLs are on alias host `glassexpertsfl.com`. Saved JPGs are 1440×900 / 390×844 viewports (sips). An image counts as inspected only when its pixels were returned to me; any request-limit/media-removed result stays unopened.
+
+## Interaction metadata (record, not pixels) — `bulk-interactions.json → entries[site=theglassperts.com]` (100 entries)
+
+- Desktop nav: Services dropdown (7 services: Sliding Glass Door Repair, Sliding Door Wheel and Roller Repair, Residential, Commercial, Window Repair, Window Installation, Board Up) and Locations (8 counties incl. Tampa Bay) with nested county flyouts (e.g. Miami Dade → Coral Gables, Cutler Bay, Doral, Homestead, Kendall, Miami).
+- Home form (Gravity-style): First, Last, Phone(Required), Email(Required), Message; DOM `required` false on all (validation is plugin-side). Contact form: LinkedIn (text, presumably honeypot — label only, not verified), First, Last, Phone*, Email, address fieldset incl. State select, "What Service Can We Help You With?*". Services and FAQ pages: `forms: []`.
+- FAQ toggle: 1440 first item height 159 → 62 after click (the first item appears pre-open and the click collapsed it); 390 height 297 → 297 (no recorded change). Pixel check below.
+- Fixed UI by DOM: reCAPTCHA badge (60px) on all pages; JivoChat "Send us a message" bar 40px at 1440 bottom (home/services/faqs, not contact); Jivo mobile button 85px at 390 bottom-right (home both positions, faqs only at 0.7). Home 390 first sticky sample reports viewport height 948 vs 844 elsewhere — unexplained, recorded as metadata only.
+- Hover: nav/button background → rgb(227,185,45) gold with 8px translateY (transform matrix …,0,8).
+- Gallery: "No distinct matching page found in homepage navigation" → 20 not-present entries, 0 screenshots. Do not read as "site has no gallery".
+
+## Interaction JPG inspection log (pixels returned and viewed; batches of 3)
+
+Paths relative to R/`theglassperts.com/_interactions/`.
+
+### home-_/1440 (16/16 viewed)
+- `01-initial` first viewport: white 207px header, multicolour hexagon logo left, eight gold text nav links (Home, Services▾, Locations▾, Areas, About, FAQs, Contact, Blogs); no phone or CTA in header. Hero photo (house + sliding glass) with dark overlay; huge white "THE GLASSPERTS" + "The Top Rated Sliding Glass Door Repair & Installation Company"; two ghost outlined buttons "BOOK ONLINE" and "(877) 748-0365" at y≈817–876 (bottom edge of the 900px fold). Right: translucent navy form card (First/Last, Phone, Email, Message, gold "Submit") — the form is fully above the fold; its card is cut at the fold. No reCAPTCHA badge or Jivo bar visible in this frame although DOM lists them (timing unknown).
+- Visible type renders as a neo-grotesque resembling Arial/Helvetica (straight-sided G/S), not visibly geometric. Record lists Poppins for headings on another page; whether Poppins failed to load here is **not** established — pixel impression only.
+- `02`–`09` dropdowns: white panels, dark text rows ~45px with hairline separators, active parent turns gray. Services (7 rows) overlays hero copy; Locations (8 counties) has ▶ flyouts opening right at x≈967–1267: Broward→Fort Lauderdale; Miami Dade→6 cities; Collier→Naples, Marco Island; Lee→Bonita Springs, Cape Coral; Orange→Orlando; Osceola→Celebration, Poinciana, Kissimmee. Sarasota and Tampa Bay have no arrow. Flyouts cover the form's first fields. Hover-opened states only; keyboard/settled-close unknown.
+- `10` focus: First Name gets a ~3px near-black outline — visible, but low contrast against the navy card. `11` invalid: "invalid-phone" typed into Phone with focus outline; **no inline error message visible** in the saved frame (native bubbles are not in screenshots; DOM `required` false).
+- `12` scroll 0.3: header not sticky (scrolls away). YouTube poster (left) whose thumbnail contains home-made "LICENSED & INSURED" and "5 STAR GOOGLE RATING" badges, framed by a dashed gold corner and dot grid. Right copy column runs to x≈1428 — ~12px right margin at 1440, visibly cramped versus the 130px left margin. Jivo "Send us a message" bar bottom-right over the navy band.
+- `13` scroll 0.7: navy service band with cyan outlined "LEARN MORE" buttons at three different y positions (≈0, 7, 41) — staggered; reveal-animation mid-state plausible, not a confirmed layout bug. Photo CTA band "Schedule Your Glass Repair Service Today!" + ghost phone button. Then "Glass Window Repair And Replacement" slate-blue heading with short gold rule; body copy line ends ("…door is", "…but it", "…at") are clipped under the image starting x≈782 — saved-state overlap, cause unknown (image entrance animation plausible).
+- `14` hover button (element crop): BOOK ONLINE fills gold rgb(227,185,45) with white text — white on that gold is low contrast by eye. `15` hover nav (crop): "Home" turns gray from gold.
+- `16` reduced-motion (scrolled ≈720px): below hero, a pale-gray band with three white rating cards with gold top rule — BBB-style "A+" mark 5.0 "Based on 628 reviews", Google "G" 4.9 / 245, Facebook "f" 5.0 / 383, orange stars. Then letter-spaced "S I N C E  2 0 0 0" eyebrow + navy H2 "Your premier destination…" with gold rule; the left half beside it is empty white in this frame (image not rendered — reveal/lazy cause unknown, also under reduced-motion emulation). Ratings/counts are page text as captured, not verified live or as authentic.
+
+### home-_/390 (9/9 viewed)
+- `01` first viewport: 207px white header (logo ≈ 25% of the 844px fold) with a small gray hamburger at right; no phone/CTA in header. Hero: left-aligned "THE GLASSPERTS" + 3-line subhead, BOOK ONLINE / phone ghost buttons at y≈607–652, form card starts y≈683 (First/Last visible). Form begins inside the first viewport.
+- ~~Logo colour arrangement differs at 390~~ **Withdrawn:** re-viewing `home-_/390/01-initial` beside `contact-_contact_/390/01–03` shows the same cyan/navy hexagon logo as 1440. No logo-variant claim.
+- `02` menu-open / `03` submenu-open / `04` menu-close: **identical to `01` except the hamburger turns gold**; no drawer, list or submenu is visible in any saved frame. Record `items` is whitespace only (`"\n\n\n\n"`). Mobile menu content, open animation, focus trap and close are **unknown** — not "menu broken".
+- `05` focus: First Name dark outline (same as desktop). `06` invalid: page auto-scrolled 29px; "invalid-phone" in Phone with outline at the fold; no visible inline error.
+- `07` scroll 0.3: centred body copy is clipped at the right viewport edge ("cutting-e…", "commit…", "indus…") — text column wider than 390 in this frame; horizontal overflow vs entrance-transform mid-state not established. Navy "Our Services" + cyan rule + outlined "VIEW ALL SERVICES" → service photo card.
+- `08` scroll 0.7: centred long paragraph; house photo bleeds off the left edge (x<0) with rounded right corners only — slide-in mid-state plausible. Jivo round mail button (≈64px, navy) overlaps the heading "Sliding Door & Glass Repair in Florida".
+- `09` reduced-motion (scrolled into form): stacked form fields full-width inside navy card, gold Submit; then BBB A+ rating card full-width. Mobile form = 5 fields + 300px-tall message box ≈ 600px of scroll.
+
+### service-_services_/1440 (in progress)
+- `01` first viewport: same header; hero photo with centred "Our Services" title rendered **semi-transparent gray** (fade-in mid-state) + ghost BOOK ONLINE/phone. Navy band below: "Our Services" heading flush at x=0 and "VIEW ALL SERVICES" outlined button flush to x=1440 — no container margin in this saved frame (mid-animation vs layout not established).
+- `02` Services dropdown: on this page the dropdown items render **gold text on white** (home rendered them dark) — inconsistent dropdown styling between pages; gold-on-white legibility weak by eye.
+- `03`–`09` Locations dropdown + 6 county flyouts: same structure as home, all rows gold on white; active row gray. Jivo bar (bottom-right, ≈300×40) overlaps the "VIEW ALL SERVICES" button in `07`–`09`. 14/14 viewed.
+- `10` scroll 0.3 / `14` reduced-motion: "Our Services" heading still at x=0 and button at x=1440 across three separate frames → this edge-to-edge alignment is consistent in saved states (not just one animation frame), though only saved states were seen. Cards: 3 columns, 440px photos with ~8px radius, 20px outer gutters, UPPERCASE light-weight titles, centred white body copy, cyan "LEARN MORE" buttons whose pale-cyan label on teal fill is low-contrast by eye; buttons not bottom-aligned (follow copy length).
+- `11` scroll 0.7 (copy as captured): Commercial Glass Repair card text is a near-copy of the Residential card ("cracked window, shattered glass door, or foggy double-pane window … commercial space"); Board Up card says "remodeling or needing a new, tailored piece of glass" — copy does not match the service. Photos are specific and relevant (boarded storefront, shattered door). Hover crops `12`/`13` identical to home (gold fill; gray nav text).
+
+### service-_services_/390 (7/7 viewed)
+- `01`: 207px header + hamburger; hero "Our Services" (faded) + two ghost buttons; navy "Our Services" repeated immediately below with "VIEW ALL SERVICES" — the heading is duplicated within one fold.
+- `02`–`04`: again only the hamburger colour changes; no drawer visible.
+- `05`/`06`/`07`: one-column stacked cards (photo → uppercase 3-line title → copy → LEARN MORE). LEARN MORE sits ~6px above the next card photo — cramped vertical rhythm. No Jivo mobile button in these frames (DOM sticky for services 390 lists only reCAPTCHA).
+
+### contact-_contact_/1440 (in progress)
+- `01` first viewport: hero identical photo, faded "Contact" title + ghost buttons; below fold edge a navy block starts at x≈755 — **no form or phone/address visible in the first viewport**.
+- `10` focus (scrolled): white shadowed form card flush to x=0; centred "Contact us here at The Glassperts Today!" plus a second heading "Contact Form" (two headings for one form); `"*" indicates required fields`; Name* (First/Last), Phone*, Email (not marked), **Address* required** (Street, Line 2, City, State select pre-filled "Florida"). Focus = dark 2px outline on First. Right: navy column with a loaded Google map (Miami, "Open in Maps") and a second navy block with **no map rendered** — record 390 lists these iframes as `about:blank` (lazy); not a live defect.
+- `13` scroll 0.7: lower form — State select "Florida", "What Service Can We Help You With?*" textarea with "0 of 600 max characters" counter, gold Submit (white label on gold, weak contrast by eye); long empty white area under Submit inside the card because the map column is taller. Right column: Naples map + "THE GLASSPERTS NAPLES LOCATION" (uppercase letter-spaced), cyan pin/phone glyph icons, address and (239) 350-5488; Orlando map tile still **loading (gray + spinner)** — lazy iframe, not a live defect; Orlando 4700 Millenia Blvd Ste 175-R, 407-214-3771. Miami card in `12`: 13991 SW 144th Ave #302, (786) 558-7575. Three different local phone numbers plus the (877) number in the hero — four phone numbers on one page.
+- `16` reduced-motion: same layout settled; Naples map shows Google place card with a blank star rating placeholder ("★ __") — map widget partially loaded.
+- `02`–`09` dropdowns: gold-on-white variant (same as services); form card visibly moves up between frames (top y≈846 → 740 → 707) — entrance animation, so first-viewport position is time-dependent. `14`/`15` hover crops identical to home. 16/16 viewed.
+
+### contact-_contact_/390 (3/9 viewed: `01`, `02`, `03`)
+- `01` first viewport: 207px header + hero photo with "Contact" title and two ghost buttons; **no form, address or local phone in the first 844px** (only the generic (877) button). `02`/`03`: only hamburger turns gold; no drawer visible (same as home/services).
+
+## Status at stop (budget steer: 4.17M > 4M soft input)
+
+**Interaction JPGs: 65 / 94 pixel-viewed**, 0 media-removed/limit results (every Read returned an image). Breakdown: home 25/25, services 21/21, contact 1440 16/16, contact 390 3/9. One extra re-view (`home-_/390/01`) used only to correct my own claim.
+
+**Exact unviewed interaction queue (29) — no pixel observations exist for these:**
+- `contact-_contact_/390/`: `04-menu-close`, `05-form-0-empty-focus`, `06-form-0-invalid`, `07-scroll-0.3`, `08-scroll-0.7`, `09-reduced-motion` (6)
+- `faq-_faqs_/1440/`: `01-initial` … `15-reduced-motion` (all 15)
+- `faq-_faqs_/390/`: `01-initial` … `08-reduced-motion` (all 8)
+FAQ toggle behaviour is therefore known only from record metadata (above), not pixels.
+
+**Not started this stage:** functional one-offs beyond the interaction set (reviews/`testimonials`, `areas`, `sitemap`, `book-service`, `about`, `blogs`, 404/careers — none captured as distinct pages per prior report), the 2-per-family native examples, visual outliers, and alias refinement. The **105-entry native queue in R/`_sheets/theglassperts.com/fullsize-queue.json` remains 0 inspected** — interaction frames are not credited to it (home/services/contact/faqs queue entries need their own first-viewport + segment inspection). Note: the prior report's slug list visibly contains 106 bullets (`2024__11__18` after a blank line) versus the stated 105; reconcile against the JSON before use. No glassexpertsfl.com native records opened. 360 / keyboard / focus-trap / settled-close / live motion remain unknown.
+
+## Supported cross-page findings so far (interaction frames only)
+
+| Finding | Evidence | Confidence |
+|---|---|---|
+| Header is 207px tall at both widths, not sticky, contains no phone/CTA; mobile logo ≈25% of the fold | all `01-initial`, `home-_/1440/12` | Certain (saved states) |
+| Home puts a 5-field form in the first viewport at 1440 and starts it in the 390 fold; contact page shows no form/contact data in its first viewport at either width | `home-_/1440/01`, `home-_/390/01`, `contact-_contact_/1440/01`, `/390/01` | Certain |
+| Dropdown text colour differs between pages (dark on home, gold-on-white on services/contact) | `home-_/1440/02` vs `service-_services_/1440/02`, `contact-_contact_/1440/02` | Certain |
+| Mobile menu content never visible in saved frames; only hamburger colour changes | `*/390/02–04` for home, services; contact 02–03 | Certain about frames; cause unknown |
+| No visible inline error after invalid phone; DOM `required` false | `*/11-form-0-invalid`, `*/06` | Certain about frames |
+| Home video poster uses home-made "Licensed & Insured" / "5 Star Google Rating" badges; rating row uses real BBB/Google/Facebook marks with counts | `home-_/1440/12`, `/16` | Certain (pixels); counts unverified |
+| Edge-to-edge headings/buttons on services (x=0 / x=1440) across 3 frames; 12px right margin in home copy column | `service-_services_/1440/01,10,14`; `home-_/1440/12` | Likely layout, saved states only |
+| Clipped/overlapping text at 390 and 1440 during scroll frames | `home-_/390/07`, `home-_/1440/13` | Cause unknown (animation mid-state plausible) |
+| Jivo chat bar/button overlaps CTAs and headings | `service-_services_/1440/07–09`, `home-_/390/08` | Certain in frames |
+| Service card copy mismatch/duplication (Commercial ≈ Residential; Board Up describes glass pieces) | `service-_services_/1440/11` | Certain (copy as captured) |
+
+**ArbCut implications (judgment):** copy — real third-party rating marks row; specific job photos on service cards; county→city nav model. Avoid — home-made badge art in media; 207px header; contact page that hides contact details below a decorative hero; multiple competing phone numbers; gold-on-white text and white-on-gold buttons; chat widgets covering CTAs; required full address on a quote form.
+
+Done · 65/94 interaction JPGs inspected and logged; one self-correction. Verified · each logged frame returned pixels; record metadata cross-read from `bulk-interactions.json`. Not verified · 29 interaction frames, all 105 native queue entries, live behaviour. Next (lead) · commit this report; assign remaining 29 frames + native queue. No commit, board, handoff, raw or global-helper change made by me.
+
+
+## Lead saved-interaction closure and queue reconciliation — ordinal17
+
+All94savedinteractionJPGs now inspected:65 initialClaude views remain attributed to the worker's explicit group/file log; lead actually viewed remaining29 via12 native-pixel compositions+2 direct hover crops. Exact94-source ledger in external `native/interaction-manifest.json`; lead14display→29source/outcome map `native/lead-interactions/manifest.json`. Every source exists. No rawflags changed, no native page segment credited from an interaction frame. Native queue still0/105opened. Lead checked every nativequeue record/firstviewport/segment path exists across both host roots, not its visual quality.
+
+**Queue-count correction:** regex-counted original markdown slug list is105uniqueentries, exactly equal to105JSONslugs, including2024__11__18. The worker's106warning was a counting error; no missing106thpage and no silently removed scope. Original105queue remains authoritative and unmodified.
+
+- Contact390 `04-menu-close.jpg` shows gold hamburger and hero without exposed links. `05-form-0-empty-focus.jpg` outlines FirstName; `06-form-0-invalid.jpg` shows invalid-phone without visible feedback. Address has an asterisk and required-fields explanation, but actual submit enforcement remains untested; DOMrequired=false is recorded metadata, not a full validation-code audit. `07-scroll-0.3.jpg` shows address/state/message fields; `08-scroll-0.7.jpg` has navy Naples/Orlando blocks with empty map regions and visible addresses/local phones. These are saved lazy/load states, not proven current map failures. `09-reduced-motion.jpg` shows form only; no motion pass.
+- FAQ1440 `01-initial.jpg` has firstquestion expanded/gold with visible answer; `10-faq-open.jpg` instead shows it collapsed, with down-chevron and next row adjacent. This **visibly corroborates expanded→collapsed saved-state change**, regardless of misleading filename. `11/12-scroll` retain collapsed rows; reducedmotion15 again shows firstanswerexpanded. No live activation/keyboard/animation pass follows. Mobile `05-faq-open.jpg` keeps the hero and topquestion, without a demonstrable answer transition; `08-reduced-motion.jpg` shows expandedfirstanswer, so mobileactivation remains inconclusive.
+- FAQ1440 `02..09-dropdown` expose Services and nested county/city menus: Broward→FortLauderdale,MiamiDade→citylist,Collier→Naples/MarcoIsland,Lee→BonitaSprings/CapeCoral,Orange→Orlando,Osceola→Celebration/Poinciana/Kissimmee. Useful hierarchy, but actual links/keyboard usability untested. FAQ390menu/submenu/close frames show only hamburger colour changes and page, no drawer content.
+- FAQ scrolls show navy question rows/white labels, gold active question and white answer panel; the right-lower Jivochat bar overlaps rows in desktop11/12. Mobile late scroll07shows footer QuickLinks and floating envelope widget. These saved overlaps are relevant warnings; no production-cause assertion. Direct hover crops show whiteBOOKONLINEongold and grayHomelabel, not matched-baseline hover changes.
+
+ArbCut: make FAQ expanded/collapsed states clear and verify real keyboard/touch behavior locally; retain useful regional hierarchy and keep chat controls clear of content. Do not turn invalid typing without feedback into a validation-defect claim. Nativeoneoffs/templateexamples/outliers/aliasrefinement remain open; all105queue entries have no new nativecredit from this closure. No live360/focus-trap/motion/submission pass claimed.
