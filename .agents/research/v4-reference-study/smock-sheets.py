@@ -19,7 +19,7 @@ for record in root.glob('*/*/record.json'):
  # full document preview: document captures only, retained at original resolution
  if r['segments']:
   stitched=Image.new('RGB',(r['width'],r['documentHeight']))
-  for s in r['segments']:stitched.paste(Image.open(d/s['file']),(0,s['y']))
+  for s in r['segments']:stitched.paste(Image.open(d/s['file']).resize((r['width'],s['height'])),(0,s['y']))
   stitched.save(d/'stitched.jpg',quality=75)
  (d/'sheets.json').write_text(json.dumps(mapping,indent=2))
-print('\n'.join(str(x) for x in root.glob('*/*/sheet-*.jpg')))
+print('Smock sheets generated for completed records; existing sheets preserved')
