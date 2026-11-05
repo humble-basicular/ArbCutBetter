@@ -1,7 +1,7 @@
 from pathlib import Path
 from PIL import Image, ImageOps, ImageDraw
-import json
-root=Path.home()/'.ai-powerhouse/research-captures/arbcut-v4/vensland.lt'
+import json,os
+root=Path.home()/'.ai-powerhouse/research-captures/arbcut-v4'/os.environ.get('CAPTURE_SITE','vensland.lt')
 for record in root.glob('*/*/record.json'):
  r=json.loads(record.read_text()); d=record.parent
  if not isinstance(r,dict) or (d/'sheets.json').exists():continue

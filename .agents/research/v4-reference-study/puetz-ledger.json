@@ -1,0 +1,5912 @@
+{
+  "site": "puetzconstruction.com",
+  "sitemapURLs": 241,
+  "sources": [
+    {
+      "url": "https://puetzconstruction.com/sitemap_index.xml",
+      "status": 200,
+      "index": true,
+      "count": 3
+    },
+    {
+      "url": "https://puetzconstruction.com/post-sitemap.xml",
+      "status": 200,
+      "index": false,
+      "count": 162
+    },
+    {
+      "url": "https://puetzconstruction.com/page-sitemap.xml",
+      "status": 200,
+      "index": false,
+      "count": 78
+    },
+    {
+      "url": "https://puetzconstruction.com/local-sitemap.xml",
+      "status": 200,
+      "index": false,
+      "count": 1
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://puetzconstruction.com/",
+      "type": "homepage",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": true,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/about/",
+      "type": "unique-about",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/about/1440/record.json",
+          "height": 5041,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/about/390/record.json",
+          "height": 6160,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": null
+    },
+    {
+      "url": "https://puetzconstruction.com/accessibility/",
+      "type": "unique-accessibility",
+      "source": "nav/footer",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/accessibility/1440/record.json",
+          "height": 2160,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/accessibility/390/record.json",
+          "height": 2165,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/arbcut-reference-study-not-found/",
+      "type": "404",
+      "source": "404-probe",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/arbcut-reference-study-not-found/1440/record.json",
+          "height": 1748,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/arbcut-reference-study-not-found/390/record.json",
+          "height": 1671,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/",
+      "type": "unique-blog",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog/1440/record.json",
+          "height": 4294,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog/390/record.json",
+          "height": 7782,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/andersen-100-series-windows/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/andersen-patio-doors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/andersen-windows-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__andersen-windows-cost/1440/record.json",
+          "height": 10463,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__andersen-windows-cost/390/record.json",
+          "height": 12688,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/architectural-shingles-vs-3-tab/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/asbestos-siding-removal/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/average-cost-to-tear-off-and-replace-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/bathroom-remodel-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/bay-window/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/best-composite-decking/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/best-roofing-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/black-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/black-siding-house/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/black-windows/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/board-and-batten-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/built-up-roofing-system/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/can-you-paint-vinyl-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/casement-window/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/cedar-clapboard-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/cedar-shake-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/certainteed-roof-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/certainteed-shingle-colors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/chimney-cap/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/chimney-leak-repair/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/commercial-flat-roof-replacement/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/commercial-flat-roofing/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/commercial-metal-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/commercial-roof-coatings/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/commercial-roof-inspection/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/commercial-roof-insulation/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/commercial-roof-leak-detection/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/commercial-roof-maintenance/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/commercial-roof-replacement-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/commercial-roof-types/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/composite-decking-vs-wood/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__composite-decking-vs-wood/1440/record.json",
+          "height": 11231,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/blog__composite-decking-vs-wood/390/record.json",
+          "height": 14221,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/condensation-on-windows/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/curling-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/custom-door-installation/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/deck-contractor/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/deck-railing-height/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/deck-repair/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/deck-skirting-ideas/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/deck-stairs/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/deck-upgrade/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/door-designs/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/door-installation/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/double-hung-windows/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/emergency-roof-repair/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/energy-efficient-windows-cut-winter-bills/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/engineered-wood-siding-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/engineered-wood-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/entry-door-replacement/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/epdm-flat-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/epdm-rubber-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/exterior-fiberglass-doors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/exterior-french-doors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/fascia-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/fiber-cement-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/fiberglass-front-door/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/flat-roof-drainage-system/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/flat-roof-flashing/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/flat-roof-installation/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/flat-roof-leak-repair/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/flat-roof-membrane-types/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/flat-roof-repair/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/flat-roof-replacement-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/flat-roof-sealant/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/flat-roof-ventilation/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/flat-roof-waterproofing/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/french-doors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/french-patio-door-vs-sliding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/front-door-replacement/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/hail-damage-on-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/hardie-board-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/hayfield-windows/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/house-siding-colors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-long-does-it-take-to-replace-a-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-long-does-vinyl-siding-last/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-to-clean-trex-decking/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-to-cut-vinyl-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-to-find-a-roof-leak/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-to-get-insurance-to-pay-for-roof-replacement/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-to-install-roof-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-to-install-trex-decking/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-to-measure-a-door-for-replacement/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-to-measure-a-roof-for-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-to-tarp-a-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/how-to-winterize-your-home/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/impact-resistant-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/insulated-vinyl-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/insulated-windows/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/james-hardie-siding-colors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/kitchen-layout-ideas/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/kitchen-remodel-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/kitchen-remodel-ideas/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/low-maintenance-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/lp-smartside-colors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/lp-smartside-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/lp-smartside-vs-hardie/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/metal-roof-repair/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/metal-roof-vs-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/metal-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/missing-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/modern-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/modified-bitumen-roofing-system/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/most-energy-efficient-windows/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/parts-of-a-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/patio-door-replacement/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/patio-enclosure-ideas/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/pvc-membrane-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/quartz-countertops/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/rafters-vs-trusses/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/ridge-cap-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/ridge-vent/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-decking/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-eaves/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-flashing-types/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-flashing/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-inspection-checklist/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-inspection-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-insurance-claim/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-leak-repair-guide/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-maintenance/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-overhang/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-repair-vs-replacement/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-replacement-timeline/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-sealant/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-storm-damage-guide/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-underlayment/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roof-vent/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roofing-color-options/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roofing-insurance/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/roofing-tools/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/shingle-roof-cost-guide/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/siding-contractors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/siding-installation/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/siding-replacement/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/slate-roof-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/small-bathroom-remodel/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/small-deck-ideas/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/spa-bathroom-ideas/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/stamped-concrete-patio/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/storm-door/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/things-to-do-in-rochester-mn/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/tpo-membrane-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/tpo-vs-epdm/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/trex-decking-colors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/trex-decking-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/triple-pane-windows/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/types-of-exterior-doors/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/types-of-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/vertical-siding/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/vinyl-replacement-windows/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/vinyl-siding-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/vinyl-siding-repair/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/vinyl-windows/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/walk-in-shower-ideas/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/what-are-starter-shingles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/what-is-fascia-on-a-house/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/wind-damage-to-roof/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/window-installation/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/window-replacement-cost/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/blog/window-styles/",
+      "type": "article",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/careers/",
+      "type": "unique-careers",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/careers/1440/record.json",
+          "height": 3678,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/careers/390/record.json",
+          "height": 4630,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/",
+      "type": "unique-commercial",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/commercial/1440/record.json",
+          "height": 7052,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/commercial/390/record.json",
+          "height": 10824,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/albert-lea/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/austin/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/bloomington/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/decorah/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/eau-claire/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/faribault/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/la-crosse/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/mankato/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/mason-city/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/menomonie/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/owatonna/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/preston/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/red-wing/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/rochester/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/wabasha/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/waterloo/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/winona/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/commercial/woodbury/",
+      "type": "commercial-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/contact/",
+      "type": "unique-contact",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/contact/1440/record.json",
+          "height": 3471,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/contact/390/record.json",
+          "height": 4924,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": null
+    },
+    {
+      "url": "https://puetzconstruction.com/customer-reviews/",
+      "type": "unique-customer-reviews",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/customer-reviews/1440/record.json",
+          "height": 4483,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/customer-reviews/390/record.json",
+          "height": 8782,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": null
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/",
+      "type": "unique-decks-patios",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/decks-patios/1440/record.json",
+          "height": 9798,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/decks-patios/390/record.json",
+          "height": 14660,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/albert-lea-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/arcadia-wi/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/austin-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/cannon-falls-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/decorah-ia/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/faribault-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/la-crosse-wi/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/lake-city-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/mondovi-wi/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/owatonna-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/red-wing-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/rochester-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/st-charles-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/winona-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/decks-patios/zumbrota-mn/",
+      "type": "decks-patios-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/faq/",
+      "type": "unique-faq",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/faq/1440/record.json",
+          "height": 3627,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/faq/390/record.json",
+          "height": 3441,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": null
+    },
+    {
+      "url": "https://puetzconstruction.com/financing/",
+      "type": "unique-financing",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/financing/1440/record.json",
+          "height": 3992,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/financing/390/record.json",
+          "height": 4644,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": null
+    },
+    {
+      "url": "https://puetzconstruction.com/instant-roof-estimate/",
+      "type": "unique-instant-roof-estimate",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/instant-roof-estimate/1440/record.json",
+          "height": 2351,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/instant-roof-estimate/390/record.json",
+          "height": 2211,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/leadership/",
+      "type": "unique-leadership",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/leadership/1440/record.json",
+          "height": 6221,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/leadership/390/record.json",
+          "height": 9017,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/locations.kml",
+      "type": "excluded-geodata",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "KML, not a page"
+    },
+    {
+      "url": "https://puetzconstruction.com/privacy-policy/",
+      "type": "unique-privacy-policy",
+      "source": "nav/footer",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/privacy-policy/1440/record.json",
+          "height": 4158,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/privacy-policy/390/record.json",
+          "height": 5941,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/projects/",
+      "type": "unique-projects",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/projects/1440/record.json",
+          "height": 3624,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/projects/390/record.json",
+          "height": 3517,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": null
+    },
+    {
+      "url": "https://puetzconstruction.com/remodels-additions/",
+      "type": "unique-remodels-additions",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/remodels-additions/1440/record.json",
+          "height": 6281,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/remodels-additions/390/record.json",
+          "height": 9553,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/",
+      "type": "unique-roofing",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/roofing/1440/record.json",
+          "height": 8968,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/roofing/390/record.json",
+          "height": 13805,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": null
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/albert-lea/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/austin/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/cannon-falls/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/faribault/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/mankato/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/owatonna/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/preston/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/red-wing/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/rochester/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/roofing__rochester/1440/record.json",
+          "height": 7986,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/roofing__rochester/390/record.json",
+          "height": 11747,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/st-charles/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/wabasha/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/roofing/winona/",
+      "type": "roofing-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/roofing__winona/1440/record.json",
+          "height": 9581,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/roofing__winona/390/record.json",
+          "height": 13308,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/services/",
+      "type": "unique-services",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/services/1440/record.json",
+          "height": 4955,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/services/390/record.json",
+          "height": 7398,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/",
+      "type": "unique-siding",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding/1440/record.json",
+          "height": 7162,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/siding/390/record.json",
+          "height": 11394,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/albert-lea/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/austin/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/bloomington/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/decorah/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/eau-claire/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/la-crosse/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/mankato/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/mason-city/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/menomonie/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/owatonna/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/red-wing/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/rochester/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/waterloo/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/winona/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/siding/woodbury/",
+      "type": "siding-locality",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        },
+        "390": {
+          "captured": false,
+          "viewed": false,
+          "record": null,
+          "height": null,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/sms-terms/",
+      "type": "unique-sms-terms",
+      "source": "nav/footer",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/sms-terms/1440/record.json",
+          "height": 3110,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": false,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/sms-terms/390/record.json",
+          "height": 3478,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": "not yet fully inspected in this milestone"
+    },
+    {
+      "url": "https://puetzconstruction.com/windows-doors/",
+      "type": "unique-windows-doors",
+      "source": "sitemap",
+      "widths": {
+        "1440": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/windows-doors/1440/record.json",
+          "height": 7195,
+          "error": null
+        },
+        "390": {
+          "captured": true,
+          "viewed": true,
+          "record": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/puetzconstruction.com/windows-doors/390/record.json",
+          "height": 11202,
+          "error": null
+        }
+      },
+      "representedBy": [],
+      "legacyHomeViewed": false,
+      "gap": null
+    }
+  ]
+}
