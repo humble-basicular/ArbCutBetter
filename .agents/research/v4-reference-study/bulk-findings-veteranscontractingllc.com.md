@@ -1,6 +1,6 @@
 # Veterans Contracting — saved-sheet overview (PARTIAL: 58/100)
 
-**Current status (supersedes the historical milestone below):** 34 new sheets actually opened, all cells checked; cumulative 58/100 (29/50 per width), 442 slugs represented at both widths / 884 cell-width observations. Exactly 42 unopened sheets remain. Full-size pages 0; interactions 0. Stopped on the user’s soft-budget steer. Exact new-open manifest and remaining queue: external `_sheets/veteranscontractingllc.com/milestone-02-manifest.json`; provisional full-size/interaction backlog: `milestone-02-backlog.json`.
+**Current status (milestone 03; supersedes historical counts below):** 36 of the authorised 42 remaining sheets actually opened, every cell checked at thumbnail scale. Cumulative **94/100 sheets: 47/50 per width; 763 slugs at both widths, 1,526 cell-width observations**. Exactly **6 sheets remain unopened**. Native-size pages **0**; interactions **0**. Stopped immediately on the second user soft-budget steer. Exact opens/remaining/cell URLs: external `_sheets/veteranscontractingllc.com/milestone-03-manifest.json`; exact pending native-size files and interaction queue: `milestone-03-backlog.json`. Prior 58 sheets were not reopened; milestones 01/02 preserved.
 
 ## Historical milestone 01 (24/100; retained as evidence)
 
@@ -91,7 +91,7 @@ No browser, recapture, forms, consent, paid API, messages, delegation, commits, 
 
 **Taste (provisional):** The repeated large photo → article title pattern gives archive cards a clear scan order, but its single-column mobile run is very long (`390/t00-tag_x-12.jpg` c1–20, whole cells). For ArbCut, use concise project/service navigation instead of transferring this archive volume. Repeated blue chat prompts visually distract from the reading sequence (`390/t00-tag_x-15.jpg` c18–20, throughout strips); fixed UI behaviour requires first-viewport and interaction checks before a stronger judgment.
 
-## Current verified coverage and exact continuation
+## Historical milestone 02 coverage (58/100)
 
 | Group | Pages in index | Sheets inspected / total at 1440 | Sheets inspected / total at 390 | Cells inspected per width |
 |---|---:|---:|---:|---:|
@@ -124,3 +124,48 @@ Semantic priorities are home/contact representation comparison; about; financing
 Later authorised interaction work: global mobile menu/desktop dropdowns, phone/quote targets and focus; forms and validation without submission (including careers/financing), map estimator, FAQ, work gallery/lightbox/slider, review/visualizer widgets, archive category/pagination relevance, sharing, image loading, fixed UI and reduced motion. None was performed. No record-based font/colour/height measurement was undertaken here. 360px, discovery cap/linked files and image provenance remain unverified.
 
 Scope: only this report, external Veterans index `viewed` flags and new Veterans progress/backlog manifests changed. Original milestone 01 remains unchanged. No commits: the lead verifies and commits, as required by this child brief. Budget 600k was an estimate; the user reported 675133 input tokens and instructed the stop. This is partial research, not whole-site completion.
+
+## Milestone 03 — fresh authorised overview continuation
+
+**Observation:** `1440/t00-tag_x-18..20.jpg` and matching `390` sheets, all c1–20 checked. Daily-date pagination retains archive title, repeated lead photograph, changing three-column desktop story-image sets, long single-column mobile listing and footer. Images visibly populate throughout these cells; no whole-cell blocked/error view observed. Different date URLs can share the same image arrangement; relevance and actual filtering are untested. Gray outside page strips is sheet canvas.
+
+**Observation:** `1440/t00-tag_x-21..23.jpg` and `390/t00-tag_x-21..23.jpg`, all c1–20, opened and checked. Continued daily-date pagination has populated image grids and footer throughout. Sheet 22 c7/c13/c18/c20 and sheet 23 page-5 cells show another recurring image set; no new functional page type or whole-cell error observed. Mobile strips repeatedly bake in blue chat buttons; actual fixed UI count/occlusion remains pending.
+
+**Observation:** `1440/t00-tag_x-24.jpg` + `390/t00-tag_x-24.jpg`, c1–6: populated archives complete t00 overview (25/25 per width). `1440/t01-2024_x-0..1.jpg` and `390/t01-2024_x-0..1.jpg`, every c1–20: month/day archives have lead photograph but lower card image areas appear empty/light gray at both widths, in contrast to populated t00 pagination. Header/footer and card text still render. This is a repeated capture-state/media candidate, not 40 distinct designs or confirmed website failures.
+
+**Observation:** `1440/t01-2024_x-2..4.jpg` + `390/t01-2024_x-2..4.jpg`, all c1–20 checked. Image-sparse lower archive cards persist across daily dates and pagination; text/photo patterns change with page number (sheet 3 c2–17, sheet 4 c1–20) while scaffold remains constant. No whole-cell error/blocked page observed. This extends the same unresolved media/capture family, not a new design for each URL.
+
+**Observation:** `1440/t01-2024_x-5.jpg`/`390/t01-2024_x-5.jpg` c1–20 and sheet 6 c1–4 checked: same sparse archive family; all t01 inspected. `1440/t02-_1-0.jpg`/`390/t02-_1-0.jpg` c1–20 checked: mostly long editorial articles with title, wide lead photo, narrow reading column, subheads/lists, inline images, share controls and footer. c15 is a shorter franchise-owner news article; **c7 designeyeq is a functional roof visualizer destination, not an editorial one-off merely because t02 is article-heavy**. It has large roof preview and blue instructional/promotional blocks, with different mobile sequencing and a quiet desktop region. c4 best-siding-for-house has a conspicuous blank band inside desktop body; mobile has more continuous copy. Mobile c1/c2/c3/c9/c11/c15 have flat-colour/partial lead-image appearances versus desktop photographs; verify records and native images before diagnosing. Add c7/c4 and image-contrast examples to full-size queue; interaction credit remains zero.
+
+**Observation:** `1440/t02-_1-1.jpg` + `390/t02-_1-1.jpg`, all c1–20 checked: c1 home-visualizer repeats designeyeq composition; **c13 locations is a functional national coverage hub** with intro/photo, US map and state cards (grid becomes vertical mobile cards); **c14 projects is a functional work destination** with blue Explore Our Work band, a large quiet body and estimate CTA/footer, not an editorial article. All other cells are article layouts. `1440/t02-_1-2.jpg` + `390/t02-_1-2.jpg`, all c1–20: article family with how-to/cost/comparison/listing variants; c18 visually repeats the flat-roof-materials article from sheet 0 c13; c14 is finance editorial rather than the functional financing page. `1440/t02-_1-3.jpg` + `390/t02-_1-3.jpg`, all c1–11: shorter explanatory/news articles mix with longer guides; c11 blog/roofing-companies-raleigh resembles sheet 2 c9. Mobile lead photos are frequently cropped into flat-colour/partial bands; sheet 3 c6 has an internal blank region at both widths. Full-size and record checks pending; no confirmed duplicate-routing/media defect. **No more images opened after the user reported 1289105 > 1100000 input tokens and instructed a stop.**
+
+## Milestone 03 coverage and residual work
+
+| Family | Inspected sheets at 1440 | Inspected sheets at 390 | Inspected cells per width |
+|---|---:|---:|---:|
+| t00 archive mixture | 25/25 | 25/25 | 486 |
+| t01 sparse archive mixture | 7/7 | 7/7 | 124 |
+| t02 editorial + functional exceptions | 4/4 | 4/4 | 71 |
+| t03 sparse archive + careers/privacy | 1/3 | 1/3 | 20 |
+| t04–t13 inherited functional/locality groups | 10/10 | 10/10 | 62 |
+| t14 storm article | 0/1 | 0/1 | 0 |
+| **Total** | **47/50** | **47/50** | **763** |
+
+Retry opens: **36 sheets (18 per width), 321 new slugs / 642 new cell-width observations**. Combined overview: **94/100**, not whole-site completion. Residual is exactly these six existing images, never opened or flagged viewed in this retry:
+
+- `1440/t03-2025_x-1.jpg` and `390/t03-2025_x-1.jpg`: c1–20 each.
+- `1440/t03-2025_x-2.jpg` and `390/t03-2025_x-2.jpg`: c1–16 each.
+- `1440/t14-one-off-0.jpg` and `390/t14-one-off-0.jpg`: c1 each, how-to-document-storm-damage-to-a-roof.
+
+Full absolute filenames and every residual slug/URL are in `milestone-03-manifest.json#/remaining` (74 uninspected cell-width observations). All new exact opened filenames and checked cells are in `#/opened`. `milestone-03-backlog.json` retains the conservative previous full-size queue and adds the newly exposed functional visualizers, locations hub, projects destination and editorial/media contrasts. It lists the pending first viewport and every existing segment file at both widths, with missing-file indicators; filesystem inventory is **not visual inspection credit**. All these native-size files and all interaction groups remain pending.
+
+**Semantic refinement:** t00/t01 are archive/pagination mixtures; t03 is also largely archive with the previously seen careers/privacy exceptions. t02 contains editorial articles plus designeyeq, home-visualizer, locations and projects functional destinations (sheet 0 c7; sheet 1 c1/c13/c14). Similar article representations (sheet 2 c18 vs sheet 0 c13; sheet 3 c11 vs sheet 2 c9) need record/full-size comparison, not automatic duplicate or redirect conclusions. Functional financing is separate from finance articles (t02 sheet 1 c19 and sheet 2 c14). Heuristic flags are preserved separately as metadata; neither the former 433-page union nor the expanded queue counts independent designs, proven defects or semantic one-offs.
+
+**Taste, provisional:** The locations map/state-card hub offers more useful geographic navigation than undifferentiated city-link volume (`1440/t02-_1-1.jpg` c13 map/cards; `390` c13 vertical state sequence), but its mobile length still needs readable-scale judgment. The projects capture's quiet body undermines its visible work promise (`1440/t02-_1-1.jpg` c14 below blue band); this is an unresolved saved representation, not a live gallery defect. Do not imitate it until media/capture state is resolved.
+
+No native-size visual reading, interaction, first-viewport geometry, record-based font/colour/height checks, 360px checks or media provenance verification was completed. Capture/discovery cap and linked files remain outside this bounded overview. No commits or edits outside assigned Veterans report/index/new manifests; lead verifies and commits. Budget 1.1M was an estimate; reported input 1289105 triggered this stop, not successful completion of the 42-sheet target.
+
+## Lead overview closure — current status
+Lead actually opened the final six sheets: `1440/t03-2025_x-1.jpg`, `390/t03-2025_x-1.jpg` (c1–20 each), `1440/t03-2025_x-2.jpg`, `390/t03-2025_x-2.jpg` (c1–16 each), and both widths of `t14-one-off-0.jpg` (c1). Every cell checked. t03 remaining36pages repeat the archive scaffold: shared lead roof-work photograph, pale/image-empty lower story cards, card text and blue/white footer. No whole-cell error screen seen. The enormous mobile length and empty lower card images persist; no new functional one-off was exposed. Exact media cause unverified. t14 is an editorial article: heading/lead house photo, narrow reading column, roof damage/soffit/mould detail pictures and three closing subheads, sharing controls and footer. Mobile lead image appears as a pale sky band versus desktop house; native-size crop/loading cause pending. This is overview evidence, not a new full-size pass.
+
+**Overview closed100/100sheets,50/50eachwidth,800slugs/1600cell-width observations.** Prior94 flags/36new+6remaining partition verified; lead six opens logged in external `lead-overview-closure.json`, flags set afterwards. All100sheet paths exist. Full-size/interaction gates remain pending,0newcredit. Historical milestone sections above describe their actual stopping points, not current overview status. Conservative native backlog remains provisional until semantic/outlier refinement; it must not be mistaken for433independent designs.
