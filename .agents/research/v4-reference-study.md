@@ -94,3 +94,23 @@ Smock21documents/42widths/363segments/166opened sheets/42firstviewports. Home pl
 ### Latest soft-budget checkpoint —30documents, exhaustive study incomplete
 
 Accountcontinuationadded16exactURLs individuallyseen1440/390,32widths/191segments/95sheets. Total30documents/60widths/436segments/207sheets/60firstviewports. Includesall20inventoriedservice/categoryURLs plus9general/jobdocumentsandhome. Discoveryadds3jobURLs;271records/268documents now.238documentsremain(24localities,200articles,14otherdocuments),plusshopstates/KML/interactions. No captured-onlybacklog oractivejob. Next/contact/,then/faq/,/financing/. User5Msoftbudgetsteer stoppedexploration; in-flightjobbatchclosed. No interimreview,sourcechanges,submission,upload,consent,spend,push,mergeordeploy. Exactqueue linkedabove;otheragreed-sitesbacklogunchanged.
+
+## CLOSURE — 6 November 2026 (lead Claude Opus 5.5, user: "finish it" / "yes do it")
+
+**Status: CLOSED for design synthesis, with explicit gaps.** The user's literal every-URL scope (top of this file) was not achieved and is not claimed. After ~30 research ordinals with every worker retry cap exhausted, the lead accepts the captured *sampling* evidence (all overview sheets at both widths, semantic one-offs, ≥2 differing examples per real template, saved interactions where listed) as sufficient for the design brain. No further capture or sheet review is planned in this objective.
+
+| Site | Accepted evidence | Never viewed (limits carried forward) |
+|---|---|---|
+| Puetz | 35 fresh routes / 70 widths / 255 segments; homepage deep pass; 28+ saved interactions | 123 saved interaction JPGs; desktop FAQ, Load-More/filter, 360 menu, maps; provenance limits on 33 inherited routes |
+| Smock | Accepted captured sampling; 30 documents fully individually; all services | Most articles/localities individually; shop/KML; live interactions |
+| Thelen | 49 pairs / 407 displays / 61 interactions (798bcf4) | Unselected raw segments, live 360/keyboard/motion/forms |
+| Bear's | 54 pairs / 956 static + 62 iframe + 88 interactions (5393dca) | 148 iframe JPGs on unselected routes |
+| Genz-Ryan | Overview 80/80 sheets; 8+ native pairs; retries 1–2 | 138 semantic entries / 2,494 sources unprepared |
+| Northface | 108/108 sheet flags; passes 3–4 native pages | 85 pages / 1,695 files fullsize |
+| GreenTek | 104/104 sheets; native interaction batches | 200 pages / 3,597 files; 315 prepared displays |
+| Veterans | Overview closed; native partial | 22 selected pairs / 223 displays / 395 sources; 29 variants / 613 files |
+| Glassperts | 88/88 sheets reconciled; home/services/contact/faqs native | 93 queue entries semantic disposition |
+| HomeFront, True Air | Full-size selected pages, both widths | Interaction visual review (True Air); typography limits |
+| VensLand, Betono | Local baselines, all VensLand routes viewed | Betono partial; baselines only, not exemplars |
+
+Rules drawn from this evidence live in [`../arbcut-design-brain.md`](../arbcut-design-brain.md). Every rule there is a reasoned design judgement from viewed screenshots; **no conversion performance was measured** on any reference. Raw captures remain at `~/.ai-powerhouse/research-captures/arbcut-v4/` (untouched).

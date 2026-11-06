@@ -328,3 +328,8 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 ## User scope change — ordinal29
 - User: "dont even start building the site yet, well do that later in a new thread". Binding immediately: this thread continues research and reusable design brain only; DO NOT start frontend/site implementation, build workers or a new thread automatically. Preserve full37route/bb63bd8 contract and all evidence for a later explicitly started build thread. At research/design-brain handoff, pause the full objective; implementation/acceptance/review/preview remain deferred, not complete.
 - Ordinal29 Bears named iframe residue CLOSED:61actualpatchsourceopens/61hashes;60paintedmaps1blankMapLibre, headercontamination explicit. PriorwhiteMembershippatch retained. Selected54pairs956static+62iframe+88savedinteractionJPGs;148patchesonunselectedroutesunviewed. Capturedsamplingaccepted. Noactiveworkers,siteimplementationdeferred by latest user instruction.
+
+## 6 November — research closed, design brain written, build moved to new thread
+- Lead Claude Opus 5.5 (claudeAgent), branch build/arbcut-v4-complete-20261105. Research CLOSED with explicit gaps (v4-reference-study.md CLOSURE). Design brain: .agents/research/arbcut-design-brain.md.
+- Child arbcut-v4-brand-assets: Codex2 gpt-6.1-sol high, isolated worktree, owns public/assets/arbcut-v4-brand/** + public/assets/marks/** only. Running.
+- Site build: NEW thread (user 6 Nov), owns src/** public/** per handoff 2026-11-06-0710-site-build-new-thread.md. Reviewer Codex.
