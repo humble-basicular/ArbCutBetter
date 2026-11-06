@@ -37,7 +37,7 @@ const q = encodeURIComponent('Kaunas, Lietuva');
         <div class="area__plot" aria-hidden="true">
           <span class="ring" style={`${px(K)};--d:100%`}></span>
           <span class="ring ring--in" style={`${px(K)};--d:50%`}></span>
-          <span class="ring-l" style={`left:${((K[0] + 6) / 4).toFixed(2)}%;top:${((K[1] - 103) / 3).toFixed(2)}%`}>100 km</span>
+          <span class="ring-l" style={`left:${((K[0] - 58) / 4).toFixed(2)}%;top:${((K[1] - 103) / 3).toFixed(2)}%`}>100 km</span>
           {vietoves.map((v) => {
             const p = pt(geo[v.miestas]);
             const r = lab[v.miestas] === 'r';

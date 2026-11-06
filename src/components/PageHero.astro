@@ -5,7 +5,7 @@ import { site } from '@data/site.js';
 import Photo from './Photo.astro';
 import { Image } from 'astro:assets';
 import mantas from '../assets/cutout/mantas-cutout.png';
-const { title, kicker, lead, crumbs = [], photo, photoAlt = '', photoPos = '50% 40%', service = '', actions = true, thumbs = [], thumbAlt = '', cutout = false } = Astro.props;
+const { title, kicker, lead, crumbs = [], photo, photoAlt = '', photoPos = '50% 40%', service = '', actions = true, thumbs = [], thumbAlt = '', cutout = '' } = Astro.props;
 ---
 <section class:list={['phero', { 'phero--photo': photo || thumbs.length, 'phero--cutout': cutout }]}>
   <div class="wrap phero__in">
@@ -30,7 +30,7 @@ const { title, kicker, lead, crumbs = [], photo, photoAlt = '', photoPos = '50% 
     {photo && (
       <div class="phero__side">
         <div class="phero__ph ph cut"><Photo name={photo} alt={photoAlt} sizes="(max-width: 860px) 100vw, 40vw" widths={[480, 800, 1200]} loading="eager" fetchpriority="high" position={photoPos} /></div>
-        {cutout && <Image class="phero__cut" src={mantas} alt="" widths={[360, 560, 760]} sizes="(max-width: 860px) 46vw, 300px" format="webp" quality={84} loading="eager" />}
+        {cutout && <Image class="phero__cut" src={mantas} alt={cutout} widths={[360, 560, 760]} sizes="(max-width: 860px) 46vw, 300px" format="webp" quality={84} loading="eager" />}
       </div>
     )}
     {!photo && thumbs.length > 0 && (

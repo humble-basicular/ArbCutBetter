@@ -101,7 +101,7 @@ strong, b { font-weight: 700; }
 
 .sec-head { display: grid; gap: 12px; margin-bottom: clamp(28px, 4vw, 52px); max-width: 52rem; }
 .sec-head--split { max-width: none; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 20px; }
-@media (max-width: 760px) { .sec-head--split { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .sec-head--split { grid-template-columns: 1fr; } }
 
 /* ---------- Prekės ženklo elementas #1: nukirstas kampas ---------- */
 .cut { clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%); }

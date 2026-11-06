@@ -24,9 +24,9 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
         <p class="hero__hours"><strong>Kasdien 08:00–18:00</strong> <br />ir savaitgaliais</p>
       </div>
       <ul role="list" class="hero__proof">
-        <li><a href={site.atsiliepimai.profilis} target="_blank" rel="noopener"><Mark name="paslaugos" height={22} /> <span><b>{rating}</b> iš 5 · {atsiliepimuKiekis} atsiliepimai<span class="sr-only"> Paslaugos.lt (atsidaro naujame lange)</span></span></a></li>
+        <li><a href={site.atsiliepimai.profilis} target="_blank" rel="noopener"><Mark name="paslaugos" height={38} /> <span><b>{rating}</b> iš 5 · {atsiliepimuKiekis} atsiliepimai<span class="sr-only"> Paslaugos.lt (atsidaro naujame lange)</span></span></a></li>
         <li><span><b>{patirtisMetai} metų</b> patirtis</span></li>
-        <li><a href={lrt.url} target="_blank" rel="noopener"><span class="sr-only">Apie Mantą rašė </span><Mark name="lrt" height={22} /><span class="sr-only"> (atsidaro naujame lange)</span></a></li>
+        <li><a href={lrt.url} target="_blank" rel="noopener"><span class="sr-only">Apie Mantą rašė </span><Mark name="lrt" height={30} /><span class="sr-only"> (atsidaro naujame lange)</span></a></li>
       </ul>
     </div>
 
@@ -88,7 +88,7 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   .hero__card-p { color: var(--ink-2); margin-top: 6px; }
   .hero__card :global(.qf) { grid-template-columns: minmax(0, .9fr) minmax(0, 1.5fr) auto; align-items: end; gap: 12px; }
   .hero__card :global(.qf__err), .hero__card :global(.qf__done) { grid-column: 1 / -1; }
-  .hero__card :global(.qf--short textarea) { min-height: 54px; height: 54px; }
+  .hero__card :global(.qf--short textarea) { min-height: 80px; height: 80px; }
   .hero__card :global(.qf__btn) { min-height: 54px; white-space: nowrap; }
   .hero__pics { display: grid; gap: 10px; font-size: 1rem; color: var(--ink-2); padding-left: 28px; box-shadow: inset 1px 0 0 var(--line); }
   .hero__pics strong { color: var(--ink); }
