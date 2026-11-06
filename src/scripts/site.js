@@ -130,7 +130,7 @@
   };
   const touch = firstTouch();
 
-  /* Nuotraukos: ribos atitinka Workerio kontraktą (iki 8 failų, 10 MiB, 25 MiB viso); mes leidžiame 5 */
+  /* Nuotraukos: 5 vnt. ir 8 MiB viso, kad visos tilptų į Workerio laišką (FORM_ATTACHMENT_SITES) */
   const MB = 1024 * 1024;
   const PHOTO_MAX = 5;
   const PHOTO_TYPES = /^image\/(jpeg|png|webp|heic|heif)$/;
@@ -274,8 +274,7 @@
         const typed = withType(raw);
         if (!PHOTO_TYPES.test(typed.type)) { problem = 'Tinka tik nuotraukos: JPG, PNG, WEBP arba HEIC.'; continue; }
         const f = await shrink(typed);
-        if (f.size > 10 * MB) { problem = 'Nuotrauka per didelė: viena gali būti iki 10 MB.'; continue; }
-        if (picked.reduce((a, p) => a + p.file.size, 0) + f.size > 18 * MB) { problem = 'Nuotraukos per didelės: visos kartu gali būti iki 18 MB.'; break; }
+                if (picked.reduce((a, p) => a + p.file.size, 0) + f.size > 8 * MB) { problem = 'Nuotraukos per didelės: visos kartu gali būti iki 8 MB.'; break; }
         picked.push({ file: f, url: URL.createObjectURL(f) });
       }
       fileSay(problem); drawFiles();
