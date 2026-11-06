@@ -34,7 +34,8 @@ const ini = (n) => (n || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) =>
           <li class="rvc__card">
             <article>
               <p class="rvc__stars"><span class="rvc__n">{a.zvaigzdes}</span><Stars n={a.zvaigzdes} size={20} /></p>
-              <blockquote class="rvc__txt">{a.tekstas.split('\n').filter(Boolean).map((l) => <p>{l}</p>)}</blockquote>
+              <blockquote class="rvc__txt" data-rvc-txt>{a.tekstas.split('\n').filter(Boolean).map((l) => <p>{l}</p>)}</blockquote>
+              <button type="button" class="rvc__more" data-rvc-more aria-expanded="false" hidden>Skaityti visą</button>
               <footer class="rvc__by">
                 <span class="rvc__av" aria-hidden="true">{ini(a.vardas)}</span>
                 <span><strong>{a.vardas}</strong>{a.paslaugaPavadinimas && <small>{a.paslaugaPavadinimas}</small>}</span>
@@ -64,6 +65,11 @@ const ini = (n) => (n || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) =>
     next.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
     track.addEventListener('scroll', () => requestAnimationFrame(upd), { passive: true });
     upd();
+    box.querySelectorAll<HTMLElement>('[data-rvc-txt]').forEach((t) => {
+      const b = t.nextElementSibling as HTMLButtonElement;
+      if (t.scrollHeight > t.clientHeight + 2) b.hidden = false;
+      b.addEventListener('click', () => { const o = t.classList.toggle('is-open'); b.setAttribute('aria-expanded', String(o)); b.textContent = o ? 'Suskleisti' : 'Skaityti visą'; });
+    });
   });
 </script>
 
@@ -87,6 +93,8 @@ const ini = (n) => (n || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) =>
   .rvc__stars { display: flex; align-items: center; gap: 8px; }
   .rvc__n { font-family: var(--display); font-weight: 800; font-size: 1.4rem; color: var(--gold-600); }
   .rvc__txt { flex: 1; display: grid; gap: 8px; font-size: 1.04rem; line-height: 1.55; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical; overflow: hidden; }
+  .rvc__txt.is-open { -webkit-line-clamp: unset; display: grid; overflow: visible; }
+  .rvc__more { align-self: start; font-weight: 800; color: var(--spruce-900); text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 4px; padding-block: 4px; }
   .rvc__by { display: flex; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid var(--line); }
   .rvc__by strong { display: block; text-transform: capitalize; }
   .rvc__by small { color: var(--ink-2); font-size: .9rem; }

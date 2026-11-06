@@ -4,8 +4,9 @@ import { patirtisMetai } from '@data/atsiliepimai.js';
 const { class: cls } = Astro.props;
 ---
 <p class:list={['seal', cls]}>
+  <span class="sr-only">{patirtisMetai} metų patirtis</span>
   <span class="seal__disc" aria-hidden="true"><span data-count={patirtisMetai}>{patirtisMetai}</span></span>
-  <span class="seal__t"><b>metų</b> patirtis</span>
+  <span class="seal__t" aria-hidden="true"><b>metų</b> patirtis</span>
 </p>
 <style>
   .seal { display: inline-flex; align-items: center; gap: 12px; }
