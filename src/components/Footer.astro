@@ -3,12 +3,13 @@ import { site } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
 import { grupes, detales } from '@data/paslaugu-turinys.js';
 import { vietoves } from '@data/vietoves.js';
-import { atsiliepimuKiekis, atsiliepimuVidurkis } from '@data/atsiliepimai.js';
+import { bendrasKiekis, bendrasIvertinimas } from '@data/atsiliepimai-visi.js';
 import { lrt, valstietis } from '@data/spauda.js';
 import Logo from './Logo.astro';
 const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
 const year = new Date().getFullYear();
-const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
+const rating = bendrasIvertinimas.toFixed(1).replace('.', ',');
+const aukstyje = /^\/(paslaugos\/(darbai-su|dazymo|reklamin|lietvamzd|kiti)|darbai-su-autoboksteliu|lietvamzdziu)/.test(Astro.url.pathname);
 ---
 <footer class="ftr">
   <div class="ftr__top">
@@ -16,7 +17,7 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
       <div class="ftr__sym"><img src="/assets/v5-brand/map/lt-symbol.webp" alt="" width="1200" height="1013" loading="lazy" decoding="async" /></div>
       <div class="ftr__call-t">
         <p class="tag ftr__tag">Bazė Kaune</p>
-        <p class="ftr__call-h">Medis kelia nerimą? <span>Skambinkite.</span></p>
+        <p class="ftr__call-h">{aukstyje ? 'Reikia darbų aukštyje?' : 'Medis kelia nerimą?'} <span>Skambinkite.</span></p>
         <a class="ftr__tel" href={site.telefonasHref} data-loc="footer-call-big"><span class="ico-c" style="--cs:52px"><img src="/assets/v5-brand/raster/icons/ui-phone-160.png" alt="" width="36" height="36" /></span>{site.telefonas}</a>
         <p class="ftr__call-s">Kasdien 08:00–18:00 · nuotraukas SMS žinute tuo pačiu numeriu arba <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
       </div>
@@ -27,9 +28,7 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
     <div class="ftr__brand">
       <Logo tone="light" height={70} />
       <p><strong>ArbCut</strong>, arboristas aukštalipys {site.savininkas} su komanda. Bazė Kaune, dirbame iki 200 km aplink.</p>
-      <a class="ftr__rep" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">
-        <span>{rating} iš 5 · {atsiliepimuKiekis} atsiliepimai Paslaugos.lt</span><span class="sr-only"> (atsidaro naujame lange)</span>
-      </a>
+      <a class="ftr__rep" href="/atsiliepimai"><span>{rating} iš 5 · {bendrasKiekis} atsiliepimai</span></a>
       <p class="ftr__press">Apie mus rašė <a href={lrt.url} target="_blank" rel="noopener">LRT.lt</a> ir <a href={valstietis.url} target="_blank" rel="noopener">Valstietis.lt</a></p>
     </div>
     {grupes.map((g) => (

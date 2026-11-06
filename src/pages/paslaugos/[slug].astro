@@ -4,11 +4,11 @@ import PageHero from '../../components/PageHero.astro';
 import Faq from '../../components/Faq.astro';
 import Reviews from '../../components/Reviews.astro';
 import Sequences from '../../components/Sequences.astro';
-import CtaBand from '../../components/CtaBand.astro';
 import { site } from '@data/site.js';
 import { paslaugos, getPaslauga } from '@data/paslaugos.js';
 import { detales, sekos, grupes } from '@data/paslaugu-turinys.js';
 import { vietoves } from '@data/vietoves.js';
+import { paslaugosMiestuose } from '@data/miestu-paslaugos.js';
 import { atrinkti } from '@data/atrinkti.js';
 import { serviceSchema, faqPage, breadcrumbs, localBusiness } from '@data/jsonld.js';
 
@@ -30,12 +30,13 @@ const heroPhoto = {
   'kelmu-naikinimas-frezavimas': null,
   'saku-isvezimas': null,
   'gyvatvoriu-karpymas': null,
-  'darbai-su-autoboksteliu': ['autobokstelis-prie-namo', 'Autobokštelis dirba prie namo', '50% 60%'],
+  'darbai-su-autoboksteliu': ['bokstelis-prie-azuolo', 'ArbCut autobokštelis pakeltas prie aukšto ąžuolo', '50% 40%'],
   'lietvamzdziu-stogo-valymas': ['autobokstelis-prie-namo', 'Autobokštelis prie namo stogo', '70% 30%'],
   'dazymo-darbai-aukstyje': ['autobokstelis-prie-namo', 'Darbas aukštyje nuo autobokštelio', '75% 35%'],
   'reklaminiu-iskabu-montavimas': ['autobokstelis-pusyne', 'Autobokštelis tarp aukštų pušų', '50% 40%'],
   'kiti-aukstuminiai-darbai': ['maumedis-ziema', 'Arboristas aukštai medyje žiemą', '50% 25%'],
 }[slug] || [];
+const miestuose = paslaugosMiestuose(slug);
 const kitos = grupe.slugs.filter((s) => s !== slug);
 const susijusios = d.susijusios.map(getPaslauga);
 const schemas = [
@@ -87,7 +88,7 @@ const schemas = [
         <div class="panel cut svc__card">
           <p class="kicker">Kaina</p>
           <p class="svc__price">{p.kaina}</p>
-          <p class="svc__src">Kaina „nuo“ — pagal Paslaugos.lt profilį. Galutinė kaina priklauso nuo:</p>
+          <p class="svc__src">Galutinė kaina priklauso nuo:</p>
           <ul class="ticks">{d.kaina.map((t) => <li>{t}</li>)}</ul>
                     <p class="svc__h">Ką paruošti užklausai</p>
           <ul class="svc__prep">{d.paruosti.map((t) => <li>{t}</li>)}</ul>
@@ -142,13 +143,14 @@ const schemas = [
         <h2 class="rel__h">Kaunas ir kiti miestai</h2>
         <p class="mute">Bazė — Kaunas. Medienos išvežimas — Kaune ir Kauno rajone.</p>
         <ul role="list" class="linkcols towns">
-          {vietoves.map((v) => <li><a href={`/${v.slug}`}>{v.miestas}</a></li>)}
+          {miestuose.length > 0
+            ? miestuose.map((m) => <li><a href={`/${m.slug}`}>{m.h1}</a></li>)
+            : vietoves.map((v) => <li><a href={`/${v.slug}`}>{v.miestas}</a></li>)}
         </ul>
       </div>
     </div>
   </section>
 
-  <CtaBand title={`${d.trumpas}: aptarkime jūsų atvejį`} service={slug} />
 </BaseLayout>
 
 <style>

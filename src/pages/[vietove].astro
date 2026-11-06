@@ -3,11 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Reviews from '../components/Reviews.astro';
 import Faq from '../components/Faq.astro';
-import CtaBand from '../components/CtaBand.astro';
 import { vietoves } from '@data/vietoves.js';
 import { paslaugos } from '@data/paslaugos.js';
 import { grupes, detales } from '@data/paslaugu-turinys.js';
 import { duk } from '@data/turinys.js';
+import { miestoPaslaugos } from '@data/miestu-paslaugos.js';
 import { atrinkti } from '@data/atrinkti.js';
 import { localBusiness, breadcrumbs, faqPage } from '@data/jsonld.js';
 
@@ -19,6 +19,14 @@ const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
 const kitos = vietoves.filter((x) => x.slug !== v.slug);
 const reviews = atrinkti({ n: 3, min: 140, max: 480 });
 const isBase = !!v.pagrindinis;
+const cia = miestoPaslaugos(v.slug);
+const foto = [
+  ['pusis-alpinistas', 'Arboristas pjauna aukštą pušį dalimis', '50% 30%'],
+  ['medis-prie-laidu-ziema', 'Medžio pjovimas žiemą šalia laidų ir namo', '50% 40%'],
+  ['maumedis-ziema', 'Arboristas aukštai medyje žiemą', '50% 25%'],
+  ['du-arboristai-lajoje', 'Du arboristai didelio medžio lajoje', '50% 35%'],
+  ['bokstelis-prie-azuolo', 'ArbCut autobokštelis pakeltas prie aukšto ąžuolo', '50% 40%'],
+][vietoves.indexOf(v) % 5];
 const townFaq = [
   isBase
     ? { klausimas: `Ar išvežate medieną ${v.kur}?`, atsakymas: 'Taip. Kaune ir Kauno rajone po darbų išvežame šakas ir medieną nuosavu fiskaru (talpa nuo 20 m³). Kas išvežama ir už kokią kainą, sutariame iš anksto.' }
@@ -35,9 +43,9 @@ const description = `Medžių pjovimas ${v.kur}: pavojingi medžiai prie namų i
     kicker={isBase ? 'Mūsų bazė' : `Arboristas aukštalipys · ${v.miestas}`}
     lead={v.intro}
     crumbs={[{ label: `Medžių pjovimas ${v.kur}` }]}
-    photo={isBase ? 'pjovimas-prie-laidu' : 'pusis-alpinistas'}
-    photoAlt="Arboristas pjauna aukštą pušį dalimis"
-    photoPos="50% 30%"
+    photo={isBase ? 'pjovimas-prie-laidu' : foto[0]}
+    photoAlt={isBase ? 'Arboristas pjauna aukštą pušį šalia elektros laidų' : foto[1]}
+    photoPos={isBase ? '50% 30%' : foto[2]}
   />
   <section class="sec">
     <div class="wrap town">
@@ -49,6 +57,7 @@ const description = `Medžių pjovimas ${v.kur}: pavojingi medžiai prie namų i
             ? <p><strong>Išvežame patys.</strong> Kaune ir Kauno rajone šakas ir medieną išvežame fiskaru — kiemas lieka tvarkingas.</p>
             : <p><strong>Medienos išvežimas</strong> — tik Kaune ir Kauno rajone. {v.kur} medieną ir šakas sukrauname tvarkingoje krūvoje.</p>}
         </div>
+        {cia.length > 0 && <p class="town__also">{cia.map((m) => <a class="link-arrow" href={`/${m.slug}`}>{m.h1}</a>)}</p>}
       </div>
       <div class="town__svc">
         {grupes.map((g) => (
@@ -77,13 +86,13 @@ const description = `Medžių pjovimas ${v.kur}: pavojingi medžiai prie namų i
       <ul role="list" class="linkcols others">{kitos.map((k) => <li><a href={`/${k.slug}`}>Medžių pjovimas {k.kur}</a></li>)}</ul>
     </div>
   </section>
-  <CtaBand title={`Medis ${v.kur}? Aptarkime.`} />
 </BaseLayout>
 <style>
   .town { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
   .town__txt { display: grid; gap: 20px; }
   .town__txt h2 { color: var(--spruce-900); }
   .town__note { padding: 18px 20px; background: var(--spruce-100); }
+  .town__also { display: flex; flex-wrap: wrap; gap: 10px 26px; }
   .town__svc { display: grid; gap: 28px; }
   .town__svc .kicker { margin-bottom: 8px; }
   .others { margin-top: 12px; columns: 3 240px; }

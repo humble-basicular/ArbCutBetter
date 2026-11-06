@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import ServiceIndex from '../../components/ServiceIndex.astro';
-import CtaBand from '../../components/CtaBand.astro';
 import { localBusiness, breadcrumbs } from '@data/jsonld.js';
 ---
 <BaseLayout
@@ -20,5 +19,4 @@ import { localBusiness, breadcrumbs } from '@data/jsonld.js';
     photoPos="50% 35%"
   />
   <section class="sec"><div class="wrap"><ServiceIndex /></div></section>
-  <CtaBand title="Nerandate savo atvejo?" text="Papasakokite, ką reikia padaryti aukštyje ar su medžiu — dažniausiai sprendimą randame." />
 </BaseLayout>

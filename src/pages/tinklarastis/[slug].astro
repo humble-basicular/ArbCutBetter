@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import Faq from '../../components/Faq.astro';
-import CtaBand from '../../components/CtaBand.astro';
 import { straipsniai } from '@data/straipsniai.js';
 import { localBusiness, articleSchema, faqPage, breadcrumbs } from '@data/jsonld.js';
 
@@ -45,7 +44,6 @@ const schemas = [
       <ul role="list" class="rows more">{kiti.map((k) => <li><a href={`/tinklarastis/${k.slug}`}><span>{k.title}</span></a></li>)}</ul>
     </div>
   </section>
-  <CtaBand />
 </BaseLayout>
 <style>
   .art { display: grid; grid-template-columns: minmax(0, 46rem) 340px; justify-content: space-between; gap: clamp(32px, 5vw, 72px); align-items: start; }

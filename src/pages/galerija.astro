@@ -2,19 +2,18 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Sequences from '../components/Sequences.astro';
-import CtaBand from '../components/CtaBand.astro';
 import { galerijosKategorijos, galerijosAlt } from '@data/paslaugu-turinys.js';
 import { localBusiness, breadcrumbs } from '@data/jsonld.js';
 const G = (n) => `/assets/images/galerija/galerija-${String(n).padStart(2, '0')}.jpg`;
-/* Mantas atsiuntė 2026-11-06. Kol nepatvirtinta, kas ir kieno įranga, aprašoma tik tai, kas matyti. */
+/* Mantas atsiuntė 2026-11-06; nuotraukos ir autobokštelis jo (patvirtinta 2026-11-06). */
 const N = (f) => ({ src: `/assets/images/galerija-naujos/${f}.jpg`, thumb: `/assets/images/galerija-naujos/${f}-m.jpg` });
 const naujos = [
   { ...N('pusis-bokstelis-virves'), alt: 'Arboristai pušies lajoje: vienas bokštelyje, kitas ant virvių' },
-  { ...N('arboristas-bokstelyje'), alt: 'Arboristas autobokštelio krepšyje pušies lajoje' },
-  { ...N('bokstelis-prie-azuolo'), alt: 'Autobokštelis pakeltas prie aukšto ąžuolo' },
-  { ...N('bokstelis-prie-pastato'), alt: 'Autobokštelis prie medžio šalia pastato' },
-  { ...N('aukstas-medis-lajoje'), alt: 'Arboristas aukštai plikame medyje, šalia autobokštelis' },
-  { ...N('aukstas-medis-is-toli'), alt: 'Aukštas medis ir autobokštelis pievoje' },
+  { ...N('arboristas-bokstelyje'), alt: 'Arboristas ArbCut autobokštelio krepšyje pušies lajoje' },
+  { ...N('bokstelis-prie-azuolo'), alt: 'ArbCut autobokštelis pakeltas prie aukšto ąžuolo' },
+  { ...N('bokstelis-prie-pastato'), alt: 'ArbCut autobokštelis prie medžio šalia pastato' },
+  { ...N('aukstas-medis-lajoje'), alt: 'Arboristas aukštai plikame medyje, šalia ArbCut autobokštelis' },
+  { ...N('aukstas-medis-is-toli'), alt: 'Aukštas medis ir ArbCut autobokštelis pievoje' },
 ].map((t) => ({ ...t, cat: 'naujos' }));
 const tiles = [...naujos, ...galerijosKategorijos.flatMap((k) => k.nr.map((n) => ({ src: G(n), cat: k.id, alt: galerijosAlt[k.id] })))];
 ---
@@ -40,6 +39,7 @@ const tiles = [...naujos, ...galerijosKategorijos.flatMap((k) => k.nr.map((n) =>
       </div>
       <div class="flt" role="group" aria-label="Rodyti nuotraukas">
         <button type="button" data-filter="visi" aria-pressed="true">Visos</button>
+        <button type="button" data-filter="naujos" aria-pressed="false">Naujausios <small>{naujos.length}</small></button>
         {galerijosKategorijos.map((k) => <button type="button" data-filter={k.id} aria-pressed="false">{k.pavadinimas} <small>{k.nr.length}</small></button>)}
       </div>
       <ul role="list" class="gal tiles" data-lb-group>
@@ -53,7 +53,6 @@ const tiles = [...naujos, ...galerijosKategorijos.flatMap((k) => k.nr.map((n) =>
       </ul>
     </div>
   </section>
-  <CtaBand />
 </BaseLayout>
 <style>
   .flt { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }

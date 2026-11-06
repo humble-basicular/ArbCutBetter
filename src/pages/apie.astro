@@ -3,22 +3,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Photo from '../components/Photo.astro';
 import Reviews from '../components/Reviews.astro';
-import CtaBand from '../components/CtaBand.astro';
 import { site } from '@data/site.js';
-import { atsiliepimuKiekis, patirtisMetai } from '@data/atsiliepimai.js';
+import { patirtisMetai } from '@data/atsiliepimai.js';
+import { bendrasKiekis } from '@data/atsiliepimai-visi.js';
 import { atrinkti } from '@data/atrinkti.js';
 import { localBusiness, breadcrumbs } from '@data/jsonld.js';
 const reviews = atrinkti({ n: 3, min: 200, max: 700 }).slice(0, 3);
 ---
 <BaseLayout
   title="Apie ArbCut — arboristas aukštalipys Mantas Gerulis su komanda"
-  description="ArbCut — arboristas aukštalipys Mantas Gerulis su komanda. Alpinistinė įranga, nuosavas autobokštelis iki 20 m, bazė Kaune. 122 atsiliepimai Paslaugos.lt."
+  description={`ArbCut: arboristas aukštalipys Mantas Gerulis su komanda. Alpinistinė įranga, nuosavas autobokštelis iki 20 m, bazė Kaune. ${bendrasKiekis} klientų atsiliepimai.`}
   schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Apie', path: '/apie' }])]}
 >
   <PageHero
     title="Mantas Gerulis ir ArbCut komanda"
     kicker="Apie mus"
-    lead={`Esame arboristai aukštalipiai iš Kauno. Pjauname, genime ir prižiūrime medžius ten, kur reikia lipti ar dirbti aukštyje — prie namų, laidų, kapinėse ir ankštuose kiemuose. Paslaugos.lt profilyje nurodyta ${patirtisMetai} metų patirtis.`}
+    lead={`Esame arboristai aukštalipiai iš Kauno. Pjauname, genime ir prižiūrime medžius ten, kur reikia lipti ar dirbti aukštyje — prie namų, laidų, kapinėse ir ankštuose kiemuose. Turime ${patirtisMetai} metų patirties.`}
     crumbs={[{ label: 'Apie' }]}
     photo="medis-prie-laidu-ziema"
     photoAlt="Medžio pjovimas žiemą šalia laidų ir namo"
@@ -52,15 +52,27 @@ const reviews = atrinkti({ n: 3, min: 200, max: 700 }).slice(0, 3);
         <h2>Su kuo dirbame</h2>
       </div>
       <ul role="list" class="eq__list">
-        <li><div class="ph cut eq__ph"><Photo name="autobokstelis-pusyne" alt="ArbCut autobokštelis tarp aukštų pušų" sizes="(max-width: 860px) 100vw, 30vw" /></div><h3>Nuosavas autobokštelis iki 20 m</h3><p>Medžių pjovimas ir genėjimas, latakai, dažymas, iškabos — be technikos nuomos ir pastolių.</p></li>
+        <li><div class="ph cut eq__ph"><Photo name="arboristas-bokstelyje" alt="Arboristas ArbCut autobokštelio krepšyje pušies lajoje" sizes="(max-width: 860px) 100vw, 30vw" /></div><h3>Nuosavas autobokštelis iki 20 m</h3><p>Medžių pjovimas ir genėjimas, latakai, dažymas, iškabos — be technikos nuomos ir pastolių.</p></li>
         <li><div class="ph cut eq__ph"><Photo name="pusis-alpinistas" alt="Arboristas su alpinistine įranga aukštoje pušyje" sizes="(max-width: 860px) 100vw, 30vw" position="50% 25%" /></div><h3>Alpinistinė įranga ir virvės</h3><p>Kai bokštelis neprivažiuoja ar reikia aukščiau nei 20 m — lipame į medį ir nuleidžiame dalis virvėmis.</p></li>
         <li><div class="ph cut eq__ph"><img src="/assets/images/galerija/galerija-73.jpg" alt="Fiskaras kraunantis šakas" width="283" height="230" loading="lazy" /></div><h3>Fiskaras išvežimui</h3><p>Kaune ir Kauno rajone šakas ir medieną išvežame patys (talpa nuo 20 m³).</p></li>
       </ul>
     </div>
   </section>
 
+  <section class="sec">
+    <div class="wrap cm">
+      <div class="cm__ph"><Photo name="arboristai-grupe" alt="Baltijos šalių medžių laipiojimo čempionato dalyviai po medžiu" sizes="(max-width: 960px) 100vw, 60vw" widths={[640, 960, 1280, 1800]} position="50% 45%" /></div>
+      <div class="cm__txt">
+        <p class="kicker">Arboristų bendruomenė</p>
+        <h2>Tarp kitų arboristų</h2>
+        <p class="lead">Mantas yra Lietuvos arboristų asociacijos narių sąraše ir dalyvavo Baltijos šalių medžių laipiojimo čempionate.</p>
+        <p class="mute">Nuotraukoje: čempionato dalyviai Lietuvoje.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="sec sec--paper2">
-    <div class="wrap"><Reviews items={reviews} heading={`${atsiliepimuKiekis} atsiliepimai — keli iš jų`} /></div>
+    <div class="wrap"><Reviews items={reviews} heading="Ką rašo klientai" /></div>
   </section>
 
   <section class="sec">
@@ -75,11 +87,10 @@ const reviews = atrinkti({ n: 3, min: 200, max: 700 }).slice(0, 3);
         <li><span>Darbo laikas</span><strong>Kasdien 08:00–18:00</strong></li>
         <li><span>Bazė</span><strong>Kaunas, Kauno apskritis</strong></li>
         <li><span>Facebook</span><a href={site.facebook} target="_blank" rel="noopener">MesGalimeTaiPadaryti<span class="sr-only"> (atsidaro naujame lange)</span></a></li>
-        <li><span>Atsiliepimai</span><a href={site.atsiliepimai.profilis} target="_blank" rel="noopener">Paslaugos.lt profilis<span class="sr-only"> (atsidaro naujame lange)</span></a></li>
+        <li><span>Atsiliepimai</span><a href="/atsiliepimai">{bendrasKiekis} klientų atsiliepimai</a></li>
       </ul>
     </div>
   </section>
-  <CtaBand />
 </BaseLayout>
 <style>
   .ab { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
@@ -96,12 +107,17 @@ const reviews = atrinkti({ n: 3, min: 200, max: 700 }).slice(0, 3);
   .eq__ph { aspect-ratio: 4 / 3; }
   .eq__ph img { width: 100%; height: 100%; object-fit: cover; }
   .eq__list p { color: var(--on-dark-2); }
+  .cm { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 60px); align-items: center; }
+  .cm__ph { border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 3 / 2; box-shadow: var(--sh-2); }
+  .cm__ph :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .cm__txt { display: grid; gap: 14px; }
+  .cm h2 { color: var(--spruce-900); }
   .ab2 { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 72px); }
   .ab2__list { display: grid; gap: 6px; }
   .ab2__list li { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 16px; padding: 14px 16px; background: var(--stone); }
   .ab2__list span { color: var(--ink-2); }
   .ab2__list a { font-weight: 650; color: var(--spruce-900); text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 4px; overflow-wrap: anywhere; }
   .ab2__list a:hover { color: var(--orange-ink); }
-  @media (max-width: 960px) { .ab, .ab2 { grid-template-columns: 1fr; } .eq__list { grid-template-columns: 1fr; } }
+  @media (max-width: 960px) { .ab, .ab2, .cm { grid-template-columns: 1fr; } .eq__list { grid-template-columns: 1fr; } }
   @media (max-width: 560px) { .vals { grid-template-columns: 1fr; } .ab2__list li { grid-template-columns: 1fr; gap: 2px; } }
 </style>

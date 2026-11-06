@@ -2,11 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Faq from '../components/Faq.astro';
-import CtaBand from '../components/CtaBand.astro';
 import { site } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
 import { grupes, detales } from '@data/paslaugu-turinys.js';
-import { atsiliepimai, atsiliepimuSinchronizuota } from '@data/atsiliepimai.js';
+import { atsiliepimai } from '@data/atsiliepimai.js';
 import { localBusiness, faqPage, breadcrumbs } from '@data/jsonld.js';
 const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
 const pavyzdys = atsiliepimai.find((a) => a.tekstas && a.tekstas.includes('kaina 470'));
@@ -49,7 +48,7 @@ const duk = [
             </table>
           </div>
         ))}
-        <p class="pr__src">Kainos „nuo“ paimtos iš ArbCut profilio Paslaugos.lt (duomenys {atsiliepimuSinchronizuota}). Galutinė kaina sutariama prieš darbus.</p>
+        <p class="pr__src">Kainos orientacinės. Galutinė kaina sutariama prieš darbus.</p>
       </div>
       <aside class="pr__side">
         <div class="panel cut">
@@ -95,7 +94,6 @@ const duk = [
       </div>
     </div>
   </section>
-  <CtaBand />
 </BaseLayout>
 <style>
   .pr { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(32px, 5vw, 64px); align-items: start; }

@@ -1,57 +1,56 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
-import CtaBand from '../components/CtaBand.astro';
-import Mark from '../components/Mark.astro';
+import ReviewCard from '../components/ReviewCard.astro';
+import Stars from '../components/v5/Stars.astro';
 import { site } from '@data/site.js';
-import { atsiliepimuKiekis, atsiliepimuVidurkis, atsiliepimuSinchronizuota } from '@data/atsiliepimai.js';
-import { suTekstu } from '@data/atrinkti.js';
+import { visiAtsiliepimai, bendrasKiekis, bendrasIvertinimas } from '@data/atsiliepimai-visi.js';
 import { localBusiness, breadcrumbs } from '@data/jsonld.js';
-const fmt = (d) => new Date(d).toLocaleDateString('lt-LT', { year: 'numeric', month: 'long' });
-const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
+const rating = bendrasIvertinimas.toFixed(1).replace('.', ',');
+const suTekstu = visiAtsiliepimai.filter((a) => a.tekstas && a.tekstas.trim() && !a.vardas.startsWith('Paslaugos.lt'));
+const PIRMI = 24;
 ---
 <BaseLayout
-  title={`Atsiliepimai apie ArbCut — ${rating} iš 5, ${atsiliepimuKiekis} atsiliepimai Paslaugos.lt`}
-  description={`Klientų atsiliepimai apie ArbCut ir Mantą Gerulį iš Paslaugos.lt profilio: ${rating} iš 5, ${atsiliepimuKiekis} atsiliepimai. Originalūs tekstai su data.`}
+  title={`Atsiliepimai apie ArbCut: ${rating} iš 5, ${bendrasKiekis} atsiliepimai`}
+  description={`Ką klientai rašo apie ArbCut ir Mantą Gerulį: ${rating} iš 5, ${bendrasKiekis} atsiliepimai. Originalūs tekstai, prie kiekvieno nurodytas šaltinis.`}
   schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Atsiliepimai', path: '/atsiliepimai' }])]}
 >
-  <PageHero title="Atsiliepimai" kicker="Paslaugos.lt" lead={`Visi žemiau esantys atsiliepimai parašyti mūsų profilyje Paslaugos.lt. Tekstai pateikti originalūs, nekeisti. Profilio įvertinimas — ${rating} iš 5 (${atsiliepimuKiekis} atsiliepimai, duomenys ${atsiliepimuSinchronizuota}).`} crumbs={[{ label: 'Atsiliepimai' }]} actions={false}>
+  <PageHero title="Ką rašo klientai" kicker="Atsiliepimai" lead="Originalūs klientų tekstai, nieko nekeitėme. Prie kiekvieno atsiliepimo matote, kur jis parašytas." crumbs={[{ label: 'Atsiliepimai' }]} actions={false}>
     <div class="sc">
-      <Mark name="paslaugos" height={42} />
       <span class="sc__n">{rating}</span>
-      <span class="sc__t">iš 5 · {atsiliepimuKiekis} atsiliepimai</span>
+      <span class="sc__t"><Stars size={20} /><br />{bendrasKiekis} atsiliepimai</span>
     </div>
     <div class="btn-row">
-      <a class="btn btn--primary" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">Profilis Paslaugos.lt<span class="sr-only"> (atsidaro naujame lange)</span></a>
+      <button type="button" class="btn btn--primary" data-quote>Gauti kainą</button>
       <a class="btn btn--line" href={site.atsiliepimai.paliktiUrl} target="_blank" rel="noopener">Parašyti atsiliepimą<span class="sr-only"> (atsidaro naujame lange)</span></a>
     </div>
   </PageHero>
   <section class="sec sec--stone">
     <div class="wrap">
-      <p class="mute all__n">Rodoma {suTekstu.length} atsiliepimai su tekstu.</p>
-      <ul role="list" class="all">
-        {suTekstu.map((a) => (
-          <li>
-            {a.zvaigzdes && <p class="all__s"><b>{a.zvaigzdes}</b> iš 5</p>}
-            <blockquote>{a.tekstas.split('\n').map((l) => <p>{l}</p>)}</blockquote>
-            <p class="all__m"><strong>{a.vardas}</strong>{a.paslaugaPavadinimas && <> · {a.paslaugaPavadinimas}</>} · {fmt(a.data)}</p>
-          </li>
-        ))}
+      <ul role="list" class="all" data-all>
+        {suTekstu.map((a, i) => <li class:list={{ 'all__more': i >= PIRMI }}><ReviewCard a={a} /></li>)}
       </ul>
+      {suTekstu.length > PIRMI && <p class="all__btn"><button type="button" class="btn btn--ink" data-all-more>Rodyti daugiau atsiliepimų</button></p>}
     </div>
   </section>
-  <CtaBand />
 </BaseLayout>
+<script>
+  const list = document.querySelector('[data-all]');
+  const btn = document.querySelector('[data-all-more]');
+  if (list && btn) btn.addEventListener('click', () => {
+    const next = [...list.querySelectorAll('.all__more')].slice(0, 24);
+    next.forEach((li) => li.classList.remove('all__more'));
+    if (!list.querySelector('.all__more')) btn.closest('p').remove();
+    const first = next[0] && next[0].querySelector('blockquote');
+    if (first) { first.setAttribute('tabindex', '-1'); first.focus({ preventScroll: true }); }
+  });
+</script>
 <style>
   .sc { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; color: var(--spruce-900); }
-  .sc__n { font-stretch: var(--wide); font-weight: 800; font-size: 3rem; line-height: 1; }
-  .sc__t { font-weight: 700; }
-  .all__n { margin-bottom: 20px; }
-  .all { columns: 3 280px; column-gap: 14px; }
-  .all li { break-inside: avoid; margin-bottom: 14px; background: var(--paper); padding: 20px 22px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
-  .all__s { font-size: .98rem; color: var(--ink-2); }
-  .all__s b { color: var(--spruce-900); font-stretch: var(--wide); font-weight: 800; font-size: 1.15rem; }
-  .all blockquote { display: grid; gap: 8px; line-height: 1.5; overflow-wrap: anywhere; }
-  .all__m { font-size: .98rem; color: var(--ink-2); }
-  .all__m strong { color: var(--ink); text-transform: capitalize; }
+  .sc__n { font-stretch: var(--wide); font-weight: 800; font-size: 3.4rem; line-height: 1; }
+  .sc__t { font-weight: 700; line-height: 1.4; }
+  .all { columns: 3 300px; column-gap: 16px; }
+  .all li { break-inside: avoid; margin-bottom: 16px; }
+  :global(.js) .all__more { display: none; }
+  .all__btn { margin-top: 12px; text-align: center; }
 </style>

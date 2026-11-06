@@ -1,0 +1,122 @@
+---
+/* Paslauga mieste: bendras šablonas, faktai iš paslaugu-turinys.js ir vietoves.js. Forma su iš anksto parinkta paslauga. */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Reviews from '../components/Reviews.astro';
+import Faq from '../components/Faq.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import { site } from '@data/site.js';
+import { getPaslauga } from '@data/paslaugos.js';
+import { detales } from '@data/paslaugu-turinys.js';
+import { miestuPaslaugos, paslaugosMiestuose, atvykimas, isvezimas } from '@data/miestu-paslaugos.js';
+import { atrinkti } from '@data/atrinkti.js';
+import { localBusiness, breadcrumbs, faqPage, serviceSchema } from '@data/jsonld.js';
+
+export function getStaticPaths() {
+  return miestuPaslaugos.map((m) => ({ params: { miestoPaslauga: m.slug }, props: { m } }));
+}
+const { m } = Astro.props;
+const { v } = m;
+const p = getPaslauga(m.paslauga);
+const d = detales[m.paslauga];
+const path = `/${m.slug}`;
+const kiti = paslaugosMiestuose(m.paslauga).filter((x) => x.slug !== m.slug);
+const reviews = atrinkti({ slug: m.paslauga, n: 3, min: 60, max: 520 });
+const genejimas = [
+  ['lajoje-vasara', 'Arboristas dirba žaliuojančio medžio lajoje', '50% 30%'],
+  ['du-arboristai-lajoje', 'Du arboristai didelio medžio lajoje', '50% 35%'],
+  ['pusis-bokstelis-virves', 'Arboristai pušies lajoje: vienas bokštelyje, kitas ant virvių', '58% 40%'],
+  ['maumedis-ziema', 'Arboristas aukštai medyje žiemą', '50% 25%'],
+];
+const nr = paslaugosMiestuose(m.paslauga).findIndex((x) => x.slug === m.slug);
+const foto = {
+  'medziu-genejimas': genejimas[nr % genejimas.length],
+  'darbai-su-autoboksteliu': ['arboristas-bokstelyje', 'Arboristas autobokštelio krepšyje pušies lajoje', '50% 40%'],
+  'lietvamzdziu-stogo-valymas': ['autobokstelis-prie-namo', 'Autobokštelis prie namo stogo', '70% 30%'],
+}[m.paslauga] || [];
+const faq = [
+  { klausimas: `Kaip greitai galite atvykti ${v.kur}?`, atsakymas: atvykimas(v) },
+  { klausimas: `Ar išvežate šakas ${v.kur}?`, atsakymas: isvezimas(v) },
+  ...d.duk,
+];
+const schemas = [
+  localBusiness(),
+  { ...serviceSchema(p), name: m.h1, url: `${site.url}${path}`, areaServed: { '@type': 'City', name: v.miestas } },
+  faqPage(faq),
+  breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Paslaugos', path: '/paslaugos' }, { name: m.h1, path }]),
+];
+---
+<BaseLayout title={`${m.h1}: kaina ${p.kaina} | ArbCut`} description={`${m.h1}. ${atvykimas(v)} Kaina ${p.kaina}. Skambinkite ${site.telefonas}.`} schemas={schemas} ogImage={p.nuotrauka}>
+  <PageHero
+    title={m.h1}
+    kicker={`${v.miestas} · ${p.kaina}`}
+    lead={d.ivadas}
+    crumbs={[{ label: 'Paslaugos', href: '/paslaugos' }, { label: d.trumpas, href: `/paslaugos/${m.paslauga}` }, { label: v.miestas }]}
+    photo={foto[0]}
+    photoAlt={foto[1]}
+    photoPos={foto[2]}
+    thumbs={foto[0] ? [] : d.nuotraukos.slice(0, 2)}
+    thumbAlt={`${m.trumpas}, ArbCut darbas`}
+    service={m.paslauga}
+  />
+
+  <section class="sec">
+    <div class="wrap mp">
+      <div class="mp__main">
+        <div class="mp__block">
+          <h2>Kada kreiptis</h2>
+          <ul class="ticks">{d.tinka.map((t) => <li>{t}</li>)}</ul>
+        </div>
+        <div class="mp__block">
+          <h2>Kaip dirbame</h2>
+          <ol class="steps steps--row" role="list">{d.eiga.map((t) => <li>{t}</li>)}</ol>
+        </div>
+        <div class="mp__block">
+          <h2>Darbai {v.kur}</h2>
+          <p>{atvykimas(v)} {isvezimas(v)}</p>
+          <p class="mp__links">
+            <a class="link-arrow" href={`/paslaugos/${m.paslauga}`}>Apie paslaugą plačiau</a>
+            <a class="link-arrow" href={`/${v.slug}`}>Medžių pjovimas {v.kur}</a>
+          </p>
+        </div>
+      </div>
+      <aside class="mp__side" aria-label="Kaina ir užklausa">
+        <div class="panel mp__card">
+          <h2>Gauti kainą</h2>
+          <p class="mp__price">{p.kaina}</p>
+          <p class="mute">Galutinę kainą lemia: {d.kaina.map((t) => t.charAt(0).toLowerCase() + t.slice(1)).join('; ')}.</p>
+          <QuoteForm id="mp-form" prefix="m" service={m.paslauga} />
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec sec--paper2"><div class="wrap"><Reviews items={reviews} heading="Atsiliepimai po panašių darbų" /></div></section>
+
+  <section class="sec">
+    <div class="wrap two two--faq">
+      <div class="sec-head"><p class="kicker">DUK</p><h2>Klausimai apie darbus {v.kur}</h2></div>
+      <Faq items={faq} />
+    </div>
+  </section>
+
+  {kiti.length > 0 && (
+    <section class="sec sec--stone">
+      <div class="wrap">
+        <p class="kicker">Kiti miestai</p>
+        <ul role="list" class="linkcols mp__others">{kiti.map((k) => <li><a href={`/${k.slug}`}>{k.h1}</a></li>)}</ul>
+      </div>
+    </section>
+  )}
+</BaseLayout>
+<style>
+  .mp { display: grid; grid-template-columns: minmax(0, 1fr) 460px; gap: clamp(32px, 5vw, 64px); align-items: start; }
+  .mp__main { display: grid; gap: clamp(36px, 4vw, 52px); min-width: 0; }
+  .mp__block { display: grid; gap: 16px; }
+  .mp__block h2, .mp__card h2 { color: var(--spruce-900); }
+  .mp__links { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+  .mp__card { display: grid; gap: 12px; }
+  .mp__price { font-stretch: var(--wide); font-size: clamp(1.8rem, 1.6rem + .8vw, 2.4rem); font-weight: 800; line-height: 1; color: var(--orange-ink); }
+  .mp__others { margin-top: 12px; columns: 3 240px; }
+  @media (max-width: 1100px) { .mp { grid-template-columns: minmax(0, 1fr); } }
+</style>

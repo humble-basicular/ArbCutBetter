@@ -9,7 +9,7 @@ const ini = (a.vardas || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) =>
 ---
 <article class:list={['rc', `rc--${src}`, { 'rc--compact': compact }]} data-src={src} data-svc={a.paslauga || 'kita'}>
   <header class="rc__top">
-    <span class="rc__src"><Mark name={src === 'google' ? 'google' : 'paslaugos'} height={20} label={srcName} /></span>
+    <span class="rc__src"><Mark name={src === 'google' ? 'google' : 'paslaugos'} height={src === 'google' ? 26 : 30} label={`Atsiliepimas iš ${srcName}`} /></span>
     <time datetime={a.data}>{a.data}</time>
   </header>
   {a.zvaigzdes && <p class="rc__stars"><Stars n={a.zvaigzdes} size={20} /></p>}

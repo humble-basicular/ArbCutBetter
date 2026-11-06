@@ -1,27 +1,24 @@
 ---
 /* Atsiliepimų blokas kitiems puslapiams: tos pačios kortelės kaip pradžios puslapyje. */
-import { site } from '@data/site.js';
-import { atsiliepimuKiekis, atsiliepimuVidurkis, atsiliepimuSinchronizuota } from '@data/atsiliepimai.js';
+import { bendrasKiekis, bendrasIvertinimas } from '@data/atsiliepimai-visi.js';
 import ReviewCard from './ReviewCard.astro';
-import Mark from './Mark.astro';
+import Stars from './v5/Stars.astro';
 const { items = [], heading = 'Ką rašo klientai', showAll = true } = Astro.props;
 ---
 <div class="rv-wrap">
   <div class="sec-head sec-head--split">
     <h2>{heading}</h2>
-    <div class="rv-score">
-      <Mark name="paslaugos" height={36} />
-      <span class="rv-score__n">{atsiliepimuVidurkis.toFixed(1).replace('.', ',')}</span>
-      <span class="rv-score__t">iš 5 · {atsiliepimuKiekis} atsiliepimai<br /><small>Paslaugos.lt, duomenys {atsiliepimuSinchronizuota}</small></span>
-    </div>
+    <a class="rv-score" href="/atsiliepimai">
+      <span class="rv-score__n">{bendrasIvertinimas.toFixed(1).replace('.', ',')}</span>
+      <span class="rv-score__t"><Stars size={18} /><br />{bendrasKiekis} atsiliepimai</span>
+    </a>
   </div>
   <ul role="list" class="rv-list">
     {items.map((a) => <li><ReviewCard a={a} /></li>)}
   </ul>
   {showAll && (
     <div class="btn-row rv-links">
-      <a class="btn btn--ink" href="/atsiliepimai">Daugiau atsiliepimų</a>
-      <a class="link-arrow" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">Profilis Paslaugos.lt<span class="sr-only"> (atsidaro naujame lange)</span></a>
+      <a class="btn btn--ink" href="/atsiliepimai">Visi atsiliepimai</a>
     </div>
   )}
 </div>
@@ -30,7 +27,6 @@ const { items = [], heading = 'Ką rašo klientai', showAll = true } = Astro.pro
   .rv-score { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
   .rv-score__n { font-stretch: var(--wide); font-size: 3.4rem; line-height: 1; font-weight: 800; color: var(--spruce-900); }
   .rv-score__t { font-weight: 700; line-height: 1.35; }
-  .rv-score__t small { font-weight: 400; color: var(--ink-2); font-size: .95rem; }
   .rv-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; align-items: start; }
   .rv-list > li { display: grid; }
   .rv-links { margin-top: 28px; align-items: center; gap: 22px; }
