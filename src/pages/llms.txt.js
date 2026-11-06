@@ -35,7 +35,7 @@ export function GET() {
 
 ## Paslaugos ir orientacinės kainos
 ${kainos}
-(Tiksli kaina priklauso nuo darbo apimties ir sudėtingumo; preliminari kaina pagal nuotraukas, tiksli apžiūrėjus vietoje. Šakų ir medienos išvežimas tik Kaune ir Kauno r.)
+(Tiksli kaina priklauso nuo darbo apimties ir sudėtingumo; preliminari kaina pagal nuotraukas, galutinė sutariama prieš darbą. Šakų ir medienos išvežimas tik Kaune ir Kauno r.)
 
 ## Dažni klausimai
 - Ar dirbate visoje Lietuvoje? Ne. Bazė Kaune, važiuojame iki ${site.zona.km} km aplink. ${site.zona.nevaziuojame}

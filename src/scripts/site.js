@@ -275,7 +275,7 @@
         if (!PHOTO_TYPES.test(typed.type)) { problem = 'Tinka tik nuotraukos: JPG, PNG, WEBP arba HEIC.'; continue; }
         const f = await shrink(typed);
         if (f.size > 10 * MB) { problem = 'Nuotrauka per didelė: viena gali būti iki 10 MB.'; continue; }
-        if (picked.reduce((a, p) => a + p.file.size, 0) + f.size > 24 * MB) { problem = 'Nuotraukos per didelės: visos kartu gali būti iki 24 MB.'; break; }
+        if (picked.reduce((a, p) => a + p.file.size, 0) + f.size > 18 * MB) { problem = 'Nuotraukos per didelės: visos kartu gali būti iki 18 MB.'; break; }
         picked.push({ file: f, url: URL.createObjectURL(f) });
       }
       fileSay(problem); drawFiles();

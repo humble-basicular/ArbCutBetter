@@ -23,7 +23,7 @@ export const procesas = [
   },
   {
     pavadinimas: 'Įvertinimas ir kaina',
-    tekstas: 'Įvertiname darbą (vietoje arba pagal nuotraukas) ir pateikiame aiškią kainą.',
+    tekstas: 'Įvertiname darbą pagal nuotraukas ir pasakome preliminarią kainą.',
     ikona: 'ivertinimas',
   },
   {
@@ -77,7 +77,7 @@ export const duk = [
   },
   {
     klausimas: 'Kiek kainuoja medžio pašalinimas?',
-    atsakymas: 'Medžių pjovimas ir genėjimas — nuo 50 €, kelmų frezavimas — nuo 75 €, išvežimas — nuo 80 €. Galutinė kaina priklauso nuo medžio dydžio, vietos, prieigos ir išvežimo. Darbą įvertiname vietoje arba pagal nuotraukas ar vaizdo įrašą.',
+    atsakymas: 'Medžių pjovimas ir genėjimas — nuo 50 €, kelmų frezavimas — nuo 75 €, išvežimas — nuo 80 €. Galutinė kaina priklauso nuo medžio dydžio, vietos, prieigos ir išvežimo. Darbą įvertiname pagal nuotraukas ar vaizdo įrašą.',
   },
   {
     klausimas: 'Ar dirbate savaitgaliais?',
@@ -90,7 +90,7 @@ export const duk = [
 export const dukPradzia = [
   {
     klausimas: 'Kiek kainuoja nupjauti medį?',
-    atsakymas: 'Medžio pjovimas, genėjimas ir audros padarinių šalinimas kainuoja nuo 50 € už darbą, kelmo frezavimas nuo 75 €, šakų išvežimas nuo 80 €, darbai autobokšteliu nuo 150 €. Kainą lemia medžio dydis, kas aplink jį (namas, tvora, laidai, gatvė), ar privažiuoja autobokštelis ir ar reikia išvežti medieną. Preliminarią kainą pasakome pagal nuotraukas iš kelių pusių, tikslią atvažiavę į vietą.',
+    atsakymas: 'Medžio pjovimas, genėjimas ir audros padarinių šalinimas kainuoja nuo 50 € už darbą, kelmo frezavimas nuo 75 €, šakų išvežimas nuo 80 €, darbai autobokšteliu nuo 150 €. Kainą lemia medžio dydis, kas aplink jį (namas, tvora, laidai, gatvė), ar privažiuoja autobokštelis ir ar reikia išvežti medieną. Preliminarią kainą pasakome pagal nuotraukas iš kelių pusių, o galutinę sutariame prieš darbą.',
     nuoroda: '/kainos',
   },
   {

@@ -10,7 +10,7 @@ import { localBusiness, faqPage, breadcrumbs } from '@data/jsonld.js';
 const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
 const pavyzdys = atsiliepimai.find((a) => a.tekstas && a.tekstas.includes('kaina 470'));
 const duk = [
-  { klausimas: 'Ar galite pasakyti kainą pagal nuotraukas?', atsakymas: 'Dažnai taip. Atsiųskite kelias nuotraukas ar trumpą vaizdo įrašą, kuriame matytųsi medis ir aplinka, — pasakysime preliminarią kainą. Sudėtingesniais atvejais atvažiuojame apžiūrėti.' },
+  { klausimas: 'Ar galite pasakyti kainą pagal nuotraukas?', atsakymas: 'Dažnai taip. Atsiųskite kelias nuotraukas ar trumpą vaizdo įrašą, kuriame matytųsi medis ir aplinka, ir pasakysime preliminarią kainą.' },
   { klausimas: 'Ar kaina gali pasikeisti darbo metu?', atsakymas: 'Kainą ir darbų apimtį sutariame iš anksto. Jei vietoje paaiškėja, kad reikia papildomų darbų, juos aptariame prieš pradėdami.' },
   { klausimas: 'Ar išvežimas įskaičiuotas?', atsakymas: 'Išvežimas Kaune ir Kauno rajone yra atskira paslauga (nuo 80 €). Galime jį įtraukti į bendrą kainą — sutariame iš anksto. Toliau už Kauno rajono medieną sukrauname krūvoje.' },
   { klausimas: 'Kiek kainuoja kelmo pašalinimas?', atsakymas: 'Kelmų frezavimas — nuo 75 €. Kaina priklauso nuo kelmo skersmens, kiekio ir prieigos.', nuoroda: '/paslaugos/kelmu-naikinimas-frezavimas' },
@@ -25,7 +25,7 @@ const duk = [
   <PageHero
     title="Kainos ir kas jas lemia"
     kicker="Orientacinės kainos"
-    lead="Kiekvienas medis kitoks, todėl skelbiame kainas „nuo“ ir aiškiai sakome, kas jas didina. Tikslią kainą pasakome pamatę darbą vietoje arba nuotraukose."
+    lead="Kiekvienas medis kitoks, todėl skelbiame kainas „nuo“ ir aiškiai sakome, kas jas didina. Preliminarią kainą pasakome pagal nuotraukas, galutinę sutariame prieš darbą."
     crumbs={[{ label: 'Kainos' }]}
     photo="azuolai-prie-namo"
     photoAlt="Ąžuolai prie namo, kuriuos prižiūri ArbCut"

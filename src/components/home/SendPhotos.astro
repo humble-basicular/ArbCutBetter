@@ -10,8 +10,8 @@ const subj = encodeURIComponent('Nuotraukos kainai');
 const I = '/assets/v5-brand/raster/icons';
 const steps = [
   { ic: 'step-foto', n: 'Nufotografuokite', p: 'Visą darbo vietą, kas šalia ir kelią iki jos.' },
-  { ic: 'step-siusti', n: 'Atsiųskite', p: 'Pridėkite prie užklausos, siųskite SMS žinute arba el. paštu.' },
-  { ic: 'step-kaina', n: 'Pasakome kainą', p: 'Preliminarią pagal nuotraukas, tikslią atvažiavę į vietą.' },
+  { ic: 'step-siusti', n: 'Atsiųskite', p: 'Pridėkite prie užklausos arba siųskite SMS, Viber ar WhatsApp.' },
+  { ic: 'step-kaina', n: 'Pasakome kainą', p: 'Preliminarią pagal nuotraukas, o galutinę sutariame prieš darbą.' },
   { ic: 'step-atvaziuojame', n: 'Atvažiuojame', p: 'Su autobokšteliu arba virvėmis, sutartą dieną.' },
   { ic: 'step-tvarkinga', n: 'Paliekame tvarkingai', p: 'Kaune ir Kauno r. šakas išvežame fiskaru, kitur sukrauname krūvomis.' },
 ];
@@ -47,7 +47,7 @@ const steps = [
           <blockquote><p>„{valstietis.citatos.kava}“</p></blockquote>
           <figcaption>Mantas Gerulis, <a href={valstietis.url} target="_blank" rel="noopener">Valstietis.lt</a></figcaption>
         </figure>
-        <p class="snd__p2">Todėl preliminarią kainą pasakome pagal jūsų nuotraukas, o tikslią atvažiavę į vietą. Kainą lemia daugiau nei vien dydis:</p>
+        <p class="snd__p2">Todėl preliminarią kainą pasakome pagal jūsų nuotraukas. Kainą lemia daugiau nei vien dydis:</p>
         <blockquote class="snd__q2"><p>„{valstietis.citatos.sudetingumas}“</p></blockquote>
       </div>
       <div class="snd__what">
@@ -61,7 +61,7 @@ const steps = [
         <div class="snd__act">
           <button type="button" class="btn btn--primary" data-quote data-loc="photos-quote">Gauti preliminarią kainą</button>
         </div>
-        <p class="snd__mail">Arba <a href={site.smsHref} data-loc="photos-sms">SMS žinute {site.telefonas}</a>, <a href={`mailto:${site.elPastas}?subject=${subj}`} data-loc="photos-mail">el. paštu</a>.</p>
+        <p class="snd__mail">Arba <a href={site.smsHref} data-loc="photos-sms">SMS žinute {site.telefonas}</a>, Viber, WhatsApp, <a href={`mailto:${site.elPastas}?subject=${subj}`} data-loc="photos-mail">el. paštu</a>.</p>
       </div>
     </div>
   </div>

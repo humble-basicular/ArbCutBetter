@@ -91,7 +91,7 @@ export const detales = {
       'Medis kapinėse ar prie tvoros, kur reikia ypač atsargiai',
     ],
     eiga: [
-      'Apžiūrime medį ir aplinką vietoje arba pagal jūsų nuotraukas.',
+      'Įvertiname medį ir aplinką pagal jūsų nuotraukas.',
       'Parenkame būdą: alpinistinė įranga, autobokštelis arba abu.',
       'Pjauname nuo viršūnės dalimis, šakas ir kamieno atkarpas nuleidžiame kontroliuotai.',
       'Sutvarkome: Kaune ir Kauno rajone galime išvežti medieną, toliau ją sukrauname krūvoje.',
@@ -106,7 +106,7 @@ export const detales = {
       {
         klausimas: 'Ar galite pjauti medį prie elektros linijų?',
         atsakymas:
-          'Taip, turime patirties dirbti šalia elektros linijų ir pastatų. Medį pjauname dalimis ir nuleidžiame virvėmis. Konkrečią situaciją aptariame apžiūrėję vietą ar nuotraukas.',
+          'Taip, turime patirties dirbti šalia elektros linijų ir pastatų. Medį pjauname dalimis ir nuleidžiame virvėmis. Konkrečią situaciją aptariame pamatę nuotraukas.',
       },
       {
         klausimas: 'Ar reikia leidimo nupjauti medį savo sklype?',
@@ -117,7 +117,7 @@ export const detales = {
       {
         klausimas: 'Kiek kainuoja nupjauti medį?',
         atsakymas:
-          'Kaina prasideda nuo 50 €, bet galutinė suma priklauso nuo medžio dydžio, vietos ir to, ar reikia išvežti medieną. Tikslią kainą pasakome įvertinę darbą.',
+          'Kaina prasideda nuo 50 €, bet galutinė suma priklauso nuo medžio dydžio, vietos ir to, ar reikia išvežti medieną. Preliminarią kainą pasakome pagal nuotraukas.',
         nuoroda: '/kainos',
       },
     ],
@@ -189,7 +189,7 @@ export const detales = {
       'Norite medį išsaugoti, bet sumažinti riziką',
     ],
     eiga: [
-      'Apžiūrime medį ir aptariame, ką norite pasiekti.',
+      'Pagal nuotraukas įvertiname medį ir aptariame, ką norite pasiekti.',
       'Paaiškiname, kurias šakas siūlome šalinti ir kodėl.',
       'Genime iš lajos vidaus alpinistine įranga arba nuo autobokštelio.',
       'Surenkame šakas; Kaune ir Kauno rajone galime jas išvežti.',
@@ -231,7 +231,7 @@ export const detales = {
       'Matomas įtrūkimas šakų išsišakojime',
     ],
     eiga: [
-      'Apžiūrime medį ir įvertiname, ar sistema tinka.',
+      'Pagal nuotraukas įvertiname medį ir aptariame, ar sistema tinka.',
       'Pasiūlome sprendimą ir aptariame kainą.',
       'Sumontuojame sistemą lajoje.',
       'Vėliau sistemą galime patikrinti ir prižiūrėti.',
@@ -242,7 +242,7 @@ export const detales = {
       {
         klausimas: 'Ar stabilizavimas tinka kiekvienam medžiui?',
         atsakymas:
-          'Ne. Kiekvienas atvejis vertinamas atskirai — kartais saugiau medį apgenėti ar pašalinti. Apžiūrėję pasakysime, kas jūsų atveju prasminga.',
+          'Ne. Kiekvienas atvejis vertinamas atskirai — kartais saugiau medį apgenėti ar pašalinti. Pamatę nuotraukas pasakysime, kas jūsų atveju prasminga.',
       },
     ],
     nuotraukos: [G(46), G(2), G(17)],
@@ -336,7 +336,7 @@ export const detales = {
       {
         klausimas: 'Kiek kainuoja gyvatvorės karpymas?',
         atsakymas:
-          'Paprastai nuo 2 iki 7 € už bėginį metrą — priklauso nuo aukščio, pločio ir ilgio. Tikslią kainą sutariame pamatę gyvatvorę ar jos nuotrauką.',
+          'Paprastai nuo 2 iki 7 € už bėginį metrą — priklauso nuo aukščio, pločio ir ilgio. Kainą sutariame pamatę gyvatvorės nuotrauką.',
       },
     ],
     nuotraukos: [G(77), G(74), G(75), G(79)],
@@ -443,7 +443,7 @@ export const detales = {
       {
         klausimas: 'Ar dirbate ant daugiaaukščių fasadų?',
         atsakymas:
-          'Taip, kai autobokštelis nepasiekia, dirbame alpinistine įranga. Konkretų darbą aptariame pamatę vietą.',
+          'Taip, kai autobokštelis nepasiekia, dirbame alpinistine įranga. Konkretų darbą aptariame pamatę nuotraukas.',
       },
     ],
     nuotraukos: [G(48), G(49), G(53), G(57)],

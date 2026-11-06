@@ -87,7 +87,7 @@ const chat = variant === 'chat';
           <p class="qf__filemsg" data-files-msg role="status" hidden></p>
         </div>
       )}
-      {!short && <p class="qf__note">Nuotraukas galite atsiųsti ir SMS žinute <a href={site.smsHref}>{site.telefonas}</a> arba el. paštu <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a>. Pagal jas kainą pasakome tiksliau.</p>}
+      {!short && <p class="qf__note">Nuotraukas galite atsiųsti ir SMS, Viber ar WhatsApp numeriu <a href={site.smsHref}>{site.telefonas}</a> arba el. paštu <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a>. Pagal jas kainą pasakome tiksliau.</p>}
     </>
   )}
   {!PREVIEW && <div class="qf__ts" data-turnstile data-sitekey={site.turnstileSiteKey}></div>}

@@ -49,11 +49,11 @@ export const straipsniai = [
         <li>Toliau nuo Kauno šakas ir medieną sukrauname tvarkingomis krūvomis jūsų sklype.</li>
       </ul>
       <h2>Kaip sužinoti savo kainą</h2>
-      <p>Preliminarią kainą pasakome pagal nuotraukas iš kelių pusių, tikslią atvažiavę į vietą. Kainą ir darbų apimtį sutariame prieš pradedant. Daugiau: <a href="/kainos">kainos ir kas jas lemia</a>.</p>
+      <p>Atsiųskite nuotraukų iš kelių pusių, ir pasakysime preliminarią kainą. Kainą ir darbų apimtį sutariame prieš pradedant. Daugiau: <a href="/kainos">kainos ir kas jas lemia</a>.</p>
     `,
     duk: [
       { klausimas: 'Koks mažiausias ArbCut medžio pjovimo įkainis?', atsakymas: `Medžio pjovimas ${kaina('avariniu-medziu-pjovimas')} už darbą. Galutinė kaina priklauso nuo medžio dydžio, vietos, prieigos ir to, ar reikia išvežti medieną.` },
-      { klausimas: 'Ar galite pasakyti kainą pagal nuotraukas?', atsakymas: 'Dažnai taip: preliminarią kainą pasakome pagal nuotraukas iš kelių pusių, tikslią atvažiavę į vietą.' },
+      { klausimas: 'Ar galite pasakyti kainą pagal nuotraukas?', atsakymas: 'Taip. Preliminarią kainą pasakome pagal nuotraukas iš kelių pusių, o galutinę sutariame prieš pradedant darbą.' },
       { klausimas: 'Ar išvežimas įskaičiuotas į kainą?', atsakymas: 'Išvežimas yra atskira paslauga ir atliekamas tik Kaune ir Kauno rajone. Galime jį įtraukti į bendrą kainą, tai sutariame iš anksto.' },
     ],
   },
@@ -110,21 +110,21 @@ export const straipsniai = [
     data: PASKELBTA,
     skaitymas: '4 min',
     turinys: `
-      <p>Pavojingas medis ne visada atrodo akivaizdžiai blogai. Kartais požymiai subtilūs, todėl verta žinoti, į ką atkreipti dėmesį — ypač jei medis auga prie namo, automobilio ar tako.</p>
+      <p>Pavojingas medis ne visada atrodo akivaizdžiai blogai. Kartais požymiai subtilūs, todėl verta žinoti, į ką atkreipti dėmesį, ypač jei medis auga prie namo, automobilio ar tako.</p>
       <h2>Įspėjamieji ženklai</h2>
       <ul>
-        <li><strong>Staigus pakrypimas</strong> — jei medis neseniai pakrypo arba prie šaknų pakilo žemė.</li>
-        <li><strong>Įtrūkimai kamiene ar šakų išsišakojimuose</strong> — gilūs plyšiai rodo silpną vietą.</li>
-        <li><strong>Sausos, nulūžusios šakos</strong> lajoje — jos gali nukristi per vėją.</li>
-        <li><strong>Grybai ar puvinys</strong> prie kamieno pagrindo — ženklas, kad mediena yra pažeista.</li>
-        <li><strong>Tuščiavidurė kamieno dalis</strong> arba lupanti žievė.</li>
+        <li><strong>Staigus pakrypimas:</strong> medis neseniai pakrypo arba prie šaknų pakilo žemė.</li>
+        <li><strong>Įtrūkimai kamiene ar šakų išsišakojimuose:</strong> gilūs plyšiai rodo silpną vietą.</li>
+        <li><strong>Sausos, nulūžusios šakos</strong> lajoje: jos gali nukristi per vėją.</li>
+        <li><strong>Grybai ar puvinys</strong> prie kamieno pagrindo: ženklas, kad mediena pažeista.</li>
+        <li><strong>Tuščiavidurė kamieno dalis</strong> arba besilupanti žievė.</li>
       </ul>
       <h2>Ką daryti pastebėjus</h2>
-      <p>Ne kiekvieną pavojingą medį būtina pašalinti — kartais pakanka <strong>genėjimo</strong> arba <strong>lajos stabilizavimo sistemos</strong>, kuri suriša šakas ir sumažina lūžimo riziką. Sprendimą geriausia priimti įvertinus medį iš arti.</p>
-      <p>Jei matote bent vieną iš šių ženklų ir medis stovi šalia pastato ar tako — nedelskite. Atsiųskite nuotrauką arba paskambinkite, ir įvertinsime, ar medį galima išsaugoti, ar saugiau jį pašalinti.</p>
+      <p>Ne kiekvieną pavojingą medį būtina pašalinti. Kartais pakanka <strong>genėjimo</strong> arba <strong>lajos stabilizavimo sistemos</strong>, kuri suriša šakas ir sumažina lūžimo riziką. Sprendimą geriausia priimti pamačius medį iš kelių pusių.</p>
+      <p>Jei matote bent vieną iš šių ženklų ir medis stovi šalia pastato ar tako, nedelskite. Atsiųskite nuotrauką arba paskambinkite, ir įvertinsime, ar medį galima išsaugoti, ar saugiau jį pašalinti.</p>
     `,
     duk: [
-      { klausimas: 'Ar pakrypusį medį visada reikia pjauti?', atsakymas: 'Nebūtinai. Jei medis pakrypo seniai ir yra stabilus, jo pašalinti gali ir nereikėti. Bet jei pakrypo staiga arba prie šaknų pakilo žemė — tai pavojaus ženklas ir medį reikia įvertinti.' },
+      { klausimas: 'Ar pakrypusį medį visada reikia pjauti?', atsakymas: 'Nebūtinai. Jei medis pakrypo seniai ir yra stabilus, jo pašalinti gali ir nereikėti. Bet jei pakrypo staiga arba prie šaknų pakilo žemė, tai pavojaus ženklas ir medį reikia įvertinti.' },
     ],
   },
   {
@@ -137,12 +137,12 @@ export const straipsniai = [
     turinys: `
       <p>Po stiprios audros medis, užvirtęs ant namo ar automobilio, kelia ne tik žalą turtui, bet ir realų pavojų. Štai ką svarbu padaryti.</p>
       <h2>1. Pasirūpinkite saugumu</h2>
-      <p>Pasitraukite nuo pavojingos zonos. Jei pažeistos elektros linijos arba dujotiekis — nesiartinkite ir iškart skambinkite pagalbos tarnyboms. Neilipkite ant užvirtusio medžio ir nebandykite jo pjauti patys — įtempta mediena gali staigiai atšokti.</p>
+      <p>Pasitraukite nuo pavojingos zonos. Jei pažeistos elektros linijos arba dujotiekis, nesiartinkite ir iškart skambinkite pagalbos tarnyboms. Neilipkite ant užvirtusio medžio ir nebandykite jo pjauti patys: įtempta mediena gali staigiai atšokti.</p>
       <h2>2. Užfiksuokite padarinius</h2>
-      <p>Jei saugu, nufotografuokite situaciją — nuotraukos pravers ir specialistui, ir draudimui.</p>
+      <p>Jei saugu, nufotografuokite situaciją: nuotraukos pravers ir specialistui, ir draudimui.</p>
       <h2>3. Kvieskite specialistus</h2>
       <p>Užvirtusio medžio šalinimas yra <strong>aukštos rizikos darbas</strong>: dažnai reikia pjauti įtemptą medieną dalimis, kad nepadidėtų žala. Tai turi atlikti patirties turintis arboristas su tinkama įranga.</p>
-      <p>Užvirtusius ir pavojingai pasvirusius medžius šaliname iki ${site.zona.km} km nuo Kauno, o po darbų sutvarkome teritoriją. Įvykus tokiai situacijai — <strong>skambinkite iškart</strong>, aptarsime greičiausią sprendimą.</p>
+      <p>Užvirtusius ir pavojingai pasvirusius medžius šaliname iki ${site.zona.km} km nuo Kauno, o po darbų sutvarkome teritoriją. Įvykus tokiai situacijai <strong>skambinkite iškart</strong>, aptarsime greičiausią sprendimą.</p>
     `,
     duk: [
       { klausimas: 'Ar galiu pats nupjauti ant namo užvirtusį medį?', atsakymas: 'Nerekomenduojama. Užvirtęs medis būna įtemptas ir pjaunant gali staigiai atšokti ar padidinti žalą. Tokį darbą saugiau patikėti patyrusiam arboristui su tinkama įranga.' },

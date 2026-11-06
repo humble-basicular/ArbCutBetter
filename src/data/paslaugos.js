@@ -60,7 +60,7 @@ export const paslaugos = [
     slug: 'medziu-lajos-stabilizavimas',
     pavadinimas: 'Medžių lajos stabilizavimo sistemos',
     aprasymas: 'Lajos stabilizavimo sistemų montavimas ir priežiūra — išvengsime galimos rizikos žmonėms ir turtui, o medis lieka gyvas.',
-    seo: 'Ne kiekvieną pavojingą medį būtina nupjauti. Kai medis vertingas, bet turi įtrūkusią ar persišakojusią lają, sumontuojame lajos stabilizavimo (atotampų) sistemą, kuri suriša šakas ir sumažina lūžimo riziką per vėją ar apkrovą. Kiekvienas atvejis vertinamas individualiai — apžiūrime medį, pasiūlome sprendimą ir prižiūrime sistemą vėliau. Taip išsaugomas medis ir apsaugomi žmonės bei turtas.',
+    seo: 'Ne kiekvieną pavojingą medį būtina nupjauti. Kai medis vertingas, bet turi įtrūkusią ar persišakojusią lają, sumontuojame lajos stabilizavimo (atotampų) sistemą, kuri suriša šakas ir sumažina lūžimo riziką per vėją ar apkrovą. Kiekvienas atvejis vertinamas individualiai — įvertiname medį, pasiūlome sprendimą ir prižiūrime sistemą vėliau. Taip išsaugomas medis ir apsaugomi žmonės bei turtas.',
     kaina: 'nuo 100 €',
     nuotrauka: '/assets/images/paslaugos/medziu-lajos-stabilizavimas.jpg',
     ikona: 'saugu',
