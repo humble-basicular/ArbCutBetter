@@ -1,0 +1,25 @@
+# Handoff: Thelen sampling and Bears iframe residue closed; build deferred
+From: Codex · To: Codex research lead · Date: 2026-11-06T08:46:00+02:00
+## Objective
+Full ArbCut objective UNFINISHED. Current thread research/verified synthesis/reusable design brain only. Latest user: "dont even start building the site yet, well do that later in a new thread". Do NOT start frontend implementation/build workers or create another thread automatically. Required design brain remains Claude Opus5.5/medium; Codex lead pinnedGPT6.1Sol/high. Site implementation/acceptance/other-engine review/local noindex preview deferred until later user-started build thread. No publish/push/merge/submissions/paidAPIs/sync:auto/sync:atsiliepimai.
+## State
+- 798bcf4: Thelen lead actually opened333newdisplays625mappedsource refs/39newselectedpairs. Combined49pairs407displays770source refs,61savedinteractions inherited. All407display paths/source references verified present. Semantic contrasts/oneoffs/outliers accepted for captured synthesis. Ninearchivepairs sampled;4additionalarticles390firststrip only; unselected rawsegments/live360/keyboard/motion/form/widget availability unverified. External _sheets/callthelen.com/native/{manifest.json,native-stage-remaining.json,lead-ordinal29-closure.json}. No need reopen. Report latest sections supersede historical pending counts.
+- 5393dca: Bears all61remaining selected-page iframeJPGs actually opened separately and hashed.60paintmaptiles,1plumbingrepairMapLibreblank; header contamination and partial business cards explicit. Prior white membership patch remains separately attributed. Combined54selectedpairs956static+62iframe+88savedinteractionJPGs;148iframeJPGsonunselectedroutes remain unviewed. Capturedsamplingaccepted. External _sheets/bearsplumbing.net/lead-ordinal29-iframe-patches.json.
+- ALL research workers terminal/no active children; every research retry cap exhausted. LEAD ONLY residue, NOthird/disguised retry.
+- Remaining unchanged: Glassperts93queueentries semanticdisposition;Veterans22selected223displays395sources+29variants613files;Northface85pages1695files;Greentek200pages3597files315prepareddisplays;Genz138entries2494sources0preparedpending. Need functional oneoffs/two differing examples per REAL template/actualoutliers, not exhaustiveURLbins or restart overview. Puetz semantic/provenance acceptance and baselines HomeFront/TrueAir/Betono/Vensland disposition remain. See reports and current resume index for exact metadata. Smock capturedsampling alreadyaccepted, solecapturedarchive/liveunknowns retained.
+- Global blank summary operational reconstruction complete107active+1archived; historical bytes unknown. Never rerun global blank checker. Raw captures untouched.
+- No site source/public changes or site build/SEO/accessibility/runtime acceptance performed. bb63bd8 preserved37route contract remains binding.
+## Files & artifacts
+Commits798bcf4/5393dca on build/arbcut-v4-complete-20261105 in own worktree. Reports Thelen/Bears, resumeindex, board. This note committed separately below. External raw root ~/.ai-powerhouse/research-captures/arbcut-v4 (multiGB, no delete/masscopy). No overlapping owners/workers.
+## Checks run
+Actual image outputs returned before flags. Thelen407paths770source refs exist;333unique newdisplay paths. Bears61paths/hashes. git diff --check passed; clean worktree after5393dca before this note. No application tests warranted for research-only docs.
+## Pending approvals / questions
+None. Latest app continuation read was paused after user messages, revision arbcut-thelen-sampling-closed-ordinal29. An attempted active scope update was not applied; do not claim active rearming. Save revised remaining work with paused status. Do not automatically override pause/new_message or the user's build deferral.
+## External actions already taken
+No sends/submissions/publish/deploy/push/merge/paidactions/newthreads/workers. Local image inspection and derived metadata writes only.
+## Account / continuation
+06:43UTC Codex76%session42%weekly, reset09:00UTC;Codex2session0weekly81avoid. Claude40%session67weekly;Claude2weekly95avoid. Refresh on next authorized resume. PinGPT6.1Sol/high and requiredClaudeOpus5.5/medium. Full objective not complete. Research milestone advanced; build deferred by user.
+## Next action + owner
+Lead on authorized research continuation: close remaining bounded semantic gates using existing selected evidence; then verified synthesis and Claude design brain ONLY. Prepare complete build handoff later. No frontend delegation before user starts later build scope.
+## Omitted context
+Current .agents/research/v4-reference-study/research-resume-index.json;ordinal25handoff for untouched queues;ordinal21 detailed sitequeues;original2026-11-05-2227handoff;v4-preserved-content-contract.md. User rejects cream/serif ledger, forest/rust/Oswald/slop, pictograms/Unicode phone; preserve facts/order/assets and truthful participation. Existing cost summary is incomplete list-price estimate, not subscription charge; no new agents this ordinal.
