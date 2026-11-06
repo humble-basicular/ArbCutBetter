@@ -345,3 +345,6 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 - User decisions open: logo pick, championship wording, footer credit, Paslaugos.lt logo with its "Nr.1" banner. No push, merge or deploy.
 - Review: Codex gpt-6.1-sol high r1 changes requested (2 findings, fixed in `7ef328d`), r2 approved. Noindex preview: http://localhost:4329.
 - Logo: user relayed that Mantas wants a tree-like logo, not a VensLand copy. Stage `arbcut-v4-tree-logos` delivered `34492ea`, cherry-picked here; four concepts in `public/assets/arbcut-v4-brand/tree/`, shown to the user. Site still uses the placeholder until the user picks; the chosen raster then needs colour clean-up.
+
+## 6 November — v5 full rebuild, STARTING
+- v4 superseded on design by the user. Owner: new top-level Claude Opus 5.5 thread, branch `build/arbcut-v5-site-20261106` from `build/arbcut-v4-site-20261106`. Brief: `.agents/handoffs/2026-11-06-1105-v5-rebuild-brief.md`. Homepage first, then user approval, then the other pages. Reviewer: Codex gpt-6.1-sol high after the full build.
