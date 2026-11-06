@@ -9,6 +9,11 @@ import { atsiliepimuKiekis, atsiliepimuVidurkis, patirtisMetai } from './atsilie
 /* Peržiūros režimas (PUBLIC_PREVIEW=1): noindex, forma neišsiunčia, be sekimo. */
 export const PREVIEW = import.meta.env.PUBLIC_PREVIEW === '1';
 
+/* Viešas leidimas be Turnstile rakto neleidžiamas: forma be apsaugos sulauktų šiukšlių. */
+if (import.meta.env.PROD && !PREVIEW && !import.meta.env.PUBLIC_TURNSTILE_SITE_KEY) {
+  throw new Error('Trūksta PUBLIC_TURNSTILE_SITE_KEY. Žr. .agents/research/v5-form-launch-steps.md');
+}
+
 export const site = {
   pavadinimas: 'ArbCut',
   savininkas: 'Mantas Gerulis',
@@ -55,9 +60,10 @@ export const site = {
     'Kvalifikuotas arboristas aukštalipys. Medžių pjovimas, genėjimas, pavojingų medžių šalinimas, darbai su autobokšteliu iki 20 m. Skambinkite: +370 603 66901.',
   ogImage: '/assets/images/2b536cb7-4a17-4d5d-9cad-8733ba243b27.jpg',
 
-  // --- Forma (Web3Forms — IŠSAUGOTI raktai iš veikiančios svetainės) ---
-  web3formsKey: '5d05475d-520b-4671-bc6e-79848e14dd02',
-  hcaptchaSiteKey: '50b2fe65-b00b-4b9e-ad62-3ba471098be2',
+  // --- Forma: JarvisWeb Cloudflare Worker (gavėjai laikomi Workerio privačioje konfigūracijoje, ne čia) ---
+  formEndpoint: 'https://jarvisweb.lt/t/form',
+  formSite: 'arbcut',
+  turnstileSiteKey: import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '',
 
   // --- Statistika (count-up) — REALŪS skaičiai, sinchronizuojami su paslaugos.lt profiliu ---
   statai: [

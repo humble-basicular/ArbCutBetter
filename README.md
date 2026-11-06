@@ -7,7 +7,7 @@ Statinis Astro puslapis, optimizuotas konversijai (skambučiai / užklausos), SE
 - **Astro 5** (statinis output) + `@astrojs/sitemap`
 - Grynas CSS (dizaino sistema `src/styles/global.css`), vanilla JS (`src/scripts/site.js`)
 - Šriftai: Oswald + Source Sans 3
-- Forma: **Web3Forms** + **hCaptcha** (vieši raktai `src/data/site.js`)
+- Forma: **JarvisWeb Cloudflare Worker** `/t/form` + **Cloudflare Turnstile** (paleidimo žingsniai `.agents/research/v5-form-launch-steps.md`)
 - Hostingas: **Cloudflare Pages**
 
 ## Komandos

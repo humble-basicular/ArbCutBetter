@@ -5,9 +5,9 @@ import { site } from '@data/site.js';
 <BaseLayout title="Ačiū — ArbCut" description="Ačiū už užklausą — susisieksime artimiausiu metu." noindex={true}>
   <section class="ok">
     <div class="wrap ok__in">
-      <p class="kicker">Užklausa gauta</p>
-      <h1>Ačiū! Susisieksime artimiausiu metu.</h1>
-      <p class="lead">Jei reikia skubiai, skambinkite tiesiogiai.</p>
+      <p class="kicker" data-ok-k>Užklausa gauta</p>
+      <h1 data-ok-h>Ačiū! Susisieksime artimiausiu metu.</h1>
+      <p class="lead" data-ok-p>Jei reikia skubiai, skambinkite tiesiogiai.</p>
       <div class="btn-row">
         <a class="btn btn--primary" href={site.telefonasHref} data-loc="success-card"><span class="btn__num">{site.telefonas}</span></a>
         <a class="btn btn--line" href="/">Į pradžią</a>
@@ -15,6 +15,15 @@ import { site } from '@data/site.js';
     </div>
   </section>
 </BaseLayout>
+<script>
+  /* Workeris klaidos atveju grąžina ?klaida=1: nesakome „gavome“, jei negavome */
+  if (new URLSearchParams(location.search).has('klaida')) {
+    const set = (a, t) => { const e = document.querySelector(a); if (e) e.textContent = t; };
+    set('[data-ok-k]', 'Nepavyko išsiųsti');
+    set('[data-ok-h]', 'Užklausa neišsiųsta.');
+    set('[data-ok-p]', 'Paskambinkite, ir viską suderinsime telefonu.');
+  }
+</script>
 <style>
   .ok { background: var(--spruce-100); }
   .ok__in { display: grid; gap: 20px; justify-items: start; padding-block: clamp(72px, 12vw, 150px); }

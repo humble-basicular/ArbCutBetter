@@ -90,9 +90,50 @@
     dlg.addEventListener('close', () => { lastTrigger && lastTrigger.focus && lastTrigger.focus(); });
   }
 
-  /* Formos: validacija; peržiūroje — niekur nesiunčiama */
+  /* Turnstile įkeliamas tik pirmą kartą palietus formą, kad nestabdytų puslapio */
+  let tsScript;
+  const turnstileApi = () => tsScript || (tsScript = new Promise((ok, no) => {
+    if (window.turnstile) { ok(window.turnstile); return; }
+    const s = document.createElement('script');
+    s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+    s.async = true;
+    s.onload = () => (window.turnstile ? ok(window.turnstile) : no(new Error('turnstile')));
+    s.onerror = () => { tsScript = null; no(new Error('turnstile')); };
+    document.head.append(s);
+  }));
+  /* Iš kur atėjo žmogus: tik šaltinio klasė ir pirmas kelias, be nuorodų ir asmens duomenų (Workerio kontraktas) */
+  const safePath = (p) => (/^\/(?!\/)[/a-zA-Z0-9_~.%-]*$/.test(p) ? p.slice(0, 120) : '');
+  const firstTouch = () => {
+    const key = 'arbcut-first-touch';
+    try { const s = JSON.parse(sessionStorage.getItem(key)); if (s && s.source) return s; } catch (e) { /* nėra */ }
+    const q = new URLSearchParams(window.location.search);
+    let host = '';
+    try { host = document.referrer ? new URL(document.referrer).hostname.replace(/^www\./, '') : ''; } catch (e) { /* nėra */ }
+    const is = (d) => host === d || host.endsWith('.' + d);
+    let source = 'directunknown';
+    if (['gclid', 'gbraid', 'wbraid', 'gad_source'].some((k) => q.has(k))) source = 'GoogleAds';
+    else if (host && host !== window.location.hostname.replace(/^www\./, '')) {
+      if (is('chatgpt.com') || is('chat.openai.com')) source = 'ChatGPT';
+      else if (is('perplexity.ai')) source = 'Perplexity';
+      else if (is('copilot.microsoft.com')) source = 'Copilot';
+      else if (is('gemini.google.com')) source = 'Gemini';
+      else if (is('claude.ai')) source = 'Claude';
+      else if (/^google\.[a-z.]+$/.test(host)) source = 'organicGoogle';
+      else if (is('bing.com')) source = 'Bing';
+      else if (['facebook.com', 'instagram.com', 'linkedin.com', 't.co', 'twitter.com', 'x.com', 'tiktok.com', 'youtube.com'].some(is)) source = 'social';
+      else source = 'otherhost';
+    }
+    if ((source === 'directunknown' || source === 'otherhost') && [...q.keys()].some((k) => /^utm_/i.test(k))) source = 'utm';
+    const t = { source, path: safePath(window.location.pathname) };
+    try { sessionStorage.setItem(key, JSON.stringify(t)); } catch (e) { /* nebūtina */ }
+    return t;
+  };
+  const touch = firstTouch();
+
+  /* Formos: validacija, siuntimas į Workerį; peržiūroje niekur nesiunčiama */
   $$('form.qf').forEach((form) => {
-    const err = $('.qf__err', form);
+    const err = $('.qf__err:not([data-send-err])', form);
+    const sendErr = $('[data-send-err]', form);
     const done = $('.qf__done', form);
     const required = $$('[required]', form);
     required.forEach((el) => el.addEventListener('input', () => {
@@ -114,13 +155,11 @@
     };
     /* Žemėlapio nuoroda Mantui: tiksli, jei paspausta „Mano vieta“, kitaip paieška pagal įrašytą adresą */
     const addr = $('input[data-addr]', form);
-    const mapField = $('[data-addr-map]', form);
     const mapLink = () => {
-      if (!addr || !mapField) return '';
+      if (!addr) return '';
       const q = addr.value.trim();
-      mapField.value = addr.dataset.coords ? 'https://www.google.com/maps?q=' + addr.dataset.coords
+      return addr.dataset.coords ? 'https://www.google.com/maps?q=' + addr.dataset.coords
         : q ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q) : '';
-      return mapField.value;
     };
     /* Vienu paspaudimu: naršyklės vieta → adresas (Photon). Nepavykus lieka rankinis įvedimas. */
     const loc = $('[data-locate]', form);
@@ -163,26 +202,72 @@
         if (!valid()) { e.preventDefault(); return; }
         const val = (n) => { const f = form.elements[n]; return f ? f.value.trim() : ''; };
         const body = ['Sveiki, norėčiau sužinoti kainą.',
-          val('Paslauga') && 'Paslauga: ' + val('Paslauga'),
-          'Darbas: ' + val('Žinutė'),
-          val('Vietovė') && 'Adresas: ' + val('Vietovė'),
-          mapLink() && 'Žemėlapis: ' + mapField.value,
-          val('Vardas') && 'Vardas: ' + val('Vardas'),
-          'Tel.: ' + val('Telefonas')].filter(Boolean).join('\n');
+          val('service') && 'Paslauga: ' + val('service'),
+          'Darbas: ' + val('message'),
+          val('location') && 'Adresas: ' + val('location'),
+          mapLink() && 'Žemėlapis: ' + mapLink(),
+          val('name') && 'Vardas: ' + val('name'),
+          'Tel.: ' + val('phone')].filter(Boolean).join('\n');
         smsBtn.href = smsBtn.dataset.sms + '?&body=' + encodeURIComponent(body);
       });
     }
-    form.addEventListener('submit', (e) => {
-      if (!valid()) { e.preventDefault(); return; }
-      mapLink();
+    /* Turnstile: nematomas, kol Cloudflare nepaprašo patvirtinimo. Po kiekvieno bandymo žetonas keičiamas. */
+    const tsBox = $('[data-turnstile]', form);
+    const started = Date.now();
+    let widget, token = '', waiting = [];
+    const gotToken = (t) => { token = t; waiting.splice(0).forEach((f) => f(t)); };
+    const armTurnstile = () => {
+      if (!tsBox || widget !== undefined) return Promise.resolve();
+      return turnstileApi().then((ts) => {
+        if (widget !== undefined) return;
+        widget = ts.render(tsBox, {
+          sitekey: tsBox.dataset.sitekey, appearance: 'interaction-only', size: 'flexible', language: 'lt',
+          callback: gotToken,
+          'expired-callback': () => { token = ''; ts.reset(widget); },
+          'error-callback': () => { gotToken(''); },
+        });
+      });
+    };
+    if (tsBox) form.addEventListener('focusin', () => { armTurnstile().catch(() => {}); }, { once: true });
+    const getToken = async () => {
+      if (!tsBox) return '';
+      await armTurnstile();
+      return token || new Promise((res) => { waiting.push(res); setTimeout(() => res(''), 15000); });
+    };
+    const send = async () => {
+      const data = new FormData(form);
+      const map = mapLink();
+      if (map) data.set('message', data.get('message').trim() + '\n\nŽemėlapis: ' + map);
+      data.set('source', touch.source);
+      if (touch.path) data.set('landing_path', touch.path);
+      const page = safePath(window.location.pathname);
+      if (page) data.set('page', page);
+      data.set('elapsed_ms', String(Math.min(86400000, Date.now() - started)));
+      const t = await getToken().catch(() => '');
+      if (t) data.set('cf-turnstile-response', t);
+      const r = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+      return r.ok;
+    };
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!valid() || form.classList.contains('is-submitting')) return;
       if (form.dataset.preview === '1') {
-        e.preventDefault();
         form.classList.add('is-done');
         if (done) { done.hidden = false; done.focus(); }
         window.__arbcutPreviewSubmits = (window.__arbcutPreviewSubmits || 0) + 1;
         return;
       }
       form.classList.add('is-submitting');
+      if (sendErr) sendErr.hidden = true;
+      let ok = false;
+      try { ok = await send(); } catch (x) { ok = false; }
+      form.classList.remove('is-submitting');
+      token = '';
+      if (widget !== undefined && window.turnstile) { try { window.turnstile.reset(widget); } catch (x) { /* kitas bandymas užkraus iš naujo */ } }
+      if (ok) {
+        form.classList.add('is-done');
+        if (done) { done.hidden = false; done.focus(); }
+      } else if (sendErr) sendErr.hidden = false;
     });
   });
   /* Nuotraukų peržiūra (lightbox) — grupė pagal artimiausią [data-lb-group] */
