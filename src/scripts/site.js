@@ -132,9 +132,9 @@
       loc.addEventListener('click', () => {
         if (loc.getAttribute('aria-busy') === 'true') return;
         loc.setAttribute('aria-busy', 'true'); say('Nustatome vietą…');
+        const before = addr.value; /* nuo paspaudimo: jei žmogus rašo pats, rezultatas atmetamas */
         navigator.geolocation.getCurrentPosition(async (pos) => {
           const { latitude: lat, longitude: lon, accuracy } = pos.coords;
-          const before = addr.value;
           const point = lat.toFixed(5) + ',' + lon.toFixed(5);
           let found = '';
           try {
@@ -145,7 +145,7 @@
             if (p) found = [[p.street, p.housenumber].filter(Boolean).join(' '), p.city || p.town || p.village || p.district || p.county].filter(Boolean).join(', ');
           } catch (e) { /* lieka koordinatės */ }
           loc.removeAttribute('aria-busy');
-          if (addr.value !== before) return; /* žmogus jau rašo pats */
+          if (addr.value !== before) { say(''); return; }
           addr.value = found || point.replace(',', ', ');
           addr.dataset.coords = point;
           say(accuracy > 500 ? 'Vieta apytikslė. Patikslinkite adresą.' : 'Vieta nustatyta. Patikrinkite adresą.');
