@@ -35,7 +35,7 @@ const foto = {
   'lietvamzdziu-stogo-valymas': ['autobokstelis-prie-namo', 'Autobokštelis prie namo stogo', '70% 30%'],
 }[m.paslauga] || [];
 const faq = [
-  { klausimas: `Kaip greitai galite atvykti ${v.kur}?`, atsakymas: atvykimas(v) },
+  { klausimas: `Kaip planuojate darbus ${v.kur}?`, atsakymas: atvykimas(v) },
   { klausimas: `Ar išvežate šakas ${v.kur}?`, atsakymas: isvezimas(v) },
   ...d.duk,
 ];
@@ -73,6 +73,7 @@ const schemas = [
         </div>
         <div class="mp__block">
           <h2>Darbai {v.kur}</h2>
+          {v.tekstas && <p>{v.tekstas}</p>}
           <p>{atvykimas(v)} {isvezimas(v)}</p>
           <p class="mp__links">
             <a class="link-arrow" href={`/paslaugos/${m.paslauga}`}>Apie paslaugą plačiau</a>
