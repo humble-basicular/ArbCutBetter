@@ -11,10 +11,10 @@ Today: 12 services, 9 town pages. All town pages are `medziu-pjovimas-<miestas>`
 | Batch | Pairs | Decision | Basis | Blocker |
 |---|---|---|---|---|
 | Existing | medžių pjovimas × 9 towns | Keep, improve | Live URLs stay | None |
-| 1 | medžių genėjimas × 9 towns | Create (9) | Gap named by user; `/paslaugos/medziu-genejimas/` exists; separate intent from cutting | Mantas confirms he prunes in each town |
+| 1 | medžių genėjimas × 11 towns | Create (11) | Gap named by user; `/paslaugos/medziu-genejimas/` exists; separate intent from cutting | Mantas confirms he prunes in each town |
 | 2 | kelmų frezavimas, darbai su autobokšteliu, gyvatvorių karpymas, lietvamzdžių ir stogo valymas × Kaunas | Create (4) | Base city, equipment on hand, shortest travel | Mantas confirms priority |
 | 3 | Batch 2 services × Vilnius, Panevėžys, Marijampolė, Alytus, Jonava, Kėdainiai | Decide later | Expand only on enquiries and batch 1 and 2 results | Needs data |
-| Hold | Any service × Klaipėda, Šiauliai | Do not create yet | Brain lists them as major cities, but coverage is unconfirmed; earlier site text said too far | Mantas confirms coverage |
+| Added 6 Nov | Klaipėda, Šiauliai | Now served | User relayed from Mantas: not too far. Town pages added; included in batch 1 | None |
 | Group | avarinis pjovimas, audros išverstų medžių šalinimas | Group into town cutting pages | Same intent as cutting; avoids duplicate targets | None |
 | Exclude | šakų išvežimas outside Kaunas and Kauno r. | No page | Site states removal only in Kaunas and Kauno r. | None |
 | Later | dažymo darbai, iškabų montavimas, lajos stabilizavimas, kiti aukštuminiai | No city pages now | Low local intent guess; revisit with data | Needs data |
