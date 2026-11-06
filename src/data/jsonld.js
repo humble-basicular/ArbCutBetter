@@ -14,11 +14,11 @@ const telBare = site.telefonasHref.replace('tel:', '');
 const areaServed = [
   { '@type': 'AdministrativeArea', name: 'Kauno apskritis' },
   ...site.vietoves.map((v) => ({ '@type': 'City', name: v.miestas })),
-  /* „Kaunas, +200 km aplink“ — kaip Paslaugos.lt profilyje */
+  /* „Kaunas, +150 km aplink“: sprendimas 2026-11-06 (Paslaugos.lt profilyje dar +200 km) */
   {
     '@type': 'GeoCircle',
     geoMidpoint: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
-    geoRadius: 200000,
+    geoRadius: 150000,
   },
 ];
 

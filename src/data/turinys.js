@@ -111,6 +111,6 @@ export const dukPradzia = [
   },
   {
     klausimas: 'Kada galite atvažiuoti ir kiek toli važiuojate?',
-    atsakymas: 'Dirbame kasdien 08:00–18:00, ir savaitgaliais. Bazė Kaune, važiuojame iki 200 km aplink. Tolimesnį darbą suderiname iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.',
+    atsakymas: 'Dirbame kasdien 08:00–18:00, ir savaitgaliais. Bazė Kaune, važiuojame iki 150 km aplink. Tolimesnį darbą suderiname iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.',
   },
 ];

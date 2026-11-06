@@ -47,7 +47,7 @@ const turinys = {
     tekstas:
       'Kazlų Rūda ir jos apylinkės — miškingas kraštas, kuriame dirbame reguliariai (čia mus rekomendavo ir klientai). Pjauname aukštus, pavojingus medžius prie namų ir sodybų, genime, naikiname kelmus bei karpome gyvatvores. Aukščiui pasiekti naudojame autobokštelį ir alpinistinę įrangą, o aplinką po darbų tvarkingai sutvarkome.',
   },
-  // Pridėta kliento prašymu (2026-10). Tauragė — Kaunas +200 km aptarnavimo zonoje (paslaugos.lt profilis).
+  // Pridėta kliento prašymu (2026-10). Tauragė — Kaunas +150 km aptarnavimo zonoje.
   'medziu-pjovimas-taurage': {
     intro: 'Tauragėje ir Tauragės krašte — pavojingi medžiai, genėjimas ir kelmai.',
     tekstas:

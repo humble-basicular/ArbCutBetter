@@ -93,7 +93,7 @@ export const site = {
     skambuciai: '1 192',
     laiskai: '108',
     nuotraukos: 93,
-    spindulys: 'Kaunas, +200 km aplink',
+    spindulys: 'Kaunas, +150 km aplink',
     kainaNuo: 'nuo 20 €/h',
   },
   atsiliepimai: {
