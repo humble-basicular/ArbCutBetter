@@ -133,7 +133,8 @@ const chat = variant === 'chat';
   .qf__loc img { width: 22px; height: 22px; }
   .qf__locmsg { font-size: .95rem; color: var(--ink-2); }
   .qf__smsbtn { font-weight: 800; color: var(--spruce-900); text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 4px; padding-block: 8px; }
-  .qf__files { gap: 8px; }
+  .qf__files { gap: 8px; position: relative; }
+  .qf__files input[type='file'] { width: 1px; min-height: 0; padding: 0; border: 0; }
   .qf__pick { display: flex; align-items: center; gap: 10px; min-height: 54px; padding: 10px 14px; border: 2px dashed #A9B3AD; border-radius: var(--radius); background: #fff; font-weight: 800; color: var(--spruce-900); cursor: pointer; transition: border-color var(--t), background var(--t); }
   .qf__pick:hover { border-color: var(--spruce-900); background: var(--spruce-50); }
   .qf__pick img { width: 24px; height: 24px; flex: 0 0 auto; }

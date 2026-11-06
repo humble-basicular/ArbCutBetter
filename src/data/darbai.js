@@ -13,7 +13,7 @@ const irasai = [
   {
     vardas: 'Gintautas Cesevičius', data: '2026-10-15', pavadinimas: 'Didelė eglė šalia namo',
     problema: 'Reikėjo nupjauti didelę eglę šalia namo.',
-    salygos: 'Medį nuversti nebuvo kur: šalia stovi namas.',
+    salygos: 'Medis augo šalia namo.',
     darbas: 'Eglę nuleidome žemyn dalimis, o baigę sutvarkėme aplinką.',
     nuoroda: { href: '/paslaugos/avariniu-medziu-pjovimas', tekstas: 'Pavojingų medžių pjovimas' },
   },

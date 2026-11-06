@@ -375,3 +375,7 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 - 6 Nov 22:05 EET — Correction: Klaipėda and Šiauliai are out of bounds for Mantas (lead misread "ne per toli"). Removed 2 town pages and 2 genėjimas pages, redrew zone and fallback. Open question for Mantas: "iki 200 km" wording vs Šiauliai being out of bounds. Photo variety proposal given to user, nothing changed.
 - 6 Nov 22:25 EET — Mantas block now uses the photo on the branch (from Paslaugos.lt gallery, watermark removed by Codex with a masked corner repair, 3x Lanczos upscale). Lead compared face, shirt print and corner with the source. Sharper original from Mantas still welcome.
 - 6 Nov 22:40 EET — Service radius wording now 150 km site-wide (user). Mantas block back to the approved cutout: the branch photo is too low-res. Cleaned branch photo stays in history at `a81c491`; swap in when Mantas sends the original. Paslaugos.lt profile still says +200 km.
+
+## 6 November — v5 audit fixes (8 areas), IMPLEMENTED, Codex review running
+- Lead Claude, branch `build/arbcut-v5-site-20261106`, from handoff `~/WebAgency-Biz-worktrees/arbcut-audit-handoff-20261106/.agents/handoffs/2026-11-06-arbcut-v5-audit-fixes.md`.
+- Request (Worker owner, JarvisCo `tracking/`): alert email only counts photos, so Mantas cannot see them; needs attachment or expiring link before launch, or set `features.photoUpload: false`. Steps: `.agents/research/v5-form-launch-steps.md`. No Worker, account or DNS change made.
