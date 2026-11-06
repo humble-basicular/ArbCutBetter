@@ -363,3 +363,4 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 
 ## 6 November — v5 homepage feedback round 2, ACTIVE
 - 6 Nov 18:50 EET — Claude Opus 5.5 lead, branch `build/arbcut-v5-site-20261106`, owns src/**, public/**, new v5 research files, this board. User approved the 16-step plan ("yea implement it"): quote form gains features WITHOUT a redesign; email (Web3Forms) stays the sender until SMS is solved. Other pages stay gated on homepage approval. Reviewer Codex, form logic.
+- 6 Nov 18:55 EET — round 2 implemented at `838f3ec`: quote form features (no redesign), review logos, total rating, map cleanup, hero caption removed, camera icon, 6 new gallery photos plus 1 on homepage, service-by-city page map `.agents/research/v5-service-city-page-map.md` (proposal). Checks in `.agents/research/v5-feedback-ui-checks.md`. Codex review `v5-round2-form-review` r1 running (read-only, codex_codex2). Other pages gated on homepage approval.
