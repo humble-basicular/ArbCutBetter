@@ -1,5 +1,5 @@
 {
-  "generatedAtUTC": "2026-11-05T22:44:14.696845+00:00",
+  "generatedAtUTC": "2026-11-06T01:30:11.639069+00:00",
   "objectiveStatus": "unfinished",
   "activeWorkers": [],
   "scope": "Resume index only, compiled from ordinal21 handoff plus currently present metadata. No image inspections or pending gates waived. Counts in status descriptions are inherited verified milestones, not new visual review.",
@@ -17,9 +17,9 @@
     {
       "site": "theglassperts.com",
       "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/theglassperts.com/native/page-manifest.json",
-      "sha256": "9b9fbff58d04ffeaf1a9977271e18acb842b1ad2c263393b083ac92f29373a75",
+      "sha256": "60bd2637ed44e7b4553aff47fe90f392e64c5372e6a35849d7abf4f3d331e941",
       "owner": "lead",
-      "status": "retry cap exhausted;9 pairs,94 interactions;96 queue entries25prepared displays pending",
+      "status": "lead ordinal23 closed25prepared displays/44sources:115/115displays166sources12queueentries;93originalqueueentries still require inspection or semantic disposition;Homestead desktop render-limited",
       "nativeGateOpen": true,
       "report": ".agents/research/v4-reference-study/bulk-findings-theglassperts.com.md"
     },

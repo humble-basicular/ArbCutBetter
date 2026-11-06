@@ -301,3 +301,8 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 - Codex90%22:41UTC,codex2last97%,no newsubstantialCodexwork. CheckpointpreservesGPT6.1Sol/high;earliestlistedcompatibleCodexreset01:24:17UTC,then02:40UTC. Claude90%/Claude294%session93%weekly;nonewlargeClaude stages. RequiredClaudeOpus5.5mediumdesign/frontendstillwaitsverifiedresearchsynthesisanditscompatibleallowance.
 
 - Ordinal22: resume-index metadata consolidated at 04a3d41;8 current manifests parsed/hashed, no coverage changed. No active workers, lead95%checkpoint; source ordinal21 queues remain.
+
+## Ordinal23 — resumed compatible allowance; lead Glassperts native increment
+- Codex2 live session3%, weekly73% at01:27UTC after reset; pinnedGPT6.1Sol/high unchanged. No active workers inherited. Lead owns all capped-stage residues.
+- Lead actually opened Glassperts25pending prepared displays/44newsourceJPGs, then set flags.115/115prepared displays166sources;window-repair/board-up/Homestead join9previouswholepairs,12queueentries inspectedbothwidths. Homesteaddesktop unpainted/capture-limited, no live defect claim. Remaining93originalqueueentries neednative/semantic disposition; fullresearchstillopen. Exactexternal lead-ordinal23-closure.json/report/resumeindex updated.
+- Next bounded Genzretry1 uses existing native session if compatible, sameGPT6.1Sol/high onCodex2;ownsONLYGenzfindings/externalownsiteprogress. Inputs exact7preparedpairs56displays110sources,thenremainingfunctional/semanticgates;lead retainsGlassperts and all other files. No duplicateworker/thirdretry on cappedstages.
