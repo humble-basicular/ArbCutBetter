@@ -1,18 +1,7 @@
 {
-  "generatedAtUTC": "2026-11-06T01:44:18.159628+00:00",
+  "generatedAtUTC": "2026-11-06T01:52:12.827198+00:00",
   "objectiveStatus": "unfinished",
-  "activeWorkers": [
-    {
-      "stage": "v4-genz-native-closure",
-      "attempt": "final retry2",
-      "taskId": "node:delegated-task:command%3Amcp%3A8b2dde96-7a3c-413c-bfb3-0ffdcd52a044%3Adelegate-task%3Av4-genz-native-closure-20261106-finalretry2-ordinal24",
-      "owner": "codex_codex2 gpt-6.1-sol high",
-      "files": [
-        ".agents/research/v4-reference-study/bulk-findings-genzryan.com.md",
-        "external _sheets/genzryan.com/native"
-      ]
-    }
-  ],
+  "activeWorkers": [],
   "scope": "Resume index only, compiled from ordinal21 handoff plus currently present metadata. No image inspections or pending gates waived. Counts in status descriptions are inherited verified milestones, not new visual review.",
   "sourceHandoff": ".agents/handoffs/2026-11-06-ordinal21-final-worker-checkpoint.md",
   "sites": [
@@ -77,9 +66,9 @@
     {
       "site": "genzryan.com",
       "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/genzryan.com/native/native-remaining.json",
-      "sha256": "d4283ea3304ce1f9816f4c9ed6c707ff3f9a3a42d9de53eed1ea0e69a21ff5f5",
-      "owner": "lead or authorized final retry2",
-      "status": "retry1 verified20pairs285sources147opened/159prepared;148pairs2629sources remain;12prepared unopened;one finalretry2 available",
+      "sha256": "07836b0989a5f2f140a8f7b444bdb1ada60da5f6483f3a69f8a73929ec248721",
+      "owner": "lead; all retries exhausted",
+      "status": "FINALretry2verified thenlead18actualdisplays36sources;30pairs220displays420sources,69interactions+boilerattributed;138entries2494unopened sources,0preparedpending;semanticgates partial",
       "nativeGateOpen": true,
       "report": ".agents/research/v4-reference-study/bulk-findings-genzryan.com.md"
     },
