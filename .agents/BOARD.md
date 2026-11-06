@@ -339,7 +339,9 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 - State: design system, shared components and home sections done at `879b369`; inner pages, C1 checks, Codex review and preview pending. Handoff: `.agents/handoffs/2026-11-06-0915-site-build-checkpoint-1.md`.
 - Reviewer: Codex gpt-6.1-sol high (not started).
 
-## 6 November — v4 site build, IN REVIEW
+## 6 November — v4 site build, REVIEW APPROVED, logo pending
 - Owner: Claude Opus 5.5 lead, thread mcp:d1e11b69…, branch `build/arbcut-v4-site-20261106`. Reviewer: Codex gpt-6.1-sol high (stage `arbcut-v4-site-review`), max 2 rounds. All 37 routes rebuilt on the v4 system; `Icon.astro` removed; logo option 1 via `OPTION` in `Logo.astro`.
 - Lead checks before review: baseline diff vs bb63bd8 clean on 37 routes (title, description, canonical, robots, H1–H3, hrefs, JSON-LD, forms, ids, data-loc); 185 route×width runs at 320–1440 with no overflow or mid-word break; interaction suites pass; contrast scan 0 failures on 6 routes × 2 widths; 0 inline `<svg>` and 0 pictogram glyphs in built HTML.
 - User decisions open: logo pick, championship wording, footer credit, Paslaugos.lt logo with its "Nr.1" banner. No push, merge or deploy.
+- Review: Codex gpt-6.1-sol high r1 changes requested (2 findings, fixed in `7ef328d`), r2 approved. Noindex preview: http://localhost:4329.
+- Logo: user relayed that Mantas wants a tree-like logo, not a VensLand copy. Stage `arbcut-v4-tree-logos` (Codex2, isolated worktree, owns only `public/assets/arbcut-v4-brand/tree/`) running; lead integrates after user sees them.
