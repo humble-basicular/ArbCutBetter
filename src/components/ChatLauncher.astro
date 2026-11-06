@@ -21,7 +21,7 @@ const qa = dukPradzia.slice(0, 4);
   <div class="ask__panel" id="ask-panel" role="dialog" aria-modal="false" aria-labelledby="ask-h" hidden>
     <div class="ask__top">
       <Image class="ask__face ask__face--lg" src={face} alt="" widths={[96, 192]} sizes="52px" format="webp" quality={75} style="object-position:50% 18%" />
-      <div><p id="ask-h" class="ask__h">Klausimas Mantui</p><p class="ask__s">Parašykite klausimą. Skubiai — skambinkite, kasdien 08:00–18:00.</p></div>
+      <div><p id="ask-h" class="ask__h">Klausimas Mantui</p><p class="ask__s">Tai žinutė, ne gyvas pokalbis. Skubiai skambinkite, kasdien 08:00–18:00.</p></div>
       <button type="button" class="ask__x" data-ask-close aria-label="Uždaryti"><span aria-hidden="true"></span></button>
     </div>
     <div class="ask__body">
@@ -48,7 +48,8 @@ const qa = dukPradzia.slice(0, 4);
     const fab = box.querySelector('.ask__fab') as HTMLButtonElement;
     const KEY = 'arbcut-ask-dismissed';
     let ret: HTMLElement | null = null;
-    if (!sessionStorage.getItem(KEY)) setTimeout(() => { if (panel.hidden) hint.hidden = false; }, 6000);
+    /* Telefone kvietimo burbulo nerodome: lieka tik mažas mygtukas, kad nekonkuruotų su turiniu ir skambučio juosta. */
+    if (!sessionStorage.getItem(KEY) && !matchMedia('(max-width: 860px)').matches) setTimeout(() => { if (panel.hidden) hint.hidden = false; }, 6000);
     const open = (from: HTMLElement) => { ret = from; panel.hidden = false; hint.hidden = true; fab.setAttribute('aria-expanded', 'true'); box.classList.add('is-open'); (panel.querySelector('.ask__x') as HTMLElement).focus(); };
     const close = () => { panel.hidden = true; fab.setAttribute('aria-expanded', 'false'); box.classList.remove('is-open'); (ret && ret.isConnected && !ret.closest('[hidden]') ? ret : fab).focus(); };
     box.querySelectorAll<HTMLElement>('[data-ask-open]').forEach((b) => b.addEventListener('click', () => (panel.hidden ? open(b) : close())));
@@ -96,6 +97,8 @@ const qa = dukPradzia.slice(0, 4);
     .ask__fab { width: 54px; height: 54px; }
     .ask__fab img { width: 28px; height: 28px; }
     :global(.is-typing) .ask:not(.is-open) { visibility: hidden; }
+    :global(.js:not(.mact-on)) .ask:not(.is-open) { visibility: hidden; }
+    .ask.is-open { bottom: calc(12px + env(safe-area-inset-bottom)); }
     .ask.is-open .ask__fab { display: none; }
     .ask__panel { max-height: calc(100dvh - 110px - env(safe-area-inset-bottom)); }
   }

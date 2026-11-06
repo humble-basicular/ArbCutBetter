@@ -358,6 +358,27 @@
       } else if (sendErr) sendErr.hidden = false;
     });
   });
+  /* Apatinė juosta telefone: tik kai ekrane nėra pirmo ekrano veiksmų ir užklausos formos,
+     ir kai neatidarytas dialogas, meniu ar klausimo langas. Skambutis visada lieka antraštėje. */
+  const barWatch = $$('.hero__acts, .phero .btn-row, form.qf:not(#ask-form):not(#dialog-form)');
+  const inView = new Set();
+  const askPanel = $('#ask-panel');
+  const quoteDlg = $('#quote-dialog');
+  const syncBar = () => {
+    const covered = (quoteDlg && quoteDlg.open) || (mnav && !mnav.hidden) || (askPanel && !askPanel.hidden);
+    document.documentElement.classList.toggle('mact-on', !inView.size && !covered);
+  };
+  if ('IntersectionObserver' in window) {
+    const barIo = new IntersectionObserver((ents) => {
+      ents.forEach((e) => (e.isIntersecting ? inView.add(e.target) : inView.delete(e.target)));
+      syncBar();
+    }, { rootMargin: '0px 0px -72px 0px' });
+    barWatch.forEach((el) => barIo.observe(el));
+    const mo = new MutationObserver(syncBar);
+    [quoteDlg, mnav, askPanel].forEach((el) => el && mo.observe(el, { attributes: true, attributeFilter: ['open', 'hidden'] }));
+    syncBar();
+  } else document.documentElement.classList.add('mact-on');
+
   /* Nuotraukų peržiūra (lightbox) — grupė pagal artimiausią [data-lb-group] */
   const lb = $('#lightbox');
   let lbItems = [], lbIdx = 0;
