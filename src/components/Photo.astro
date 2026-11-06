@@ -2,11 +2,11 @@
 /* Reali darbo nuotrauka iš src/assets/photos — optimizuojama į WebP keliais pločiais. */
 import { Picture } from 'astro:assets';
 const all = import.meta.glob('../assets/photos/*.jpg', { eager: true });
-const { name, alt, sizes = '100vw', widths = [480, 800, 1200, 1600], loading = 'lazy', position = '50% 50%', class: cls, fetchpriority } = Astro.props;
+const { name, alt, sizes = '100vw', widths = [480, 800, 1200, 1600], loading = 'lazy', position = '50% 50%', class: cls, fetchpriority, quality = 78 } = Astro.props;
 const mod = all[`../assets/photos/${name}.jpg`];
 if (!mod) throw new Error(`Photo not found: ${name}`);
 const img = mod.default;
 const w = widths.filter((x) => x <= img.width);
 if (!w.length || w[w.length - 1] < img.width) w.push(img.width);
 ---
-<Picture src={img} alt={alt} formats={['webp']} fallbackFormat="jpg" widths={w} sizes={sizes} loading={loading} decoding="async" fetchpriority={fetchpriority} class={cls} style={`object-position:${position}`} quality={78} />
+<Picture src={img} alt={alt} formats={['webp']} fallbackFormat="jpg" widths={w} sizes={sizes} loading={loading} decoding="async" fetchpriority={fetchpriority} class={cls} style={`object-position:${position}`} quality={quality} />
