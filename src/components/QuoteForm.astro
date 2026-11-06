@@ -160,5 +160,7 @@ const chat = variant === 'chat';
   .qf__ts { overflow: hidden; }
   .qf__ts:empty { display: none; }
   .qf.is-submitting .qf__btn { opacity: .65; cursor: progress; }
+  .qf.is-submitting .qf__pick { opacity: .55; pointer-events: none; }
+  .qf__thumbs :global(button:disabled) { opacity: .4; }
   @media (max-width: 560px) { .qf__row { grid-template-columns: 1fr; } }
 </style>

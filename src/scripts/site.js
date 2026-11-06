@@ -256,6 +256,7 @@
         img.addEventListener('error', () => { const s = document.createElement('span'); s.className = 'qf__fn'; s.textContent = p.file.name; img.replaceWith(s); });
         const x = document.createElement('button');
         x.type = 'button'; x.textContent = '×'; x.setAttribute('aria-label', 'Pašalinti nuotrauką ' + (i + 1) + ': ' + p.file.name);
+        x.disabled = form.classList.contains('is-submitting');
         x.addEventListener('click', () => {
           URL.revokeObjectURL(p.url);
           picked.splice(i, 1); fileSay(''); drawFiles();
@@ -337,6 +338,12 @@
         return;
       }
       form.classList.add('is-submitting');
+      /* Siunčiant nuotraukų sąrašas užšaldomas: išsiunčiama ir išvaloma tai, ką žmogus matė paspausdamas */
+      const lockFiles = (on) => {
+        if (fileInput) fileInput.disabled = on;
+        if (fileList) $$('button', fileList).forEach((b) => { b.disabled = on; });
+      };
+      lockFiles(true);
       if (sendErr) sendErr.hidden = true;
       const btn = $('.qf__btn', form);
       const label = btn ? btn.textContent : '';
@@ -344,6 +351,7 @@
       let status = 0;
       try { status = await send(); } catch (x) { status = 0; }
       form.classList.remove('is-submitting');
+      lockFiles(false);
       if (btn) btn.textContent = label;
       token = '';
       if (widget !== undefined && window.turnstile) { try { window.turnstile.reset(widget); } catch (x) { /* kitas bandymas užkraus iš naujo */ } }

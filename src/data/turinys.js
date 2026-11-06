@@ -95,7 +95,7 @@ export const dukPradzia = [
   },
   {
     klausimas: 'Ar reikia leidimo nupjauti medį savo sklype?',
-    atsakymas: 'Priklauso nuo medžio. Saugotiną medį nukirsti ar intensyviai genėti (pašalinti daugiau nei 30 % lajos) galima tik su savivaldybės leidimu. Gyvenamosiose teritorijose mieste saugotini, pvz., ąžuolai, uosiai, klevai, liepos, maumedžiai, beržai ir pušys, kurių kamienas 1,3 m aukštyje yra nuo 20 cm skersmens, ne mieste nuo 30 cm. Tujos, tuopos, drebulės ir vaismedžiai saugotini nėra. Savivaldybės turi ir savo sąrašus, todėl prieš pjaudami pasitikrinkite. Mantas LRT.lt sakė: „Mes kertame medžius tik turėdami leidimus.“ Nežinote, ar jūsų medžiui reikia leidimo? Paklauskite skambindami.',
+    atsakymas: 'Priklauso nuo medžio. Saugotiną medį nukirsti ar intensyviai genėti (pašalinti daugiau nei 30 % lajos) galima tik su savivaldybės leidimu. Gyvenamosiose teritorijose mieste saugotini, pvz., ąžuolai, uosiai, klevai, liepos, maumedžiai, beržai ir pušys, kurių kamienas 1,3 m aukštyje yra nuo 20 cm skersmens, ne mieste nuo 30 cm. Pagal Vyriausybės kriterijus tujos, tuopos, drebulės ir vaismedžiai saugotiniems nepriskiriami, tačiau savivaldybės sąrašuose gali būti ir kitų medžių. Todėl prieš pjaudami pasitikrinkite. Mantas LRT.lt sakė: „Mes kertame medžius tik turėdami leidimus.“ Nežinote, ar jūsų medžiui reikia leidimo? Paklauskite skambindami.',
     nuoroda: '/tinklarastis/ar-reikia-leidimo-pjauti-medi',
   },
   {

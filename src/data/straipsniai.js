@@ -75,7 +75,7 @@ export const straipsniai = [
       { pavadinimas: 'Vilniaus miesto savivaldybė: saugotini medžiai privačiuose sklypuose', url: 'https://vilnius.lt/savivaldybe/miesto-pletra/zeldynai/svarbi-informacija-apie-saugotinus-medzius-privaciu-sklypu-savininkams' },
     ],
     turinys: `
-      <p><strong>Trumpas atsakymas:</strong> priklauso nuo medžio rūšies, storio ir vietos. Saugotiną medį nukirsti ar intensyviai genėti galima tik su savivaldybės leidimu, net ir savo sklype. Tujos, tuopos, drebulės ir vaismedžiai saugotini nėra.</p>
+      <p><strong>Trumpas atsakymas:</strong> priklauso nuo medžio rūšies, storio ir vietos. Saugotiną medį nukirsti ar intensyviai genėti galima tik su savivaldybės leidimu, net ir savo sklype. Pagal Vyriausybės kriterijus tujos, tuopos, drebulės ir vaismedžiai saugotiniems nepriskiriami, tačiau savivaldybės sąrašuose gali būti ir kitų medžių.</p>
       <h2>Kurie medžiai saugotini</h2>
       <p>Kriterijus tvirtina Vyriausybė. Pagal Aplinkos ministerijos išaiškinimą gyvenamosiose teritorijose <strong>mieste</strong> saugotini sąraše esantys medžiai (pvz., ąžuolai, uosiai, klevai, liepos, maumedžiai, beržai, pušys) nuo <strong>20 cm</strong> skersmens, <strong>ne mieste</strong> nuo <strong>30 cm</strong>. Skersmuo matuojamas 1,3 m aukštyje. Pajūrio juostoje ribos mažesnės.</p>
       <p>Savivaldybės turi ir savo sąrašus. Pavyzdžiui, Vilniaus taryba saugotinų medžių sąrašą papildė 2026 m. kovo 18 d., todėl vien kriterijų nepakanka: savo medžio statusą pasitikrinkite savivaldybėje.</p>
@@ -86,7 +86,7 @@ export const straipsniai = [
       </ul>
       <p>Dėl leidimo kreipiamasi į savivaldybę. Vilniuje pilnas prašymas nagrinėjamas 20 darbo dienų, kitur terminai gali skirtis. Leidimas gali būti susijęs su atkuriamosios vertės mokėjimu.</p>
       <h2>Kas, jei medis kelia pavojų</h2>
-      <p>Leidimo nereikia, kai darbus būtina atlikti nedelsiant, nes dėl gamtinio, eismo ar kito įvykio saugotinas medis tapo pavojingas žmonėms, turtui, statiniams ar eismui. Tada per 3 darbo dienas raštu pranešama savivaldybei, nurodoma vieta ir pateikiamos 3 nuotraukos. Todėl prieš pjaudami nufotografuokite medį. Jei medis užkrito ant laidų, nelieskite jo ir praneškite elektros tinklų operatoriui.</p>
+      <p>Leidimo nereikia, kai darbus būtina atlikti nedelsiant, nes dėl gamtinio, eismo ar kito įvykio saugotinas medis tapo pavojingas žmonėms, turtui, statiniams ar eismui. Tada per 3 darbo dienas raštu pranešama savivaldybei: nurodoma vieta ir pateikiamos 3 nuotraukos, kuriose matyti vaizdas prieš darbus ir, iš skirtingų pusių, nupjautas, pašalintas ar nugenėtas medis. Todėl fotografuokite ir prieš darbus, ir po jų. Jei medis užkrito ant laidų, nelieskite jo ir praneškite elektros tinklų operatoriui.</p>
       <h2>Kas galioja nuo kovo 15 iki rugpjūčio 1 d.</h2>
       <p>Tai intensyviausias paukščių veisimosi laikotarpis. Tuo metu saugotinų medžių <strong>viešuosiuose želdynuose</strong> kirsti ir intensyviai genėti negalima, išskyrus kai jie kelia pavojų žmonėms, turtui ar eismui. Šakų iki 5 cm skersmens pjūvio vietoje šis draudimas neliečia.</p>
       <p><strong>Privatiems želdynams</strong> draudimas netaikomas: gavęs savivaldybės leidimą, savininkas gali dirbti ir šiuo metu, nors Aplinkos apsaugos departamentas prašo to vengti.</p>
@@ -96,7 +96,7 @@ export const straipsniai = [
       <p>Mantas LRT.lt sakė: „Mes kertame medžius tik turėdami leidimus.“ Jei nesate tikri dėl savo medžio, <a href="/kontaktai">paskambinkite</a>, aptarsime, nuo ko pradėti. Reikia tik sumažinti lają? Žr. <a href="/paslaugos/medziu-genejimas">medžių genėjimas</a>.</p>
     `,
     duk: [
-      { klausimas: 'Ar visada reikia leidimo medžiui pjauti savame sklype?', atsakymas: 'Ne. Leidimo reikia saugotiniems medžiams. Tujos, tuopos, drebulės ir vaismedžiai saugotini nėra. Tikslų medžio statusą pasako savivaldybė.' },
+      { klausimas: 'Ar visada reikia leidimo medžiui pjauti savame sklype?', atsakymas: 'Ne. Leidimo reikia saugotiniems medžiams. Pagal Vyriausybės kriterijus tujos, tuopos, drebulės ir vaismedžiai saugotiniems nepriskiriami, tačiau savivaldybės sąrašuose gali būti ir kitų medžių. Tikslų medžio statusą pasako savivaldybė.' },
       { klausimas: 'Nuo kokio storio medis saugotinas?', atsakymas: 'Gyvenamosiose teritorijose mieste sąraše esantys medžiai saugotini nuo 20 cm skersmens, ne mieste nuo 30 cm. Matuojama 1,3 m aukštyje. Savivaldybės turi ir savo sąrašus.' },
       { klausimas: 'Ar galima pjauti medį nuo kovo 15 iki rugpjūčio 1 d.?', atsakymas: 'Saugotinų medžių viešuosiuose želdynuose šiuo metu kirsti ir intensyviai genėti negalima, išskyrus pavojaus atvejus. Privatiems želdynams šis draudimas netaikomas, bet saugotinam medžiui vis tiek reikia savivaldybės leidimo.' },
       { klausimas: 'Kur sužinoti, ar mano medis saugotinas?', atsakymas: 'Kreipkitės į savo savivaldybės administraciją: ji pasakys medžio statusą ir ar reikia leidimo.' },
