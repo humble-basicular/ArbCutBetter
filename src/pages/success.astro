@@ -1,22 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Icon from '../components/Icon.astro';
 import { site } from '@data/site.js';
 ---
 <BaseLayout title="Ačiū — ArbCut" description="Ačiū už užklausą — susisieksime artimiausiu metu." noindex={true}>
-  <section class="ok on-dark">
+  <section class="ok">
     <div class="wrap ok__in">
       <p class="kicker">Užklausa gauta</p>
       <h1>Ačiū! Susisieksime artimiausiu metu.</h1>
       <p class="lead">Jei reikia skubiai, skambinkite tiesiogiai.</p>
       <div class="btn-row">
-        <a class="btn btn--primary" href={site.telefonasHref} data-loc="success-card"><Icon name="phone" size={18} /> {site.telefonas}</a>
+        <a class="btn btn--primary" href={site.telefonasHref} data-loc="success-card"><span class="btn__num">{site.telefonas}</span></a>
         <a class="btn btn--line" href="/">Į pradžią</a>
       </div>
     </div>
   </section>
 </BaseLayout>
 <style>
-  .ok { background: var(--ink); color: var(--paper); }
-  .ok__in { display: grid; gap: 20px; padding-block: clamp(72px, 12vw, 140px); }
+  .ok { background: var(--spruce-100); }
+  .ok__in { display: grid; gap: 20px; justify-items: start; padding-block: clamp(72px, 12vw, 150px); }
+  .ok h1 { color: var(--spruce-900); max-width: 20ch; }
 </style>

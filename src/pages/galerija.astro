@@ -13,7 +13,7 @@ const tiles = galerijosKategorijos.flatMap((k) => k.nr.map((n) => ({ src: G(n), 
   description="Realios ArbCut darbų nuotraukos: pavojingų medžių pjovimas dalimis, audros padariniai, darbai aukštyje, kelmų frezavimas ir gyvatvorės."
   schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Darbai', path: '/galerija' }])]}
 >
-  <PageHero title="Atlikti darbai" kicker="Realios nuotraukos" lead="Nuotraukos iš mūsų darbų — be stockinių vaizdų. Pirmiausia trys darbai nuo pradžios iki pabaigos, žemiau — visa galerija pagal darbų tipą." crumbs={[{ label: 'Darbai' }]} />
+  <PageHero title="Atlikti darbai" kicker="Realios nuotraukos" lead="Nuotraukos iš mūsų darbų — be stockinių vaizdų. Pirmiausia trys darbai nuo pradžios iki pabaigos, žemiau — visa galerija pagal darbų tipą." crumbs={[{ label: 'Darbai' }]} photo="lajoje-vasara" photoAlt="Mantas dirba žaliuojančio medžio lajoje" photoPos="50% 30%" />
 
   <section class="sec">
     <div class="wrap">
@@ -22,7 +22,7 @@ const tiles = galerijosKategorijos.flatMap((k) => k.nr.map((n) => ({ src: G(n), 
     </div>
   </section>
 
-  <section class="sec sec--white rule-top">
+  <section class="sec sec--stone">
     <div class="wrap">
       <div class="sec-head sec-head--split">
         <div><p class="kicker">Galerija</p><h2>Visos nuotraukos</h2></div>
@@ -32,7 +32,7 @@ const tiles = galerijosKategorijos.flatMap((k) => k.nr.map((n) => ({ src: G(n), 
         <button type="button" data-filter="visi" aria-pressed="true">Visos</button>
         {galerijosKategorijos.map((k) => <button type="button" data-filter={k.id} aria-pressed="false">{k.pavadinimas} <small>{k.nr.length}</small></button>)}
       </div>
-      <ul role="list" class="gal" data-lb-group>
+      <ul role="list" class="gal tiles" data-lb-group>
         {tiles.map((t) => (
           <li data-cat={t.cat}>
             <button type="button" data-lightbox={t.src} data-caption={t.alt} aria-label={`Padidinti: ${t.alt}`}>
@@ -47,13 +47,10 @@ const tiles = galerijosKategorijos.flatMap((k) => k.nr.map((n) => ({ src: G(n), 
 </BaseLayout>
 <style>
   .flt { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
-  .flt button { min-height: 44px; padding: 8px 16px; border: 1px solid var(--line); background: var(--paper); font-weight: 600; }
-  .flt button small { color: var(--mute); font-weight: 500; margin-left: 4px; }
-  .flt button[aria-pressed='true'] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-  .flt button[aria-pressed='true'] small { color: var(--mute-light); }
-  .gal { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(46%, 200px), 1fr)); gap: 10px; }
+  .flt button { min-height: 44px; padding: 8px 16px; background: var(--paper); font-weight: 650; border-radius: var(--radius); transition: background var(--t), color var(--t); }
+  .flt button:hover { background: var(--spruce-100); }
+  .flt button small { color: var(--ink-2); font-size: .95rem; font-weight: 600; margin-left: 4px; }
+  .flt button[aria-pressed='true'] { background: var(--spruce-900); color: #fff; }
+  .flt button[aria-pressed='true'] small { color: var(--on-dark-2); }
   .gal li[hidden] { display: none; }
-  .gal button { display: block; width: 100%; aspect-ratio: 283 / 230; overflow: hidden; background: var(--paper-2); }
-  .gal img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
-  .gal button:hover img { transform: scale(1.04); }
 </style>

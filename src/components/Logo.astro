@@ -1,11 +1,13 @@
 ---
-/* Logotipas. Kol vartotojas neišsirinko vieno iš trijų naujų variantų
-   (public/assets/arbcut-v4-brand/), naudojamas esamas. tone="dark" ant šviesaus, "light" ant tamsaus. */
+/* Logotipas. Vienintelė vieta, kur keičiamas variantas: OPTION (1, 2 arba 3; public/assets/arbcut-v4-brand/).
+   tone="dark" = tamsus logotipas šviesiam fonui (failas logo-N-light), tone="light" = baltas tamsiam fonui (logo-N-dark). */
+const OPTION = 1;
+const RATIO = { 1: 535 / 104, 2: 445 / 128, 3: 411 / 128 };
 const { tone = 'dark', height = 44, mark = false, class: cls } = Astro.props;
-const B = '/assets/arbcut-upgrade-brand';
-const src = `${B}/logo-horizontal-${tone}-740.webp`;
-const w = Math.round(height * 1401 / 352);
+const B = '/assets/arbcut-v4-brand';
+const file = tone === 'light' ? 'dark' : 'light';
+const src = `${B}/web/logo-${OPTION}-${file}.webp`;
 ---
 {mark
-  ? <img class:list={['logo', cls]} src={tone === 'light' ? `${B}/mark-light-96.png` : `${B}/mark-dark.png`} alt="ArbCut" width={Math.round(height * 96 / 111)} height={height} decoding="async" />
-  : <img class:list={['logo', cls]} src={src} alt="ArbCut" width={w} height={height} decoding="async" />}
+  ? <img class:list={['logo', cls]} src={tone === 'light' ? `${B}/web/mark-${OPTION}-dark.webp` : `${B}/web/mark-${OPTION}.webp`} alt="ArbCut" width={height} height={height} decoding="async" />
+  : <img class:list={['logo', cls]} src={src} alt="ArbCut" width={Math.round(height * RATIO[OPTION])} height={height} decoding="async" />}

@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Faq from '../components/Faq.astro';
 import CtaBand from '../components/CtaBand.astro';
-import Icon from '../components/Icon.astro';
 import { site } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
 import { grupes, detales } from '@data/paslaugu-turinys.js';
@@ -29,6 +28,9 @@ const duk = [
     kicker="Orientacinės kainos"
     lead="Kiekvienas medis kitoks, todėl skelbiame kainas „nuo“ ir aiškiai sakome, kas jas didina. Tikslią kainą pasakome pamatę darbą vietoje arba nuotraukose."
     crumbs={[{ label: 'Kainos' }]}
+    photo="azuolai-prie-namo"
+    photoAlt="Ąžuolai prie namo, kuriuos prižiūri ArbCut"
+    photoPos="50% 45%"
   />
 
   <section class="sec">
@@ -50,7 +52,7 @@ const duk = [
         <p class="pr__src">Kainos „nuo“ paimtos iš ArbCut profilio Paslaugos.lt (duomenys {atsiliepimuSinchronizuota}). Galutinė kaina sutariama prieš darbus.</p>
       </div>
       <aside class="pr__side">
-        <div class="panel">
+        <div class="panel cut">
           <h2 class="pr__h">Kas lemia kainą</h2>
           <ol class="steps" role="list">
             <li><strong>Medžio dydis.</strong> Aukštus, storus medžius pjauname dalimis — tai užtrunka ilgiau.</li>
@@ -62,7 +64,7 @@ const duk = [
         {pavyzdys && (
           <figure class="pr__ex">
             <p class="kicker">Pavyzdys iš atsiliepimo</p>
-            <blockquote class="serif">„{pavyzdys.tekstas}“</blockquote>
+            <blockquote>„{pavyzdys.tekstas}“</blockquote>
             <figcaption>{pavyzdys.vardas}, Paslaugos.lt, {pavyzdys.data.slice(0, 7)}</figcaption>
           </figure>
         )}
@@ -70,7 +72,7 @@ const duk = [
     </div>
   </section>
 
-  <section class="sec sec--white rule-top">
+  <section class="sec sec--stone">
     <div class="wrap two">
       <div class="sec-head">
         <p class="kicker">Kaip sužinoti kainą greičiau</p>
@@ -81,7 +83,7 @@ const duk = [
           <li>Ar reikia išvežti medieną ir pašalinti kelmą</li>
         </ul>
         <div class="btn-row">
-          <a class="btn btn--primary" href={site.telefonasHref} data-loc="prices-call"><Icon name="phone" size={18} /> {site.telefonas}</a>
+          <a class="btn btn--primary" href={site.telefonasHref} data-loc="prices-call"><span class="btn__num">{site.telefonas}</span></a>
           <button type="button" class="btn btn--line" data-quote>Gauti kainą</button>
         </div>
         <p class="mute">Nuotraukas galite siųsti el. paštu <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a>.</p>
@@ -97,25 +99,32 @@ const duk = [
 </BaseLayout>
 <style>
   .pr { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(32px, 5vw, 64px); align-items: start; }
-  .pr__grp + .pr__grp { margin-top: 40px; }
-  .pr__grp h2 { font-size: 1.7rem; margin-bottom: 12px; }
-  .pr__t { width: 100%; border-collapse: collapse; border-top: 2px solid var(--ink); }
-  .pr__t thead th { text-align: left; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); padding: 10px 0; font-weight: 700; }
+  .pr__grp + .pr__grp { margin-top: 48px; }
+  .pr__grp h2 { font-size: clamp(1.45rem, 1.25rem + .8vw, 1.9rem); margin-bottom: 14px; color: var(--spruce-900); }
+  .pr__t { width: 100%; border-collapse: separate; border-spacing: 0 6px; }
+  .pr__t thead th { text-align: left; font-size: 1rem; color: var(--ink-2); padding: 0 16px 2px; font-weight: 700; }
   .pr__t thead th:last-child, .pr__t td { text-align: right; }
-  .pr__t tbody th, .pr__t td { padding: 14px 0; border-top: 1px solid var(--line); vertical-align: top; }
-  .pr__t tbody th { text-align: left; font-weight: 560; padding-right: 16px; }
-  .pr__t tbody th a:hover { color: var(--timber); }
-  .pr__t td { font-weight: 700; white-space: nowrap; }
-  .pr__src { margin-top: 20px; font-size: .9rem; color: var(--mute); }
-  .pr__side { display: grid; gap: 20px; position: sticky; top: calc(var(--header-h) + 20px); }
-  .pr__h { font-size: 1.5rem; margin-bottom: 8px; }
-  .pr__ex { background: var(--ink); color: var(--paper); padding: 24px; display: grid; gap: 10px; }
-  .pr__ex blockquote { font-size: 1.3rem; line-height: 1.35; }
-  .pr__ex figcaption { color: var(--mute-light); font-size: .9rem; }
-  .two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .pr__t tbody th, .pr__t td { padding: 15px 16px; background: var(--stone); vertical-align: baseline; }
+  .pr__t tbody th { text-align: left; font-weight: 650; line-height: 1.3; }
+  .pr__t tbody th a { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; text-decoration-color: var(--orange); }
+  .pr__t tbody th a:hover { color: var(--orange-ink); }
+  .pr__t td { font-stretch: var(--wide); font-weight: 800; font-size: 1.15rem; white-space: nowrap; color: var(--spruce-900); }
+  .pr__src { margin-top: 20px; font-size: 1rem; color: var(--ink-2); }
+  .pr__side { display: grid; gap: 14px; position: sticky; top: calc(64px + 20px); }
+  .pr__h { font-size: clamp(1.4rem, 1.2rem + .6vw, 1.7rem); margin-bottom: 14px; color: var(--spruce-900); }
+  .pr__ex { background: var(--spruce-900); color: #fff; padding: clamp(22px, 3vw, 30px); display: grid; gap: 10px; }
+  .pr__ex .kicker { color: var(--on-dark-2); }
+  .pr__ex blockquote { font-size: 1.2rem; line-height: 1.4; overflow-wrap: anywhere; }
+  .pr__ex figcaption { color: var(--on-dark-2); font-size: 1rem; }
   .two .sec-head { gap: 18px; }
-  .two a:not(.btn) { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; word-break: break-all; }
-  .pr__h2 { font-size: 1.6rem; margin-bottom: 12px; }
+  .two a:not(.btn) { color: var(--spruce-900); font-weight: 650; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  .pr__h2 { font-size: clamp(1.5rem, 1.25rem + 1vw, 2.05rem); margin-bottom: 14px; color: var(--spruce-900); }
   .pr__more { margin-top: 16px; }
-  @media (max-width: 960px) { .pr, .two { grid-template-columns: 1fr; } .pr__side { position: static; } }
+  @media (max-width: 960px) { .pr { grid-template-columns: 1fr; } .pr__side { position: static; } }
+  @media (max-width: 600px) {
+    .pr__t thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .pr__t, .pr__t tbody { display: block; }
+    .pr__t tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: baseline; padding: 14px 14px; background: var(--stone); margin-bottom: 6px; }
+    .pr__t tbody th, .pr__t td { padding: 0; background: none; }
+  }
 </style>

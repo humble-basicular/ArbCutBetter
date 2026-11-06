@@ -21,10 +21,10 @@ const servicesActive = path.startsWith('/paslaugos');
 <header class="hdr" id="top">
   <div class="hdr__in">
     <a href="/" class="hdr__logo" aria-label="ArbCut, į pradžią">
-      <Logo tone="dark" height={64} class="hdr__logo-full hdr__logo-d" />
-      <Logo tone="light" height={64} class="hdr__logo-full hdr__logo-l" />
-      <Logo mark tone="dark" height={40} class="hdr__logo-mark hdr__logo-d" />
-      <Logo mark tone="light" height={40} class="hdr__logo-mark hdr__logo-l" />
+      <Logo tone="dark" height={52} class="hdr__logo-full hdr__logo-d" />
+      <Logo tone="light" height={52} class="hdr__logo-full hdr__logo-l" />
+      <Logo mark tone="dark" height={44} class="hdr__logo-mark hdr__logo-d" />
+      <Logo mark tone="light" height={44} class="hdr__logo-mark hdr__logo-l" />
     </a>
 
     <nav class="hdr__nav" aria-label="Pagrindinis meniu">
@@ -107,7 +107,7 @@ const servicesActive = path.startsWith('/paslaugos');
   .hdr { position: sticky; top: 0; z-index: 900; background: var(--paper); color: var(--ink); transition: background var(--t), box-shadow var(--t); }
   .hdr__in { max-width: 1480px; margin: 0 auto; padding-inline: var(--gutter); display: flex; align-items: center; gap: 28px; height: var(--header-h); transition: height var(--t); }
   .hdr__logo { flex: 0 0 auto; display: block; }
-  .hdr__logo :global(img) { height: 3.4rem; width: auto; transition: height var(--t); }
+  .hdr__logo :global(img) { height: 2.9rem; width: auto; transition: height var(--t); }
   .hdr__logo :global(.hdr__logo-mark), .hdr__logo :global(.hdr__logo-l) { display: none; }
   .hdr__nav { margin-right: auto; }
   .hdr__list { display: flex; align-items: center; gap: 2px; }
@@ -125,7 +125,7 @@ const servicesActive = path.startsWith('/paslaugos');
   /* Slenkant: 64 px, eglės spalva */
   .hdr:global(.is-stuck) { background: var(--spruce-900); color: #fff; box-shadow: 0 6px 20px rgba(15, 42, 32, .18); }
   .hdr:global(.is-stuck) .hdr__in { height: 64px; }
-  .hdr:global(.is-stuck) .hdr__logo :global(img) { height: 2.5rem; }
+  .hdr:global(.is-stuck) .hdr__logo :global(img) { height: 2.2rem; }
   .hdr:global(.is-stuck) .hdr__logo :global(.hdr__logo-d) { display: none; }
   .hdr:global(.is-stuck) .hdr__logo :global(.hdr__logo-full.hdr__logo-l) { display: block; }
   .hdr:global(.is-stuck) .hdr__tel-l { color: var(--on-dark-2); }
@@ -146,7 +146,7 @@ const servicesActive = path.startsWith('/paslaugos');
   .mnav { position: fixed; inset: 0; z-index: 1500; background: var(--paper); color: var(--ink); display: flex; flex-direction: column; overflow-y: auto; }
   .mnav[hidden] { display: none; }
   .mnav__top { display: flex; justify-content: space-between; align-items: center; padding: 10px var(--gutter); min-height: 64px; }
-  .mnav__top :global(img) { height: 2.5rem; width: auto; }
+  .mnav__top :global(img) { height: 2.1rem; width: auto; }
   .mnav__close { min-height: 44px; padding: 8px 14px; font-weight: 700; border: 2px solid currentColor; border-radius: var(--radius); }
   .mnav__call { padding: 8px var(--gutter) 20px; background: var(--paper); }
   .mnav__tel { display: inline-block; font-stretch: var(--wide); font-weight: 800; font-size: 2rem; color: var(--spruce-900); text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 3px; text-underline-offset: 6px; }
@@ -157,13 +157,13 @@ const servicesActive = path.startsWith('/paslaugos');
   .mnav__grp a { display: block; padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 1.08rem; }
   .mnav__foot { position: sticky; bottom: 0; margin-top: auto; padding: 12px var(--gutter) calc(14px + env(safe-area-inset-bottom)); display: grid; gap: 8px; background: var(--paper); box-shadow: 0 -8px 20px rgba(15, 42, 32, .1); }
 
-  @media (max-width: 1320px) { .hdr__tel-l { display: none; } .hdr__link { padding-inline: 9px; } .hdr__in { gap: 18px; } .hdr__logo :global(img) { height: 3rem; } }
+  @media (max-width: 1320px) { .hdr__tel-l { display: none; } .hdr__link { padding-inline: 9px; } .hdr__in { gap: 18px; } .hdr__logo :global(img) { height: 2.5rem; } }
   @media (max-width: 1140px) {
     .hdr__nav, .hdr__quote { display: none; }
     .hdr__burger { display: inline-flex; align-items: center; }
   }
   @media (max-width: 860px) {
-    .hdr__logo :global(img), .hdr:global(.is-stuck) .hdr__logo :global(img) { height: 2.6rem; }
+    .hdr__logo :global(img), .hdr:global(.is-stuck) .hdr__logo :global(img) { height: 2.2rem; }
     .hdr__actions { gap: 10px; }
     .hdr__tel-n { font-size: 1.12rem; }
   }

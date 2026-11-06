@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import CtaBand from '../components/CtaBand.astro';
-import Icon from '../components/Icon.astro';
+import Mark from '../components/Mark.astro';
 import { site } from '@data/site.js';
 import { atsiliepimuKiekis, atsiliepimuVidurkis, atsiliepimuSinchronizuota } from '@data/atsiliepimai.js';
 import { suTekstu } from '@data/atrinkti.js';
@@ -16,18 +16,23 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Atsiliepimai', path: '/atsiliepimai' }])]}
 >
   <PageHero title="Atsiliepimai" kicker="Paslaugos.lt" lead={`Visi žemiau esantys atsiliepimai parašyti mūsų profilyje Paslaugos.lt. Tekstai pateikti originalūs, nekeisti. Profilio įvertinimas — ${rating} iš 5 (${atsiliepimuKiekis} atsiliepimai, duomenys ${atsiliepimuSinchronizuota}).`} crumbs={[{ label: 'Atsiliepimai' }]} actions={false}>
+    <div class="sc">
+      <Mark name="paslaugos" height={34} />
+      <span class="sc__n">{rating}</span>
+      <span class="sc__t">iš 5 · {atsiliepimuKiekis} atsiliepimai</span>
+    </div>
     <div class="btn-row">
-      <a class="btn btn--primary" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">Profilis Paslaugos.lt <Icon name="external" size={16} /></a>
-      <a class="btn btn--line" href={site.atsiliepimai.paliktiUrl} target="_blank" rel="noopener">Parašyti atsiliepimą</a>
+      <a class="btn btn--primary" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">Profilis Paslaugos.lt<span class="sr-only"> (atsidaro naujame lange)</span></a>
+      <a class="btn btn--line" href={site.atsiliepimai.paliktiUrl} target="_blank" rel="noopener">Parašyti atsiliepimą<span class="sr-only"> (atsidaro naujame lange)</span></a>
     </div>
   </PageHero>
-  <section class="sec">
+  <section class="sec sec--stone">
     <div class="wrap">
       <p class="mute all__n">Rodoma {suTekstu.length} atsiliepimai su tekstu.</p>
       <ul role="list" class="all">
         {suTekstu.map((a) => (
           <li>
-            {a.zvaigzdes && <span class="all__s" aria-label={`${a.zvaigzdes} iš 5`}>{Array.from({ length: a.zvaigzdes }).map(() => <Icon name="star" size={14} />)}</span>}
+            {a.zvaigzdes && <p class="all__s"><b>{a.zvaigzdes}</b> iš 5</p>}
             <blockquote>{a.tekstas.split('\n').map((l) => <p>{l}</p>)}</blockquote>
             <p class="all__m"><strong>{a.vardas}</strong>{a.paslaugaPavadinimas && <> · {a.paslaugaPavadinimas}</>} · {fmt(a.data)}</p>
           </li>
@@ -38,11 +43,15 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   <CtaBand />
 </BaseLayout>
 <style>
+  .sc { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; color: var(--spruce-900); }
+  .sc__n { font-stretch: var(--wide); font-weight: 800; font-size: 3rem; line-height: 1; }
+  .sc__t { font-weight: 700; }
   .all__n { margin-bottom: 20px; }
-  .all { columns: 3 260px; column-gap: 16px; }
-  .all li { break-inside: avoid; margin-bottom: 16px; background: var(--white); border: 1px solid var(--line); padding: 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
-  .all__s { display: flex; gap: 2px; color: var(--timber); }
-  .all blockquote { display: grid; gap: 8px; color: #2b3a31; overflow-wrap: anywhere; }
-  .all__m { font-size: .86rem; color: var(--mute); }
+  .all { columns: 3 280px; column-gap: 14px; }
+  .all li { break-inside: avoid; margin-bottom: 14px; background: var(--paper); padding: 20px 22px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .all__s { font-size: .98rem; color: var(--ink-2); }
+  .all__s b { color: var(--spruce-900); font-stretch: var(--wide); font-weight: 800; font-size: 1.15rem; }
+  .all blockquote { display: grid; gap: 8px; line-height: 1.5; overflow-wrap: anywhere; }
+  .all__m { font-size: .98rem; color: var(--ink-2); }
   .all__m strong { color: var(--ink); text-transform: capitalize; }
 </style>

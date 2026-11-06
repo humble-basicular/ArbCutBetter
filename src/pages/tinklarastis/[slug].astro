@@ -3,7 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import Faq from '../../components/Faq.astro';
 import CtaBand from '../../components/CtaBand.astro';
-import Icon from '../../components/Icon.astro';
 import { straipsniai } from '@data/straipsniai.js';
 import { localBusiness, articleSchema, faqPage, breadcrumbs } from '@data/jsonld.js';
 
@@ -26,11 +25,11 @@ const schemas = [
     <div class="wrap art">
       <article class="prose" set:html={s.turinys} />
       <aside class="art__side">
-        <div class="panel">
-          <p class="serif art__q">Turite klausimą apie savo medį?</p>
+        <div class="panel cut">
+          <p class="art__q">Turite klausimą apie savo medį?</p>
           <p class="mute">Atsiųskite nuotrauką arba paskambinkite.</p>
           <div class="art__btns">
-            <a class="btn btn--primary" href="tel:+37060366901" data-loc="blog-cta"><Icon name="phone" size={18} /> +370 603 66901</a>
+            <a class="btn btn--primary" href="tel:+37060366901" data-loc="blog-cta"><span class="btn__num">+370 603 66901</span></a>
             <button type="button" class="btn btn--line" data-quote>Gauti kainą</button>
           </div>
         </div>
@@ -38,25 +37,21 @@ const schemas = [
     </div>
   </section>
   {s.duk && s.duk.length > 0 && (
-    <section class="sec sec--white rule-top"><div class="wrap art2"><h2>Dažni klausimai</h2><Faq items={s.duk} /></div></section>
+    <section class="sec sec--stone"><div class="wrap two two--faq"><h2>Dažni klausimai</h2><Faq items={s.duk} /></div></section>
   )}
   <section class="sec">
     <div class="wrap">
       <p class="kicker">Skaitykite taip pat</p>
-      <ul role="list" class="more">{kiti.map((k) => <li><a href={`/tinklarastis/${k.slug}`}>{k.title}<Icon name="arrow" size={16} /></a></li>)}</ul>
+      <ul role="list" class="rows more">{kiti.map((k) => <li><a href={`/tinklarastis/${k.slug}`}><span>{k.title}</span></a></li>)}</ul>
     </div>
   </section>
   <CtaBand />
 </BaseLayout>
 <style>
-  .art { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(32px, 5vw, 72px); align-items: start; }
-  .art .prose { font-size: 1.1rem; }
-  .art__side { position: sticky; top: calc(var(--header-h) + 20px); }
-  .art__q { font-size: 1.3rem; font-weight: 620; margin-bottom: 6px; }
+  .art { display: grid; grid-template-columns: minmax(0, 46rem) 340px; justify-content: space-between; gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .art__side { position: sticky; top: calc(64px + 20px); }
+  .art__q { font-stretch: var(--wide); font-size: 1.35rem; font-weight: 800; line-height: 1.2; color: var(--spruce-900); margin-bottom: 8px; }
   .art__btns { display: grid; gap: 10px; margin-top: 16px; }
-  .art2 { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 40px; }
-  .more { border-top: 2px solid var(--ink); margin-top: 12px; }
-  .more a { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.2rem; font-weight: 600; }
-  .more a:hover { color: var(--timber); }
-  @media (max-width: 960px) { .art, .art2 { grid-template-columns: 1fr; } .art__side { position: static; } }
+  .more { margin-top: 14px; max-width: 58rem; }
+  @media (max-width: 1040px) { .art { grid-template-columns: minmax(0, 1fr); } .art__side { position: static; } }
 </style>

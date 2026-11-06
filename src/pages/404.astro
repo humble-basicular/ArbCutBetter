@@ -1,22 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Icon from '../components/Icon.astro';
 import { site } from '@data/site.js';
 ---
 <BaseLayout title="Puslapis nerastas — ArbCut" description="Tokio puslapio nėra." noindex={true}>
-  <section class="nf on-dark">
+  <section class="nf">
     <div class="wrap nf__in">
       <p class="kicker">404</p>
       <h1>Tokio puslapio nėra</h1>
       <p class="lead">Galbūt nuoroda pasenusi. Pradėkite nuo paslaugų arba paskambinkite.</p>
       <div class="btn-row">
         <a class="btn btn--primary" href="/paslaugos">Paslaugos</a>
-        <a class="btn btn--line" href={site.telefonasHref} data-loc="not-found"><Icon name="phone" size={18} /> {site.telefonas}</a>
+        <a class="btn btn--line" href={site.telefonasHref} data-loc="not-found"><span class="btn__num">{site.telefonas}</span></a>
       </div>
     </div>
   </section>
 </BaseLayout>
 <style>
-  .nf { background: var(--ink); color: var(--paper); }
-  .nf__in { display: grid; gap: 20px; padding-block: clamp(72px, 12vw, 140px); }
+  .nf { background: var(--spruce-100); }
+  .nf__in { display: grid; gap: 20px; justify-items: start; padding-block: clamp(72px, 12vw, 150px); }
+  .nf h1 { color: var(--spruce-900); }
 </style>

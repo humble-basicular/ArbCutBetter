@@ -4,7 +4,6 @@ import PageHero from '../components/PageHero.astro';
 import Reviews from '../components/Reviews.astro';
 import Faq from '../components/Faq.astro';
 import CtaBand from '../components/CtaBand.astro';
-import Icon from '../components/Icon.astro';
 import { vietoves } from '@data/vietoves.js';
 import { paslaugos } from '@data/paslaugos.js';
 import { grupes, detales } from '@data/paslaugu-turinys.js';
@@ -55,9 +54,9 @@ const description = `Medžių pjovimas ${v.kur}: pavojingi medžiai prie namų i
         {grupes.map((g) => (
           <div>
             <p class="kicker">{g.pavadinimas}</p>
-            <ul role="list">
+            <ul role="list" class="rows">
               {g.slugs.filter((s) => isBase || s !== 'saku-isvezimas').map((s) => (
-                <li><a href={`/paslaugos/${s}`}><span>{detales[s].trumpas}</span><small>{byslug[s].kaina}</small><Icon name="arrow" size={16} /></a></li>
+                <li><a href={`/paslaugos/${s}`}><span>{detales[s].trumpas}</span><small>{byslug[s].kaina}</small></a></li>
               ))}
             </ul>
           </div>
@@ -67,15 +66,15 @@ const description = `Medžių pjovimas ${v.kur}: pavojingi medžiai prie namų i
   </section>
   <section class="sec sec--paper2"><div class="wrap"><Reviews items={reviews} heading="Ką sako klientai" /></div></section>
   <section class="sec">
-    <div class="wrap two">
+    <div class="wrap two two--faq">
       <div class="sec-head"><p class="kicker">DUK</p><h2>Klausimai apie darbus {v.kur}</h2></div>
       <Faq items={townFaq} />
     </div>
   </section>
-  <section class="sec sec--white rule-top">
+  <section class="sec sec--stone">
     <div class="wrap">
       <p class="kicker">Kiti miestai</p>
-      <ul role="list" class="others">{kitos.map((k) => <li><a href={`/${k.slug}`}>Medžių pjovimas {k.kur}</a></li>)}</ul>
+      <ul role="list" class="linkcols others">{kitos.map((k) => <li><a href={`/${k.slug}`}>Medžių pjovimas {k.kur}</a></li>)}</ul>
     </div>
   </section>
   <CtaBand title={`Medis ${v.kur}? Aptarkime.`} />
@@ -83,15 +82,10 @@ const description = `Medžių pjovimas ${v.kur}: pavojingi medžiai prie namų i
 <style>
   .town { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
   .town__txt { display: grid; gap: 20px; }
-  .town__note { padding: 16px 18px; background: var(--white); border-left: 4px solid var(--timber); }
+  .town__txt h2 { color: var(--spruce-900); }
+  .town__note { padding: 18px 20px; background: var(--spruce-100); }
   .town__svc { display: grid; gap: 28px; }
-  .town__svc ul { border-top: 2px solid var(--ink); margin-top: 8px; }
-  .town__svc a { display: grid; grid-template-columns: 1fr auto 18px; gap: 14px; align-items: center; padding: 12px 2px; border-bottom: 1px solid var(--line); font-weight: 600; }
-  .town__svc small { color: var(--mute); font-weight: 450; }
-  .town__svc a:hover span { color: var(--timber); }
-  .two { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
-  .others { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-  .others a { display: inline-block; padding: 9px 14px; border: 1px solid var(--line); background: var(--paper); font-weight: 560; }
-  .others a:hover { border-color: var(--ink); }
-  @media (max-width: 960px) { .town, .two { grid-template-columns: 1fr; } }
+  .town__svc .kicker { margin-bottom: 8px; }
+  .others { margin-top: 12px; columns: 3 240px; }
+  @media (max-width: 960px) { .town { grid-template-columns: 1fr; } }
 </style>
