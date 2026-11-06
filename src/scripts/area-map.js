@@ -34,21 +34,24 @@ export async function mount(box) {
   let map;
   try {
     map = new maplibregl.Map({
-      container: host, style: style(), bounds: [[21.9, 54.1], [25.9, 56.0]], fitBoundsOptions: { padding: 0 },
+      container: host, style: style(), bounds: [[20.75, 53.95], [26.15, 56.45]], fitBoundsOptions: { padding: 0 },
       attributionControl: false, cooperativeGestures: true, dragRotate: false, pitchWithRotate: false, maxZoom: 11, minZoom: 5, renderWorldCopies: false,
       locale: { 'CooperativeGesturesHandler.WindowsHelpText': 'Laikykite Ctrl ir sukite pelės ratuką, kad keistumėte mastelį', 'CooperativeGesturesHandler.MacHelpText': 'Laikykite Cmd ir sukite pelės ratuką, kad keistumėte mastelį', 'CooperativeGesturesHandler.MobileHelpText': 'Žemėlapį stumkite dviem pirštais', 'NavigationControl.ZoomIn': 'Priartinti', 'NavigationControl.ZoomOut': 'Atitolinti' },
     });
   } catch (e) { box.classList.add('map--static'); return; }
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
   map.on('load', async () => {
-    const lt = await fetch(data.lt).then((r) => r.json());
+    const [lt, zone] = await Promise.all([fetch(data.lt).then((r) => r.json()), fetch(data.zone).then((r) => r.json())]);
     map.addSource('lt', { type: 'geojson', data: lt });
+    map.addSource('zone', { type: 'geojson', data: zone });
     map.addLayer({ id: 'lt-fill', type: 'fill', source: 'lt', paint: { 'fill-color': C.land } }, 'wood');
+    map.addLayer({ id: 'zone-fill', type: 'fill', source: 'zone', paint: { 'fill-color': C.orange, 'fill-opacity': .13 } }, 'border');
+    map.addLayer({ id: 'zone-line', type: 'line', source: 'zone', paint: { 'line-color': C.orange, 'line-width': 1.6, 'line-opacity': .75 } }, 'border');
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let i = 0;
     for (const t of data.towns) {
       const base = t.base;
-      const m = el('a', `mpin${base ? ' mpin--base' : ''}`, `<span class="mpin__in">${base ? `<img src="${data.mark}" alt="" width="20" height="34">` : ''}<span class="mpin__dot"></span><span class="mpin__l">${t.name}</span></span>`);
+      const m = el('a', `mpin${base ? ' mpin--base' : ''}${t.left ? ' mpin--left' : ''}`, `<span class="mpin__in">${base ? `<img src="${data.mark}" alt="" width="20" height="34">` : ''}<span class="mpin__dot"></span><span class="mpin__l">${t.name}</span></span>`);
       m.href = t.href; m.setAttribute('aria-label', base ? `${t.name}, bazė` : `Medžių pjovimas: ${t.name}`);
       if (!reduce) m.firstChild.style.animationDelay = `${(i++) * 60}ms`;
       new maplibregl.Marker({ element: m, anchor: 'center' }).setLngLat(t.ll).addTo(map);

@@ -1,14 +1,14 @@
 ---
 /* v5 aptarnavimo zona (14 žingsnių: 13): tikras žemėlapis (MapLibre + OpenFreeMap, nemokamai, be rakto),
-   įkeliamas pats priartėjus prie ekrano. Tik bazė ir aptarnaujami miestai, be zonos kontūro.
+   įkeliamas pats priartėjus prie ekrano. Zona nubrėžta aplink realius aptarnaujamus miestus (be išgalvoto spindulio).
    Statinis firminis paveikslėlis — kol kraunasi ir be JS / WebGL.
    Miestų nuorodos šalia — paprastos <a> (indeksuojamos). */
 import { vietoves } from '@data/vietoves.js';
 import pts from '@data/map-points.json';
 const I = '/assets/v5-brand/raster/icons';
 const data = {
-  lt: '/assets/v5-brand/map/lt.json', mark: '/assets/v5-brand/logo/mark-a-egle-white.svg',
-  towns: vietoves.map((v) => ({ name: v.miestas, href: `/${v.slug}`, base: !!v.pagrindinis, ll: pts.towns[v.miestas] })),
+  lt: '/assets/v5-brand/map/lt.json', zone: '/assets/v5-brand/map/zone.json', mark: '/assets/v5-brand/logo/mark-a-egle-white.svg',
+  towns: vietoves.map((v) => ({ name: v.miestas, href: `/${v.slug}`, base: !!v.pagrindinis, left: v.miestas === 'Kazlų Rūda', ll: pts.towns[v.miestas] })),
 };
 ---
 <section class="area" id="vietoves" aria-labelledby="area-h">
@@ -34,11 +34,11 @@ const data = {
 
     <div class="area__map">
       <div class="area__frame" data-area-map>
-        <img class="area__static" src="/assets/v5-brand/map/fallback.webp" alt="ArbCut aptarnaujami miestai žemėlapyje: bazė Kaune ir aplinkiniai miestai" width="1200" height="900" loading="lazy" />
+        <img class="area__static" src="/assets/v5-brand/map/fallback.webp" alt="ArbCut aptarnavimo zona žemėlapyje: bazė Kaune ir aptarnaujami miestai nuo Klaipėdos iki Vilniaus" width="1200" height="900" loading="lazy" />
         <div class="area__canvas" data-map-canvas></div>
         <script type="application/json" set:html={JSON.stringify(data)} />
       </div>
-      <p class="area__legend"><span><span class="lg lg--base"></span>Bazė Kaune</span><span><span class="lg lg--town"></span>Aptarnaujami miestai</span></p>
+      <p class="area__legend"><span><span class="lg lg--zone"></span>Aptarnavimo zona</span><span><span class="lg lg--base"></span>Bazė Kaune</span><span><span class="lg lg--town"></span>Miestai</span></p>
       <p class="area__credit">Žemėlapis: <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> © <a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a>. Duomenys © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> bendraautoriai.</p>
     </div>
   </div>
@@ -85,6 +85,7 @@ const data = {
   .area__credit { margin-top: 6px; font-size: .8rem; color: var(--ink-2); }
   .area__credit a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
   .lg { display: inline-block; width: 14px; height: 14px; border-radius: 50%; }
+  .lg--zone { border-radius: 4px; background: rgba(226, 97, 27, .16); border: 2px solid var(--orange); }
   .lg--base { background: var(--spruce-900); }
   .lg--town { background: var(--orange); }
 
@@ -97,6 +98,7 @@ const data = {
   :global(.mpin__l small) { display: block; font-weight: 700; font-size: 11px; color: #6F7E77; }
   :global(.mpin--base img) { width: 26px; height: auto; background: var(--spruce-900); padding: 6px 5px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,.3); }
   :global(.mpin--base .mpin__dot) { display: none; }
+  :global(.mpin--left .mpin__l) { left: auto; right: 14px; }
   :global(.mpin--base .mpin__l) { left: auto; right: calc(100% + 8px); text-align: right; font-size: 15px; }
   :global(.mpin--base .mpin__l small) { color: var(--orange-ink); }
   @media (prefers-reduced-motion: no-preference) {
@@ -104,5 +106,12 @@ const data = {
     @keyframes pindrop { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
   }
   @media (max-width: 960px) { .area__grid { grid-template-columns: 1fr; } }
-  @media (max-width: 480px) { .area__list { grid-template-columns: 1fr; } }
+  @media (max-width: 480px) {
+    .area__list { grid-template-columns: 1fr; }
+    :global(.mpin__dot) { width: 12px; height: 12px; border-width: 2px; }
+    :global(.mpin__l) { left: 10px; font-size: 11.5px; }
+    :global(.mpin--left .mpin__l) { right: 10px; }
+    :global(.mpin--base img) { width: 18px; padding: 4px 3px; border-radius: 7px; }
+    :global(.mpin--base .mpin__l) { font-size: 13px; right: calc(100% + 5px); }
+  }
 </style>

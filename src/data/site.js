@@ -44,6 +44,8 @@ export const site = {
     { miestas: 'Kėdainiai',    slug: 'medziu-pjovimas-kedainiai' },
     { miestas: 'Kazlų Rūda',   slug: 'medziu-pjovimas-kazlu-ruda' },
     { miestas: 'Tauragė',      slug: 'medziu-pjovimas-taurage' },
+    { miestas: 'Šiauliai',     slug: 'medziu-pjovimas-siauliai' },
+    { miestas: 'Klaipėda',     slug: 'medziu-pjovimas-klaipeda' },
   ],
 
   // --- SEO ---
