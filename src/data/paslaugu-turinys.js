@@ -22,6 +22,7 @@ export const grupes = [
   {
     id: 'medziai',
     pavadinimas: 'Medžiai',
+    kitos: 'Kitos medžių paslaugos',
     aprasymas: 'Pjovimas, genėjimas, kelmai ir sutvarkymas po darbų.',
     slugs: [
       'avariniu-medziu-pjovimas',
@@ -36,6 +37,7 @@ export const grupes = [
   {
     id: 'aukstyje',
     pavadinimas: 'Darbai aukštyje',
+    kitos: 'Kiti darbai aukštyje',
     aprasymas: 'Nuosavas autobokštelis iki 20 m ir alpinistinė įranga.',
     slugs: [
       'darbai-su-autoboksteliu',
@@ -46,6 +48,22 @@ export const grupes = [
     ],
   },
 ];
+
+/* Galininkas sakiniams „Klausimai apie …“: šablone linksniuoti negalima, todėl įrašyta ranka. */
+export const apieKa = {
+  'avariniu-medziu-pjovimas': 'medžių pjovimą',
+  'audros-isverstu-medziu-salinimas': 'audros padarinių šalinimą',
+  'medziu-genejimas': 'medžių genėjimą',
+  'medziu-lajos-stabilizavimas': 'lajos stabilizavimą',
+  'kelmu-naikinimas-frezavimas': 'kelmų naikinimą',
+  'saku-isvezimas': 'šakų išvežimą',
+  'gyvatvoriu-karpymas': 'gyvatvorių karpymą',
+  'darbai-su-autoboksteliu': 'darbus su autobokšteliu',
+  'lietvamzdziu-stogo-valymas': 'latakų ir stogo valymą',
+  'dazymo-darbai-aukstyje': 'dažymą aukštyje',
+  'reklaminiu-iskabu-montavimas': 'iškabų montavimą',
+  'kiti-aukstuminiai-darbai': 'kitus darbus aukštyje',
+};
 
 /* Situacijos (pagrindinio puslapio „Koks jūsų atvejis?"). */
 export const situacijos = [

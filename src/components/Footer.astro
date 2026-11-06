@@ -27,7 +27,7 @@ const aukstyje = /^\/(paslaugos\/(darbai-su|dazymo|reklamin|lietvamzd|kiti)|darb
   <div class="wrap ftr__grid">
     <div class="ftr__brand">
       <Logo tone="light" height={70} />
-      <p><strong>ArbCut</strong>, arboristas aukštalipys {site.savininkas} su komanda. Bazė Kaune, dirbame iki 150 km aplink.</p>
+      <p><strong>ArbCut</strong>, arboristas aukštalipys {site.savininkas} su komanda. Bazė Kaune, dirbame iki {site.zona.km} km aplink.</p>
       <a class="ftr__rep" href="/atsiliepimai"><span>{rating} iš 5 · {bendrasKiekis} atsiliepimai</span></a>
       <p class="ftr__press">Apie mus rašė <a href={lrt.url} target="_blank" rel="noopener">LRT.lt</a> ir <a href={valstietis.url} target="_blank" rel="noopener">Valstietis.lt</a></p>
     </div>
@@ -48,7 +48,7 @@ const aukstyje = /^\/(paslaugos\/(darbai-su|dazymo|reklamin|lietvamzd|kiti)|darb
         <li><a href={site.smsHref}>SMS su nuotraukomis</a></li>
         <li><a href={`mailto:${site.elPastas}`} set:html={site.elPastas.replace('@', '<wbr>@')} /></li>
         <li>Kasdien 08:00–18:00</li>
-        <li>Kaunas, +150 km aplink</li>
+        <li>{site.zona.trumpai}</li>
       </ul>
       <ul role="list" class="ftr__more">
         <li><a href="/galerija">Darbų nuotraukos</a></li>

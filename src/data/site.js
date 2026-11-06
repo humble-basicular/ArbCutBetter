@@ -31,14 +31,21 @@ export const site = {
   baze: 'Kaunas',
   // Bazė Kaune; išvykstame ir į kitus miestus (išvykimą derinti iš anksto).
   // Išvežimas fiskaru — TIK Kaune ir Kauno rajone.
-  aptarnavimas: 'Kaunas, Kauno rajonas ir kiti Lietuvos miestai',
+  aptarnavimas: 'Kaunas, Kauno rajonas ir miestai iki 150 km nuo Kauno',
+  // Vienas šaltinis visiems aptarnavimo teiginiams (matomam tekstui, meta, JSON-LD, llms.txt).
+  // Patvirtino Matas 2026-11-06: 150 km; Klaipėda ir Šiauliai Mantui per toli, nors Šiauliai patenka į spindulį.
+  zona: {
+    km: 150,
+    trumpai: 'Kaunas, +150 km aplink',
+    nevaziuojame: 'Į Klaipėdą ir Šiaulius nevažiuojame.',
+  },
   priceRange: '€€',
 
   // Bazė Kaune (apytikslės koordinatės — GEO/JSON-LD areaServed centras)
   geo: { lat: 54.8985, lng: 23.9036 },
 
   // Aptarnaujamos vietovės — pagrindiniai LT miestai (lokalus SEO + areaServed).
-  // Kaunas pagrindinis (čia ir išvežimas fiskaru); kiti — išvykstame visoje Lietuvoje.
+  // Kaunas pagrindinis (čia ir išvežimas fiskaru); kiti — miestai aptarnavimo zonoje (site.zona).
   vietoves: [
     { miestas: 'Kaunas',       slug: 'medziu-pjovimas-kaunas',       pagrindinis: true },
     { miestas: 'Vilnius',      slug: 'medziu-pjovimas-vilnius' },
@@ -93,7 +100,6 @@ export const site = {
     skambuciai: '1 192',
     laiskai: '108',
     nuotraukos: 93,
-    spindulys: 'Kaunas, +150 km aplink',
     kainaNuo: 'nuo 20 €/h',
   },
   atsiliepimai: {

@@ -15,7 +15,7 @@ const turinys = {
   'medziu-pjovimas-vilnius': {
     intro: 'Vilniuje dirbame reguliariai — pavojingi medžiai prie pastatų ir ankšti sklypai.',
     tekstas:
-      'Į Vilnių išvykstame reguliariai — sostinėje dažniausiai tenka šalinti pavojingus medžius ankštuose sklypuose, prie daugiabučių, tvorų ir komunikacijų, kur klaidai nėra vietos. Tokiems darbams naudojame alpinistinę įrangą ir virves, o kur privažiuoja technika — autobokštelį iki 20 m. Didesnius objektus suderiname iš anksto ir, jei reikia, sutvariname kelių medžių darbus į vieną išvykimą, kad kaina jums būtų mažesnė.',
+      'Į Vilnių išvykstame reguliariai — sostinėje dažniausiai tenka šalinti pavojingus medžius ankštuose sklypuose, prie daugiabučių, tvorų ir komunikacijų, kur klaidai nėra vietos. Tokiems darbams naudojame alpinistinę įrangą ir virves, o kur privažiuoja technika — autobokštelį iki 20 m. Didesnius objektus suderiname iš anksto ir, jei reikia, sujungiame kelių medžių darbus į vieną išvykimą, kad kaina jums būtų mažesnė.',
   },
   'medziu-pjovimas-panevezys': {
     intro: 'Panevėžyje — sodybų, sklypų ir pavojingų medžių tvarkymas.',
@@ -47,7 +47,7 @@ const turinys = {
     tekstas:
       'Kazlų Rūda ir jos apylinkės — miškingas kraštas, kuriame dirbame reguliariai (čia mus rekomendavo ir klientai). Pjauname aukštus, pavojingus medžius prie namų ir sodybų, genime, naikiname kelmus bei karpome gyvatvores. Aukščiui pasiekti naudojame autobokštelį ir alpinistinę įrangą, o aplinką po darbų tvarkingai sutvarkome.',
   },
-  // Pridėta kliento prašymu (2026-10). Tauragė — Kaunas +150 km aptarnavimo zonoje.
+  // Pridėta kliento prašymu (2026-10). Tauragė patenka į aptarnavimo zoną (site.zona).
   'medziu-pjovimas-taurage': {
     intro: 'Tauragėje ir Tauragės krašte — pavojingi medžiai, genėjimas ir kelmai.',
     tekstas:

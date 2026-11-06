@@ -110,7 +110,7 @@ export const paslaugos = [
     slug: 'audros-isverstu-medziu-salinimas',
     pavadinimas: 'Audros padarinių šalinimas',
     aprasymas: 'Audros ar stipraus vėjo išverstų ir užvirtusių medžių šalinimas — atvykstame operatyviai.',
-    seo: 'Po audros ar stipraus vėjo medžiai dažnai užvirsta ant namų, automobilių, tvorų ar kelio — tokius darbus reikia atlikti greitai ir atsakingai. Atvykstame operatyviai, įvertiname situaciją ir saugiai pašaliname išverstus ar pavojingai pasvirusius medžius bei nulaužtas šakas. Dirbame visoje Lietuvoje, turime visą reikiamą įrangą, o po darbų sutvarkome teritoriją. Kilus avarinei situacijai — skambinkite, aptarsime greičiausią sprendimą.',
+    seo: 'Po audros ar stipraus vėjo medžiai dažnai užvirsta ant namų, automobilių, tvorų ar kelio — tokius darbus reikia atlikti greitai ir atsakingai. Atvykstame operatyviai, įvertiname situaciją ir saugiai pašaliname išverstus ar pavojingai pasvirusius medžius bei nulaužtas šakas. Dirbame iki 150 km nuo Kauno, turime visą reikiamą įrangą, o po darbų sutvarkome teritoriją. Kilus avarinei situacijai — skambinkite, aptarsime greičiausią sprendimą.',
     kaina: 'nuo 50 €',
     nuotrauka: '/assets/images/paslaugos/audros-isverstu-medziu-salinimas.jpg',
     ikona: 'audra',

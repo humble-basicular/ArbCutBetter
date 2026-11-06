@@ -3,6 +3,8 @@
    Visas tekstas — kliento balsu, nieko neprasimanyta (žr. CLAUDE.md / PRD §9).
    ===================================================================== */
 
+import { site } from './site.js';
+
 export const apie = {
   eyebrow: 'APIE MUS',
   antraste: 'ARBCUT — medžių priežiūros meistrai',
@@ -93,7 +95,8 @@ export const dukPradzia = [
   },
   {
     klausimas: 'Ar reikia leidimo nupjauti medį savo sklype?',
-    atsakymas: 'Dažnai reikia. Gyvenamųjų namų teritorijose valstybės saugomi medžiai (pvz., ąžuolai, uosiai, klevai, liepos, maumedžiai, beržai, pušys) mieste saugomi nuo 20 cm kamieno skersmens, ne mieste nuo 30 cm. Skersmuo matuojamas 1,3 m aukštyje. Dėl leidimo kreipiamasi į savivaldybę ar seniūniją. Nuo kovo 15 iki rugpjūčio 15 d. saugomų medžių kirsti negalima, išskyrus kai medis kelia grėsmę žmonių gyvybei, sveikatai ar turtui. Už neteisėtą kirtimą gyventojui gresia bauda nuo 60 iki 200 €. Mantas LRT.lt sakė: „Mes kertame medžius tik turėdami leidimus.“ Nežinote, ar jūsų medžiui reikia leidimo? Paklauskite skambindami.',
+    atsakymas: 'Priklauso nuo medžio. Saugotiną medį nukirsti ar intensyviai genėti (pašalinti daugiau nei 30 % lajos) galima tik su savivaldybės leidimu. Gyvenamosiose teritorijose mieste saugotini, pvz., ąžuolai, uosiai, klevai, liepos, maumedžiai, beržai ir pušys, kurių kamienas 1,3 m aukštyje yra nuo 20 cm skersmens, ne mieste nuo 30 cm. Tujos, tuopos, drebulės ir vaismedžiai saugotini nėra. Savivaldybės turi ir savo sąrašus, todėl prieš pjaudami pasitikrinkite. Mantas LRT.lt sakė: „Mes kertame medžius tik turėdami leidimus.“ Nežinote, ar jūsų medžiui reikia leidimo? Paklauskite skambindami.',
+    nuoroda: '/tinklarastis/ar-reikia-leidimo-pjauti-medi',
   },
   {
     klausimas: 'Ar sutvarkote ir išvežate šakas?',
@@ -111,6 +114,6 @@ export const dukPradzia = [
   },
   {
     klausimas: 'Kada galite atvažiuoti ir kiek toli važiuojate?',
-    atsakymas: 'Dirbame kasdien 08:00–18:00, ir savaitgaliais. Bazė Kaune, važiuojame iki 150 km aplink. Tolimesnį darbą suderiname iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.',
+    atsakymas: `Dirbame kasdien 08:00–18:00, ir savaitgaliais. Bazė Kaune, važiuojame iki ${site.zona.km} km aplink. ${site.zona.nevaziuojame} Tolimesnį darbą suderiname iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.`,
   },
 ];

@@ -6,7 +6,7 @@ import Reviews from '../../components/Reviews.astro';
 import Sequences from '../../components/Sequences.astro';
 import { site } from '@data/site.js';
 import { paslaugos, getPaslauga } from '@data/paslaugos.js';
-import { detales, sekos, grupes } from '@data/paslaugu-turinys.js';
+import { detales, sekos, grupes, apieKa } from '@data/paslaugu-turinys.js';
 import { vietoves } from '@data/vietoves.js';
 import { paslaugosMiestuose } from '@data/miestu-paslaugos.js';
 import { atrinkti } from '@data/atrinkti.js';
@@ -118,7 +118,7 @@ const schemas = [
     <div class="wrap two two--faq">
       <div class="sec-head">
         <p class="kicker">DUK</p>
-        <h2>Klausimai apie {d.trumpas.toLowerCase()}</h2>
+        <h2>Klausimai apie {apieKa[slug]}</h2>
       </div>
       <Faq items={d.duk} />
     </div>
@@ -135,7 +135,7 @@ const schemas = [
           ))}
         </ul>
         {kitos.length > 0 && (
-          <p class="rel__more">Kitos {grupe.pavadinimas.toLowerCase()} paslaugos: {kitos.filter((k) => !d.susijusios.includes(k)).map((k, i, arr) => <><a href={`/paslaugos/${k}`}>{detales[k].trumpas}</a>{i < arr.length - 1 ? ', ' : ''}</>)}</p>
+          <p class="rel__more">{grupe.kitos}: {kitos.filter((k) => !d.susijusios.includes(k)).map((k, i, arr) => <><a href={`/paslaugos/${k}`}>{detales[k].trumpas}</a>{i < arr.length - 1 ? ', ' : ''}</>)}</p>
         )}
       </div>
       <div>

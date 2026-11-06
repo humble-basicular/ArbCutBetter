@@ -1,15 +1,17 @@
 /* llms.txt — generuojamas build metu, kad skaičiai sutaptų su paslaugos.lt sinchronizacija. */
 import { atsiliepimuKiekis, atsiliepimuVidurkis, atsiliepimuSaltinis, atsiliepimuSinchronizuota, patirtisMetai } from '../data/atsiliepimai.js';
 import { site } from '../data/site.js';
+import { paslaugos } from '../data/paslaugos.js';
 
 const vid = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 const miestai = site.vietoves.map((v) => v.miestas).join(', ');
+const kainos = paslaugos.map((p) => `- ${p.pavadinimas}: ${p.kaina}`).join('\n');
 
 export function GET() {
   const body = `# ArbCut — arboristas, medžių priežiūra ir aukštuminiai darbai Lietuvoje
 
 > ArbCut yra kvalifikuoto arboristo aukštalipio Manto Gerulio medžių priežiūros
-> ir aukštuminių darbų įmonė. Bazė — Kaunas; išvykstame ir į kitus Lietuvos miestus.
+> ir aukštuminių darbų įmonė. Bazė: Kaunas; važiuojame iki ${site.zona.km} km nuo Kauno.
 > Specializacija: pavojingų ir avarinių medžių pjovimas, genėjimas, kelmų
 > naikinimas ir darbai aukštyje nuosavu autobokšteliu (iki 20 m) bei alpinistine įranga.
 
@@ -20,34 +22,23 @@ export function GET() {
 - Telefonas: +370 603 66901
 - El. paštas: aukstuminiai.darbai@yahoo.com
 - Darbo laikas: kasdien (I–VII) 08:00–18:00
-- Aptarnaujama teritorija: Kaunas ir Kauno apskritis, išvykstama ir į kitus miestus (vietovių puslapiai: ${miestai}). Šakų ir medienos išvežimas fiskaru — Kaune ir Kauno rajone.
+- Aptarnaujama teritorija: ${site.zona.trumpai} (miestai: ${miestai}). ${site.zona.nevaziuojame} Šakų ir medienos išvežimas fiskaru: tik Kaune ir Kauno rajone.
 - Nuosava technika: autobokštelis iki 20 m aukščio; aukščiau — alpinistinė įranga ir virvės.
 - Facebook: https://www.facebook.com/MesGalimeTaiPadaryti/
 
 ## Kuo išskirtinė
 - Saugiai pjauna pavojingus medžius prie pastatų, elektros linijų ir kitų kliūčių.
-- Nuosavas autobokštelis — pigiau ir greičiau, be technikos nuomos.
-- Atvyksta operatyviai, ypač avarinėmis situacijomis (po audros, užvirtus medžiui).
+- Nuosavas autobokštelis iki 20 m: technikos nuomotis nereikia.
+- Dirba ir po audrų, kai medis užvirto ar pavojingai pasviro: skambinkite telefonu.
 - Po darbų sutvarko teritoriją; Kaune ir Kauno rajone išveža medieną ir šakas.
 - ${vid} reitingas iš ${atsiliepimuKiekis} atsiliepimų — klientai pabrėžia tvarkingumą, greitį ir prieinamą kainą.
 
 ## Paslaugos ir orientacinės kainos
-- Pavojingų ir avarinių medžių pjovimas — nuo 50 €
-- Darbai su autobokšteliu (iki 20 m) — pagal projektą
-- Medžių genėjimas ir lajos formavimas — nuo 50 €
-- Kelmų naikinimas (frezavimas / išrovimas) — nuo 75 €
-- Šakų ir medienos išvežimas (Kaune ir Kauno r.) — nuo 80 €
-- Medžių lajos stabilizavimo sistemos — nuo 100 €
-- Gyvatvorių karpymas — nuo 2 €/m
-- Dažymo darbai aukštyje — nuo 100 €
-- Reklaminių iškabų montavimas/demontavimas — nuo 3 €/m²
-- Lietvamzdžių ir stogo dangos valymas — nuo 4 €/m
-- Audros padarinių šalinimas — nuo 50 €
-- Kiti aukštuminiai darbai — nuo 50 €
-(Tiksli kaina priklauso nuo darbo apimties ir sudėtingumo; pateikiama įvertinus vietoje arba pagal nuotraukas. Įvertinimas nemokamas.)
+${kainos}
+(Tiksli kaina priklauso nuo darbo apimties ir sudėtingumo; preliminari kaina pagal nuotraukas, tiksli apžiūrėjus vietoje. Šakų ir medienos išvežimas tik Kaune ir Kauno r.)
 
 ## Dažni klausimai
-- Ar dirbate visoje Lietuvoje? Taip, išvykstame į visus regionus.
+- Ar dirbate visoje Lietuvoje? Ne. Bazė Kaune, važiuojame iki ${site.zona.km} km aplink. ${site.zona.nevaziuojame}
 - Ar galite dirbti prie elektros linijų? Taip, turime patirties dirbti pavojingose vietose.
 - Ar išsivežate medieną ir šakas? Taip — Kaune ir Kauno rajone fiskaru; toliau paliekame krūvoje.
 - Ar dirbate savaitgaliais? Taip, kasdien 08:00–18:00.
