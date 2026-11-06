@@ -1,5 +1,5 @@
 {
-  "generatedAtUTC": "2026-11-06T01:30:11.639069+00:00",
+  "generatedAtUTC": "2026-11-06T01:44:18.159628+00:00",
   "objectiveStatus": "unfinished",
   "activeWorkers": [],
   "scope": "Resume index only, compiled from ordinal21 handoff plus currently present metadata. No image inspections or pending gates waived. Counts in status descriptions are inherited verified milestones, not new visual review.",
@@ -53,18 +53,22 @@
     {
       "site": "smockhvac.com",
       "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/smockhvac.com/native/progress.json",
-      "sha256": "4ef336abccb3230d79addf8cce5ec2d51a8002ce2030d79d5680641f9272974f",
+      "sha256": "d0be41e2389a306ee38c3e82434c6bd3928040643aac84ed35dccbc74d41d45d",
       "owner": "lead",
-      "status": "retry cap exhausted;29freshpairs+30historical,114interactions;product-comparison/archive gates pending",
-      "nativeGateOpen": true,
-      "report": ".agents/research/v4-reference-study/bulk-findings-smockhvac.com.md"
+      "status": "lead ordinal24:31freshpairs/261displays480sources+30historical;114interactions;captured semantic sampling accepted, archive only initial state available;213overview-only retained unviewed",
+      "nativeGateOpen": false,
+      "report": ".agents/research/v4-reference-study/bulk-findings-smockhvac.com.md",
+      "limitations": [
+        "No second differing captured archive state;pagination/filtering unverified",
+        "Live360/keyboard/motion/booking delivery unverified"
+      ]
     },
     {
       "site": "genzryan.com",
       "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/genzryan.com/native/native-remaining.json",
-      "sha256": "adf6e13f90373a002427c7941dcb80f04f6711d3d3671772017206852ce9e536",
-      "owner": "lead or authorized retry1",
-      "status": "initial terminal,2retries available;8newpairs69interactions;160pages2790files pending,56prepared displays",
+      "sha256": "d4283ea3304ce1f9816f4c9ed6c707ff3f9a3a42d9de53eed1ea0e69a21ff5f5",
+      "owner": "lead or authorized final retry2",
+      "status": "retry1 verified20pairs285sources147opened/159prepared;148pairs2629sources remain;12prepared unopened;one finalretry2 available",
       "nativeGateOpen": true,
       "report": ".agents/research/v4-reference-study/bulk-findings-genzryan.com.md"
     },
