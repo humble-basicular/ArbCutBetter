@@ -2,15 +2,17 @@
 /* v5 savininko juosta (14 žingsnių: 7), tik patikrinti faktai (.agents/research/v5-client-mantas-gerulis.md):
    LRT.lt 2020 interviu (kelias į arboristiką, pasiruošimas darbui, citata), LARA narių sąrašas.
    Jokio išgalvoto pažado ar parašo: vardas ir pareigos surinkti paprastu šriftu. */
+import { Image } from 'astro:assets';
 import { site } from '@data/site.js';
 import { lrt } from '@data/spauda.js';
-import Photo from '../Photo.astro';
+import cutout from '../../assets/cutout/mantas-v5.png';
 ---
 <section class="prom" aria-labelledby="prom-h" data-parallax-host>
   <div class="prom__rings" data-parallax="0.1" aria-hidden="true"></div>
   <div class="wrap prom__grid">
-    <div class="prom__vis">
-      <Photo name="mantas-ant-sakos" alt="Mantas Gerulis stovi ant šakos medžio lajoje, prisirišęs virvėmis" sizes="(max-width: 860px) 92vw, 460px" widths={[480, 749, 1000, 1500]} position="50% 35%" quality={90} />
+    <div class="prom__vis" aria-hidden="true">
+      <img class="prom__mark" src="/assets/v5-brand/logo/mark-a-egle-white.svg" alt="" width="300" height="510" loading="lazy" />
+      <Image class="prom__man" src={cutout} alt="" widths={[360, 540, 720]} sizes="(max-width: 860px) 70vw, 420px" format="webp" quality={82} loading="lazy" />
     </div>
     <div class="prom__txt">
       <p class="tag rv-tag">Kas lips į jūsų medį</p>
@@ -31,10 +33,11 @@ import Photo from '../Photo.astro';
 <style>
   .prom { position: relative; background: var(--spruce-900); color: #fff; isolation: isolate; overflow: hidden; padding-top: clamp(72px, 8vw, 120px); }
   .prom__rings { position: absolute; inset: -100px -10%; background: url('/assets/v5-brand/texture/rings-hero.webp') 18% 70% / 2200px auto no-repeat; opacity: .35; z-index: -1; }
-  .prom__grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(28px, 4vw, 72px); align-items: center; padding-bottom: clamp(56px, 6vw, 96px); }
-  .prom__vis { width: min(100%, 460px); justify-self: center; aspect-ratio: 5 / 6; border-radius: var(--r-lg); overflow: hidden; border: 6px solid #fff; box-shadow: 0 18px 40px rgba(0, 0, 0, .45); }
-  .prom__vis :global(img) { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .prom__txt { display: grid; gap: 18px; justify-items: start; }
+  .prom__grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(28px, 4vw, 72px); align-items: end; }
+  .prom__vis { position: relative; height: clamp(440px, 40vw, 600px); }
+  .prom__mark { position: absolute; left: 50%; bottom: 4%; transform: translateX(-50%); height: 104%; width: auto; opacity: .2; }
+  .prom__man { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); height: 112%; width: auto; filter: drop-shadow(0 18px 30px rgba(0,0,0,.4)); }
+  .prom__txt { display: grid; gap: 18px; justify-items: start; padding-bottom: clamp(56px, 6vw, 96px); }
   .prom__h { color: #fff; }
   .prom__p { font-size: clamp(1.08rem, 1rem + .3vw, 1.22rem); line-height: 1.6; color: var(--on-dark-2); max-width: 34em; }
   .prom__p a, .prom__lara { color: #fff; font-weight: 700; text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 4px; }
@@ -43,5 +46,5 @@ import Photo from '../Photo.astro';
   .prom__who { display: grid; line-height: 1.25; }
   .prom__who b { font-family: var(--display); font-size: 1.3rem; }
   .prom__who span { color: var(--on-dark-2); font-size: .95rem; }
-  @media (max-width: 860px) { .prom__grid { grid-template-columns: 1fr; } .prom__vis { order: 2; } }
+  @media (max-width: 860px) { .prom__grid { grid-template-columns: 1fr; } .prom__vis { order: 2; height: 420px; } .prom__txt { padding-bottom: 0; } }
 </style>
