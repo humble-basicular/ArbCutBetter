@@ -1,13 +1,33 @@
 ---
-/* Logotipas. Vienintelė vieta, kur keičiamas variantas: OPTION (1, 2 arba 3; public/assets/arbcut-v4-brand/).
-   tone="dark" = tamsus logotipas šviesiam fonui (failas logo-N-light), tone="light" = baltas tamsiam fonui (logo-N-dark). */
+/* Logotipas v5 (public/assets/v5-brand/logo/, vektorinis, žr. .agents/research/v5-logo/PROCESS.md).
+   Gamyboje rodomas OPTION. Peržiūroje (PREVIEW) į puslapį įdedami visi trys variantai,
+   o rodomas tas, kurį nurodo ?logo=1|2|3 (html[data-logo]) — kad vartotojas pamatytų juos tikroje antraštėje. */
+import { PREVIEW } from '@data/site.js';
 const OPTION = 1;
-const RATIO = { 1: 535 / 104, 2: 445 / 128, 3: 411 / 128 };
-const { tone = 'dark', height = 44, mark = false, class: cls } = Astro.props;
-const B = '/assets/arbcut-v4-brand';
-const file = tone === 'light' ? 'dark' : 'light';
-const src = `${B}/web/logo-${OPTION}-${file}.webp`;
+const NAMES = { 1: 'a-egle', 2: 'aukstalipys', 3: 'pjuvis' };
+/* viewBox pločio/aukščio santykiai iš lockup-*.svg ir mark-*.svg */
+const RATIO = { 1: 2.922, 2: 2.989, 3: 2.823 };
+const MRATIO = { 1: 0.588, 2: 0.702, 3: 0.493 };
+const { tone = 'dark', height = 56, mark = false, class: cls } = Astro.props;
+const B = '/assets/v5-brand/logo';
+const opts = PREVIEW ? [1, 2, 3] : [OPTION];
+const src = (o) => mark
+  ? `${B}/mark-${NAMES[o]}${tone === 'light' ? '-white' : ''}.svg`
+  : `${B}/lockup-${NAMES[o]}-${tone === 'light' ? 'dark' : 'light'}.svg`;
 ---
-{mark
-  ? <img class:list={['logo', cls]} src={tone === 'light' ? `${B}/web/mark-${OPTION}-dark.webp` : `${B}/web/mark-${OPTION}.webp`} alt="ArbCut" width={height} height={height} decoding="async" />
-  : <img class:list={['logo', cls]} src={src} alt="ArbCut" width={Math.round(height * RATIO[OPTION])} height={height} decoding="async" />}
+{opts.map((o) => (
+  <img
+    class:list={['logo', cls, PREVIEW && `logo--opt logo--o${o}`]}
+    src={src(o)}
+    alt="ArbCut"
+    width={Math.round(height * (mark ? MRATIO[o] : RATIO[o]))}
+    height={height}
+    decoding="async"
+  />
+))}
+<style is:global>
+  html:not([data-logo]) .logo--opt:not(.logo--o1),
+  html[data-logo='1'] .logo--opt:not(.logo--o1),
+  html[data-logo='2'] .logo--opt:not(.logo--o2),
+  html[data-logo='3'] .logo--opt:not(.logo--o3) { display: none !important; }
+</style>

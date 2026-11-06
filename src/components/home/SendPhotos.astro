@@ -1,21 +1,55 @@
 ---
-/* Nuotraukos → kaina. Manto žodžiai iš Valstietis.lt; kainodara iš Paslaugos.lt profilio. */
+/* v5 eiga (14 žingsnių: 8, 12): oranžinė juosta su rievėmis, penki pavadinti žingsniai ant virvės,
+   Manto žodžiai iš Valstietis.lt, ką nufotografuoti, SMS / el. paštas, burbulas su Manto veidu.
+   Žingsnių tekstai sudaryti tik iš esamų faktų (nuotraukos → kaina → atvykimas → išvežimas Kaune / krūvos kitur). */
+import { Image } from 'astro:assets';
 import { site } from '@data/site.js';
 import { valstietis } from '@data/spauda.js';
-import Photo from '../Photo.astro';
+import face from '../../assets/photos/mantas-portretas.jpg';
 const subj = encodeURIComponent('Medžio nuotraukos kainai');
+const I = '/assets/v5-brand/raster/icons';
+const steps = [
+  { ic: 'step-foto', n: 'Nufotografuokite', p: 'Visą medį, kas po juo ir šalia, kamieną ir kelią iki medžio.' },
+  { ic: 'step-siusti', n: 'Atsiųskite', p: `SMS žinute numeriu ${site.telefonas} arba el. paštu.` },
+  { ic: 'step-kaina', n: 'Pasakome kainą', p: 'Preliminarią pagal nuotraukas, tikslią atvažiavę į vietą.' },
+  { ic: 'step-atvaziuojame', n: 'Atvažiuojame', p: 'Su autobokšteliu arba virvėmis, sutartą dieną.' },
+  { ic: 'step-tvarkinga', n: 'Paliekame tvarkingai', p: 'Kaune ir Kauno r. šakas išvežame fiskaru, kitur sukrauname krūvomis.' },
+];
 ---
 <section class="snd" id="nuotraukos" aria-labelledby="snd-h">
-  <div class="wrap snd__grid">
-    <div class="snd__txt">
-      <h2 id="snd-h">Atsiųskite nuotraukas. Pasakysime kainą.</h2>
-      <figure class="snd__q">
-        <blockquote><p>„{valstietis.citatos.kava}“</p></blockquote>
-        <figcaption>Mantas Gerulis, <a href={valstietis.url} target="_blank" rel="noopener">Valstietis.lt</a></figcaption>
-      </figure>
-      <p class="snd__p">Todėl preliminarią kainą pasakome pagal jūsų nuotraukas, o tikslią atvažiavę į vietą. Kainą lemia daugiau nei medžio dydis:</p>
-      <blockquote class="snd__q2"><p>„{valstietis.citatos.sudetingumas}“</p></blockquote>
+  <div class="snd__rings" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="snd__head">
+      <div>
+        <p class="kick snd__kick">Nuo nuotraukos iki tvarkingo kiemo</p>
+        <h2 id="snd-h">Atsiųskite nuotraukas. Pasakysime kainą.</h2>
+      </div>
+      <div class="snd__bubble rv">
+        <Image class="snd__face" src={face} alt="" widths={[96, 192]} sizes="96px" format="webp" quality={80} style="object-position: 50% 18%" />
+        <p><span class="hand">Skambinate tiesiai Mantui</span>Jis pats pažiūri nuotraukas ir pasako, ką daryti.</p>
+      </div>
+    </div>
 
+    <ol class="snd__steps" data-rope>
+      {steps.map((s, i) => (
+        <li class="snd__step rv lift" style={`--i:${i}`}>
+          <span class="snd__num" aria-hidden="true">{i + 1}</span>
+          <span class="ico-c snd__ic" style="--cs:84px"><img src={`${I}/${s.ic}-160.png`} alt="" width="62" height="62" loading="lazy" /></span>
+          <p class="snd__p">{s.p}</p>
+          <p class="snd__name tag rv-tag">{s.n}</p>
+        </li>
+      ))}
+    </ol>
+
+    <div class="snd__grid">
+      <div class="snd__words">
+        <figure class="snd__q">
+          <blockquote><p>„{valstietis.citatos.kava}“</p></blockquote>
+          <figcaption>Mantas Gerulis, <a href={valstietis.url} target="_blank" rel="noopener">Valstietis.lt</a></figcaption>
+        </figure>
+        <p class="snd__p2">Todėl preliminarią kainą pasakome pagal jūsų nuotraukas, o tikslią atvažiavę į vietą. Kainą lemia daugiau nei medžio dydis:</p>
+        <blockquote class="snd__q2"><p>„{valstietis.citatos.sudetingumas}“</p></blockquote>
+      </div>
       <div class="snd__what">
         <h3>Ką nufotografuoti</h3>
         <ul class="ticks">
@@ -24,56 +58,67 @@ const subj = encodeURIComponent('Medžio nuotraukos kainai');
           <li>Kamieną prie žemės.</li>
           <li>Kelią iki medžio: ar privažiuos autobokštelis.</li>
         </ul>
+        <div class="snd__act">
+          <a class="btn btn--primary snd__big" href={site.smsHref} data-loc="photos-sms"><img class="ico" src={`${I}/ui-sms-160.png`} alt="" width="28" height="28" style="--is:28px;filter:brightness(0) invert(1)" />Siųsti SMS <span class="btn__num">{site.telefonas}</span></a>
+          <a class="btn btn--line" href={`mailto:${site.elPastas}?subject=${subj}`} data-loc="photos-mail">El. paštu</a>
+        </div>
+        <p class="snd__mail">El. paštas: <a href={`mailto:${site.elPastas}?subject=${subj}`}>{site.elPastas}</a></p>
       </div>
-
-      <div class="snd__act">
-        <a class="btn btn--primary snd__big" href={site.smsHref} data-loc="photos-sms">Siųsti SMS <span class="btn__num">{site.telefonas}</span></a>
-        <a class="btn btn--line" href={`mailto:${site.elPastas}?subject=${subj}`} data-loc="photos-mail">El. paštu</a>
-      </div>
-      <p class="snd__mail">El. paštas: <a href={`mailto:${site.elPastas}?subject=${subj}`}>{site.elPastas}</a></p>
     </div>
-
-    <figure class="snd__ph">
-      <div class="ph cut"><Photo name="mantas-portretas" alt="Arboristas Mantas Gerulis su šalmu, alpinistine įranga ir pjūklu" sizes="(max-width: 860px) 100vw, 38vw" position="50% 28%" /></div>
-      <figcaption class="snd__tag">
-        <strong>Mantas Gerulis</strong>
-        <span>Paslaugos.lt: tapatybė patvirtinta, profilis nuo {site.profilis.nuo} m.</span>
-      </figcaption>
-    </figure>
   </div>
 </section>
 <style>
-  .snd { background: var(--stone); padding-block: var(--sec); }
-  .snd__grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: clamp(36px, 5vw, 88px); align-items: start; }
-  .snd__txt { display: grid; gap: 24px; }
-  .snd h2 { color: var(--spruce-900); max-width: 16ch; }
-  .snd__q { background: var(--paper); padding: 26px 28px 24px; }
-  .snd__q blockquote p { font-stretch: var(--wide); font-weight: 800; font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2.4rem); line-height: 1.12; letter-spacing: -.01em; color: var(--spruce-900); }
-  .snd__q figcaption { margin-top: 14px; font-weight: 700; color: var(--ink-2); }
-  .snd__q figcaption a { color: var(--spruce-900); text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 4px; }
-  .snd__p { font-size: 1.15rem; color: var(--ink-2); }
-  .snd__q2 p { font-size: 1.12rem; line-height: 1.5; padding-left: 18px; box-shadow: inset 4px 0 0 var(--spruce-700); color: var(--ink); }
-  .snd__what { background: var(--paper); padding: 24px 26px; }
-  .snd__what h3 { margin-bottom: 14px; color: var(--spruce-900); }
-  .snd__act { display: flex; flex-wrap: wrap; gap: 12px; }
-  .snd__big { min-height: 64px; padding-inline: 26px; }
-  .snd__mail a { font-weight: 700; color: var(--spruce-900); text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 4px; overflow-wrap: anywhere; }
-  .snd__ph { position: sticky; top: calc(var(--header-h) + 24px); }
-  .snd__ph .ph { aspect-ratio: 4 / 5; }
-  .snd__tag { margin-top: 14px; display: grid; gap: 2px; }
-  .snd__tag strong { font-stretch: var(--wide); font-size: 1.4rem; font-weight: 800; line-height: 1.15; color: var(--spruce-900); }
-  .snd__tag span { color: var(--ink-2); }
-  @media (max-width: 860px) {
-    .snd__grid { grid-template-columns: 1fr; }
-    .snd__ph { position: static; order: -1; max-width: 520px; }
-    .snd__q { padding: 22px 18px; }
-    .snd__what { padding: 20px 16px; }
-    .snd__act .btn { width: 100%; }
+  .snd { position: relative; background: var(--orange); color: #fff; overflow: hidden; isolation: isolate; padding-block: clamp(72px, 8vw, 120px); }
+  .snd__rings { position: absolute; inset: 0; background: url('/assets/v5-brand/texture/rings-band.webp') 92% 20% / 2000px auto no-repeat; z-index: -1; }
+  .snd__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 28px; margin-bottom: clamp(48px, 5vw, 72px); }
+  @media (max-width: 860px) { .snd__head { grid-template-columns: 1fr; } }
+  .snd__kick { color: var(--spruce-950); font-weight: 700; }
+  .snd h2 { color: #fff; max-width: 14em; margin-top: 8px; }
+  .snd__bubble { position: relative; display: flex; align-items: center; gap: 14px; background: #fff; color: var(--ink); border-radius: 999px; padding: 8px 26px 8px 8px; box-shadow: var(--sh-2); max-width: 430px; }
+  .snd__bubble::after { content: ''; position: absolute; right: 48px; bottom: -12px; width: 24px; height: 24px; background: #fff; transform: rotate(45deg); border-radius: 0 0 6px 0; }
+  .snd__face { width: 78px; height: 78px; border-radius: 50%; object-fit: cover; border: 3px solid var(--gold); flex: 0 0 auto; }
+  .snd__bubble p { font-size: .98rem; line-height: 1.35; color: var(--ink-2); }
+  .snd__bubble .hand { display: block; color: var(--spruce-900); font-size: 1.75rem; }
+
+  .snd__steps { position: relative; list-style: none; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 22px); }
+  .snd__steps::before { content: ''; position: absolute; left: 6%; right: 6%; top: 52px; height: 10px; border-radius: 99px; background: repeating-linear-gradient(-55deg, var(--spruce-900) 0 6px, #24604A 6px 12px); box-shadow: 0 3px 0 rgba(0,0,0,.15); z-index: 0; }
+  @media (prefers-reduced-motion: no-preference) {
+    .js .snd__steps::before { transform: scaleX(0); transform-origin: left; transition: transform 1.1s ease-out; }
+    .js .snd__steps.is-drawn::before { transform: scaleX(1); }
   }
-  @media (max-width: 600px) {
-    .snd__ph .ph { aspect-ratio: 4 / 3; }
-    .snd__txt { gap: 16px; }
-    .snd__q2 { display: none; }
-    .snd__what .ticks { gap: 6px; }
+  .snd__step { position: relative; z-index: 1; background: #fff; color: var(--ink); border-radius: var(--r-lg); padding: 64px 18px 0; margin-top: 10px; display: grid; justify-items: center; text-align: center; align-content: start; gap: 12px; box-shadow: var(--sh-2); }
+  .snd__ic { position: absolute; top: -8px; left: 50%; transform: translateX(-50%); border: 4px solid var(--spruce-900); }
+  .snd__num { position: absolute; top: 10px; left: 14px; font-family: var(--display); font-weight: 800; font-size: 1.6rem; color: var(--orange); }
+  .snd__p { font-size: 1rem; line-height: 1.45; color: var(--ink-2); min-height: 4.4em; margin-top: 30px; }
+  .snd__name { margin-bottom: -18px; font-size: 1.02rem; }
+  .snd__step:nth-child(even) .snd__name { background: var(--spruce-900); color: #fff; transform: rotate(2deg); }
+  .snd__step:nth-child(1) .snd__name { background: var(--gold); }
+
+  .snd__grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(28px, 4vw, 64px); margin-top: clamp(56px, 6vw, 84px); align-items: start; }
+  .snd__q blockquote { font-family: var(--display); font-weight: 700; font-variation-settings: 'opsz' 48, 'wdth' 95; font-size: clamp(1.45rem, 1.1rem + 1.2vw, 2.1rem); line-height: 1.2; letter-spacing: -.01em; }
+  .snd__q figcaption { margin-top: 12px; font-weight: 700; color: var(--spruce-950); }
+  .snd__q figcaption a { color: var(--spruce-950); text-decoration: underline; text-decoration-color: #fff; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .snd__mail a { color: #fff; text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .snd__p2 { margin-top: 22px; font-size: 1.1rem; color: var(--spruce-950); font-weight: 500; }
+  .snd__q2 { margin-top: 14px; border-left: 5px solid var(--spruce-900); padding-left: 18px; font-size: 1.2rem; font-weight: 700; color: var(--spruce-950); }
+  .snd__what { background: var(--spruce-900); border-radius: var(--r-lg); padding: clamp(22px, 3vw, 34px); box-shadow: var(--sh-3); display: grid; gap: 16px; }
+  .snd__what h3 { color: var(--gold); }
+  .snd__what .ticks { color: #fff; }
+  .snd__what :global(.ticks li::before) { filter: brightness(0) invert(1); }
+  .snd__act { display: flex; flex-wrap: wrap; gap: 12px; }
+  .snd__big .btn__num { font-size: 1.1rem; }
+  .snd__mail { color: var(--on-dark-2); font-size: .98rem; }
+
+  @media (max-width: 1100px) {
+    .snd__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 54px; }
+    .snd__steps::before { display: none; }
+    .snd__step:last-child { grid-column: 1 / -1; }
+  }
+  @media (max-width: 860px) { .snd__grid { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) {
+    .snd__steps { grid-template-columns: 1fr; row-gap: 46px; }
+    .snd__bubble { border-radius: var(--r-lg); }
+    .snd__p { min-height: 0; }
+    .snd__big { width: 100%; }
   }
 </style>

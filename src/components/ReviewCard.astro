@@ -1,32 +1,37 @@
 ---
 /* Vienas atsiliepimas: oficialus šaltinio ženklas, data, įvertinimas skaičiumi, originalus tekstas, autorius, paslauga. */
 import Mark from './Mark.astro';
+import Stars from './v5/Stars.astro';
 const { a, compact = false } = Astro.props;
 const src = a.saltinis || 'paslaugos';
 const srcName = src === 'google' ? 'Google' : 'Paslaugos.lt';
+const ini = (a.vardas || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join('');
 ---
 <article class:list={['rc', `rc--${src}`, { 'rc--compact': compact }]} data-src={src} data-svc={a.paslauga || 'kita'}>
   <header class="rc__top">
     <span class="rc__src"><Mark name={src === 'google' ? 'google' : 'paslaugos'} height={20} label={srcName} /></span>
     <time datetime={a.data}>{a.data}</time>
   </header>
-  {a.zvaigzdes && <p class="rc__stars"><b>{a.zvaigzdes}</b> iš 5</p>}
+  {a.zvaigzdes && <p class="rc__stars"><Stars n={a.zvaigzdes} size={20} /></p>}
   <blockquote class="rc__txt">{a.tekstas.split('\n').filter(Boolean).map((l) => <p>{l}</p>)}</blockquote>
   {compact && <button type="button" class="rc__expand" data-rv-expand aria-expanded="false">Skaityti visą atsiliepimą</button>}
   <footer class="rc__by">
-    <strong>{a.vardas}</strong>
-    {a.paslaugaPavadinimas && <span>{a.paslaugaPavadinimas}</span>}
+    <span class="rc__av" aria-hidden="true">{ini}</span>
+    <span class="rc__who"><strong>{a.vardas}</strong>
+    {a.paslaugaPavadinimas && <span>{a.paslaugaPavadinimas}</span>}</span>
   </footer>
 </article>
 <style>
-  .rc { background: var(--paper); display: flex; flex-direction: column; gap: 12px; padding: 20px 22px 20px; break-inside: avoid; }
+  .rc { background: var(--paper); display: flex; flex-direction: column; gap: 12px; padding: 22px 22px 20px; break-inside: avoid; border-radius: var(--r); box-shadow: var(--sh-1); }
   .rc__top { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--spruce-900); }
-  .rc__top time { font-size: .95rem; font-variant-numeric: tabular-nums; color: var(--ink-2); }
-  .rc__stars { font-size: .98rem; color: var(--ink-2); margin-top: -4px; }
-  .rc__stars b { color: var(--spruce-900); font-stretch: var(--wide); font-weight: 800; font-size: 1.15rem; }
-  .rc__txt { display: grid; gap: 8px; font-size: 1.08rem; line-height: 1.5; color: var(--ink); overflow-wrap: anywhere; flex: 1; }
-  .rc__by { display: grid; gap: 0; padding-top: 12px; font-size: .98rem; color: var(--ink-2); box-shadow: inset 0 1px 0 var(--line); }
-  .rc__by strong { color: var(--ink); text-transform: capitalize; font-size: 1.05rem; }
+  .rc__top time { font-size: .92rem; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+  .rc__stars { margin-top: -2px; }
+  .rc__txt { display: grid; gap: 8px; font-size: 1.06rem; line-height: 1.55; color: var(--ink); overflow-wrap: anywhere; flex: 1; }
+  .rc__by { display: flex; align-items: center; gap: 12px; padding-top: 14px; font-size: .95rem; color: var(--ink-2); box-shadow: inset 0 1px 0 var(--line); }
+  .rc__av { flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; background: var(--spruce-900); color: var(--gold); font-family: var(--display); font-weight: 800; font-size: 1rem; border: 2px solid var(--gold); }
+  .rc--paslaugos:nth-of-type(3n+2) .rc__av { background: var(--orange); color: #fff; border-color: #fff; }
+  .rc__who { display: grid; line-height: 1.3; }
+  .rc__by strong { color: var(--ink); text-transform: capitalize; font-size: 1.04rem; }
   .rc__expand { display: none; }
   @media (max-width: 600px) {
     :global(.js) .rc--compact:not(.is-expanded) .rc__txt { display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }

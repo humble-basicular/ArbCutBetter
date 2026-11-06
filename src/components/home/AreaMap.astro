@@ -1,97 +1,118 @@
 ---
-/* Aptarnavimo zona: 9 miestai (nuorodos į vietovių puslapius) + schema pagal tikras koordinates.
-   Google žemėlapis įkeliamas tik paspaudus (privatumas, jokių užklausų iš anksto). */
+/* v5 aptarnavimo zona (14 žingsnių: 13): tikras žemėlapis (MapLibre + OpenFreeMap, nemokamai, be rakto),
+   įkeliamas pats priartėjus prie ekrano. Zona nubrėžta aplink realius aptarnaujamus miestus (be išgalvoto spindulio),
+   Šiauliai ir Klaipėda pažymėti „per toli“. Statinis firminis paveikslėlis — kol kraunasi ir be JS / WebGL.
+   Miestų nuorodos šalia — paprastos <a> (indeksuojamos). */
 import { vietoves } from '@data/vietoves.js';
-/* Apytikslės miestų centrų koordinatės (lat, lng) */
-const geo = {
-  Kaunas: [54.897, 23.886], Vilnius: [54.687, 25.28], 'Panevėžys': [55.734, 24.357], 'Marijampolė': [54.559, 23.354],
-  Alytus: [54.396, 24.046], Jonava: [55.083, 24.279], 'Kėdainiai': [55.288, 23.974], 'Kazlų Rūda': [54.749, 23.49], 'Tauragė': [55.252, 22.29],
+import pts from '@data/map-points.json';
+import pos from '@data/map-fallback-pos.json';
+const I = '/assets/v5-brand/raster/icons';
+const data = {
+  lt: '/assets/v5-brand/map/lt.json', zone: '/assets/v5-brand/map/zone.json', mark: '/assets/v5-brand/logo/mark-a-egle-white.svg',
+  towns: vietoves.map((v) => ({ name: v.miestas, href: `/${v.slug}`, base: !!v.pagrindinis, ll: pts.towns[v.miestas] })),
+  far: Object.entries(pts.far).map(([name, ll]) => ({ name, ll })),
 };
-const L0 = 20.9, T0 = 56.5, KX = 64, KY = 111;
-const pt = ([lat, lng]) => [Math.round((lng - L0) * KX), Math.round((T0 - lat) * KY)];
-const K = pt(geo.Kaunas);
-const px = ([x, y]) => `left:${(x / 400 * 100).toFixed(2)}%;top:${(y / 300 * 100).toFixed(2)}%`;
-const lab = { Jonava: 'r', 'Kėdainiai': 'r', 'Kazlų Rūda': 'l', 'Marijampolė': 'l', Alytus: 'r', Kaunas: 'l', Vilnius: 'r', 'Panevėžys': 'r', 'Tauragė': 'r' };
-const q = encodeURIComponent('Kaunas, Lietuva');
 ---
 <section class="area" id="vietoves" aria-labelledby="area-h">
   <div class="wrap area__grid">
     <div class="area__txt">
+      <p class="kick">Aptarnavimo zona</p>
       <h2 id="area-h">Kur važiuojame</h2>
-      <p class="lead">Bazė Kaune. Dirbame Kaune, Kauno rajone ir iki 200 km aplink. Į tolimesnius miestus važiuojame suderinę datą iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.</p>
+      <p class="lead">Bazė Kaune. Dirbame Kaune, Kauno rajone ir miestuose žemiau. Į tolimesnius miestus važiuojame suderinę datą iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.</p>
       <ul role="list" class="area__list">
-        {vietoves.map((v) => (
-          <li class:list={{ 'is-base': v.pagrindinis }}>
+        {vietoves.map((v, i) => (
+          <li class:list={['rv', { 'is-base': v.pagrindinis }]} style={`--i:${i}`}>
             <a href={`/${v.slug}`}>
-              <span class="area__city">{v.miestas}</span>
-              <span class="area__sub">{v.pagrindinis ? 'Bazė, išvežame medieną' : `Medžių pjovimas ${v.kur}`}</span>
+              <img class="area__pin" src={`${I}/ui-pin-160.png`} alt="" width="30" height="30" loading="lazy" />
+              <span><span class="area__city">{v.miestas}</span>
+              <span class="area__sub">{v.pagrindinis ? 'Bazė, išvežame medieną' : `Medžių pjovimas ${v.kur}`}</span></span>
             </a>
           </li>
         ))}
       </ul>
       <p class="area__note"><strong>Šakų ir medienos išvežimas fiskaru tik Kaune ir Kauno rajone.</strong> Kitur medį supjauname, o šakas ir medieną sukrauname tvarkingomis krūvomis.</p>
+      <p class="area__far"><span class="area__far-dot" aria-hidden="true"></span>Šiauliai, Klaipėda ir panašus atstumas nuo Kauno: per toli, ten nevažiuojame.</p>
     </div>
 
     <div class="area__map">
-      <div class="area__frame cut" data-map>
-        <div class="area__plot" aria-hidden="true">
-          <span class="ring" style={`${px(K)};--d:100%`}></span>
-          <span class="ring ring--in" style={`${px(K)};--d:50%`}></span>
-          <span class="ring-l" style={`left:${((K[0] - 58) / 4).toFixed(2)}%;top:${((K[1] - 103) / 3).toFixed(2)}%`}>100 km</span>
-          {vietoves.map((v) => {
-            const p = pt(geo[v.miestas]);
-            const r = lab[v.miestas] === 'r';
-            return <span class:list={['town', r ? 'town--r' : 'town--l', { 'town--base': v.pagrindinis }]} style={px(p)}><i></i><b>{v.miestas}</b></span>;
-          })}
+      <div class="area__frame" data-area-map>
+        <img class="area__static" src="/assets/v5-brand/map/fallback.webp" alt="ArbCut aptarnavimo zonos žemėlapis: Kaunas ir aplinkiniai miestai, Šiauliai ir Klaipėda už zonos ribų" width="1200" height="900" loading="lazy" />
+        <div class="area__labels" aria-hidden="true">
+          {Object.entries(pos).map(([n, [x, y]]) => <span class:list={['flab', { 'flab--far': n in pts.far, 'flab--base': n === 'Kaunas' }]} style={`left:${x}%;top:${y}%`}>{n}{n in pts.far && <small>per toli</small>}</span>)}
         </div>
-        <div class="area__load">
-          <button type="button" class="btn btn--primary btn--sm" data-map-load data-src={`https://www.google.com/maps?q=${q}&z=8&output=embed`}>Rodyti Google žemėlapyje</button>
-          <p>Žemėlapis įkeliamas tik paspaudus.</p>
-        </div>
+        <div class="area__canvas" data-map-canvas></div>
+        <script type="application/json" set:html={JSON.stringify(data)} />
       </div>
+      <p class="area__legend"><span class="lg lg--zone"></span>Aptarnavimo zona <span class="lg lg--base"></span>Bazė Kaune <span class="lg lg--far"></span>Per toli</p>
     </div>
   </div>
 </section>
-<style>
-  .area { background: var(--paper); padding-block: var(--sec); }
-  .area__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
-  .area__txt { display: grid; gap: 22px; }
-  .area h2 { color: var(--spruce-900); }
-  .area__list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
-  .area__list a { display: grid; gap: 0; padding: 12px 0; box-shadow: inset 0 -1px 0 var(--line); min-height: 60px; align-content: center; }
-  .area__list .is-base { grid-column: 1 / -1; }
-  .area__list .is-base a { background: var(--spruce-100); padding: 16px 18px; box-shadow: none; margin-bottom: 8px; }
-  .area__city { font-stretch: var(--wide); font-weight: 800; font-size: 1.3rem; line-height: 1.15; color: var(--spruce-900); text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 2px; text-underline-offset: 4px; transition: text-decoration-color var(--t); }
-  .area__list a:hover .area__city { text-decoration-color: var(--orange); }
-  .is-base .area__city { font-size: 1.8rem; }
-  .area__sub { font-size: .96rem; color: var(--ink-2); }
-  .area__note { padding: 2px 0 2px 18px; box-shadow: inset 4px 0 0 var(--spruce-700); color: var(--ink-2); }
-  .area__note strong { color: var(--ink); }
 
-  .area__frame { position: relative; aspect-ratio: 4 / 3; background: var(--spruce-100); overflow: hidden; }
-  .area__frame :global(iframe) { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-  .area__plot { position: absolute; inset: 0; }
-  .area__plot > * { position: absolute; }
-  .ring { width: var(--d); aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; border: 1.5px dashed var(--spruce-700); background: rgba(27, 70, 52, .05); }
-  .ring-l { font-size: .8rem; font-weight: 700; color: var(--spruce-700); }
-  .town { display: flex; align-items: center; gap: 7px; transform: translate(-5px, -50%); white-space: nowrap; }
-  .town i { width: 10px; height: 10px; flex: 0 0 auto; background: var(--spruce-900); border-radius: 50%; }
-  .town b { font-size: .86rem; font-weight: 700; color: var(--spruce-900); }
-  .town--l { flex-direction: row-reverse; transform: translate(calc(-100% + 5px), -50%); }
-  .town--base i { width: 16px; height: 16px; background: var(--paper); border: 4px solid var(--spruce-900); }
-  .town--base b { font-stretch: var(--wide); font-weight: 800; font-size: 1.05rem; }
-  .town--base { transform: translate(calc(-100% + 8px), -50%); }
-  .area__load { position: absolute; left: 16px; bottom: 16px; right: 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
-  .area__load p { font-size: .94rem; color: var(--ink-2); }
-  @media (max-width: 960px) { .area__grid { grid-template-columns: 1fr; } }
-  @media (max-width: 480px) {
-    .area__list li:not(.is-base) .area__sub { display: none; }
-    .area__city { font-size: 1.15rem; }
-    .is-base .area__city { font-size: 1.5rem; }
-    .area__frame { aspect-ratio: 4 / 5; }
-    .area__plot { inset: 0 0 auto 0; aspect-ratio: 1 / 1; overflow: hidden; }
-    .area__plot > :global(*) { transform-origin: center; }
-    .town b { font-size: .74rem; }
-    .area__load { left: 10px; right: 10px; bottom: 10px; }
+<script>
+  const box = document.querySelector('[data-area-map]');
+  if (box) {
+    const go = () => import('../../scripts/area-map.js').then((m) => m.mount(box)).catch(() => box.classList.add('map--static'));
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((ents) => { if (ents.some((e) => e.isIntersecting)) { io.disconnect(); go(); } }, { rootMargin: '600px 0px' });
+      io.observe(box);
+    } else go();
   }
+</script>
+
+<style>
+  .area { background: var(--paper); padding-block: clamp(72px, 8vw, 128px); }
+  .area__grid { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: clamp(32px, 5vw, 80px); align-items: center; }
+  .area__txt { display: grid; gap: 16px; }
+  .area h2 { color: var(--spruce-900); }
+  .area__list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; margin-top: 8px; }
+  .area__list a { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--spruce-50); border: 1px solid transparent; transition: border-color var(--t), background var(--t), transform var(--t); }
+  .area__list a:hover { border-color: var(--orange); background: #fff; transform: translateX(3px); }
+  .area__pin { width: 30px; height: 30px; flex: 0 0 auto; }
+  .area__city { display: block; font-family: var(--display); font-weight: 800; font-size: 1.2rem; color: var(--spruce-900); line-height: 1.1; }
+  .area__sub { font-size: .9rem; color: var(--ink-2); }
+  .is-base { grid-column: 1 / -1; }
+  .is-base a { background: var(--spruce-900); }
+  .is-base .area__city { color: #fff; font-size: 1.45rem; }
+  .is-base .area__sub { color: var(--gold); font-weight: 700; }
+  .is-base a:hover { background: var(--spruce-700); }
+  .area__note { background: #FFF4EC; border-left: 5px solid var(--orange); padding: 14px 16px; border-radius: 0 10px 10px 0; color: var(--ink-2); }
+  .area__note strong { color: var(--spruce-900); }
+  .area__far { display: flex; align-items: center; gap: 10px; font-weight: 650; color: var(--ink-2); }
+  .area__far-dot { width: 14px; height: 14px; border-radius: 50%; background: #9AA8A1; border: 3px solid #fff; box-shadow: 0 0 0 1px #9AA8A1; }
+
+  .area__map { position: relative; }
+  .area__map::before { content: ''; position: absolute; inset: 22px -18px -18px 22px; background: var(--orange); border-radius: var(--r-lg); }
+  .area__frame { position: relative; aspect-ratio: 4 / 3; border-radius: var(--r-lg); overflow: hidden; border: 6px solid #fff; box-shadow: var(--sh-3); background: #DCE7E0; }
+  .area__static { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .area__labels { position: absolute; inset: 0; }
+  .flab { position: absolute; transform: translate(10px, -50%); font-weight: 800; font-size: .82rem; color: var(--spruce-900); white-space: nowrap; text-shadow: 0 0 3px #fff, 0 0 3px #fff; }
+  .flab small { display: block; font-weight: 700; color: #6F7E77; font-size: .72rem; }
+  .flab--base { font-size: 1rem; transform: translate(14px, -50%); }
+  .area__canvas { position: absolute; inset: 0; opacity: 0; transition: opacity .5s ease; }
+  :global(.map--live) .area__canvas { opacity: 1; }
+  :global(.map--live) .area__labels { display: none; }
+  .area__legend { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin-top: 28px; font-size: .9rem; color: var(--ink-2); font-weight: 600; }
+  .lg { display: inline-block; width: 16px; height: 16px; border-radius: 4px; margin-right: -8px; }
+  .lg--zone { background: rgba(226, 97, 27, .2); border: 2px dashed var(--orange); }
+  .lg--base { background: var(--spruce-900); border-radius: 50%; }
+  .lg--far { background: #9AA8A1; border-radius: 50%; }
+
+  /* MapLibre žymekliai (kuriami JS) */
+  :global(.mpin) { display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; cursor: pointer; }
+  :global(.mpin__dot) { width: 16px; height: 16px; border-radius: 50%; background: var(--orange); border: 3px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,.3); transition: transform .16s ease; }
+  :global(.mpin:hover .mpin__dot) { transform: scale(1.25); }
+  :global(.mpin__l) { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font: 800 13px/1.1 var(--font); color: var(--spruce-900); white-space: nowrap; text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff; pointer-events: none; }
+  :global(.mpin__l small) { display: block; font-weight: 700; font-size: 11px; color: #6F7E77; }
+  :global(.mpin--base) { position: relative; }
+  :global(.mpin--base img) { width: 26px; height: auto; background: var(--spruce-900); padding: 6px 5px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,.3); }
+  :global(.mpin--base .mpin__dot) { background: var(--spruce-900); width: 14px; height: 14px; }
+  :global(.mpin--base .mpin__l) { top: auto; bottom: 0; transform: none; left: 22px; font-size: 15px; }
+  :global(.mpin--base .mpin__l small) { color: var(--orange-ink); }
+  :global(.mpin--far .mpin__dot) { background: #9AA8A1; }
+  @media (prefers-reduced-motion: no-preference) {
+    :global(.mpin) { animation: pindrop .4s cubic-bezier(.34, 1.56, .64, 1) both; }
+    @keyframes pindrop { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
+  }
+  @media (max-width: 960px) { .area__grid { grid-template-columns: 1fr; } .area__map::before { inset: 14px -8px -10px 14px; } }
+  @media (max-width: 480px) { .area__list { grid-template-columns: 1fr; } }
 </style>

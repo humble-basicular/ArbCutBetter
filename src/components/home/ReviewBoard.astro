@@ -6,6 +6,7 @@ import { visiAtsiliepimai, saltiniai } from '@data/atsiliepimai-visi.js';
 import ReviewCard from '../ReviewCard.astro';
 import GoogleProfile from '../GoogleProfile.astro';
 import Mark from '../Mark.astro';
+import Stars from '../v5/Stars.astro';
 const P = saltiniai.paslaugos;
 const G = saltiniai.google;
 const items = visiAtsiliepimai.filter((a) => a.tekstas.trim().length >= 20).slice(0, 36);
@@ -17,10 +18,19 @@ const hasGoogle = items.some((a) => a.saltinis === 'google');
 const r1 = (x) => x.toFixed(1).replace('.', ',');
 ---
 <section class="rvb" id="atsiliepimai" aria-labelledby="rvb-h">
+  <div class="rvb__rings" aria-hidden="true"></div>
   <div class="wrap">
     <div class="rvb__head">
-      <h2 id="rvb-h">Ką rašo klientai</h2>
-      <p class="lead">Kiekvienas atsiliepimas su šaltiniu, data ir atlikta paslauga. Tekstai netaisyti. Įvertinimai rodomi atskirai kiekvienai platformai.</p>
+      <div class="rvb__ht">
+        <p class="kick">Atsiliepimai Paslaugos.lt</p>
+        <h2 id="rvb-h">Ką rašo klientai</h2>
+        <p class="lead">Kiekvienas atsiliepimas su šaltiniu, data ir atlikta paslauga. Tekstai netaisyti. Įvertinimai rodomi atskirai kiekvienai platformai.</p>
+      </div>
+      <div class="rvb__big" role="img" aria-label={`Paslaugos.lt: ${r1(P.ivertinimas)} iš 5, ${P.kiekis} atsiliepimai`}>
+        <div class="bign bign--a rv-tag" aria-hidden="true"><span class="bign__n" data-count={P.ivertinimas} data-dec="1">{r1(P.ivertinimas)}</span><Stars size={22} /><span class="bign__l">įvertinimas iš 5</span></div>
+        <div class="bign bign--b rv-tag" aria-hidden="true"><span class="bign__n" data-count={P.kiekis}>{P.kiekis}</span><span class="bign__l">atsiliepimai</span></div>
+        <div class="bign__src" aria-hidden="true"><Mark name="paslaugos" height={34} label="" /></div>
+      </div>
     </div>
     <div class="rvb__grid">
       <div class="rvb__main" data-rv-board data-per={PER} data-per-mobile="4">
@@ -49,10 +59,11 @@ const r1 = (x) => x.toFixed(1).replace('.', ',');
       </div>
 
       <aside class="rvb__side" aria-label="Įvertinimai pagal platformą">
-        <div class="pl cut">
+        <div class="pl">
           <div class="pl__head"><Mark name="paslaugos" height={42} /><span>profilis</span></div>
           <div class="pl__body">
             <p class="pl__score"><span class="pl__n">{r1(P.ivertinimas)}</span><span class="pl__of">iš 5</span></p>
+            <Stars size={24} />
             <p class="pl__cnt"><strong>{P.kiekis} atsiliepimai</strong></p>
             <ul role="list" class="pl__facts">
               <li>Tapatybė patvirtinta</li>
@@ -70,35 +81,50 @@ const r1 = (x) => x.toFixed(1).replace('.', ',');
   </div>
 </section>
 <style>
-  .rvb { background: var(--spruce-100); padding-block: var(--sec); }
-  .rvb__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 16px 56px; align-items: end; margin-bottom: clamp(28px, 3.5vw, 48px); }
-  .rvb__head h2 { color: var(--spruce-900); }
+  .rvb { position: relative; background: var(--spruce-900); color: #fff; padding-block: clamp(72px, 8vw, 128px); overflow: hidden; isolation: isolate; }
+  .rvb__rings { position: absolute; inset: -100px -10%; background: url('/assets/v5-brand/texture/rings-hero.webp') 88% 10% / 2400px auto no-repeat; z-index: -1; }
+  .rvb__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 56px; align-items: center; margin-bottom: clamp(36px, 4vw, 60px); }
+  .rvb__ht { display: grid; gap: 12px; }
+  .rvb__head h2 { color: #fff; }
+  .rvb__head .lead { color: var(--on-dark-2); }
+  .rvb__big { position: relative; display: flex; gap: 18px; align-items: flex-start; padding-bottom: 34px; }
+  .bign { display: grid; justify-items: center; gap: 6px; background: var(--gold); color: var(--spruce-950); border-radius: var(--r); padding: 16px 22px 14px; box-shadow: 0 8px 0 rgba(0,0,0,.18), var(--sh-2); min-width: 170px; }
+  .bign--b { background: #fff; transform: rotate(2deg); margin-top: 22px; }
+  .bign--b.is-in { transform: rotate(2deg); }
+  .bign__n { font-family: var(--display); font-weight: 800; font-variation-settings: 'opsz' 96, 'wdth' 85; font-size: clamp(3.6rem, 2.6rem + 3vw, 5.4rem); line-height: .9; letter-spacing: -.04em; }
+  .bign--b .bign__n { color: var(--orange); }
+  .bign__l { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: .78rem; }
+  .bign__src { position: absolute; left: 50%; bottom: -8px; transform: translateX(-50%); background: #fff; padding: 6px 12px; border-radius: 10px; box-shadow: var(--sh-1); }
   .rvb__grid { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: clamp(24px, 3vw, 40px); align-items: start; }
   .rvb__filters { display: grid; gap: 10px; margin-bottom: 14px; }
   .rvb__fg { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
-  .rvb__fl { font-weight: 700; min-width: 5.5em; }
-  .rvb__fg button { min-height: 44px; padding: 8px 14px; background: var(--paper); border: 2px solid transparent; font-weight: 600; font-size: 1rem; border-radius: var(--radius); }
-  .rvb__fg button:hover { border-color: var(--spruce-900); }
-  .rvb__fg button[aria-pressed='true'] { background: var(--spruce-900); color: #fff; }
-  .rvb__count { color: var(--ink-2); margin-bottom: 14px; }
-  .rvb__cards { columns: 2 300px; column-gap: 14px; }
-  .rvb__c { break-inside: avoid; margin-bottom: 14px; }
+  .rvb__fl { font-weight: 700; min-width: 5.5em; color: var(--on-dark-2); }
+  .rvb__fg button { min-height: 44px; padding: 8px 16px; background: rgba(255,255,255,.08); color: #fff; border: 2px solid rgba(255,255,255,.25); font-weight: 650; font-size: 1rem; border-radius: 999px; transition: background var(--t), border-color var(--t); }
+  .rvb__fg button:hover { border-color: #fff; }
+  .rvb__fg button[aria-pressed='true'] { background: var(--gold); border-color: var(--gold); color: var(--spruce-950); }
+  .rvb__count { color: var(--on-dark-2); margin-bottom: 14px; }
+  .rvb__cards { columns: 2 300px; column-gap: 16px; }
+  .rvb__c { break-inside: avoid; margin-bottom: 16px; }
   .rvb__more { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; margin-top: 10px; }
+  .rvb__more .btn--ink { background: var(--gold); color: var(--spruce-950); box-shadow: 0 4px 0 var(--gold-600); }
+  .rvb__more .link-arrow, .rvb__empty a { color: #fff; }
+  .rvb__empty { color: var(--on-dark-2); }
   .rvb__empty a { font-weight: 700; text-decoration: underline; }
 
-  .rvb__side { display: grid; gap: 14px; position: sticky; top: calc(var(--header-h) + 20px); }
-  .pl { background: var(--paper); }
+  .rvb__side { display: grid; gap: 14px; position: sticky; top: calc(var(--header-h) + 20px); color: var(--ink); }
+  .pl { background: var(--paper); border-radius: var(--r-lg); box-shadow: var(--sh-3); overflow: hidden; }
   .pl__head { display: flex; align-items: center; gap: 10px; padding: 22px 22px 0; color: var(--ink-2); }
   .pl__body { padding: 12px 22px 24px; display: grid; gap: 10px; justify-items: start; }
   .pl__score { display: flex; align-items: baseline; gap: 10px; line-height: 1; }
-  .pl__n { font-stretch: var(--wide); font-weight: 800; font-size: 5.2rem; letter-spacing: -.03em; color: var(--spruce-900); }
-  .pl__of { font-stretch: var(--wide); font-size: 1.4rem; font-weight: 800; color: var(--ink-2); }
-  .pl__cnt { font-size: 1.2rem; }
-  .pl__facts { display: grid; gap: 4px; color: var(--ink-2); }
-  .pl__facts li { position: relative; padding-left: 18px; }
-  .pl__facts li::before { content: ''; position: absolute; left: 0; top: .62em; width: 7px; height: 7px; background: var(--spruce-700); }
-  .pl__date { font-size: .94rem; color: var(--ink-2); }
+  .pl__n { font-family: var(--display); font-weight: 800; font-size: 4.6rem; letter-spacing: -.03em; color: var(--spruce-900); }
+  .pl__of { font-family: var(--display); font-size: 1.3rem; font-weight: 800; color: var(--ink-2); }
+  .pl__cnt { font-size: 1.15rem; }
+  .pl__facts { display: grid; gap: 6px; color: var(--ink-2); }
+  .pl__facts li { position: relative; padding-left: 26px; }
+  .pl__facts li::before { content: ''; position: absolute; left: 0; top: .2em; width: 18px; height: 18px; background: url('/assets/v5-brand/raster/icons/ui-check-160.png') center / contain no-repeat; }
+  .pl__date { font-size: .92rem; color: var(--ink-2); }
   .pl .btn { width: 100%; }
+  .pl .link-arrow { color: var(--spruce-900); }
 
   @media (max-width: 1060px) {
     .rvb__grid { display: flex; flex-direction: column; }
@@ -106,13 +132,12 @@ const r1 = (x) => x.toFixed(1).replace('.', ',');
     .pl { order: -1; width: 100%; }
     .rvb__side :global(.gp) { order: 2; width: 100%; }
   }
+  @media (max-width: 860px) { .rvb__head { grid-template-columns: 1fr; } .rvb__big { justify-content: flex-start; } }
   @media (max-width: 600px) {
     .rvb__c:nth-child(n + 5) { display: none; }
     :global(.js) .rvb__c { display: block; }
-    .pl__n { font-size: 4rem; }
-  }
-  @media (max-width: 760px) {
-    .rvb__head { grid-template-columns: 1fr; }
+    .pl__n { font-size: 3.8rem; }
+    .bign { min-width: 0; padding: 14px 16px 12px; }
     .rvb__fl { width: 100%; }
   }
 </style>

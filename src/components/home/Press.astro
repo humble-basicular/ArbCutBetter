@@ -6,10 +6,12 @@ import Mark from '../Mark.astro';
 const c = lrt.citatos;
 ---
 <section class="press" aria-labelledby="press-h">
-  <div class="press__phw"><div class="press__ph ph cut">
+  <div class="press__in">
+  <div class="press__phw rv"><div class="press__ph ph">
     <Photo name="maumedis-ziema" alt="Arboristas aukštai nugenėto maumedžio viršūnėje žiemą" sizes="(max-width: 860px) 100vw, 40vw" position="50% 18%" />
   </div></div>
   <div class="press__body">
+    <p class="kick">Interviu ir straipsniai</p>
     <p class="press__src"><span class="press__pub"><Mark name="lrt" height={30} /></span> <span>{lrt.dataTekstu} · kalbino {lrt.autorius}</span></p>
     <h2 id="press-h" class="sr-only">Apie Mantą rašė LRT.lt ir Valstietis.lt</h2>
     <blockquote class="press__big">
@@ -19,11 +21,11 @@ const c = lrt.citatos;
 
     <dl class="press__facts">
       <div>
-        <dt>56 m</dt>
+        <dt><span data-count="56">56</span> m</dt>
         <dd>Aukščiausias Manto darbas. „Tai buvo Vilniuje, plastiko gamyklos pastatas.“</dd>
       </div>
       <div>
-        <dt>120</dt>
+        <dt data-count="120">120</dt>
         <dd>medžių rūšių, kurias Mantas turėjo mokėti apibūdinti ir išvardyti lotyniškai ir lietuviškai.</dd>
       </div>
     </dl>
@@ -36,49 +38,38 @@ const c = lrt.citatos;
 
     <a class="link-arrow" href={lrt.url} target="_blank" rel="noopener">Skaityti visą interviu LRT.lt<span class="sr-only"> (atsidaro naujame lange)</span></a>
 
-    <aside class="press__val cut" aria-label="Valstietis.lt">
+    <aside class="press__val" aria-label="Valstietis.lt">
       <p class="press__pub press__pub--sm"><Mark name="valstietis" height={26} /></p>
       <blockquote><p>„{valstietis.citatos.neatsisake}“</p></blockquote>
       <p class="press__val-2">Apie brandžius, sveikus medžius Mantas ten sako: <q>{valstietis.citatos.azuolas}</q></p>
       <a href={valstietis.url} target="_blank" rel="noopener">Skaityti Valstietis.lt<span class="sr-only"> (atsidaro naujame lange)</span></a>
     </aside>
   </div>
+  </div>
 </section>
 <style>
-  .press { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 88px); max-width: var(--wrap); margin-inline: auto; padding: var(--sec) var(--gutter); background: var(--paper); color: var(--ink); }
-  .press__phw { position: relative; }
-  .press__ph { position: sticky; top: calc(var(--header-h) + 24px); aspect-ratio: 968 / 1700; max-height: calc(100vh - var(--header-h) - 48px); width: 100%; }
-  .press__ph :global(img) { position: absolute; inset: 0; }
-  .press__body { display: grid; gap: 26px; align-content: start; }
-  .press__src { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; color: var(--ink-2); font-weight: 600; }
-  .press__pub { color: var(--ink); display: inline-flex; align-items: center; }
-  .press__big p { font-stretch: var(--wide); font-weight: 800; font-size: clamp(2.2rem, 1.1rem + 4vw, 5rem); line-height: 1.02; letter-spacing: -.02em; color: var(--spruce-900); text-wrap: balance; }
-  .press__by { font-size: 1.15rem; font-weight: 700; margin-top: -6px; }
-  .press__facts { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 8px; }
-  .press__facts div { background: var(--spruce-100); padding: 22px 24px 24px; }
-  .press__facts dt { font-stretch: var(--wide); font-weight: 800; font-size: clamp(2.8rem, 2rem + 2.6vw, 4.6rem); line-height: 1; color: var(--spruce-900); letter-spacing: -.02em; }
-  .press__facts dd { margin-top: 10px; color: var(--ink-2); font-size: 1.04rem; }
-  .press__pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; }
-  .press__pair p, .press__rope p { font-stretch: var(--wide); font-weight: 750; font-size: clamp(1.2rem, 1.05rem + .6vw, 1.55rem); line-height: 1.25; padding-left: 18px; box-shadow: inset 4px 0 0 var(--spruce-700); color: var(--spruce-900); }
-  .press__rope p { font-stretch: 100%; font-weight: 500; font-size: clamp(1.1rem, 1.05rem + .3vw, 1.3rem); line-height: 1.45; color: var(--ink); }
-  .press .link-arrow { justify-self: start; }
-  .press__val { margin-top: 10px; background: var(--stone); padding: 26px 28px; display: grid; gap: 12px; }
-  .press__val blockquote p { font-stretch: var(--wide); font-weight: 750; font-size: clamp(1.25rem, 1.1rem + .6vw, 1.6rem); line-height: 1.25; color: var(--spruce-900); }
-  .press__val-2 { color: var(--ink-2); }
-  .press__val-2 q { color: var(--ink); font-weight: 600; }
-  .press__val a { justify-self: start; font-weight: 700; color: var(--spruce-900); text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 4px; }
-  @media (max-width: 860px) {
-    .press { grid-template-columns: 1fr; }
-    .press__ph { position: relative; top: 0; aspect-ratio: 4 / 5; max-height: 520px; }
-    .press__pair { grid-template-columns: 1fr; }
-    .press__facts { gap: 8px; }
-    .press__facts div { padding: 16px 14px 18px; }
-    .press__facts dd { font-size: .98rem; }
-  }
-  @media (max-width: 600px) {
-    .press__ph { aspect-ratio: 5 / 4; }
-    .press__pair, .press__rope, .press__val-2 { display: none; }
-    .press__body { gap: 18px; }
-    .press__val { padding: 22px 18px; }
-  }
+  .press { background: var(--spruce-50); padding-block: clamp(72px, 8vw, 128px); }
+  .press__in { max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
+  .press__phw { position: sticky; top: calc(var(--header-h) + 24px); }
+  .press__phw::before { content: ''; position: absolute; inset: 24px -18px -18px 24px; background: var(--spruce-900); border-radius: var(--r-lg); }
+  .press__ph { position: relative; aspect-ratio: 4 / 5; border-radius: var(--r-lg); border: 8px solid #fff; box-shadow: var(--sh-3); }
+  .press__body { display: grid; gap: 22px; justify-items: start; }
+  .press__src { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; font-weight: 650; color: var(--ink-2); }
+  .press__pub { display: inline-flex; background: #fff; padding: 10px 14px; border-radius: 10px; box-shadow: var(--sh-1); }
+  .press__big { font-family: var(--display); font-weight: 800; font-variation-settings: 'opsz' 72, 'wdth' 94; font-size: clamp(1.7rem, 1.1rem + 2.2vw, 3rem); line-height: 1.08; letter-spacing: -.02em; color: var(--spruce-900); position: relative; padding-left: .1em; }
+  .press__by { font-family: var(--hand); font-size: 1.7rem; color: var(--orange-ink); margin-top: -8px; }
+  .press__facts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; width: 100%; }
+  .press__facts div { background: #fff; border-radius: var(--r); padding: 20px 22px; box-shadow: var(--sh-1); }
+  .press__facts dt { font-family: var(--display); font-weight: 800; font-size: clamp(2.6rem, 2rem + 2vw, 3.8rem); line-height: 1; color: var(--orange); letter-spacing: -.03em; }
+  .press__facts dd { margin-top: 8px; color: var(--ink-2); line-height: 1.45; }
+  .press__pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .press__pair blockquote, .press__rope { font-size: 1.1rem; line-height: 1.5; color: var(--ink); border-left: 4px solid var(--gold); padding-left: 16px; }
+  .press__val { width: 100%; background: var(--spruce-900); color: #fff; border-radius: var(--r-lg); padding: clamp(20px, 3vw, 32px); display: grid; gap: 12px; box-shadow: var(--sh-2); }
+  .press__pub--sm { background: #fff; justify-self: start; }
+  .press__val blockquote { font-family: var(--display); font-weight: 700; font-size: 1.35rem; line-height: 1.25; }
+  .press__val-2 { color: var(--on-dark-2); }
+  .press__val a, .press .link-arrow { font-weight: 800; }
+  .press__val a { color: #fff; text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  @media (max-width: 900px) { .press__in { grid-template-columns: 1fr; } .press__phw { position: relative; top: 0; max-width: 420px; } .press__pair { grid-template-columns: 1fr; } }
+  @media (max-width: 480px) { .press__facts { grid-template-columns: 1fr; } }
 </style>

@@ -1,0 +1,51 @@
+---
+/* v5 „Manto pažadas“ (14 žingsnių: 7). TIK PERŽIŪRAI: žodžiai — juodraštis vartotojo patvirtinimui,
+   parašas — vieta tikram Manto parašui. Gamyboje (PREVIEW=0) ši juosta nerodoma, kol Mantas nepatvirtins. */
+import { Image } from 'astro:assets';
+import { site, PREVIEW } from '@data/site.js';
+import cutout from '../../assets/cutout/mantas-v5.png';
+---
+{PREVIEW && (
+<section class="prom" aria-labelledby="prom-h" data-parallax-host>
+  <div class="prom__rings" data-parallax="0.1" aria-hidden="true"></div>
+  <div class="wrap prom__grid">
+    <div class="prom__vis" aria-hidden="true">
+      <img class="prom__mark" src="/assets/v5-brand/logo/mark-a-egle-white.svg" alt="" width="300" height="510" loading="lazy" />
+      <Image class="prom__man" src={cutout} alt="" widths={[360, 540, 720]} sizes="(max-width: 860px) 70vw, 420px" format="webp" quality={82} loading="lazy" />
+    </div>
+    <div class="prom__txt">
+      <p class="prom__draft">Juodraštis peržiūrai: žodžius ir parašą turi patvirtinti Mantas</p>
+      <p class="tag rv-tag">Manto pažadas</p>
+      <h2 id="prom-h" class="prom__h">Dirbame taip, lyg tai būtų mūsų kiemas</h2>
+      <blockquote class="prom__q">
+        <p>„Medį nuleidžiame dalimis, kad niekas aplink nenukentėtų. Kainą sutariame prieš darbą ir jos laikomės. Baigę paliekame tvarkingą kiemą: Kaune šakas išvežame, kitur sukrauname. O jei kas ne taip, skambinkite man tiesiai.“</p>
+      </blockquote>
+      <div class="prom__sign">
+        <span class="prom__sig-ph">Manto parašas</span>
+        <span class="prom__who"><b>{site.savininkas}</b><span>ArbCut, arboristas aukštalipys</span></span>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--primary" href={site.telefonasHref} data-loc="promise-call"><span class="btn__num">{site.telefonas}</span></a>
+        <a class="btn btn--line" href="/apie">Apie Mantą ir komandą</a>
+      </div>
+    </div>
+  </div>
+</section>
+)}
+<style>
+  .prom { position: relative; background: var(--spruce-900); color: #fff; isolation: isolate; overflow: hidden; padding-top: clamp(72px, 8vw, 120px); }
+  .prom__rings { position: absolute; inset: -100px -10%; background: url('/assets/v5-brand/texture/rings-hero.webp') 18% 70% / 2200px auto no-repeat; z-index: -1; }
+  .prom__grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(28px, 4vw, 72px); align-items: end; }
+  .prom__vis { position: relative; height: clamp(440px, 40vw, 600px); }
+  .prom__mark { position: absolute; left: 50%; bottom: 4%; transform: translateX(-50%); height: 104%; width: auto; opacity: .22; }
+  .prom__man { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); height: 112%; width: auto; filter: drop-shadow(0 18px 30px rgba(0,0,0,.4)); }
+  .prom__txt { display: grid; gap: 18px; justify-items: start; padding-bottom: clamp(56px, 6vw, 96px); }
+  .prom__draft { font-size: .85rem; font-weight: 800; color: var(--spruce-950); background: #FFE2CF; border: 2px dashed var(--orange); padding: 6px 12px; border-radius: 8px; }
+  .prom__h { color: #fff; max-width: 13em; }
+  .prom__q { font-size: clamp(1.12rem, 1rem + .4vw, 1.3rem); line-height: 1.6; color: var(--on-dark-2); max-width: 34em; }
+  .prom__sign { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+  .prom__sig-ph { font-family: var(--hand); font-size: 2.6rem; color: #fff; padding: 2px 18px; border: 2px dashed rgba(255,255,255,.45); border-radius: 10px; transform: rotate(-3deg); }
+  .prom__who { display: grid; line-height: 1.25; }
+  .prom__who span { color: var(--on-dark-2); font-size: .95rem; }
+  @media (max-width: 860px) { .prom__grid { grid-template-columns: 1fr; } .prom__vis { order: 2; height: 420px; } .prom__txt { padding-bottom: 0; } }
+</style>

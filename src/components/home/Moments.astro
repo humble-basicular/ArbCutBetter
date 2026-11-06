@@ -1,53 +1,81 @@
 ---
-/* Darbo akimirkos: didelės realios nuotraukos per visą plotį. Parašai — tik tai, kas matyti. */
+/* v5 komanda ir darbas (14 žingsnių: 10): didelės realios nuotraukos persidengiančiu koliažu su rankraštiniais parašais,
+   po jomis — įranga, kuria dirbame (faktai iš /apie). Parašai — tik tai, kas matyti. */
 import Photo from '../Photo.astro';
+const I = '/assets/v5-brand/raster/icons';
 const m = [
-  { foto: 'pjovimas-prie-laidu-homepage-crop', pos: '50% 22%', cap: 'Pušis tarp elektros laidų. Pjaunama nuo viršūnės, dalimis.', cls: 'm--a', sizes: '(max-width: 700px) 100vw, 38vw' },
-  { foto: 'du-arboristai-lajoje', pos: '50% 40%', cap: 'Du arboristai didelio medžio lajoje.', cls: 'm--b', sizes: '(max-width: 700px) 70vw, 20vw' },
-  { foto: 'pusis-alpinistas', pos: '50% 30%', cap: 'Aukšta pušis virš namų stogų. Darbas su virvėmis.', cls: 'm--c', sizes: '(max-width: 700px) 70vw, 20vw' },
-  { foto: 'egle-prie-namo-homepage-crop', pos: '50% 35%', cap: 'Išdžiūvusi eglė prie medinio namo, prieš darbus.', cls: 'm--d', sizes: '(max-width: 700px) 70vw, 20vw' },
+  { foto: 'pjovimas-prie-laidu-homepage-crop', pos: '50% 22%', cap: 'Pušis tarp elektros laidų. Pjaunama nuo viršūnės, dalimis.', cls: 'm--a', sizes: '(max-width: 700px) 100vw, 40vw' },
+  { foto: 'du-arboristai-lajoje', pos: '50% 40%', cap: 'Du arboristai didelio medžio lajoje.', cls: 'm--b', sizes: '(max-width: 700px) 70vw, 24vw' },
+  { foto: 'pusis-alpinistas', pos: '50% 30%', cap: 'Aukšta pušis virš namų stogų. Darbas su virvėmis.', cls: 'm--c', sizes: '(max-width: 700px) 70vw, 22vw' },
+  { foto: 'egle-prie-namo-homepage-crop', pos: '50% 35%', cap: 'Išdžiūvusi eglė prie medinio namo, prieš darbus.', cls: 'm--d', sizes: '(max-width: 700px) 70vw, 22vw' },
+];
+const kit = [
+  { ic: 'svc-bokstelis', b: 'Nuosavas autobokštelis', s: 'kėlimo aukštis iki 20 m' },
+  { ic: 'svc-aukstis', b: 'Alpinistinė įranga ir virvės', s: 'kai bokštelis neprivažiuoja' },
+  { ic: 'svc-isvezimas', b: 'Fiskaras išvežimui', s: 'Kaune ir Kauno rajone' },
+  { ic: 'svc-kelmai', b: 'Kelmų freza', s: 'kelmai frezuojami arba išraunami' },
 ];
 ---
 <section class="mom" aria-labelledby="mom-h">
   <div class="wrap mom__head">
-    <h2 id="mom-h">Taip atrodo darbas</h2>
-    <p class="lead">Nuotraukos iš mūsų objektų, nefotografuotos reklamai. Telefonu, tarp darbų.</p>
-    <a class="link-arrow" href="/galerija">Daugiau darbų nuotraukų</a>
+    <div>
+      <p class="kick">Komanda darbe</p>
+      <h2 id="mom-h">Taip atrodo darbas</h2>
+    </div>
+    <div class="mom__lead">
+      <p class="lead">Nuotraukos iš mūsų objektų, nefotografuotos reklamai. Telefonu, tarp darbų.</p>
+      <a class="link-arrow" href="/galerija">Daugiau darbų nuotraukų</a>
+    </div>
   </div>
-  <ul role="list" class="mom__grid">
-    {m.map((x) => (
-      <li class:list={['mom__it', x.cls]}>
-        <figure>
-          <div class="ph mom__ph cut"><Photo name={x.foto} alt={x.cap} sizes={x.sizes} position={x.pos} /></div>
-          <figcaption>{x.cap}</figcaption>
-        </figure>
-      </li>
-    ))}
-  </ul>
+  <div class="wrap">
+    <ul role="list" class="mom__grid">
+      {m.map((x, i) => (
+        <li class:list={['mom__it', 'rv', x.cls]} style={`--i:${i}`}>
+          <figure>
+            <div class="mom__ph fill"><Photo name={x.foto} alt={x.cap} sizes={x.sizes} position={x.pos} /></div>
+            <figcaption class="hand">{x.cap}</figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+    <ul role="list" class="kit">
+      {kit.map((k, i) => (
+        <li class="rv" style={`--i:${i}`}><span class="ico-c" style="--cs:64px"><img src={`${I}/${k.ic}-160.png`} alt="" width="46" height="46" loading="lazy" /></span><span><b>{k.b}</b><small>{k.s}</small></span></li>
+      ))}
+    </ul>
+  </div>
 </section>
 <style>
-  .mom { background: var(--spruce-100); padding-block: var(--sec); }
-  .mom__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px 48px; align-items: end; margin-bottom: clamp(28px, 3vw, 48px); }
-  .mom__head h2 { color: var(--spruce-900); }
-  .mom__head .lead { grid-column: 1; max-width: 30em; }
-  .mom__head .link-arrow { grid-column: 2; grid-row: 1 / span 2; white-space: nowrap; }
-  .mom__grid { max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); display: grid; grid-template-columns: 1.7fr 1fr 1fr 1fr; gap: clamp(14px, 1.6vw, 24px); align-items: end; }
-  .mom__ph { aspect-ratio: 3 / 4; }
+  .mom { padding-block: clamp(72px, 8vw, 128px); background: var(--paper); overflow: hidden; }
+  .mom__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px 48px; align-items: end; margin-bottom: clamp(36px, 4vw, 60px); }
+  .mom__head h2 { color: var(--spruce-900); margin-top: 8px; }
+  .mom__lead { display: grid; gap: 12px; justify-items: start; }
+  .mom__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: auto auto; gap: 0; position: relative; }
+  .mom__it figure { position: relative; }
+  .mom__ph { border-radius: var(--r); overflow: hidden; border: 8px solid #fff; box-shadow: var(--sh-3); background: var(--spruce-100); }
+  .mom__ph :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .mom__it figcaption { font-size: 1.45rem; color: var(--spruce-900); margin-top: 10px; line-height: 1.05; max-width: 16em; }
+  .m--a { grid-column: 1 / 6; grid-row: 1 / 3; z-index: 1; transform: rotate(-2deg); }
   .m--a .mom__ph { aspect-ratio: 4 / 5; }
-  .mom figcaption { margin-top: 12px; font-size: .98rem; line-height: 1.4; color: var(--ink-2); }
-  .m--a figcaption { font-size: 1.05rem; color: var(--ink); font-weight: 600; }
-  @media (max-width: 960px) {
+  .m--b { grid-column: 5 / 9; grid-row: 1; z-index: 2; margin-top: 60px; transform: rotate(2.5deg); }
+  .m--b .mom__ph { aspect-ratio: 3 / 4; }
+  .m--c { grid-column: 9 / 13; grid-row: 1; z-index: 1; transform: rotate(-1.5deg); }
+  .m--c .mom__ph { aspect-ratio: 3 / 4; }
+  .m--d { grid-column: 7 / 11; grid-row: 2; z-index: 3; margin-top: -40px; transform: rotate(-3deg); }
+  .m--d .mom__ph { aspect-ratio: 4 / 3; }
+  .m--b::before { content: ''; position: absolute; inset: 20px -16px -16px 20px; background: var(--orange); border-radius: var(--r); z-index: -1; }
+  .kit { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: clamp(40px, 5vw, 72px); background: var(--spruce-900); color: #fff; border-radius: var(--r-lg); padding: clamp(18px, 2.4vw, 28px); }
+  .kit li { display: flex; align-items: center; gap: 14px; }
+  .kit b { display: block; font-size: 1.05rem; }
+  .kit small { color: var(--on-dark-2); font-size: .92rem; }
+  @media (max-width: 900px) {
     .mom__head { grid-template-columns: 1fr; }
-    .mom__head .link-arrow { grid-column: 1; grid-row: auto; }
-    .mom__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .m--a { grid-column: 1 / -1; }
+    .mom__grid { grid-template-columns: 1fr 1fr; gap: 26px 18px; }
+    .m--a { grid-column: 1 / -1; grid-row: auto; }
     .m--a .mom__ph { aspect-ratio: 4 / 3; }
+    .m--b, .m--c, .m--d { grid-column: auto; grid-row: auto; margin-top: 0; }
+    .m--d { grid-column: 1 / -1; }
+    .kit { grid-template-columns: 1fr 1fr; }
   }
-  @media (max-width: 600px) {
-    .mom__grid { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 62%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; scroll-padding-inline: var(--gutter); align-items: start; }
-    .mom__it { scroll-snap-align: start; }
-    .m--a { grid-column: auto; }
-    .m--a .mom__ph { aspect-ratio: 3 / 4; }
-    .mom figcaption { font-size: .94rem; }
-  }
+  @media (max-width: 560px) { .kit { grid-template-columns: 1fr; } .mom__it figcaption { font-size: 1.3rem; } }
 </style>

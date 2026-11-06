@@ -6,6 +6,7 @@
 import { site } from './site.js';
 import { paslaugos } from './paslaugos.js';
 import { duk } from './turinys.js';
+import { lrt, valstietis } from './spauda.js';
 
 const abs = (path) => new URL(path, site.url).href;
 const telBare = site.telefonasHref.replace('tel:', '');
@@ -131,5 +132,23 @@ export function breadcrumbs(items) {
       name: it.name,
       item: abs(it.path),
     })),
+  };
+}
+
+/* v5 (praktikų SEO, .agents/research/v5-seo-practitioner.md): Mantas kaip asmuo su realiais spaudos straipsniais.
+   Tik matomi faktai: vardas, pareigos, įmonė, LRT.lt ir Valstietis.lt straipsniai, kuriuose jis kalbinamas. */
+export function person() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${site.url}/#mantas`,
+    name: site.savininkas,
+    jobTitle: 'Arboristas aukštalipys',
+    worksFor: { '@id': `${site.url}/#business` },
+    knowsAbout: ['Medžių pjovimas', 'Pavojingų medžių šalinimas dalimis', 'Medžių genėjimas', 'Aukštuminiai darbai', 'Arboristika'],
+    subjectOf: [
+      { '@type': 'NewsArticle', headline: lrt.pavadinimas, url: lrt.url, datePublished: lrt.data, publisher: { '@type': 'Organization', name: 'LRT.lt' } },
+      { '@type': 'NewsArticle', headline: valstietis.pavadinimas, url: valstietis.url, publisher: { '@type': 'Organization', name: 'Valstietis.lt' } },
+    ],
   };
 }

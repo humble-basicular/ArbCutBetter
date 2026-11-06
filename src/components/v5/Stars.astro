@@ -1,0 +1,8 @@
+---
+/* Rastrinės auksinės žvaigždės (public/assets/v5-brand/raster/stars/). Ne SVG, ne simboliai. */
+const { n = 5, of = 5, size = 18, class: cls } = Astro.props;
+const S = '/assets/v5-brand/raster/stars';
+---
+<span class:list={['stars', cls]} style={`--ss:${size}px`} role="img" aria-label={`${n} iš ${of} žvaigždžių`}>
+  {Array.from({ length: of }, (_, i) => <img src={`${S}/${i < n ? 'star-gold' : 'star-empty'}-48.png`} alt="" width={size} height={size} decoding="async" />)}
+</span>

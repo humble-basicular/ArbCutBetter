@@ -11,14 +11,21 @@ const year = new Date().getFullYear();
 const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
 ---
 <footer class="ftr">
-  <div class="wrap ftr__call">
-    <p class="ftr__call-h">Medis kelia nerimą? Skambinkite.</p>
-    <a class="ftr__tel" href={site.telefonasHref} data-loc="footer-call-big">{site.telefonas}</a>
-    <p class="ftr__call-s">Kasdien 08:00–18:00 · nuotraukas SMS žinute tuo pačiu numeriu arba <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
+  <div class="ftr__top">
+    <div class="wrap ftr__call">
+      <div class="ftr__sym"><img src="/assets/v5-brand/map/lt-symbol.webp" alt="" width="1200" height="1013" loading="lazy" decoding="async" /></div>
+      <div class="ftr__call-t">
+        <p class="tag ftr__tag">Bazė Kaune</p>
+        <p class="ftr__call-h">Medis kelia nerimą? <span>Skambinkite.</span></p>
+        <a class="ftr__tel" href={site.telefonasHref} data-loc="footer-call-big"><span class="ico-c" style="--cs:52px"><img src="/assets/v5-brand/raster/icons/ui-phone-160.png" alt="" width="36" height="36" /></span>{site.telefonas}</a>
+        <p class="ftr__call-s">Kasdien 08:00–18:00 · nuotraukas SMS žinute tuo pačiu numeriu arba <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
+      </div>
+    </div>
+    <div class="ftr__trees" aria-hidden="true"></div>
   </div>
   <div class="wrap ftr__grid">
     <div class="ftr__brand">
-      <Logo tone="light" height={52} />
+      <Logo tone="light" height={70} />
       <p><strong>ArbCut</strong>, arboristas aukštalipys {site.savininkas} su komanda. Bazė Kaune, dirbame iki 200 km aplink.</p>
       <a class="ftr__rep" href={site.atsiliepimai.profilis} target="_blank" rel="noopener">
         <span>{rating} iš 5 · {atsiliepimuKiekis} atsiliepimai Paslaugos.lt</span><span class="sr-only"> (atsidaro naujame lange)</span>
@@ -60,38 +67,34 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   </div>
 </footer>
 <style>
-  .ftr { background: var(--spruce-900); color: var(--on-dark-2); font-size: 1.02rem; }
-  .ftr :focus-visible { outline-color: #fff; }
-  .ftr a { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; text-decoration-thickness: 2px; transition: text-decoration-color var(--t), color var(--t); }
-  .ftr a:hover { color: #fff; text-decoration-color: var(--orange); }
-  .ftr__call { padding-block: clamp(56px, 7vw, 96px) clamp(36px, 5vw, 56px); display: grid; gap: 10px; }
-  .ftr__call-h { font-stretch: var(--wide); font-size: clamp(1.35rem, 1.1rem + 1vw, 2rem); font-weight: 800; color: #fff; line-height: 1.15; }
-  .ftr__tel { font-stretch: var(--wide); font-weight: 800; font-size: clamp(2.3rem, .9rem + 6.4vw, 7.2rem); line-height: 1.05; color: #fff; letter-spacing: -.02em; justify-self: start; white-space: nowrap; text-decoration-color: var(--orange) !important; }
-  .ftr__tel:hover { color: #fff; }
-  .ftr__call-s a { color: #fff; text-decoration-color: var(--orange); overflow-wrap: anywhere; }
-  .ftr__grid { display: grid; grid-template-columns: 1.2fr .9fr .9fr 1.1fr 1.45fr; gap: 36px; padding-block: 48px 52px; }
-  .ftr__brand { display: grid; gap: 16px; align-content: start; }
-  .ftr__brand :global(img.logo) { height: 52px; width: auto; }
-  .ftr__brand p { max-width: 32ch; }
+  .ftr { background: var(--spruce-950); color: var(--on-dark-2); }
+  .ftr__top { position: relative; background: var(--spruce-900); padding-top: clamp(64px, 7vw, 110px); padding-bottom: clamp(110px, 11vw, 170px); overflow: hidden; isolation: isolate; }
+  .ftr__call { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(28px, 4vw, 72px); align-items: center; }
+  .ftr__sym img { width: 100%; height: auto; transform: rotate(-3deg); }
+  .ftr__call-t { display: grid; gap: 18px; justify-items: start; }
+  .ftr__call-h { font-family: var(--display); font-weight: 800; font-variation-settings: 'opsz' 96, 'wdth' 92; font-size: clamp(2.2rem, 1.4rem + 3vw, 4.2rem); line-height: 1; letter-spacing: -.025em; color: #fff; }
+  .ftr__call-h span { color: var(--gold); }
+  .ftr__tel { display: inline-flex; align-items: center; gap: 16px; font-family: var(--display); font-weight: 800; font-size: clamp(2rem, 1.5rem + 2vw, 3.4rem); color: #fff; letter-spacing: -.02em; padding: 10px 26px 10px 12px; border-radius: 16px; background: var(--orange); box-shadow: 0 5px 0 var(--orange-ink), 0 16px 40px rgba(0,0,0,.3); transition: transform var(--t); }
+  .ftr__tel:hover { transform: translateY(-2px); }
+  .ftr__tel .ico-c { box-shadow: none; }
+  .ftr__call-s { color: var(--on-dark-2); }
+  .ftr__call-s a { color: #fff; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
+  .ftr__trees { position: absolute; left: 0; right: 0; bottom: -2px; height: clamp(90px, 10vw, 150px); background: url('/assets/v5-brand/raster/texture/treeline.png') center bottom / auto 100% repeat-x; z-index: -1; }
+  .ftr__grid { display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(5, minmax(0, 1fr)); gap: 32px 28px; padding-block: clamp(40px, 5vw, 64px); }
+  .ftr__brand { display: grid; gap: 14px; align-content: start; }
+  .ftr__brand p { font-size: .98rem; line-height: 1.55; }
   .ftr__brand strong { color: #fff; }
-  .ftr__rep { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 10px; color: #fff; font-weight: 700; }
-  .ftr__press a { color: #fff; font-weight: 700; text-decoration-color: rgba(255,255,255,.4); }
-  .ftr__h { font-stretch: var(--wide); font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
-  .ftr li + li { margin-top: 8px; }
-  .ftr__contact a { color: #fff; overflow-wrap: anywhere; }
-  .ftr__more { margin-top: 22px; }
-  .ftr__base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 22px 26px; font-size: .95rem; box-shadow: inset 0 1px 0 rgba(255,255,255,.12); }
-  @media (max-width: 1180px) { .ftr__grid { grid-template-columns: 1fr 1fr 1fr; } .ftr__brand { grid-column: 1 / -1; } }
-  @media (max-width: 640px) { .ftr__grid { grid-template-columns: 1fr 1fr; gap: 32px 20px; } }
-  @media (max-width: 600px) {
-    .ftr__call { padding-block: 44px 24px; }
-    .ftr__grid { padding-block: 28px 36px; gap: 28px 16px; }
-    .ftr__grid > .ftr__col:last-child, .ftr__grid > .ftr__col:nth-last-child(2) { grid-column: 1 / -1; }
-    .ftr__contact, .ftr__more { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px; }
-    .ftr li + li { margin-top: 6px; }
-    .ftr__contact li + li, .ftr__more li + li { margin-top: 0; }
-    .ftr__contact li:nth-child(3) { grid-column: 1 / -1; }
-    .ftr li a { display: inline-block; padding-block: 3px; }
-  }
-  @media (max-width: 340px) { .ftr__grid { grid-template-columns: 1fr; } .ftr__tel { font-size: 1.85rem; } }
+  .ftr__rep { display: inline-block; justify-self: start; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15); padding: 10px 14px; border-radius: 10px; color: #fff; font-weight: 700; font-size: .95rem; }
+  .ftr__rep:hover { border-color: var(--gold); }
+  .ftr__press a { color: #fff; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
+  .ftr__h { font-family: var(--display); font-weight: 800; color: var(--gold); margin-bottom: 12px; font-size: 1.05rem; }
+  .ftr__col ul { display: grid; gap: 7px; font-size: .95rem; }
+  .ftr__col a:hover { color: #fff; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
+  .ftr__contact a { color: #fff; font-weight: 700; }
+  .ftr__more { margin-top: 14px; }
+  .ftr__base { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 20px 28px; border-top: 1px solid rgba(255,255,255,.1); font-size: .9rem; }
+  .ftr__base a:hover { color: #fff; }
+  @media (max-width: 1100px) { .ftr__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .ftr__brand { grid-column: 1 / -1; } }
+  @media (max-width: 860px) { .ftr__call { grid-template-columns: 1fr; } .ftr__sym { max-width: 440px; } }
+  @media (max-width: 560px) { .ftr__grid { grid-template-columns: 1fr 1fr; } .ftr__tel { font-size: 1.75rem; width: 100%; } }
 </style>
