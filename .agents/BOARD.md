@@ -333,3 +333,8 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 - Lead Claude Opus 5.5 (claudeAgent), branch build/arbcut-v4-complete-20261105. Research CLOSED with explicit gaps (v4-reference-study.md CLOSURE). Design brain: .agents/research/arbcut-design-brain.md.
 - Child arbcut-v4-brand-assets: Codex2 gpt-6.1-sol high, isolated worktree, owns public/assets/arbcut-v4-brand/** + public/assets/marks/** only. Running.
 - Site build: NEW thread (user 6 Nov), owns src/** public/** per handoff 2026-11-06-0710-site-build-new-thread.md. Reviewer Codex.
+
+## 6 November 2026 — ArbCut v4 full site build, IN PROGRESS (checkpoint 1)
+- Owner: Claude Opus 5.5 medium, build thread mcp:d1e11b69…, branch `build/arbcut-v4-site-20261106`. Owns src/**, public/** (except arbcut-v4-brand/ and marks/ until merged), package*.json, astro.config.mjs.
+- State: design system, shared components and home sections done at `879b369`; inner pages, C1 checks, Codex review and preview pending. Handoff: `.agents/handoffs/2026-11-06-0915-site-build-checkpoint-1.md`.
+- Reviewer: Codex gpt-6.1-sol high (not started).
