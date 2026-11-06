@@ -48,7 +48,7 @@ const c = lrt.citatos;
   </div>
 </section>
 <style>
-  .press { background: var(--spruce-50); padding-block: clamp(72px, 8vw, 128px); }
+  .press { background: var(--spruce-50); padding-block: clamp(72px, 8vw, 128px); overflow-x: clip; }
   .press__in { max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
   .press__phw { position: sticky; top: calc(var(--header-h) + 24px); }
   .press__phw::before { content: ''; position: absolute; inset: 24px -18px -18px 24px; background: var(--spruce-900); border-radius: var(--r-lg); }
@@ -70,6 +70,6 @@ const c = lrt.citatos;
   .press__val-2 { color: var(--on-dark-2); }
   .press__val a, .press .link-arrow { font-weight: 800; }
   .press__val a { color: #fff; text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 4px; }
-  @media (max-width: 900px) { .press__in { grid-template-columns: 1fr; } .press__phw { position: relative; top: 0; max-width: 420px; } .press__pair { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) { .press__in { grid-template-columns: 1fr; } .press__phw { position: relative; top: 0; max-width: 420px; margin-right: 14px; } .press__phw::before { inset: 14px -10px -10px 14px; } .press__pair { grid-template-columns: 1fr; } }
   @media (max-width: 480px) { .press__facts { grid-template-columns: 1fr; } }
 </style>

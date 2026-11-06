@@ -2,6 +2,8 @@
    Įkeliamas pats, kai blokas priartėja prie ekrano (be paspaudimo). Be WebGL lieka statinis paveikslėlis. */
 import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url';
+maplibregl.setWorkerUrl(workerUrl);
 
 const C = { spruce: '#0F2E23', spruce7: '#1A4A37', orange: '#E2611B', land: '#F4F8F5', out: '#DCE7E0', water: '#BFD9DA', wood: '#E3EEE6', road: '#FFFFFF', roadCase: '#CAD6CF', grey: '#8D9C95' };
 const FONT = ['Noto Sans Regular'];
@@ -20,7 +22,6 @@ function style() {
       { id: 'road-case', type: 'line', source: 'omt', 'source-layer': 'transportation', filter: ['match', ['get', 'class'], ['motorway', 'trunk', 'primary'], true, false], paint: { 'line-color': C.roadCase, 'line-width': ['interpolate', ['linear'], ['zoom'], 5, 1.6, 9, 4] } },
       { id: 'road', type: 'line', source: 'omt', 'source-layer': 'transportation', filter: ['match', ['get', 'class'], ['motorway', 'trunk', 'primary'], true, false], paint: { 'line-color': C.road, 'line-width': ['interpolate', ['linear'], ['zoom'], 5, .8, 9, 2.6] } },
       { id: 'border', type: 'line', source: 'omt', 'source-layer': 'boundary', filter: ['all', ['==', ['get', 'admin_level'], 2], ['!=', ['get', 'maritime'], 1]], paint: { 'line-color': C.spruce7, 'line-width': 1.6, 'line-dasharray': [3, 2] } },
-      { id: 'country', type: 'symbol', source: 'omt', 'source-layer': 'place', filter: ['==', ['get', 'class'], 'country'], layout: { 'text-field': ['coalesce', ['get', 'name:lt'], ['get', 'name']], 'text-font': FONTB, 'text-size': 13, 'text-transform': 'uppercase', 'text-letter-spacing': .2 }, paint: { 'text-color': C.grey } },
     ],
   };
 }
@@ -51,13 +52,13 @@ export async function mount(box) {
     let i = 0;
     for (const t of data.towns) {
       const base = t.base;
-      const m = el('a', `mpin${base ? ' mpin--base' : ''}`, `${base ? `<img src="${data.mark}" alt="" width="20" height="34">` : ''}<span class="mpin__dot"></span><span class="mpin__l">${t.name}${base ? '<small>bazė</small>' : ''}</span>`);
+      const m = el('a', `mpin${base ? ' mpin--base' : ''}`, `<span class="mpin__in">${base ? `<img src="${data.mark}" alt="" width="20" height="34">` : ''}<span class="mpin__dot"></span><span class="mpin__l">${t.name}${base ? '<small>bazė</small>' : ''}</span></span>`);
       m.href = t.href; m.setAttribute('aria-label', base ? `${t.name}, bazė` : `Medžių pjovimas: ${t.name}`);
-      if (!reduce) m.style.animationDelay = `${(i++) * 60}ms`;
+      if (!reduce) m.firstChild.style.animationDelay = `${(i++) * 60}ms`;
       new maplibregl.Marker({ element: m, anchor: base ? 'bottom' : 'center' }).setLngLat(t.ll).addTo(map);
     }
     for (const t of data.far) {
-      const m = el('span', 'mpin mpin--far', `<span class="mpin__dot"></span><span class="mpin__l">${t.name}<small>per toli</small></span>`);
+      const m = el('span', 'mpin mpin--far', `<span class="mpin__in"><span class="mpin__dot"></span><span class="mpin__l">${t.name}<small>per toli</small></span></span>`);
       new maplibregl.Marker({ element: m, anchor: 'center' }).setLngLat(t.ll).addTo(map);
     }
     box.classList.add('map--live');

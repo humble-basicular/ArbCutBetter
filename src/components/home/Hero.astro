@@ -27,18 +27,13 @@ const I = '/assets/v5-brand/raster/icons';
       <div class="hero__acts">
         <a class="btn btn--primary btn--lg hero__tel" href={site.telefonasHref} data-loc="hero-call">
           <span class="ico-c" style="--cs:42px"><img src={`${I}/ui-phone-160.png`} alt="" width="30" height="30" /></span>
-          <span class="hero__tel-t"><small>Skambinkite</small><span class="btn__num">{site.telefonas}</span></span>
+          <span class="hero__tel-t"><small>Skambinkite kasdien 08–18, ir savaitgaliais</small><span class="btn__num">{site.telefonas}</span></span>
         </a>
         <button type="button" class="btn btn--white btn--lg" data-quote>Gauti kainą</button>
       </div>
-      <p class="hero__hours"><img class="ico" src={`${I}/ui-clock-160.png`} alt="" width="22" height="22" style="--is:22px" /><span><strong>Kasdien 08:00–18:00</strong> ir savaitgaliais</span></p>
       <ul role="list" class="hero__proof">
         <li><RatingUnit variant="card" loc="hero-rating" /></li>
         <li class="hero__seal"><Seal size={96} /></li>
-        <li class="hero__lift">
-          <span class="ico-c" style="--cs:58px"><img src={`${I}/svc-bokstelis-160.png`} alt="" width="44" height="44" /></span>
-          <span><b>Nuosavas autobokštelis</b><span class="hero__lift-n">iki <span data-count="20">20</span>&nbsp;m</span></span>
-        </li>
       </ul>
     </div>
 
@@ -47,6 +42,10 @@ const I = '/assets/v5-brand/raster/icons';
       <div class="hero__photo fill">
         <Photo name="autobokstelis-prie-namo" alt="" sizes="(max-width: 960px) 92vw, 40vw" widths={[640, 960, 1280, 1667]} loading="eager" fetchpriority="high" position="62% 58%" />
       </div>
+      <p class="hero__lift">
+        <span class="ico-c" style="--cs:58px"><img src={`${I}/svc-bokstelis-160.png`} alt="" width="44" height="44" /></span>
+        <span><b>Nuosavas autobokštelis</b><span class="hero__lift-n">iki <span data-count="20">20</span>&nbsp;m</span></span>
+      </p>
       <div class="hero__scale"><span>20 m</span><span>15</span><span>10</span><span>5</span><span>0</span></div>
       <Image class="hero__man" src={cutout} alt="" widths={[360, 540, 720, 960]} sizes="(max-width: 960px) 62vw, 400px" format="webp" quality={84} loading="eager" data-parallax="-0.04" />
       <p class="hero__sign hand">Mantas Gerulis<small>Arboristas aukštalipys su komanda</small></p>
@@ -99,15 +98,13 @@ const I = '/assets/v5-brand/raster/icons';
   .hero__tel { padding: 10px 26px 10px 12px; gap: 14px; }
   .hero__tel .ico-c { box-shadow: none; }
   .hero__tel-t { display: grid; text-align: left; line-height: 1.05; }
-  .hero__tel-t small { font-family: var(--font); font-size: .82rem; font-weight: 700; opacity: .9; }
+  .hero__tel-t small { font-family: var(--font); font-size: .8rem; font-weight: 700; opacity: .95; }
   .hero__tel .btn__num { font-size: 1.55rem; }
-  .hero__hours { display: flex; align-items: center; gap: 10px; color: var(--on-dark-2); }
-  .hero__hours .ico { filter: brightness(0) invert(1); opacity: .8; }
-  .hero__hours strong { color: #fff; }
   .hero__proof { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; margin-top: 2px; }
-  .hero__lift { display: flex; align-items: center; gap: 12px; line-height: 1.15; }
-  .hero__lift b { display: block; font-size: .95rem; color: var(--on-dark-2); font-weight: 650; }
-  .hero__lift-n { font-family: var(--display); font-weight: 800; font-size: 1.9rem; color: #fff; letter-spacing: -.02em; }
+  .hero__lift { position: absolute; right: -1%; bottom: 3%; z-index: 4; display: flex; align-items: center; gap: 12px; line-height: 1.1; background: #fff; color: var(--spruce-900); padding: 10px 18px 10px 10px; border-radius: 999px; box-shadow: var(--sh-2); transform: rotate(-2deg); }
+  .hero__lift .ico-c { box-shadow: none; background: var(--spruce-50); }
+  .hero__lift b { display: block; font-size: .88rem; color: var(--ink-2); font-weight: 700; }
+  .hero__lift-n { font-family: var(--display); font-weight: 800; font-size: 1.7rem; color: var(--orange-ink); letter-spacing: -.02em; }
 
   .hero__vis { position: relative; height: clamp(500px, 41vw, 590px); }
   .hero__block { position: absolute; right: -2%; top: 8%; width: 78%; height: 86%; background: var(--orange); border-radius: var(--r-lg); transform: rotate(3deg); }
@@ -177,6 +174,8 @@ const I = '/assets/v5-brand/raster/icons';
     .hero__seal { order: 3; }
     .hero__vis { height: 380px; }
     .hero__scale { display: none; }
+    .hero__lift { right: 0; bottom: -4%; padding: 8px 14px 8px 8px; }
+    .hero__lift-n { font-size: 1.4rem; }
     .dock { margin-top: -110px; }
     .dock__grid :global(.qf--short) { grid-template-columns: 1fr; }
     .dock__grid :global(.qf--short .qf__btn) { width: 100%; }

@@ -11,7 +11,8 @@ const { size = 132, class: cls } = Astro.props;
 </div>
 <style>
   .seal { position: relative; width: var(--sz); height: var(--sz); flex: 0 0 auto; background: url('/assets/v5-brand/raster/seal/seal-rings-512.png') center / contain no-repeat; filter: drop-shadow(0 8px 14px rgba(0,0,0,.28)); display: grid; justify-items: center; align-content: center; transform: rotate(-6deg); }
-  .seal__n { font-family: var(--display); font-weight: 800; font-variation-settings: 'opsz' 96, 'wdth' 85; font-size: calc(var(--sz) * .34); line-height: .82; color: var(--spruce-950); margin-top: calc(var(--sz) * -.1); letter-spacing: -.03em; }
-  .seal__u { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: calc(var(--sz) * .1); letter-spacing: .12em; color: var(--spruce-950); }
+  .seal::before { content: ''; position: absolute; inset: 21%; border-radius: 50%; border: 2px solid rgba(244, 183, 49, .7); }
+  .seal__n { font-family: var(--display); font-weight: 800; font-variation-settings: 'opsz' 96, 'wdth' 85; font-size: calc(var(--sz) * .34); line-height: .82; color: #fff; margin-top: calc(var(--sz) * -.1); letter-spacing: -.03em; }
+  .seal__u { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: calc(var(--sz) * .1); letter-spacing: .12em; color: var(--gold); }
   .seal__r { position: absolute; left: 50%; bottom: calc(var(--sz) * .2); transform: translateX(-50%); font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: calc(var(--sz) * .085); letter-spacing: .14em; color: #fff; white-space: nowrap; }
 </style>
