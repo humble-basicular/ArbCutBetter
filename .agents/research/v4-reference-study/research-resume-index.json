@@ -1,5 +1,5 @@
 {
-  "generatedAtUTC": "2026-11-06T06:35:47.324867+00:00",
+  "generatedAtUTC": "2026-11-06T06:45:32.930369+00:00",
   "objectiveStatus": "unfinished",
   "activeWorkers": [],
   "scope": "Current resume index; actual image coverage in referenced reports and external ledgers. Selected scope does not credit unselected raw segments.",
@@ -85,15 +85,29 @@
       "status": "prior retry cap;151saved interactions inspected;semantic/provenance acceptance remains",
       "nativeGateOpen": true,
       "report": ".agents/research/v4-reference-study/bulk-findings-puetzconstruction.com.md"
+    },
+    {
+      "site": "bearsplumbing.net",
+      "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/bearsplumbing.net/lead-ordinal29-iframe-patches.json",
+      "sha256": "7c801f4cfdb19164c3493889981bfb6fe0be29ad779853f6b9d3260d9c63e240",
+      "owner": "lead",
+      "status": "54selectedpairs956staticJPGs62iframeJPGsincluding1previousmembershippatch88savedinteractions;lead61patchesactuallyopened;capturedsamplingaccepted",
+      "nativeGateOpen": false,
+      "report": ".agents/research/v4-reference-study/bulk-findings-bearsplumbing.net.md",
+      "limitations": [
+        "148iframeJPGsonunselectedroutesunviewed",
+        "Membershippatchwhite;plumbingrepairMapLibreblank;somepatchheadercontamination",
+        "Live360/keyboard/motion/submission/widgetbehaviorunverified"
+      ]
     }
   ],
   "globalPending": [
-    "baseline/Bears iframe patch/Puetz acceptance dispositions",
-    "semantic one-offs, two differing examples per real template, actual outliers; do not equate URL bins with designs",
+    "baseline/Puetz acceptance dispositions",
+    "remaining lead-owned semantic one-offs, real template contrasts and actual outliers; unselected raw files remain unviewed",
     "verified cross-site synthesis",
-    "required Claude Opus5.5/medium design brain and implementation spec",
-    "complete preserved37route frontend",
-    "Codex acceptance checks, other-engine review, local noindex preview"
+    "required Claude Opus5.5/medium reusable design brain; no frontend implementation",
+    "DEFERRED BY USER: complete preserved37route frontend in a later new thread",
+    "DEFERRED BY USER: Codex acceptance checks, other-engine review, local noindex preview"
   ],
   "leadRouting": {
     "driver": "codex",
@@ -103,5 +117,6 @@
       "codex",
       "codex_codex2"
     ]
-  }
+  },
+  "implementationAuthorization": "DEFERRED by user ordinal29: do not start site building; implementation later in a new thread. Current thread research/design brain only; no new thread creation automatically."
 }
