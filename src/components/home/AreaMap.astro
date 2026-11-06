@@ -39,6 +39,7 @@ const data = {
         <script type="application/json" set:html={JSON.stringify(data)} />
       </div>
       <p class="area__legend"><span><span class="lg lg--base"></span>Bazė Kaune</span><span><span class="lg lg--town"></span>Aptarnaujami miestai</span></p>
+      <p class="area__credit">Žemėlapis: <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> © <a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a>. Duomenys © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> bendraautoriai.</p>
     </div>
   </div>
 </section>
@@ -81,6 +82,8 @@ const data = {
   :global(.map--live) .area__canvas { opacity: 1; }
   .area__legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 22px; margin-top: 14px; font-size: .95rem; color: var(--ink-2); font-weight: 600; }
   .area__legend > span { display: inline-flex; align-items: center; gap: 8px; }
+  .area__credit { margin-top: 6px; font-size: .8rem; color: var(--ink-2); }
+  .area__credit a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
   .lg { display: inline-block; width: 14px; height: 14px; border-radius: 50%; }
   .lg--base { background: var(--spruce-900); }
   .lg--town { background: var(--orange); }
