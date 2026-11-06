@@ -67,7 +67,10 @@ const ini = (n) => (n || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) =>
     upd();
     box.querySelectorAll<HTMLElement>('[data-rvc-txt]').forEach((t) => {
       const b = t.nextElementSibling as HTMLButtonElement;
-      if (t.scrollHeight > t.clientHeight + 2) b.hidden = false;
+      const check = () => { if (!t.classList.contains('is-open')) b.hidden = t.scrollHeight <= t.clientHeight + 2; };
+      check();
+      if ('ResizeObserver' in window) new ResizeObserver(check).observe(t);
+      document.fonts && document.fonts.ready.then(check);
       b.addEventListener('click', () => { const o = t.classList.toggle('is-open'); b.setAttribute('aria-expanded', String(o)); b.textContent = o ? 'Suskleisti' : 'Skaityti visą'; });
     });
   });
