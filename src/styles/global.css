@@ -252,10 +252,10 @@ strong, b { font-weight: 700; }
 
 /* Mobiliai: vieta apatinei juostai */
 @media (max-width: 860px) {
-  body { padding-bottom: 64px; }
+  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
   html { scroll-padding-bottom: 88px; }
   input, textarea, select { scroll-margin-bottom: 88px; }
-  .is-typing .mact { transform: translateY(110%); visibility: hidden; }
+  .is-typing .mact { transform: translateY(140%); visibility: hidden; }
 }
 @media (max-width: 600px) {
   :root { --sec: 48px; }

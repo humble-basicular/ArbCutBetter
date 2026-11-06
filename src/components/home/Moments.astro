@@ -50,32 +50,20 @@ const kit = [
   .mom__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px 48px; align-items: end; margin-bottom: clamp(36px, 4vw, 60px); }
   .mom__head h2 { color: var(--spruce-900); margin-top: 8px; }
   .mom__lead { display: grid; gap: 12px; justify-items: start; }
-  .mom__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: auto auto; gap: 0; position: relative; }
-  .mom__it { position: relative; isolation: isolate; }
-  .mom__it figure { position: relative; }
-  .mom__ph { border-radius: var(--r); overflow: hidden; border: 8px solid #fff; box-shadow: var(--sh-3); background: var(--spruce-100); }
-  .mom__ph :global(img) { width: 100%; height: 100%; object-fit: cover; }
-  .mom__it figcaption { font-size: 1.45rem; color: var(--spruce-900); margin-top: 10px; line-height: 1.05; max-width: 16em; }
-  .m--a { grid-column: 1 / 6; grid-row: 1 / 3; z-index: 1; transform: rotate(-2deg); }
-  .m--a .mom__ph { aspect-ratio: 4 / 5; }
-  .m--b { grid-column: 5 / 9; grid-row: 1; z-index: 2; margin-top: 60px; transform: rotate(2.5deg); }
-  .m--b .mom__ph { aspect-ratio: 3 / 4; }
-  .m--c { grid-column: 9 / 13; grid-row: 1; z-index: 1; transform: rotate(-1.5deg); }
-  .m--c .mom__ph { aspect-ratio: 3 / 4; }
-  .m--d { grid-column: 7 / 11; grid-row: 2; z-index: 3; margin-top: -40px; transform: rotate(-3deg); }
-  .m--d .mom__ph { aspect-ratio: 4 / 3; }
-  .m--b::before { content: ''; position: absolute; inset: 20px -16px -16px 20px; background: var(--orange); border-radius: var(--r); z-index: -1; }
+  .mom__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(16px, 2vw, 26px); align-items: start; }
+  .mom__it figure { background: #fff; border-radius: var(--r); padding: 10px 10px 16px; box-shadow: var(--sh-2); display: grid; gap: 12px; }
+  .mom__ph { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 3 / 4; background: var(--spruce-100); }
+  .mom__it:nth-child(odd) figure { transform: rotate(-1.2deg); }
+  .mom__it:nth-child(even) figure { transform: rotate(1.2deg); margin-top: 28px; }
+  .mom__it figcaption { font-size: 1.35rem; color: var(--spruce-900); line-height: 1.1; padding-inline: 6px; min-height: 2.3em; }
   .kit { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: clamp(40px, 5vw, 72px); background: var(--spruce-900); color: #fff; border-radius: var(--r-lg); padding: clamp(18px, 2.4vw, 28px); }
   .kit li { display: flex; align-items: center; gap: 14px; }
   .kit b { display: block; font-size: 1.05rem; }
   .kit small { color: var(--on-dark-2); font-size: .92rem; }
   @media (max-width: 900px) {
     .mom__head { grid-template-columns: 1fr; }
-    .mom__grid { grid-template-columns: 1fr 1fr; gap: 26px 18px; }
-    .m--a { grid-column: 1 / -1; grid-row: auto; }
-    .m--a .mom__ph { aspect-ratio: 4 / 3; }
-    .m--b, .m--c, .m--d { grid-column: auto; grid-row: auto; margin-top: 0; }
-    .m--d { grid-column: 1 / -1; }
+    .mom__grid { grid-template-columns: 1fr 1fr; }
+    .mom__it:nth-child(even) figure { margin-top: 0; }
     .kit { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 560px) { .kit { grid-template-columns: 1fr; } .mom__it figcaption { font-size: 1.3rem; } }

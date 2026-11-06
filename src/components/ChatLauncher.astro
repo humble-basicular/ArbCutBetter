@@ -1,0 +1,102 @@
+---
+/* „Turite klausimų? Parašykite Mantui.“ (patvirtintas 11 punktas; arbcut-build-specifikacija.md 118–128, site.features.chatWidget).
+   Ne gyvas pokalbis: atsakymai iš svetainės DUK (pažymėti), klausimas siunčiamas ta pačia formos sistema (peržiūroje — niekur),
+   skubiai — skambutis. Jokių „online“ ar atsakymo laiko pažadų. */
+import { Image } from 'astro:assets';
+import { site } from '@data/site.js';
+import { dukPradzia } from '@data/turinys.js';
+import QuoteForm from './QuoteForm.astro';
+import face from '../assets/photos/mantas-portretas.jpg';
+const qa = dukPradzia.slice(0, 4);
+---
+{site.features.chatWidget && (
+<div class="ask" data-ask>
+  <div class="ask__hint" data-ask-hint hidden>
+    <button type="button" class="ask__hint-b" data-ask-open>
+      <Image class="ask__face" src={face} alt="" widths={[96]} sizes="48px" format="webp" quality={75} style="object-position:50% 18%" />
+      <span>Turite klausimų? <b>Parašykite Mantui.</b></span>
+    </button>
+    <button type="button" class="ask__hint-x" data-ask-dismiss aria-label="Paslėpti kvietimą"><span aria-hidden="true"></span></button>
+  </div>
+  <div class="ask__panel" id="ask-panel" role="dialog" aria-modal="false" aria-labelledby="ask-h" hidden>
+    <div class="ask__top">
+      <Image class="ask__face ask__face--lg" src={face} alt="" widths={[96, 192]} sizes="52px" format="webp" quality={75} style="object-position:50% 18%" />
+      <div><p id="ask-h" class="ask__h">Klausimas Mantui</p><p class="ask__s">Parašykite, Mantas atsakys pats. Skubiai — skambinkite.</p></div>
+      <button type="button" class="ask__x" data-ask-close aria-label="Uždaryti"><span aria-hidden="true"></span></button>
+    </div>
+    <div class="ask__body">
+      <a class="btn btn--primary btn--sm ask__call" href={site.telefonasHref} data-loc="ask-call">Skubu: {site.telefonas}</a>
+      <p class="ask__lbl">Dažni klausimai (atsakymai iš svetainės)</p>
+      <div class="ask__qa">
+        {qa.map((q) => <details><summary>{q.klausimas}</summary><p>{q.atsakymas}</p></details>)}
+      </div>
+      <p class="ask__lbl">Arba parašykite savo klausimą</p>
+      <QuoteForm variant="chat" id="ask-form" prefix="a" />
+    </div>
+  </div>
+  <button type="button" class="ask__fab" data-ask-open aria-expanded="false" aria-controls="ask-panel">
+    <img src="/assets/v5-brand/raster/icons/ui-sms-160.png" alt="" width="34" height="34" /><span class="sr-only">Klausimas Mantui</span>
+  </button>
+</div>
+)}
+
+<script>
+  const box = document.querySelector('[data-ask]') as HTMLElement | null;
+  if (box) {
+    const panel = box.querySelector('#ask-panel') as HTMLElement;
+    const hint = box.querySelector('[data-ask-hint]') as HTMLElement;
+    const fab = box.querySelector('.ask__fab') as HTMLButtonElement;
+    const KEY = 'arbcut-ask-dismissed';
+    let ret: HTMLElement | null = null;
+    if (!sessionStorage.getItem(KEY)) setTimeout(() => { if (panel.hidden) hint.hidden = false; }, 6000);
+    const open = (from: HTMLElement) => { ret = from; panel.hidden = false; hint.hidden = true; fab.setAttribute('aria-expanded', 'true'); box.classList.add('is-open'); (panel.querySelector('.ask__x') as HTMLElement).focus(); };
+    const close = () => { panel.hidden = true; fab.setAttribute('aria-expanded', 'false'); box.classList.remove('is-open'); (ret && ret.isConnected && !ret.closest('[hidden]') ? ret : fab).focus(); };
+    box.querySelectorAll<HTMLElement>('[data-ask-open]').forEach((b) => b.addEventListener('click', () => (panel.hidden ? open(b) : close())));
+    box.querySelector('[data-ask-close]')!.addEventListener('click', close);
+    box.querySelector('[data-ask-dismiss]')!.addEventListener('click', () => { hint.hidden = true; sessionStorage.setItem(KEY, '1'); fab.focus(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !panel.hidden) close(); });
+  }
+</script>
+
+<style>
+  .ask { position: fixed; right: 20px; bottom: 20px; z-index: 850; }
+  .ask.is-open { z-index: 960; }
+  .ask { display: grid; justify-items: end; gap: 12px; }
+  .ask__fab { width: 64px; height: 64px; border-radius: 50%; background: var(--orange); display: grid; place-items: center; box-shadow: 0 4px 0 var(--orange-ink), 0 14px 30px rgba(0,0,0,.28); transition: transform var(--t); }
+  .ask__fab img { width: 34px; height: 34px; filter: brightness(0) invert(1); }
+  .ask__fab:hover { transform: translateY(-2px) scale(1.04); }
+  .ask__hint { position: relative; background: #fff; border-radius: 16px; box-shadow: var(--sh-3); padding: 12px 40px 12px 12px; max-width: 300px; }
+  .ask__hint::after { content: ''; position: absolute; right: 26px; bottom: -8px; width: 16px; height: 16px; background: #fff; transform: rotate(45deg); }
+  .ask__hint-b { display: flex; align-items: center; gap: 12px; text-align: left; font-size: 1rem; line-height: 1.3; color: var(--ink-2); }
+  .ask__hint-b b { display: block; color: var(--spruce-900); font-family: var(--display); font-size: 1.15rem; }
+  .ask__face { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); flex: 0 0 auto; }
+  .ask__face--lg { width: 52px; height: 52px; }
+  .ask__hint-x, .ask__x { position: absolute; top: 8px; right: 8px; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; }
+  .ask__hint-x:hover { background: var(--spruce-50); }
+  .ask__hint-x span, .ask__x span { position: relative; width: 14px; height: 14px; }
+  .ask__hint-x span::before, .ask__hint-x span::after, .ask__x span::before, .ask__x span::after { content: ''; position: absolute; left: 50%; top: 50%; width: 16px; height: 2.5px; border-radius: 2px; background: var(--spruce-900); transform: translate(-50%, -50%) rotate(45deg); }
+  .ask__hint-x span::after, .ask__x span::after { transform: translate(-50%, -50%) rotate(-45deg); }
+  .ask__panel { width: min(400px, calc(100vw - 24px)); max-height: min(640px, calc(100dvh - 120px)); background: #fff; border-radius: 20px; box-shadow: var(--sh-3); display: flex; flex-direction: column; overflow: hidden; }
+  .ask__top { position: relative; display: flex; align-items: center; gap: 12px; padding: 16px 48px 16px 16px; background: var(--spruce-900); color: #fff; border-bottom: 4px solid var(--orange); }
+  .ask__h { font-family: var(--display); font-weight: 800; font-size: 1.3rem; }
+  .ask__s { font-size: .9rem; color: var(--on-dark-2); }
+  .ask__x { top: 50%; transform: translateY(-50%); right: 12px; background: rgba(255,255,255,.12); width: 36px; height: 36px; }
+  .ask__x span::before, .ask__x span::after { background: #fff; }
+  .ask__body { padding: 16px; display: grid; gap: 12px; overflow-y: auto; overscroll-behavior: contain; }
+  .ask__call { justify-self: stretch; }
+  .ask__lbl { font-size: .8rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--orange-ink); margin-top: 4px; }
+  .ask__qa { display: grid; gap: 6px; }
+  .ask__qa details { background: var(--spruce-50); border-radius: 10px; }
+  .ask__qa summary { cursor: pointer; padding: 10px 12px; font-weight: 700; font-size: .95rem; list-style: none; }
+  .ask__qa summary::-webkit-details-marker { display: none; }
+  .ask__qa p { padding: 0 12px 12px; font-size: .92rem; color: var(--ink-2); line-height: 1.5; }
+  .ask__body :global(.qf__row) { grid-template-columns: 1fr; }
+  @media (max-width: 860px) {
+    .ask { right: 12px; bottom: calc(86px + env(safe-area-inset-bottom)); }
+    .ask__fab { width: 54px; height: 54px; }
+    .ask__fab img { width: 28px; height: 28px; }
+    :global(.is-typing) .ask:not(.is-open) { visibility: hidden; }
+    .ask.is-open .ask__fab { display: none; }
+    .ask__panel { max-height: calc(100dvh - 110px - env(safe-area-inset-bottom)); }
+  }
+</style>

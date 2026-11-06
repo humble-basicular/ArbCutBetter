@@ -33,7 +33,7 @@ const I = '/assets/v5-brand/raster/icons';
       </div>
       <ul role="list" class="hero__proof">
         <li><RatingUnit variant="card" loc="hero-rating" /></li>
-        <li class="hero__seal"><Seal size={96} /></li>
+        <li class="hero__seal"><Seal /></li>
       </ul>
     </div>
 
@@ -85,7 +85,7 @@ const I = '/assets/v5-brand/raster/icons';
 
 <style>
   .hero { position: relative; background: var(--spruce-900); color: #fff; overflow: hidden; isolation: isolate; padding-top: clamp(28px, 3vw, 44px); padding-bottom: clamp(120px, 10vw, 150px); }
-  .hero__rings { position: absolute; inset: -120px -10% -120px -10%; background: url('/assets/v5-brand/texture/rings-hero.webp') 72% 58% / 2400px auto no-repeat; opacity: .9; z-index: -1; pointer-events: none; }
+  .hero__rings { position: absolute; inset: -120px -10% -120px -10%; background: url('/assets/v5-brand/texture/rings-hero.webp') 72% 58% / 2400px auto no-repeat; opacity: .3; z-index: -1; pointer-events: none; }
   .hero__grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); gap: clamp(24px, 3vw, 48px); align-items: center; }
   .hero__txt { position: relative; z-index: 2; display: grid; justify-items: start; gap: 18px; }
   .hero__who { font-size: clamp(.9rem, .82rem + .3vw, 1.08rem); }

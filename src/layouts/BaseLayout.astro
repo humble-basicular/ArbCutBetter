@@ -7,6 +7,7 @@ import Footer from '../components/Footer.astro';
 import QuoteDialog from '../components/QuoteDialog.astro';
 import MobileActions from '../components/MobileActions.astro';
 import Lightbox from '../components/Lightbox.astro';
+import ChatLauncher from '../components/ChatLauncher.astro';
 import fontDisplay from '@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-standard-normal.woff2?url';
 import fontDisplayExt from '@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-ext-standard-normal.woff2?url';
 import fontText from '@fontsource-variable/figtree/files/figtree-latin-wght-normal.woff2?url';
@@ -63,6 +64,7 @@ const B = '/assets/v5-brand/logo';
     <QuoteDialog />
     <Lightbox />
     <MobileActions />
+    {!bare && <ChatLauncher />}
     <script src="../scripts/site.js"></script>
     <script src="../scripts/motion.js"></script>
     <script>

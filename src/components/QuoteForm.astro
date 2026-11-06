@@ -6,6 +6,7 @@ import { site, PREVIEW } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
 const { id = 'quote-form', prefix = 'q', service = '', variant = 'full', submit } = Astro.props;
 const short = variant === 'short';
+const chat = variant === 'chat';
 ---
 <form
   class:list={['qf', { 'qf--short': short }]}
@@ -19,13 +20,30 @@ const short = variant === 'short';
   {!PREVIEW && (
     <>
       <input type="hidden" name="access_key" value={site.web3formsKey} />
-      <input type="hidden" name="subject" value={short ? 'Prašo perskambinti (ArbCut svetainė)' : 'Nauja užklausa iš ArbCut svetainės'} />
+      <input type="hidden" name="subject" value={short ? 'Prašo perskambinti (ArbCut svetainė)' : chat ? 'Klausimas Mantui (ArbCut svetainės klausimų langas)' : 'Nauja užklausa iš ArbCut svetainės'} />
       <input type="hidden" name="from_name" value="ArbCut svetainė" />
       <input type="hidden" name="redirect" value="https://arbcut.lt/success" />
       <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" aria-hidden="true" />
     </>
   )}
-  {short ? (
+  {chat ? (
+    <>
+      <div class="qf__row">
+        <div class="qf__f">
+          <label for={`${prefix}-name`}>Vardas <span aria-hidden="true">*</span></label>
+          <input id={`${prefix}-name`} name="Vardas" type="text" autocomplete="name" required />
+        </div>
+        <div class="qf__f">
+          <label for={`${prefix}-tel`}>Telefonas <span aria-hidden="true">*</span></label>
+          <input id={`${prefix}-tel`} name="Telefonas" type="tel" autocomplete="tel" inputmode="tel" required pattern="(?:[^0-9]*[0-9]){8,}[^0-9]*" placeholder="+370 6__ _____" />
+        </div>
+      </div>
+      <div class="qf__f">
+        <label for={`${prefix}-msg`}>Jūsų klausimas <span aria-hidden="true">*</span></label>
+        <textarea id={`${prefix}-msg`} name="Žinutė" rows="3" required placeholder="Pvz.: ar galima išsaugoti seną ąžuolą prie namo?"></textarea>
+      </div>
+    </>
+  ) : short ? (
     <>
       <div class="qf__f">
         <label for={`${prefix}-tel`}>Jūsų telefonas <span aria-hidden="true">*</span></label>
@@ -33,7 +51,7 @@ const short = variant === 'short';
       </div>
       <div class="qf__f">
         <label for={`${prefix}-msg`}>Kas negerai su medžiu?</label>
-        <textarea id={`${prefix}-msg`} name="Žinutė" rows="2" placeholder="Pvz.: pasvirusi eglė virš garažo, šalia laidai"></textarea>
+        <textarea id={`${prefix}-msg`} name="Žinutė" rows="2" placeholder="Pvz.: eglė virš garažo"></textarea>
       </div>
     </>
   ) : (
@@ -58,7 +76,8 @@ const short = variant === 'short';
         </div>
         <div class="qf__f">
           <label for={`${prefix}-city`}>Vietovė</label>
-          <input id={`${prefix}-city`} name="Vietovė" type="text" autocomplete="address-level2" placeholder="pvz. Kaunas, Garliava" />
+          <input id={`${prefix}-city`} name="Vietovė" type="text" autocomplete="street-address" placeholder="Adresas arba gyvenvietė, pvz. Garliava" list={`${prefix}-city-list`} data-addr />
+          <datalist id={`${prefix}-city-list`}></datalist>
         </div>
       </div>
       <div class="qf__f">
@@ -71,7 +90,7 @@ const short = variant === 'short';
   {!PREVIEW && <div class="h-captcha" data-sitekey={site.hcaptchaSiteKey}></div>}
   <p class="qf__err" role="alert" hidden>{short ? 'Įrašykite telefono numerį (bent 8 skaitmenys).' : 'Užpildykite pažymėtus laukus.'}</p>
   <div class="qf__foot">
-    <button type="submit" class="btn btn--primary qf__btn">{submit || (short ? 'Prašau perskambinti' : 'Siųsti užklausą')}</button>
+    <button type="submit" class="btn btn--primary qf__btn">{submit || (short ? 'Prašau perskambinti' : chat ? 'Siųsti klausimą' : 'Siųsti užklausą')}</button>
     {!short && <span class="qf__req"><span aria-hidden="true">*</span> privalomi laukai</span>}
   </div>
   <div class="qf__done" role="status" hidden tabindex="-1">

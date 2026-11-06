@@ -1,28 +1,52 @@
 ---
-/* Vienas užklausos dialogas visai svetainei. Bet koks [data-quote] jį atidaro;
-   data-service="<slug>" iš anksto parenka paslaugą. */
+/* Vienas užklausos dialogas visai svetainei (v5: centruotas, firminis). Bet koks [data-quote] jį atidaro;
+   data-service="<slug>" iš anksto parenka paslaugą. Kabliukai: #quote-dialog, [data-quote-close]. */
 import { site } from '@data/site.js';
 import QuoteForm from './QuoteForm.astro';
+import RatingUnit from './v5/RatingUnit.astro';
 ---
 <dialog class="qd" id="quote-dialog" aria-labelledby="qd-title">
-  <div class="qd__in cut">
-    <div class="qd__head">
-      <h2 id="qd-title">Gauti kainą</h2>
-      <button type="button" class="qd__x" data-quote-close >Uždaryti</button>
+  <div class="qd__in">
+    <div class="qd__top">
+      <img class="qd__mark" src="/assets/v5-brand/logo/mark-a-egle-white.svg" alt="" width="34" height="58" />
+      <div class="qd__ttl">
+        <h2 id="qd-title">Gauti kainą</h2>
+        <p>Atsakys Mantas Gerulis, kasdien 08:00–18:00</p>
+      </div>
+      <button type="button" class="qd__x" data-quote-close aria-label="Uždaryti"><span aria-hidden="true"></span></button>
     </div>
-    <p class="qd__alt">Greičiausia paskambinti: <a href={site.telefonasHref} data-loc="dialog-call">{site.telefonas}</a></p>
-    <QuoteForm id="dialog-form" prefix="d" />
+    <div class="qd__body">
+      <p class="qd__alt">Greičiausia paskambinti: <a href={site.telefonasHref} data-loc="dialog-call">{site.telefonas}</a></p>
+      <QuoteForm id="dialog-form" prefix="d" />
+      <div class="qd__rate"><RatingUnit variant="chip" loc="dialog-rating" /></div>
+    </div>
   </div>
 </dialog>
 
 <style>
-  .qd { width: min(680px, calc(100vw - 20px)); max-height: calc(100dvh - 20px); padding: 0; border: 0; background: transparent; color: var(--ink); overflow: visible; }
-  .qd::backdrop { background: rgba(15, 42, 32, .78); }
-  .qd__in { background: var(--paper); padding: clamp(20px, 4vw, 36px); display: grid; gap: 14px; max-height: calc(100dvh - 20px); overflow-y: auto; }
-  .qd__head { display: flex; justify-content: space-between; gap: 16px; align-items: center; padding-right: 12px; }
-  .qd__head h2 { font-size: clamp(1.8rem, 1.5rem + 1.2vw, 2.5rem); color: var(--spruce-900); }
-  .qd__x { min-height: 44px; padding: 8px 14px; flex: 0 0 auto; font-weight: 700; border: 2px solid var(--spruce-900); border-radius: var(--radius); }
-  .qd__x:hover { background: var(--spruce-900); color: #fff; }
-  .qd__alt { color: var(--ink-2); font-size: 1.1rem; }
-  .qd__alt a { color: var(--spruce-900); font-stretch: var(--wide); font-weight: 800; font-size: 1.3rem; white-space: nowrap; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 4px; }
+  .qd { margin: auto; width: min(720px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); padding: 0; border: 0; background: transparent; color: var(--ink); overflow: visible; }
+  .qd[open] { animation: qdin .22s var(--ease-out); }
+  @keyframes qdin { from { opacity: 0; transform: translateY(14px) scale(.98); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .qd[open] { animation: none; } }
+  .qd::backdrop { background: rgba(11, 35, 27, .72); backdrop-filter: blur(3px); }
+  .qd__in { background: var(--paper); border-radius: var(--r-lg); overflow: hidden; display: flex; flex-direction: column; max-height: calc(100dvh - 24px); box-shadow: var(--sh-3); }
+  .qd__top { display: flex; align-items: center; gap: 16px; padding: 18px 20px 18px 24px; background: var(--spruce-900) url('/assets/v5-brand/texture/rings-band.webp') 80% 40% / 1200px auto no-repeat; color: #fff; border-bottom: 5px solid var(--orange); }
+  .qd__mark { width: 30px; height: auto; flex: 0 0 auto; }
+  .qd__ttl { flex: 1; }
+  .qd__ttl h2 { color: #fff; font-size: clamp(1.7rem, 1.4rem + 1vw, 2.3rem); }
+  .qd__ttl p { color: var(--on-dark-2); font-size: .95rem; margin-top: 4px; }
+  .qd__x { flex: 0 0 auto; width: 46px; height: 46px; border-radius: 50%; background: rgba(255,255,255,.12); display: grid; place-items: center; transition: background var(--t); }
+  .qd__x:hover { background: var(--orange); }
+  .qd__x span { position: relative; width: 18px; height: 18px; }
+  .qd__x span::before, .qd__x span::after { content: ''; position: absolute; left: 50%; top: 50%; width: 22px; height: 3px; border-radius: 2px; background: #fff; transform: translate(-50%, -50%) rotate(45deg); }
+  .qd__x span::after { transform: translate(-50%, -50%) rotate(-45deg); }
+  .qd__body { padding: clamp(18px, 3vw, 30px); display: grid; gap: 16px; overflow-y: auto; overscroll-behavior: contain; }
+  .qd__alt { color: var(--ink-2); font-size: 1.05rem; }
+  .qd__alt a { color: var(--spruce-900); font-family: var(--display); font-weight: 800; font-size: 1.3rem; white-space: nowrap; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 4px; }
+  .qd__rate { background: var(--spruce-900); border-radius: 12px; padding: 10px 14px; justify-self: start; }
+  @media (max-width: 600px) {
+    .qd { width: 100vw; max-width: 100vw; max-height: 94dvh; margin: auto 0 0; }
+    .qd__in { border-radius: 20px 20px 0 0; max-height: 94dvh; }
+    .qd__top { padding: 14px 14px 14px 18px; }
+  }
 </style>

@@ -1,18 +1,15 @@
 ---
-/* Vienintelis mūsų ženklas tikrai vertei: „15 metų patirtis“ (patirtisMetai iš atsiliepimai.js).
-   Fonas — rastrinis rievių medalionas (Codex imagegen), tekstas — HTML. */
+/* „15 metų patirtis“ (patirtisMetai, Paslaugos.lt profilio duomuo). Aiškus, įskaitomas ženklas: auksinis diskas su skaičiumi + žodžiai šalia. */
 import { patirtisMetai } from '@data/atsiliepimai.js';
-const { size = 132, class: cls } = Astro.props;
+const { class: cls } = Astro.props;
 ---
-<div class:list={['seal', cls]} style={`--sz:${size}px`} role="img" aria-label={`${patirtisMetai} metų patirtis`}>
-  <span class="seal__n" data-count={patirtisMetai} aria-hidden="true">{patirtisMetai}</span>
-  <span class="seal__u" aria-hidden="true">metų</span>
-  <span class="seal__r" aria-hidden="true">patirtis</span>
-</div>
+<p class:list={['seal', cls]}>
+  <span class="seal__disc" aria-hidden="true"><span data-count={patirtisMetai}>{patirtisMetai}</span></span>
+  <span class="seal__t"><b>metų</b> patirtis</span>
+</p>
 <style>
-  .seal { position: relative; width: var(--sz); height: var(--sz); flex: 0 0 auto; background: url('/assets/v5-brand/raster/seal/seal-rings-512.png') center / contain no-repeat; filter: drop-shadow(0 8px 14px rgba(0,0,0,.28)); display: grid; justify-items: center; align-content: center; transform: rotate(-6deg); }
-  .seal::before { content: ''; position: absolute; inset: 21%; border-radius: 50%; border: 2px solid rgba(244, 183, 49, .7); }
-  .seal__n { font-family: var(--display); font-weight: 800; font-variation-settings: 'opsz' 96, 'wdth' 85; font-size: calc(var(--sz) * .34); line-height: .82; color: #fff; margin-top: calc(var(--sz) * -.1); letter-spacing: -.03em; }
-  .seal__u { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: calc(var(--sz) * .1); letter-spacing: .12em; color: var(--gold); }
-  .seal__r { position: absolute; left: 50%; bottom: calc(var(--sz) * .2); transform: translateX(-50%); font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: calc(var(--sz) * .085); letter-spacing: .14em; color: #fff; white-space: nowrap; }
+  .seal { display: inline-flex; align-items: center; gap: 12px; }
+  .seal__disc { width: 62px; height: 62px; border-radius: 50%; display: grid; place-items: center; background: var(--gold); box-shadow: 0 0 0 4px rgba(255,255,255,.9), 0 8px 18px rgba(0,0,0,.25); font-family: var(--display); font-weight: 800; font-size: 1.9rem; line-height: 1; letter-spacing: -.03em; color: var(--spruce-950); }
+  .seal__t { display: grid; line-height: 1.1; font-weight: 650; color: var(--on-dark-2); font-size: .95rem; }
+  .seal__t b { font-family: var(--display); font-weight: 800; font-size: 1.35rem; color: #fff; }
 </style>

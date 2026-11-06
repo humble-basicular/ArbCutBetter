@@ -284,4 +284,33 @@
     }), { rootMargin: '0px 0px -8% 0px' });
     rv.forEach((el) => io.observe(el));
   } else rv.forEach((el) => el.classList.add('is-in'));
+
+  /* Adreso pasiūlymai (v5): Photon (komoot, nemokama vieša API; saikingai: nuo 3 raidžių, 400 ms pauzė, iki 6, tik Lietuva).
+     Neveikiant — lieka paprastas laukas ir naršyklės išsaugoti adresai. */
+  const addrState = new WeakMap();
+  document.addEventListener('input', (e) => {
+    const inp = e.target;
+    if (!inp.matches || !inp.matches('input[data-addr]')) return;
+    const dl = inp.list; if (!dl) return;
+    const st = addrState.get(inp) || { t: 0, ctl: null, last: '' }; addrState.set(inp, st);
+    clearTimeout(st.t); const q = inp.value.trim();
+    if (q.length < 3 || q === st.last) return;
+    st.t = setTimeout(async () => {
+      st.last = q; if (st.ctl) st.ctl.abort(); st.ctl = new AbortController();
+      try {
+        const r = await fetch('https://photon.komoot.io/api/?q=' + encodeURIComponent(q) + '&limit=6&bbox=20.9,53.89,26.84,56.45', { signal: st.ctl.signal });
+        if (!r.ok) return;
+        const j = await r.json(); const seen = new Set(); const opts = [];
+        (j.features || []).forEach((f) => {
+          const p = f.properties || {};
+          const street = [p.street || (p.type === 'street' ? p.name : ''), p.housenumber].filter(Boolean).join(' ');
+          const place = p.city || p.town || p.village || '';
+          const parts = [(p.type === 'street' || p.type === 'house') ? '' : p.name, street, place, p.county || ''].filter(Boolean).filter((v, k, a) => a.indexOf(v) === k);
+          const v = parts.join(', ');
+          if (v && !seen.has(v)) { seen.add(v); const o = document.createElement('option'); o.value = v; opts.push(o); }
+        });
+        dl.replaceChildren(...opts);
+      } catch (err) { /* rankinis įvedimas lieka */ }
+    }, 400);
+  });
 })();
