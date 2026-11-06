@@ -10,7 +10,7 @@ const subj = encodeURIComponent('Nuotraukos kainai');
 const I = '/assets/v5-brand/raster/icons';
 const steps = [
   { ic: 'step-foto', n: 'Nufotografuokite', p: 'Visą darbo vietą, kas šalia ir kelią iki jos.' },
-  { ic: 'step-siusti', n: 'Atsiųskite', p: `SMS žinute numeriu ${site.telefonas} arba el. paštu.` },
+  { ic: 'step-siusti', n: 'Atsiųskite', p: 'Pridėkite prie užklausos, siųskite SMS žinute arba el. paštu.' },
   { ic: 'step-kaina', n: 'Pasakome kainą', p: 'Preliminarią pagal nuotraukas, tikslią atvažiavę į vietą.' },
   { ic: 'step-atvaziuojame', n: 'Atvažiuojame', p: 'Su autobokšteliu arba virvėmis, sutartą dieną.' },
   { ic: 'step-tvarkinga', n: 'Paliekame tvarkingai', p: 'Kaune ir Kauno r. šakas išvežame fiskaru, kitur sukrauname krūvomis.' },
@@ -22,7 +22,7 @@ const steps = [
     <div class="snd__head">
       <div>
         <p class="kick snd__kick">Nuo nuotraukos iki tvarkingo kiemo</p>
-        <h2 id="snd-h">Atsiųskite nuotraukas. Pasakysime kainą.</h2>
+        <h2 id="snd-h">Kaip vyksta darbas</h2>
       </div>
       <div class="snd__bubble rv">
         <Image class="snd__face" src={face} alt="" widths={[96, 192]} sizes="96px" format="webp" quality={80} style="object-position: 50% 18%" />
@@ -36,7 +36,7 @@ const steps = [
           <span class="snd__num" aria-hidden="true">{i + 1}</span>
           <span class="ico-c snd__ic" style="--cs:84px"><img src={`${I}/${s.ic}-160.png`} alt="" width="62" height="62" loading="lazy" /></span>
           <p class="snd__p">{s.p}</p>
-          <p class="snd__name tag rv-tag">{s.n}</p>
+          <p class="snd__name tag">{s.n}</p>
         </li>
       ))}
     </ol>
@@ -59,10 +59,9 @@ const steps = [
           <li>Kelią iki vietos: ar privažiuos autobokštelis.</li>
         </ul>
         <div class="snd__act">
-          <a class="btn btn--primary snd__big" href={site.smsHref} data-loc="photos-sms"><img class="ico" src={`${I}/ui-sms-160.png`} alt="" width="28" height="28" style="--is:28px;filter:brightness(0) invert(1)" />Siųsti SMS <span class="btn__num">{site.telefonas}</span></a>
-          <a class="btn btn--line" href={`mailto:${site.elPastas}?subject=${subj}`} data-loc="photos-mail">El. paštu</a>
+          <button type="button" class="btn btn--primary" data-quote data-loc="photos-quote">Gauti preliminarią kainą</button>
         </div>
-        <p class="snd__mail">El. paštas: <a href={`mailto:${site.elPastas}?subject=${subj}`}>{site.elPastas}</a></p>
+        <p class="snd__mail">Arba <a href={site.smsHref} data-loc="photos-sms">SMS žinute {site.telefonas}</a>, <a href={`mailto:${site.elPastas}?subject=${subj}`} data-loc="photos-mail">el. paštu</a>.</p>
       </div>
     </div>
   </div>
@@ -91,14 +90,13 @@ const steps = [
   .snd__num { position: absolute; top: 10px; left: 14px; font-family: var(--display); font-weight: 800; font-size: 1.6rem; color: var(--orange); }
   .snd__p { font-size: 1rem; line-height: 1.45; color: var(--ink-2); min-height: 4.4em; margin-top: 30px; }
   .snd__name { margin-bottom: -18px; font-size: 1.02rem; }
-  .snd__step:nth-child(even) .snd__name { background: var(--spruce-900); color: #fff; transform: rotate(2deg); }
-  .snd__step:nth-child(1) .snd__name { background: var(--gold); }
+  .snd .snd__name { background: var(--spruce-900); color: #fff; transform: none; }
 
   .snd__grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(28px, 4vw, 64px); margin-top: clamp(56px, 6vw, 84px); align-items: start; }
   .snd__q blockquote { font-family: var(--display); font-weight: 700; font-variation-settings: 'opsz' 48, 'wdth' 95; font-size: clamp(1.45rem, 1.1rem + 1.2vw, 2.1rem); line-height: 1.2; letter-spacing: -.01em; }
   .snd__q figcaption { margin-top: 12px; font-weight: 700; color: var(--spruce-950); }
   .snd__q figcaption a { color: var(--spruce-950); text-decoration: underline; text-decoration-color: #fff; text-decoration-thickness: 2px; text-underline-offset: 3px; }
-  .snd__mail a { color: #fff; text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .snd__mail a { color: #fff; font-weight: 700; text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 3px; }
   .snd__p2 { margin-top: 22px; font-size: 1.1rem; color: var(--spruce-950); font-weight: 500; }
   .snd__q2 { margin-top: 14px; border-left: 5px solid var(--spruce-900); padding-left: 18px; font-size: 1.2rem; font-weight: 700; color: var(--spruce-950); }
   .snd__what { background: var(--spruce-900); border-radius: var(--r-lg); padding: clamp(22px, 3vw, 34px); box-shadow: var(--sh-3); display: grid; gap: 16px; }
@@ -106,7 +104,6 @@ const steps = [
   .snd__what .ticks { color: #fff; }
   .snd__what :global(.ticks li::before) { filter: brightness(0) invert(1); }
   .snd__act { display: flex; flex-wrap: wrap; gap: 12px; }
-  .snd__big .btn__num { font-size: 1.1rem; }
   .snd__mail { color: var(--on-dark-2); font-size: .98rem; }
 
   @media (max-width: 1100px) {

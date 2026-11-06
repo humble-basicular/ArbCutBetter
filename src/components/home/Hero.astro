@@ -61,7 +61,7 @@ const I = '/assets/v5-brand/raster/icons';
         <p class="dock__p">Aprašykite darbą. Susisieksime ir pasakysime preliminarią kainą.</p>
         <QuoteForm variant="short" id="hero-form" prefix="h" />
         <div class="dock__pics">
-          <p><strong>Kainą pasakome pagal nuotraukas.</strong> Nufotografuokite darbo vietą ir atsiųskite:</p>
+          <p><strong>Patogiau žinute?</strong> Nuotraukas galite atsiųsti ir taip:</p>
           <div class="dock__btns">
             <a class="btn btn--ink btn--sm" href={site.smsHref} data-loc="hero-sms"><img class="ico" src={`${I}/ui-sms-160.png`} alt="" width="24" height="24" style="--is:24px;filter:brightness(0) invert(1)" />SMS</a>
             <a class="btn btn--line btn--sm" href={`mailto:${site.elPastas}?subject=${encodeURIComponent('Nuotraukos kainai')}`} data-loc="hero-mail"><img class="ico" src={`${I}/ui-mail-160.png`} alt="" width="24" height="24" style="--is:24px" />El. paštu</a>
@@ -132,6 +132,7 @@ const I = '/assets/v5-brand/raster/icons';
   .dock__grid :global(.qf--short textarea) { min-height: 84px; height: 84px; resize: vertical; }
   .dock__pics { border-left: 1px solid var(--line); padding-left: clamp(16px, 2vw, 28px); display: grid; gap: 10px; font-size: .98rem; color: var(--ink-2); }
   .dock__pics strong { color: var(--spruce-900); }
+  @media (pointer: coarse) { .dock__btns .btn--ink { display: none; } }
   .dock__btns { display: flex; gap: 10px; flex-wrap: wrap; }
 
   .press-strip { display: flex; align-items: center; gap: clamp(16px, 3vw, 44px); margin-top: clamp(30px, 3vw, 44px); padding-inline: 6px; flex-wrap: wrap; }

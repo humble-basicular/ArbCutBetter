@@ -1,7 +1,7 @@
 ---
 /* v5 pradžia: pardavimo puslapio stuburas (dizaino smegenys v5, C1).
-   Tvarka: pirmas ekranas + forma → skubu → paslaugos → eiga (nuotraukos) → Manto pažadas (tik peržiūroje)
-   → komanda ir darbas → spauda → atsiliepimai → zona su žemėlapiu → DUK → poraštė su Lietuvos simboliu. */
+   Tvarka: pirmas ekranas + forma → skubu → paslaugos → darbai → eiga → Mantas → spauda → atsiliepimai
+   → zona su žemėlapiu → DUK → poraštė su Lietuvos simboliu (audito pastaba 2026-11-06: darbai prieš eigą). */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/home/Hero.astro';
 import Emergency from '../components/home/Emergency.astro';
@@ -28,9 +28,9 @@ const I = '/assets/v5-brand/raster/icons';
   <Hero />
   <Emergency />
   <Services />
+  <Moments />
   <SendPhotos />
   <MantoPazadas />
-  <Moments />
   <Press />
   <ReviewBoard />
   <AreaMap />
