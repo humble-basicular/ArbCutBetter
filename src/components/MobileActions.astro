@@ -1,25 +1,20 @@
 ---
-/* Apatinė mobili juosta: skambutis pagrindinis, SMS su nuotraukomis antras. */
+/* Apatinė mobili juosta: skambutis pagrindinis, SMS su nuotraukomis antras. Tik tekstas. */
 import { site } from '@data/site.js';
-import Icon from './Icon.astro';
 ---
 <div class="mact" aria-label="Greiti veiksmai">
-  <a class="mact__call" href={site.telefonasHref} data-loc="sticky-call"><Icon name="phone" size={22} /><span>Skambinti <b>{site.telefonas}</b></span></a>
-  <a class="mact__sms" href={site.smsHref} data-loc="sticky-sms" aria-label="Siųsti nuotraukas SMS žinute"><Icon name="camera" size={22} /><span>Nuotraukos</span></a>
+  <a class="mact__call" href={site.telefonasHref} data-loc="sticky-call"><span>Skambinti <b>{site.telefonas}</b></span></a>
+  <a class="mact__sms" href={site.smsHref} data-loc="sticky-sms" aria-label="Siųsti nuotraukas SMS žinute"><span>SMS</span></a>
 </div>
 <style>
   .mact { display: none; }
   @media (max-width: 860px) {
-    .mact { position: fixed; left: 0; right: 0; bottom: 0; z-index: 800; display: grid; grid-template-columns: minmax(0, 1fr) auto; padding-bottom: env(safe-area-inset-bottom); background: var(--f0); box-shadow: 0 -8px 24px rgba(0,0,0,.28); }
-    .mact a { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 64px; font-family: var(--display); text-transform: uppercase; font-weight: 600; font-size: 1.15rem; letter-spacing: .01em; }
-    .mact__call { background: var(--rust); color: var(--f0); padding-inline: 12px; white-space: nowrap; }
-    .mact__call b { font-weight: 700; }
-    .mact__sms { color: var(--cream); padding-inline: 18px; border-left: 1px solid #1d3326; }
-    .mact :focus-visible { outline: 3px solid var(--amber); outline-offset: -3px; }
+    .mact { position: fixed; left: 0; right: 0; bottom: 0; z-index: 800; display: grid; grid-template-columns: minmax(0, 1fr) auto; padding-bottom: env(safe-area-inset-bottom); background: var(--spruce-900); transition: transform var(--t); }
+    .mact a { display: flex; align-items: center; justify-content: center; min-height: 64px; font-weight: 700; font-size: 1.2rem; }
+    .mact__call { background: var(--orange); color: #fff; padding-inline: 12px; white-space: nowrap; }
+    .mact__call b { font-weight: 800; font-stretch: var(--wide); }
+    .mact__sms { color: #fff; padding-inline: 24px; }
+    .mact :focus-visible { outline: 3px solid #fff; outline-offset: -5px; }
   }
-  @media (max-width: 440px) {
-    .mact__call span { font-size: 1.05rem; }
-    .mact__sms span { display: none; }
-    .mact__sms { padding-inline: 20px; }
-  }
+  @media (max-width: 370px) { .mact a { font-size: 1.15rem; } .mact__call b { font-stretch: 100%; } .mact__sms { padding-inline: 18px; } }
 </style>

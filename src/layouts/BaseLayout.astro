@@ -7,9 +7,8 @@ import Footer from '../components/Footer.astro';
 import QuoteDialog from '../components/QuoteDialog.astro';
 import MobileActions from '../components/MobileActions.astro';
 import Lightbox from '../components/Lightbox.astro';
-import fontDisplay from '@fontsource-variable/oswald/files/oswald-latin-wght-normal.woff2?url';
-import fontDisplayExt from '@fontsource-variable/oswald/files/oswald-latin-ext-wght-normal.woff2?url';
-import fontSans from '@fontsource-variable/source-sans-3/files/source-sans-3-latin-wght-normal.woff2?url';
+import fontLatin from '@fontsource-variable/archivo/files/archivo-latin-wdth-normal.woff2?url';
+import fontLatinExt from '@fontsource-variable/archivo/files/archivo-latin-ext-wdth-normal.woff2?url';
 
 const { title, description, ogImage, noindex = false, schemas, bare = false, preload } = Astro.props;
 const pageTitle = title || site.metaTitle;
@@ -40,10 +39,9 @@ const B = '/assets/arbcut-upgrade-brand';
     <meta property="og:image" content={ogImg} />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="preload" href={fontDisplay} as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href={fontDisplayExt} as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href={fontSans} as="font" type="font/woff2" crossorigin />
-    <meta name="theme-color" content="#0E1A14" />
+    <link rel="preload" href={fontLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={fontLatinExt} as="font" type="font/woff2" crossorigin />
+    <meta name="theme-color" content="#FFFFFF" />
     <slot name="head" />
     <link rel="icon" href={`${B}/favicon.ico`} sizes="48x48" />
     <link rel="icon" type="image/png" sizes="32x32" href={`${B}/favicon-32.png`} />

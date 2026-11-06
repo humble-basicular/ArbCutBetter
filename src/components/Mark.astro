@@ -1,0 +1,23 @@
+---
+/* Oficialus šaltinio ženklas (Paslaugos.lt, Google, LRT.lt, Valstietis.lt).
+   Failai: public/assets/marks/ (iš Codex užduoties arbcut-v4-brand-assets, naudojami nekeisti).
+   Kol failo nėra, rodomas paprastas šaltinio pavadinimas tekstu, be jokio savadarbio ženklo. */
+import fs from 'node:fs';
+import path from 'node:path';
+const { name, height = 24, label, class: cls, tone = 'dark' } = Astro.props;
+const text = { paslaugos: 'Paslaugos.lt', google: 'Google', lrt: 'LRT.lt', valstietis: 'Valstietis.lt' }[name] || name;
+const dir = path.join(process.cwd(), 'public/assets/marks');
+let file = null;
+try {
+  const all = fs.readdirSync(dir).filter((f) => /\.(svg|png|webp)$/i.test(f) && f.toLowerCase().startsWith(name));
+  const pick = (re) => all.find((f) => re.test(f.toLowerCase()));
+  file = (tone === 'light' && pick(/(light|white|inverse|negative)/)) || pick(/^[^-]*\.(svg|png|webp)$/) || all.find((f) => !/(light|white|inverse|negative)/.test(f.toLowerCase())) || all[0] || null;
+} catch { file = null; }
+---
+{file
+  ? <img class:list={['mark', cls]} src={`/assets/marks/${file}`} alt={label ?? text} height={height} style={`height:${height}px;width:auto`} decoding="async" loading="lazy" />
+  : <span class:list={['mark', 'mark--text', `mark--${name}`, cls]} style={`--mh:${height}px`}>{label === '' ? <span aria-hidden="true">{text}</span> : text}</span>}
+<style>
+  .mark { display: inline-block; vertical-align: middle; flex: 0 0 auto; }
+  .mark--text { font-weight: 800; font-stretch: 100%; font-size: calc(var(--mh) * .78); line-height: 1; letter-spacing: -.01em; white-space: nowrap; }
+</style>

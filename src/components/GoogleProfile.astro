@@ -5,51 +5,47 @@
    - Nėra placeId: peržiūroje rodoma rezervuota vieta su sąžininga žyma; gamyboje — nieko.
    Google priskyrimas (gmp-place-attribution) paliekamas. */
 import { site, PREVIEW } from '@data/site.js';
-import Icon from './Icon.astro';
+import Mark from './Mark.astro';
 const id = site.google.placeId;
 const key = site.google.mapsKey;
 const profileUrl = id ? `https://www.google.com/maps/place/?q=place_id:${id}` : '';
 ---
 {id ? (
   <div class="gp" data-gp data-place={id} data-key={key} data-auto={PREVIEW ? undefined : '1'}>
-    <div class="gp__head"><span class="gp__name">Google</span><span>verslo profilis</span></div>
+    <div class="gp__head"><span class="gp__name"><Mark name="google" height={22} /></span><span>verslo profilis</span></div>
     <div class="gp__slot" data-gp-slot>
       {PREVIEW && <button type="button" class="btn btn--ink btn--sm" data-gp-load>Įkelti Google profilį</button>}
       <p class="gp__wait" data-gp-wait hidden>Įkeliama iš Google…</p>
     </div>
-    <p class="gp__fail" data-gp-fail hidden>Google profilio čia įkelti nepavyko. <a href={profileUrl} target="_blank" rel="noopener">Atidaryti Google profilį <Icon name="external" size={15} /></a></p>
-    <a class="btn btn--primary gp__write" href={site.google.reviewUrl} target="_blank" rel="noopener" data-loc="google-review">Palikite atsiliepimą Google <Icon name="external" size={18} /></a>
+    <p class="gp__fail" data-gp-fail hidden>Google profilio čia įkelti nepavyko. <a href={profileUrl} target="_blank" rel="noopener">Atidaryti Google profilį <span class="sr-only">(atsidaro naujame lange)</span></a></p>
+    <a class="btn btn--primary gp__write" href={site.google.reviewUrl} target="_blank" rel="noopener" data-loc="google-review">Palikite atsiliepimą Google<span class="sr-only"> (atsidaro naujame lange)</span></a>
   </div>
 ) : PREVIEW ? (
   <div class="gp gp--empty">
-    <div class="gp__head"><span class="gp__name">Google</span><span>verslo profilis</span></div>
+    <div class="gp__head"><span class="gp__name"><Mark name="google" height={22} /></span><span>verslo profilis</span></div>
     <div class="gp__slot">
       <p class="gp__status">Ruošiamas</p>
       <p>Mantas kuria ArbCut Google verslo profilį. Kai jis bus paskelbtas, šioje vietoje matysite Google įvertinimą ir naujausius atsiliepimus tiesiai iš Google.</p>
       <ul class="gp__details" role="list">
-        <li><Icon name="pin" size={22} /><span><strong>Verslo informacija</strong>Kontaktai ir darbo laikas vienoje vietoje.</span></li>
-        <li><Icon name="star" size={22} /><span><strong>Klientų patirtys</strong>Google įvertinimas ir naujausi atsiliepimai.</span></li>
-        <li><Icon name="external" size={22} /><span><strong>Jūsų atsiliepimas</strong>Nuoroda pasidalyti savo patirtimi.</span></li>
+        <li><span><strong>Verslo informacija</strong>Kontaktai ir darbo laikas vienoje vietoje.</span></li>
+        <li><span><strong>Klientų patirtys</strong>Google įvertinimas ir naujausi atsiliepimai.</span></li>
+        <li><span><strong>Jūsų atsiliepimas</strong>Nuoroda pasidalyti savo patirtimi.</span></li>
       </ul>
     </div>
   </div>
 ) : null}
 <style>
-  .gp { background: #fff; border: 1px solid #d9cfba; display: grid; }
-  .gp__head { display: flex; align-items: baseline; gap: 10px; padding: 12px 20px; background: #2b3138; color: #fff; }
-  .gp__name { font-family: var(--display); font-weight: 600; font-size: 1.5rem; text-transform: uppercase; }
-  .gp__head span:last-child { color: #cfd4da; }
-  .gp__slot { min-height: 420px; padding: 20px; display: grid; gap: 14px; align-content: start; }
+  .gp { background: var(--paper); display: grid; }
+  .gp__head { display: flex; align-items: center; gap: 10px; padding: 16px 20px 0; color: var(--ink-2); }
+  .gp__name { color: var(--ink); }
+  .gp__slot { min-height: 420px; padding: 16px 20px 20px; display: grid; gap: 14px; align-content: start; }
   .gp__slot :global(gmp-place-details) { width: 100%; }
   .gp__fail { padding: 0 20px 16px; }
   .gp__fail a { font-weight: 700; text-decoration: underline; }
   .gp__write { margin: 0 20px 20px; }
-  .gp--empty .gp__slot { color: var(--text-2); }
-  .gp__status { font-family: var(--display); font-weight: 600; font-size: 2.2rem; text-transform: uppercase; color: var(--text); line-height: 1.12; }
-  .gp--empty .gp__slot { min-height: 0; padding: 24px; gap: 18px; }
-  .gp__status { border-left: 6px solid var(--rust); padding-left: 14px; }
-  .gp__details { display: grid; border-top: 1px solid var(--line); }
-  .gp__details li { display: flex; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); }
-  .gp__details :global(svg) { flex-shrink: 0; color: var(--f2); margin-top: 3px; }
-  .gp__details strong { display: block; color: var(--text); }
+  .gp--empty .gp__slot { color: var(--ink-2); min-height: 0; gap: 14px; }
+  .gp__status { font-stretch: var(--wide); font-weight: 800; font-size: 1.6rem; color: var(--spruce-900); line-height: 1.1; }
+  .gp__details { display: grid; }
+  .gp__details li { padding: 12px 0; box-shadow: inset 0 1px 0 var(--line); }
+  .gp__details strong { display: block; color: var(--ink); }
 </style>

@@ -1,51 +1,46 @@
 ---
-/* Skubi juosta: nuvirtę ar pavojingi medžiai. Be „24/7“ — dirbame 08:00–18:00. */
+/* Skubi juosta: vienintelė tamsi pradžios puslapio juosta. Be „24/7“ — dirbame 08:00–18:00. */
 import { site } from '@data/site.js';
-import Icon from '../Icon.astro';
 ---
-<section class="sos" aria-labelledby="sos-h">
+<section class="sos on-dark" aria-labelledby="sos-h">
   <div class="wrap sos__grid">
     <figure class="sos__ph">
-      <img src="/assets/images/paslaugos/audros-isverstu-medziu-salinimas.jpg" alt="Audros išverstas medis užvirtęs ant pastato stogo" width="340" height="340" loading="lazy" decoding="async" />
+      <img class="cut" src="/assets/images/paslaugos/audros-isverstu-medziu-salinimas.jpg" alt="Audros išverstas medis užvirtęs ant pastato stogo" width="340" height="340" loading="lazy" decoding="async" />
       <figcaption>Po audros: medis ant pastato. Nuėmėme dalimis.</figcaption>
     </figure>
     <div class="sos__main">
-      <h2 id="sos-h"><Icon name="alert" size={52} /> Medis nuvirto ar tuoj virs?</h2>
+      <h2 id="sos-h">Medis nuvirto ar tuoj virs?</h2>
       <p class="sos__p">Skambinkite iš karto. Pirmiausia nuimame tai, kas gali kristi ant namo, mašinos ar žmonių, paskui tvarkome likusį medį. Jei medis užkrito ant elektros laidų, nelieskite jo ir praneškite elektros tinklų operatoriui.</p>
     </div>
     <div class="sos__act">
-      <a class="sos__tel" href={site.telefonasHref} data-loc="sos-call"><Icon name="phone" size={30} /> {site.telefonas}</a>
+      <a class="btn btn--primary sos__tel" href={site.telefonasHref} data-loc="sos-call"><span class="btn__num">{site.telefonas}</span></a>
       <p><strong>Kasdien 08:00–18:00</strong>, ir savaitgaliais.<br /><a href="/paslaugos/audros-isverstu-medziu-salinimas">Audros padarinių šalinimas, nuo 50 €</a></p>
     </div>
   </div>
 </section>
 <style>
-  .sos { background: var(--amber); color: var(--f0); }
-  .sos :focus-visible { outline-color: var(--f0); }
-  .sos__grid { display: grid; grid-template-columns: 250px minmax(0, 1fr) 420px; gap: 0 clamp(28px, 3.5vw, 48px); align-items: center; padding-block: 56px 60px; }
-  .sos__ph { background: var(--f0); padding: 8px 8px 10px; box-shadow: 0 16px 30px -14px rgba(0,0,0,.5); }
+  .sos { background: var(--spruce-900); color: #fff; }
+  .sos :focus-visible { outline-color: #fff; }
+  .sos__grid { display: grid; grid-template-columns: 220px minmax(0, 1fr) minmax(0, 380px); gap: 0 clamp(28px, 3.5vw, 56px); align-items: center; padding-block: calc(88px + 56px) 64px; }
   .sos__ph img { width: 100%; aspect-ratio: 1; object-fit: cover; }
-  .sos__ph figcaption { color: var(--cream); font-size: .9rem; line-height: 1.3; padding: 8px 4px 0; }
+  .sos__ph figcaption { color: var(--on-dark-2); font-size: .92rem; line-height: 1.35; margin-top: 10px; }
   .sos__main { display: grid; gap: 16px; }
-  .sos h2 { display: flex; align-items: center; gap: 14px; font-size: clamp(2.3rem, 1.5rem + 2.4vw, 3.9rem); font-weight: 700; }
-  .sos h2 :global(svg) { flex: 0 0 auto; stroke-width: 2.4; }
-  .sos__p { font-size: 1.2rem; line-height: 1.45; max-width: 36em; font-weight: 500; }
-  .sos__act { display: grid; gap: 12px; align-self: end; }
-  .sos__grid > .sos__act { align-self: center; }
-  .sos__tel { display: inline-flex; align-items: center; gap: 12px; padding: 14px 24px; background: var(--f0); color: var(--amber); font-family: var(--display); font-weight: 700; font-size: clamp(1.9rem, 1.3rem + 1.6vw, 2.6rem); line-height: 1.12; border-radius: var(--radius); white-space: nowrap; }
-  .sos__tel:hover { background: var(--f1); }
-  .sos__act p { line-height: 1.4; }
-  .sos__act a:not(.sos__tel) { font-weight: 700; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; }
+  .sos h2 { font-size: clamp(2rem, 1.4rem + 2.2vw, 3.4rem); }
+  .sos__p { font-size: 1.15rem; line-height: 1.5; max-width: 36em; color: var(--on-dark-2); }
+  .sos__act { display: grid; gap: 14px; }
+  .sos__tel { font-size: clamp(1.5rem, 1.2rem + 1vw, 2.1rem); min-height: 72px; }
+  .sos__act p { line-height: 1.5; color: var(--on-dark-2); }
+  .sos__act strong { color: #fff; }
+  .sos__act a:not(.btn) { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; text-decoration-color: var(--orange); }
   @media (max-width: 1100px) {
-    .sos__grid { grid-template-columns: 220px minmax(0, 1fr); }
-    .sos__grid > .sos__act { padding-top: 22px; grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
+    .sos__grid { grid-template-columns: 200px minmax(0, 1fr); padding-top: calc(56px + 48px); }
+    .sos__act { grid-column: 2; padding-top: 24px; }
   }
   @media (max-width: 700px) {
-    .sos__grid { grid-template-columns: 1fr; padding-block: 40px 44px; gap: 22px; }
-    .sos__ph { order: 3; max-width: 170px; }
-    .sos__grid > .sos__act { grid-column: 1; padding-top: 0; }
-    .sos h2 :global(svg) { width: 40px; height: 40px; }
-    .sos__p { font-size: 1.1rem; }
-    .sos__tel { width: 100%; justify-content: center; }
+    .sos__grid { grid-template-columns: 1fr; padding-block: calc(48px + 36px) 44px; gap: 22px; }
+    .sos__ph { order: 3; max-width: 180px; }
+    .sos__act { grid-column: 1; padding-top: 0; }
+    .sos__p { font-size: 1.08rem; }
+    .sos__tel { width: 100%; }
   }
 </style>

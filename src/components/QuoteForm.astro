@@ -4,7 +4,6 @@
    variant="short" — tik telefonas ir „kas negerai“ (pradžios puslapio kortelė). */
 import { site, PREVIEW } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
-import Icon from './Icon.astro';
 const { id = 'quote-form', prefix = 'q', service = '', variant = 'full', submit } = Astro.props;
 const short = variant === 'short';
 ---
@@ -72,7 +71,7 @@ const short = variant === 'short';
   {!PREVIEW && <div class="h-captcha" data-sitekey={site.hcaptchaSiteKey}></div>}
   <p class="qf__err" role="alert" hidden>{short ? 'Įrašykite telefono numerį (bent 8 skaitmenys).' : 'Užpildykite pažymėtus laukus.'}</p>
   <div class="qf__foot">
-    <button type="submit" class="btn btn--primary qf__btn">{submit || (short ? 'Prašau perskambinti' : 'Siųsti užklausą')} <Icon name="arrow" size={20} /></button>
+    <button type="submit" class="btn btn--primary qf__btn">{submit || (short ? 'Prašau perskambinti' : 'Siųsti užklausą')}</button>
     {!short && <span class="qf__req"><span aria-hidden="true">*</span> privalomi laukai</span>}
   </div>
   <div class="qf__done" role="status" hidden tabindex="-1">
@@ -87,26 +86,27 @@ const short = variant === 'short';
   .qf { display: grid; gap: 16px; }
   .qf__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .qf__f { display: grid; gap: 6px; }
-  .qf label { font-size: 1rem; font-weight: 700; }
-  .qf label span { color: var(--rust-h); }
+  .qf label { font-size: 1rem; font-weight: 700; color: var(--ink); }
+  .qf label span { color: var(--orange-ink); }
   .qf input, .qf select, .qf textarea {
-    width: 100%; min-height: 54px; padding: 12px 14px; background: #fff; color: var(--text); font-size: 1.1rem;
-    border: 2px solid #b9ad97; border-radius: var(--radius);
+    width: 100%; min-height: 54px; padding: 12px 14px; background: #fff; color: var(--ink); font-size: 1.1rem;
+    border: 2px solid #A9B3AD; border-radius: var(--radius);
     transition: border-color var(--t), box-shadow var(--t);
   }
   .qf textarea { resize: vertical; min-height: 110px; }
   .qf--short textarea { min-height: 76px; }
-  .qf input::placeholder, .qf textarea::placeholder { color: #6b6f68; }
-  .qf input:focus, .qf select:focus, .qf textarea:focus { outline: none; border-color: var(--f1); box-shadow: 0 0 0 3px rgba(219, 122, 34, .45); }
-  .qf [aria-invalid='true'] { border-color: #b3261e; }
-  .qf__note { font-size: 1rem; color: var(--text-2); }
-  .qf__note a { color: var(--bark); font-weight: 700; text-decoration: underline; text-decoration-color: var(--rust); text-underline-offset: 3px; overflow-wrap: anywhere; }
-  .qf__err { color: #b3261e; font-weight: 700; }
+  .qf input::placeholder, .qf textarea::placeholder { color: #6A746E; }
+  .qf input:focus, .qf select:focus, .qf textarea:focus { outline: none; border-color: var(--spruce-900); box-shadow: 0 0 0 3px var(--orange); }
+  .qf [aria-invalid='true'] { border-color: #B3261E; }
+  .qf__note { font-size: 1rem; color: var(--ink-2); }
+  .qf__note a { color: var(--spruce-900); font-weight: 700; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  .qf__err { color: #B3261E; font-weight: 700; }
   .qf__foot { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
   .qf--short .qf__btn { width: 100%; }
-  .qf__req { font-size: .95rem; color: var(--mute); }
-  .qf__done { padding: 18px 20px; background: #fff; border-left: 6px solid var(--rust); display: grid; gap: 6px; }
-  .qf__done-h { font-family: var(--display); font-size: 1.5rem; font-weight: 600; text-transform: uppercase; }
+  .qf__req { font-size: .95rem; color: var(--ink-2); }
+  .qf__done { padding: 18px 20px; background: var(--spruce-100); display: grid; gap: 6px; }
+  .qf__done:focus-visible { outline-offset: 0; }
+  .qf__done-h { font-stretch: var(--wide); font-size: 1.35rem; font-weight: 800; color: var(--spruce-900); }
   .qf.is-done > :not(.qf__done) { display: none; }
   .qf .h-captcha { overflow: hidden; }
   @media (max-width: 560px) { .qf__row { grid-template-columns: 1fr; } }

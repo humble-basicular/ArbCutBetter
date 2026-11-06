@@ -5,7 +5,7 @@ import { site } from '@data/site.js';
 import { visiAtsiliepimai, saltiniai } from '@data/atsiliepimai-visi.js';
 import ReviewCard from '../ReviewCard.astro';
 import GoogleProfile from '../GoogleProfile.astro';
-import Icon from '../Icon.astro';
+import Mark from '../Mark.astro';
 const P = saltiniai.paslaugos;
 const G = saltiniai.google;
 const items = visiAtsiliepimai.filter((a) => a.tekstas.trim().length >= 20).slice(0, 36);
@@ -49,19 +49,18 @@ const r1 = (x) => x.toFixed(1).replace('.', ',');
       </div>
 
       <aside class="rvb__side" aria-label="Įvertinimai pagal platformą">
-        <div class="pl">
-          <div class="pl__head"><span class="pl__name">Paslaugos.lt</span><span>profilis</span></div>
+        <div class="pl cut">
+          <div class="pl__head"><Mark name="paslaugos" height={30} /><span>profilis</span></div>
           <div class="pl__body">
             <p class="pl__score"><span class="pl__n">{r1(P.ivertinimas)}</span><span class="pl__of">iš 5</span></p>
-            <p class="pl__stars" aria-hidden="true">{Array.from({ length: 5 }).map(() => <Icon name="star" size={24} />)}</p>
             <p class="pl__cnt"><strong>{P.kiekis} atsiliepimai</strong></p>
             <ul role="list" class="pl__facts">
-              <li><Icon name="check" size={18} /> Tapatybė patvirtinta</li>
-              <li><Icon name="check" size={18} /> Profilis nuo {site.profilis.nuo} m.</li>
-              <li><Icon name="check" size={18} /> {site.profilis.skambuciai} skambučiai per profilį</li>
+              <li>Tapatybė patvirtinta</li>
+              <li>Profilis nuo {site.profilis.nuo} m.</li>
+              <li>{site.profilis.skambuciai} skambučiai per profilį</li>
             </ul>
             <p class="pl__date">Duomenys {P.data}</p>
-            <a class="btn btn--ink btn--sm" href={P.url} target="_blank" rel="noopener">Visi atsiliepimai Paslaugos.lt <Icon name="external" size={16} /></a>
+            <a class="btn btn--ink btn--sm" href={P.url} target="_blank" rel="noopener">Visi atsiliepimai Paslaugos.lt<span class="sr-only"> (atsidaro naujame lange)</span></a>
             <a class="link-arrow" href={site.atsiliepimai.paliktiUrl} target="_blank" rel="noopener">Parašyti atsiliepimą</a>
           </div>
         </div>
@@ -71,41 +70,37 @@ const r1 = (x) => x.toFixed(1).replace('.', ',');
   </div>
 </section>
 <style>
-  .rvb { background: var(--sand-c); padding-block: var(--sec); }
+  .rvb { background: var(--spruce-100); padding-block: var(--sec); }
   .rvb__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 16px 56px; align-items: end; margin-bottom: clamp(28px, 3.5vw, 48px); }
-  .rvb__head h2 { font-size: clamp(2.6rem, 1.4rem + 4.4vw, 5.6rem); font-weight: 700; color: var(--f0); }
-  .rvb__grid { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: clamp(24px, 3vw, 40px); align-items: start; }
+  .rvb__head h2 { color: var(--spruce-900); }
+  .rvb__grid { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: clamp(24px, 3vw, 40px); align-items: start; }
   .rvb__filters { display: grid; gap: 10px; margin-bottom: 14px; }
   .rvb__fg { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
   .rvb__fl { font-weight: 700; min-width: 5.5em; }
-  .rvb__fg button { min-height: 44px; padding: 8px 14px; background: #fff; border: 2px solid #c9bea8; font-weight: 600; font-size: 1rem; border-radius: var(--radius); }
-  .rvb__fg button:hover { border-color: var(--f1); }
-  .rvb__fg button[aria-pressed='true'] { background: var(--f1); border-color: var(--f1); color: var(--cream); }
-  .rvb__count { color: var(--text-2); margin-bottom: 14px; }
+  .rvb__fg button { min-height: 44px; padding: 8px 14px; background: var(--paper); border: 2px solid transparent; font-weight: 600; font-size: 1rem; border-radius: var(--radius); }
+  .rvb__fg button:hover { border-color: var(--spruce-900); }
+  .rvb__fg button[aria-pressed='true'] { background: var(--spruce-900); color: #fff; }
+  .rvb__count { color: var(--ink-2); margin-bottom: 14px; }
   .rvb__cards { columns: 2 300px; column-gap: 14px; }
   .rvb__c { break-inside: avoid; margin-bottom: 14px; }
   .rvb__more { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; margin-top: 10px; }
   .rvb__empty a { font-weight: 700; text-decoration: underline; }
 
   .rvb__side { display: grid; gap: 14px; position: sticky; top: calc(var(--header-h) + 20px); }
-  .pl { background: #fff; border: 1px solid #d9cfba; box-shadow: 0 18px 40px -24px rgba(14, 26, 20, .5); }
-  .pl__head { display: flex; align-items: baseline; gap: 10px; padding: 12px 20px; background: var(--f1); color: var(--cream); }
-  .pl__name { font-family: var(--display); font-weight: 600; font-size: 1.5rem; text-transform: uppercase; }
-  .pl__head span:last-child { color: var(--on-dark-2); }
-  .pl__body { padding: 20px; display: grid; gap: 10px; justify-items: start; }
-  .pl__score { display: flex; align-items: baseline; gap: 10px; line-height: 1.12; }
-  .pl__n { font-family: var(--display); font-weight: 700; font-size: 6rem; color: var(--f0); }
-  .pl__of { font-family: var(--display); font-size: 1.6rem; font-weight: 600; color: var(--text-2); }
-  .pl__stars { display: flex; gap: 3px; color: var(--rust); }
-  .pl__cnt { font-size: 1.25rem; }
-  .pl__facts { display: grid; gap: 4px; color: var(--text-2); }
-  .pl__facts li { display: flex; gap: 8px; align-items: center; }
-  .pl__facts svg { color: var(--f2); stroke-width: 3; }
-  .pl__date { font-size: .92rem; color: var(--mute); }
+  .pl { background: var(--paper); }
+  .pl__head { display: flex; align-items: center; gap: 10px; padding: 22px 22px 0; color: var(--ink-2); }
+  .pl__body { padding: 12px 22px 24px; display: grid; gap: 10px; justify-items: start; }
+  .pl__score { display: flex; align-items: baseline; gap: 10px; line-height: 1; }
+  .pl__n { font-stretch: var(--wide); font-weight: 800; font-size: 5.2rem; letter-spacing: -.03em; color: var(--spruce-900); }
+  .pl__of { font-stretch: var(--wide); font-size: 1.4rem; font-weight: 800; color: var(--ink-2); }
+  .pl__cnt { font-size: 1.2rem; }
+  .pl__facts { display: grid; gap: 4px; color: var(--ink-2); }
+  .pl__facts li { position: relative; padding-left: 18px; }
+  .pl__facts li::before { content: ''; position: absolute; left: 0; top: .62em; width: 7px; height: 7px; background: var(--spruce-700); }
+  .pl__date { font-size: .94rem; color: var(--ink-2); }
   .pl .btn { width: 100%; }
 
   @media (max-width: 1060px) {
-    .rvb__grid { grid-template-columns: 1fr; }
     .rvb__grid { display: flex; flex-direction: column; }
     .rvb__side { display: contents; }
     .pl { order: -1; width: 100%; }
@@ -114,10 +109,10 @@ const r1 = (x) => x.toFixed(1).replace('.', ',');
   @media (max-width: 600px) {
     .rvb__c:nth-child(n + 5) { display: none; }
     :global(.js) .rvb__c { display: block; }
+    .pl__n { font-size: 4rem; }
   }
   @media (max-width: 760px) {
     .rvb__head { grid-template-columns: 1fr; }
     .rvb__fl { width: 100%; }
-    .pl__n { font-size: 4.6rem; }
   }
 </style>

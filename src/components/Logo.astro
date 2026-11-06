@@ -1,12 +1,11 @@
 ---
-/* Logotipas: skydo ženklas + „ArbCut“ žodinis ženklas.
-   tone="dark" — tamsus ant šviesaus; tone="light" — šviesus ant tamsaus.
-   mark — tik skydo ženklas (labai siauriems ekranams). */
+/* Logotipas. Kol vartotojas neišsirinko vieno iš trijų naujų variantų
+   (public/assets/arbcut-v4-brand/), naudojamas esamas. tone="dark" ant šviesaus, "light" ant tamsaus. */
 const { tone = 'dark', height = 44, mark = false, class: cls } = Astro.props;
 const B = '/assets/arbcut-upgrade-brand';
 const src = `${B}/logo-horizontal-${tone}-740.webp`;
 const w = Math.round(height * 1401 / 352);
 ---
 {mark
-  ? <img class:list={['logo', cls]} src={`${B}/mark-light-96.png`} alt="ArbCut" width={Math.round(height * 96 / 111)} height={height} decoding="async" />
+  ? <img class:list={['logo', cls]} src={tone === 'light' ? `${B}/mark-light-96.png` : `${B}/mark-dark.png`} alt="ArbCut" width={Math.round(height * 96 / 111)} height={height} decoding="async" />
   : <img class:list={['logo', cls]} src={src} alt="ArbCut" width={w} height={height} decoding="async" />}

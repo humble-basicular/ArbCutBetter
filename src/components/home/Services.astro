@@ -4,7 +4,6 @@
 import { paslaugos } from '@data/paslaugos.js';
 import { grupes, detales } from '@data/paslaugu-turinys.js';
 import Photo from '../Photo.astro';
-import Icon from '../Icon.astro';
 const by = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
 const kaina = { 'gyvatvoriu-karpymas': '2–7 €/m' };
 const eil = {
@@ -27,7 +26,7 @@ const tiles = [
   { slug: 'darbai-su-autoboksteliu', foto: 'autobokstelis-pusyne-homepage-crop', pos: '50% 40%', alt: 'ArbCut autobokštelis su iškeltu krepšiu tarp pušų', h: 'Autobokštelis iki 20 m' },
 ];
 ---
-<section class="svcs dark" id="paslaugos" aria-labelledby="svcs-h">
+<section class="svcs" id="paslaugos" aria-labelledby="svcs-h">
   <div class="wrap">
     <div class="svcs__head">
       <h2 id="svcs-h">Ką darome ir kiek kainuoja</h2>
@@ -38,12 +37,12 @@ const tiles = [
       {tiles.map((t, i) => (
         <li class:list={['tile', { 'tile--big': i === 0 }]}>
           <a href={`/paslaugos/${t.slug}`}>
-            <div class="tile__ph ph"><Photo name={t.foto} alt={t.alt} sizes={i === 0 ? '(max-width: 760px) 100vw, 46vw' : '(max-width: 760px) 100vw, 27vw'} position={t.pos} /></div>
+            <div class="tile__ph ph cut"><Photo name={t.foto} alt={t.alt} sizes={i === 0 ? '(max-width: 760px) 100vw, 50vw' : '(max-width: 760px) 100vw, 22vw'} position={t.pos} /></div>
             <div class="tile__txt">
               <h3>{t.h}</h3>
               <p class="tile__price">{kaina[t.slug] || by[t.slug].kaina}</p>
               <p class="tile__p">{eil[t.slug]}</p>
-              <span class="tile__go">Plačiau <Icon name="arrow" size={20} /></span>
+              <span class="tile__go">Plačiau</span>
             </div>
           </a>
         </li>
@@ -73,49 +72,57 @@ const tiles = [
 </section>
 
 <style>
-  .svcs { background: var(--f1); padding-block: var(--sec); }
-  .svcs__head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 24px 56px; align-items: end; margin-bottom: clamp(32px, 4vw, 56px); }
-  .svcs__head h2 { font-size: clamp(2.6rem, 1.4rem + 4.4vw, 5.6rem); font-weight: 700; }
+  .svcs { background: var(--paper); padding-block: var(--sec); }
+  .svcs__head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 20px 56px; align-items: end; margin-bottom: clamp(32px, 4vw, 56px); }
+  .svcs__head h2 { color: var(--spruce-900); max-width: 14ch; }
 
-  .tiles { display: grid; grid-template-columns: 1.55fr 1fr 1fr; gap: 14px; }
-  .tile a { position: relative; display: block; height: clamp(440px, 46vw, 640px); overflow: hidden; background: var(--f0); }
-  .tile__ph { position: absolute; inset: 0; }
+  .tiles { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) minmax(0, 1fr); gap: clamp(16px, 2vw, 28px); align-items: start; }
+  .tile a { display: grid; gap: 16px; }
+  .tile__ph { aspect-ratio: 4 / 5; }
+  .tile--big .tile__ph { aspect-ratio: 4 / 5; }
+  .tile:not(.tile--big) .tile__ph { aspect-ratio: 1 / 1; }
+  .tile:not(.tile--big) { margin-top: clamp(40px, 8vw, 120px); }
   .tile__ph :global(img) { transition: transform .5s ease; }
-  .tile a::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(14, 26, 20, .94) 0%, rgba(14, 26, 20, .55) 32%, rgba(14, 26, 20, 0) 58%); }
-  .tile__txt { position: absolute; z-index: 1; left: 0; right: 0; bottom: 0; padding: clamp(20px, 2.4vw, 32px); display: grid; gap: 6px; }
-  .tile h3 { font-size: clamp(1.8rem, 1.2rem + 1.6vw, 2.8rem); font-weight: 700; }
-  .tile--big h3 { font-size: clamp(2.2rem, 1.3rem + 2.4vw, 3.6rem); }
-  .tile__price { font-family: var(--display); font-weight: 600; font-size: clamp(1.5rem, 1.2rem + .8vw, 2rem); color: var(--amber); line-height: 1.12; }
-  .tile__p { color: #DDE5DF; max-width: 30em; }
-  .tile__go { display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; font-weight: 700; color: var(--cream); text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 5px; text-decoration-thickness: 2px; }
-  @media (hover: hover) and (prefers-reduced-motion: no-preference) { .tile a:hover .tile__ph :global(img) { transform: scale(1.04); } }
+  .tile__txt { display: grid; gap: 6px; }
+  .tile h3 { font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem); color: var(--spruce-900); }
+  .tile--big h3 { font-size: clamp(1.8rem, 1.3rem + 1.8vw, 2.8rem); }
+  .tile__price { font-stretch: var(--wide); font-weight: 800; font-size: clamp(1.2rem, 1.1rem + .5vw, 1.55rem); color: var(--ink); line-height: 1.15; }
+  .tile__p { color: var(--ink-2); max-width: 30em; }
+  .tile__go { justify-self: start; margin-top: 4px; font-weight: 700; color: var(--spruce-900); text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 5px; text-decoration-thickness: 2px; }
+  .tile a:hover .tile__go { color: var(--orange-ink); }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) { .tile a:hover .tile__ph :global(img) { transform: scale(1.03); } }
 
-  .board { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
-  .board__col { background: var(--f0); padding: clamp(22px, 3vw, 36px); }
-  .board__h { font-size: clamp(1.7rem, 1.3rem + 1vw, 2.3rem); color: var(--amber); margin-bottom: 10px; }
-  .board__row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 20px; padding: 14px 0; border-top: 1px solid #22402f; }
-  .board li:first-child .board__row { border-top: 0; }
-  .board__name { font-weight: 700; font-size: 1.15rem; color: var(--cream); text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: text-decoration-color var(--t); }
-  .board__row:hover .board__name { text-decoration-color: var(--amber); }
-  .board__line { grid-column: 1; color: var(--on-dark-2); font-size: 1rem; }
-  .board__price { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-family: var(--display); font-weight: 600; font-size: clamp(1.4rem, 1.2rem + .5vw, 1.75rem); color: var(--cream); white-space: nowrap; }
-  .board__foot { margin-top: 22px; color: var(--on-dark-2); }
-  .board__foot a { color: var(--cream); font-weight: 700; text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 4px; }
+  .board { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 2vw, 28px); margin-top: clamp(48px, 6vw, 88px); }
+  .board__col { background: var(--stone); padding: clamp(22px, 3vw, 36px); }
+  .board__h { font-size: clamp(1.35rem, 1.15rem + .8vw, 1.8rem); color: var(--spruce-900); margin-bottom: 8px; }
+  .board__row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 20px; padding: 14px 0; box-shadow: inset 0 1px 0 var(--line); }
+  .board li:first-child .board__row { box-shadow: none; }
+  .board__name { font-weight: 700; font-size: 1.12rem; color: var(--spruce-900); text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 2px; text-underline-offset: 4px; transition: text-decoration-color var(--t); }
+  .board__row:hover .board__name { text-decoration-color: var(--orange); }
+  .board__line { grid-column: 1; color: var(--ink-2); font-size: 1rem; }
+  .board__price { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-stretch: var(--wide); font-weight: 800; font-size: clamp(1.15rem, 1.05rem + .4vw, 1.4rem); color: var(--ink); white-space: nowrap; }
+  .board__foot { margin-top: 22px; color: var(--ink-2); }
+  .board__foot a { color: var(--spruce-900); font-weight: 700; text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 4px; }
 
   @media (max-width: 960px) {
     .svcs__head { grid-template-columns: 1fr; }
     .tiles { grid-template-columns: 1fr 1fr; }
     .tile--big { grid-column: 1 / -1; }
+    .tile--big a { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; }
+    .tile:not(.tile--big) { margin-top: 0; }
     .board { grid-template-columns: 1fr; }
   }
   @media (max-width: 600px) {
-    .tiles { grid-template-columns: 1fr; }
-    .tile a { height: 240px; }
-    .tile--big a { height: 280px; }
-    .board__col { padding: 20px 16px; }
-    .board__price { font-size: 1.3rem; }
-    .board__row { padding-block: 10px; }
-    .board__line { display: none; }
-    .board__price { grid-row: 1; }
+    .tiles { grid-template-columns: 1fr 1fr; gap: 14px; }
+    .tile--big a { grid-template-columns: 1fr; }
+    .tile--big .tile__ph { aspect-ratio: 4 / 3; }
+    .tile:not(.tile--big) .tile__p { display: none; }
+    .tile:not(.tile--big) h3 { font-size: 1.2rem; }
+    .board__col { padding: 0; background: none; }
+    .board__h { margin-bottom: 10px; }
+    .board ul { display: grid; gap: 8px; }
+    .board__row { box-shadow: none !important; background: var(--stone); padding: 14px 16px; gap: 4px 14px; }
+    .board__price { grid-row: 1; align-self: start; font-size: 1.12rem; }
+    .board__line { grid-column: 1 / -1; font-size: .96rem; }
   }
 </style>

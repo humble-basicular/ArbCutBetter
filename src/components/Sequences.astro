@@ -1,7 +1,6 @@
 ---
 /* Darbo eiga nuotraukose. Mažos originalios nuotraukos — rodomos kortelėmis, ne ištemptos. */
 import { sekos } from '@data/paslaugu-turinys.js';
-import Icon from './Icon.astro';
 const { only } = Astro.props;
 const list = only ? sekos.filter((s) => only.includes(s.paslauga)) : sekos;
 ---
@@ -10,9 +9,9 @@ const list = only ? sekos.filter((s) => only.includes(s.paslauga)) : sekos;
     <article class="sq__item">
       <header class="sq__h">
         <h3>{s.pavadinimas}</h3>
-        <a class="link-arrow" href={`/paslaugos/${s.paslauga}`}>Apie šią paslaugą <Icon name="arrow" size={16} /></a>
+        <a class="link-arrow" href={`/paslaugos/${s.paslauga}`}>Apie šią paslaugą</a>
       </header>
-      <ol role="list" class="sq__frames" style={`--n:${s.kadrai.length}`}>
+      <ol role="list" class="sq__frames" style={`--n:${s.kadrai.length}`} data-lb-group>
         {s.kadrai.map((k, i) => (
           <li>
             <button type="button" class="sq__ph" data-lightbox={k.src} data-caption={k.tekstas} aria-label={`Padidinti: ${k.tekstas}`}>
@@ -26,18 +25,20 @@ const list = only ? sekos.filter((s) => only.includes(s.paslauga)) : sekos;
   ))}
 </div>
 <style>
-  .sq { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(32px, 4vw, 48px); }
+  .sq { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(36px, 4vw, 56px); }
   .sq__item { min-width: 0; }
-  .sq__h { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .sq__h { display: flex; justify-content: space-between; align-items: baseline; gap: 10px 16px; flex-wrap: wrap; margin-bottom: 16px; }
+  .sq__h h3 { color: var(--spruce-900); }
   .sq__frames { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 14px; }
   .sq__frames li { display: grid; gap: 10px; align-content: start; }
-  .sq__ph { display: block; width: 100%; aspect-ratio: 283 / 230; overflow: hidden; background: var(--paper-2); }
+  .sq__ph { display: block; width: 100%; aspect-ratio: 283 / 230; overflow: hidden; background: var(--spruce-100); }
   .sq__ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
-  .sq__ph:hover img { transform: scale(1.03); }
-  .sq__frames p { font-size: .93rem; color: #33443a; display: flex; gap: 10px; align-items: baseline; }
-  .sq__i { font-family: var(--serif); font-weight: 650; color: var(--timber); }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) { .sq__ph:hover img { transform: scale(1.03); } }
+  .sq__frames li:last-child .sq__ph { clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%); }
+  .sq__frames p { font-size: .96rem; color: var(--ink-2); display: flex; gap: 10px; align-items: baseline; }
+  .sq__i { flex: 0 0 auto; font-stretch: var(--wide); font-weight: 800; color: var(--spruce-900); }
   @media (max-width: 760px) {
-    .sq__frames { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scroll-padding-inline: var(--gutter); }
+    .sq__frames { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 74%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scroll-padding-inline: var(--gutter); }
     .sq__frames li { scroll-snap-align: start; }
   }
 </style>

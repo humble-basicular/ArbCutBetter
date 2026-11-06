@@ -1,25 +1,24 @@
 ---
 /* Darbo akimirkos: didelės realios nuotraukos per visą plotį. Parašai — tik tai, kas matyti. */
 import Photo from '../Photo.astro';
-import Icon from '../Icon.astro';
 const m = [
-  { foto: 'pjovimas-prie-laidu-homepage-crop', pos: '50% 22%', cap: 'Pušis tarp elektros laidų. Pjaunama nuo viršūnės, dalimis.', cls: 'm--a', sizes: '(max-width: 700px) 100vw, 40vw' },
-  { foto: 'du-arboristai-lajoje', pos: '50% 40%', cap: 'Du arboristai didelio medžio lajoje.', cls: 'm--b', sizes: '(max-width: 700px) 100vw, 26vw' },
-  { foto: 'pusis-alpinistas', pos: '50% 30%', cap: 'Aukšta pušis virš namų stogų. Darbas su virvėmis.', cls: 'm--c', sizes: '(max-width: 700px) 100vw, 34vw' },
-  { foto: 'egle-prie-namo-homepage-crop', pos: '50% 35%', cap: 'Išdžiūvusi eglė prie medinio namo, prieš darbus.', cls: 'm--d', sizes: '(max-width: 700px) 100vw, 34vw' },
+  { foto: 'pjovimas-prie-laidu-homepage-crop', pos: '50% 22%', cap: 'Pušis tarp elektros laidų. Pjaunama nuo viršūnės, dalimis.', cls: 'm--a', sizes: '(max-width: 700px) 100vw, 38vw' },
+  { foto: 'du-arboristai-lajoje', pos: '50% 40%', cap: 'Du arboristai didelio medžio lajoje.', cls: 'm--b', sizes: '(max-width: 700px) 70vw, 20vw' },
+  { foto: 'pusis-alpinistas', pos: '50% 30%', cap: 'Aukšta pušis virš namų stogų. Darbas su virvėmis.', cls: 'm--c', sizes: '(max-width: 700px) 70vw, 20vw' },
+  { foto: 'egle-prie-namo-homepage-crop', pos: '50% 35%', cap: 'Išdžiūvusi eglė prie medinio namo, prieš darbus.', cls: 'm--d', sizes: '(max-width: 700px) 70vw, 20vw' },
 ];
 ---
 <section class="mom" aria-labelledby="mom-h">
   <div class="wrap mom__head">
     <h2 id="mom-h">Taip atrodo darbas</h2>
     <p class="lead">Nuotraukos iš mūsų objektų, nefotografuotos reklamai. Telefonu, tarp darbų.</p>
-    <a class="link-arrow" href="/galerija">Daugiau darbų nuotraukų <Icon name="arrow" size={20} /></a>
+    <a class="link-arrow" href="/galerija">Daugiau darbų nuotraukų</a>
   </div>
   <ul role="list" class="mom__grid">
     {m.map((x) => (
       <li class:list={['mom__it', x.cls]}>
-        <figure class="ph">
-          <Photo name={x.foto} alt={x.cap} sizes={x.sizes} position={x.pos} />
+        <figure>
+          <div class="ph mom__ph cut"><Photo name={x.foto} alt={x.cap} sizes={x.sizes} position={x.pos} /></div>
           <figcaption>{x.cap}</figcaption>
         </figure>
       </li>
@@ -27,28 +26,28 @@ const m = [
   </ul>
 </section>
 <style>
-  .mom { background: var(--f0); color: var(--cream); padding-top: var(--sec); }
-  .mom :focus-visible { outline-color: var(--amber); }
-  .mom__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px 48px; align-items: end; margin-bottom: clamp(28px, 3vw, 44px); }
-  .mom__head h2 { font-size: clamp(2.6rem, 1.4rem + 4.4vw, 5.6rem); font-weight: 700; }
-  .mom__head .lead { max-width: 26em; color: var(--on-dark-2); }
-  .mom__head .lead { grid-column: 1; }
-  .mom__head .link-arrow { grid-column: 2; grid-row: 1 / span 2; white-space: nowrap; color: var(--cream); text-decoration-color: var(--amber); }
-  .mom__grid { display: grid; grid-template-columns: 5fr 3fr 4fr; grid-template-rows: repeat(2, clamp(280px, 26vw, 400px)); gap: 6px; }
-  .mom__it figure { position: relative; height: 100%; }
-  .m--a { grid-row: 1 / span 2; }
-  .m--b { grid-row: 1 / span 2; }
-  .mom figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 20px 16px; font-weight: 600; font-size: 1.05rem; line-height: 1.35; color: var(--cream); background: linear-gradient(0deg, rgba(14, 26, 20, .9), rgba(14, 26, 20, 0)); }
+  .mom { background: var(--spruce-100); padding-block: var(--sec); }
+  .mom__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px 48px; align-items: end; margin-bottom: clamp(28px, 3vw, 48px); }
+  .mom__head h2 { color: var(--spruce-900); }
+  .mom__head .lead { grid-column: 1; max-width: 30em; }
+  .mom__head .link-arrow { grid-column: 2; grid-row: 1 / span 2; white-space: nowrap; }
+  .mom__grid { max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); display: grid; grid-template-columns: 1.7fr 1fr 1fr 1fr; gap: clamp(14px, 1.6vw, 24px); align-items: end; }
+  .mom__ph { aspect-ratio: 3 / 4; }
+  .m--a .mom__ph { aspect-ratio: 4 / 5; }
+  .mom figcaption { margin-top: 12px; font-size: .98rem; line-height: 1.4; color: var(--ink-2); }
+  .m--a figcaption { font-size: 1.05rem; color: var(--ink); font-weight: 600; }
   @media (max-width: 960px) {
     .mom__head { grid-template-columns: 1fr; }
     .mom__head .link-arrow { grid-column: 1; grid-row: auto; }
-    .mom__grid { grid-template-columns: 1fr 1fr; grid-template-rows: 520px 300px; }
-    .m--a { grid-row: 1; } .m--b { grid-row: 1; }
+    .mom__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .m--a { grid-column: 1 / -1; }
+    .m--a .mom__ph { aspect-ratio: 4 / 3; }
   }
   @media (max-width: 600px) {
-    .mom__grid { grid-template-columns: 1fr 1fr; grid-template-rows: 360px 220px; }
-    .m--a { grid-column: 1 / -1; }
-    .m--b { display: none; }
-    .mom figcaption { font-size: .95rem; padding: 32px 12px 12px; }
+    .mom__grid { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 62%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; scroll-padding-inline: var(--gutter); align-items: start; }
+    .mom__it { scroll-snap-align: start; }
+    .m--a { grid-column: auto; }
+    .m--a .mom__ph { aspect-ratio: 3 / 4; }
+    .mom figcaption { font-size: .94rem; }
   }
 </style>

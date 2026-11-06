@@ -1,16 +1,16 @@
 ---
-/* Vienas atsiliepimas: šaltinis, data, žvaigždutės, originalus tekstas, autorius, paslauga. */
-import Icon from './Icon.astro';
+/* Vienas atsiliepimas: oficialus šaltinio ženklas, data, įvertinimas skaičiumi, originalus tekstas, autorius, paslauga. */
+import Mark from './Mark.astro';
 const { a, compact = false } = Astro.props;
 const src = a.saltinis || 'paslaugos';
 const srcName = src === 'google' ? 'Google' : 'Paslaugos.lt';
 ---
 <article class:list={['rc', `rc--${src}`, { 'rc--compact': compact }]} data-src={src} data-svc={a.paslauga || 'kita'}>
   <header class="rc__top">
-    <span class="rc__src">{srcName}</span>
+    <span class="rc__src"><Mark name={src === 'google' ? 'google' : 'paslaugos'} height={20} label={srcName} /></span>
     <time datetime={a.data}>{a.data}</time>
   </header>
-  {a.zvaigzdes && <p class="rc__stars" aria-label={`${a.zvaigzdes} iš 5`}>{Array.from({ length: a.zvaigzdes }).map(() => <Icon name="star" size={18} />)}</p>}
+  {a.zvaigzdes && <p class="rc__stars"><b>{a.zvaigzdes}</b> iš 5</p>}
   <blockquote class="rc__txt">{a.tekstas.split('\n').filter(Boolean).map((l) => <p>{l}</p>)}</blockquote>
   {compact && <button type="button" class="rc__expand" data-rv-expand aria-expanded="false">Skaityti visą atsiliepimą</button>}
   <footer class="rc__by">
@@ -19,22 +19,18 @@ const srcName = src === 'google' ? 'Google' : 'Paslaugos.lt';
   </footer>
 </article>
 <style>
-  .rc { background: #fff; border: 1px solid #d9cfba; display: flex; flex-direction: column; gap: 12px; padding: 0 22px 20px; break-inside: avoid; }
-  .rc__top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 0 -22px; padding: 10px 22px; background: var(--f1); color: var(--cream); }
-  .rc--google .rc__top { background: #2b3138; }
-  .rc__src { font-family: var(--display); font-weight: 600; text-transform: uppercase; font-size: 1.05rem; letter-spacing: .02em; }
-  .rc__top time { font-size: .95rem; font-variant-numeric: tabular-nums; color: var(--on-dark-2); }
-  .rc__stars { display: flex; gap: 2px; color: var(--rust); margin-top: 4px; }
-  .rc__txt { display: grid; gap: 8px; font-size: 1.08rem; line-height: 1.5; color: var(--text); overflow-wrap: anywhere; flex: 1; }
-  .rc__stars + .rc__txt { margin-top: -2px; }
-  .rc__stars:first-child { margin-top: 0; }
-  .rc__txt:first-of-type { margin-top: 6px; }
-  .rc__by { display: grid; gap: 0; padding-top: 12px; border-top: 1px solid #e6dece; font-size: .98rem; color: var(--text-2); }
-  .rc__by strong { color: var(--text); text-transform: capitalize; font-size: 1.05rem; }
+  .rc { background: var(--paper); display: flex; flex-direction: column; gap: 12px; padding: 20px 22px 20px; break-inside: avoid; }
+  .rc__top { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--spruce-900); }
+  .rc__top time { font-size: .95rem; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+  .rc__stars { font-size: .98rem; color: var(--ink-2); margin-top: -4px; }
+  .rc__stars b { color: var(--spruce-900); font-stretch: var(--wide); font-weight: 800; font-size: 1.15rem; }
+  .rc__txt { display: grid; gap: 8px; font-size: 1.08rem; line-height: 1.5; color: var(--ink); overflow-wrap: anywhere; flex: 1; }
+  .rc__by { display: grid; gap: 0; padding-top: 12px; font-size: .98rem; color: var(--ink-2); box-shadow: inset 0 1px 0 var(--line); }
+  .rc__by strong { color: var(--ink); text-transform: capitalize; font-size: 1.05rem; }
   .rc__expand { display: none; }
   @media (max-width: 600px) {
     :global(.js) .rc--compact:not(.is-expanded) .rc__txt { display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
-    :global(.js) .rc--compact .rc__expand { display: block; align-self: start; color: var(--f1); font-weight: 700; text-decoration: underline; padding-block: 10px; }
-    .rc--compact { gap: 8px; }
+    :global(.js) .rc--compact .rc__expand { display: block; align-self: start; color: var(--spruce-900); font-weight: 700; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 4px; padding-block: 10px; }
+    .rc--compact { gap: 8px; padding: 18px 16px; }
   }
 </style>

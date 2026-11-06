@@ -1,11 +1,11 @@
 ---
-/* Vidinių puslapių antraštė: tamsus plotas, trupiniai, H1, įvadas, veiksmai, nuotrauka. */
+/* Vidinių puslapių antraštė: šviesus plotas, trupiniai, H1, įvadas, veiksmai,
+   reali nuotrauka nukirsto kampo rėme dešinėje. */
 import { site } from '@data/site.js';
 import Photo from './Photo.astro';
-import Icon from './Icon.astro';
 const { title, kicker, lead, crumbs = [], photo, photoAlt = '', photoPos = '50% 40%', service = '', actions = true } = Astro.props;
 ---
-<section class:list={['phero', 'on-dark', { 'phero--photo': photo }]}>
+<section class:list={['phero', { 'phero--photo': photo }]}>
   <div class="wrap phero__in">
     <div class="phero__txt">
       {crumbs.length > 0 && (
@@ -20,28 +20,28 @@ const { title, kicker, lead, crumbs = [], photo, photoAlt = '', photoPos = '50% 
       <slot />
       {actions && (
         <div class="btn-row phero__btns">
-          <a class="btn btn--primary" href={site.telefonasHref} data-loc="page-hero-call"><Icon name="phone" size={18} /> {site.telefonas}</a>
+          <a class="btn btn--primary" href={site.telefonasHref} data-loc="page-hero-call"><span class="btn__num">{site.telefonas}</span></a>
           <button type="button" class="btn btn--line" data-quote data-service={service}>Gauti kainą</button>
         </div>
       )}
     </div>
     {photo && (
-      <div class="phero__ph ph"><Photo name={photo} alt={photoAlt} sizes="(max-width: 860px) 100vw, 40vw" loading="eager" fetchpriority="high" position={photoPos} /></div>
+      <div class="phero__ph ph cut"><Photo name={photo} alt={photoAlt} sizes="(max-width: 860px) 100vw, 40vw" widths={[480, 800, 1200]} loading="eager" fetchpriority="high" position={photoPos} /></div>
     )}
   </div>
 </section>
 <style>
-  .phero { background: var(--ink); color: var(--paper); }
-  .phero__in { display: grid; gap: 40px; padding-block: clamp(40px, 6vw, 72px); }
-  .phero--photo .phero__in { grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); align-items: stretch; padding-bottom: 0; }
-  .phero__txt { display: grid; gap: 18px; align-content: center; padding-bottom: clamp(40px, 6vw, 72px); }
-  .phero--photo .phero__txt { padding-bottom: clamp(40px, 6vw, 72px); }
-  .phero h1 { max-width: 20ch; }
+  .phero { background: var(--spruce-100); color: var(--ink); }
+  .phero__in { display: grid; gap: 40px; padding-block: clamp(36px, 5vw, 72px) clamp(44px, 6vw, 84px); }
+  .phero--photo .phero__in { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: center; }
+  .phero__txt { display: grid; gap: 18px; align-content: center; }
+  .phero h1 { max-width: 18ch; color: var(--spruce-900); }
   .phero__btns { margin-top: 8px; }
-  .phero__ph { min-height: 320px; }
+  .phero__ph { aspect-ratio: 4 / 5; max-height: 560px; width: 100%; justify-self: end; }
   .phero__ph :global(img) { position: absolute; inset: 0; }
   @media (max-width: 860px) {
-    .phero--photo .phero__in { grid-template-columns: 1fr; gap: 0; }
-    .phero__ph { min-height: 0; aspect-ratio: 4 / 3; margin-inline: calc(var(--gutter) * -1); }
+    .phero--photo .phero__in { grid-template-columns: 1fr; gap: 28px; }
+    .phero__ph { aspect-ratio: 5 / 4; max-height: none; }
+    .phero__btns .btn { flex: 1 1 100%; }
   }
 </style>

@@ -1,11 +1,10 @@
 ---
-/* Antraštė: tamsi juosta, telefonas visada matomas (ir mobiliai).
-   Paslaugų meniu desktop'e, pilno ekrano meniu mobiliai. */
+/* Antraštė: balta, prilipusi; slenkant susitraukia iki 64 px ir tampa eglės spalvos.
+   Telefonas visada matomas. Valdikliai tik su tekstu (be piktogramų). */
 import { site } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
 import { grupes, detales } from '@data/paslaugu-turinys.js';
 import Logo from './Logo.astro';
-import Icon from './Icon.astro';
 
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const nav = [
@@ -22,15 +21,17 @@ const servicesActive = path.startsWith('/paslaugos');
 <header class="hdr" id="top">
   <div class="hdr__in">
     <a href="/" class="hdr__logo" aria-label="ArbCut, į pradžią">
-      <Logo tone="light" height={44} class="hdr__logo-full" />
-      <Logo mark height={40} class="hdr__logo-mark" />
+      <Logo tone="dark" height={64} class="hdr__logo-full hdr__logo-d" />
+      <Logo tone="light" height={64} class="hdr__logo-full hdr__logo-l" />
+      <Logo mark tone="dark" height={40} class="hdr__logo-mark hdr__logo-d" />
+      <Logo mark tone="light" height={40} class="hdr__logo-mark hdr__logo-l" />
     </a>
 
     <nav class="hdr__nav" aria-label="Pagrindinis meniu">
       <ul role="list" class="hdr__list">
         <li class="hdr__drop">
           <button type="button" class:list={['hdr__link', 'hdr__dropbtn', { 'is-active': servicesActive }]} aria-expanded="false" aria-controls="svc-menu">
-            Paslaugos <Icon name="chevron" size={18} />
+            Paslaugos <span class="hdr__caret" aria-hidden="true"></span>
           </button>
           <div class="svc" id="svc-menu" hidden>
             <div class="svc__in">
@@ -47,10 +48,10 @@ const servicesActive = path.startsWith('/paslaugos');
                   </ul>
                 </div>
               ))}
-              <div class="svc__col svc__col--cta">
+              <div class="svc__col svc__col--cta cut">
                 <p class="svc__head">Nežinote, kaip vadinasi darbas?</p>
                 <p>Nufotografuokite medį ir atsiųskite. Pasakysime, ką daryti ir kiek kainuos.</p>
-                <a class="btn btn--primary btn--sm" href={site.smsHref} data-loc="nav-sms"><Icon name="sms" size={20} /> Siųsti SMS</a>
+                <a class="btn btn--primary btn--sm" href={site.smsHref} data-loc="nav-sms">Siųsti SMS</a>
                 <a class="link-arrow" href="/paslaugos">Visos paslaugos</a>
               </div>
             </div>
@@ -65,23 +66,21 @@ const servicesActive = path.startsWith('/paslaugos');
     <div class="hdr__actions">
       <a class="hdr__tel" href={site.telefonasHref} data-loc="header-call">
         <span class="hdr__tel-l">Skambinkite kasdien 08–18</span>
-        <span class="hdr__tel-n"><Icon name="phone" size={22} />{site.telefonas}</span>
+        <span class="hdr__tel-n">{site.telefonas}</span>
       </a>
       <button type="button" class="btn btn--primary btn--sm hdr__quote" data-quote>Gauti kainą</button>
-      <button type="button" class="hdr__burger" aria-expanded="false" aria-controls="mnav" aria-label="Atidaryti meniu">
-        <Icon name="menu" size={28} />
-      </button>
+      <button type="button" class="hdr__burger" aria-expanded="false" aria-controls="mnav" aria-label="Atidaryti meniu">Meniu</button>
     </div>
   </div>
 </header>
 
 <div class="mnav" id="mnav" hidden>
   <div class="mnav__top">
-    <a href="/" aria-label="ArbCut, į pradžią"><Logo tone="light" height={36} /></a>
-    <button type="button" class="mnav__close" aria-label="Uždaryti meniu"><Icon name="close" size={28} /></button>
+    <a href="/" aria-label="ArbCut, į pradžią"><Logo tone="dark" height={40} /></a>
+    <button type="button" class="mnav__close" aria-label="Uždaryti meniu">Uždaryti</button>
   </div>
   <div class="mnav__call">
-    <a class="mnav__tel" href={site.telefonasHref} data-loc="mnav-call"><Icon name="phone" size={26} /> {site.telefonas}</a>
+    <a class="mnav__tel" href={site.telefonasHref} data-loc="mnav-call">{site.telefonas}</a>
     <p>Kasdien 08:00–18:00</p>
   </div>
   <nav class="mnav__body" aria-label="Mobilusis meniu">
@@ -99,72 +98,83 @@ const servicesActive = path.startsWith('/paslaugos');
     ))}
   </nav>
   <div class="mnav__foot">
-    <a class="btn btn--line" href={site.smsHref} data-loc="mnav-sms"><Icon name="sms" size={20} /> Siųsti nuotraukas SMS</a>
+    <a class="btn btn--line" href={site.smsHref} data-loc="mnav-sms">Siųsti nuotraukas SMS</a>
     <button type="button" class="btn btn--primary" data-quote>Gauti kainą</button>
   </div>
 </div>
 
 <style>
-  .hdr { position: sticky; top: 0; z-index: 900; background: var(--f0); color: var(--cream); border-bottom: 1px solid #1d3326; }
-  .hdr :focus-visible { outline-color: var(--amber); }
-  .hdr__in { max-width: 1480px; margin: 0 auto; padding-inline: var(--gutter); display: flex; align-items: center; gap: 28px; height: var(--header-h); }
+  .hdr { position: sticky; top: 0; z-index: 900; background: var(--paper); color: var(--ink); transition: background var(--t), box-shadow var(--t); }
+  .hdr__in { max-width: 1480px; margin: 0 auto; padding-inline: var(--gutter); display: flex; align-items: center; gap: 28px; height: var(--header-h); transition: height var(--t); }
   .hdr__logo { flex: 0 0 auto; display: block; }
-  .hdr__logo :global(.hdr__logo-mark) { display: none; }
+  .hdr__logo :global(img) { height: 3.4rem; width: auto; transition: height var(--t); }
+  .hdr__logo :global(.hdr__logo-mark), .hdr__logo :global(.hdr__logo-l) { display: none; }
   .hdr__nav { margin-right: auto; }
   .hdr__list { display: flex; align-items: center; gap: 2px; }
-  .hdr__link { display: inline-flex; align-items: center; gap: 4px; padding: 10px 12px; font-weight: 600; font-size: 1.06rem; color: var(--cream); border-bottom: 3px solid transparent; }
-  .hdr__link:hover, .hdr__link.is-active { border-bottom-color: var(--rust); }
-  .hdr__dropbtn svg { transition: transform var(--t); }
-  .hdr__dropbtn[aria-expanded='true'] svg { transform: rotate(180deg); }
-  .hdr__actions { display: flex; align-items: center; gap: 18px; margin-left: auto; }
+  .hdr__link { display: inline-flex; align-items: center; gap: 8px; padding: 10px 12px; font-weight: 650; font-size: 1.06rem; color: inherit; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 10px; text-decoration-color: transparent; transition: text-decoration-color var(--t); }
+  .hdr__link:hover, .hdr__link.is-active { text-decoration-color: var(--orange); }
+  .hdr__caret { width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform var(--t); }
+  .hdr__dropbtn[aria-expanded='true'] .hdr__caret { transform: translateY(2px) rotate(-135deg); }
+  .hdr__actions { display: flex; align-items: center; gap: 20px; margin-left: auto; }
   .hdr__tel { display: grid; justify-items: end; line-height: 1; white-space: nowrap; }
-  .hdr__tel-l { font-size: .88rem; color: var(--on-dark-2); margin-bottom: 5px; font-weight: 600; }
-  .hdr__tel-n { display: inline-flex; align-items: center; gap: 8px; font-family: var(--display); font-weight: 600; font-size: 1.85rem; letter-spacing: .01em; color: var(--amber); }
-  .hdr__tel:hover .hdr__tel-n { color: #ffc77a; }
-  .hdr__burger { display: none; width: 48px; height: 48px; place-items: center; color: var(--cream); margin-right: -8px; }
+  .hdr__tel-l { font-size: .9rem; color: var(--ink-2); margin-bottom: 5px; font-weight: 600; }
+  .hdr__tel-n { font-stretch: var(--wide); font-weight: 800; font-size: 1.6rem; letter-spacing: -.01em; color: var(--spruce-900); }
+  .hdr__tel:hover .hdr__tel-n { color: var(--orange-ink); }
+  .hdr__burger { display: none; min-height: 44px; padding: 8px 14px; font-weight: 700; font-size: 1rem; border: 2px solid currentColor; border-radius: var(--radius); }
+
+  /* Slenkant: 64 px, eglės spalva */
+  .hdr:global(.is-stuck) { background: var(--spruce-900); color: #fff; box-shadow: 0 6px 20px rgba(15, 42, 32, .18); }
+  .hdr:global(.is-stuck) .hdr__in { height: 64px; }
+  .hdr:global(.is-stuck) .hdr__logo :global(img) { height: 2.5rem; }
+  .hdr:global(.is-stuck) .hdr__logo :global(.hdr__logo-d) { display: none; }
+  .hdr:global(.is-stuck) .hdr__logo :global(.hdr__logo-full.hdr__logo-l) { display: block; }
+  .hdr:global(.is-stuck) .hdr__tel-l { color: var(--on-dark-2); }
+  .hdr:global(.is-stuck) .hdr__tel-n { color: #fff; }
+  .hdr:global(.is-stuck) :focus-visible { outline-color: #fff; }
 
   .hdr__drop { position: static; }
-  .svc { position: absolute; left: 0; right: 0; top: 100%; background: var(--cream); color: var(--text); box-shadow: 0 30px 50px rgba(6, 14, 10, .4); border-top: 4px solid var(--rust); }
-  .svc :focus-visible { outline-color: var(--rust); }
-  .svc__in { max-width: var(--wrap); margin: 0 auto; padding: 32px var(--gutter) 36px; display: grid; grid-template-columns: 1fr 1fr .9fr; gap: 44px; }
-  .svc__head { font-family: var(--display); font-size: 1.35rem; font-weight: 600; text-transform: uppercase; margin-bottom: 10px; color: var(--f1); }
-  .svc__a { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); font-weight: 600; }
-  .svc__a small { color: var(--bark); font-weight: 700; font-size: .95rem; white-space: nowrap; }
-  .svc__a:hover span, .svc__a[aria-current] span { color: var(--bark); text-decoration: underline; text-decoration-color: var(--rust); text-underline-offset: 4px; }
-  .svc__col--cta { background: var(--f1); color: var(--cream); padding: 26px; display: grid; gap: 16px; align-content: start; }
-  .svc__col--cta .svc__head { color: var(--cream); }
-  .svc__col--cta p:not(.svc__head) { color: var(--on-dark-2); }
-  .svc__col--cta .link-arrow { color: var(--cream); text-decoration-color: var(--amber); }
-  .svc__col--cta :focus-visible { outline-color: var(--amber); }
+  .svc { position: absolute; left: 0; right: 0; top: 100%; background: var(--paper); color: var(--ink); box-shadow: 0 30px 50px rgba(15, 42, 32, .18); }
+  .svc :focus-visible { outline-color: var(--orange); }
+  .svc__in { max-width: var(--wrap); margin: 0 auto; padding: 32px var(--gutter) 40px; display: grid; grid-template-columns: 1fr 1fr .9fr; gap: 44px; }
+  .svc__head { font-stretch: var(--wide); font-size: 1.2rem; font-weight: 800; margin-bottom: 10px; color: var(--spruce-900); }
+  .svc__a { display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-bottom: 1px solid var(--line); font-weight: 600; }
+  .svc__a small { color: var(--ink-2); font-weight: 700; font-size: .98rem; white-space: nowrap; }
+  .svc__a:hover span, .svc__a[aria-current] span { text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .svc__col--cta { background: var(--spruce-100); padding: 28px; display: grid; gap: 16px; align-content: start; }
+  .svc__col--cta p:not(.svc__head) { color: var(--ink-2); }
 
-  .mnav { position: fixed; inset: 0; z-index: 1500; background: var(--f0); color: var(--cream); display: flex; flex-direction: column; overflow-y: auto; }
-  .mnav :focus-visible { outline-color: var(--amber); }
+  .mnav { position: fixed; inset: 0; z-index: 1500; background: var(--paper); color: var(--ink); display: flex; flex-direction: column; overflow-y: auto; }
   .mnav[hidden] { display: none; }
-  .mnav__top { display: flex; justify-content: space-between; align-items: center; padding: 12px var(--gutter); min-height: 64px; }
-  .mnav__close { width: 48px; height: 48px; display: grid; place-items: center; margin-right: -8px; }
-  .mnav__call { padding: 8px var(--gutter) 20px; border-bottom: 1px solid #1d3326; }
-  .mnav__tel { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 2.1rem; color: var(--amber); }
-  .mnav__call p { color: var(--on-dark-2); margin-top: 2px; }
-  .mnav__body { padding: 12px var(--gutter) 24px; display: grid; gap: 26px; }
-  .mnav__main a { display: block; padding: 8px 0; font-family: var(--display); font-weight: 600; font-size: 1.9rem; text-transform: uppercase; line-height: 1.1; }
-  .mnav__head { font-family: var(--display); font-size: 1.15rem; font-weight: 600; text-transform: uppercase; color: var(--amber); margin-bottom: 4px; }
-  .mnav__grp a { display: block; padding: 10px 0; border-bottom: 1px solid #1d3326; font-size: 1.1rem; }
-  .mnav__foot { position: sticky; bottom: 0; margin-top: auto; padding: 14px var(--gutter) calc(16px + env(safe-area-inset-bottom)); display: grid; gap: 10px; background: var(--f0); border-top: 1px solid #1d3326; }
+  .mnav__top { display: flex; justify-content: space-between; align-items: center; padding: 10px var(--gutter); min-height: 64px; }
+  .mnav__top :global(img) { height: 2.5rem; width: auto; }
+  .mnav__close { min-height: 44px; padding: 8px 14px; font-weight: 700; border: 2px solid currentColor; border-radius: var(--radius); }
+  .mnav__call { padding: 8px var(--gutter) 20px; background: var(--paper); }
+  .mnav__tel { display: inline-block; font-stretch: var(--wide); font-weight: 800; font-size: 2rem; color: var(--spruce-900); text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 3px; text-underline-offset: 6px; }
+  .mnav__call p { color: var(--ink-2); margin-top: 4px; }
+  .mnav__body { padding: 16px var(--gutter) 24px; display: grid; gap: 26px; background: var(--stone); }
+  .mnav__main a { display: block; padding: 7px 0; font-stretch: var(--wide); font-weight: 800; font-size: 1.7rem; line-height: 1.15; }
+  .mnav__head { font-weight: 800; font-stretch: var(--wide); font-size: 1.05rem; color: var(--spruce-700); margin-bottom: 4px; }
+  .mnav__grp a { display: block; padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 1.08rem; }
+  .mnav__foot { position: sticky; bottom: 0; margin-top: auto; padding: 12px var(--gutter) calc(14px + env(safe-area-inset-bottom)); display: grid; gap: 8px; background: var(--paper); box-shadow: 0 -8px 20px rgba(15, 42, 32, .1); }
 
-  @media (max-width: 1260px) { .hdr__tel-l { display: none; } .hdr__link { padding-inline: 9px; } .hdr__in { gap: 20px; } }
-  @media (max-width: 1120px) {
+  @media (max-width: 1320px) { .hdr__tel-l { display: none; } .hdr__link { padding-inline: 9px; } .hdr__in { gap: 18px; } .hdr__logo :global(img) { height: 3rem; } }
+  @media (max-width: 1140px) {
     .hdr__nav, .hdr__quote { display: none; }
-    .hdr__burger { display: grid; }
+    .hdr__burger { display: inline-flex; align-items: center; }
   }
   @media (max-width: 860px) {
-    .hdr__logo :global(img.hdr__logo-full) { height: 32px; width: auto; }
-    .hdr__actions { gap: 8px; }
-    .hdr__tel-n { font-size: 1.32rem; gap: 6px; }
-    .hdr__tel-n :global(svg) { width: 18px; height: 18px; }
+    .hdr__logo :global(img), .hdr:global(.is-stuck) .hdr__logo :global(img) { height: 2.6rem; }
+    .hdr__actions { gap: 10px; }
+    .hdr__tel-n { font-size: 1.12rem; }
   }
-  @media (max-width: 370px) {
-    .hdr__logo :global(.hdr__logo-full) { display: none; }
-    .hdr__logo :global(.hdr__logo-mark) { display: block; height: 36px; width: auto; }
+  @media (max-width: 480px) {
+    .hdr__logo :global(.hdr__logo-full) { display: none !important; }
+    .hdr__logo :global(.hdr__logo-mark.hdr__logo-d) { display: block; }
+    .hdr:global(.is-stuck) .hdr__logo :global(.hdr__logo-mark.hdr__logo-d) { display: none; }
+    .hdr:global(.is-stuck) .hdr__logo :global(.hdr__logo-mark.hdr__logo-l) { display: block; }
+    .hdr__logo :global(img), .hdr:global(.is-stuck) .hdr__logo :global(img) { height: 2.4rem; }
     .hdr__in { gap: 10px; }
+    .hdr__burger { padding-inline: 10px; }
   }
+  @media (max-width: 350px) { .hdr__tel-n { font-size: 1rem; } }
 </style>
