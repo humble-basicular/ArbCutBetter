@@ -34,7 +34,7 @@ export async function mount(box) {
   let map;
   try {
     map = new maplibregl.Map({
-      container: host, style: style(), bounds: [[20.75, 53.95], [26.15, 56.45]], fitBoundsOptions: { padding: 0 },
+      container: host, style: style(), bounds: [[21.55, 53.98], [26.1, 56.22]], fitBoundsOptions: { padding: 0 },
       attributionControl: false, cooperativeGestures: true, dragRotate: false, pitchWithRotate: false, maxZoom: 11, minZoom: 5, renderWorldCopies: false,
       locale: { 'CooperativeGesturesHandler.WindowsHelpText': 'Laikykite Ctrl ir sukite pelės ratuką, kad keistumėte mastelį', 'CooperativeGesturesHandler.MacHelpText': 'Laikykite Cmd ir sukite pelės ratuką, kad keistumėte mastelį', 'CooperativeGesturesHandler.MobileHelpText': 'Žemėlapį stumkite dviem pirštais', 'NavigationControl.ZoomIn': 'Priartinti', 'NavigationControl.ZoomOut': 'Atitolinti' },
     });

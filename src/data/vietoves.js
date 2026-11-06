@@ -53,23 +53,11 @@ const turinys = {
     tekstas:
       'Tauragė ir aplinkiniai rajonai patenka į mūsų aptarnavimo zoną, todėl atvykstame ir į Tauragę, ir į aplinkines sodybas bei kaimus. Dažniausiai čia šaliname senus, pavojingai pasvirusius ar audros pažeistus medžius prie namų, ūkinių pastatų ir elektros linijų, genime lają, frezuojame kelmus. Aukštus medžius pjauname dalimis — su nuosavu autobokšteliu iki 20 m arba alpinistine įranga. Kad kelionė apsimokėtų, išvykimo datą suderiname iš anksto, o kelių kaimynų darbus galime atlikti per vieną atvykimą.',
   },
-  // Pridėta kliento patvirtinimu (2026-11): Mantas sako, kad Šiauliai ir Klaipėda nėra per toli.
-  'medziu-pjovimas-siauliai': {
-    intro: 'Šiauliuose ir Šiaulių krašte — pavojingų medžių šalinimas, genėjimas ir kelmai.',
-    tekstas:
-      'Į Šiaulius važiuojame iš bazės Kaune, todėl atvykimo datą suderiname iš anksto. Šalinami pavojingi medžiai prie namų, tvorų ir ūkinių pastatų, genima laja, frezuojami kelmai. Aukštus medžius pjauname dalimis: su nuosavu autobokšteliu iki 20 m arba alpinistine įranga, kai technika neprivažiuoja. Šakas ir medieną sukrauname tvarkingomis krūvomis, o kaimynų darbus galime atlikti per tą patį atvykimą.',
-  },
-  'medziu-pjovimas-klaipeda': {
-    intro: 'Klaipėdoje ir pajūrio krašte — darbai suderinus datą iš anksto.',
-    tekstas:
-      'Klaipėda yra toliausiai nuo mūsų bazės Kaune, todėl išvykimą planuojame iš anksto ir stengiamės sujungti kelis darbus į vieną atvykimą. Pjauname pavojingus medžius prie pastatų ir sklypų ribų, genime lajas, šaliname kelmus. Kur privažiuoja technika, dirbame nuosavu autobokšteliu iki 20 m, o ankštose vietose medį nuleidžiame dalimis virvėmis. Atsiųskite darbo vietos nuotraukų, ir pasakysime, ką reikės daryti.',
-  },
 };
 
 const vietininkas = {
   Kaunas: 'Kaune', Vilnius: 'Vilniuje', Panevėžys: 'Panevėžyje', Marijampolė: 'Marijampolėje', Alytus: 'Alytuje',
   Jonava: 'Jonavoje', Kėdainiai: 'Kėdainiuose', 'Kazlų Rūda': 'Kazlų Rūdoje', Tauragė: 'Tauragėje',
-  Šiauliai: 'Šiauliuose', Klaipėda: 'Klaipėdoje',
 };
 
 export const vietoves = site.vietoves.map((v) => ({ ...v, kur: vietininkas[v.miestas] || v.miestas, ...(turinys[v.slug] || {}) }));
