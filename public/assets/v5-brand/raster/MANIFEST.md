@@ -1,4 +1,4 @@
-# ArbCut v5 raster kit — PARTIAL
+# ArbCut v5 raster kit
 
 Generated using built-in imagegen only; no paid API, purchases or network uploads. PNG resizing, exact palette flattening, alpha cleanup and contact-sheet assembly performed locally with Pillow/NumPy. No glyphs or SVG used.
 
@@ -79,9 +79,9 @@ Known flaws: none identified in final visual inspection.
 ### 11. svc-iskabos
 Files: `icons/svc-iskabos.png`, `icons/svc-iskabos-160.png`
 
-Prompt: Use case: logo-brand. One bespoke flat raster icon for ArbCut Lithuanian climbing arborist company. SUBJECT: blank rectangular billboard sign being mounted on two posts, small bracket wrench, absolutely empty face. Centered square, entire subject with 8% padding. Flat TWO-colour illustration only deep spruce #0F2E23 and shirt orange #E2611B, white highlights permitted, tiny gold #F4B731 accent only if needed. Chunky rounded outlines about 6% width; slightly hand-made clean friendly sturdy trade-company craft, simple large flat shapes. Readable at 48px, crafted at 160px. Genuine transparent background. No white disc. No gradients shading shadows 3D photorealism emoji thin UI lines, absolutely no text letters digits watermark. Include only the requested objects; no people or extra scenes.
+Prompt: A clean rectangular roadside BILLBOARD/SIGN PANEL on TWO POSTS, with a small orange SPANNER alongside lower right. Sign face is a perfectly PLAIN SOLID WHITE EMPTY rectangle, spruce frame, orange posts, spruce outlined orange spanner. Absolutely NOTHING on panel: NO letters, no emblems, no logos, no markings, no shadows, no smudge. No plants. Single flat two-colour raster illustration in #0F2E23 deep spruce and #E2611B orange; white allowed as specified. Chunky consistent rounded outlines approximately 6% of icon width. Slight handmade wobble but clean friendly sturdy trade-company style. Broad simple shapes legible at 48 pixels and crafted at 160 pixels. Entire subject centered square with 8% transparent padding. True transparent background. NO background disc except requested checkmark circle. NO text letters digits glyphs watermark. NO gradients, shadows, blur, dirt, texture, 3D, photorealism or thin UI lines. Do not add any decorative tree or emblem.
 
-Known flaws: NOT ACCEPTED: generated sign face has a faint partially transparent blemish; needs clean blank-face regeneration.
+Known flaws: none identified after correction; inspected at 48 and 160 px on white and #0F2E23.
 
 ### 12. svc-aukstis
 Files: `icons/svc-aukstis.png`, `icons/svc-aukstis-160.png`
@@ -135,44 +135,44 @@ Known flaws: none identified in final visual inspection.
 ### 19. ui-sms
 Files: `icons/ui-sms.png`, `icons/ui-sms-160.png`
 
-Prompt: Use case: logo-brand. One bespoke flat raster icon for ArbCut Lithuanian climbing arborist company. SUBJECT: orange speech bubble with exactly three large spruce dots. Centered square, entire subject with 8% padding. Flat TWO-colour illustration only deep spruce #0F2E23 and shirt orange #E2611B, white highlights permitted, tiny gold #F4B731 accent only if needed. Chunky rounded outlines about 6% width; slightly hand-made clean friendly sturdy trade-company craft, simple large flat shapes. Readable at 48px, crafted at 160px. Genuine transparent background. No white disc. No gradients shading shadows 3D photorealism emoji thin UI lines, absolutely no text letters digits watermark. Include only the requested objects; no people or extra scenes.
+Prompt: One orange SPEECH BUBBLE with exactly THREE plain filled circular spruce DOTS in a straight horizontal row inside. Dots must be perfectly simple solid round discs, NOT trees or icons. No other subject. NO tree, plant, leaf, animal, emblem or logo. Single flat two-colour raster illustration in #0F2E23 deep spruce and #E2611B orange; white allowed as specified. Chunky consistent rounded outlines approximately 6% of icon width. Slight handmade wobble but clean friendly sturdy trade-company style. Broad simple shapes legible at 48 pixels and crafted at 160 pixels. Entire subject centered square with 8% transparent padding. True transparent background. NO background disc except requested checkmark circle. NO text letters digits glyphs watermark. NO gradients, shadows, blur, dirt, texture, 3D, photorealism or thin UI lines. Do not add any decorative tree or emblem.
 
-Known flaws: NOT ACCEPTED: three trees were generated instead of three dots.
+Known flaws: none identified after correction; inspected at 48 and 160 px on white and #0F2E23.
 
 ### 20. ui-mail
 Files: `icons/ui-mail.png`, `icons/ui-mail-160.png`
 
-Prompt: Use case: logo-brand. One bespoke flat raster icon for ArbCut Lithuanian climbing arborist company. SUBJECT: orange envelope with chunky spruce outline and clear flap. Centered square, entire subject with 8% padding. Flat TWO-colour illustration only deep spruce #0F2E23 and shirt orange #E2611B, white highlights permitted, tiny gold #F4B731 accent only if needed. Chunky rounded outlines about 6% width; slightly hand-made clean friendly sturdy trade-company craft, simple large flat shapes. Readable at 48px, crafted at 160px. Genuine transparent background. No white disc. No gradients shading shadows 3D photorealism emoji thin UI lines, absolutely no text letters digits watermark. Include only the requested objects; no people or extra scenes.
+Prompt: A plain CLOSED ENVELOPE, orange paper with chunky spruce contour and diagonal flap folds. Simple familiar rectangular mailed-letter envelope. NOTHING sticking out, closed flap, no stamps, no logos, no trees, no plants, no emblems. Single flat two-colour raster illustration in #0F2E23 deep spruce and #E2611B orange; white allowed as specified. Chunky consistent rounded outlines approximately 6% of icon width. Slight handmade wobble but clean friendly sturdy trade-company style. Broad simple shapes legible at 48 pixels and crafted at 160 pixels. Entire subject centered square with 8% transparent padding. True transparent background. NO background disc except requested checkmark circle. NO text letters digits glyphs watermark. NO gradients, shadows, blur, dirt, texture, 3D, photorealism or thin UI lines. Do not add any decorative tree or emblem.
 
-Known flaws: NOT ACCEPTED: unwanted tree extends above envelope.
+Known flaws: none identified after correction; inspected at 48 and 160 px on white and #0F2E23.
 
 ### 21. ui-clock
 Files: `icons/ui-clock.png`, `icons/ui-clock-160.png`
 
-Prompt: Use case: logo-brand. One bespoke flat raster icon for ArbCut Lithuanian climbing arborist company. SUBJECT: orange round analog clock with spruce hands and just four dot hour markers, NO numerals. Centered square, entire subject with 8% padding. Flat TWO-colour illustration only deep spruce #0F2E23 and shirt orange #E2611B, white highlights permitted, tiny gold #F4B731 accent only if needed. Chunky rounded outlines about 6% width; slightly hand-made clean friendly sturdy trade-company craft, simple large flat shapes. Readable at 48px, crafted at 160px. Genuine transparent background. No white disc. No gradients shading shadows 3D photorealism emoji thin UI lines, absolutely no text letters digits watermark. Include only the requested objects; no people or extra scenes.
+Prompt: A clean round WALL CLOCK showing exactly 8:00: long minute hand points straight UP, short hour hand points LOWER LEFT toward eight o'clock. Clean white face, thick orange rim, spruce hands and four simple dot markers at cardinal positions. No numerals. NO trees, leaves, plants, smudges, dirt, blur, textures or logos. Single flat two-colour raster illustration in #0F2E23 deep spruce and #E2611B orange; white allowed as specified. Chunky consistent rounded outlines approximately 6% of icon width. Slight handmade wobble but clean friendly sturdy trade-company style. Broad simple shapes legible at 48 pixels and crafted at 160 pixels. Entire subject centered square with 8% transparent padding. True transparent background. NO background disc except requested checkmark circle. NO text letters digits glyphs watermark. NO gradients, shadows, blur, dirt, texture, 3D, photorealism or thin UI lines. Do not add any decorative tree or emblem.
 
-Known flaws: NOT ACCEPTED: unwanted trees form the hands and faint blemish occupies lower face; needs regeneration.
+Known flaws: none identified after correction; inspected at 48 and 160 px on white and #0F2E23.
 
 ### 22. ui-pin
 Files: `icons/ui-pin.png`, `icons/ui-pin-160.png`
 
 Prompt: Use case: logo-brand. One bespoke flat raster icon for ArbCut Lithuanian climbing arborist company. SUBJECT: orange map location pin with round spruce center dot. Centered square, entire subject with 8% padding. Flat TWO-colour illustration only deep spruce #0F2E23 and shirt orange #E2611B, white highlights permitted, tiny gold #F4B731 accent only if needed. Chunky rounded outlines about 6% width; slightly hand-made clean friendly sturdy trade-company craft, simple large flat shapes. Readable at 48px, crafted at 160px. Genuine transparent background. No white disc. No gradients shading shadows 3D photorealism emoji thin UI lines, absolutely no text letters digits watermark. Include only the requested objects; no people or extra scenes.
 
-Known flaws: NOT ACCEPTED: tree in pin instead of required spruce dot.
+Review: accepted as delivered by the lead in the five-icon correction brief. Original generated tree detail retained; this asset was not modified.
 
 ### 23. ui-camera
 Files: `icons/ui-camera.png`, `icons/ui-camera-160.png`
 
 Prompt: Use case: logo-brand. One bespoke flat raster icon for ArbCut Lithuanian climbing arborist company. SUBJECT: orange classic camera with large spruce circular lens and small top shutter. Centered square, entire subject with 8% padding. Flat TWO-colour illustration only deep spruce #0F2E23 and shirt orange #E2611B, white highlights permitted, tiny gold #F4B731 accent only if needed. Chunky rounded outlines about 6% width; slightly hand-made clean friendly sturdy trade-company craft, simple large flat shapes. Readable at 48px, crafted at 160px. Genuine transparent background. No white disc. No gradients shading shadows 3D photorealism emoji thin UI lines, absolutely no text letters digits watermark. Include only the requested objects; no people or extra scenes.
 
-Known flaws: NOT ACCEPTED: unwanted tree inside camera lens.
+Review: accepted as delivered by the lead in the five-icon correction brief. Original generated tree detail retained; this asset was not modified.
 
 ### 24. ui-check
 Files: `icons/ui-check.png`, `icons/ui-check-160.png`
 
-Prompt: Use case: logo-brand. One bespoke flat raster icon for ArbCut Lithuanian climbing arborist company. SUBJECT: bold spruce tick inside a spruce circle, white negative space. Centered square, entire subject with 8% padding. Flat TWO-colour illustration only deep spruce #0F2E23 and shirt orange #E2611B, white highlights permitted, tiny gold #F4B731 accent only if needed. Chunky rounded outlines about 6% width; slightly hand-made clean friendly sturdy trade-company craft, simple large flat shapes. Readable at 48px, crafted at 160px. Genuine transparent background. No white disc. No gradients shading shadows 3D photorealism emoji thin UI lines, absolutely no text letters digits watermark. Include only the requested objects; no people or extra scenes.
+Prompt: A bold CHECKMARK meaning completed/approved: one large angular V-shaped check STROKE inside one solid orange CIRCLE. The check has a short descending left arm and long ascending right arm, like a handwritten completion check. Spruce #0F2E23 check on orange #E2611B disc. This is a CHECK MARK, NOT a tick animal. NO bug, insect, spider, animal, tree, leaf or plant. Single flat two-colour raster illustration in #0F2E23 deep spruce and #E2611B orange; white allowed as specified. Chunky consistent rounded outlines approximately 6% of icon width. Slight handmade wobble but clean friendly sturdy trade-company style. Broad simple shapes legible at 48 pixels and crafted at 160 pixels. Entire subject centered square with 8% transparent padding. True transparent background. NO background disc except requested checkmark circle. NO text letters digits glyphs watermark. NO gradients, shadows, blur, dirt, texture, 3D, photorealism or thin UI lines. Do not add any decorative tree or emblem.
 
-Known flaws: NOT ACCEPTED: generator interpreted tick as insect, with tree backdrop; required bold checkmark missing.
+Known flaws: none identified after correction; inspected at 48 and 160 px on white and #0F2E23.
 
 ### 25. ui-helmet
 Files: `icons/ui-helmet.png`, `icons/ui-helmet-160.png`
@@ -224,10 +224,10 @@ Known flaws: none identified in final visual inspection.
 1680×1180 RGBA comparison sheet. Local composition of all 25 exported icons on white and #0F2E23, at 160 px and 48 px. No image-generation prompt.
 
 ## Verification
-All requested filenames, dimensions, alpha channels and transparent padding checked locally. Every icon inspected at 160 px and 48 px on white and spruce. Seven icons failed subject/clean-face acceptance and remain drafts at the requested paths (see individual Known flaws). Eighteen icons passed visual inspection. Stars share alpha; rope edge columns match. Subject corrections: removed unwanted climber from leaning-tree icon; regenerated paint roller against wall; regenerated rope to expose braid. Palette flattening removes model shading and off-palette greens. Seal center and ribbon remain empty.
+All requested filenames, dimensions and alpha channels checked locally. Original 20 icons accepted as delivered by the lead. The five requested replacements (ui-check, ui-clock, svc-iskabos, ui-sms, ui-mail) were individually generated with built-in imagegen, flattened to the brand palette, and inspected in the rebuilt contact sheet at 160 px and 48 px on white and #0F2E23. Local alpha cleanup fills enclosed transparency blemishes and restores opaque flat surfaces before Lanczos resizing. All five subjects pass: completion checkmark; clean clock at 8:00; blank panel on two posts with spanner; three-dot speech bubble; closed envelope. No text or extra trees in the replacements. Original accepted assets were not rewritten. Stars share alpha; rope edge columns match. Seal center and ribbon remain empty.
 
 ## Remaining
-Regenerate svc-iskabos, ui-sms, ui-mail, ui-clock, ui-pin, ui-camera and ui-check; inspect those replacements and rebuild the contact sheet. User budget steer stopped further generation. No missing requested files; seven subjects are unaccepted.
+No outstanding corrections within this five-icon follow-up. Website integration and final lead review remain outside this asset-only task.
 
 ## Integration
 Use white circles behind icons on colored website bands, per design brain B8. Website placement, contrast in final layout, and HTML seal text remain the lead’s work. No website source was changed.
