@@ -1,8 +1,8 @@
 {
-  "generatedAtUTC": "2026-11-06T01:52:12.827198+00:00",
+  "generatedAtUTC": "2026-11-06T06:35:47.324867+00:00",
   "objectiveStatus": "unfinished",
   "activeWorkers": [],
-  "scope": "Resume index only, compiled from ordinal21 handoff plus currently present metadata. No image inspections or pending gates waived. Counts in status descriptions are inherited verified milestones, not new visual review.",
+  "scope": "Current resume index; actual image coverage in referenced reports and external ledgers. Selected scope does not credit unselected raw segments.",
   "sourceHandoff": ".agents/handoffs/2026-11-06-ordinal21-final-worker-checkpoint.md",
   "sites": [
     {
@@ -35,11 +35,16 @@
     {
       "site": "callthelen.com",
       "currentManifest": "/Users/matasbasinskas/.ai-powerhouse/research-captures/arbcut-v4/_sheets/callthelen.com/native/native-stage-remaining.json",
-      "sha256": "e09e890109c5750b0ec8b5a82170b0d13448bba1966cc0484725262c6fc756bd",
+      "sha256": "8d8ec94fdf9bde7c63468e2e516830b5d287d2f86969ade5f853a7496b029956",
       "owner": "lead",
-      "status": "retry cap exhausted;10pairs61interactions;39pages333displays pending",
-      "nativeGateOpen": true,
-      "report": ".agents/research/v4-reference-study/bulk-findings-callthelen.com.md"
+      "status": "Lead ordinal29:49selectedpairs407/407displays;333newactualopens625sources;61savedinteractions. Captured semantic sampling accepted;9archives sampled and4additionalarticle390firststrip only; unselected raw/live limits explicit",
+      "nativeGateOpen": false,
+      "report": ".agents/research/v4-reference-study/bulk-findings-callthelen.com.md",
+      "limitations": [
+        "Nine archive pairs retain selected beginning/interior/tail scope; skipped raw segments unviewed",
+        "Four extra articles390firststrip only",
+        "No live360/keyboard/motion/form delivery audit; current widget/media behavior unknown"
+      ]
     },
     {
       "site": "northfaceconstruction.com",

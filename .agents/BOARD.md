@@ -318,3 +318,9 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 
 ## Ordinal26 — compatible-account wait
 - No newresearchcoverage;ordinal25milestone539ae89 unchanged. SameCodex2auto-resumed atweekly80% (session45%,01:53UTC);othercodexsession97%until02:40:01UTC. Nextcontinuation researchrouting eligibleONLYcodex,stillGPT6.1Sol/high, toavoid repeating same80%account. Noactiveworkers/allcappedresidueslead-owned. Exactqueuesordinal25handoff/resumeindex. Fullobjectiveunfinished,notpaused/complete.
+
+## Ordinal29 — explicit resume; lead semantic closure
+- User explicitly resumed paused objective. Live Codex15%session/33%weekly; pin GPT6.1Sol/high, eligible codex. No active workers; all research retry caps retained.
+- Lead owns reports, external native ledgers, board/handoffs on build/arbcut-v4-complete-20261105. First Thelen remaining functional pages, then real template/outlier gates; accept only actually opened images.
+- Next stage: verified cross-site synthesis → required Claude Opus5.5/medium designbrain/spec and frontend in isolated worktree. Inputs preserved-content-contract and verified reports; output full37route preview. Acceptance: Codex content/routes/SEO/inertforms/accessibility/runtime checks and other-engine review. No publish/push/merge/real submissions/paid APIs.
+- Ordinal29 Thelen selected static/semantic sampling CLOSED: lead actually opened333newdisplays/625mapped sources for39newselectedpairs; now49pairs407displays/770source references,61savedinteractions inherited. All paths verified, scope retained (9sampledarchives/4first-stripmobileextras); no live360/keyboard/motion/submission claim. Captured synthesis gate accepted with explicit limitations. No child retry or sourcecode edit. Next lead Bears61iframepatches, then remaining capped semantic gates.
