@@ -1,24 +1,23 @@
 ---
 /* Apatinė mobili juosta (v5): plona plaukiojanti juosta su atitraukimu nuo kraštų;
-   skambutis pagrindinis, SMS — mažas antrinis. Kabliukai: .mact (slepiama rašant), data-loc. */
+   skambutis pagrindinis, kaina (užklausos forma) — maža antrinė. Kabliukai: .mact (slepiama rašant), data-loc. */
 import { site } from '@data/site.js';
 const I = '/assets/v5-brand/raster/icons';
 ---
 <div class="mact" aria-label="Greiti veiksmai">
   <a class="mact__call" href={site.telefonasHref} data-loc="sticky-call"><img src={`${I}/ui-phone-160.png`} alt="" width="22" height="22" /><span>Skambinti <b>{site.telefonas}</b></span></a>
-  <a class="mact__sms" href={site.smsHref} data-loc="sticky-sms" aria-label="Siųsti nuotraukas SMS žinute"><img src={`${I}/ui-sms-160.png`} alt="" width="24" height="24" /><span>SMS</span></a>
+  <button type="button" class="mact__quote" data-quote data-loc="sticky-quote">Kaina</button>
 </div>
 <style>
   .mact { display: none; }
   @media (max-width: 860px) {
     .mact { position: fixed; left: 10px; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom)); z-index: 800; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; padding: 6px; border-radius: 16px; background: rgba(11, 35, 27, .94); box-shadow: 0 10px 30px rgba(0,0,0,.3); backdrop-filter: blur(6px); transition: transform var(--t), visibility var(--t); }
-    .mact a { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; border-radius: 11px; font-weight: 800; font-size: 1.05rem; }
+    .mact a, .mact button { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; border-radius: 11px; font-weight: 800; font-size: 1.05rem; }
     .mact__call { background: var(--orange); color: #fff; padding-inline: 12px; white-space: nowrap; }
     .mact__call img { width: 20px; height: 20px; filter: brightness(0) invert(1); }
     .mact__call b { font-family: var(--display); font-weight: 800; }
-    .mact__sms { background: #fff; color: var(--spruce-900); padding-inline: 14px; font-size: .95rem; }
-    .mact__sms img { width: 22px; height: 22px; }
+    .mact__quote { background: #fff; color: var(--spruce-900); padding-inline: 16px; font-size: 1rem; }
     .mact :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
   }
-  @media (max-width: 370px) { .mact__call span { font-size: .98rem; } .mact__sms span { display: none; } }
+  @media (max-width: 370px) { .mact__call span { font-size: .98rem; } .mact__quote span { display: none; } }
 </style>

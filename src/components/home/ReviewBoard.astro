@@ -3,11 +3,10 @@
    auksinės žvaigždės, rodyklės ir braukimas. Originalūs tekstai iš atsiliepimai-visi.js, nieko neperrašyta.
    Ne schema.org (žr. jsonld.js). */
 import { site } from '@data/site.js';
-import { visiAtsiliepimai, saltiniai } from '@data/atsiliepimai-visi.js';
+import { visiAtsiliepimai, saltiniai, bendrasKiekis, bendrasIvertinimas } from '@data/atsiliepimai-visi.js';
 import Photo from '../Photo.astro';
 import Mark from '../Mark.astro';
 import Stars from '../v5/Stars.astro';
-const P = saltiniai.paslaugos;
 const items = visiAtsiliepimai.filter((a) => a.tekstas.trim().length >= 40 && a.zvaigzdes).slice(0, 12);
 const r1 = (x) => x.toFixed(1).replace('.', ',');
 const ini = (n) => (n || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join('');
@@ -20,10 +19,8 @@ const ini = (n) => (n || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) =>
         <p class="rvb__tag tag">Atsiliepimai</p>
         <h2 id="rvb-h">Ką rašo klientai</h2>
       </div>
-      <a class="rvb__sum" href={P.url} target="_blank" rel="noopener">
-        <Mark name="paslaugos" height={34} label="Paslaugos.lt" />
-        <span><b>{r1(P.ivertinimas)}</b> <Stars size={18} /><small>{P.kiekis} atsiliepimai</small></span>
-        <span class="sr-only"> (atsidaro naujame lange)</span>
+      <a class="rvb__sum" href="/atsiliepimai">
+        <span><b>{r1(bendrasIvertinimas)}</b> <Stars size={18} /><small>{bendrasKiekis} atsiliepimai</small></span>
       </a>
     </div>
 
@@ -33,7 +30,10 @@ const ini = (n) => (n || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) =>
         {items.map((a) => (
           <li class="rvc__card">
             <article>
-              <p class="rvc__stars"><span class="rvc__n">{a.zvaigzdes}</span><Stars n={a.zvaigzdes} size={20} /></p>
+              <div class="rvc__top">
+                <p class="rvc__stars"><span class="rvc__n">{a.zvaigzdes}</span><Stars n={a.zvaigzdes} size={20} /></p>
+                <Mark name={a.saltinis} height={a.saltinis === 'google' ? 28 : 30} label={`Atsiliepimas iš ${saltiniai[a.saltinis].pavadinimas}`} class="rvc__src" />
+              </div>
               <blockquote class="rvc__txt" data-rvc-txt>{a.tekstas.split('\n').filter(Boolean).map((l) => <p>{l}</p>)}</blockquote>
               <button type="button" class="rvc__more" data-rvc-more aria-expanded="false" hidden>Skaityti visą</button>
               <footer class="rvc__by">
@@ -93,6 +93,7 @@ const ini = (n) => (n || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) =>
   .rvc__track:focus-visible { outline: 3px solid var(--gold); outline-offset: 6px; border-radius: var(--r); }
   .rvc__card { scroll-snap-align: start; }
   .rvc__card article { height: 100%; background: #fff; color: var(--ink); border-radius: var(--r-lg); padding: 26px 26px 22px; display: flex; flex-direction: column; gap: 14px; box-shadow: var(--sh-3); }
+  .rvc__top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
   .rvc__stars { display: flex; align-items: center; gap: 8px; }
   .rvc__n { font-family: var(--display); font-weight: 800; font-size: 1.4rem; color: var(--gold-600); }
   .rvc__txt { flex: 1; display: grid; gap: 8px; font-size: 1.04rem; line-height: 1.55; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical; overflow: hidden; }

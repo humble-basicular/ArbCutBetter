@@ -34,31 +34,24 @@ export async function mount(box) {
   let map;
   try {
     map = new maplibregl.Map({
-      container: host, style: style(), bounds: [[20.6, 53.75], [27.1, 56.75]], fitBoundsOptions: { padding: 0 },
+      container: host, style: style(), bounds: [[21.9, 54.1], [25.9, 56.0]], fitBoundsOptions: { padding: 0 },
       attributionControl: false, cooperativeGestures: true, dragRotate: false, pitchWithRotate: false, maxZoom: 11, minZoom: 5, renderWorldCopies: false,
       locale: { 'CooperativeGesturesHandler.WindowsHelpText': 'Laikykite Ctrl ir sukite pelės ratuką, kad keistumėte mastelį', 'CooperativeGesturesHandler.MacHelpText': 'Laikykite Cmd ir sukite pelės ratuką, kad keistumėte mastelį', 'CooperativeGesturesHandler.MobileHelpText': 'Žemėlapį stumkite dviem pirštais', 'NavigationControl.ZoomIn': 'Priartinti', 'NavigationControl.ZoomOut': 'Atitolinti' },
     });
   } catch (e) { box.classList.add('map--static'); return; }
-  map.addControl(new maplibregl.AttributionControl({ compact: false }), 'bottom-right');
+  map.addControl(new maplibregl.AttributionControl({ compact: host.clientWidth < 480 }), 'bottom-right');
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
   map.on('load', async () => {
-    const [lt, zone] = await Promise.all([fetch(data.lt).then((r) => r.json()), fetch(data.zone).then((r) => r.json())]);
+    const lt = await fetch(data.lt).then((r) => r.json());
     map.addSource('lt', { type: 'geojson', data: lt });
-    map.addSource('zone', { type: 'geojson', data: zone });
     map.addLayer({ id: 'lt-fill', type: 'fill', source: 'lt', paint: { 'fill-color': C.land } }, 'wood');
-    map.addLayer({ id: 'zone-fill', type: 'fill', source: 'zone', paint: { 'fill-color': C.orange, 'fill-opacity': .14 } }, 'border');
-    map.addLayer({ id: 'zone-line', type: 'line', source: 'zone', paint: { 'line-color': C.orange, 'line-width': 3, 'line-dasharray': [2.4, 1.4] } }, 'border');
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let i = 0;
     for (const t of data.towns) {
       const base = t.base;
-      const m = el('a', `mpin${base ? ' mpin--base' : ''}`, `<span class="mpin__in">${base ? `<img src="${data.mark}" alt="" width="20" height="34">` : ''}<span class="mpin__dot"></span><span class="mpin__l">${t.name}${base ? '<small>bazė</small>' : ''}</span></span>`);
+      const m = el('a', `mpin${base ? ' mpin--base' : ''}`, `<span class="mpin__in">${base ? `<img src="${data.mark}" alt="" width="20" height="34">` : ''}<span class="mpin__dot"></span><span class="mpin__l">${t.name}</span></span>`);
       m.href = t.href; m.setAttribute('aria-label', base ? `${t.name}, bazė` : `Medžių pjovimas: ${t.name}`);
       if (!reduce) m.firstChild.style.animationDelay = `${(i++) * 60}ms`;
-      new maplibregl.Marker({ element: m, anchor: base ? 'bottom' : 'center' }).setLngLat(t.ll).addTo(map);
-    }
-    for (const t of data.far) {
-      const m = el('span', 'mpin mpin--far', `<span class="mpin__in"><span class="mpin__dot"></span><span class="mpin__l">${t.name}<small>per toli</small></span></span>`);
       new maplibregl.Marker({ element: m, anchor: 'center' }).setLngLat(t.ll).addTo(map);
     }
     box.classList.add('map--live');

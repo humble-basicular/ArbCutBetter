@@ -6,10 +6,10 @@ import { Image } from 'astro:assets';
 import { site } from '@data/site.js';
 import { valstietis } from '@data/spauda.js';
 import face from '../../assets/photos/mantas-portretas.jpg';
-const subj = encodeURIComponent('Medžio nuotraukos kainai');
+const subj = encodeURIComponent('Nuotraukos kainai');
 const I = '/assets/v5-brand/raster/icons';
 const steps = [
-  { ic: 'step-foto', n: 'Nufotografuokite', p: 'Visą medį, kas po juo ir šalia, kamieną ir kelią iki medžio.' },
+  { ic: 'step-foto', n: 'Nufotografuokite', p: 'Visą darbo vietą, kas šalia ir kelią iki jos.' },
   { ic: 'step-siusti', n: 'Atsiųskite', p: `SMS žinute numeriu ${site.telefonas} arba el. paštu.` },
   { ic: 'step-kaina', n: 'Pasakome kainą', p: 'Preliminarią pagal nuotraukas, tikslią atvažiavę į vietą.' },
   { ic: 'step-atvaziuojame', n: 'Atvažiuojame', p: 'Su autobokšteliu arba virvėmis, sutartą dieną.' },
@@ -47,16 +47,16 @@ const steps = [
           <blockquote><p>„{valstietis.citatos.kava}“</p></blockquote>
           <figcaption>Mantas Gerulis, <a href={valstietis.url} target="_blank" rel="noopener">Valstietis.lt</a></figcaption>
         </figure>
-        <p class="snd__p2">Todėl preliminarią kainą pasakome pagal jūsų nuotraukas, o tikslią atvažiavę į vietą. Kainą lemia daugiau nei medžio dydis:</p>
+        <p class="snd__p2">Todėl preliminarią kainą pasakome pagal jūsų nuotraukas, o tikslią atvažiavę į vietą. Kainą lemia daugiau nei vien dydis:</p>
         <blockquote class="snd__q2"><p>„{valstietis.citatos.sudetingumas}“</p></blockquote>
       </div>
       <div class="snd__what">
         <h3>Ką nufotografuoti</h3>
         <ul class="ticks">
-          <li>Visą medį iš toliau, kad matytųsi viršūnė.</li>
-          <li>Kas po medžiu ir šalia: namas, tvora, laidai, gatvė.</li>
-          <li>Kamieną prie žemės.</li>
-          <li>Kelią iki medžio: ar privažiuos autobokštelis.</li>
+          <li>Visą darbo vietą iš toliau, kad matytųsi aukštis.</li>
+          <li>Kas šalia: namas, tvora, laidai, gatvė.</li>
+          <li>Detalę iš arti: kamieną, kelmą, lataką ar iškabą.</li>
+          <li>Kelią iki vietos: ar privažiuos autobokštelis.</li>
         </ul>
         <div class="snd__act">
           <a class="btn btn--primary snd__big" href={site.smsHref} data-loc="photos-sms"><img class="ico" src={`${I}/ui-sms-160.png`} alt="" width="28" height="28" style="--is:28px;filter:brightness(0) invert(1)" />Siųsti SMS <span class="btn__num">{site.telefonas}</span></a>

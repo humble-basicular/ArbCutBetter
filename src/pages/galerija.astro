@@ -6,7 +6,17 @@ import CtaBand from '../components/CtaBand.astro';
 import { galerijosKategorijos, galerijosAlt } from '@data/paslaugu-turinys.js';
 import { localBusiness, breadcrumbs } from '@data/jsonld.js';
 const G = (n) => `/assets/images/galerija/galerija-${String(n).padStart(2, '0')}.jpg`;
-const tiles = galerijosKategorijos.flatMap((k) => k.nr.map((n) => ({ src: G(n), cat: k.id, alt: galerijosAlt[k.id] })));
+/* Mantas atsiuntė 2026-11-06. Kol nepatvirtinta, kas ir kieno įranga, aprašoma tik tai, kas matyti. */
+const N = (f) => ({ src: `/assets/images/galerija-naujos/${f}.jpg`, thumb: `/assets/images/galerija-naujos/${f}-m.jpg` });
+const naujos = [
+  { ...N('pusis-bokstelis-virves'), alt: 'Arboristai pušies lajoje: vienas bokštelyje, kitas ant virvių' },
+  { ...N('arboristas-bokstelyje'), alt: 'Arboristas autobokštelio krepšyje pušies lajoje' },
+  { ...N('bokstelis-prie-azuolo'), alt: 'Autobokštelis pakeltas prie aukšto ąžuolo' },
+  { ...N('bokstelis-prie-pastato'), alt: 'Autobokštelis prie medžio šalia pastato' },
+  { ...N('aukstas-medis-lajoje'), alt: 'Arboristas aukštai plikame medyje, šalia autobokštelis' },
+  { ...N('aukstas-medis-is-toli'), alt: 'Aukštas medis ir autobokštelis pievoje' },
+].map((t) => ({ ...t, cat: 'naujos' }));
+const tiles = [...naujos, ...galerijosKategorijos.flatMap((k) => k.nr.map((n) => ({ src: G(n), cat: k.id, alt: galerijosAlt[k.id] })))];
 ---
 <BaseLayout
   title="Atlikti darbai: medžių pjovimas ir darbai aukštyje | ArbCut"
@@ -36,7 +46,7 @@ const tiles = galerijosKategorijos.flatMap((k) => k.nr.map((n) => ({ src: G(n), 
         {tiles.map((t) => (
           <li data-cat={t.cat}>
             <button type="button" data-lightbox={t.src} data-caption={t.alt} aria-label={`Padidinti: ${t.alt}`}>
-              <img src={t.src} alt={t.alt} width="283" height="230" loading="lazy" decoding="async" />
+              <img src={t.thumb || t.src} alt={t.alt} width="283" height="230" loading="lazy" decoding="async" />
             </button>
           </li>
         ))}

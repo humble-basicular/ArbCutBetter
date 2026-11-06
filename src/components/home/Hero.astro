@@ -48,7 +48,6 @@ const I = '/assets/v5-brand/raster/icons';
       </p>
       <div class="hero__scale"><span>20 m</span><span>15</span><span>10</span><span>5</span><span>0</span></div>
       <Image class="hero__man" src={cutout} alt="" widths={[360, 540, 720, 960]} sizes="(max-width: 960px) 62vw, 400px" format="webp" quality={84} loading="eager" data-parallax="-0.04" />
-      <p class="hero__sign hand">Mantas Gerulis<small>Arboristas aukštalipys su komanda</small></p>
     </div>
   </div>
   <div class="hero__arc" data-rope aria-hidden="true"></div>
@@ -59,17 +58,16 @@ const I = '/assets/v5-brand/raster/icons';
     <div class="dock__card">
       <h2 id="hc-h" class="dock__tab tag tag--orange">Kiek kainuos?</h2>
       <div class="dock__grid">
-        <p class="dock__p">Palikite numerį. Perskambinsime darbo valandomis.</p>
+        <p class="dock__p">Aprašykite darbą. Susisieksime ir pasakysime preliminarią kainą.</p>
         <QuoteForm variant="short" id="hero-form" prefix="h" />
         <div class="dock__pics">
-          <p><strong>Kainą pasakome pagal nuotraukas.</strong> Nufotografuokite medį ir atsiųskite:</p>
+          <p><strong>Kainą pasakome pagal nuotraukas.</strong> Nufotografuokite darbo vietą ir atsiųskite:</p>
           <div class="dock__btns">
             <a class="btn btn--ink btn--sm" href={site.smsHref} data-loc="hero-sms"><img class="ico" src={`${I}/ui-sms-160.png`} alt="" width="24" height="24" style="--is:24px;filter:brightness(0) invert(1)" />SMS</a>
-            <a class="btn btn--line btn--sm" href={`mailto:${site.elPastas}?subject=${encodeURIComponent('Medžio nuotraukos kainai')}`} data-loc="hero-mail"><img class="ico" src={`${I}/ui-mail-160.png`} alt="" width="24" height="24" style="--is:24px" />El. paštu</a>
+            <a class="btn btn--line btn--sm" href={`mailto:${site.elPastas}?subject=${encodeURIComponent('Nuotraukos kainai')}`} data-loc="hero-mail"><img class="ico" src={`${I}/ui-mail-160.png`} alt="" width="24" height="24" style="--is:24px" />El. paštu</a>
           </div>
         </div>
       </div>
-      <div class="dock__rate"><RatingUnit variant="dock" loc="dock-rating" /></div>
     </div>
 
     <div class="press-strip">
@@ -114,8 +112,6 @@ const I = '/assets/v5-brand/raster/icons';
   .hero__scale { position: absolute; right: calc(2% + 18px); top: calc(3% + 22px); height: 62%; width: 46px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; padding-right: 14px; font-family: var(--display); font-weight: 800; font-size: .8rem; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.6); background: repeating-linear-gradient(180deg, rgba(255,255,255,.85) 0 2px, transparent 2px 12.5%) right / 8px 100% no-repeat, linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85)) right / 2px 100% no-repeat; }
   .hero__scale span:first-child { color: var(--gold); font-size: 1rem; }
   .hero__man { position: absolute; left: -6%; bottom: -150px; height: calc(100% + 120px); width: auto; z-index: 3; filter: drop-shadow(0 18px 30px rgba(0,0,0,.35)); }
-  .hero__sign { position: absolute; left: 24%; bottom: 25%; z-index: 4; color: #fff; transform: rotate(-4deg); text-shadow: 0 2px 10px rgba(0,0,0,.5); font-size: 2.1rem; }
-  .hero__sign small { display: block; font-family: var(--font); font-size: .8rem; font-weight: 700; letter-spacing: .02em; color: var(--on-dark-2); transform: rotate(2deg); margin-top: 2px; }
 
   .hero__arc { position: absolute; left: -10%; right: -10%; bottom: -150px; height: 260px; background: var(--paper); border-radius: 50% 50% 0 0 / 100% 100% 0 0; border-top: 12px solid var(--orange); z-index: 5; }
   .hero__arc::before { content: ''; position: absolute; inset: -9px 0 0; border-radius: inherit; border-top: 3px dashed rgba(255, 255, 255, .55); }
@@ -130,14 +126,13 @@ const I = '/assets/v5-brand/raster/icons';
   .dock__tab { position: absolute; left: clamp(16px, 3vw, 36px); top: -26px; font-size: clamp(1.15rem, 1rem + .6vw, 1.6rem); margin: 0; }
   .dock__grid { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 2.2fr) minmax(0, 1.05fr); gap: clamp(18px, 2.4vw, 36px); align-items: end; }
   .dock__p { font-size: 1.05rem; color: var(--ink-2); align-self: center; }
-  .dock__grid :global(.qf--short) { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.4fr) auto; gap: 12px; align-items: end; }
-  .dock__grid :global(.qf--short .qf__foot) { grid-column: auto; }
-  .dock__grid :global(.qf--short .qf__err), .dock__grid :global(.qf--short .qf__done) { grid-column: 1 / -1; }
-  .dock__grid :global(.qf--short textarea) { min-height: 56px; height: 56px; resize: vertical; }
+  .dock__grid :global(.qf--short) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; align-items: start; }
+  .dock__grid :global(.qf--short .qf__row) { grid-column: 1 / -1; gap: 12px; }
+  .dock__grid :global(.qf--short .qf__foot), .dock__grid :global(.qf--short .h-captcha), .dock__grid :global(.qf--short .qf__err), .dock__grid :global(.qf--short .qf__done) { grid-column: 1 / -1; }
+  .dock__grid :global(.qf--short textarea) { min-height: 84px; height: 84px; resize: vertical; }
   .dock__pics { border-left: 1px solid var(--line); padding-left: clamp(16px, 2vw, 28px); display: grid; gap: 10px; font-size: .98rem; color: var(--ink-2); }
   .dock__pics strong { color: var(--spruce-900); }
   .dock__btns { display: flex; gap: 10px; flex-wrap: wrap; }
-  .dock__rate { position: absolute; right: clamp(16px, 3vw, 36px); top: -34px; }
 
   .press-strip { display: flex; align-items: center; gap: clamp(16px, 3vw, 44px); margin-top: clamp(30px, 3vw, 44px); padding-inline: 6px; flex-wrap: wrap; }
   .press-strip__h { font-family: var(--display); font-weight: 500; text-transform: uppercase; letter-spacing: .16em; font-size: .85rem; color: var(--ink-2); }
@@ -158,11 +153,9 @@ const I = '/assets/v5-brand/raster/icons';
     .hero__photo { width: 70%; right: 0; }
     .hero__block { width: 72%; right: -3%; }
     .hero__man { left: 2%; height: calc(100% + 80px); bottom: -110px; }
-    .hero__sign { left: auto; right: 6%; bottom: 25%; font-size: 1.8rem; }
     .hero__rings { background-position: 60% 80%; }
     .dock__grid { grid-template-columns: 1fr; }
     .dock__pics { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 16px; }
-    .dock__rate { position: static; margin-top: 18px; }
   }
   @media (max-width: 640px) {
     .hero { padding-top: 26px; }
@@ -180,6 +173,5 @@ const I = '/assets/v5-brand/raster/icons';
     .dock__grid :global(.qf--short) { grid-template-columns: 1fr; }
     .dock__grid :global(.qf--short .qf__btn) { width: 100%; }
     .dock__card { padding-top: 40px; }
-    .dock__rate :global(.ru) { width: 100%; }
   }
 </style>

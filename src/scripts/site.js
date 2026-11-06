@@ -98,7 +98,7 @@
     required.forEach((el) => el.addEventListener('input', () => {
       if (el.value.trim()) el.removeAttribute('aria-invalid');
     }));
-    form.addEventListener('submit', (e) => {
+    const valid = () => {
       let ok = true;
       required.forEach((el) => {
         const bad = !el.value.trim() || (el.type === 'tel' && el.value.replace(/\D/g, '').length < 8);
@@ -106,13 +106,75 @@
         if (bad) { el.setAttribute('aria-invalid', 'true'); ok = false; }
       });
       if (!ok) {
-        e.preventDefault();
         if (err) err.hidden = false;
         const firstBad = $('[aria-invalid="true"]', form);
         firstBad && firstBad.focus();
-        return;
-      }
-      if (err) err.hidden = true;
+      } else if (err) err.hidden = true;
+      return ok;
+    };
+    /* Žemėlapio nuoroda Mantui: tiksli, jei paspausta „Mano vieta“, kitaip paieška pagal įrašytą adresą */
+    const addr = $('input[data-addr]', form);
+    const mapField = $('[data-addr-map]', form);
+    const mapLink = () => {
+      if (!addr || !mapField) return '';
+      const q = addr.value.trim();
+      mapField.value = addr.dataset.coords ? 'https://www.google.com/maps?q=' + addr.dataset.coords
+        : q ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q) : '';
+      return mapField.value;
+    };
+    /* Vienu paspaudimu: naršyklės vieta → adresas (Photon). Nepavykus lieka rankinis įvedimas. */
+    const loc = $('[data-locate]', form);
+    const locMsg = $('[data-locate-msg]', form);
+    const say = (t) => { if (locMsg) { locMsg.textContent = t; locMsg.hidden = !t; } };
+    if (addr) addr.addEventListener('input', () => { delete addr.dataset.coords; say(''); });
+    if (loc && addr && 'geolocation' in navigator) {
+      loc.hidden = false;
+      loc.addEventListener('click', () => {
+        if (loc.getAttribute('aria-busy') === 'true') return;
+        loc.setAttribute('aria-busy', 'true'); say('Nustatome vietą…');
+        navigator.geolocation.getCurrentPosition(async (pos) => {
+          const { latitude: lat, longitude: lon, accuracy } = pos.coords;
+          const before = addr.value;
+          const point = lat.toFixed(5) + ',' + lon.toFixed(5);
+          let found = '';
+          try {
+            const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 5000);
+            const r = await fetch('https://photon.komoot.io/reverse?lat=' + lat + '&lon=' + lon + '&limit=1', { signal: ctl.signal });
+            clearTimeout(t);
+            const p = r.ok ? ((await r.json()).features || [])[0]?.properties : null;
+            if (p) found = [[p.street, p.housenumber].filter(Boolean).join(' '), p.city || p.town || p.village || p.district || p.county].filter(Boolean).join(', ');
+          } catch (e) { /* lieka koordinatės */ }
+          loc.removeAttribute('aria-busy');
+          if (addr.value !== before) return; /* žmogus jau rašo pats */
+          addr.value = found || point.replace(',', ', ');
+          addr.dataset.coords = point;
+          say(accuracy > 500 ? 'Vieta apytikslė. Patikslinkite adresą.' : 'Vieta nustatyta. Patikrinkite adresą.');
+        }, (e) => {
+          loc.removeAttribute('aria-busy');
+          say(e.code === 1 ? 'Naršyklė neleido nustatyti vietos. Įrašykite adresą ranka.' : 'Nepavyko nustatyti vietos. Įrašykite adresą ranka.');
+        }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 60000 });
+      });
+    }
+    /* Telefonuose: atidaro žmogaus SMS programėlę su užpildyta žinute. Išsiunčia pats žmogus. */
+    const smsBtn = $('[data-sms-send]', form);
+    if (smsBtn && window.matchMedia('(pointer: coarse)').matches) {
+      smsBtn.hidden = false;
+      smsBtn.addEventListener('click', (e) => {
+        if (!valid()) { e.preventDefault(); return; }
+        const val = (n) => { const f = form.elements[n]; return f ? f.value.trim() : ''; };
+        const body = ['Sveiki, norėčiau sužinoti kainą.',
+          val('Paslauga') && 'Paslauga: ' + val('Paslauga'),
+          'Darbas: ' + val('Žinutė'),
+          val('Vietovė') && 'Adresas: ' + val('Vietovė'),
+          mapLink() && 'Žemėlapis: ' + mapField.value,
+          val('Vardas') && 'Vardas: ' + val('Vardas'),
+          'Tel.: ' + val('Telefonas')].filter(Boolean).join('\n');
+        smsBtn.href = smsBtn.dataset.sms + '?&body=' + encodeURIComponent(body);
+      });
+    }
+    form.addEventListener('submit', (e) => {
+      if (!valid()) { e.preventDefault(); return; }
+      mapLink();
       if (form.dataset.preview === '1') {
         e.preventDefault();
         form.classList.add('is-done');

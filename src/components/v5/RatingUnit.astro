@@ -1,30 +1,28 @@
 ---
-/* Oficialus įvertinimo vienetas: Paslaugos.lt ženklas + auksinės žvaigždės + 5,0 + atsiliepimų skaičius.
-   Skaičiai tik iš src/data/atsiliepimai.js. variant: chip | card | dock */
+/* Bendras įvertinimas: auksinės žvaigždės + įvertinimas + visų šaltinių atsiliepimų skaičius, veda į mūsų atsiliepimų puslapį.
+   Šaltinis rodomas tik pačiose atsiliepimų kortelėse. Išimtis: source — viršutinė juosta (naudotojas paliko Paslaugos.lt).
+   Skaičiai tik iš src/data/atsiliepimai-visi.js. variant: chip | card | dock */
 import { site } from '@data/site.js';
-import { atsiliepimuKiekis, atsiliepimuVidurkis } from '@data/atsiliepimai.js';
-import Mark from '../Mark.astro';
+import { bendrasKiekis, bendrasIvertinimas } from '@data/atsiliepimai-visi.js';
 import Stars from './Stars.astro';
-const { variant = 'card', dark = false, loc, class: cls } = Astro.props;
-const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
+const { variant = 'card', dark = false, loc, class: cls, source = false } = Astro.props;
+const rating = bendrasIvertinimas.toFixed(1).replace('.', ',');
+const ext = source ? { target: '_blank', rel: 'noopener' } : {};
 ---
-<a class:list={['ru', `ru--${variant}`, { 'ru--dark': dark }, cls]} href={site.atsiliepimai.profilis} target="_blank" rel="noopener" data-loc={loc}>
+<a class:list={['ru', `ru--${variant}`, { 'ru--dark': dark }, cls]} href={source ? site.atsiliepimai.profilis : '/atsiliepimai'} {...ext} data-loc={loc}>
   {variant === 'chip' ? (
     <>
       <Stars size={15} />
       <span class="ru__n">{rating}</span>
-      <span class="ru__c">{atsiliepimuKiekis} atsiliepimai <span class="ru__src">Paslaugos.lt</span></span>
+      <span class="ru__c">{bendrasKiekis} atsiliepimai {source && <span class="ru__src">Paslaugos.lt</span>}</span>
     </>
   ) : (
-    <>
-      <span class="ru__mark"><Mark name="paslaugos" height={variant === 'dock' ? 30 : 34} label="Paslaugos.lt" /></span>
-      <span class="ru__body">
-        <span class="ru__top"><span class="ru__n">{rating}</span><Stars size={variant === 'dock' ? 18 : 20} /></span>
-        <span class="ru__c">{atsiliepimuKiekis} atsiliepimai</span>
-      </span>
-    </>
+    <span class="ru__body">
+      <span class="ru__top"><span class="ru__n">{rating}</span><Stars size={variant === 'dock' ? 18 : 20} /></span>
+      <span class="ru__c">{bendrasKiekis} atsiliepimai</span>
+    </span>
   )}
-  <span class="sr-only"> (atsidaro naujame lange)</span>
+  {source && <span class="sr-only"> (atsidaro naujame lange)</span>}
 </a>
 <style>
   .ru { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; }
@@ -37,7 +35,6 @@ const rating = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
   .ru--chip:hover .ru__src { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
   .ru--card, .ru--dock { background: #fff; border-radius: var(--r); padding: 12px 18px 12px 14px; box-shadow: var(--sh-2); transition: transform var(--t), box-shadow var(--t); }
   .ru--card:hover, .ru--dock:hover { transform: translateY(-2px); }
-  .ru__mark { display: flex; align-items: center; padding-right: 12px; border-right: 1px solid var(--line); }
   .ru__body { display: grid; gap: 3px; }
   .ru__top { display: flex; align-items: center; gap: 8px; }
   .ru--card .ru__n { font-size: 1.7rem; }

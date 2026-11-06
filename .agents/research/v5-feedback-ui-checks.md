@@ -22,3 +22,13 @@ Scope: `.agents/research/v5-feedback-approved-2026-11-06.md` items 1–7, 11 and
 
 ## Not verified
 768/360 screenshots of changed states not individually viewed; reduced-motion pass not re-run this round; keyboard arrow-key scrolling of the review track; real Web3Forms delivery of the chat variant (production only).
+
+## Round 2 (6 Nov, user feedback after homepage review)
+Verified with Playwright and Chrome on preview :4331 (noindex, nofollow), mocked Photon reverse lookup:
+- Location granted fills the address and exact Maps link; denied and low-accuracy messages show; editing the address falls back to a search link.
+- Phone and job required; name optional in hero and dialog; empty submit shows the error.
+- Prefilled SMS link only with coarse pointer; body has job, address, map link, name, phone. Not opened in a real SMS app.
+- Preview submit inert: 0 POSTs to Web3Forms.
+- 12 review cards carry a source logo; ratings link to /atsiliepimai; top bar keeps Paslaugos.lt.
+- No page overflow and no console errors at 1440, 1024, 390; live map loads.
+Not verified: real geolocation on a phone, live Photon reverse response, real Web3Forms delivery, hCaptcha layout in the hero card on a live domain.

@@ -22,8 +22,8 @@ const servicesActive = path.startsWith('/paslaugos');
 <div class="util" aria-label="Darbo laikas ir įvertinimas">
   <div class="util__in">
     <p class="util__hrs"><img class="ico" src="/assets/v5-brand/raster/icons/ui-clock-160.png" alt="" width="18" height="18" style="--is:18px" />Kasdien 08:00–18:00, ir savaitgaliais</p>
-    <RatingUnit variant="chip" loc="util-rating" />
-    <a class="util__sms" href={site.smsHref} data-loc="util-sms"><img class="ico" src="/assets/v5-brand/raster/icons/ui-camera-160.png" alt="" width="18" height="18" style="--is:18px" />Kainą pasakome pagal nuotrauką</a>
+    <RatingUnit variant="chip" source loc="util-rating" />
+    <a class="util__sms" href={site.smsHref} data-loc="util-sms"><img class="ico" src="/assets/v5-brand/raster/icons/ui-camera-160.png" alt="" width="24" height="24" style="--is:24px;filter:none" />Kainą pasakome pagal nuotrauką</a>
   </div>
 </div>
 <header class="hdr" id="top">
@@ -56,8 +56,8 @@ const servicesActive = path.startsWith('/paslaugos');
               ))}
               <div class="svc__col svc__col--cta">
                 <p class="svc__head">Nežinote, kaip vadinasi darbas?</p>
-                <p>Nufotografuokite medį ir atsiųskite. Pasakysime, ką daryti ir kiek kainuos.</p>
-                <a class="btn btn--primary btn--sm" href={site.smsHref} data-loc="nav-sms">Siųsti SMS</a>
+                <p>Aprašykite, ko reikia. Pasakysime, ką daryti ir kiek kainuos.</p>
+                <button type="button" class="btn btn--primary btn--sm" data-quote data-loc="nav-quote">Gauti kainą</button>
                 <a class="link-arrow" href="/paslaugos">Visos paslaugos</a>
               </div>
             </div>
