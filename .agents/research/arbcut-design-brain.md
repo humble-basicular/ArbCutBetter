@@ -1,25 +1,32 @@
-# ArbCut design brain (v4) — rules, system and build spec
+# ArbCut design brain (v5)
 
-Date: 2026-11-06. Author: Claude Opus 5.5 (lead). Status: **written; not yet user-reviewed.**
-Inputs: [`v4-learnings.md`](v4-learnings.md) (user rejections, §2), [`v4-preserved-content-contract.md`](v4-preserved-content-contract.md) (binding), [`v4-reference-study.md`](v4-reference-study.md) + its CLOSURE table (evidence and gaps), the per-site `v4-reference-study/bulk-findings-*.md`, and the agency brain `~/WebAgency Biz/brains/04-websites.md` (read only; not edited).
+Date: 2026-11-06. Author: Claude Opus 5.5 (v5 lead). Status: **written; the user judges the built homepage, not this file.**
+Replaces v4 Parts B and C, which made the site flat and restrained ("block after block"). Part A2 and A4 are carried over unchanged because the brief keeps them.
 
-Confidence: every rule below is a **design judgement** from screenshots actually viewed. No reference site's conversion rate was measured. Where a rule rests on the user's own words, it is marked **[USER]**; those win over any reference.
-
-The document has three parts:
-- **Part A:** reusable rules for any home-service client site, agency-wide.
-- **Part B:** ArbCut-specific decisions: palette, type, devices, imagery.
-- **Part C:** the build spec per page type, with acceptance checks.
+Inputs actually viewed for this version, at readable size (1000 px wide tiles, 1500 px tall):
+- All 20 walkthrough crops in `v4-success-walkthrough/` (the 14 agreed steps) plus `vensland-logo-avoid.png`.
+- Full 1440 homepages: Genz-Ryan (6 tiles, hero to footer), Puetz (5, hero to footer), GreenTek (4 of 11, hero to products), Home Front (4 of 5, hero to news), Smock (2 of 5, hero to values band), Northface (2 of 6, hero to areas). Phones at 390: Genz (first tile), Puetz (first tile). One inner page: Genz `/service-area/apple-valley-mn` 1440. Captures at `~/.ai-powerhouse/research-captures/arbcut-v4/<site>/home/`.
+- The user's four v4 fault screenshots (hero and form, proof row, reviews, map) and every real ArbCut photo (`src/assets/photos`, `public/assets/images/**`, 86 gallery thumbnails).
+Not viewed this time: remaining GreenTek/Smock/Northface tiles, Bears/Thelen beyond their crops, other inner pages. Their earlier notes are in `v4-reference-study/bulk-findings-*.md`.
 
 ---
 
 ## Part A — Reusable home-service rules (agency-wide)
 
-### A1. What actually made the strong references feel like real companies
-1. **A real person in the hero or in a dedicated owner band.** Puetz's owner and dog, HomeFront's signed owner statement, Genz's uniformed crew, Northface's fleet photos and True Air's crew all show this. It was the most distinctive section on every strong site. Abstract backgrounds never were. (`v4-learnings.md` §3; `bulk-findings-homefrontexteriorsmn.com.md` Copy 5; `bulk-findings-trueairconditioningandheating.com.md` Copy 1)
-2. **One colour system repeated everywhere, plus at most two brand devices.** Genz and Smock prove that repetition creates a brand. Thelen and Betono (5 devices) show that a third device turns into noise. (`bulk-findings-callthelen.com.md` Avoid 5; `bulk-findings-betonogaminiai.lt.md` Avoid 5)
-3. **Proof uses the source's own official mark, beside the action.** Examples: the Google G on review cards (Genz, Thelen, Northface), official marks under the submit button (True Air) and a rating dock under the form (Northface). Home-made text badges read as self-awarded. **[USER]** "the more official it looks, the more trust".
-4. **Unequal hierarchy.** True Air uses one tall lead service with a wide second tile, instead of six equal cards. Equal-weight card runs are the commonest mobile defect (Veterans, Glassperts, VensLand at 4,150 px).
-5. **A page-specific composition inside one shared vocabulary.** Puetz keeps its type, colour and photo treatment across pages, but each page type lays out its own job. Repeating the homepage skeleton on every page is not what makes a site coherent. (`v4-reference-study.md` provisional rules table)
+### A1. What actually makes the strong references feel like a real, proud company
+Read from the captures above, not from memory.
+1. **The company is in the picture, big, in the first second.** Genz: the owner in a branded polo standing in front of a row of branded vans, cut out over a blue sunburst. Puetz: the yard sign with the logo and phone. Home Front: the owner's kids holding the yard sign. Smock: a technician at a front door. No site opens on a stock lawn.
+2. **Full, layered screens.** Every strong hero has 4–6 layers: texture or rays, a brand shape, a real photo, a cut-out person crossing the photo edge, a tilted label, badges sitting on a curved edge, and a form card that crosses into the next band. Nothing sits in a lonely white rectangle.
+3. **One owned colour, used as whole bands.** Genz alternates full red, full blue and white, with yellow only for tags. Smock runs a full red band behind the process with the photo tinted red. GreenTek runs a full green band. The colour is the band, not the button.
+4. **A visual world of their own.** Genz: sunburst rays, halftone dots, tilted yellow tags, curved band edges with a stroke. Puetz: blueprint line drawings behind the hero, gold ribbon tags, tree-ring texture behind the FAQ, pine silhouettes in the footer, the state outline with a fire tower. GreenTek: roof-grid lines on the green band. Home Front: a red square between offset rounded photos. Each world repeats on every section.
+5. **Headlines have more than one voice.** Light tracked kicker then heavy display (all six sites); a highlighted word in the brand colour (Home Front "Creating Homes"); a tilted label box (Genz hero, process step names); a hand script line (Thelen "Local Home Comfort Experts").
+6. **Named things.** "Puetz Promise", "HomePulse", "Smock C.A.R.E. Process", "Customer For Life Mindset", "Genz-Ryan Guarantee". A name turns a paragraph into an asset.
+7. **Proof is official and everywhere.** Source logo + gold stars + number + count, locked into one unit: Genz header "G 4.7 Google Rating, based on 9097 reviews"; GreenTek's white rating card hanging off the form "4.7 | 696 reviews"; Northface's three-up dock under the form; Puetz's gold ribbon with G and f ratings; certification and maker logos in a strip right under the hero (Puetz EDCO/LP/GAF, GreenTek GAF/BBB/TAMKO). Reviews show stars, a name, an avatar or initials and the source mark; the totals appear as giant numbers (Genz "4.70" and "9097" on tilted white cards).
+8. **Custom icons, one style.** Genz: full-colour flat icons in a white circle above each card. Puetz: white line icons on darkened service photos. Smock: red line icons in white rounded tiles. Never mixed styles; never emoji.
+9. **The owner signs it.** Puetz: owner cut-out over the giant logo mark, quote, handwritten signature. GreenTek: owner cut-out breaking the top of a black band, quote, signature. Home Front: owner with a "100% client satisfaction guaranteed" seal and a signature.
+10. **Small human moments.** GreenTek: a speech bubble with a face, "You'll have an assigned team member every step". Northface: rep cards with photos. Home Front: a review card overlapping a project photo with initials in a red ring.
+11. **Visible finish.** Soft long shadows under cards, offset colour blocks behind photos (Genz red offset behind the map and team photo), rounded corners used consistently, curved band edges, a utility bar above the header.
+12. **A sales-page spine.** Hero and form → proof strip → services → process → owner → reviews → area → final call band → footer.
 
 ### A2. Defects that recur across references — never ship these
 - Wrong-locality copy on a locality page (True Air, Puetz Faribault/Albert Lea, Thelen). Guard: every town page must render its own town name in its H1, intro and FAQ. Check this at build time.
@@ -29,127 +36,133 @@ The document has three parts:
 - Darkened hero photos that hide their subject (VensLand, Betono, Thelen). Guard: at most a 35% scrim, and only behind the text column.
 - The same promotional tail (resources + map + towns + CTA + footer) on every page, longer than the content on short pages (Thelen ≈2,500 px). Guard: inner pages get one CTA band and the footer, nothing more.
 - Empty or default-widget pages (Thelen `/services`), lorem ipsum, placeholder phone numbers, grey "image loading" panels.
-- Compressed multi-column tables at 390 (Puetz deck comparison). Guard: rows become cards at ≤600 px, as in Betono's price cards (`bulk-findings-betonogaminiai.lt.md` Copy 1).
+- Compressed multi-column tables at 390 (Puetz deck comparison). Guard: rows become cards at ≤600 px.
 - Emoji, SVG, icon-font or Unicode-glyph pictograms. **[USER]** "dont even ever use svgs for pictograms".
 - Invented proof copy, stamps and seals. **[USER]** "nesąmonė rašyti LRT rašė apie Mantą… slopas".
 - One action carrying many labels (Betono 6, VensLand). Guard: one label per action across the site.
 
-### A3. Layout patterns worth reusing
-| Pattern | Use | Evidence |
-|---|---|---|
-| Form/proof card crossing the hero's bottom edge | Once per page, max | Hook article 6 of 10 heroes; HomeFront home y640–740; VensLand kontaktai |
-| Descriptive small H1 (service + town) with a larger brand line | Every page, within existing headings | Northface 155 locality pages; Puetz |
-| Rating dock: official logo + number + count, at the base of the form | Home hero, quote dialog | Northface; True Air ductwork |
-| Price rows → mobile cards, price top right, full-width action | Prices, service sidebar | Betono suliniu-ziedai/390 |
-| Lead gallery image + "Žiūrėti visas nuotraukas (N)" | Gallery, home moments | VensLand paslaugos/1440 |
-| Service-specific "what to send" prompts beside the form | Service pages | VensLand mini-ekskavatoriaus y420–890 |
-| Steps as a horizontal row on desktop → vertical sequence on mobile | Service "Kaip atliekame" | Thelen home/390; Genz |
-| Town list beside a map, as readable link columns | Home areas, contacts | Genz t18; GreenTek; Thelen t10 |
-| Legal details (company code, address) in the footer | Footer | VensLand Rekvizitai; Betono footer |
-| Useful 404: status text, call action, services link | 404 | Betono, Northface |
+### A3. v4 failure modes (do not repeat)
+Calling the full references "busy" and banning decoration; pale tints with orange only on buttons; "5 iš 5" text instead of stars; text instead of icons; one font in one weight, wide and flat; white card after white card; proof as a logo next to loose text; a rough cut-out with a halo; logos straight from image prompts; a CSS ring diagram passed off as a map; screenshots studied but motion never seen.
 
 ### A4. Mobile acceptance (applies to every client)
-360 and 390 px: `scrollWidth == innerWidth`, the longest Lithuanian word in display type does not break mid-word (VensLand `EKSKAVATORIAU/S`), and header + action bar together stay ≤ 140 px (Betono 124). Phone and quote are reachable in the first screen. Reviews are not hidden on mobile; use load-more instead.
+360 and 390 px: `scrollWidth == innerWidth`, the longest Lithuanian word in display type does not break mid-word (VensLand `EKSKAVATORIAU/S`), and header + action bar together stay ≤ 140 px (Betono 124). Phone and quote are reachable in the first screen. Reviews are not hidden on mobile; use load-more instead. Same energy as desktop (Genz 390: logo big, two coloured action buttons right under the header, the tilted headline tag, badges kept).
 
 ### A5. Process rule **[USER]**
 The user judges built pages at true size, not mockups. Check every element against A2 before showing anything.
 
 ---
 
-## Part B — ArbCut decisions
+## Part B — ArbCut decisions (v5)
 
-### B1. Concept in one line
-"The man in the orange shirt in the tree." ArbCut's identity is Mantas himself (real photos, orange work shirt), his 20 m lift, ropes and real cut timber. The site is a bright, clean photographic surface with spruce structure and one orange accent for actions. No invented decoration.
+### B1. Concept
+**"Mantas's crew, up in the tree."** A proud Kaunas climbing-arborist company: spruce-green bands with growth rings, shirt-orange rope and action, gold for stars and tags, Mantas big in every key screen, and a tree mark used large like Puetz uses its monogram.
 
-### B2. Rejected — never reintroduce **[USER]**
-- v2: cream paper, Source Serif, tiny labels, numbered ledgers.
-- v3 (`bb63bd8` visuals): dark forest everywhere, Oswald capitals everywhere, rust buttons, flat stacked rectangles.
-- v4 mockup: round text stamps, the Unicode ✆, orange SaaS pill buttons with soft orange shadows, an arch frame, the "rašė apie Mantą" stamp and the "savas bokštelis" invented copy.
-- Current shield/leaf logo: "kinda bland". It gets replaced by one of the three Codex options (`public/assets/arbcut-v4-brand/`, pending) once the user picks.
+### B2. Never reintroduce **[USER]**
+- v2: cream backgrounds, serif type, tiny labels, numbered ledgers.
+- v3: dark forest on every band, Oswald capitals, rust buttons, flat rectangles.
+- v4 mockup: round generic text stamps, Unicode ✆, orange SaaS pills with soft shadows, the arch frame, the "rašė apie Mantą" stamp, "savas bokštelis".
+- v4 build: everything in A3.
+- SVG or glyph pictograms. Icons, stars and seals are raster art made for this brand.
 
-### B3. Palette (tokens)
-| Token | Value | Use |
+### B3. Colour — committed bands
+| Token | Value | Role |
 |---|---|---|
-| `--spruce-900` | `#0F2A20` | Footer, the one dark band per page, text on light at large sizes |
-| `--spruce-700` | `#1B4634` | Structure, headings accent, header on scroll |
-| `--spruce-100` | `#E7EFEA` | Quiet alternate section surface |
-| `--paper` | `#FFFFFF` | Main reading surface (white, **not cream**) |
-| `--stone` | `#F3F4F1` | Cards and form fields on white |
-| `--ink` | `#14201A` | Body text |
-| `--ink-2` | `#4A564F` | Secondary text (≥ 7:1 on white) |
-| `--orange` | `#E2611B` | **Actions only**: primary buttons, link underlines, focus ring. Derived from Mantas's real work shirt (`lajoje-vasara.jpg`) |
-| `--orange-ink` | `#B7470C` | Orange text on white, and button hover |
+| `--spruce-950` | `#0B231B` | Utility bar, footer base |
+| `--spruce-900` | `#0F2E23` | Hero band, promise band, reviews band |
+| `--spruce-700` | `#1A4A37` | Ring texture strokes, raised cards on spruce |
+| `--spruce-500` | `#2F7556` | Links on light, small accents |
+| `--spruce-100` | `#E4EFE8` | Light band (area, FAQ); never the main surface twice in a row |
+| `--orange` | `#E2611B` | Shirt orange: emergency band, process band, call buttons, rope line. White text on it only bold ≥ 19 px (3.52:1) |
+| `--orange-ink` | `#B7470C` | Orange text and links on white (5.36:1) |
+| `--gold` | `#F4B731` | Stars, tilted tags, giant review numbers' cards, highlights. Text on gold = `--spruce-950` |
+| `--paper` | `#FFFFFF` | White bands and cards |
+| `--ink` / `--ink-2` | `#13201A` / `#4A5952` | Body text on light |
 
-Contrast is a build check, not an assumption. If white text on `--orange` measures below 4.5:1, use `--orange-ink` as the button fill, or ≥ 19 px bold label text (3:1 large-text rule), and record which one was used. The orange appears on actions only, never as a section fill. Rule from Betono: one reserved colour for one meaning.
+Band rhythm on the homepage: spruce (hero) → white (form dock, logos) → orange (emergency) → white (services) → orange (process) → spruce (promise) → white (crew and work) → light (press) → spruce (reviews) → white (area map) → light (FAQ) → spruce (final call with Lithuania symbol) → spruce-950 (footer). Never two dark bands touching.
 
-### B4. Type
-- **One family, hierarchy by width/weight/size** (Northface rule, A1). Proposal: **Archivo** variable (`@fontsource-variable/archivo`, with the `wdth`+`wght` axes and the latin-ext subset). Display: width 112–125, weight 800, **sentence case**, tracking −0.01em. Body: width 100, weight 400/600, 18 px base, line-height 1.55. If the build finds that this package lacks the `wdth` axis or Lithuanian glyphs, use **Archivo + Archivo Narrow** or **Figtree**, and log the reason. Never use Oswald or a serif.
-- The scale is fluid with `clamp()`. H1 home tops out at ~4.4rem desktop and ~2.6rem at 390. The brand line may be larger than the descriptive H1, as allowed by the contract.
-- Diacritics check: render `ĮŽŪĘĄČŠĖ` and "Avarinių medžių pjovimas", "Lietvamzdžių ir stogo valymas" and "Reklaminių iškabų montavimas" at H1 sizes, at 360/390 px. There must be no clipping and no mid-word break (`hyphens: manual`, `overflow-wrap: normal`; size the type to fit).
+Photos on colour bands are tinted with the band colour (multiply/overlay, as Smock and Genz service tiles do), never greyed out and never under a scrim above 35%.
 
-### B5. The two brand devices (and nothing else)
-1. **The cut corner.** Every photo frame, the form card and the CTA band have exactly one corner cut at 45° (`clip-path`, about 28 px desktop and 18 px mobile), always the top-right. It is the name ("Cut") made physical. Do not stack it, outline it or animate it.
-2. **Mantas layered over the frame edge.** One real cut-out of Mantas (from `mantas-portretas.jpg`, extracted with macOS Vision subject-lift, so no generated imagery) overlaps a photo or band edge. It is used **once on the home hero and once on /apie only**. The cut-out must be clean at 2× (inspect the hair edges). If the extraction is poor, use the uncut portrait inside a cut-corner frame instead. Do not fake it.
-
-Separate sections with surface colour and spacing; **no rules, borders or seams between sections** (agency brain, 25 Oct). The only motion is A-brain's (Ken Burns hero 1.08→1 over 22 s, fade-up 24 px with ≤350 ms stagger, smooth same-page scroll) under `prefers-reduced-motion: no-preference`. Content is visible without JS.
-
-### B6. Imagery
-- **All 15 real photos are portrait** (e.g. `autobokstelis-prie-namo.jpg` 1667×2000, `medis-prie-muro.jpg` 1500×2000, `pusis-alpinistas.jpg` 640×1339). Do not force them into full-bleed landscape heroes, because that crops the subject and upscales the image. Use tall frames: a split hero (text + tall photo), paired portrait frames and vertical gallery cards.
-- Only photos ≥ 1,000 px wide go in emphasised slots. Smaller ones (`autobokstelis-pusyne` 675, `pusis-alpinistas` 640, `egle-prie-namo` 671) go in small frames or the gallery.
-- The light overlay rule applies (A2). Captions go under photos, not on them. Watermarked files (`medziu-genejimas.jpg`, `about-collage.jpg`) are excluded (learnings rule 15).
-- **Open input:** the user/Mantas still needs to supply original full-size landscape photos. This was requested in learnings §6 and never sent; agents must not message the client.
-
-### B7. Trust — exactly what may appear
-| Proof | Display | Source of truth |
+### B4. Type — three voices
+| Voice | Family | Use |
 |---|---|---|
-| Paslaugos.lt rating | Official Paslaugos.lt logo + "5,0" + "123 atsiliepimai", linked to the profile. **Dominant** source | `src/data/atsiliepimai.js` (`atsiliepimuVidurkis`, `atsiliepimuKiekis`), rendered, never typed |
-| Google | Official G mark on Google-sourced review cards only. **No Google rating number** while `site.google.placeId` is empty (contract: production shows no Google card) | `src/data/site.js` |
-| Press | Official LRT.lt and Valstietis.lt logos in a "press" row, each linking to its article. The bb63bd8 words stay as the link's accessible name | `src/data/spauda.js` |
-| Experience / kit | "15 metų" and "autobokštelis iki 20 m", from data, as plain text in the hero, not as badges | `atsiliepimai.js` `patirtisMetai`; `site.js` |
-| Championship | **New copy, approved fact only**: Mantas took part in the Baltic States Tree Climbing Championship 2023. Placement unknown, so never imply a result. Not in bb63bd8 (`git grep` = 0), so the build must show its exact Lithuanian wording to the user before adding it | user answer 5 Nov, `v4-learnings.md` §2 |
-| Not allowed | AggregateRating/Review schema, combined totals, seals, "#1", 24/7, arrival-time guarantees | contract §Metadata/§Conversion |
+| Display | **Bricolage Grotesque** variable (wght 200–800, wdth 75–100, opsz 12–96) | Headlines 800, opsz 96, wdth 88–92, tight leading 0.95–1.02, letter-spacing −0.02em. The light kicker line: 400, uppercase, tracking 0.16em |
+| Text | **Figtree** variable (300–900) | Body 17–18 px desktop, 16–17 px phone, line-height 1.55; UI labels 600–700 |
+| Hand | **Caveat** variable (400–700) | Mantas's own voice only: speech bubble, the promise sign-off, handwritten notes on photos ("čia aš"). Max one hand line per section |
 
-Ratings show as the number next to the official logo. **No star glyphs.** If the user later wants stars, they must come as a raster set from Codex `imagegen` (rule 6). The official mark files arrive from the Codex child task into `public/assets/marks/` together with `SOURCES.md`. Use them unmodified.
+All three cover every Lithuanian letter (fonttools check on the latin-ext subsets, 2026-11-06). Display never in all caps except tilted tags and the kicker. Not Archivo, not Oswald.
 
-### B8. Controls without pictograms
-Use text labels: "Meniu" / "Uždaryti", "Ankstesnė" / "Kita" in the lightbox, "Skambinti" + the number, "SMS", "El. paštu". External links get a visually-hidden "(atsidaro naujame lange)" instead of an icon. FAQ open/close uses a CSS-drawn plus/minus made from two bars (a control state, not a pictogram); if the user objects, change it to the text "Rodyti". `Icon.astro` and all its call sites get removed.
+Headline patterns (each section uses one): kicker + heavy line; heavy line with one word on a gold highlighter stroke; tilted tag box above or across the headline; hand line under the headline.
+
+### B5. The ArbCut visual world (repeat everywhere)
+1. **Growth rings.** Organic, slightly irregular tree rings drawn in a slightly lighter tone on spruce bands, radiating from behind Mantas in the hero and from behind the promise cut-out. Procedural raster, not CSS circles. On orange bands the same rings at low contrast.
+2. **The rope.** An orange braided arborist rope as the stroke along curved band edges, as the headline underline, and as the line that links the process steps. Raster rope texture on a curve.
+3. **Curved band edges.** Hero, promise and reviews end on a gentle arc with the rope along it (Genz arc + stroke).
+4. **Tilted tags.** Gold or white boxes rotated −2°, Bricolage 800 caps: the hero kicker, process step names, "123 atsiliepimai".
+5. **Offset blocks.** Photos and the map sit on an offset orange or spruce block (Genz red offset), with 14 px radius and a long soft shadow.
+6. **The height scale.** A slim 0–20 m measuring scale beside the lift photo and on the lift service tile.
+7. **Treeline.** A spruce treeline silhouette rising behind the final call band and into the footer.
+
+### B6. Logo — professional process (separate stage, see `v5-logo/PROCESS.md`)
+Tree-like, ownable, legible at 32 px, built as real vector on a grid with an adapted real typeface, tested on the shirt, the lift and a van. Must not resemble VensLand: no round badge, no symmetric leafy crown, no drawn leaves, no roots, no grass, no lime. Not generic landscaping. AI only for exploring. Shown to the user as several options in the real header at true size; the build uses the strongest until the user picks. Used big: header, promise band (giant mark behind Mantas), footer, favicon, seal.
+
+### B7. Proof — official units, real data only
+- **Paslaugos.lt rating unit:** official Paslaugos.lt logo + five raster gold stars + "5,0" + "123 atsiliepimai", one designed white unit with shadow; links to the profile. Numbers from `src/data/atsiliepimai.js`. Used in the utility bar, header (desktop), form dock and reviews band.
+- **15 metų seal:** the one seal for a real value: a growth-ring medallion "15 metų patirtis" (real figure, `patirtisMetai`). Raster.
+- **Lift badge:** "Nuosavas autobokštelis iki 20 m" with the raster lift icon.
+- **Press:** official LRT.lt and Valstietis.lt marks, linked to the actual articles, labelled honestly ("Apie Mantą rašė" is banned; use "Interviu LRT.lt" / "Straipsnis Valstietis.lt" with the date).
+- **Gear brands:** strip after the press marks only once Mantas confirms which brands he uses; preview shows a clearly marked placeholder slot, never shipped.
+- **Google:** nothing while `site.google.placeId` is empty. No AggregateRating schema (unchanged).
+- **Championship:** "Baltic States Tree Climbing Championship 2023" participant, wording pending the user (Q4). The orange championship shirt photo itself is real and may be used.
+
+### B8. Icons, stars, seal, textures — raster set
+One style: flat two-colour illustrations (spruce `#0F2E23` + orange `#E2611B`, gold `#F4B731` accents), chunky 3 px-equivalent outlines, slight hand-made wobble, transparent PNG/WebP at 2× sizes, each inside a white circle when placed on colour (Genz pattern). Made by Codex `imagegen` from an explicit brief, checked by the lead at 48 and 96 px. Textures (rings, rope, treeline) are procedural or traced by the lead. Never presented as photos of ArbCut work.
+
+### B9. Imagery
+- Real photos first: Mantas portrait (orange championship shirt, helmet, saw) is the hero subject; the lift at the brick house; climbers in crowns; storm damage; the fiskaras truck; stump grinder; winter larch.
+- New clean cut-out of Mantas from `mantas-portretas.jpg` with a proper matte (Apple Vision subject mask, edge decontamination), no halo, no green fringe.
+- Gallery images are 283×230: small cards and strips only, never enlarged.
+- AI imagery only where no real photo can fill the slot: textures, band backgrounds, map art, icons, service tiles for services without a sharp photo. Captions never claim AI images are ArbCut jobs.
+
+### B10. Motion (detail in `v5-motion-study.md`)
+Subtle, crafted, from real timings measured on the references: section reveals (fade + 16–24 px rise), slow parallax on layered hero and promise layers, count-up on 5,0 / 123 / 15 / 20, hover lift on tiles and cards, the rope drawing along the band edge once. `prefers-reduced-motion`: everything static. Without JS: all content visible.
+
+### B11. Map
+MapLibre GL JS with OpenFreeMap vector tiles (free, no key), custom style in brand colours, loads by itself when near the viewport. Kaunas base pin, nine served-town pins (links), a soft coverage zone drawn around the served towns (no invented radius), Šiauliai and Klaipėda marked "per toli" with a direction cue. Attribution: OpenFreeMap, © OpenMapTiles, © OpenStreetMap contributors. Static fallback image + town links when WebGL or JS is missing.
 
 ---
 
-## Part C — Build spec per page type
+## Part C — Homepage spec (v5) and later pages
 
-**Binding for every page:** the copy, section order, headings, link graph, metadata, schema, form fields, IDs and script hooks of `bb63bd8`, exactly as listed in the contract. Only the visual layer changes. The single exception is B7's championship line, which is gated on user wording.
+### C1. Homepage, top to bottom
+| # | Band | Content (existing headings kept) | 14-step |
+|---|---|---|---|
+| 0 | Utility bar (spruce-950) | Hours, Paslaugos.lt rating unit (small), "Atsiųskite nuotrauką" SMS link | 7, 11 |
+| 1 | Header (white) | Big logo, nav (unchanged links), rating unit (desktop), orange phone button, spruce "Gauti kainą" | 3, 4 |
+| 2 | Hero (spruce, rings) | Tilted gold tag with `hero__who`; H1 unchanged; lead; phone + quote buttons; Mantas cut-out large in front of the lift photo on an offset block; height scale; arc edge with rope; proof units on the arc (rating, 15 metų seal, lift, press) | 1, 2, 3, 6 |
+| 3 | Form dock (white card crossing the arc) | Tab label "Kiek kainuos?" (H2 kept), short form, SMS/e-mail photo buttons, rating unit hanging off the card; logo strip: LRT, Valstietis, gear placeholder | 2, 3 |
+| 4 | Emergency (orange) | H2 "Medis nuvirto ar tuoj virs?", storm photo tilted with white border, big white phone button | 5 |
+| 5 | Services (white) | H2 kept; three big photo tiles with white icon circle + tilted name + price; price board as a designed price list with icons | 9 |
+| 6 | Process = SendPhotos (orange, rings) | H2 "Atsiųskite nuotraukas. Pasakysime kainą." kept; five named steps on a rope, raster icons, Mantas's Valstietis quotes, what-to-photograph list, SMS/e-mail actions; speech bubble with Mantas's face | 8, 12 |
+| 7 | Manto pažadas (spruce) | Cut-out over the giant logo mark, drafted promise text and signature **placeholders, preview only** | 7 |
+| 8 | Crew and work = Moments (white) | H2 "Taip atrodo darbas" kept; big overlapping real photos with hand captions; kit row (lift, ropes, fiskaras) | 10 |
+| 9 | Press (light) | LRT and Valstietis quotes as now, official marks, big quote | 3 |
+| 10 | Reviews (spruce, rings) | Giant "5,0" and "123" on gold tilted cards, review cards with gold stars and initials, filters and load-more kept | 11 |
+| 11 | Area (white) | H2 kept; MapLibre map on an orange offset block; town links with raster pin icons; hauling rule | 13 |
+| 12 | FAQ (light) | Unchanged content and call card | — |
+| 13 | Final call (spruce) | Lithuania outline symbol with the tree mark rising from Kaunas, call + quote | 6 |
+| 14 | Footer (spruce-950) | Same links as now, big logo, treeline | 4 |
+Section order change versus bb63bd8: SendPhotos moves before Moments, the promise and final call bands are new. Headings, links, forms, hooks and `data-loc` stay; every change is reported.
 
-| Page type (routes) | Composition |
-|---|---|
-| Header (all) | White, sticky. On scroll it shrinks to 64 px and turns `--spruce-900`. Logo on the left at 4.4rem/3rem (agency brain). Desktop nav as in the contract. On the right: "Skambinkite kasdien 08–18" + the number in display type, then the orange "Gauti kainą". Mobile: logo, number, "Meniu". The full-screen menu keeps the contract's order and its sticky SMS/quote foot. |
-| Home `/` | **Hero:** split layout. Left: who-line, H1, lead, a large call button (number in display type), hours, proof row (Paslaugos.lt logo + rating, 15 metų, LRT logo link). Right: tall `autobokstelis-prie-namo` (or `medis-prie-muro`) in a cut-corner frame, with the Mantas cut-out overlapping its left edge. The short form card crosses the hero bottom (the page's one overlap). **Emergency:** a single `--spruce-900` band. **Services:** a lead tile (pavojingi medžiai, tall) + two tiles + the full 12-row price list as two columns, which become cards on mobile. **Moments:** lead image + count. **Press:** official logos with quotes on white. **SendPhotos:** stone surface. **ReviewBoard:** white cards, source mark per card, filters and load-more kept. **AreaMap:** town link columns + click-to-load map. **FAQ:** sticky call card, as in bb63bd8. |
-| Service ×12 `/paslaugos/*` | PageHero with service H1, a service photo in a cut-corner frame on the right (light page, not dark), and call + quote. Main column: "Kada kreiptis" / "Kaip atliekame" (steps horizontal → vertical) / "Mūsų darbai" photo pair. Sticky aside: price as a large figure, preparation list, quote button carrying `data-service`. Then Sequences, reviews, FAQ, related services + town links as readable columns, and the service CtaBand. |
-| Town ×9 `/medziu-pjovimas-*` | Light hero naming the town; intro + Kaunas-only hauling note (data-driven); grouped service links styled as navigation rows with prices; reviews; town FAQ; other towns; CtaBand. Build check: the town name appears in H1, H2 and FAQ heading (A2). |
-| Services index | PageHero + grouped rows (name, short description, price, whole-row link) + CtaBand. |
-| Prices `/kainos` | Grouped price tables → cards ≤600 px; factors aside; photo-preparation block; FAQ; article link. |
-| Gallery `/galerija` | Sequences first, then filters (pressed state + count) and a portrait-friendly masonry grid; lightbox with text controls. |
-| Reviews `/atsiliepimai` | Hero with the official Paslaugos.lt logo, rating and sync date; profile + "Parašyti atsiliepimą" actions; every original review on white cards. |
-| About `/apie` | Mantas cut-out device #2 (or framed portrait); "Kaip dirbame" values beside photos; "Su kuo dirbame" three kit cards with real photos; reviews; contact facts list; CtaBand. |
-| Contacts `/kontaktai` | Big call card, email, hours, base, social/profile links, all town links; the "Užklausa" full form on a stone card (sticky on desktop). No CtaBand. |
-| Blog index + 4 articles | Calm 46rem reading column, dated hero without actions, phone/quote aside (sticky on desktop, after the article on mobile), FAQ, list of other articles, CtaBand. `s.turinys` HTML stays unmodified; style it with `.prose`. |
-| Legal ×2, success, 404 | Text column. 404/success: status heading, call button, recovery links; keep noindex. |
-| Footer (all) | `--spruce-900`. Logo, contacts, all 12 services grouped, all 9 towns, pages, blog, legal, press links. **Same links at 360 px**. Credit "Programavimas: jarvisweb.lt" per the agency brain. Confirm that with the user, because bb63bd8 is the copy oracle. |
+### C2. Later pages (after the user approves the homepage)
+Page-specific compositions in the same world: service pages open on a spruce hero with the service photo on an offset block and the price unit; town pages on the map; reviews page on the giant numbers; about page on the promise and kit. One CTA band and the footer on inner pages.
 
-### C1. Acceptance checks (the build thread runs them; the reviewer re-runs them)
-1. `PUBLIC_PREVIEW=1 npm run build` passes and emits exactly 37 HTML pages + `llms.txt`.
-2. For each route, compare against the bb63bd8 build: title, description, canonical, H1–H3 text and order, internal href set, JSON-LD (diffed). Allowed differences: only the B7 championship line, if approved, plus visual-only attributes.
-3. 360/390/768/1440 on every route: no horizontal overflow and no mid-word H1 break. Screenshots are actually viewed.
-4. Keyboard: menu open/close/Escape/focus return; quote dialog focus trap and `data-service` preselect; lightbox arrows/Escape; FAQ; review filters and load-more; gallery filters.
-5. Forms are inert in preview: no network request, `__arbcutPreviewSubmits` increments, error and success focus.
-6. Contrast (B3), `prefers-reduced-motion` (0 animated elements), no-JS content visible.
-7. `grep` the built HTML for `<svg` outside official marks, and for `★✆☎` glyphs: expect 0.
-8. Lighthouse-style practical check of LCP image size/priority on home and one service page. Report numbers; do not promise "perfect".
-9. Other-engine (Codex) review of the diff + preview, max 2 rounds, ending in "Verdict: approved/changes requested".
+### C3. Acceptance checks
+1. `PUBLIC_PREVIEW=1 npm run build` passes; homepage diffed against bb63bd8 (title, description, canonical, H1–H3, hrefs, JSON-LD, forms, ids, data-loc); every difference listed.
+2. 360/390/768/1440: no overflow, no mid-word heading break, screenshots viewed.
+3. Keyboard and form checks as in v4 (menu, dialog, FAQ, review filters, inert preview form).
+4. Contrast per B3; reduced motion; no-JS content visible.
+5. Built HTML: 0 inline `<svg>` pictograms, 0 `★✆☎` glyphs.
+6. Map loads without a click, attribution visible, fallback works.
 
-### C2. Open inputs (owner)
-- Logo pick from three options: user (assets pending from the Codex child `arbcut-v4-brand-assets`).
-- Official mark files + usage notes: Codex child; confirm Paslaugos.lt logo usage is acceptable.
-- Championship wording; footer credit line: user.
-- Original landscape photos and confirmation of the 2023 championship photo: Mantas, requested via the user only.
-- Live Google placeId/key: absent; leave the honest preview state.
+### C4. Open inputs (owner)
+Logo pick; Mantas's signature, promise words, gear brands and full-size photos; championship wording; footer credit; Paslaugos.lt "Nr.1" logo acceptability; "iki 200 km" copy vs the map; `/apie` 122 vs 123. All with the user.
