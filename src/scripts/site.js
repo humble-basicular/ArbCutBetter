@@ -130,6 +130,32 @@
   };
   const touch = firstTouch();
 
+  /* Nuotraukos: ribos atitinka Workerio kontraktą (iki 8 failų, 10 MiB, 25 MiB viso); mes leidžiame 5 */
+  const MB = 1024 * 1024;
+  const PHOTO_MAX = 5;
+  const PHOTO_TYPES = /^image\/(jpeg|png|webp|heic|heif)$/;
+  const withType = (f) => {
+    if (f.type) return f;
+    const ext = (f.name.match(/\.(jpe?g|png|webp|heic|heif)$/i) || [])[1];
+    if (!ext) return f;
+    const e = ext.toLowerCase();
+    return new File([f], f.name, { type: 'image/' + (e === 'jpg' ? 'jpeg' : e), lastModified: f.lastModified });
+  };
+  /* Didelę nuotrauką sumažiname telefone, kad greičiau išsiųstų. Nepavykus (pvz., HEIC) paliekame originalą. */
+  const shrink = async (f) => {
+    if (f.size < 1.5 * MB || !/^image\/(jpeg|png|webp)$/.test(f.type) || !window.createImageBitmap) return f;
+    try {
+      const bmp = await createImageBitmap(f);
+      const k = Math.min(1, 2000 / Math.max(bmp.width, bmp.height));
+      const c = document.createElement('canvas');
+      c.width = Math.round(bmp.width * k); c.height = Math.round(bmp.height * k);
+      c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+      bmp.close();
+      const blob = await new Promise((r) => c.toBlob(r, 'image/jpeg', 0.85));
+      return blob && blob.size < f.size ? new File([blob], f.name.replace(/\.[^.]+$/, '') + '.jpg', { type: 'image/jpeg' }) : f;
+    } catch (x) { return f; }
+  };
+
   /* Formos: validacija, siuntimas į Workerį; peržiūroje niekur nesiunčiama */
   $$('form.qf').forEach((form) => {
     const err = $('.qf__err:not([data-send-err])', form);
@@ -209,8 +235,57 @@
           val('name') && 'Vardas: ' + val('name'),
           'Tel.: ' + val('phone')].filter(Boolean).join('\n');
         smsBtn.href = smsBtn.dataset.sms + '?&body=' + encodeURIComponent(body);
+        if (picked.length) fileSay('SMS žinutėje nuotraukas pridėkite patys.');
       });
     }
+    /* Nuotraukų pasirinkimas: failai laikomi sąraše, kad būtų galima pašalinti po vieną */
+    const fileInput = $('[data-files-input]', form);
+    const fileList = $('[data-files-list]', form);
+    const fileMsg = $('[data-files-msg]', form);
+    let picked = [];
+    let prep = Promise.resolve();
+    const fileSay = (t) => { if (fileMsg) { fileMsg.textContent = t; fileMsg.hidden = !t; } };
+    const drawFiles = () => {
+      if (!fileList) return;
+      fileList.textContent = '';
+      fileList.hidden = !picked.length;
+      picked.forEach((p, i) => {
+        const li = document.createElement('li');
+        const img = document.createElement('img');
+        img.src = p.url; img.alt = '';
+        img.addEventListener('error', () => { const s = document.createElement('span'); s.className = 'qf__fn'; s.textContent = p.file.name; img.replaceWith(s); });
+        const x = document.createElement('button');
+        x.type = 'button'; x.textContent = '×'; x.setAttribute('aria-label', 'Pašalinti nuotrauką ' + (i + 1) + ': ' + p.file.name);
+        x.addEventListener('click', () => {
+          URL.revokeObjectURL(p.url);
+          picked.splice(i, 1); fileSay(''); drawFiles();
+          const next = $$('button', fileList)[Math.min(i, picked.length - 1)];
+          (next || fileInput).focus();
+        });
+        li.append(img, x);
+        fileList.append(li);
+      });
+    };
+    const addFiles = async (files) => {
+      let problem = '';
+      for (const raw of files) {
+        if (picked.length >= PHOTO_MAX) { problem = 'Galima pridėti iki ' + PHOTO_MAX + ' nuotraukų.'; break; }
+        const typed = withType(raw);
+        if (!PHOTO_TYPES.test(typed.type)) { problem = 'Tinka tik nuotraukos: JPG, PNG, WEBP arba HEIC.'; continue; }
+        const f = await shrink(typed);
+        if (f.size > 10 * MB) { problem = 'Nuotrauka per didelė: viena gali būti iki 10 MB.'; continue; }
+        if (picked.reduce((a, p) => a + p.file.size, 0) + f.size > 24 * MB) { problem = 'Nuotraukos per didelės: visos kartu gali būti iki 24 MB.'; break; }
+        picked.push({ file: f, url: URL.createObjectURL(f) });
+      }
+      fileSay(problem); drawFiles();
+    };
+    if (fileInput) fileInput.addEventListener('change', () => {
+      const files = [...fileInput.files];
+      fileInput.value = '';
+      fileSay('');
+      prep = prep.then(() => addFiles(files));
+    });
+
     /* Turnstile: nematomas, kol Cloudflare nepaprašo patvirtinimo. Po kiekvieno bandymo žetonas keičiamas. */
     const tsBox = $('[data-turnstile]', form);
     const started = Date.now();
@@ -235,7 +310,10 @@
       return token || new Promise((res) => { waiting.push(res); setTimeout(() => res(''), 15000); });
     };
     const send = async () => {
+      await prep;
       const data = new FormData(form);
+      data.delete('files');
+      picked.forEach((p) => data.append('files', p.file, p.file.name));
       const map = mapLink();
       if (map) data.set('message', data.get('message').trim() + '\n\nŽemėlapis: ' + map);
       data.set('source', touch.source);
@@ -245,8 +323,8 @@
       data.set('elapsed_ms', String(Math.min(86400000, Date.now() - started)));
       const t = await getToken().catch(() => '');
       if (t) data.set('cf-turnstile-response', t);
-      const r = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
-      return r.ok;
+      const r = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' }, signal: AbortSignal.timeout(90000) });
+      return r.status;
     };
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -255,18 +333,28 @@
         form.classList.add('is-done');
         if (done) { done.hidden = false; done.focus(); }
         window.__arbcutPreviewSubmits = (window.__arbcutPreviewSubmits || 0) + 1;
+        window.__arbcutPreviewFiles = picked.length;
         return;
       }
       form.classList.add('is-submitting');
       if (sendErr) sendErr.hidden = true;
-      let ok = false;
-      try { ok = await send(); } catch (x) { ok = false; }
+      const btn = $('.qf__btn', form);
+      const label = btn ? btn.textContent : '';
+      if (btn) btn.textContent = picked.length ? 'Siunčiame nuotraukas…' : 'Siunčiame…';
+      let status = 0;
+      try { status = await send(); } catch (x) { status = 0; }
       form.classList.remove('is-submitting');
+      if (btn) btn.textContent = label;
       token = '';
       if (widget !== undefined && window.turnstile) { try { window.turnstile.reset(widget); } catch (x) { /* kitas bandymas užkraus iš naujo */ } }
-      if (ok) {
+      if (status >= 200 && status < 300) {
+        picked.forEach((p) => URL.revokeObjectURL(p.url));
+        picked = []; drawFiles();
         form.classList.add('is-done');
         if (done) { done.hidden = false; done.focus(); }
+      } else if ((status === 413 || status === 415) && fileMsg) {
+        fileSay('Nuotraukų išsiųsti nepavyko: per didelės arba netinkamo formato. Pašalinkite jas ir bandykite dar kartą.');
+        fileList && fileList.scrollIntoView({ block: 'center' });
       } else if (sendErr) sendErr.hidden = false;
     });
   });

@@ -79,6 +79,7 @@ export const site = {
 
   // --- Funkcijų vėliavėlės (būsimos integracijos — žr. INTEGRATIONS.md) ---
   features: {
+    photoUpload: true,   // nuotraukos formoje: žr. .agents/research/v5-form-launch-steps.md (paleidimo sąlyga)
     chatWidget: true,    // rule-based pokalbių robotas (DUK + užklausos surinkimas)
     reviews: true,       // Google atsiliepimų sekcija (rodo „palikite atsiliepimą", kol nėra realių)
   },
