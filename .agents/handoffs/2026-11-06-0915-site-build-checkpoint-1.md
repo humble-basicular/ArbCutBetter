@@ -17,3 +17,8 @@ Reason: Claude session 90% used.
 4. Codex gpt-6.1-sol high review (max 2 rounds), local noindex preview, board update, final report.
 5. Brand assets from Codex2 child `arbcut-v4-brand-assets`: not landed yet; slot in when research thread sends commit.
 Limits unchanged (see 2026-11-06-0710 handoff).
+
+## Update 09:20 — brand assets integrated
+- Cherry-picked 8345120 (public/assets/arbcut-v4-brand/**, public/assets/marks/**; now owned by this thread).
+- Mark.astro now uses google-g.png, lrt.svg, valstietis.webp automatically. Paslaugos.lt forced to plain text (`TEXT_ONLY`) until its SVG ("Nr.1" banner + Ukraine ribbon) is checked at rating size; never edit the file; flag to user.
+- TODO: Logo default = option 1 (`logo-1-dark/light.png`, `mark-1.png`) with ONE path constant in Logo.astro; report must show all three options in the header at real size. Launch risk: no logo reuse licence for LRT/Valstietis/Paslaugos.lt (marks/SOURCES.md).

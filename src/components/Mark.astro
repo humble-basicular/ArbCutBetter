@@ -8,7 +8,9 @@ const { name, height = 24, label, class: cls, tone = 'dark' } = Astro.props;
 const text = { paslaugos: 'Paslaugos.lt', google: 'Google', lrt: 'LRT.lt', valstietis: 'Valstietis.lt' }[name] || name;
 const dir = path.join(process.cwd(), 'public/assets/marks');
 let file = null;
-try {
+/* Paslaugos.lt SVG turi „Nr.1“ juostą ir Ukrainos kaspiną: kol nepatikrinta reitingo dydžiu, rodomas tekstas. */
+const TEXT_ONLY = ['paslaugos'];
+if (!TEXT_ONLY.includes(name)) try {
   const all = fs.readdirSync(dir).filter((f) => /\.(svg|png|webp)$/i.test(f) && f.toLowerCase().startsWith(name));
   const pick = (re) => all.find((f) => re.test(f.toLowerCase()));
   file = (tone === 'light' && pick(/(light|white|inverse|negative)/)) || pick(/^[^-]*\.(svg|png|webp)$/) || all.find((f) => !/(light|white|inverse|negative)/.test(f.toLowerCase())) || all[0] || null;
