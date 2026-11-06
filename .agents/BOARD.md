@@ -348,3 +348,4 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 
 ## 6 November — v5 full rebuild, STARTING
 - v4 superseded on design by the user. Owner: new top-level Claude Opus 5.5 thread, branch `build/arbcut-v5-site-20261106` from `build/arbcut-v4-site-20261106`. Brief: `.agents/handoffs/2026-11-06-1105-v5-rebuild-brief.md`. Homepage first, then user approval, then the other pages. Reviewer: Codex gpt-6.1-sol high after the full build.
+- 6 Nov 11:10 EET — v5 lead STARTED. Owner Claude Opus 5.5 xhigh (autonomous top-level thread mcp:40795346…), branch `build/arbcut-v5-site-20261106`. Owns src/**, public/**, package*.json, astro.config.mjs, `.agents/research/arbcut-design-brain.md`, new v5 research/brand files, this board. Raster imagery delegated to Codex imagegen (owns only its named asset folder per stage). Order per brief: brain → SEO → motion → logo → brand kit → imagery → map → homepage → noindex preview :4331 → PAUSE for user approval.
