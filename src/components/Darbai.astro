@@ -1,0 +1,42 @@
+---
+/* Atrinkti darbai klientų žodžiais: problema, sąlygos, kaip dirbome, kliento atsiliepimas. Duomenys: darbai.js. */
+import { darbai } from '@data/darbai.js';
+import Mark from './Mark.astro';
+import Stars from './v5/Stars.astro';
+const men = (d) => new Date(d).toLocaleDateString('lt-LT', { year: 'numeric', month: 'long' });
+---
+<ul role="list" class="jobs">
+  {darbai.map((d) => (
+    <li class="job">
+      <h3>{d.pavadinimas}</h3>
+      <dl>
+        <div><dt>Ko reikėjo</dt><dd>{d.problema}</dd></div>
+        <div><dt>Sąlygos</dt><dd>{d.salygos}</dd></div>
+        <div><dt>Kaip dirbome</dt><dd>{d.darbas}</dd></div>
+      </dl>
+      <figure>
+        <blockquote>{d.atsiliepimas.tekstas.split('\n').filter(Boolean).map((l) => <p>{l}</p>)}</blockquote>
+        <figcaption>
+          {d.atsiliepimas.zvaigzdes && <Stars n={d.atsiliepimas.zvaigzdes} size={16} />}
+          <span><strong>{d.vardas}</strong>, {men(d.data)}</span>
+          <Mark name={d.atsiliepimas.saltinis || 'paslaugos'} height={30} label="Atsiliepimas iš Paslaugos.lt" />
+        </figcaption>
+      </figure>
+      <a class="link-arrow" href={d.nuoroda.href}>{d.nuoroda.tekstas}</a>
+    </li>
+  ))}
+</ul>
+<style>
+  .jobs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: start; }
+  .job { display: grid; gap: 14px; justify-items: start; background: var(--paper); border-radius: var(--r); box-shadow: var(--sh-1); padding: 24px 22px; }
+  .job h3 { color: var(--spruce-900); font-size: 1.35rem; }
+  .job dl { display: grid; gap: 10px; margin: 0; }
+  .job dt { font-weight: 800; font-size: .95rem; color: var(--orange-ink); }
+  .job dd { margin: 0; color: var(--ink-2); }
+  .job figure { margin: 0; display: grid; gap: 10px; padding-top: 14px; box-shadow: inset 0 1px 0 var(--line); }
+  .job blockquote { display: grid; gap: 6px; font-size: 1rem; line-height: 1.5; color: var(--ink); overflow-wrap: anywhere; }
+  .job figcaption { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-size: .95rem; color: var(--ink-2); }
+  .job figcaption strong { color: var(--ink); text-transform: capitalize; }
+  @media (max-width: 1040px) { .jobs { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 680px) { .jobs { grid-template-columns: 1fr; } }
+</style>

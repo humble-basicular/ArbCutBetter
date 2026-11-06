@@ -4,57 +4,102 @@
    Faktai bendri ir atsargūs; teisiniais klausimais raginama tikslintis savivaldybėje.
    ===================================================================== */
 
+import { site } from './site.js';
+import { getPaslauga } from './paslaugos.js';
+
+const kaina = (slug) => getPaslauga(slug).kaina;
+/* Tikros pirmo paskelbimo datos nežinomos: seniausias įrodymas yra pirmas šio failo įrašas (2026-06-04). */
+const PASKELBTA = '2026-06-04';
+
 export const straipsniai = [
   {
     slug: 'kiek-kainuoja-medzio-pasalinimas',
     title: 'Kiek kainuoja medžio pašalinimas Lietuvoje?',
     aprasymas:
-      'Nuo ko priklauso medžio pašalinimo kaina Lietuvoje, kokie orientaciniai įkainiai ir kodėl tikslią kainą galima pasakyti tik įvertinus darbą.',
-    data: '2026-05-20',
+      'ArbCut medžio pjovimo įkainiai, kas lemia kainą, kas skaičiuojama atskirai ir realus pavyzdys: trys medžiai už 470 € su išvežimu.',
+    data: PASKELBTA,
+    atnaujinta: '2026-11-06',
     skaitymas: '4 min',
     turinys: `
-      <p>Medžio pašalinimo kaina Lietuvoje paprastai prasideda nuo <strong>50 €</strong>, tačiau galutinė suma priklauso nuo kelių veiksnių. Vieno nedidelio medžio nupjovimas atviroje vietoje kainuoja nedaug, o didelio, pavojingai pasvirusio medžio šalinimas tarp pastatų ir elektros laidų reikalauja daugiau laiko, įrangos ir patirties.</p>
-      <h2>Nuo ko priklauso kaina</h2>
+      <p><strong>Trumpas atsakymas:</strong> ArbCut medžio pjovimas kainuoja ${kaina('avariniu-medziu-pjovimas')}, tačiau tai mūsų mažiausias įkainis, o ne Lietuvos rinkos vidurkis. Galutinę sumą lemia medžio dydis, kas aplink jį, ar privažiuoja autobokštelis ir ar reikia išvežti medieną.</p>
+      <h2>Realus pavyzdys</h2>
+      <p>Klientas Ramūnas 2025 m. gruodį parašė: „Pjovė 3 medžius, kaina 470 su išvežimu. Greit ir švariai viską padarė, su autobokšteliu.“ Tai vienas darbas, o ne kainoraštis: medžių dydžio ir vietos atsiliepime nėra, todėl jūsų kaina gali būti kitokia.</p>
+      <h2>Mūsų įkainiai</h2>
+      <table>
+        <thead><tr><th>Darbas</th><th>Kaina</th></tr></thead>
+        <tbody>
+          <tr><td><a href="/paslaugos/avariniu-medziu-pjovimas">Medžio pjovimas</a></td><td>${kaina('avariniu-medziu-pjovimas')}</td></tr>
+          <tr><td><a href="/paslaugos/medziu-genejimas">Genėjimas</a></td><td>${kaina('medziu-genejimas')}</td></tr>
+          <tr><td><a href="/paslaugos/darbai-su-autoboksteliu">Darbai su autobokšteliu</a></td><td>${kaina('darbai-su-autoboksteliu')}</td></tr>
+          <tr><td><a href="/paslaugos/kelmu-naikinimas-frezavimas">Kelmo frezavimas</a></td><td>${kaina('kelmu-naikinimas-frezavimas')}</td></tr>
+          <tr><td><a href="/paslaugos/saku-isvezimas">Šakų ir medienos išvežimas</a> (tik Kaune ir Kauno r.)</td><td>${kaina('saku-isvezimas')}</td></tr>
+        </tbody>
+      </table>
+      <h2>Kas didina kainą</h2>
       <ul>
-        <li><strong>Medžio dydis ir rūšis</strong> — aukšti, storo kamieno medžiai šalinami dalimis, tai užtrunka ilgiau.</li>
-        <li><strong>Vieta ir prieiga</strong> — medis prie namo, tvoros ar elektros linijų pjaunamas kontroliuotai, nuleidžiant virvėmis arba autobokšteliu.</li>
-        <li><strong>Ar reikia išvežti medieną ir šakas</strong> — Kaune ir Kauno rajone tai atliekame fiskaru; toliau medieną paprastai paliekame krūvoje.</li>
-        <li><strong>Kelmo šalinimas</strong> — jei reikia, kelmą pašaliname frezavimo būdu (nuo 75 €).</li>
+        <li><strong>Medžio dydis.</strong> Aukštus, storus medžius pjauname dalimis, tai užtrunka ilgiau.</li>
+        <li><strong>Kas aplink medį.</strong> Prie namo, tvoros ar laidų kiekvieną dalį tenka nuleisti virvėmis arba autobokšteliu.</li>
+        <li><strong>Prieiga.</strong> Ar privažiuoja autobokštelis, ar reikia lipti su alpinistine įranga.</li>
+        <li><strong>Atstumas.</strong> Tolimesniems išvykimams įtakos turi kelionė, todėl datą suderiname iš anksto, o kelių kaimynų darbus galima atlikti per vieną atvykimą. Važiuojame iki ${site.zona.km} km nuo Kauno.</li>
       </ul>
-      <h2>Orientaciniai įkainiai</h2>
+      <h2>Kas skaičiuojama atskirai</h2>
       <ul>
-        <li>Medžio pjovimas ir genėjimas — nuo 50 €</li>
-        <li>Kelmų naikinimas (frezavimas) — nuo 75 €</li>
-        <li>Šakų ir medienos išvežimas — nuo 80 €</li>
+        <li><strong>Išvežimas</strong> yra atskira paslauga ir atliekama tik Kaune ir Kauno rajone. Galime jį įtraukti į bendrą kainą, tai sutariame iš anksto.</li>
+        <li><strong>Kelmas.</strong> Pjovimas kelmo nepašalina, frezavimas yra atskiras darbas.</li>
+        <li>Toliau nuo Kauno šakas ir medieną sukrauname tvarkingomis krūvomis jūsų sklype.</li>
       </ul>
-      <p>Pavyzdžiui, vienas mūsų klientas už trijų medžių nupjovimą kartu su išvežimu mokėjo apie 470 €. Tiksli kaina kiekvienu atveju skiriasi, todėl ją pasakome tik <strong>nemokamai įvertinę darbą</strong> — vietoje arba pagal jūsų atsiųstas nuotraukas ir vaizdo įrašą.</p>
-      <p>Norite sužinoti, kiek kainuotų jūsų atveju? Paskambinkite arba atsiųskite kelias nuotraukas — pateiksime preliminarią kainą be įsipareigojimų.</p>
+      <h2>Kaip sužinoti savo kainą</h2>
+      <p>Preliminarią kainą pasakome pagal nuotraukas iš kelių pusių, tikslią atvažiavę į vietą. Kainą ir darbų apimtį sutariame prieš pradedant. Daugiau: <a href="/kainos">kainos ir kas jas lemia</a>.</p>
     `,
     duk: [
-      { klausimas: 'Koks minimalus medžio pašalinimo įkainis?', atsakymas: 'Įkainiai prasideda nuo 50 € už projektą, tačiau galutinė kaina priklauso nuo medžio dydžio, vietos ir to, ar reikia išvežti medieną.' },
-      { klausimas: 'Ar įvertinimas kainuoja?', atsakymas: 'Ne, darbo įvertinimas yra nemokamas — atliekame jį vietoje arba pagal nuotraukas.' },
+      { klausimas: 'Koks mažiausias ArbCut medžio pjovimo įkainis?', atsakymas: `Medžio pjovimas ${kaina('avariniu-medziu-pjovimas')} už darbą. Galutinė kaina priklauso nuo medžio dydžio, vietos, prieigos ir to, ar reikia išvežti medieną.` },
+      { klausimas: 'Ar galite pasakyti kainą pagal nuotraukas?', atsakymas: 'Dažnai taip: preliminarią kainą pasakome pagal nuotraukas iš kelių pusių, tikslią atvažiavę į vietą.' },
+      { klausimas: 'Ar išvežimas įskaičiuotas į kainą?', atsakymas: 'Išvežimas yra atskira paslauga ir atliekamas tik Kaune ir Kauno rajone. Galime jį įtraukti į bendrą kainą, tai sutariame iš anksto.' },
     ],
   },
   {
     slug: 'ar-reikia-leidimo-pjauti-medi',
     title: 'Ar reikia leidimo pjauti medį privačiame sklype?',
     aprasymas:
-      'Kada medžiui pašalinti privačiame sklype reikia savivaldybės leidimo, o kada ne. Kaip nesusilaukti baudos.',
-    data: '2026-04-15',
+      'Kurie medžiai saugotini, kada reikia savivaldybės leidimo, kas galioja nuo kovo 15 iki rugpjūčio 1 d. ir kokia atsakomybė gresia už neteisėtą kirtimą.',
+    data: PASKELBTA,
+    atnaujinta: '2026-11-06',
     skaitymas: '5 min',
+    pastaba: 'Tai bendra informacija, ne teisinė konsultacija. Sąlygos skiriasi pagal savivaldybę, todėl prieš pjaudami pasitikrinkite savo savivaldybėje.',
+    saltiniai: [
+      { pavadinimas: 'Vyriausybės nutarimas Nr. 206 dėl saugotinų želdinių kriterijų (e-tar.lt)', url: 'https://www.e-tar.lt/portal/lt/legalAct/TAR.E0E342F72CDE/asr', data: 'suvestinė redakcija nuo 2021-12-24' },
+      { pavadinimas: 'Aplinkos ministerija: medžių kirtimas ir genėjimas pavasarį', url: 'https://am.lrv.lt/lt/naujienos/medziu-kirtimas-ir-genejimas-pavasari-ka-butina-zinoti/', data: '2025-03-14' },
+      { pavadinimas: 'Aplinkos ministerija: draudimas pjauti saugotinus želdinius', url: 'https://am.lrv.lt/lt/naujienos/perintiems-pauksciams-reikia-ramybes-isigalioja-draudimas-pjauti-saugotinus-zeldinius/', data: '2022-03-14' },
+      { pavadinimas: 'Aplinkos apsaugos departamentas: kada galima genėti ir šalinti želdinius', url: 'https://aad.lrv.lt/lt/naujienos/kokiais-atvejais-galite-geneti-ir-salinti-zeldinius/', data: '2022-05-06' },
+      { pavadinimas: 'Aplinkos ministerijos išaiškinimas apie kirtimą nuosavame sklype (forest.lt)', url: 'https://www.forest.lt/naujienos/am-medziu-ar-krumu-kirtimas-nuosavame-sklype-ka-turi-zinoti-gyventojai/', data: '2022-07-28' },
+      { pavadinimas: 'Vilniaus miesto savivaldybė: saugotini medžiai privačiuose sklypuose', url: 'https://vilnius.lt/savivaldybe/miesto-pletra/zeldynai/svarbi-informacija-apie-saugotinus-medzius-privaciu-sklypu-savininkams' },
+    ],
     turinys: `
-      <p>Tai vienas dažniausių klausimų, kurį girdime. Trumpas atsakymas: <strong>priklauso nuo medžio</strong>. Lietuvoje kai kuriems medžiams pašalinti net ir nuosavame sklype reikia savivaldybės leidimo, o kitiems — ne.</p>
-      <h2>Kada leidimo dažniausiai reikia</h2>
-      <p>Leidimo paprastai reikia vadinamiesiems <strong>saugotiniems</strong> želdiniams — tai gali būti tam tikro dydžio ar rūšies medžiai, augantys mieste, prie kelių, viešose erdvėse ar saugomose teritorijose. Sprendimą dėl saugotinumo priima savivaldybė pagal galiojančią tvarką.</p>
-      <h2>Kada leidimo dažniausiai nereikia</h2>
-      <p>Mažesniems, nesaugotiniems medžiams privačiame sklype leidimo dažnai nereikia. Vis dėlto ribos (skersmuo, rūšis, vieta) skiriasi, todėl prieš pjaunant verta <strong>pasitikslinti savo savivaldybėje</strong> — tai užtrunka kelias minutes ir apsaugo nuo baudos.</p>
-      <h2>Kodėl tai svarbu</h2>
-      <p>Neteisėtas saugotino medžio kirtimas gali užtraukti baudą ir pareigą atlyginti žalą aplinkai. Todėl atsakingas arboristas visada pataria pirmiausia išsiaiškinti medžio statusą.</p>
-      <p>Mes padedame klientams suprasti situaciją ir, kai reikia, palaukiame leidimo. Jei nesate tikri dėl savo medžio — paskambinkite, aptarsime ir patarsime, nuo ko pradėti.</p>
+      <p><strong>Trumpas atsakymas:</strong> priklauso nuo medžio rūšies, storio ir vietos. Saugotiną medį nukirsti ar intensyviai genėti galima tik su savivaldybės leidimu, net ir savo sklype. Tujos, tuopos, drebulės ir vaismedžiai saugotini nėra.</p>
+      <h2>Kurie medžiai saugotini</h2>
+      <p>Kriterijus tvirtina Vyriausybė. Pagal Aplinkos ministerijos išaiškinimą gyvenamosiose teritorijose <strong>mieste</strong> saugotini sąraše esantys medžiai (pvz., ąžuolai, uosiai, klevai, liepos, maumedžiai, beržai, pušys) nuo <strong>20 cm</strong> skersmens, <strong>ne mieste</strong> nuo <strong>30 cm</strong>. Skersmuo matuojamas 1,3 m aukštyje. Pajūrio juostoje ribos mažesnės.</p>
+      <p>Savivaldybės turi ir savo sąrašus. Pavyzdžiui, Vilniaus taryba saugotinų medžių sąrašą papildė 2026 m. kovo 18 d., todėl vien kriterijų nepakanka: savo medžio statusą pasitikrinkite savivaldybėje.</p>
+      <h2>Kada reikia leidimo</h2>
+      <ul>
+        <li><strong>Kirsti</strong> saugotiną medį.</li>
+        <li><strong>Intensyviai genėti</strong> saugotiną medį, tai yra pašalinti daugiau nei 30 % lajos.</li>
+      </ul>
+      <p>Dėl leidimo kreipiamasi į savivaldybę. Vilniuje pilnas prašymas nagrinėjamas 20 darbo dienų, kitur terminai gali skirtis. Leidimas gali būti susijęs su atkuriamosios vertės mokėjimu.</p>
+      <h2>Kas, jei medis kelia pavojų</h2>
+      <p>Leidimo nereikia, kai darbus būtina atlikti nedelsiant, nes dėl gamtinio, eismo ar kito įvykio saugotinas medis tapo pavojingas žmonėms, turtui, statiniams ar eismui. Tada per 3 darbo dienas raštu pranešama savivaldybei, nurodoma vieta ir pateikiamos 3 nuotraukos. Todėl prieš pjaudami nufotografuokite medį. Jei medis užkrito ant laidų, nelieskite jo ir praneškite elektros tinklų operatoriui.</p>
+      <h2>Kas galioja nuo kovo 15 iki rugpjūčio 1 d.</h2>
+      <p>Tai intensyviausias paukščių veisimosi laikotarpis. Tuo metu saugotinų medžių <strong>viešuosiuose želdynuose</strong> kirsti ir intensyviai genėti negalima, išskyrus kai jie kelia pavojų žmonėms, turtui ar eismui. Šakų iki 5 cm skersmens pjūvio vietoje šis draudimas neliečia.</p>
+      <p><strong>Privatiems želdynams</strong> draudimas netaikomas: gavęs savivaldybės leidimą, savininkas gali dirbti ir šiuo metu, nors Aplinkos apsaugos departamentas prašo to vengti.</p>
+      <h2>Kas gresia už neteisėtą kirtimą</h2>
+      <p>Aplinkos ministerijos 2022 m. išaiškinime nurodyta bauda gyventojui nuo 60 iki 200 €, įmonės vadovui nuo 80 iki 300 €. Dar reikia atlyginti žalą, kuri skaičiuojama pagal kelmo skersmenį ir medžio rūšį. Vilniaus savivaldybė nurodo, kad už saugotino medžio sužalojimą ar iškirtimą skaičiuojama suma dešimt kartų didesnė už medžio atkuriamąją vertę. Sumos keičiasi, todėl aktualias tikrinkite savivaldybėje.</p>
+      <h2>Kaip dirbame mes</h2>
+      <p>Mantas LRT.lt sakė: „Mes kertame medžius tik turėdami leidimus.“ Jei nesate tikri dėl savo medžio, <a href="/kontaktai">paskambinkite</a>, aptarsime, nuo ko pradėti. Reikia tik sumažinti lają? Žr. <a href="/paslaugos/medziu-genejimas">medžių genėjimas</a>.</p>
     `,
     duk: [
-      { klausimas: 'Ar visada reikia leidimo medžiui pjauti savame sklype?', atsakymas: 'Ne. Leidimo dažniausiai reikia saugotiniems želdiniams; mažesniems, nesaugotiniems medžiams privačiame sklype — dažnai nereikia. Tikslią tvarką nustato savivaldybė.' },
-      { klausimas: 'Kur sužinoti, ar mano medis saugotinas?', atsakymas: 'Geriausia kreiptis į savo savivaldybės aplinkos ar želdynų priežiūros skyrių — jie pasakys medžio statusą ir ar reikia leidimo.' },
+      { klausimas: 'Ar visada reikia leidimo medžiui pjauti savame sklype?', atsakymas: 'Ne. Leidimo reikia saugotiniems medžiams. Tujos, tuopos, drebulės ir vaismedžiai saugotini nėra. Tikslų medžio statusą pasako savivaldybė.' },
+      { klausimas: 'Nuo kokio storio medis saugotinas?', atsakymas: 'Gyvenamosiose teritorijose mieste sąraše esantys medžiai saugotini nuo 20 cm skersmens, ne mieste nuo 30 cm. Matuojama 1,3 m aukštyje. Savivaldybės turi ir savo sąrašus.' },
+      { klausimas: 'Ar galima pjauti medį nuo kovo 15 iki rugpjūčio 1 d.?', atsakymas: 'Saugotinų medžių viešuosiuose želdynuose šiuo metu kirsti ir intensyviai genėti negalima, išskyrus pavojaus atvejus. Privatiems želdynams šis draudimas netaikomas, bet saugotinam medžiui vis tiek reikia savivaldybės leidimo.' },
+      { klausimas: 'Kur sužinoti, ar mano medis saugotinas?', atsakymas: 'Kreipkitės į savo savivaldybės administraciją: ji pasakys medžio statusą ir ar reikia leidimo.' },
     ],
   },
   {
@@ -62,7 +107,7 @@ export const straipsniai = [
     title: 'Kaip atpažinti pavojingą medį?',
     aprasymas:
       'Požymiai, rodantys, kad medis gali būti pavojingas ir gali tekti jį genėti arba pašalinti: pakrypimas, įtrūkimai, sausos šakos, puviniai.',
-    data: '2026-03-10',
+    data: PASKELBTA,
     skaitymas: '4 min',
     turinys: `
       <p>Pavojingas medis ne visada atrodo akivaizdžiai blogai. Kartais požymiai subtilūs, todėl verta žinoti, į ką atkreipti dėmesį — ypač jei medis auga prie namo, automobilio ar tako.</p>
@@ -87,7 +132,7 @@ export const straipsniai = [
     title: 'Ką daryti, jei medis užvirto ant namo?',
     aprasymas:
       'Veiksmų eiga, kai medis užvirsta ant namo, automobilio ar tvoros po audros: sauga, draudimas ir kaip greitai pašalinti.',
-    data: '2026-02-05',
+    data: PASKELBTA,
     skaitymas: '3 min',
     turinys: `
       <p>Po stiprios audros medis, užvirtęs ant namo ar automobilio, kelia ne tik žalą turtui, bet ir realų pavojų. Štai ką svarbu padaryti.</p>
@@ -97,7 +142,7 @@ export const straipsniai = [
       <p>Jei saugu, nufotografuokite situaciją — nuotraukos pravers ir specialistui, ir draudimui.</p>
       <h2>3. Kvieskite specialistus</h2>
       <p>Užvirtusio medžio šalinimas yra <strong>aukštos rizikos darbas</strong>: dažnai reikia pjauti įtemptą medieną dalimis, kad nepadidėtų žala. Tai turi atlikti patirties turintis arboristas su tinkama įranga.</p>
-      <p>Mes atvykstame operatyviai ir saugiai pašaliname užvirtusius bei pavojingai pasvirusius medžius visoje Lietuvoje, o po darbų sutvarkome teritoriją. Įvykus tokiai situacijai — <strong>skambinkite iškart</strong>, aptarsime greičiausią sprendimą.</p>
+      <p>Užvirtusius ir pavojingai pasvirusius medžius šaliname iki ${site.zona.km} km nuo Kauno, o po darbų sutvarkome teritoriją. Įvykus tokiai situacijai — <strong>skambinkite iškart</strong>, aptarsime greičiausią sprendimą.</p>
     `,
     duk: [
       { klausimas: 'Ar galiu pats nupjauti ant namo užvirtusį medį?', atsakymas: 'Nerekomenduojama. Užvirtęs medis būna įtemptas ir pjaunant gali staigiai atšokti ar padidinti žalą. Tokį darbą saugiau patikėti patyrusiam arboristui su tinkama įranga.' },

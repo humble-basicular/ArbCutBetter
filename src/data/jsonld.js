@@ -112,10 +112,10 @@ export function articleSchema(s) {
     headline: s.title,
     description: s.aprasymas,
     datePublished: s.data,
-    dateModified: s.data,
+    dateModified: s.atnaujinta || s.data,
     inLanguage: 'lt',
     mainEntityOfPage: abs(`/tinklarastis/${s.slug}`),
-    author: { '@type': 'Person', name: site.savininkas },
+    author: { '@type': 'Organization', name: site.pavadinimas, '@id': abs('/#business') },
     publisher: { '@id': abs('/#business') },
     image: abs(site.ogImage),
   };

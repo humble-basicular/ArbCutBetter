@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Sequences from '../components/Sequences.astro';
+import Darbai from '../components/Darbai.astro';
 import { galerijosKategorijos, galerijosAlt } from '@data/paslaugu-turinys.js';
 import { localBusiness, breadcrumbs } from '@data/jsonld.js';
 const G = (n) => `/assets/images/galerija/galerija-${String(n).padStart(2, '0')}.jpg`;
@@ -23,6 +24,13 @@ const tiles = [...naujos, ...galerijosKategorijos.flatMap((k) => k.nr.map((n) =>
   schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Darbai', path: '/galerija' }])]}
 >
   <PageHero title="Atlikti darbai" kicker="Realios nuotraukos" lead="Nuotraukos iš mūsų darbų — be stockinių vaizdų. Pirmiausia trys darbai nuo pradžios iki pabaigos, žemiau — visa galerija pagal darbų tipą." crumbs={[{ label: 'Darbai' }]} photo="lajoje-vasara" photoAlt="Mantas dirba žaliuojančio medžio lajoje" photoPos="50% 30%" />
+
+  <section class="sec sec--stone" id="darbai">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Atrinkti darbai</p><h2>Keli darbai klientų žodžiais</h2><p class="mute">Aprašyta pagal klientų atsiliepimus. Vietos ir kainos nurodome tik tada, kai jas parašė pats klientas.</p></div>
+      <Darbai />
+    </div>
+  </section>
 
   <section class="sec">
     <div class="wrap">
