@@ -338,3 +338,8 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 - Owner: Claude Opus 5.5 medium, build thread mcp:d1e11b69…, branch `build/arbcut-v4-site-20261106`. Owns src/**, public/** (except arbcut-v4-brand/ and marks/ until merged), package*.json, astro.config.mjs.
 - State: design system, shared components and home sections done at `879b369`; inner pages, C1 checks, Codex review and preview pending. Handoff: `.agents/handoffs/2026-11-06-0915-site-build-checkpoint-1.md`.
 - Reviewer: Codex gpt-6.1-sol high (not started).
+
+## 6 November — v4 site build, IN REVIEW
+- Owner: Claude Opus 5.5 lead, thread mcp:d1e11b69…, branch `build/arbcut-v4-site-20261106`. Reviewer: Codex gpt-6.1-sol high (stage `arbcut-v4-site-review`), max 2 rounds. All 37 routes rebuilt on the v4 system; `Icon.astro` removed; logo option 1 via `OPTION` in `Logo.astro`.
+- Lead checks before review: baseline diff vs bb63bd8 clean on 37 routes (title, description, canonical, robots, H1–H3, hrefs, JSON-LD, forms, ids, data-loc); 185 route×width runs at 320–1440 with no overflow or mid-word break; interaction suites pass; contrast scan 0 failures on 6 routes × 2 widths; 0 inline `<svg>` and 0 pictogram glyphs in built HTML.
+- User decisions open: logo pick, championship wording, footer credit, Paslaugos.lt logo with its "Nr.1" banner. No push, merge or deploy.
