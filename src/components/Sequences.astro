@@ -36,7 +36,7 @@ const list = only ? sekos.filter((s) => only.includes(s.paslauga)) : sekos;
   @media (hover: hover) and (prefers-reduced-motion: no-preference) { .sq__ph:hover img { transform: scale(1.03); } }
   .sq__frames li:last-child .sq__ph { clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%); }
   .sq__frames p { font-size: .96rem; color: var(--ink-2); display: flex; gap: 10px; align-items: baseline; }
-  .sq__i { flex: 0 0 auto; font-stretch: var(--wide); font-weight: 800; color: var(--spruce-900); }
+  .sq__i { flex: 0 0 auto; font-family: var(--display); font-weight: 800; color: var(--spruce-900); }
   @media (max-width: 760px) {
     .sq__frames { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 74%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scroll-padding-inline: var(--gutter); }
     .sq__frames li { scroll-snap-align: start; }

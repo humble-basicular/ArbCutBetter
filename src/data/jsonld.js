@@ -37,7 +37,7 @@ export function localBusiness() {
     telephone: telBare,
     email: site.elPastas,
     image: abs(site.ogImage),
-    logo: abs('/assets/arbcut-upgrade-brand/icon-512.png'),
+    logo: abs('/assets/v5-brand/logo/icon-512.png'),
     priceRange: site.priceRange,
     founder: { '@type': 'Person', name: site.savininkas },
     knowsLanguage: 'lt',
