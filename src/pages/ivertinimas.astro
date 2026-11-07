@@ -1,0 +1,171 @@
+---
+/* Atsiliepimų filtras (patvirtino Matas 2026-11-07, žinoma Google „review gating“ rizika priimta).
+   Nuoroda siunčiama klientui po darbo: arbcut.lt/ivertinimas. Puslapis noindex, ne sitemap, ne meniu.
+   4–5 ★ → viešas atsiliepimas (Google, kai yra placeId; kitaip Paslaugos.lt).
+   1–3 ★ → privati forma per tą patį Workerį (/t/form, kind=site_inquiry, service „Privatus įvertinimas: N/5“),
+           mažu šriftu lieka ir nuoroda rašyti viešai. Jokių atlygių, privatūs atsiliepimai viešai nekeliami. */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Logo from '../components/Logo.astro';
+import Mark from '../components/Mark.astro';
+import { Image } from 'astro:assets';
+import { site, PREVIEW } from '@data/site.js';
+import face from '../assets/photos/mantas-portretas.jpg';
+const S = '/assets/v5-brand/raster/stars';
+const pub = [
+  site.google.reviewUrl && { name: 'google', label: 'Google', url: site.google.reviewUrl, h: 26 },
+  { name: 'paslaugos', label: 'Paslaugos.lt', url: site.atsiliepimai.paliktiUrl, h: 32 },
+].filter(Boolean);
+const main = pub[0];
+---
+<BaseLayout title="Kaip vertinate darbą? | ArbCut" description="Įvertinkite ArbCut darbą." noindex={true} bare={true}>
+  <section class="iv" data-iv>
+    <div class="iv__card">
+      <div class="iv__top">
+        <a href="/" aria-label="ArbCut pradžia"><Logo tone="dark" height={48} /></a>
+      </div>
+      <div class="iv__who">
+        <Image class="iv__face" src={face} alt="" widths={[96, 192]} sizes="72px" format="webp" quality={80} style="object-position: 50% 18%" />
+        <p><span class="hand">Dėkojame, kad pasirinkote mus!</span>Mantas Gerulis, ArbCut</p>
+      </div>
+
+      <div class="iv__step" data-iv-ask>
+        <h1>Kaip vertinate darbą?</h1>
+        <fieldset class="iv__rate" data-iv-rate>
+          <legend class="sr-only">Įvertinimas nuo 1 iki 5 žvaigždučių</legend>
+          {[1, 2, 3, 4, 5].map((n) => (
+            <label class="iv__star">
+              <input class="sr-only" type="radio" name="iv-rating" value={n} />
+              <img class="iv__off" src={`${S}/star-empty-48.png`} alt="" width="48" height="48" />
+              <img class="iv__on" src={`${S}/star-gold-48.png`} alt="" width="48" height="48" />
+              <span class="sr-only">{n} iš 5</span>
+            </label>
+          ))}
+        </fieldset>
+        <noscript>
+          <p class="iv__p">Atsiliepimą galite parašyti <a href={main.url}>{main.label}</a>, o pastabas pasakyti telefonu <a href={site.telefonasHref}>{site.telefonas}</a>.</p>
+        </noscript>
+      </div>
+
+      <div class="iv__step" data-iv-good hidden tabindex="-1">
+        <h2>Labai ačiū!</h2>
+        <p class="iv__p">Gal pasidalintumėte keliais žodžiais viešai? Kitiems žmonėms tai labai padeda išsirinkti. Užtenka minutės.</p>
+        <p class="iv__tip">Jei norite, paminėkite, koks buvo darbas ir kuriame mieste ar kaime.</p>
+        <a class="btn btn--primary iv__go" href={main.url} target="_blank" rel="noopener" data-loc={`review-public-${main.name}`}>
+          <span class="iv__mk"><Mark name={main.name} height={main.h} label="" /></span>
+          Parašyti atsiliepimą<span class="sr-only"> {main.label} (atsidaro naujame lange)</span>
+        </a>
+        {pub[1] && <a class="iv__alt" href={pub[1].url} target="_blank" rel="noopener" data-loc={`review-public-${pub[1].name}`}>arba {pub[1].label}<span class="sr-only"> (atsidaro naujame lange)</span></a>}
+        <button type="button" class="iv__back" data-iv-back>Pakeisti įvertinimą</button>
+      </div>
+
+      <div class="iv__step" data-iv-bad hidden tabindex="-1">
+        <h2>Atsiprašome. Kas nepavyko?</h2>
+        <p class="iv__p">Parašykite tiesiai Mantui. Tai matys tik jis, ne viešai.</p>
+        <form class="qf iv__form" id="iv-form" data-loc="review-private" method="POST" action={PREVIEW ? '#perziura' : site.formEndpoint} data-preview={PREVIEW ? '1' : undefined} novalidate>
+          {!PREVIEW && (
+            <>
+              <input type="hidden" name="kind" value="site_inquiry" />
+              <input type="hidden" name="site" value={site.formSite} />
+              <input type="text" name="website" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            </>
+          )}
+          <input type="hidden" name="service" value="Privatus įvertinimas" data-iv-service />
+          <div class="iv__f">
+            <label for="iv-msg">Kas nepavyko? <span>*</span></label>
+            <textarea id="iv-msg" name="message" required maxlength="2000" rows="4"></textarea>
+          </div>
+          <div class="iv__row">
+            <div class="iv__f">
+              <label for="iv-tel">Telefonas <span>*</span></label>
+              <input id="iv-tel" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="+370 6__ _____" />
+            </div>
+            <div class="iv__f">
+              <label for="iv-name">Vardas</label>
+              <input id="iv-name" name="name" type="text" maxlength="80" autocomplete="name" />
+            </div>
+          </div>
+          {!PREVIEW && <div data-turnstile data-sitekey={site.turnstileSiteKey}></div>}
+          <p class="qf__err" role="alert" hidden>Įrašykite, kas nepavyko, ir telefoną.</p>
+          <p class="qf__err" data-send-err role="alert" hidden>Nepavyko išsiųsti. Paskambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>
+          <button type="submit" class="btn btn--primary qf__btn">Siųsti Mantui</button>
+          <div class="qf__done" role="status" hidden tabindex="-1">
+            <p class="iv__done-h">Ačiū, perdavėme Mantui.</p>
+            <p>Jei norite pasikalbėti iškart, skambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>
+          </div>
+        </form>
+        <p class="iv__small">Norite parašyti viešai? <a href={main.url} target="_blank" rel="noopener" data-loc={`review-public-low-${main.name}`}>{main.label}</a></p>
+        <button type="button" class="iv__back" data-iv-back>Pakeisti įvertinimą</button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const box = document.querySelector('[data-iv]') as HTMLElement;
+  const rate = box.querySelector('[data-iv-rate]') as HTMLElement;
+  const ask = box.querySelector('[data-iv-ask]') as HTMLElement;
+  const good = box.querySelector('[data-iv-good]') as HTMLElement;
+  const bad = box.querySelector('[data-iv-bad]') as HTMLElement;
+  const svc = box.querySelector('[data-iv-service]') as HTMLInputElement;
+  const radios = Array.from(rate.querySelectorAll('input')) as HTMLInputElement[];
+  const paint = (n: number) => { rate.dataset.n = String(n); };
+  rate.querySelectorAll('label').forEach((l, i) => {
+    l.addEventListener('pointerenter', () => paint(i + 1));
+    l.addEventListener('pointerleave', () => { const c = radios.find((r) => r.checked); paint(c ? +c.value : 0); });
+  });
+  const show = (el: HTMLElement) => { [ask, good, bad].forEach((s) => { s.hidden = s !== el; }); el.focus({ preventScroll: true }); el.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); };
+  radios.forEach((r) => r.addEventListener('change', () => {
+    const n = +r.value; paint(n);
+    svc.value = `Privatus įvertinimas: ${n}/5`;
+    setTimeout(() => show(n >= 4 ? good : bad), 350);
+  }));
+  box.querySelectorAll('[data-iv-back]').forEach((b) => b.addEventListener('click', () => { show(ask); const c = radios.find((x) => x.checked); (c || radios[4]).focus(); }));
+</script>
+
+<style>
+  .iv { min-height: 100dvh; display: grid; place-items: center; padding: clamp(16px, 4vw, 48px) 16px 120px; background: var(--spruce-900) url('/assets/v5-brand/texture/rings-band.webp') 80% 10% / 1800px auto no-repeat; }
+  .iv__card { width: min(560px, 100%); background: #fff; border-radius: var(--r-lg); box-shadow: var(--sh-3); padding: clamp(22px, 4vw, 40px); display: grid; gap: 22px; }
+  .iv__top { display: flex; justify-content: center; }
+  .iv__who { display: flex; align-items: center; gap: 14px; background: var(--spruce-50); border-radius: 999px; padding: 6px 22px 6px 6px; }
+  .iv__face { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 3px solid var(--gold); flex: 0 0 auto; }
+  .iv__who p { color: var(--ink-2); font-weight: 650; line-height: 1.3; }
+  .iv__who .hand { display: block; color: var(--spruce-900); font-size: 1.6rem; }
+  .iv__step { display: grid; gap: 16px; justify-items: center; text-align: center; }
+  .iv__step:focus { outline: none; }
+  .iv h1, .iv h2 { color: var(--spruce-900); font-size: clamp(1.8rem, 1.3rem + 2vw, 2.4rem); }
+  .iv__rate { border: 0; padding: 0; margin: 0; display: flex; gap: clamp(4px, 1.5vw, 10px); }
+  .iv__star { position: relative; width: clamp(48px, 13vw, 60px); height: clamp(48px, 13vw, 60px); cursor: pointer; display: grid; place-items: center; transition: transform var(--t); }
+  .iv__star:hover { transform: scale(1.1); }
+  .iv__star img { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .iv__on { opacity: 0; transition: opacity .15s; }
+  .iv__star:has(input:focus-visible) { outline: 3px solid var(--orange); outline-offset: 2px; border-radius: 10px; }
+  .iv__rate[data-n='1'] .iv__star:nth-of-type(-n+1) .iv__on,
+  .iv__rate[data-n='2'] .iv__star:nth-of-type(-n+2) .iv__on,
+  .iv__rate[data-n='3'] .iv__star:nth-of-type(-n+3) .iv__on,
+  .iv__rate[data-n='4'] .iv__star:nth-of-type(-n+4) .iv__on,
+  .iv__rate[data-n='5'] .iv__star:nth-of-type(-n+5) .iv__on { opacity: 1; }
+  .iv__p { color: var(--ink-2); font-size: 1.08rem; max-width: 34em; }
+  .iv__p a, .iv__small a, .iv__step .qf__done a { color: var(--spruce-900); font-weight: 700; text-decoration: underline; }
+  .iv__tip { background: var(--spruce-50); border-radius: var(--r); padding: 10px 14px; color: var(--spruce-950); font-weight: 600; }
+  .iv__go { display: inline-flex; align-items: center; gap: 12px; }
+  .iv__mk { display: inline-grid; place-items: center; background: #fff; border-radius: 8px; padding: 4px 8px; }
+  .iv__alt { color: var(--ink-2); font-weight: 650; text-decoration: underline; }
+  .iv__back { color: var(--ink-2); font-size: .92rem; text-decoration: underline; }
+  .iv__form { width: 100%; text-align: left; display: grid; gap: 14px; }
+  .iv__row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 480px) { .iv__row { grid-template-columns: 1fr; } }
+  .iv__f { display: grid; gap: 6px; }
+  .iv__f label { font-weight: 700; color: var(--ink); }
+  .iv__f label span { color: var(--orange-ink); }
+  .iv__f input, .iv__f textarea { width: 100%; font: inherit; font-size: 1rem; padding: 12px 14px; border: 2px solid var(--line); border-radius: var(--r); background: #fff; color: var(--ink); }
+  .iv__f input:focus, .iv__f textarea:focus { outline: none; border-color: var(--spruce-900); box-shadow: 0 0 0 3px var(--orange); }
+  .iv__f [aria-invalid='true'] { border-color: #B3261E; }
+  .iv .qf__err { color: #B3261E; font-weight: 700; }
+  .iv .qf__btn { justify-self: stretch; }
+  .iv .qf__done { padding: 18px 20px; background: var(--spruce-100); border-radius: var(--r); display: grid; gap: 6px; }
+  .iv__done-h { font-family: var(--display); font-size: 1.3rem; font-weight: 800; color: var(--spruce-900); }
+  .iv .qf.is-done > :not(.qf__done) { display: none; }
+  .iv__small { font-size: .88rem; color: var(--ink-2); }
+  :global(html:has(.iv) .mact) { display: none !important; }
+  :global(html:has(.iv)), :global(html:has(.iv) body) { background: var(--spruce-900); }
+</style>

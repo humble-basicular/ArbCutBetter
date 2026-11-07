@@ -1,5 +1,9 @@
 # ArbCut work board
 
+## 7 November 2026 — review funnel `/ivertinimas`, BUILT (not live)
+
+- Owner: Claude (this thread). Approved by Matas 7 Nov ("Taip gerai tai implementuok arbcut ir irasyk i brain"), Google review-gating risk known and accepted. Page `src/pages/ivertinimas.astro`: noindex, out of sitemap and menus. 4–5★ → public review (Google when `site.google.placeId` is set, otherwise Paslaugos.lt); 1–3★ → private form to the Worker `/t/form` (`kind=site_inquiry`, `service="Privatus įvertinimas: N/5"`, phone required) with a small "write publicly" link kept. Browser-tested in preview at 1440 and 390 px (both branches, keyboard rating, validation, inert submit, no overflow). Note: private feedback lands among enquiries until the Worker gets its own kind. Link to send after a job: `https://arbcut.lt/ivertinimas`.
+
 ## 4 November 2026 — homepage v3 fixes and private hosting, VERIFIED / READY FOR LEAD
 
 - Owner: Codex implementation sub-agent; owns src/**, public/** and this branch’s .agents/. Six approved fixes complete, code through `a072e11`; verified hosted review: https://jarvisweb-arbcut-preview.pages.dev/ (deployment d1c93d57). Phone 390×844: 14,972 px. 37 routes / 4 widths: 0 problems; ix 26/26, ix2 24/24; production contracts pass. No push/merge. Handoff: `.agents/handoffs/2026-11-04-1955-arbcut-homepage-hosted.md`.

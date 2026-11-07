@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: PREVIEW ? [] : [
     sitemap({
       // noindex teisinius puslapius išskiriame iš sitemap
-      filter: (page) => !/\/(privatumo-politika|taisykles|aciu)\/?$/.test(page),
+      filter: (page) => !/\/(privatumo-politika|taisykles|aciu|ivertinimas)\/?$/.test(page),
     }),
   ],
   build: { inlineStylesheets: 'auto' },
