@@ -105,7 +105,8 @@ export const site = {
   },
   atsiliepimai: {
     profilis: 'https://paslaugos.lt/mantas-gerulis-aa777',     // viešas profilis (skaityti)
-    paliktiUrl: 'https://paslaugos.lt/atsiliepimas/aa777',     // „palikti atsiliepimą" forma
+    paliktiUrl: 'https://paslaugos.lt/atsiliepimas/aa777',     // „palikti atsiliepimą" forma (naudoja tik /ivertinimas)
+    ivertinimas: '/ivertinimas',                               // visi „Parašyti atsiliepimą" mygtukai veda čia (filtras 4–5 / 1–3)
     get reviewUrl() {
       return this.paliktiUrl;
     },
