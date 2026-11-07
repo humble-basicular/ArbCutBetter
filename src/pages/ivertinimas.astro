@@ -56,7 +56,7 @@ const main = pub[0];
 
       <div class="iv__step" data-iv-bad hidden tabindex="-1">
         <h2>Atsiprašome, kad likote nepatenkinti.</h2>
-        <p class="iv__p">Parašykite, ką galime pagerinti. Perskaitys Mantas, ir pasistengsime pataisyti.</p>
+        <p class="iv__p">Parašykite, ką galime pagerinti. Perskaitysime ir pasistengsime pataisyti.</p>
         <form class="qf iv__form" id="iv-form" data-loc="review-private" method="POST" action={PREVIEW ? '#perziura' : site.formEndpoint} data-preview={PREVIEW ? '1' : undefined} novalidate>
           {!PREVIEW && (
             <>
@@ -91,7 +91,7 @@ const main = pub[0];
           <button type="submit" class="btn btn--primary qf__btn">Siųsti</button>
           <div class="qf__done" role="status" hidden tabindex="-1">
             <p class="iv__done-h">Ačiū už atsiliepimą.</p>
-            <p>Perdavėme Mantui. Jei norite pasikalbėti iškart, skambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>
+            <p>Jį perskaitysime. Jei norite pasikalbėti iškart, skambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>
           </div>
         </form>
         <button type="button" class="iv__back" data-iv-back>Pakeisti įvertinimą</button>
