@@ -18,7 +18,7 @@ const profileUrl = id ? `https://www.google.com/maps/place/?q=place_id:${id}` : 
       <p class="gp__wait" data-gp-wait hidden>Įkeliama iš Google…</p>
     </div>
     <p class="gp__fail" data-gp-fail hidden>Google profilio čia įkelti nepavyko. <a href={profileUrl} target="_blank" rel="noopener">Atidaryti Google profilį <span class="sr-only">(atsidaro naujame lange)</span></a></p>
-    <a class="btn btn--primary gp__write" href={site.atsiliepimai.ivertinimas} data-loc="google-review">Palikite atsiliepimą Google</a>
+    <a class="btn btn--primary gp__write" href={site.google.reviewUrl} target="_blank" rel="noopener" data-loc="google-review">Palikite atsiliepimą Google</a>
   </div>
 ) : PREVIEW ? (
   <div class="gp gp--empty">

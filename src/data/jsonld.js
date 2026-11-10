@@ -14,10 +14,11 @@ const telBare = site.telefonasHref.replace('tel:', '');
 const areaServed = [
   { '@type': 'AdministrativeArea', name: 'Kauno apskritis' },
   ...site.vietoves.map((v) => ({ '@type': 'City', name: v.miestas })),
+  ...site.kitosVietoves.map((m) => ({ '@type': 'City', name: m })),
   /* site.zona: sprendimas 2026-11-06 (Paslaugos.lt profilyje dar +200 km) */
   {
     '@type': 'GeoCircle',
-    geoMidpoint: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
+    geoMidpoint: { '@type': 'GeoCoordinates', latitude: site.zonosCentras.lat, longitude: site.zonosCentras.lng },
     geoRadius: site.zona.km * 1000,
   },
 ];
@@ -41,11 +42,15 @@ export function localBusiness() {
     priceRange: site.priceRange,
     founder: { '@type': 'Person', name: site.savininkas },
     knowsLanguage: 'lt',
+    /* Kaip Google verslo profilyje: Garliava, 53243 Kauno r. sav. (gatvė be namo numerio — nežymime) */
     address: {
       '@type': 'PostalAddress',
-      addressRegion: site.regionas,
+      addressLocality: site.adresas.miestas,
+      postalCode: site.adresas.pastoKodas,
+      addressRegion: site.adresas.savivaldybe,
       addressCountry: 'LT',
     },
+    hasMap: site.google.mapsUrl,
     geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
     areaServed,
     openingHoursSpecification: [
@@ -56,7 +61,7 @@ export function localBusiness() {
         closes: '18:00',
       },
     ],
-    sameAs: [site.facebook, site.atsiliepimai.profilis],
+    sameAs: [site.facebook, site.google.mapsUrl, site.atsiliepimai.profilis],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'ArbCut paslaugos',

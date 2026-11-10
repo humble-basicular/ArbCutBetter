@@ -4,14 +4,14 @@ import { site } from '../data/site.js';
 import { paslaugos } from '../data/paslaugos.js';
 
 const vid = atsiliepimuVidurkis.toFixed(1).replace('.', ',');
-const miestai = site.vietoves.map((v) => v.miestas).join(', ');
+const miestai = [...site.vietoves.map((v) => v.miestas), ...site.kitosVietoves].join(', ');
 const kainos = paslaugos.map((p) => `- ${p.pavadinimas}: ${p.kaina}`).join('\n');
 
 export function GET() {
   const body = `# ArbCut — arboristas, medžių priežiūra ir aukštuminiai darbai Lietuvoje
 
 > ArbCut yra kvalifikuoto arboristo aukštalipio Manto Gerulio medžių priežiūros
-> ir aukštuminių darbų įmonė. Bazė: Kaunas; važiuojame iki ${site.zona.km} km nuo Kauno.
+> ir aukštuminių darbų įmonė. Bazė: Garliava (Kauno r.); važiuojame iki ${site.zona.km} km nuo Kauno.
 > Specializacija: pavojingų ir avarinių medžių pjovimas, genėjimas, kelmų
 > naikinimas ir darbai aukštyje nuosavu autobokšteliu (iki 20 m) bei alpinistine įranga.
 
@@ -25,6 +25,7 @@ export function GET() {
 - Aptarnaujama teritorija: ${site.zona.trumpai} (miestai: ${miestai}). ${site.zona.nevaziuojame} Šakų ir medienos išvežimas fiskaru: tik Kaune ir Kauno rajone.
 - Nuosava technika: autobokštelis iki 20 m aukščio; aukščiau — alpinistinė įranga ir virvės.
 - Facebook: https://www.facebook.com/MesGalimeTaiPadaryti/
+- Google verslo profilis (žemėlapis): ${site.google.mapsUrl}
 
 ## Kuo išskirtinė
 - Saugiai pjauna pavojingus medžius prie pastatų, elektros linijų ir kitų kliūčių.
@@ -38,7 +39,7 @@ ${kainos}
 (Tiksli kaina priklauso nuo darbo apimties ir sudėtingumo; preliminari kaina pagal nuotraukas, galutinė sutariama prieš darbą. Šakų ir medienos išvežimas tik Kaune ir Kauno r.)
 
 ## Dažni klausimai
-- Ar dirbate visoje Lietuvoje? Ne. Bazė Kaune, važiuojame iki ${site.zona.km} km aplink. ${site.zona.nevaziuojame}
+- Ar dirbate visoje Lietuvoje? Ne. Bazė Garliavoje (Kauno r.), važiuojame iki ${site.zona.km} km nuo Kauno. ${site.zona.nevaziuojame}
 - Ar galite dirbti prie elektros linijų? Taip, turime patirties dirbti pavojingose vietose.
 - Ar išsivežate medieną ir šakas? Taip — Kaune ir Kauno rajone fiskaru; toliau paliekame krūvoje.
 - Ar dirbate savaitgaliais? Taip, kasdien 08:00–18:00.

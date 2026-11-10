@@ -12,13 +12,13 @@ const reviews = atrinkti({ n: 3, min: 200, max: 700 }).slice(0, 3);
 ---
 <BaseLayout
   title="Apie ArbCut — arboristas aukštalipys Mantas Gerulis su komanda"
-  description={`ArbCut: arboristas aukštalipys Mantas Gerulis su komanda. Alpinistinė įranga, nuosavas autobokštelis iki 20 m, bazė Kaune. ${bendrasKiekis} klientų atsiliepimai.`}
+  description={`ArbCut: arboristas aukštalipys Mantas Gerulis su komanda. Alpinistinė įranga, nuosavas autobokštelis iki 20 m, bazė Garliavoje (Kauno r.). ${bendrasKiekis} klientų atsiliepimai.`}
   schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Apie', path: '/apie' }])]}
 >
   <PageHero
     title="Mantas Gerulis ir ArbCut komanda"
     kicker="Apie mus"
-    lead={`Esame arboristai aukštalipiai iš Kauno. Pjauname, genime ir prižiūrime medžius ten, kur reikia lipti ar dirbti aukštyje — prie namų, laidų, kapinėse ir ankštuose kiemuose. Turime ${patirtisMetai} metų patirties.`}
+    lead={`Esame arboristai aukštalipiai iš Garliavos, Kauno rajono. Pjauname, genime ir prižiūrime medžius ten, kur reikia lipti ar dirbti aukštyje — prie namų, laidų, kapinėse ir ankštuose kiemuose. Turime ${patirtisMetai} metų patirties.`}
     crumbs={[{ label: 'Apie' }]}
     photo="medis-prie-laidu-ziema"
     photoAlt="Medžio pjovimas žiemą šalia laidų ir namo"
@@ -85,8 +85,9 @@ const reviews = atrinkti({ n: 3, min: 200, max: 700 }).slice(0, 3);
         <li><span>Telefonas</span><a href={site.telefonasHref} data-loc="about-call">{site.telefonas}</a></li>
         <li><span>El. paštas</span><a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></li>
         <li><span>Darbo laikas</span><strong>Kasdien 08:00–18:00</strong></li>
-        <li><span>Bazė</span><strong>Kaunas, Kauno apskritis</strong></li>
+        <li><span>Bazė</span><strong>Garliava, Kauno rajonas</strong></li>
         <li><span>Facebook</span><a href={site.facebook} target="_blank" rel="noopener">MesGalimeTaiPadaryti<span class="sr-only"> (atsidaro naujame lange)</span></a></li>
+        <li><span>Google</span><a href={site.google.mapsUrl} target="_blank" rel="noopener">ArbCut žemėlapyje<span class="sr-only"> (atsidaro naujame lange)</span></a></li>
         <li><span>Atsiliepimai</span><a href="/atsiliepimai">{bendrasKiekis} klientų atsiliepimai</a></li>
       </ul>
     </div>

@@ -64,7 +64,7 @@ export const kodel = [
 export const duk = [
   {
     klausimas: 'Kur dirbate?',
-    atsakymas: 'Mūsų bazė — Kaunas, dažniausiai dirbame Kaune ir Kauno apskrityje. Išvykstame ir į kitus Lietuvos miestus; tolimesnį išvykimą suderiname iš anksto, o kelių kaimynų darbus galime atlikti per vieną atvykimą.',
+    atsakymas: 'Mūsų bazė — Garliava, Kauno rajonas, dažniausiai dirbame Kaune ir Kauno apskrityje. Išvykstame ir į kitus Lietuvos miestus; tolimesnį išvykimą suderiname iš anksto, o kelių kaimynų darbus galime atlikti per vieną atvykimą.',
   },
   {
     klausimas: 'Ar galite dirbti prie elektros linijų?',
@@ -114,6 +114,6 @@ export const dukPradzia = [
   },
   {
     klausimas: 'Kada galite atvažiuoti ir kiek toli važiuojate?',
-    atsakymas: `Dirbame kasdien 08:00–18:00, ir savaitgaliais. Bazė Kaune, važiuojame iki ${site.zona.km} km aplink. ${site.zona.nevaziuojame} Tolimesnį darbą suderiname iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.`,
+    atsakymas: `Dirbame kasdien 08:00–18:00, ir savaitgaliais. Bazė Garliavoje (Kauno r.), važiuojame iki ${site.zona.km} km nuo Kauno. ${site.zona.nevaziuojame} Tolimesnį darbą suderiname iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.`,
   },
 ];

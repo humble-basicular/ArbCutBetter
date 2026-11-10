@@ -52,7 +52,7 @@ export async function mount(box) {
     for (const t of data.towns) {
       const base = t.base;
       const m = el('a', `mpin${base ? ' mpin--base' : ''}${t.left ? ' mpin--left' : ''}`, `<span class="mpin__in">${base ? `<img src="${data.mark}" alt="" width="20" height="34">` : ''}<span class="mpin__dot"></span><span class="mpin__l">${t.name}</span></span>`);
-      m.href = t.href; m.setAttribute('aria-label', base ? `${t.name}, bazė` : `Medžių pjovimas: ${t.name}`);
+      m.href = t.href; m.setAttribute('aria-label', base ? `${t.name} ir Kauno rajonas, bazė Garliavoje` : `Medžių pjovimas: ${t.name}`);
       if (!reduce) m.firstChild.style.animationDelay = `${(i++) * 60}ms`;
       new maplibregl.Marker({ element: m, anchor: 'center' }).setLngLat(t.ll).addTo(map);
     }

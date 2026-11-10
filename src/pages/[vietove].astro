@@ -31,7 +31,7 @@ const townFaq = [
   isBase
     ? { klausimas: `Ar išvežate medieną ${v.kur}?`, atsakymas: 'Taip. Kaune ir Kauno rajone po darbų išvežame šakas ir medieną nuosavu fiskaru (talpa nuo 20 m³). Kas išvežama ir už kokią kainą, sutariame iš anksto.' }
     : { klausimas: `Ar išvežate medieną ${v.kur}?`, atsakymas: 'Medienos išvežimą fiskaru atliekame Kaune ir Kauno rajone. Kitur medį nupjauname, sutvarkome, o šakas ir medieną sukrauname tvarkingoje krūvoje.' },
-  { klausimas: `Kaip greitai galite atvykti ${v.kur}?`, atsakymas: isBase ? 'Kaunas — mūsų bazė, todėl čia atvykstame greičiausiai. Tikslų laiką pasakome telefonu pagal tos dienos darbus.' : 'Išvykimo datą suderiname iš anksto. Avariniu atveju paskambinkite — pasakysime, kada realiai galime būti.' },
+  { klausimas: `Kaip greitai galite atvykti ${v.kur}?`, atsakymas: isBase ? 'Mūsų bazė Garliavoje, šalia Kauno, todėl Kaune atvykstame greičiausiai. Tikslų laiką pasakome telefonu pagal tos dienos darbus.' : 'Išvykimo datą suderiname iš anksto. Avariniu atveju paskambinkite — pasakysime, kada realiai galime būti.' },
   ...duk.filter((q) => /elektros|savaitgal/.test(q.klausimas)),
 ];
 const title = `Medžių pjovimas ${v.kur} — arboristas aukštalipys | ArbCut`;
@@ -40,7 +40,7 @@ const description = `Medžių pjovimas ${v.kur}: pavojingi medžiai prie namų i
 <BaseLayout title={title} description={description} schemas={[localBusiness(), faqPage(townFaq), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: `Medžių pjovimas ${v.kur}`, path: `/${v.slug}` }])]}>
   <PageHero
     title={`Medžių pjovimas ${v.kur}`}
-    kicker={isBase ? 'Mūsų bazė' : `Arboristas aukštalipys · ${v.miestas}`}
+    kicker={isBase ? 'Pagrindinė darbo zona' : `Arboristas aukštalipys · ${v.miestas}`}
     lead={v.intro}
     crumbs={[{ label: `Medžių pjovimas ${v.kur}` }]}
     photo={isBase ? 'pjovimas-prie-laidu' : foto[0]}

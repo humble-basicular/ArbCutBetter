@@ -16,14 +16,14 @@ const data = {
     <div class="area__txt">
       <p class="kick">Aptarnavimo zona</p>
       <h2 id="area-h">Kur važiuojame</h2>
-      <p class="lead">Bazė Kaune. Dirbame Kaune, Kauno rajone ir miestuose žemiau. Į tolimesnius miestus važiuojame suderinę datą iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.</p>
+      <p class="lead">Bazė Garliavoje, Kauno rajone. Dirbame Kaune, Kauno rajone ir miestuose žemiau. Į tolimesnius miestus važiuojame suderinę datą iš anksto, kelių kaimynų darbus galima atlikti per vieną atvykimą.</p>
       <ul role="list" class="area__list">
         {vietoves.map((v, i) => (
           <li class:list={['rv', { 'is-base': v.pagrindinis }]} style={`--i:${i}`}>
             <a href={`/${v.slug}`}>
               <img class="area__pin" src={`${I}/ui-pin-160.png`} alt="" width="30" height="30" loading="lazy" />
               <span><span class="area__city">{v.miestas}</span>
-              <span class="area__sub">{v.pagrindinis ? 'Bazė, išvežame medieną' : `Medžių pjovimas ${v.kur}`}</span></span>
+              <span class="area__sub">{v.pagrindinis ? 'Kaunas ir Kauno r., išvežame medieną' : `Medžių pjovimas ${v.kur}`}</span></span>
             </a>
           </li>
         ))}
@@ -34,11 +34,11 @@ const data = {
 
     <div class="area__map">
       <div class="area__frame" data-area-map>
-        <img class="area__static" src="/assets/v5-brand/map/fallback.webp" alt="ArbCut aptarnavimo zona žemėlapyje: bazė Kaune ir aptarnaujami miestai" width="1200" height="900" loading="lazy" />
+        <img class="area__static" src="/assets/v5-brand/map/fallback.webp" alt="ArbCut aptarnavimo zona žemėlapyje: Kaunas su Kauno rajonu ir aptarnaujami miestai" width="1200" height="900" loading="lazy" />
         <div class="area__canvas" data-map-canvas></div>
         <script type="application/json" set:html={JSON.stringify(data)} />
       </div>
-      <p class="area__legend"><span><span class="lg lg--zone"></span>Aptarnavimo zona</span><span><span class="lg lg--base"></span>Bazė Kaune</span><span><span class="lg lg--town"></span>Miestai</span></p>
+      <p class="area__legend"><span><span class="lg lg--zone"></span>Aptarnavimo zona</span><span><span class="lg lg--base"></span>Kaunas ir Kauno r. (bazė Garliavoje)</span><span><span class="lg lg--town"></span>Miestai</span></p>
       <p class="area__credit">Žemėlapis: <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> © <a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a>. Duomenys © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> bendraautoriai.</p>
     </div>
   </div>

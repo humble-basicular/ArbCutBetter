@@ -16,7 +16,7 @@ const aukstyje = /^\/(paslaugos\/(darbai-su|dazymo|reklamin|lietvamzd|kiti)|darb
     <div class="wrap ftr__call">
       <div class="ftr__sym"><img src="/assets/v5-brand/map/lt-symbol.webp" alt="" width="1200" height="1013" loading="lazy" decoding="async" /></div>
       <div class="ftr__call-t">
-        <p class="tag ftr__tag">Bazė Kaune</p>
+        <p class="tag ftr__tag">Bazė Garliavoje</p>
         <p class="ftr__call-h">{aukstyje ? 'Reikia darbų aukštyje?' : 'Medis kelia nerimą?'} <span>Skambinkite.</span></p>
         <a class="ftr__tel" href={site.telefonasHref} data-loc="footer-call-big"><span class="ico-c" style="--cs:52px"><img src="/assets/v5-brand/raster/icons/ui-phone-160.png" alt="" width="36" height="36" /></span>{site.telefonas}</a>
         <p class="ftr__call-s">Kasdien 08:00–18:00 · nuotraukas SMS, Viber ar WhatsApp tuo pačiu numeriu arba <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a></p>
@@ -27,7 +27,7 @@ const aukstyje = /^\/(paslaugos\/(darbai-su|dazymo|reklamin|lietvamzd|kiti)|darb
   <div class="wrap ftr__grid">
     <div class="ftr__brand">
       <Logo tone="light" height={70} />
-      <p><strong>ArbCut</strong>, arboristas aukštalipys {site.savininkas} su komanda. Bazė Kaune, dirbame iki {site.zona.km} km aplink.</p>
+      <p><strong>ArbCut</strong>, arboristas aukštalipys {site.savininkas} su komanda. Bazė Garliavoje (Kauno r.), dirbame iki {site.zona.km} km nuo Kauno.</p>
       <a class="ftr__rep" href="/atsiliepimai"><span>{rating} iš 5 · {bendrasKiekis} atsiliepimai</span></a>
       <p class="ftr__press">Apie mus rašė <a href={lrt.url} target="_blank" rel="noopener">LRT.lt</a> ir <a href={valstietis.url} target="_blank" rel="noopener">Valstietis.lt</a></p>
     </div>
@@ -57,6 +57,7 @@ const aukstyje = /^\/(paslaugos\/(darbai-su|dazymo|reklamin|lietvamzd|kiti)|darb
         <li><a href="/apie">Apie Mantą</a></li>
         <li><a href="/tinklarastis">Patarimai</a></li>
         <li><a href={site.facebook} target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href={site.google.mapsUrl} target="_blank" rel="noopener">Google žemėlapiuose</a></li>
       </ul>
     </div>
   </div>

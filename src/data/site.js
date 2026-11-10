@@ -28,8 +28,11 @@ export const site = {
 
   darboLaikas: 'Pirmadienis–Sekmadienis: 08:00–18:00',
   regionas: 'Kauno apskritis',
-  baze: 'Kaunas',
-  // Bazė Kaune; išvykstame ir į kitus miestus (išvykimą derinti iš anksto).
+  // Bazė pagal Google verslo profilį (2026-11-10): Liepų g., Garliava, 53243 Kauno r. sav. Namo numerio GBP nerodo.
+  baze: 'Garliava',
+  bazeKur: 'Garliavoje, Kauno r.',
+  adresas: { miestas: 'Garliava', savivaldybe: 'Kauno r. sav.', pastoKodas: '53243' },
+  // Išvykstame ir į kitus miestus (išvykimą derinti iš anksto).
   // Išvežimas fiskaru — TIK Kaune ir Kauno rajone.
   aptarnavimas: 'Kaunas, Kauno rajonas ir miestai iki 150 km nuo Kauno',
   // Vienas šaltinis visiems aptarnavimo teiginiams (matomam tekstui, meta, JSON-LD, llms.txt).
@@ -41,8 +44,12 @@ export const site = {
   },
   priceRange: '€€',
 
-  // Bazė Kaune (apytikslės koordinatės — GEO/JSON-LD areaServed centras)
-  geo: { lat: 54.8985, lng: 23.9036 },
+  // Bazė: Google žemėlapių ArbCut žymeklio koordinatės (vieša Maps kortelė, 2026-11-10)
+  geo: { lat: 54.8357587, lng: 23.8691275 },
+  // Spindulio centras: Kaunas (svetainė sako „iki 150 km nuo Kauno“)
+  zonosCentras: { lat: 54.8985, lng: 23.9036 },
+  // Papildomos GBP aptarnaujamos vietovės be atskiro puslapio (JSON-LD, llms.txt, žemėlapio sąrašas)
+  kitosVietoves: ['Garliava'],
 
   // Aptarnaujamos vietovės — pagrindiniai LT miestai (lokalus SEO + areaServed).
   // Kaunas pagrindinis (čia ir išvežimas fiskaru); kiti — miestai aptarnavimo zonoje (site.zona).
@@ -84,15 +91,17 @@ export const site = {
     reviews: true,       // Google atsiliepimų sekcija (rodo „palikite atsiliepimą", kol nėra realių)
   },
 
-  // --- Atsiliepimai (paslaugos.lt — klientas dar neturi Google Business profilio) ---
-  // Kai bus Google profilis, užpildyk googlePlaceId ir reviewUrl persijungs automatiškai.
-  /* Google verslo profilis (dar nesukurtas). Užpildžius placeId:
-     atsiranda Google įvertinimo blokas ir „Palikite atsiliepimą Google“.
-     Raktas — PUBLIC_GOOGLE_MAPS_KEY aplinkos kintamasis (ne repozitorijoje). */
+  // --- Google verslo profilis (ArbCut, Garliava) ---
+  /* Place ID perskaitytas iš viešos Google žemėlapių kortelės 2026-11-10 (ArbCut, Liepų g., Garliava,
+     (0-603) 66901). CID = GBP fid.
+     Google atsiliepimų dar nėra; svetainėje rodomi tik Paslaugos.lt atsiliepimai. */
   google: {
-    placeId: '',
+    placeId: 'ChIJXVJEko4j50YRTBpOYdx3f6U',
+    cid: '11925382126709381708',
+    get mapsUrl() { return `https://www.google.com/maps?cid=${this.cid}`; },
     get mapsKey() { return import.meta.env.PUBLIC_GOOGLE_MAPS_KEY || ''; },
-    get reviewUrl() { return this.placeId ? `https://search.google.com/local/writereview?placeid=${this.placeId}` : ''; },
+    // Oficiali GBP „Prašyti atsiliepimų“ nuoroda (perskaityta GBP valdyme 2026-11-10)
+    reviewUrl: 'https://g.page/r/CUwaTmHcd3-lEBM/review',
   },
   /* Paslaugos.lt profilio faktai (2026-11-04) */
   profilis: {
@@ -106,7 +115,7 @@ export const site = {
   atsiliepimai: {
     profilis: 'https://paslaugos.lt/mantas-gerulis-aa777',     // viešas profilis (skaityti)
     paliktiUrl: 'https://paslaugos.lt/atsiliepimas/aa777',     // „palikti atsiliepimą" forma (naudoja tik /ivertinimas)
-    ivertinimas: '/ivertinimas',                               // visi „Parašyti atsiliepimą" mygtukai veda čia (filtras 4–5 / 1–3)
+    ivertinimas: '/ivertinimas',                               // visi „Parašyti atsiliepimą" mygtukai veda čia (neutralus: visiems tos pačios viešos nuorodos + atskira privati žinutė)
     get reviewUrl() {
       return this.paliktiUrl;
     },

@@ -8,7 +8,7 @@ import { localBusiness, breadcrumbs } from '@data/jsonld.js';
 ---
 <BaseLayout
   title="Kontaktai — ArbCut, Kaunas · +370 603 66901"
-  description="Susisiekite su ArbCut: +370 603 66901, aukstuminiai.darbai@yahoo.com. Kasdien 08:00–18:00. Bazė Kaune, išvykstame ir į kitus miestus."
+  description="Susisiekite su ArbCut: +370 603 66901, aukstuminiai.darbai@yahoo.com. Kasdien 08:00–18:00. Bazė Garliavoje (Kauno r.), išvykstame ir į kitus miestus."
   schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Kontaktai', path: '/kontaktai' }])]}
 >
   <PageHero title="Kontaktai" kicker="Susisiekite" lead="Greičiausia — paskambinti. Jei patogiau rašyti, užpildykite formą ir, jei galite, atsiųskite nuotraukų el. paštu." crumbs={[{ label: 'Kontaktai' }]} actions={false} />
@@ -19,10 +19,11 @@ import { localBusiness, breadcrumbs } from '@data/jsonld.js';
         <dl class="ct__facts">
           <div><dt>El. paštas</dt><dd><a class="textlink" href={`mailto:${site.elPastas}`}>{site.elPastas}</a></dd></div>
           <div><dt>Darbo laikas</dt><dd>Kasdien 08:00–18:00</dd></div>
-          <div><dt>Bazė</dt><dd>Kaunas, Kauno apskritis. Išvykstame ir į kitus miestus.</dd></div>
+          <div><dt>Bazė</dt><dd>Garliava, Kauno rajonas. Išvykstame ir į kitus miestus.</dd></div>
         </dl>
         <div class="ct__links">
           <a class="link-arrow" href={site.facebook} target="_blank" rel="noopener">Facebook<span class="sr-only"> (atsidaro naujame lange)</span></a>
+          <a class="link-arrow" href={site.google.mapsUrl} target="_blank" rel="noopener">Google žemėlapiuose<span class="sr-only"> (atsidaro naujame lange)</span></a>
           <a class="link-arrow" href="/atsiliepimai">Klientų atsiliepimai</a>
         </div>
         <div class="ct__towns">

@@ -1,5 +1,8 @@
 /* =====================================================================
    PASLAUGOS — 12 realių paslaugų iš paslaugos.lt profilio + kainos.
+   Pavadinimai, aprašai ir „nuo X €“ kainos suderinti su Google verslo profiliu (2026-11-10).
+   GBP turi dar 13-ą bendrą paslaugą „Medžių pjovimas / rovimas“ (nuo 50 €) — svetainėje ją dengia
+   miestų puslapiai /medziu-pjovimas-*. GBP „Darbai autobokšteliu iki 20 m“ kainos neturi (svetainėje nuo 150 €).
    Kainos iš profilio („Kaina nuo X €"). Slug'ai = paslaugų puslapių URL
    (/paslaugos/[slug]) ir atitinka nuotraukų failus public/assets/images/paslaugos/.
    SVARBU: jokių „smulkinimas/smulkintuvas" — klientas pardavė smulkintuvą.
@@ -18,7 +21,7 @@ export const paslaugos = [
   },
   {
     slug: 'darbai-su-autoboksteliu',
-    pavadinimas: 'Darbai su autobokšteliu (iki 20 m)',
+    pavadinimas: 'Darbai autobokšteliu iki 20 m',
     aprasymas: 'Aukštuminiai darbai iki 20 metrų nuosavu autobokšteliu — greitai, saugiai ir be papildomos technikos nuomos.',
     seo: 'Turime nuosavą autobokštelį, kuriuo saugiai pasiekiame iki 20 metrų aukštį. Tai leidžia greitai ir tvarkingai atlikti medžių pjovimą, genėjimą, dažymo, valymo ar montavimo darbus aukštyje be papildomos technikos nuomos. Kai reikia dar aukščiau arba bokštelis nepasiekia dėl ankštos aplinkos, dirbame alpinistine įranga ir virvėmis. Nuosava technika reiškia mažesnę kainą jums ir lankstesnį darbų grafiką.',
     kaina: 'nuo 150 €',
@@ -28,7 +31,7 @@ export const paslaugos = [
   },
   {
     slug: 'medziu-genejimas',
-    pavadinimas: 'Medžių genėjimas ir lajos formavimas',
+    pavadinimas: 'Medžių karpymas ir genėjimas',
     aprasymas: 'Profesionalus genėjimas, sausų ir pavojingų šakų šalinimas bei lajos formavimas, kad medis liktų sveikas ir saugus.',
     seo: 'Profesionalus genėjimas pailgina medžio gyvenimą ir sumažina riziką: pašaliname sausas, sergančias ar trinčiai linkusias šakas, formuojame lają ir prašviesiname vainiką. Dirbame arboristiniu būdu — alpinistine įranga arba autobokšteliu — todėl pasiekiame ir aukštas, sunkiai prieinamas šakas nepažeisdami medžio. Tinkamas genėjimo laikas ir pjūvio vieta lemia, ar medis greitai užgis, todėl visada paaiškiname, ką ir kodėl darome.',
     kaina: 'nuo 50 €',
@@ -38,7 +41,7 @@ export const paslaugos = [
   },
   {
     slug: 'kelmu-naikinimas-frezavimas',
-    pavadinimas: 'Kelmų naikinimas (frezavimas / išrovimas)',
+    pavadinimas: 'Kelmų rovimas',
     aprasymas: 'Kelmų pašalinimas frezavimo būdu arba išrovimas iki žemės lygio — teritorija paruošta sodinimui ar statyboms.',
     seo: 'Likęs kelmas trukdo sodinti, statyti ar tiesiog gadina vaizdą. Kelmus šaliname frezavimo būdu arba išrovimu — priklausomai nuo kelmo dydžio, vietos ir to, ką planuojate daryti toliau. Frezavimas pašalina kelmą iki žemės lygio (ar giliau), todėl vieta lieka tvarkinga ir tinkama naujam sodinimui. Dirbame ir sudėtingose vietose, pvz. kapinėse ar šalia takelių, su pagarba aplinkai.',
     kaina: 'nuo 75 €',
@@ -48,8 +51,8 @@ export const paslaugos = [
   },
   {
     slug: 'saku-isvezimas',
-    pavadinimas: 'Šakų ir medienos išvežimas',
-    aprasymas: 'Po darbų išvežame šakas ir medieną fiskaru (Kaune ir Kauno rajone), paliekame švarią teritoriją.',
+    pavadinimas: 'Šakų ir medienos išvežimas fiskaru',
+    aprasymas: 'Po darbų išvežame šakas ir medieną fiskaru Kaune ir Kauno rajone (talpa nuo 20 kubinių metrų) ir paliekame švarią teritoriją.',
     seo: 'Po pjovimo lieka šakos ir mediena — pasirūpiname ir tuo. Kaune ir Kauno rajone turime fiskarą, kuriuo išvežame susidariusią medieną ir šakas (talpa nuo 20 kubinių metrų), o teritoriją paliekame sutvarkytą. Toliau už Kauno rajono medį nupjauname ir sutvarkome, o šakas bei medieną paliekame krūvoje. Visada iš anksto sutariame, kas išvežama ir už kokią kainą — be netikėtumų.',
     kaina: 'nuo 80 €',
     nuotrauka: '/assets/images/paslaugos/saku-isvezimas.jpg',
@@ -58,7 +61,7 @@ export const paslaugos = [
   },
   {
     slug: 'medziu-lajos-stabilizavimas',
-    pavadinimas: 'Medžių lajos stabilizavimo sistemos',
+    pavadinimas: 'Lajos stabilizavimo sistemų montavimas',
     aprasymas: 'Lajos stabilizavimo sistemų montavimas ir priežiūra — išvengsime galimos rizikos žmonėms ir turtui, o medis lieka gyvas.',
     seo: 'Ne kiekvieną pavojingą medį būtina nupjauti. Kai medis vertingas, bet turi įtrūkusią ar persišakojusią lają, sumontuojame lajos stabilizavimo (atotampų) sistemą, kuri suriša šakas ir sumažina lūžimo riziką per vėją ar apkrovą. Kiekvienas atvejis vertinamas individualiai — įvertiname medį, pasiūlome sprendimą ir prižiūrime sistemą vėliau. Taip išsaugomas medis ir apsaugomi žmonės bei turtas.',
     kaina: 'nuo 100 €',
@@ -68,8 +71,8 @@ export const paslaugos = [
   },
   {
     slug: 'gyvatvoriu-karpymas',
-    pavadinimas: 'Gyvatvorių karpymas',
-    aprasymas: 'Gyvatvorių formavimas ir karpymas — kaina priklauso nuo aukščio, pločio ir ilgio, sutariama individualiai.',
+    pavadinimas: 'Gyvatvorių formavimas ir karpymas',
+    aprasymas: 'Gyvatvorių formavimas ir karpymas — kaina priklauso nuo aukščio, pločio ir ilgio (nuo 2 € už metrą), sutariama individualiai.',
     seo: 'Tvarkingai apkarpyta gyvatvorė formuoja viso kiemo vaizdą. Karpome ir formuojame įvairaus aukščio gyvatvores, pašaliname peraugusias ar apdžiūvusias dalis. Kaina priklauso nuo gyvatvorės aukščio, pločio ir ilgio — paprastai svyruoja nuo 2 iki 7 € už bėginį metrą ir sutariama individualiai. Po darbų surenkame ir, jei reikia, išvežame nukarpytas šakas.',
     kaina: 'nuo 2 €/m',
     nuotrauka: '/assets/images/paslaugos/gyvatvoriu-karpymas.jpg',
@@ -78,7 +81,7 @@ export const paslaugos = [
   },
   {
     slug: 'dazymo-darbai-aukstyje',
-    pavadinimas: 'Dažymo darbai aukštyje',
+    pavadinimas: 'Pakalimų ir fasadų dažymas autobokšteliu',
     aprasymas: 'Pakalimų, fasadų ir kitų aukštai esančių paviršių dažymas su autobokšteliu — kokybiškai ir tvarkingai.',
     seo: 'Atliekame dažymo darbus aukštyje — namų pakalimus, fasadų elementus, stogo detales ir kitus sunkiai pasiekiamus paviršius. Dirbame su autobokšteliu, todėl darbas vyksta greitai ir saugiai, be pastolių statymo. Paviršius paruošiame, nudažome kokybiškai ir tvarkingai, o aplinką po darbų sutvarkome. Klientai vertina, kad kartu galime atlikti ir gretimus darbus — latakų valymą ar smulkų remontą aukštyje.',
     kaina: 'nuo 100 €',
@@ -88,7 +91,7 @@ export const paslaugos = [
   },
   {
     slug: 'reklaminiu-iskabu-montavimas',
-    pavadinimas: 'Reklaminių iškabų montavimas ir demontavimas',
+    pavadinimas: 'Iškabų ir stendų montavimas aukštyje',
     aprasymas: 'Reklaminių iškabų, stendų ir ženklų montavimas bei demontavimas aukštyje su autobokšteliu.',
     seo: 'Montuojame ir demontuojame reklamines iškabas, stendus bei ženklus aukštyje. Nuosavas autobokštelis leidžia saugiai dirbti prie pastatų fasadų ir aukštų konstrukcijų be brangaus pastolių statymo. Kaina skaičiuojama nuo 3 € už kvadratinį metrą, priklausomai nuo iškabos dydžio, aukščio ir tvirtinimo sudėtingumo. Dirbame tvarkingai ir laikomės saugos reikalavimų.',
     kaina: 'nuo 3 €/m²',
@@ -98,7 +101,7 @@ export const paslaugos = [
   },
   {
     slug: 'lietvamzdziu-stogo-valymas',
-    pavadinimas: 'Lietvamzdžių ir stogo dangos valymas',
+    pavadinimas: 'Lietaus latakų ir stogų valymas',
     aprasymas: 'Lietaus latakų, lietvamzdžių ir stogo dangos valymas nuo lapų, samanų ir nešvarumų — su autobokšteliu.',
     seo: 'Užsikimšę latakai ir lietvamzdžiai sukelia drėgmės problemų ir gadina fasadą. Išvalome namų lietaus latakus nuo lapų ir kitų sąnašų, taip pat lietvamzdžius, nuvalome stogo dangą nuo samanų ir nešvarumų. Dirbame su autobokšteliu, todėl pasiekiame ir aukštų bei sudėtingų stogų vietas. Kaina nuo 4 € už metrą; žiemą papildomai šaliname sniegą, ledą ir varveklius nuo stogų.',
     kaina: 'nuo 4 €/m',
@@ -118,7 +121,7 @@ export const paslaugos = [
   },
   {
     slug: 'kiti-aukstuminiai-darbai',
-    pavadinimas: 'Kiti aukštuminiai darbai',
+    pavadinimas: 'Alpinistiniai darbai aukštyje',
     aprasymas: 'Įvairūs darbai aukštyje alpinistine įranga arba autobokšteliu — varveklių šalinimas, dekoracijų kabinimas ir kt.',
     seo: 'Be medžių, atliekame ir kitus aukštuminius darbus, kuriems reikia alpinistinės įrangos ar autobokštelio: varveklių ir sniego šalinimą nuo stogų, kalėdinių dekoracijų bei lempučių kabinimą, smulkų remontą ir montavimą aukštyje sunkiai prieinamose vietose. Jei turite netipinį darbą aukštyje — paskambinkite ir aptarsime, ar galime padėti. Dažniausiai sprendimą randame.',
     kaina: 'nuo 50 €',
@@ -160,21 +163,21 @@ export const kategorijos = [
     punktai: [
       'Genėjimas ir lajos formavimas',
       'Sausų ir pavojingų šakų šalinimas',
-      'Medžių lajos stabilizavimo sistemos',
+      'Lajos stabilizavimo sistemų montavimas',
       'Sodų ir vaismedžių priežiūra',
     ],
     nuoroda: '/paslaugos/medziu-genejimas',
   },
   {
     nr: '03',
-    pavadinimas: 'Darbai su autobokšteliu (iki 20 m)',
+    pavadinimas: 'Darbai autobokšteliu iki 20 m',
     ikona: 'autobokstelis',
     nuotrauka: '/assets/images/Technika.jpg',
     punktai: [
       'Aukštuminiai darbai iki 20 metrų',
-      'Dažymo darbai aukštyje',
-      'Reklaminių iškabų montavimas',
-      'Lietvamzdžių ir stogo dangos valymas',
+      'Pakalimų ir fasadų dažymas',
+      'Iškabų ir stendų montavimas aukštyje',
+      'Lietaus latakų ir stogų valymas',
     ],
     nuoroda: '/paslaugos/darbai-su-autoboksteliu',
   },
@@ -193,7 +196,7 @@ export const kategorijos = [
   },
   {
     nr: '05',
-    pavadinimas: 'Šakų ir medienos išvežimas',
+    pavadinimas: 'Šakų ir medienos išvežimas fiskaru',
     ikona: 'sunkvezimis',
     nuotrauka: '/assets/images/paslaugos/saku-isvezimas.jpg',
     punktai: [
@@ -210,7 +213,7 @@ export const kategorijos = [
     ikona: 'gyvatvore',
     nuotrauka: '/assets/images/galerija/galerija-77.jpg',
     punktai: [
-      'Gyvatvorių karpymas ir formavimas',
+      'Gyvatvorių formavimas ir karpymas',
       'Krūmų ir želdinių genėjimas',
       'Varveklių ir sniego šalinimas nuo stogų',
       'Kalėdinių dekoracijų kabinimas',

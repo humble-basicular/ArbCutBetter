@@ -8,7 +8,7 @@ import { site } from './site.js';
 
 const turinys = {
   'medziu-pjovimas-kaunas': {
-    intro: 'Kaunas ir Kauno rajonas — mūsų bazė. Atvykstame greičiausiai, o medieną ir šakas išvežame fiskaru.',
+    intro: 'Kaunas ir Kauno rajonas — mūsų pagrindinė darbo zona, bazė Garliavoje. Atvykstame greičiausiai, o medieną ir šakas išvežame fiskaru.',
     tekstas:
       'Kaunas yra ArbCut namų teritorija — čia ir Kauno rajone dirbame dažniausiai, todėl atvykstame operatyviai, o po darbų medieną bei šakas išvežame nuosavu fiskaru. Mieste daug brandžių medžių prie namų, garažų ir elektros linijų, kuriuos tenka pjauti dalimis ir nuleisti virvėmis. Turime nuosavą autobokštelį iki 20 m, todėl genėjimą ar pavojingų medžių šalinimą atliekame saugiai net ankštuose Kauno kiemuose ir senamiesčio sklypuose.',
   },

@@ -17,7 +17,7 @@ export const paslaugosMiestuose = (paslauga) => miestuPaslaugos.filter((m) => m.
 export const miestoPaslaugos = (slug) => miestuPaslaugos.filter((m) => m.v.slug === slug);
 
 export const atvykimas = (v) => (v.pagrindinis
-  ? 'Kaunas yra mūsų bazė, todėl čia atvykstame greičiausiai. Tikslų laiką pasakome telefonu pagal tos dienos darbus.'
+  ? 'Mūsų bazė Garliavoje, šalia Kauno, todėl Kaune atvykstame greičiausiai. Tikslų laiką pasakome telefonu pagal tos dienos darbus.'
   : `${v.kur} dirbame suderinę datą iš anksto. Kelių kaimynų darbus galima atlikti per vieną atvykimą.`);
 
 export const isvezimas = (v) => (v.pagrindinis
