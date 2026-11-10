@@ -31,9 +31,10 @@ public/         # assets/images, llms.txt, robots.txt, logotipai
 ```
 
 ## Turinys
-- 12 paslaugų (6 kategorijos), 9 vietovių puslapiai, galerija (86 nuotr.), 4 tinklaraščio straipsniai.
+- 12 paslaugų (6 kategorijos; pavadinimai/aprašai/„nuo X €“ kainos suderinti su Google verslo profiliu 2026-11-10), 9 miestų ir 15 paslauga×miestas puslapių, galerija, 4 tinklaraščio straipsniai.
 - Atsiliepimai **automatiškai sinchronizuojami su paslaugos.lt** (žr. žemiau). **Faktai/kainos — nepramanyti.**
-- GEO: JSON-LD (LocalBusiness + AggregateRating + Review + Service + FAQ + BlogPosting), `llms.txt`.
+- GEO: JSON-LD (LandscapingBusiness su adresu Garliava/Kauno r., `hasMap`/`sameAs` į Google žemėlapius ir Facebook + Service + FAQ + BlogPosting + Person), `llms.txt`. Trečiųjų šalių (Paslaugos.lt) įvertinimai schemoje nežymimi.
+- Integracijos ir paleidimo sąlygos: `INTEGRATIONS.md`.
 
 ## Deploy (Cloudflare Pages)
 - Build command: `npm run build`
@@ -52,9 +53,11 @@ tikras Chrome langas Mato Mac'e.
 - Saugikliai: nekeičia nieko, jei profilis neįsikėlė, nuskaitytas ne visas sąrašas ar atsiliepimų sumažėjo >5.
 - Paslaugų puslapiuose pirmiau rodomi tos paslaugos atsiliepimai (žemėlapis `scripts/sync-atsiliepimai.mjs`).
 
-## Šventi duomenys (nekeisti be kliento)
+## Šventi duomenys (nekeisti be kliento; turi sutapti su Google verslo profiliu)
 - Tel.: **+370 603 66901** · El. paštas: **aukstuminiai.darbai@yahoo.com**
-- Facebook: facebook.com/MesGalimeTaiPadaryti
+- Darbo laikas: **kasdien 08:00–18:00** (ne 24/7)
+- Bazė: **Garliava, Kauno r.**; zona: Kaunas +150 km (Klaipėda, Šiauliai — ne)
+- Facebook: facebook.com/MesGalimeTaiPadaryti · Google: `site.google` (`src/data/site.js`)
 
 ---
 Programavimas: [jarvisweb.lt](https://jarvisweb.lt)

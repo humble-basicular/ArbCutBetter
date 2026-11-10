@@ -256,7 +256,7 @@ export const detales = {
     description:
       'Kelmų pašalinimas frezavimu iki žemės lygio ar giliau arba išrovimu — vieta paruošta sodinti ar statyti. Kaina nuo 75 €. +370 603 66901.',
     ivadas:
-      'Kelmą šaliname frezavimo būdu arba išrovimu — pagal kelmo dydį, vietą ir tai, ką planuojate daryti toliau. Frezuojant kelmas susmulkinamas iki žemės lygio ar giliau, todėl vietoje galima sėti veją ar sodinti.',
+      'Kelmą šaliname frezavimo būdu arba išrovimu — pagal kelmo dydį, vietą ir tai, ką planuojate daryti toliau. Frezuojant kelmas pašalinamas iki žemės lygio ar giliau, todėl vietoje galima sėti veją ar sodinti.',
     tinka: [
       'Liko kelmas po medžio pjovimo',
       'Ruošiate vietą naujam sodinimui, takeliui ar statybai',

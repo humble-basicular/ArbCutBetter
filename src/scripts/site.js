@@ -158,7 +158,7 @@
 
   /* Formos: validacija, siuntimas į Workerį; peržiūroje niekur nesiunčiama */
   $$('form.qf').forEach((form) => {
-    const err = $('.qf__err:not([data-send-err])', form);
+    const err = $('.qf__err:not([data-send-err]):not([data-iv-mailerr])', form);
     const sendErr = $('[data-send-err]', form);
     const done = $('.qf__done', form);
     const required = $$('[required]', form);
