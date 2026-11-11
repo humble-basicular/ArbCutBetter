@@ -12,6 +12,8 @@ export const PREVIEW = import.meta.env.PUBLIC_PREVIEW === '1';
 export const site = {
   pavadinimas: 'ArbCut',
   savininkas: 'Mantas Gerulis',
+  /* Rekvizitai iš sąskaitos AA-1 (2026-04-22). Namų adreso viešai nerodome (Mato sprendimas 2026-11-11). */
+  ivPazyma: '879632',   // individualios veiklos pažymos Nr.
   tagline: 'Kvalifikuotas arboristas aukštalipys su komanda',
 
   // --- Kontaktai (ŠVENTI — nekeisk be kliento) ---
