@@ -19,7 +19,7 @@ Sprendimas 2026-11-11 (Matas): dabar forma = paprasta, užklausos keliauja tik e
 ## GBP ↔ svetainė (patikrinta 2026-11-10 GBP valdyme; Mantas jau yra GBP savininkas)
 - NAP: ArbCut · +370 603 66901 · aukstuminiai.darbai@yahoo.com · Liepų g., Garliava, 53243 Kauno r. sav. (svetainė gatvės nerodo — GBP be namo numerio).
 - Darbo laikas: kasdien 08:00–18:00.
-- Paslaugos: svetainės 12 pavadinimų = GBP pavadinimai. GBP turi 13-ą „Medžių pjovimas / rovimas“ (nuo 50 €) — svetainėje tai miestų puslapiai. Kainos sutampa, išskyrus: GBP „Darbai autobokšteliu iki 20 m“ be kainos (svetainėje nuo 150 €).
+- Paslaugos: svetainės 12 pavadinimų = GBP pavadinimai. GBP turi 13-ą „Medžių pjovimas / rovimas“ (nuo 50 €) — svetainėje tai miestų puslapiai. Kainos sutampa. 2026-11-11 GBP pataisyta (Mato leidimu): „Darbai autobokšteliu iki 20 m“ = Nuo 150 €; „Medžių pjovimas / rovimas“ aprašyme vietoj „visoje Lietuvoje“ – miestų sąrašas ir „iki 150 km nuo Garliavos“. Išsaugota ir matoma GBP valdyme; viešai gali atsirasti po Google peržiūros.
 - GBP svetainės laukas dar rodo `https://www.arbcut.lt/` — tas pats domenas, keisti nereikia, jei nauja svetainė pakeis senąją tame domene.
 
 ## Greitis (2026-11-11)
