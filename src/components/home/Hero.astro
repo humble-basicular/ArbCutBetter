@@ -57,17 +57,8 @@ const I = '/assets/v5-brand/raster/icons';
   <div class="wrap">
     <div class="dock__card">
       <h2 id="hc-h" class="dock__tab tag tag--orange">Kiek kainuos?</h2>
-      <div class="dock__grid">
-        <p class="dock__p">Aprašykite darbą. Susisieksime ir pasakysime preliminarią kainą.</p>
-        <QuoteForm variant="short" id="hero-form" prefix="h" />
-        <div class="dock__pics">
-          <p><strong>Patogiau žinute?</strong> Nuotraukas galite atsiųsti ir taip:</p>
-          <div class="dock__btns">
-            <a class="btn btn--ink btn--sm" href={site.smsHref} data-loc="hero-sms"><img class="ico" src={`${I}/ui-sms-160.png`} alt="" width="24" height="24" style="--is:24px;filter:brightness(0) invert(1)" />SMS</a>
-            <a class="btn btn--line btn--sm" href={`mailto:${site.elPastas}?subject=${encodeURIComponent('Nuotraukos kainai')}`} data-loc="hero-mail"><img class="ico" src={`${I}/ui-mail-160.png`} alt="" width="24" height="24" style="--is:24px" />El. paštu</a>
-          </div>
-        </div>
-      </div>
+      <p class="dock__p">Aprašykite darbą – susisieksime ir pasakysime preliminarią kainą. <span>Nuotraukas galite atsiųsti ir el. paštu <a href={site.mailFotoHref} data-loc="hero-mail">{site.elPastas}</a>.</span></p>
+      <QuoteForm variant="short" id="hero-form" prefix="h" />
     </div>
 
     <div class="press-strip">
@@ -137,18 +128,28 @@ const I = '/assets/v5-brand/raster/icons';
 
   /* Forma kerta lanką */
   .dock { position: relative; z-index: 6; margin-top: -112px; padding-bottom: clamp(48px, 5vw, 72px); background: transparent; }
-  .dock__card { position: relative; background: #fff; border-radius: var(--r-lg); box-shadow: var(--sh-3); padding: 34px clamp(20px, 3vw, 40px) 26px; }
+  .dock__card { position: relative; background: #fff; border-radius: var(--r-lg); box-shadow: var(--sh-3); padding: 18px clamp(20px, 3vw, 36px) 26px; }
   .dock__tab { position: absolute; left: clamp(16px, 3vw, 36px); top: -26px; font-size: clamp(1.15rem, 1rem + .6vw, 1.6rem); margin: 0; }
-  .dock__grid { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 2.2fr) minmax(0, 1.05fr); gap: clamp(18px, 2.4vw, 36px); align-items: end; }
-  .dock__p { font-size: 1.05rem; color: var(--ink-2); align-self: center; }
-  .dock__grid :global(.qf--short) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; align-items: start; }
-  .dock__grid :global(.qf--short .qf__row) { grid-column: 1 / -1; gap: 12px; }
-  .dock__grid :global(.qf--short .qf__foot), .dock__grid :global(.qf--short .qf__files), .dock__grid :global(.qf--short .qf__ts), .dock__grid :global(.qf--short .qf__err), .dock__grid :global(.qf--short .qf__done) { grid-column: 1 / -1; }
-  .dock__grid :global(.qf--short textarea) { min-height: 84px; height: 84px; resize: vertical; }
-  .dock__pics { border-left: 1px solid var(--line); padding-left: clamp(16px, 2vw, 28px); display: grid; gap: 10px; font-size: .98rem; color: var(--ink-2); }
-  .dock__pics strong { color: var(--spruce-900); }
-  @media (pointer: coarse) { .dock__btns .btn--ink { display: none; } }
-  .dock__btns { display: flex; gap: 10px; flex-wrap: wrap; }
+  .dock__p { margin: 0 0 16px; padding-left: 270px; font-size: 1rem; line-height: 1.45; color: var(--ink-2); }
+  .dock__p span { white-space: nowrap; }
+  .dock__p a { color: var(--spruce-900); font-weight: 700; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
+  /* Kompaktiškas maketas: plačiame ekrane 2 eilutės (telefonas · vardas · adresas / darbas · nuotraukos + mygtukas) */
+  .dock :global(.qf--short) { --lbl: 25px; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-areas: "tel name addr" "msg msg files" "msg msg foot"; gap: 14px 18px; align-items: start; }
+  .dock :global(.qf--short .qf__row) { display: contents; }
+  .dock :global(.qf--short label) { font-size: .92rem; line-height: 1.3; }
+  .dock :global(.qf--short .qf__f) { gap: 6px; }
+  .dock :global(.qf--short input) { min-height: 50px; font-size: 1.02rem; }
+  .dock :global(.qf--short .qf__f--tel) { grid-area: tel; }
+  .dock :global(.qf--short .qf__f--name) { grid-area: name; }
+  .dock :global(.qf--short .qf__f--addr) { grid-area: addr; }
+  .dock :global(.qf--short .qf__f--msg) { grid-area: msg; align-self: stretch; grid-template-rows: auto 1fr; }
+  .dock :global(.qf--short .qf__f--msg textarea) { min-height: 0; height: 100%; resize: none; font-size: 1.02rem; }
+  .dock :global(.qf--short .qf__files) { grid-area: files; padding-top: var(--lbl); }
+  .dock :global(.qf--short .qf__pick) { min-height: 50px; }
+  .dock :global(.qf--short .qf__hint) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .dock :global(.qf--short .qf__foot) { grid-area: foot; align-self: end; }
+  .dock :global(.qf--short .qf__btn) { width: 100%; min-height: 54px; }
+  .dock :global(.qf--short .qf__ts), .dock :global(.qf--short .qf__err), .dock :global(.qf--short .qf__done) { grid-column: 1 / -1; }
 
   .press-strip { display: flex; align-items: center; gap: clamp(16px, 3vw, 44px); margin-top: clamp(30px, 3vw, 44px); padding-inline: 6px; flex-wrap: wrap; }
   .press-strip__h { font-family: var(--display); font-weight: 500; text-transform: uppercase; letter-spacing: .16em; font-size: .85rem; color: var(--ink-2); }
@@ -158,9 +159,12 @@ const I = '/assets/v5-brand/raster/icons';
   .press-strip__ph { display: grid; gap: 2px; padding: 10px 16px; border: 2px dashed #E9A27A; border-radius: 10px; color: var(--orange-ink); font-weight: 700; font-size: .9rem; }
   .press-strip__ph small { font-weight: 600; color: var(--ink-2); }
 
-  @media (max-width: 1180px) {
-    .dock__grid { grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr); }
-    .dock__p { grid-column: 1 / -1; }
+  @media (max-width: 1100px) {
+    .dock :global(.qf--short) { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "tel name" "msg msg" "addr addr" "files foot"; }
+    .dock :global(.qf--short .qf__f--msg textarea) { height: auto; min-height: 96px; resize: vertical; }
+    .dock :global(.qf--short .qf__files) { padding-top: 0; align-self: end; }
+    .dock__p { padding-left: 0; padding-top: 30px; }
+    .dock__p span { white-space: normal; }
   }
   @media (max-width: 960px) {
     .hero { padding-bottom: 150px; }
@@ -170,8 +174,6 @@ const I = '/assets/v5-brand/raster/icons';
     .hero__block { width: 72%; right: -3%; }
     .hero__man { left: 2%; height: calc(100% + 80px); bottom: -110px; }
     .hero__rings { -webkit-mask-position: 60% 80%; mask-position: 60% 80%; }
-    .dock__grid { grid-template-columns: 1fr; }
-    .dock__pics { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 16px; }
   }
   @media (max-width: 640px) {
     .hero { padding-top: 26px; }
@@ -186,8 +188,9 @@ const I = '/assets/v5-brand/raster/icons';
     .hero__lift { right: 0; bottom: -4%; padding: 8px 14px 8px 8px; }
     .hero__lift-n { font-size: 1.4rem; }
     .dock { margin-top: -110px; }
-    .dock__grid :global(.qf--short) { grid-template-columns: 1fr; }
-    .dock__grid :global(.qf--short .qf__btn) { width: 100%; }
-    .dock__card { padding-top: 40px; }
+    .dock :global(.qf--short) { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "tel name" "msg msg" "addr addr" "files files" "foot foot"; gap: 12px 10px; }
+    .dock :global(.qf--short .qf__hint) { position: static; width: auto; height: auto; clip: auto; white-space: normal; }
+    .dock__card { padding-top: 14px; }
+    .dock__p { font-size: .95rem; }
   }
 </style>

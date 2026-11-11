@@ -220,24 +220,6 @@
         }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 60000 });
       });
     }
-    /* Telefonuose: atidaro žmogaus SMS programėlę su užpildyta žinute. Išsiunčia pats žmogus. */
-    const smsBtn = $('[data-sms-send]', form);
-    if (smsBtn && window.matchMedia('(pointer: coarse)').matches) {
-      smsBtn.hidden = false;
-      smsBtn.addEventListener('click', (e) => {
-        if (!valid()) { e.preventDefault(); return; }
-        const val = (n) => { const f = form.elements[n]; return f ? f.value.trim() : ''; };
-        const body = ['Sveiki, norėčiau sužinoti kainą.',
-          val('service') && 'Paslauga: ' + val('service'),
-          'Darbas: ' + val('message'),
-          val('location') && 'Adresas: ' + val('location'),
-          mapLink() && 'Žemėlapis: ' + mapLink(),
-          val('name') && 'Vardas: ' + val('name'),
-          'Tel.: ' + val('phone')].filter(Boolean).join('\n');
-        smsBtn.href = smsBtn.dataset.sms + '?&body=' + encodeURIComponent(body);
-        if (picked.length) fileSay('SMS žinutėje nuotraukas pridėkite patys.');
-      });
-    }
     /* Nuotraukų pasirinkimas: failai laikomi sąraše, kad būtų galima pašalinti po vieną */
     const fileInput = $('[data-files-input]', form);
     const fileList = $('[data-files-list]', form);
@@ -371,9 +353,15 @@
   const inView = new Set();
   const askPanel = $('#ask-panel');
   const quoteDlg = $('#quote-dialog');
+  /* Paslėpti iš karto, rodyti tik kai būsena stabili ~300 ms: slenkant pro formą ar atidarant klaviatūrą juosta
+     ir pokalbio mygtukas nebemirksi (anksčiau persijungdavo kiekvieną kartą, kai elementas ką tik išėjo iš ekrano). */
+  let barT;
   const syncBar = () => {
     const covered = (quoteDlg && quoteDlg.open) || (mnav && !mnav.hidden) || (askPanel && !askPanel.hidden);
-    document.documentElement.classList.toggle('mact-on', !inView.size && !covered);
+    const on = !inView.size && !covered;
+    clearTimeout(barT);
+    if (!on) document.documentElement.classList.remove('mact-on');
+    else barT = setTimeout(() => document.documentElement.classList.add('mact-on'), 300);
   };
   if ('IntersectionObserver' in window) {
     const barIo = new IntersectionObserver((ents) => {
@@ -535,7 +523,7 @@
   });
   document.addEventListener('focusout', (e) => {
     if (e.target.matches && e.target.matches('input, textarea, select')) {
-      setTimeout(() => { const a = document.activeElement; if (!a || !a.matches('input, textarea, select')) document.documentElement.classList.remove('is-typing'); }, 60);
+      setTimeout(() => { const a = document.activeElement; if (!a || !a.matches('input, textarea, select')) document.documentElement.classList.remove('is-typing'); }, 250);
     }
   });
 

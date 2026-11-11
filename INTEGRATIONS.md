@@ -2,7 +2,7 @@
 
 Atnaujinta 2026-11-11 (šaka `build/arbcut-v5-finish-20261110`).
 
-Sprendimas 2026-11-11 (Matas): dabar forma = paprasta, užklausos keliauja tik el. paštu per Worker'į (ne Web3Forms). Siuntimas į telefoną (SMS/CRM) yra „Offer 2“, vėliau. Visos reikšmės — `src/data/site.js`.
+Sprendimas 2026-11-11 (Matas): dabar forma = paprasta, užklausos keliauja tik el. paštu per Worker'į (ne Web3Forms). Siuntimas į telefoną (SMS/CRM) yra „Offer 2“, vėliau. Svetainėje nuotraukas siūlome siųsti tik el. paštu (SMS/Viber/WhatsApp nuorodų nėra); pokalbių lange – ta pati užklausų forma (`QuoteForm variant="chat"`, žymė „Klausimas iš svetainės“). Visos reikšmės — `src/data/site.js`.
 
 | Integracija | Būsena | Kur | Paleidimo sąlyga |
 |---|---|---|---|

@@ -1,5 +1,5 @@
 ---
-/* v5 antraštė: tamsi paslaugų juosta (darbo laikas, oficialus įvertinimas, SMS) + balta antraštė su dideliu logotipu.
+/* v5 antraštė: tamsi paslaugų juosta (darbo laikas, oficialus įvertinimas, nuotraukos el. paštu) + balta antraštė su dideliu logotipu.
    Telefonas visada matomas. Kabliukai site.js: .hdr, .hdr__dropbtn, #svc-menu, .hdr__burger, #mnav, [data-quote]. */
 import { site } from '@data/site.js';
 import { paslaugos } from '@data/paslaugos.js';
@@ -23,7 +23,7 @@ const servicesActive = path.startsWith('/paslaugos');
   <div class="util__in">
     <p class="util__hrs"><img class="ico" src="/assets/v5-brand/raster/icons/ui-clock-160.png" alt="" width="18" height="18" style="--is:18px" />Kasdien 08:00–18:00, ir savaitgaliais</p>
     <RatingUnit variant="chip" source loc="util-rating" />
-    <a class="util__sms" href={site.smsHref} data-loc="util-sms"><img class="ico" src="/assets/v5-brand/raster/icons/ui-camera-160.png" alt="" width="24" height="24" style="--is:24px;filter:none" />Kainą pasakome pagal nuotrauką</a>
+    <a class="util__sms" href={site.mailFotoHref} data-loc="util-mail"><img class="ico" src="/assets/v5-brand/raster/icons/ui-camera-160.png" alt="" width="24" height="24" style="--is:24px;filter:none" />Kainą pasakome pagal nuotrauką</a>
   </div>
 </div>
 <header class="hdr" id="top">
@@ -105,7 +105,7 @@ const servicesActive = path.startsWith('/paslaugos');
     ))}
   </nav>
   <div class="mnav__foot">
-    <a class="btn btn--line" href={site.smsHref} data-loc="mnav-sms">Siųsti nuotraukas SMS</a>
+    <a class="btn btn--line" href={site.mailFotoHref} data-loc="mnav-mail">Siųsti nuotraukas el. paštu</a>
     <button type="button" class="btn btn--primary" data-quote>Gauti kainą</button>
   </div>
 </div>

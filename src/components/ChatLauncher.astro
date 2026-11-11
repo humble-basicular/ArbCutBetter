@@ -91,13 +91,14 @@ const qa = dukPradzia.slice(0, 4);
   .ask__qa summary { cursor: pointer; padding: 10px 12px; font-weight: 700; font-size: .95rem; list-style: none; }
   .ask__qa summary::-webkit-details-marker { display: none; }
   .ask__qa p { padding: 0 12px 12px; font-size: .92rem; color: var(--ink-2); line-height: 1.5; }
-  .ask__body :global(.qf__row) { grid-template-columns: 1fr; }
+  .ask__body :global(.qf__row) { grid-template-columns: 1fr 1fr; gap: 10px; }
   @media (max-width: 860px) {
     .ask { right: 12px; bottom: calc(86px + env(safe-area-inset-bottom)); }
     .ask__fab { width: 54px; height: 54px; }
     .ask__fab img { width: 28px; height: 28px; }
-    :global(.is-typing) .ask:not(.is-open) { visibility: hidden; }
-    :global(.js:not(.mact-on)) .ask:not(.is-open) { visibility: hidden; }
+    /* Slepiama švelniai (be mirksėjimo): kartu su apatine juosta (.mact-on, su užlaikymu site.js) ir rašant */
+    .ask { transition: opacity .2s ease, transform .2s ease, visibility 0s; }
+    :global(.is-typing) .ask:not(.is-open), :global(.js:not(.mact-on)) .ask:not(.is-open) { opacity: 0; transform: translateY(12px); visibility: hidden; pointer-events: none; transition: opacity .2s ease, transform .2s ease, visibility 0s .2s; }
     .ask.is-open { bottom: calc(12px + env(safe-area-inset-bottom)); }
     .ask.is-open .ask__fab { display: none; }
     .ask__panel { max-height: calc(100dvh - 110px - env(safe-area-inset-bottom)); }

@@ -17,7 +17,8 @@ export const site = {
   // --- Kontaktai (ŠVENTI — nekeisk be kliento) ---
   telefonas: '+370 603 66901',
   telefonasHref: 'tel:+37060366901',
-  smsHref: 'sms:+37060366901',
+  /* Nuotraukos kainai — tik el. paštu (SMS/Viber/WhatsApp svetainėje nesiūlome, Mato sprendimas 2026-11-11) */
+  get mailFotoHref() { return `mailto:${this.elPastas}?subject=${encodeURIComponent('Nuotraukos kainai')}`; },
   elPastas: 'aukstuminiai.darbai@yahoo.com',
   facebook: 'https://www.facebook.com/MesGalimeTaiPadaryti/',
 
