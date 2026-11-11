@@ -6,6 +6,8 @@ Checked read-only on 6 Nov: `matas@jarvisweb.lt` forwards to `jarvisworks.co@gma
 
 **Update 11 Nov 2026 (Matas):** launch with the simple email-only form through the Worker (not Web3Forms). Sending to the phone is Offer 2, later. Turnstile is now optional: the live Worker checks it only for meselektra/vensland (`security.ts` `SECURITY_SITES`), so for `arbcut` steps 3–5 are optional hardening. Without `PUBLIC_TURNSTILE_SITE_KEY` the widget is not rendered and the build no longer fails. Required: steps 1, 2 and 6, plus the photo branch below if photos stay on.
 
+**Update 11 Nov 2026, launch-ready with the live Worker:** `features.photoUpload: false` (the form says "Nuotraukas siųskite el. paštu" instead), and the private `/ivertinimas` message now requires a phone and has no email field, so neither depends on unmerged Worker branches. Checked read-only on 11 Nov: `SITES` already has `arbcut`; `allowed_destination_addresses` = jarvisworks.co, meselektra, vensland (no Yahoo yet); `FORM_SITE_RECIPIENTS` is not in the toml, so it is a Worker secret whose current value must be re-put whole with `arbcut` added (it cannot be read back).
+
 Do in this order. Each step needs the user's word in the thread.
 
 1. **Mantas's inbox.** Add `aukstuminiai.darbai@yahoo.com` under Email Routing, Destination Addresses. Cloudflare emails Mantas a link he must click.

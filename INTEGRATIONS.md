@@ -7,9 +7,9 @@ Sprendimas 2026-11-11 (Matas): dabar forma = paprasta, užklausos keliauja tik e
 | Integracija | Būsena | Kur | Paleidimo sąlyga |
 |---|---|---|---|
 | Užklausų forma | Paruošta, peržiūroje inertiška (`#perziura`) | `site.formEndpoint` = JarvisWeb Worker `/t/form`, `site.formSite` = `arbcut` | Worker'yje: patvirtinti Manto Yahoo adresą Email Routing ir įrašyti `arbcut` gavėjus (`FORM_SITE_RECIPIENTS`). Turnstile nebūtinas: dabartinis Worker'is jį tikrina tik meselektra/vensland; be `PUBLIC_TURNSTILE_SITE_KEY` valdiklis nerodomas, build'as nelūžta. Apsauga: slaptas laukas + Worker'io limitai. Žr. `.agents/research/v5-form-launch-steps.md` |
-| Nuotraukos formoje | Įjungta (`features.photoUpload`) | QuoteForm | Worker'io priedų šaka turi būti įdiegta, kitaip Mantas nuotraukų nematys; arba `photoUpload: false` |
+| Nuotraukos formoje | Išjungta paleidimui (2026-11-11, `features.photoUpload: false`); formoje nuoroda „Nuotraukas siųskite el. paštu“ | QuoteForm | Įjungti tik įdiegus Worker'io priedų šaką |
 | Google verslo profilis | Patikrinta 2026-11-10 | `site.google.placeId` `ChIJXVJEko4j50YRTBpOYdx3f6U`, `cid` `11925382126709381708`, `mapsUrl`, `reviewUrl` `https://g.page/r/CUwaTmHcd3-lEBM/review` | Nėra. Nuorodos: poraštė, /kontaktai, /apie, JSON-LD `hasMap`/`sameAs`, llms.txt |
-| Atsiliepimų puslapis `/ivertinimas` | Neutralus: visiems Google + Paslaugos.lt mygtukai, atskira privati žinutė | `src/pages/ivertinimas.astro` | Privati forma veikia tik su Worker'io `topic=review` palaikymu (JarvisCo `feat/review-feedback-20261107`). Iki tol klientams siųsti galima tiesiai `reviewUrl` |
+| Atsiliepimų puslapis `/ivertinimas` | Neutralus: visiems Google + Paslaugos.lt mygtukai, atskira privati žinutė | `src/pages/ivertinimas.astro` | Privati žinutė: telefonas privalomas, el. pašto lauko nėra – veikia su dabartiniu Worker'iu (2026-11-11) |
 | Google atsiliepimų rodymas | Neįjungta (atsiliepimų Google dar nėra) | `src/components/GoogleProfile.astro` (nenaudojamas) | Places UI Kit reikalauja `PUBLIC_GOOGLE_MAPS_KEY` (mokama API) — tik su Mato leidimu |
 | Paslaugos.lt atsiliepimai | Rodomi (123, 5,0) | `src/data/atsiliepimai*.js` | `sync:auto` daro commit+push — NEpaleisti be leidimo |
 | Žemėlapis | OpenFreeMap + MapLibre, statinis fallback | `src/components/home/AreaMap.astro` | Nėra |

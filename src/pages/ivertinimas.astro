@@ -4,7 +4,8 @@
    viešo atsiliepimo galimybę (Google, Paslaugos.lt); privati žinutė Mantui yra ATSKIRA ir prieinama visiems,
    ne nukreipimas pagal įvertinimą. Jokių paskatų, jokio prašymo rašyti tik gerai.
    Nuoroda siunčiama klientui po darbo: arbcut.lt/ivertinimas. Puslapis noindex, ne sitemap, ne meniu.
-   Privati forma: per Workerį /t/form (kind=site_inquiry, topic=review); kontaktas nebūtinas. */
+   Privati forma: per Workerį /t/form (kind=site_inquiry, topic=review), el. paštu Mantui. Telefonas privalomas, nes dabartinis
+   Workeris be jo atmeta; el. pašto lauko nėra, nes svetainės užklausoms Workeris jo nesaugo (2026-11-11). */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Logo from '../components/Logo.astro';
 import { Image } from 'astro:assets';
@@ -56,26 +57,20 @@ const pub = [
             <input id="iv-name" name="name" type="text" maxlength="80" autocomplete="name" placeholder="Vardas" />
           </div>
           <div class="iv__f">
-            <label for="iv-tel">Telefonas <small>(nebūtina)</small></label>
-            <input id="iv-tel" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+370 6__ _____" />
+            <label for="iv-tel">Telefonas <span>*</span></label>
+            <input id="iv-tel" name="phone" type="tel" autocomplete="tel" inputmode="tel" required pattern="(?:[^0-9]*[0-9]){8,}[^0-9]*" placeholder="+370 6__ _____" />
           </div>
-          <div class="iv__f">
-            <label for="iv-mail">El. paštas <small>(nebūtina)</small></label>
-            <input id="iv-mail" name="email" type="email" maxlength="254" autocomplete="email" inputmode="email" placeholder="vardas@pastas.lt" />
-            <p class="qf__err" data-iv-mailerr role="alert" hidden>Patikrinkite el. pašto adresą.</p>
-          </div>
-          <p class="iv__hint">Jei norite, kad atsakytume, palikite telefoną arba el. paštą, kuo jums patogiau.</p>
           <div class="iv__f">
             <label for="iv-msg">Jūsų žinutė <span>*</span></label>
             <textarea id="iv-msg" name="message" required maxlength="2000" rows="4" placeholder="Jūsų žinutė"></textarea>
           </div>
           {!PREVIEW && site.turnstileSiteKey && <div data-turnstile data-sitekey={site.turnstileSiteKey}></div>}
-          <p class="qf__err" role="alert" hidden>Parašykite žinutę.</p>
+          <p class="qf__err" role="alert" hidden>Įrašykite telefoną ir žinutę.</p>
           <p class="qf__err" data-send-err role="alert" hidden>Nepavyko išsiųsti. Paskambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>
           <button type="submit" class="btn btn--primary qf__btn">Siųsti</button>
           <div class="qf__done" role="status" hidden tabindex="-1">
             <p class="iv__done-h">Ačiū už žinutę.</p>
-            <p>Jį perskaitysime. Jei norite pasikalbėti iškart, skambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>
+            <p>Ją perskaitysime. Jei norite pasikalbėti iškart, skambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>
           </div>
         </form>
       </div>
@@ -83,20 +78,6 @@ const pub = [
   </section>
 </BaseLayout>
 
-<script>
-  /* Neteisingas el. paštas: pasakome čia, o ne gauname Workerio klaidą (bendras formų kodas tikrina tik privalomus laukus) */
-  const box = document.querySelector('[data-iv]') as HTMLElement;
-  const mail = box.querySelector('#iv-mail') as HTMLInputElement;
-  const mailErr = box.querySelector('[data-iv-mailerr]') as HTMLElement;
-  mail.addEventListener('input', () => { mail.removeAttribute('aria-invalid'); mailErr.hidden = true; });
-  (box.querySelector('#iv-form') as HTMLFormElement).addEventListener('submit', (e) => {
-    const v = mail.value.trim();
-    if (v && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) {
-      e.preventDefault(); e.stopImmediatePropagation();
-      mail.setAttribute('aria-invalid', 'true'); mailErr.hidden = false; mail.focus();
-    }
-  }, { capture: true });
-</script>
 
 <style>
   .iv { min-height: 100dvh; display: grid; place-items: center; padding: clamp(16px, 4vw, 48px) 16px 120px; background: var(--spruce-900) url('/assets/v5-brand/texture/rings-band.webp') 80% 10% / 1800px auto no-repeat; }

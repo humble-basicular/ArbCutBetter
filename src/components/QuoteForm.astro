@@ -70,6 +70,7 @@ const mailHref = `mailto:${site.elPastas}?subject=${encodeURIComponent('Nuotrauk
       <p class="qf__filemsg" data-files-msg role="status" hidden></p>
     </div>
   )}
+  {short && !site.features.photoUpload && <p class="qf__mailpic">Nuotraukas siųskite <a href={mailHref} data-loc={`${id}-mail`}>el. paštu</a> – pagal jas kainą pasakome tiksliau.</p>}
   {!short && <p class="qf__note">Nuotraukas galite atsiųsti ir el. paštu <a href={mailHref}>{site.elPastas}</a>. Pagal jas kainą pasakome tiksliau.</p>}
   {!PREVIEW && site.turnstileSiteKey && <div class="qf__ts" data-turnstile data-sitekey={site.turnstileSiteKey}></div>}
   <p class="qf__err" role="alert" hidden>{chat ? 'Įrašykite telefoną ir klausimą.' : 'Įrašykite telefoną ir trumpai aprašykite darbą.'}</p>
@@ -112,6 +113,8 @@ const mailHref = `mailto:${site.elPastas}?subject=${encodeURIComponent('Nuotrauk
   .qf__loc[aria-busy='true'] { opacity: .6; cursor: progress; }
   .qf__loc img { width: 22px; height: 22px; }
   .qf__locmsg { font-size: .95rem; color: var(--ink-2); }
+  .qf__mailpic { font-size: .95rem; color: var(--ink-2); }
+  .qf__mailpic a { color: var(--spruce-900); font-weight: 700; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
   .qf__files { gap: 8px; position: relative; }
   .qf__files input[type='file'] { width: 1px; min-height: 0; padding: 0; border: 0; }
   .qf__pick { display: flex; align-items: center; gap: 10px; min-height: 54px; padding: 10px 14px; border: 2px dashed #A9B3AD; border-radius: var(--radius); background: #fff; font-weight: 800; color: var(--spruce-900); cursor: pointer; transition: border-color var(--t), background var(--t); }
