@@ -4,6 +4,8 @@ The form posts to the JarvisWeb Cloudflare Worker `jarvisweb-proof-tracking` (`h
 
 Checked read-only on 6 Nov: `matas@jarvisweb.lt` forwards to `jarvisworks.co@gmail.com`, which is already a verified destination. `aukstuminiai.darbai@yahoo.com` is not verified. The `arbcut.lt` zone is not in the Jarvisworks Cloudflare account.
 
+**Update 11 Nov 2026 (Matas):** launch with the simple email-only form through the Worker (not Web3Forms). Sending to the phone is Offer 2, later. Turnstile is now optional: the live Worker checks it only for meselektra/vensland (`security.ts` `SECURITY_SITES`), so for `arbcut` steps 3–5 are optional hardening. Without `PUBLIC_TURNSTILE_SITE_KEY` the widget is not rendered and the build no longer fails. Required: steps 1, 2 and 6, plus the photo branch below if photos stay on.
+
 Do in this order. Each step needs the user's word in the thread.
 
 1. **Mantas's inbox.** Add `aukstuminiai.darbai@yahoo.com` under Email Routing, Destination Addresses. Cloudflare emails Mantas a link he must click.

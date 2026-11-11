@@ -69,7 +69,7 @@ const pub = [
             <label for="iv-msg">Jūsų žinutė <span>*</span></label>
             <textarea id="iv-msg" name="message" required maxlength="2000" rows="4" placeholder="Jūsų žinutė"></textarea>
           </div>
-          {!PREVIEW && <div data-turnstile data-sitekey={site.turnstileSiteKey}></div>}
+          {!PREVIEW && site.turnstileSiteKey && <div data-turnstile data-sitekey={site.turnstileSiteKey}></div>}
           <p class="qf__err" role="alert" hidden>Parašykite žinutę.</p>
           <p class="qf__err" data-send-err role="alert" hidden>Nepavyko išsiųsti. Paskambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>
           <button type="submit" class="btn btn--primary qf__btn">Siųsti</button>

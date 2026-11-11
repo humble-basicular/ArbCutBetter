@@ -9,11 +9,6 @@ import { atsiliepimuKiekis, atsiliepimuVidurkis, patirtisMetai } from './atsilie
 /* Peržiūros režimas (PUBLIC_PREVIEW=1): noindex, forma neišsiunčia, be sekimo. */
 export const PREVIEW = import.meta.env.PUBLIC_PREVIEW === '1';
 
-/* Viešas leidimas be Turnstile rakto neleidžiamas: forma be apsaugos sulauktų šiukšlių. */
-if (import.meta.env.PROD && !PREVIEW && !import.meta.env.PUBLIC_TURNSTILE_SITE_KEY) {
-  throw new Error('Trūksta PUBLIC_TURNSTILE_SITE_KEY. Žr. .agents/research/v5-form-launch-steps.md');
-}
-
 export const site = {
   pavadinimas: 'ArbCut',
   savininkas: 'Mantas Gerulis',
@@ -75,6 +70,7 @@ export const site = {
   // --- Forma: JarvisWeb Cloudflare Worker (gavėjai laikomi Workerio privačioje konfigūracijoje, ne čia) ---
   formEndpoint: 'https://jarvisweb.lt/t/form',
   formSite: 'arbcut',
+  /* Nebūtina: dabartinis Workeris arbcut Turnstile netikrina (tik meselektra/vensland). Be rakto valdiklis nerodomas. */
   turnstileSiteKey: import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '',
 
   // --- Statistika (count-up) — REALŪS skaičiai, sinchronizuojami su paslaugos.lt profiliu ---
@@ -86,7 +82,7 @@ export const site = {
 
   // --- Funkcijų vėliavėlės (būsimos integracijos — žr. INTEGRATIONS.md) ---
   features: {
-    photoUpload: true,   // nuotraukos formoje: žr. .agents/research/v5-form-launch-steps.md (paleidimo sąlyga)
+    photoUpload: true,   // nuotraukos keliauja el. laiško priedais (Workerio priedų šaka); žr. .agents/research/v5-form-launch-steps.md
     chatWidget: true,    // rule-based pokalbių robotas (DUK + užklausos surinkimas)
     reviews: true,       // Google atsiliepimų sekcija (rodo „palikite atsiliepimą", kol nėra realių)
   },

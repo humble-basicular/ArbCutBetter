@@ -1,6 +1,7 @@
 ---
 /* Užklausos forma. Gamyboje siunčia į JarvisWeb Cloudflare Worker /t/form (kind=site_inquiry, site=arbcut):
-   jis išsaugo užklausą ir el. paštu praneša gavėjams. Apsauga: Cloudflare Turnstile (įkeliama pirmą kartą paspaudus formą).
+   jis išsaugo užklausą ir el. paštu praneša gavėjams. Apsauga: slaptas laukas „website“ ir Workerio limitai;
+   Turnstile tik jei nustatytas PUBLIC_TURNSTILE_SITE_KEY (įkeliamas pirmą kartą paspaudus formą).
    Laukų vardai yra Workerio kontraktas, jų nekeisti. Peržiūroje (PREVIEW) forma inertiška: niekur nesiunčia.
    variant="short" — tie patys laukai be paslaugų sąrašo (pradžios puslapio kortelė).
    SMS siuntimą vėliau keisti tik čia ir site.js. */
@@ -90,7 +91,7 @@ const chat = variant === 'chat';
       {!short && <p class="qf__note">Nuotraukas galite atsiųsti ir SMS, Viber ar WhatsApp numeriu <a href={site.smsHref}>{site.telefonas}</a> arba el. paštu <a href={`mailto:${site.elPastas}`}>{site.elPastas}</a>. Pagal jas kainą pasakome tiksliau.</p>}
     </>
   )}
-  {!PREVIEW && <div class="qf__ts" data-turnstile data-sitekey={site.turnstileSiteKey}></div>}
+  {!PREVIEW && site.turnstileSiteKey && <div class="qf__ts" data-turnstile data-sitekey={site.turnstileSiteKey}></div>}
   <p class="qf__err" role="alert" hidden>{chat ? 'Užpildykite pažymėtus laukus.' : 'Įrašykite telefoną ir trumpai aprašykite darbą.'}</p>
   <p class="qf__err" data-send-err role="alert" hidden>Nepavyko išsiųsti. Bandykite dar kartą arba skambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p>
   <noscript><p class="qf__note">Forma veikia tik su „JavaScript“. Skambinkite <a href={site.telefonasHref}>{site.telefonas}</a>.</p></noscript>

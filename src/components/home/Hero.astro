@@ -40,14 +40,14 @@ const I = '/assets/v5-brand/raster/icons';
     <div class="hero__vis" aria-hidden="true">
       <div class="hero__block"></div>
       <div class="hero__photo fill">
-        <Photo name="autobokstelis-prie-namo" alt="" sizes="(max-width: 960px) 92vw, 40vw" widths={[640, 960, 1280, 1667]} loading="eager" fetchpriority="high" position="62% 58%" />
+        <Photo name="autobokstelis-prie-namo" alt="" sizes="(max-width: 960px) 92vw, 40vw" widths={[640, 960, 1280, 1667]} loading="eager" position="62% 58%" />
       </div>
       <p class="hero__lift">
         <span class="ico-c" style="--cs:58px"><img src={`${I}/svc-bokstelis-160.png`} alt="" width="44" height="44" /></span>
         <span><b>Nuosavas autobokštelis</b><span class="hero__lift-n">iki <span data-count="20">20</span>&nbsp;m</span></span>
       </p>
       <div class="hero__scale"><span>20 m</span><span>15</span><span>10</span><span>5</span><span>0</span></div>
-      <Image class="hero__man" src={cutout} alt="" widths={[360, 540, 720, 960]} sizes="(max-width: 960px) 62vw, 400px" format="webp" quality={84} loading="eager" data-parallax="-0.04" />
+      <Image class="hero__man" src={cutout} alt="" widths={[360, 540, 720, 960]} sizes="(max-width: 960px) 62vw, 400px" format="webp" quality={84} loading="eager" fetchpriority="high" data-parallax="-0.04" />
     </div>
   </div>
   <div class="hero__arc" data-rope aria-hidden="true"></div>
@@ -81,9 +81,24 @@ const I = '/assets/v5-brand/raster/icons';
   </div>
 </section>
 
+<script>
+  /* Žiedų tekstūra: tik kai puslapis įkeltas ir pats vaizdas parsiųstas (kitaip trumpam matytųsi baltas plotas) */
+  const rings = document.querySelector('.hero__rings');
+  const on = () => {
+    const img = new Image();
+    img.onload = () => rings && rings.classList.add('is-on');
+    img.src = '/assets/v5-brand/texture/rings-hero.webp';
+  };
+  if (rings) document.readyState === 'complete' ? on() : window.addEventListener('load', on, { once: true });
+</script>
+
 <style>
   .hero { position: relative; background: var(--spruce-900); color: #fff; overflow: hidden; isolation: isolate; padding-top: clamp(28px, 3vw, 44px); padding-bottom: clamp(120px, 10vw, 150px); }
-  .hero__rings { position: absolute; inset: -120px -10% -120px -10%; background: url('/assets/v5-brand/texture/rings-hero.webp') 72% 58% / 2400px auto no-repeat; opacity: .3; z-index: -1; pointer-events: none; }
+  /* Dekoratyvi tekstūra (balta + alfa) piešiama kaip kaukė ir įjungiama tik po puslapio įkėlimo (žr. skriptą žemiau),
+     kad nekonkuruotų su pirmo ekrano nuotraukomis ir nebūtų LCP elementas. Be JS jos tiesiog nėra. */
+  .hero__rings { position: absolute; inset: -120px -10% -120px -10%; background: #fff; -webkit-mask: none 72% 58% / 2400px auto no-repeat; mask: none 72% 58% / 2400px auto no-repeat; opacity: 0; transition: opacity .9s ease; z-index: -1; pointer-events: none; }
+  .hero__rings.is-on { -webkit-mask-image: url('/assets/v5-brand/texture/rings-hero.webp'); mask-image: url('/assets/v5-brand/texture/rings-hero.webp'); opacity: .3; }
+  @media (prefers-reduced-motion: reduce) { .hero__rings { transition: none; } }
   .hero__grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); gap: clamp(24px, 3vw, 48px); align-items: center; }
   .hero__txt { position: relative; z-index: 2; display: grid; justify-items: start; gap: 18px; }
   .hero__who { font-size: clamp(.9rem, .82rem + .3vw, 1.08rem); }
@@ -154,7 +169,7 @@ const I = '/assets/v5-brand/raster/icons';
     .hero__photo { width: 70%; right: 0; }
     .hero__block { width: 72%; right: -3%; }
     .hero__man { left: 2%; height: calc(100% + 80px); bottom: -110px; }
-    .hero__rings { background-position: 60% 80%; }
+    .hero__rings { -webkit-mask-position: 60% 80%; mask-position: 60% 80%; }
     .dock__grid { grid-template-columns: 1fr; }
     .dock__pics { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 16px; }
   }

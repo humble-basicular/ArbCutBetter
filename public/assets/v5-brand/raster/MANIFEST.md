@@ -214,7 +214,7 @@ Edge transition reconciled locally over 32 pixels; first and last RGBA columns m
 Known flaws: none identified in final visual inspection.
 
 ### treeline
-Files: texture/treeline.png (2400×400)
+Files: texture/treeline.webp (2400×400)
 
 Prompt: Flat raster silhouette of Lithuanian mixed forest edge of spruce, pine and birch trees, irregular varied heights and natural spacing, all trees connected at bottom edge, solid single color #0B231B, transparent sky. Very wide landscape composition 6 to 1 aspect ratio. No ground line art, no outlines, no shading no gradients no text no digits no letters. Entire forest width goes flush to left and right edges.
 
