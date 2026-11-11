@@ -83,7 +83,7 @@ export const site = {
 
   // --- Funkcijų vėliavėlės (būsimos integracijos — žr. INTEGRATIONS.md) ---
   features: {
-    photoUpload: false,  // išjungta paleidimui (2026-11-11): gyvas Workeris priedų dar nesiunčia. Įjungti, kai įdiegta priedų šaka — žr. .agents/research/v5-form-launch-steps.md
+    photoUpload: true,   // nuotraukos keliauja el. laiško priedais (Workerio priedų šaka + FORM_ATTACHMENT_SITES); žr. .agents/research/v5-form-launch-steps.md
     chatWidget: true,    // rule-based pokalbių robotas (DUK + užklausos surinkimas)
     reviews: true,       // Google atsiliepimų sekcija (rodo „palikite atsiliepimą", kol nėra realių)
   },
