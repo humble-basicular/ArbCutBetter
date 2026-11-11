@@ -23,23 +23,9 @@ const tiles = [...naujos, ...galerijosKategorijos.flatMap((k) => k.nr.map((n) =>
   description="Realios ArbCut darbų nuotraukos: pavojingų medžių pjovimas dalimis, audros padariniai, darbai aukštyje, kelmų frezavimas ir gyvatvorės."
   schemas={[localBusiness(), breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Darbai', path: '/galerija' }])]}
 >
-  <PageHero title="Atlikti darbai" kicker="Realios nuotraukos" lead="Nuotraukos iš mūsų darbų — be stockinių vaizdų. Pirmiausia trys darbai nuo pradžios iki pabaigos, žemiau — visa galerija pagal darbų tipą." crumbs={[{ label: 'Darbai' }]} photo="lajoje-vasara" photoAlt="Mantas dirba žaliuojančio medžio lajoje" photoPos="50% 30%" />
+  <PageHero title="Atlikti darbai" kicker="Realios nuotraukos" lead="Nuotraukos iš mūsų darbų — be stockinių vaizdų. Pirmiausia visa galerija pagal darbų tipą, žemiau — darbo eiga ir keli darbai klientų žodžiais." crumbs={[{ label: 'Darbai' }]} photo="lajoje-vasara" photoAlt="Mantas dirba žaliuojančio medžio lajoje" photoPos="50% 30%" />
 
-  <section class="sec sec--stone" id="darbai">
-    <div class="wrap">
-      <div class="sec-head"><p class="kicker">Atrinkti darbai</p><h2>Keli darbai klientų žodžiais</h2><p class="mute">Aprašyta pagal klientų atsiliepimus. Vietos ir kainos nurodome tik tada, kai jas parašė pats klientas.</p></div>
-      <Darbai />
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="sec-head"><p class="kicker">Darbo eiga</p><h2>Nuo pradžios iki sutvarkytos vietos</h2></div>
-      <Sequences />
-    </div>
-  </section>
-
-  <section class="sec sec--stone">
+  <section class="sec" id="nuotraukos">
     <div class="wrap">
       <div class="sec-head sec-head--split">
         <div><p class="kicker">Galerija</p><h2>Visos nuotraukos</h2></div>
@@ -61,6 +47,20 @@ const tiles = [...naujos, ...galerijosKategorijos.flatMap((k) => k.nr.map((n) =>
       </ul>
     </div>
   </section>
+  <section class="sec sec--stone">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Darbo eiga</p><h2>Nuo pradžios iki sutvarkytos vietos</h2></div>
+      <Sequences />
+    </div>
+  </section>
+
+  <section class="sec" id="darbai">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Atrinkti darbai</p><h2>Keli darbai klientų žodžiais</h2><p class="mute">Aprašyta pagal klientų atsiliepimus. Vietos ir kainos nurodome tik tada, kai jas parašė pats klientas.</p></div>
+      <Darbai />
+    </div>
+  </section>
+
 </BaseLayout>
 <style>
   .flt { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
