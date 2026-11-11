@@ -14,7 +14,7 @@ import RatingUnit from '../v5/RatingUnit.astro';
 import Seal from '../v5/Seal.astro';
 import Stars from '../v5/Stars.astro';
 import cutout from '../../assets/cutout/mantas-v5.png';
-import { PREVIEW } from '@data/site.js';
+import { atsiliepimuKiekis, atsiliepimuVidurkis } from '@data/atsiliepimai.js';
 const I = '/assets/v5-brand/raster/icons';
 ---
 <section class="hero" data-parallax-host>
@@ -57,7 +57,7 @@ const I = '/assets/v5-brand/raster/icons';
   <div class="wrap">
     <div class="dock__card">
       <h2 id="hc-h" class="dock__tab tag tag--orange">Kiek kainuos?</h2>
-      <p class="dock__p">Aprašykite darbą – susisieksime ir pasakysime preliminarią kainą. <span>Nuotraukas galite atsiųsti ir el. paštu <a href={site.mailFotoHref} data-loc="hero-mail">{site.elPastas}</a>.</span></p>
+      <p class="dock__p">Aprašykite darbą – susisieksime ir pasakysime preliminarią kainą.</p>
       <QuoteForm variant="short" id="hero-form" prefix="h" />
     </div>
 
@@ -66,7 +66,7 @@ const I = '/assets/v5-brand/raster/icons';
       <ul role="list" class="press-strip__list">
         <li><a href={lrt.url} target="_blank" rel="noopener"><Mark name="lrt" height={30} /><span>Interviu, {lrt.dataTekstu}</span><span class="sr-only"> (atsidaro naujame lange)</span></a></li>
         <li><a href={valstietis.url} target="_blank" rel="noopener"><Mark name="valstietis" height={26} /><span>Straipsnis su Manto patarimais</span><span class="sr-only"> (atsidaro naujame lange)</span></a></li>
-        {PREVIEW && <li class="press-strip__ph"><span>Įrangos gamintojų logotipai</span><small>Peržiūra: laukiame, kokią įrangą naudoja Mantas</small></li>}
+        <li><a href={site.atsiliepimai.profilis} target="_blank" rel="noopener" data-loc="press-paslaugos"><Mark name="paslaugos" height={30} /><span>{atsiliepimuKiekis} atsiliepimai, {atsiliepimuVidurkis.toFixed(1).replace('.', ',')} ★</span><span class="sr-only"> (atsidaro naujame lange)</span></a></li>
       </ul>
     </div>
   </div>
@@ -131,8 +131,6 @@ const I = '/assets/v5-brand/raster/icons';
   .dock__card { position: relative; background: #fff; border-radius: var(--r-lg); box-shadow: var(--sh-3); padding: 18px clamp(20px, 3vw, 36px) 26px; }
   .dock__tab { position: absolute; left: clamp(16px, 3vw, 36px); top: -26px; font-size: clamp(1.15rem, 1rem + .6vw, 1.6rem); margin: 0; }
   .dock__p { margin: 0 0 16px; padding-left: 270px; font-size: 1rem; line-height: 1.45; color: var(--ink-2); }
-  .dock__p span { white-space: nowrap; }
-  .dock__p a { color: var(--spruce-900); font-weight: 700; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
   /* Kompaktiškas maketas: plačiame ekrane 2 eilutės (telefonas · vardas · adresas / darbas · nuotraukos + mygtukas) */
   .dock :global(.qf--short) { --lbl: 25px; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-areas: "tel name addr" "msg msg files" "msg msg foot"; gap: 14px 18px; align-items: start; }
   .dock :global(.qf--short .qf__row) { display: contents; }
@@ -156,15 +154,12 @@ const I = '/assets/v5-brand/raster/icons';
   .press-strip__list { display: flex; align-items: center; gap: clamp(18px, 3vw, 48px); flex-wrap: wrap; }
   .press-strip__list a { display: flex; align-items: center; gap: 12px; font-weight: 650; color: var(--ink-2); font-size: .95rem; filter: grayscale(1); opacity: .85; transition: filter var(--t), opacity var(--t); }
   .press-strip__list a:hover { filter: none; opacity: 1; color: var(--spruce-900); }
-  .press-strip__ph { display: grid; gap: 2px; padding: 10px 16px; border: 2px dashed #E9A27A; border-radius: 10px; color: var(--orange-ink); font-weight: 700; font-size: .9rem; }
-  .press-strip__ph small { font-weight: 600; color: var(--ink-2); }
 
   @media (max-width: 1100px) {
     .dock :global(.qf--short) { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "tel name" "msg msg" "addr addr" "files foot"; }
     .dock :global(.qf--short .qf__f--msg textarea) { height: auto; min-height: 96px; resize: vertical; }
     .dock :global(.qf--short .qf__files) { padding-top: 0; align-self: end; }
     .dock__p { padding-left: 0; padding-top: 30px; }
-    .dock__p span { white-space: normal; }
   }
   @media (max-width: 960px) {
     .hero { padding-bottom: 150px; }
