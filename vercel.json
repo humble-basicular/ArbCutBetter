@@ -1,9 +1,10 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.arbcut.lt" }],
-      "destination": "https://arbcut.lt/:path*",
+      "destination": "https://arbcut.lt/$1",
       "permanent": true
     }
   ]
