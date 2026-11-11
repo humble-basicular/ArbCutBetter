@@ -1,22 +1,21 @@
 /* =====================================================================
    ATSILIEPIMAI — REALŪS, sinchronizuoti su paslaugos.lt (https://paslaugos.lt/mantas-gerulis-aa777).
    ⚠️ SUGENERUOTA: scripts/sync-atsiliepimai.mjs — nekeisti ranka.
-   Nuskaityta 2026-10-30: 5.0 iš 122 atsiliepimų,
-   2026-11-04 ranka papildyta: 123 atsiliepimai, naujas P. Matiuko atsiliepimas (2026-11-03),
-   121 su tekstu (originali rašyba išlaikyta, nieko neprasimanyta).
+   Nuskaityta 2026-11-09: 5.0 iš 123 atsiliepimų,
+   122 su tekstu (originali rašyba išlaikyta, nieko neprasimanyta).
    ===================================================================== */
 
 export const atsiliepimuVidurkis = 5;
 export const atsiliepimuKiekis = 123;   // bendras profilio skaičius
 export const atsiliepimuSaltinis = "https://paslaugos.lt/mantas-gerulis-aa777";
-export const atsiliepimuSinchronizuota = "2026-11-04";
+export const atsiliepimuSinchronizuota = "2026-11-09";
 export const patirtisMetai = 15;   // „N m. patirtis" iš profilio
 
 export const atsiliepimai = [
   {
     "vardas": "Petras Matiukas",
     "data": "2026-11-03",
-    "zvaigzdes": null,
+    "zvaigzdes": 5,
     "paslauga": "avariniu-medziu-pjovimas",
     "paslaugaPavadinimas": "Avarinių medžių pjovimas",
     "tekstas": "Esu patenkintas atlikti darbų."

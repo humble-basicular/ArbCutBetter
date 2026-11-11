@@ -386,3 +386,8 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 - 6 Nov 23:00 EET — Audit fixes COMPLETE on branch, code head `0da8e3a`; Codex r2 `Verdict: approved`. Handoff `.agents/handoffs/2026-11-06-2300-v5-audit-fixes-approved.md`. Open: questions to user, Worker photo visibility.
 - 6 Nov 23:20 EET — User facts: no separate inspection trips (price from photos by phone, Viber or WhatsApp), no free-assessment claim, PVM and travel stay off the site, Mantas will not review articles, no job photos. Copy updated. Photos must arrive as email attachments: Worker request in `.agents/research/v5-form-launch-steps.md`.
 - 6 Nov 23:45 EET — Worker photo attachments on JarvisCo `feat/form-email-attachments-20261106` at `c807791`: separate best-effort photo email, 160 tests pass. Codex used both review rounds (r1, r2 changes requested, findings addressed by the redesign); the redesign itself has no independent review. Not merged or deployed.
+
+(from main 96bc766) 4 Nov 19:00 EET: preview ready, awaiting user review. Branch design/arbcut-upgrade-20261104, app commit 32986e5, Codex review approved, not merged or deployed.
+
+## 11 November 2026 — v5 LIVE
+- Matas: "Paleisk live" (after Mantas verified the Yahoo Email Routing address). Claude merges build/arbcut-v5-finish-20261110 into main and pushes; Vercel publishes arbcut.lt. Worker 483e0426 already serves arbcut (photos as attachments).
