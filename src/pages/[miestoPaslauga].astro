@@ -21,7 +21,7 @@ const p = getPaslauga(m.paslauga);
 const d = detales[m.paslauga];
 const path = `/${m.slug}`;
 const kiti = paslaugosMiestuose(m.paslauga).filter((x) => x.slug !== m.slug);
-const reviews = atrinkti({ slug: m.paslauga, n: 3, min: 60, max: 520 });
+const reviews = atrinkti({ slug: m.paslauga, n: 3, min: 60, max: 520, vieta: { i: paslaugosMiestuose(m.paslauga).indexOf(m), is: paslaugosMiestuose(m.paslauga).length }, miestas: v.miestas });
 const genejimas = [
   ['lajoje-vasara', 'Arboristas dirba žaliuojančio medžio lajoje', '50% 30%'],
   ['du-arboristai-lajoje', 'Du arboristai didelio medžio lajoje', '50% 35%'],

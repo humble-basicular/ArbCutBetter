@@ -17,7 +17,7 @@ export function getStaticPaths() {
 const { v } = Astro.props;
 const byslug = Object.fromEntries(paslaugos.map((p) => [p.slug, p]));
 const kitos = vietoves.filter((x) => x.slug !== v.slug);
-const reviews = atrinkti({ n: 3, min: 140, max: 480 });
+const reviews = atrinkti({ n: 3, min: 140, max: 480, vieta: { i: vietoves.findIndex((x) => x.slug === v.slug), is: vietoves.length }, miestas: v.miestas });
 const isBase = !!v.pagrindinis;
 const cia = miestoPaslaugos(v.slug);
 const foto = [
