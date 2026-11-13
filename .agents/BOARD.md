@@ -394,3 +394,4 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 
 ## 13 November 2026 — review funnel restored (LIVE)
 - Matas: "fix it so that its the magic funnel". `/ivertinimas` is back to the 7 Nov Glassperts-style filter: 4–5★ go straight to Google review, 1–3★ go to a private form to Mantas (phone required, no email field, per the current Worker). Arrow keys only move the selection; Enter/Space/click confirms. Google review-gating risk to Mantas's GBP is accepted by Matas. Pushed to origin/main → Vercel.
+- 13 Nov (later): Matas asked for sharper stars and an email field. Stars are now inline SVG (were 48 px PNG upscaled). 1–3★ form: name, email, phone optional, message required. Worker review support deployed (`8c813c50`, JarvisCo `bac920f`, rollback `e335b87a`); details in `.agents/research/v5-form-launch-steps.md`.
