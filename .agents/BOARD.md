@@ -391,3 +391,6 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 
 ## 11 November 2026 — v5 LIVE
 - Matas: "Paleisk live" (after Mantas verified the Yahoo Email Routing address). Claude merges build/arbcut-v5-finish-20261110 into main and pushes; Vercel publishes arbcut.lt. Worker 483e0426 already serves arbcut (photos as attachments).
+
+## 13 November 2026 — review funnel restored (LIVE)
+- Matas: "fix it so that its the magic funnel". `/ivertinimas` is back to the 7 Nov Glassperts-style filter: 4–5★ go straight to Google review, 1–3★ go to a private form to Mantas (phone required, no email field, per the current Worker). Arrow keys only move the selection; Enter/Space/click confirms. Google review-gating risk to Mantas's GBP is accepted by Matas. Pushed to origin/main → Vercel.
