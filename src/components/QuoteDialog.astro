@@ -29,8 +29,8 @@ import RatingUnit from './v5/RatingUnit.astro';
   @keyframes qdin { from { opacity: 0; transform: translateY(14px) scale(.98); } to { opacity: 1; transform: none; } }
   @media (prefers-reduced-motion: reduce) { .qd[open] { animation: none; } }
   .qd::backdrop { background: rgba(11, 35, 27, .72); backdrop-filter: blur(3px); }
-  .qd__in { background: var(--paper); border-radius: var(--r-lg); overflow: hidden; display: flex; flex-direction: column; max-height: calc(100dvh - 24px); box-shadow: var(--sh-3); }
-  .qd__top { display: flex; align-items: center; gap: 16px; padding: 18px 20px 18px 24px; background: var(--spruce-900) url('/assets/v5-brand/texture/rings-band.webp') 80% 40% / 1200px auto no-repeat; color: #fff; border-bottom: 5px solid var(--orange); }
+  .qd__in { background: #fff; border-radius: var(--r-lg); overflow: hidden; display: flex; flex-direction: column; max-height: calc(100dvh - 24px); box-shadow: var(--sh-3); }
+  .qd__top { display: flex; align-items: center; gap: 16px; padding: 18px 20px 18px 24px; background: var(--spruce-900); color: #fff; border-bottom: 5px solid var(--orange); }
   .qd__mark { width: 30px; height: auto; flex: 0 0 auto; }
   .qd__ttl { flex: 1; }
   .qd__ttl h2 { color: #fff; font-size: clamp(1.7rem, 1.4rem + 1vw, 2.3rem); }
