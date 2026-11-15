@@ -65,7 +65,7 @@ const mailHref = `mailto:${site.elPastas}?subject=${encodeURIComponent('Nuotrauk
     <div class="qf__f qf__files" data-files>
       <input id={`${prefix}-files`} class="sr-only" type="file" name="files" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" multiple data-files-input aria-describedby={`${prefix}-files-hint`} />
       <label class="qf__pick" for={`${prefix}-files`}><img src="/assets/v5-brand/raster/icons/step-foto-160.png" alt="" width="24" height="24" loading="lazy" /><span>Pridėti nuotraukas</span> <small>nebūtina</small></label>
-      <p class="qf__hint" id={`${prefix}-files-hint`}>Iki 5 nuotraukų, iš viso iki 8 MB. Visa darbo vieta, kas šalia ir kelias iki jos.</p>
+      <p class="qf__hint" id={`${prefix}-files-hint`}>Iki 5 nuotraukų: visa darbo vieta, kas šalia ir kelias iki jos.</p>
       <ul class="qf__thumbs" role="list" data-files-list hidden></ul>
       <p class="qf__filemsg" data-files-msg role="status" hidden></p>
     </div>
@@ -89,23 +89,22 @@ const mailHref = `mailto:${site.elPastas}?subject=${encodeURIComponent('Nuotrauk
 </form>
 
 <style>
-  .qf { display: grid; gap: 22px; min-width: 0; }
-  .qf > *, .qf__row > * { min-width: 0; }
+  .qf { display: grid; gap: 16px; }
   .qf .qf__honeypot, .qf [hidden] { display: none !important; }
   .qf input.sr-only { width: 1px !important; min-height: 0 !important; height: 1px !important; padding: 0 !important; border: 0 !important; }
-  .qf__row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+  .qf__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .qf__f { display: grid; gap: 6px; }
-  .qf label { font-size: .9rem; font-weight: 700; color: var(--ink); }
+  .qf label { font-size: 1rem; font-weight: 700; color: var(--ink); }
   .qf label span { color: var(--orange-ink); }
   .qf input, .qf select, .qf textarea {
-    width: 100%; min-height: 54px; padding: 12px 14px; background: #fff; color: var(--ink); font-size: 1rem;
-    border: 0; border-bottom: 2px solid #A9B3AD; border-radius: 0;
+    width: 100%; min-height: 54px; padding: 12px 14px; background: #fff; color: var(--ink); font-size: 1.1rem;
+    border: 2px solid #A9B3AD; border-radius: var(--radius);
     transition: border-color var(--t), box-shadow var(--t);
   }
   .qf textarea { resize: vertical; min-height: 110px; }
   .qf--short textarea { min-height: 76px; }
   .qf input::placeholder, .qf textarea::placeholder { color: #6A746E; }
-  .qf input:focus, .qf select:focus, .qf textarea:focus { outline: 2px solid var(--spruce-900); outline-offset: 2px; border-color: var(--spruce-900); box-shadow: none; }
+  .qf input:focus, .qf select:focus, .qf textarea:focus { outline: none; border-color: var(--spruce-900); box-shadow: 0 0 0 3px var(--orange); }
   .qf [aria-invalid='true'] { border-color: #B3261E; }
   .qf__note { font-size: 1rem; color: var(--ink-2); }
   .qf__note a { color: var(--spruce-900); font-weight: 700; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; overflow-wrap: anywhere; }
@@ -148,8 +147,4 @@ const mailHref = `mailto:${site.elPastas}?subject=${encodeURIComponent('Nuotrauk
   .qf.is-submitting .qf__pick { opacity: .55; pointer-events: none; }
   .qf__thumbs :global(button:disabled) { opacity: .4; }
   @media (max-width: 560px) { .qf__row { grid-template-columns: 1fr; } }
-  .qf__pick { border-style: dashed; background: #f3f6f3; }
-  .qf__btn { width: 100%; }
-  .qf__foot { flex-wrap: wrap; }
-  @media (max-width: 480px) { .qf__row { grid-template-columns: minmax(0, 1fr); } .qf__addr { flex-wrap: wrap; } .qf__addr input { flex-basis: 100%; } .qf__loc { min-height: 44px; } }
 </style>
