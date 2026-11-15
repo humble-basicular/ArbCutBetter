@@ -1,3 +1,5 @@
+import { reverseAddress } from './form-location.js';
+
 /* ArbCut — svetainės elgsena (be priklausomybių).
    Antraštė | paslaugų meniu | mobilusis meniu | užklausos dialogas ir forma |
    nuotraukų peržiūra | galerijos filtras | nuosaikus atsiradimas. */
@@ -184,36 +186,37 @@
     const mapLink = () => {
       if (!addr) return '';
       const q = addr.value.trim();
-      return addr.dataset.coords ? 'https://www.google.com/maps?q=' + addr.dataset.coords
+      return addr.dataset.coords ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(addr.dataset.coords)
         : q ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q) : '';
     };
     /* Vienu paspaudimu: naršyklės vieta → adresas (Photon). Nepavykus lieka rankinis įvedimas. */
     const loc = $('[data-locate]', form);
     const locMsg = $('[data-locate-msg]', form);
     const say = (t) => { if (locMsg) { locMsg.textContent = t; locMsg.hidden = !t; } };
-    if (addr) addr.addEventListener('input', () => { delete addr.dataset.coords; say(''); });
+    let addressRevision = 0;
+    if (addr) addr.addEventListener('input', () => { addressRevision++; delete addr.dataset.coords; say(''); });
     if (loc && addr && 'geolocation' in navigator) {
       loc.hidden = false;
       loc.addEventListener('click', () => {
         if (loc.getAttribute('aria-busy') === 'true') return;
         loc.setAttribute('aria-busy', 'true'); say('Nustatome vietą…');
-        const before = addr.value; /* nuo paspaudimo: jei žmogus rašo pats, rezultatas atmetamas */
+        const before = addr.value; const revision = addressRevision; /* Žmogaus įvestis visada svarbesnė už vėluojantį GPS. */
         navigator.geolocation.getCurrentPosition(async (pos) => {
           const { latitude: lat, longitude: lon, accuracy } = pos.coords;
           const point = lat.toFixed(5) + ',' + lon.toFixed(5);
-          let found = '';
-          try {
-            const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 5000);
-            const r = await fetch('https://photon.komoot.io/reverse?lat=' + lat + '&lon=' + lon + '&limit=1', { signal: ctl.signal });
-            clearTimeout(t);
-            const p = r.ok ? ((await r.json()).features || [])[0]?.properties : null;
-            if (p) found = [[p.street, p.housenumber].filter(Boolean).join(' '), p.city || p.town || p.village || p.district || p.county].filter(Boolean).join(', ');
-          } catch (e) { /* lieka koordinatės */ }
+          const found = await reverseAddress(lat, lon);
           loc.removeAttribute('aria-busy');
-          if (addr.value !== before) { say(''); return; }
-          addr.value = found || point.replace(',', ', ');
+          if (addressRevision !== revision || addr.value !== before) return;
+          if (!found) {
+            // Never put raw GPS numbers into an address field or claim that lookup succeeded.
+            say('Nepavyko nustatyti adreso. Įrašykite jį ranka.');
+            addr.focus();
+            return;
+          }
+          addr.value = found;
           addr.dataset.coords = point;
-          say(accuracy > 500 ? 'Vieta apytikslė. Patikslinkite adresą.' : 'Vieta nustatyta. Patikrinkite adresą.');
+          say(accuracy > 500 ? 'Vieta apytikslė. Patikslinkite darbo adresą.' : 'Adresas nustatytas apytiksliai. Patikrinkite, ar čia bus atliekami darbai.');
+          if (locMsg) { const credit = document.createElement('a'); credit.href = 'https://www.openstreetmap.org/copyright'; credit.target = '_blank'; credit.rel = 'noopener'; credit.textContent = '© OpenStreetMap'; locMsg.append(' ', credit); }
         }, (e) => {
           loc.removeAttribute('aria-busy');
           say(e.code === 1 ? 'Naršyklė neleido nustatyti vietos. Įrašykite adresą ranka.' : 'Nepavyko nustatyti vietos. Įrašykite adresą ranka.');
