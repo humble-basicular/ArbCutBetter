@@ -68,7 +68,7 @@ export const site = {
   metaTitle: 'ArbCut — Medžių priežiūra ir aukštuminiai darbai Lietuvoje',
   metaDescription:
     'Kvalifikuotas arboristas aukštalipys. Medžių pjovimas, genėjimas, pavojingų medžių šalinimas, darbai su autobokšteliu iki 20 m. Skambinkite: +370 603 66901.',
-  ogImage: '/assets/images/2b536cb7-4a17-4d5d-9cad-8733ba243b27.jpg',
+  ogImage: '/assets/og-arbcut.png',
 
   // --- Forma: JarvisWeb Cloudflare Worker (gavėjai laikomi Workerio privačioje konfigūracijoje, ne čia) ---
   formEndpoint: 'https://jarvisweb.lt/t/form',

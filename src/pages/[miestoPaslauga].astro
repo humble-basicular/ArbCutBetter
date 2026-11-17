@@ -46,7 +46,7 @@ const schemas = [
   breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Paslaugos', path: '/paslaugos' }, { name: m.h1, path }]),
 ];
 ---
-<BaseLayout title={`${m.h1}: kaina ${p.kaina} | ArbCut`} description={`${m.h1}. ${atvykimas(v)} Kaina ${p.kaina}. Skambinkite ${site.telefonas}.`} schemas={schemas} ogImage={p.nuotrauka}>
+<BaseLayout title={`${m.h1}: kaina ${p.kaina} | ArbCut`} description={`${m.h1}. ${atvykimas(v)} Kaina ${p.kaina}. Skambinkite ${site.telefonas}.`} schemas={schemas}>
   <PageHero
     title={m.h1}
     kicker={`${v.miestas} · ${p.kaina}`}
