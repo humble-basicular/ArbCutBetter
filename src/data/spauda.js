@@ -13,7 +13,7 @@ export const lrt = {
     virves: 'Svarbiausia – patikrinu visas virves, kad nebūtų jokių pažeidimų, nes ant tos virvės kaba mano gyvybė.',
     kolega: 'Visuomet dirbi su kolega, kuris yra ant žemės.',
     leidimai: 'Mes kertame medžius tik turėdami leidimus.',
-    aukstis: '– 56 metrai. Tai buvo Vilniuje, plastiko gamyklos pastatas.',
+    aukstis: '– 56 metrai. Tai buvo Klaipėdoje, plastiko gamyklos pastatas.',
   },
 };
 

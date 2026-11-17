@@ -395,3 +395,13 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 ## 13 November 2026 — review funnel restored (LIVE)
 - Matas: "fix it so that its the magic funnel". `/ivertinimas` is back to the 7 Nov Glassperts-style filter: 4–5★ go straight to Google review, 1–3★ go to a private form to Mantas (phone required, no email field, per the current Worker). Arrow keys only move the selection; Enter/Space/click confirms. Google review-gating risk to Mantas's GBP is accepted by Matas. Pushed to origin/main → Vercel.
 - 13 Nov (later): Matas asked for sharper stars and an email field. Stars are now inline SVG (were 48 px PNG upscaled). 1–3★ form: name, email, phone optional, message required. Worker review support deployed (`8c813c50`, JarvisCo `bac920f`, rollback `e335b87a`); details in `.agents/research/v5-form-launch-steps.md`.
+
+15 Nov · ArbCut form/email · Codex gpt-6.1-sol high · thread mcp:2752d53c-5919-4ff2-90ec-118bd8c126c8 · Prepared (not deployed; UI dc05d7f, Worker 1bcbb58; Matas-only Lina simulation received): owned form worktree src/components/{QuoteForm,QuoteDialog,Hero}.astro and relevant src/scripts/site.js/styles; Worker worktree tracking/src/alerts.ts + focused tests, own handoffs. Branches fix/arbcut-form-20261115 and fix/arbcut-email-20261115. No other owner; deploy later, test Matas only.
+
+15 Nov · ArbCut 2752d53c release complete: Worker765b26ab / UI dc05d7f live; canonical private config points deployed candidate; no historical resend. See hub handoff 2026-11-15-2146-codex-arbcut-form-email-live.md.
+
+15 Nov · ArbCut 2752d53c run9 · Codex active: owns src/scripts/site.js, new form-location.js + focused tests, QuoteForm location attribution/privacy text if needed, own handoff. Same fix/arbcut-form-20261115 worktree. One actual Lina resend completed, receipt3393d77f-4ba1-4aa8-a938-e495a44fdb91; JarvisWorks INBOX verified; never resubmit. Location fix/test/deploy next.
+
+15 Nov · ArbCut design rollback2752d53c run13 · Codex owns three form components in restore-form-design worktree, branch fix/restore-arbcut-form-design-20261115; deploy exact pre-redesign visual design, preserve email Worker; no geolocation rollout.
+
+17 Nov · Mantas FB edits (Claude, thread 69fff4a9) · LIVE: hero H1 without "Kaune", hero "150 km" sentence removed, 56 m job Vilniuje→Klaipėdoje, city cards "Medžių pjovimas, kelmų naikinimas (frezavimas, rovimas)" (+ "šakų bei medienos išvežimas" for Kaunas). Source: .agents/research/2026-11-17-mantas-facebook-requests.md. Next: embroidery logo + business card files (Claude), Matas sends to Mantas himself.
