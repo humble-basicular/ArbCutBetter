@@ -405,3 +405,9 @@ LeadcheckpointpreservesGPT6.1Sol/highcodex/codex2;compatiblecodex2listedreset01:
 15 Nov · ArbCut design rollback2752d53c run13 · Codex owns three form components in restore-form-design worktree, branch fix/restore-arbcut-form-design-20261115; deploy exact pre-redesign visual design, preserve email Worker; no geolocation rollout.
 
 17 Nov · Mantas FB edits (Claude, thread 69fff4a9) · LIVE: hero H1 without "Kaune", hero "150 km" sentence removed, 56 m job Vilniuje→Klaipėdoje, city cards "Medžių pjovimas, kelmų naikinimas (frezavimas, rovimas)" (+ "šakų bei medienos išvežimas" for Kaunas). Source: .agents/research/2026-11-17-mantas-facebook-requests.md. Next: embroidery logo + business card files (Claude), Matas sends to Mantas himself.
+
+17 Nov · Hero copy · Codex · branch fix/hero-obstacles-20261117, worktree /tmp/arbcut-hero-obstacles · owns src/components/home/Hero.astro · replaced „ir kapų“ with „ir kitų kliūčių“; focused diff verified, not published.
+
+17 Nov · Map-right layout · Codex · VERIFIED · branch design/map-right-20261117, worktree /tmp/arbcut-map-right · owns new layout script/handoff and Drive mapa-desineje variants only. Swap map/text in two phrase logos and card front; originals retained. Verified unchanged vector paths/colours and canvas sizes; visually inspected all three PNGs and PDF re-renders. Three SVG/PDF/300 dpi PNG sets saved in mapa-desineje; no site edits/publication.
+
+17 Nov · Logo/card left-layout · Codex (user override, no Claude execution) · completed. Own Drive subfolder management/arbcut-logo-vizitine-2026-11-17/lietuva-kaireje. SVG/PDF/PNG verified; screenshot emblem pixels preserved, raster emblem + vector text. No send/publish. Handoff 2026-11-17-logo-card-left.md.
