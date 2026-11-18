@@ -11,7 +11,7 @@ export function GET() {
   const body = `# ArbCut — arboristas, medžių priežiūra ir aukštuminiai darbai Lietuvoje
 
 > ArbCut yra kvalifikuoto arboristo aukštalipio Manto Gerulio medžių priežiūros
-> ir aukštuminių darbų įmonė. Bazė: Garliava (Kauno r.); važiuojame iki ${site.zona.km} km nuo Kauno.
+> ir aukštuminių darbų įmonė. Bazė: Garliava (Kauno r.); dirbame visoje Lietuvoje pagal susitarimą.
 > Specializacija: pavojingų ir avarinių medžių pjovimas, genėjimas, kelmų
 > naikinimas ir darbai aukštyje nuosavu autobokšteliu (iki 20 m) bei alpinistine įranga.
 
@@ -22,7 +22,7 @@ export function GET() {
 - Telefonas: +370 603 66901
 - El. paštas: aukstuminiai.darbai@yahoo.com
 - Darbo laikas: kasdien (I–VII) 08:00–18:00
-- Aptarnaujama teritorija: ${site.zona.trumpai} (miestai: ${miestai}). ${site.zona.nevaziuojame} Šakų ir medienos išvežimas fiskaru: tik Kaune ir Kauno rajone.
+- Aptarnaujama teritorija: ${site.zona.trumpai} (miestai: ${miestai}). Šakų ir medienos išvežimas fiskaru: tik Kaune ir Kauno rajone.
 - Nuosava technika: autobokštelis iki 20 m aukščio; aukščiau — alpinistinė įranga ir virvės.
 - Facebook: https://www.facebook.com/MesGalimeTaiPadaryti/
 - Google verslo profilis (žemėlapis): ${site.google.mapsUrl}
@@ -39,7 +39,7 @@ ${kainos}
 (Tiksli kaina priklauso nuo darbo apimties ir sudėtingumo; preliminari kaina pagal nuotraukas, galutinė sutariama prieš darbą. Šakų ir medienos išvežimas tik Kaune ir Kauno r.)
 
 ## Dažni klausimai
-- Ar dirbate visoje Lietuvoje? Ne. Bazė Garliavoje (Kauno r.), važiuojame iki ${site.zona.km} km nuo Kauno. ${site.zona.nevaziuojame}
+- Ar dirbate visoje Lietuvoje? Taip, pagal susitarimą. Bazė Garliavoje (Kauno r.).
 - Ar galite dirbti prie elektros linijų? Taip, turime patirties dirbti pavojingose vietose.
 - Ar išsivežate medieną ir šakas? Taip — Kaune ir Kauno rajone fiskaru; toliau paliekame krūvoje.
 - Ar dirbate savaitgaliais? Taip, kasdien 08:00–18:00.

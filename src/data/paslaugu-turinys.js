@@ -9,6 +9,8 @@
 
 const G = (n) => `/assets/images/galerija/galerija-${String(n).padStart(2, '0')}.jpg`;
 
+const K = (f) => `/assets/images/galerija-naujos/${f}.jpg`;
+
 /* Bendri kainos veiksniai, kartojami tik ten, kur tinka. */
 const kainaMedziai = [
   'Medžio aukštis, kamieno storis ir rūšis',
@@ -277,7 +279,7 @@ export const detales = {
           'Taip, frezuojant kelmas pašalinamas iki žemės lygio ar giliau, todėl vietą galima paruošti sodinimui ar vejai.',
       },
     ],
-    nuotraukos: [G(84), G(85), G(86), G(72)],
+    nuotraukos: [K('kelmu-freza-sodyboje'), K('kelmu-freza-kelmas'), K('kelmu-freza-darbe'), K('kelmu-freza-prie-namo'), G(84), G(85)],
     susijusios: ['avariniu-medziu-pjovimas', 'gyvatvoriu-karpymas', 'saku-isvezimas'],
   },
 

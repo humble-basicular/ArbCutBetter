@@ -15,6 +15,10 @@ const naujos = [
   { ...N('bokstelis-prie-pastato'), alt: 'ArbCut autobokštelis prie medžio šalia pastato' },
   { ...N('aukstas-medis-lajoje'), alt: 'Arboristas aukštai plikame medyje, šalia ArbCut autobokštelis' },
   { ...N('aukstas-medis-is-toli'), alt: 'Aukštas medis ir ArbCut autobokštelis pievoje' },
+  { ...N('kelmu-freza-prie-namo'), alt: 'Kelmų freza ir darbuotojas kieme prie namo, šalia sukrautos rąstų atraižos' },
+  { ...N('kelmu-freza-kelmas'), alt: 'Kelmų freza sufrezuoja kelmą kieme' },
+  { ...N('kelmu-freza-darbe'), alt: 'Kelmų freza šalia nupjauto kelmo pievoje' },
+  { ...N('kelmu-freza-sodyboje'), alt: 'Darbuotojas dirba su kelmų freza sodyboje' },
 ].map((t) => ({ ...t, cat: 'naujos' }));
 const tiles = [...naujos, ...galerijosKategorijos.flatMap((k) => k.nr.map((n) => ({ src: G(n), cat: k.id, alt: galerijosAlt[k.id] })))];
 ---

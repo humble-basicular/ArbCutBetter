@@ -32,12 +32,12 @@ export const site = {
   adresas: { miestas: 'Garliava', savivaldybe: 'Kauno r. sav.', pastoKodas: '53243' },
   // Išvykstame ir į kitus miestus (išvykimą derinti iš anksto).
   // Išvežimas fiskaru — TIK Kaune ir Kauno rajone.
-  aptarnavimas: 'Kaunas, Kauno rajonas ir miestai iki 150 km nuo Kauno',
+  aptarnavimas: 'Visa Lietuva pagal susitarimą',
   // Vienas šaltinis visiems aptarnavimo teiginiams (matomam tekstui, meta, JSON-LD, llms.txt).
   // Patvirtino Matas 2026-11-06: 150 km; Klaipėda ir Šiauliai Mantui per toli, nors Šiauliai patenka į spindulį.
   zona: {
     km: 150,
-    trumpai: 'Kaunas, +150 km aplink',
+    trumpai: 'Visa Lietuva pagal susitarimą',
     nevaziuojame: 'Į Klaipėdą ir Šiaulius nevažiuojame.',
   },
   priceRange: '€€',

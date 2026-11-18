@@ -40,7 +40,7 @@ export const straipsniai = [
         <li><strong>Medžio dydis.</strong> Aukštus, storus medžius pjauname dalimis, tai užtrunka ilgiau.</li>
         <li><strong>Kas aplink medį.</strong> Prie namo, tvoros ar laidų kiekvieną dalį tenka nuleisti virvėmis arba autobokšteliu.</li>
         <li><strong>Prieiga.</strong> Ar privažiuoja autobokštelis, ar reikia lipti su alpinistine įranga.</li>
-        <li><strong>Atstumas.</strong> Tolimesniems išvykimams įtakos turi kelionė, todėl datą suderiname iš anksto, o kelių kaimynų darbus galima atlikti per vieną atvykimą. Važiuojame iki ${site.zona.km} km nuo Kauno.</li>
+        <li><strong>Atstumas.</strong> Tolimesniems išvykimams įtakos turi kelionė, todėl datą suderiname iš anksto, o kelių kaimynų darbus galima atlikti per vieną atvykimą. Dirbame visoje Lietuvoje pagal susitarimą.</li>
       </ul>
       <h2>Kas skaičiuojama atskirai</h2>
       <ul>
@@ -142,7 +142,7 @@ export const straipsniai = [
       <p>Jei saugu, nufotografuokite situaciją: nuotraukos pravers ir specialistui, ir draudimui.</p>
       <h2>3. Kvieskite specialistus</h2>
       <p>Užvirtusio medžio šalinimas yra <strong>aukštos rizikos darbas</strong>: dažnai reikia pjauti įtemptą medieną dalimis, kad nepadidėtų žala. Tai turi atlikti patirties turintis arboristas su tinkama įranga.</p>
-      <p>Užvirtusius ir pavojingai pasvirusius medžius šaliname iki ${site.zona.km} km nuo Kauno, o po darbų sutvarkome teritoriją. Įvykus tokiai situacijai <strong>skambinkite iškart</strong>, aptarsime greičiausią sprendimą.</p>
+      <p>Užvirtusius ir pavojingai pasvirusius medžius šaliname visoje Lietuvoje pagal susitarimą, o po darbų sutvarkome teritoriją. Įvykus tokiai situacijai <strong>skambinkite iškart</strong>, aptarsime greičiausią sprendimą.</p>
     `,
     duk: [
       { klausimas: 'Ar galiu pats nupjauti ant namo užvirtusį medį?', atsakymas: 'Nerekomenduojama. Užvirtęs medis būna įtemptas ir pjaunant gali staigiai atšokti ar padidinti žalą. Tokį darbą saugiau patikėti patyrusiam arboristui su tinkama įranga.' },
