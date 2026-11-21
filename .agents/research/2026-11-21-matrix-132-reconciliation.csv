@@ -1,61 +1,61 @@
 paslauga,teritorija,matricos pagrindas,matricos URL sprendimas,URL šakoje (dist),dist egzistuoja,būsena po suderinimo,savininko klausimas
-Medžių pjovimas,Kaunas,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-kaunas/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių pjovimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/avariniu-medziu-pjovimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Medžių pjovimas,Jonava,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-jonava/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių pjovimas,Kėdainiai,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-kedainiai/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių pjovimas,Panevėžys,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-panevezys/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių pjovimas,Marijampolė,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-marijampole/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių pjovimas,Alytus,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-alytus/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių pjovimas,Kazlų Rūda,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-kazlu-ruda/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių pjovimas,Tauragė,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-taurage/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių pjovimas,Vilnius,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-vilnius/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių pjovimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/avariniu-medziu-pjovimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Audros išverstų medžių šalinimas,Kaunas,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/audros-isverstu-medziu-salinimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Audros išverstų medžių šalinimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/audros-isverstu-medziu-salinimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Audros išverstų medžių šalinimas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Audros išverstų medžių šalinimas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Audros išverstų medžių šalinimas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Audros išverstų medžių šalinimas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Audros išverstų medžių šalinimas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Audros išverstų medžių šalinimas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Audros išverstų medžių šalinimas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Audros išverstų medžių šalinimas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Audros išverstų medžių šalinimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Medžių genėjimas,Kaunas,Viešai siūloma,Yra miesto URL,/medziu-genejimas-kaunas/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių genėjimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/medziu-genejimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Medžių genėjimas,Jonava,Viešai siūloma,Yra miesto URL,/medziu-genejimas-jonava/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių genėjimas,Kėdainiai,Viešai siūloma,Yra miesto URL,/medziu-genejimas-kedainiai/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių genėjimas,Panevėžys,Viešai siūloma,Yra miesto URL,/medziu-genejimas-panevezys/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių genėjimas,Marijampolė,Viešai siūloma,Yra miesto URL,/medziu-genejimas-marijampole/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių genėjimas,Alytus,Viešai siūloma,Yra miesto URL,/medziu-genejimas-alytus/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių genėjimas,Kazlų Rūda,Viešai siūloma,Yra miesto URL,/medziu-genejimas-kazlu-ruda/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių genėjimas,Tauragė,Viešai siūloma,Yra miesto URL,/medziu-genejimas-taurage/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių genėjimas,Vilnius,Viešai siūloma,Yra miesto URL,/medziu-genejimas-vilnius/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Medžių genėjimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-genejimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Medžių lajos stabilizavimas,Kaunas,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/medziu-lajos-stabilizavimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Medžių lajos stabilizavimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/medziu-lajos-stabilizavimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Medžių lajos stabilizavimas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Medžių lajos stabilizavimas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Medžių lajos stabilizavimas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Medžių lajos stabilizavimas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Medžių lajos stabilizavimas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Medžių lajos stabilizavimas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Medžių lajos stabilizavimas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Medžių lajos stabilizavimas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Medžių lajos stabilizavimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kelmų frezavimas ir išrovimas,Kaunas,Viešai siūloma,Yra miesto URL,/kelmu-frezavimas-kaunas/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Kelmų frezavimas ir išrovimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/kelmu-naikinimas-frezavimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Kelmų frezavimas ir išrovimas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kelmų frezavimas ir išrovimas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kelmų frezavimas ir išrovimas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kelmų frezavimas ir išrovimas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kelmų frezavimas ir išrovimas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kelmų frezavimas ir išrovimas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kelmų frezavimas ir išrovimas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kelmų frezavimas ir išrovimas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kelmų frezavimas ir išrovimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Šakų ir medienos išvežimas,Kaunas,Viešai siūloma,Yra regiono URL,/paslaugos/saku-isvezimas/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Šakų ir medienos išvežimas,Kauno r. / Garliava,Viešai siūloma,Yra regiono URL,/paslaugos/saku-isvezimas/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
+Medžių pjovimas,Kaunas,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-kaunas/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių pjovimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/avariniu-medziu-pjovimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Medžių pjovimas,Jonava,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-jonava/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių pjovimas,Kėdainiai,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-kedainiai/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių pjovimas,Panevėžys,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-panevezys/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių pjovimas,Marijampolė,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-marijampole/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių pjovimas,Alytus,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-alytus/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių pjovimas,Kazlų Rūda,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-kazlu-ruda/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių pjovimas,Tauragė,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-taurage/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių pjovimas,Vilnius,Viešai siūloma,Yra miesto URL,/medziu-pjovimas-vilnius/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių pjovimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/avariniu-medziu-pjovimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Audros išverstų medžių šalinimas,Kaunas,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/audros-isverstu-medziu-salinimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Audros išverstų medžių šalinimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/audros-isverstu-medziu-salinimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Audros išverstų medžių šalinimas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Audros išverstų medžių šalinimas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Audros išverstų medžių šalinimas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Audros išverstų medžių šalinimas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Audros išverstų medžių šalinimas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Audros išverstų medžių šalinimas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Audros išverstų medžių šalinimas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Audros išverstų medžių šalinimas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Audros išverstų medžių šalinimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/audros-isverstu-medziu-salinimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Medžių genėjimas,Kaunas,Viešai siūloma,Yra miesto URL,/medziu-genejimas-kaunas/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių genėjimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/medziu-genejimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Medžių genėjimas,Jonava,Viešai siūloma,Yra miesto URL,/medziu-genejimas-jonava/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių genėjimas,Kėdainiai,Viešai siūloma,Yra miesto URL,/medziu-genejimas-kedainiai/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių genėjimas,Panevėžys,Viešai siūloma,Yra miesto URL,/medziu-genejimas-panevezys/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių genėjimas,Marijampolė,Viešai siūloma,Yra miesto URL,/medziu-genejimas-marijampole/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių genėjimas,Alytus,Viešai siūloma,Yra miesto URL,/medziu-genejimas-alytus/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių genėjimas,Kazlų Rūda,Viešai siūloma,Yra miesto URL,/medziu-genejimas-kazlu-ruda/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių genėjimas,Tauragė,Viešai siūloma,Yra miesto URL,/medziu-genejimas-taurage/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių genėjimas,Vilnius,Viešai siūloma,Yra miesto URL,/medziu-genejimas-vilnius/,True,"Patvirtinta: yra URL, išlaikyti",-
+Medžių genėjimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-genejimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Medžių lajos stabilizavimas,Kaunas,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/medziu-lajos-stabilizavimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Medžių lajos stabilizavimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/medziu-lajos-stabilizavimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Medžių lajos stabilizavimas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Medžių lajos stabilizavimas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Medžių lajos stabilizavimas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Medžių lajos stabilizavimas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Medžių lajos stabilizavimas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Medžių lajos stabilizavimas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Medžių lajos stabilizavimas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Medžių lajos stabilizavimas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Medžių lajos stabilizavimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/medziu-lajos-stabilizavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kelmų frezavimas ir išrovimas,Kaunas,Viešai siūloma,Yra miesto URL,/kelmu-frezavimas-kaunas/,True,"Patvirtinta: yra URL, išlaikyti",-
+Kelmų frezavimas ir išrovimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/kelmu-naikinimas-frezavimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Kelmų frezavimas ir išrovimas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kelmų frezavimas ir išrovimas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kelmų frezavimas ir išrovimas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kelmų frezavimas ir išrovimas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kelmų frezavimas ir išrovimas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kelmų frezavimas ir išrovimas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kelmų frezavimas ir išrovimas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kelmų frezavimas ir išrovimas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kelmų frezavimas ir išrovimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kelmu-naikinimas-frezavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Šakų ir medienos išvežimas,Kaunas,Viešai siūloma,Yra regiono URL,/paslaugos/saku-isvezimas/,True,"Patvirtinta: yra URL, išlaikyti",-
+Šakų ir medienos išvežimas,Kauno r. / Garliava,Viešai siūloma,Yra regiono URL,/paslaugos/saku-isvezimas/,True,"Patvirtinta: yra URL, išlaikyti",-
 Šakų ir medienos išvežimas,Jonava,Už skelbiamos zonos,Netaikoma,/paslaugos/saku-isvezimas/,n/a,Išimtis: išvežimas tik Kaune ir Kauno r.,-
 Šakų ir medienos išvežimas,Kėdainiai,Už skelbiamos zonos,Netaikoma,/paslaugos/saku-isvezimas/,n/a,Išimtis: išvežimas tik Kaune ir Kauno r.,-
 Šakų ir medienos išvežimas,Panevėžys,Už skelbiamos zonos,Netaikoma,/paslaugos/saku-isvezimas/,n/a,Išimtis: išvežimas tik Kaune ir Kauno r.,-
@@ -65,69 +65,69 @@ Kelmų frezavimas ir išrovimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepri
 Šakų ir medienos išvežimas,Tauragė,Už skelbiamos zonos,Netaikoma,/paslaugos/saku-isvezimas/,n/a,Išimtis: išvežimas tik Kaune ir Kauno r.,-
 Šakų ir medienos išvežimas,Vilnius,Už skelbiamos zonos,Netaikoma,/paslaugos/saku-isvezimas/,n/a,Išimtis: išvežimas tik Kaune ir Kauno r.,-
 Šakų ir medienos išvežimas,Kita Lietuva,Už skelbiamos zonos,Netaikoma,/paslaugos/saku-isvezimas/,n/a,Išimtis: išvežimas tik Kaune ir Kauno r.,-
-Gyvatvorių karpymas,Kaunas,Viešai siūloma,Yra miesto URL,/gyvatvoriu-karpymas-kaunas/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Gyvatvorių karpymas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/gyvatvoriu-karpymas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Gyvatvorių karpymas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Gyvatvorių karpymas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Gyvatvorių karpymas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Gyvatvorių karpymas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Gyvatvorių karpymas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Gyvatvorių karpymas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Gyvatvorių karpymas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Gyvatvorių karpymas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Gyvatvorių karpymas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Darbai su autobokšteliu,Kaunas,Viešai siūloma,Yra miesto URL,/darbai-su-autoboksteliu-kaunas/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Darbai su autobokšteliu,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/darbai-su-autoboksteliu/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Darbai su autobokšteliu,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Darbai su autobokšteliu,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Darbai su autobokšteliu,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Darbai su autobokšteliu,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Darbai su autobokšteliu,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Darbai su autobokšteliu,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Darbai su autobokšteliu,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Darbai su autobokšteliu,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Darbai su autobokšteliu,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Lietvamzdžių ir stogo valymas,Kaunas,Viešai siūloma,Yra miesto URL,/lietvamzdziu-valymas-kaunas/,True,"Patvirtinta: yra URL, išlaikyti","Q2 (atvykimas, minimumas)"
-Lietvamzdžių ir stogo valymas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/lietvamzdziu-stogo-valymas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Lietvamzdžių ir stogo valymas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Lietvamzdžių ir stogo valymas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Lietvamzdžių ir stogo valymas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Lietvamzdžių ir stogo valymas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Lietvamzdžių ir stogo valymas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Lietvamzdžių ir stogo valymas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Lietvamzdžių ir stogo valymas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Lietvamzdžių ir stogo valymas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Lietvamzdžių ir stogo valymas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Dažymo darbai aukštyje,Kaunas,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/dazymo-darbai-aukstyje/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Dažymo darbai aukštyje,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/dazymo-darbai-aukstyje/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Dažymo darbai aukštyje,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Dažymo darbai aukštyje,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Dažymo darbai aukštyje,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Dažymo darbai aukštyje,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Dažymo darbai aukštyje,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Dažymo darbai aukštyje,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Dažymo darbai aukštyje,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Dažymo darbai aukštyje,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Dažymo darbai aukštyje,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Reklaminių iškabų montavimas,Kaunas,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/reklaminiu-iskabu-montavimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Reklaminių iškabų montavimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/reklaminiu-iskabu-montavimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Reklaminių iškabų montavimas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Reklaminių iškabų montavimas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Reklaminių iškabų montavimas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Reklaminių iškabų montavimas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Reklaminių iškabų montavimas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Reklaminių iškabų montavimas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Reklaminių iškabų montavimas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Reklaminių iškabų montavimas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Reklaminių iškabų montavimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kiti aukštuminiai darbai,Kaunas,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/kiti-aukstuminiai-darbai/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Kiti aukštuminiai darbai,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/kiti-aukstuminiai-darbai/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,Q1 (bazės zona)
-Kiti aukštuminiai darbai,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kiti aukštuminiai darbai,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kiti aukštuminiai darbai,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kiti aukštuminiai darbai,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kiti aukštuminiai darbai,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kiti aukštuminiai darbai,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kiti aukštuminiai darbai,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kiti aukštuminiai darbai,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
-Kiti aukštuminiai darbai,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,Laukia savininko; URL nepriskirtas,"Q1,Q2,Q4"
+Gyvatvorių karpymas,Kaunas,Viešai siūloma,Yra miesto URL,/gyvatvoriu-karpymas-kaunas/,True,"Patvirtinta: yra URL, išlaikyti",-
+Gyvatvorių karpymas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/gyvatvoriu-karpymas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Gyvatvorių karpymas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Gyvatvorių karpymas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Gyvatvorių karpymas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Gyvatvorių karpymas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Gyvatvorių karpymas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Gyvatvorių karpymas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Gyvatvorių karpymas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Gyvatvorių karpymas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Gyvatvorių karpymas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/gyvatvoriu-karpymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Darbai su autobokšteliu,Kaunas,Viešai siūloma,Yra miesto URL,/darbai-su-autoboksteliu-kaunas/,True,"Patvirtinta: yra URL, išlaikyti",-
+Darbai su autobokšteliu,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/darbai-su-autoboksteliu/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Darbai su autobokšteliu,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Darbai su autobokšteliu,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Darbai su autobokšteliu,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Darbai su autobokšteliu,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Darbai su autobokšteliu,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Darbai su autobokšteliu,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Darbai su autobokšteliu,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Darbai su autobokšteliu,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Darbai su autobokšteliu,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/darbai-su-autoboksteliu/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Lietvamzdžių ir stogo valymas,Kaunas,Viešai siūloma,Yra miesto URL,/lietvamzdziu-valymas-kaunas/,True,"Patvirtinta: yra URL, išlaikyti",-
+Lietvamzdžių ir stogo valymas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/lietvamzdziu-stogo-valymas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Lietvamzdžių ir stogo valymas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Lietvamzdžių ir stogo valymas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Lietvamzdžių ir stogo valymas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Lietvamzdžių ir stogo valymas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Lietvamzdžių ir stogo valymas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Lietvamzdžių ir stogo valymas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Lietvamzdžių ir stogo valymas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Lietvamzdžių ir stogo valymas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Lietvamzdžių ir stogo valymas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/lietvamzdziu-stogo-valymas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Dažymo darbai aukštyje,Kaunas,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/dazymo-darbai-aukstyje/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Dažymo darbai aukštyje,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/dazymo-darbai-aukstyje/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Dažymo darbai aukštyje,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Dažymo darbai aukštyje,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Dažymo darbai aukštyje,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Dažymo darbai aukštyje,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Dažymo darbai aukštyje,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Dažymo darbai aukštyje,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Dažymo darbai aukštyje,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Dažymo darbai aukštyje,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Dažymo darbai aukštyje,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/dazymo-darbai-aukstyje/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Reklaminių iškabų montavimas,Kaunas,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/reklaminiu-iskabu-montavimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Reklaminių iškabų montavimas,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/reklaminiu-iskabu-montavimas/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Reklaminių iškabų montavimas,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Reklaminių iškabų montavimas,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Reklaminių iškabų montavimas,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Reklaminių iškabų montavimas,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Reklaminių iškabų montavimas,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Reklaminių iškabų montavimas,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Reklaminių iškabų montavimas,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Reklaminių iškabų montavimas,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Reklaminių iškabų montavimas,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/reklaminiu-iskabu-montavimas/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kiti aukštuminiai darbai,Kaunas,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/kiti-aukstuminiai-darbai/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Kiti aukštuminiai darbai,Kauno r. / Garliava,Bazės regionas · tikslinti,Yra paslaugos URL,/paslaugos/kiti-aukstuminiai-darbai/,True,Naudoti paslaugos URL; atskiras miestas nekuriamas,-
+Kiti aukštuminiai darbai,Jonava,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kiti aukštuminiai darbai,Kėdainiai,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kiti aukštuminiai darbai,Panevėžys,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kiti aukštuminiai darbai,Marijampolė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kiti aukštuminiai darbai,Alytus,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kiti aukštuminiai darbai,Kazlų Rūda,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kiti aukštuminiai darbai,Tauragė,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kiti aukštuminiai darbai,Vilnius,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-
+Kiti aukštuminiai darbai,Kita Lietuva,Reikia savininko patvirtinimo,Nepriskirta pora,/paslaugos/kiti-aukstuminiai-darbai/,True,"Priskirta paslaugos URL: „visa Lietuva pagal susitarimą“ (Footer, site.aptarnavimas); naujas miesto URL nekuriamas be darbų įrodymų",-

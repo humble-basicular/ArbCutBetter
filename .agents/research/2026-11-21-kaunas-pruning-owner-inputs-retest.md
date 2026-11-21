@@ -18,8 +18,11 @@
 7. **Straipsniai.** Ar tvirtinate autorystę (Mantas) ir peržiūros datą leidimų/kainos straipsniams; ar kainas galima viešinti?
 8. Publikavimo politika (neišspręsta): ar viešinti pakeitimus iš karto, ar po savininko atsakymų?
 
+## Sprendimas 2026-11-21 (Matas: „Based on the context you have do everything. I wont ask mantas“)
+Klausimų sąrašas Mantui nebus siunčiamas. Sprendimai iš esamų faktų: 83 poros priskirtos paslaugos URL pagal „visa Lietuva pagal susitarimą“; naujų miesto URL nekuriame (nėra darbų įrodymų, rizika plono turinio); „nuo 50 €“ aiškinama tik kaip pradinė kaina; kainos intervalų ir „kas įskaičiuota“ nerašome. Sąrašas žemiau lieka kaip atsarginis, jei atsakymai atsiras.
+
 ## Matrica 132 poros (CSV: `2026-11-21-matrix-132-reconciliation.csv`)
-Su `dist` sutikrinta: 24 pagrįsta esamu URL (22 miesto + 2 regioninis išvežimas; visi egzistuoja build), 16 naudoja paslaugos URL, 9 išimtis (išvežimas už Kauno r.), 83 laukia savininko. Suma 132. Atskirų naujų URL nekuriame iki atsakymų.
+Su `dist` sutikrinta: 24 pagrįsta esamu URL (22 miesto + 2 regioninis išvežimas; visi egzistuoja build), 16 + 83 = 99 naudoja paslaugos URL, 9 išimtis (išvežimas už Kauno r.). Suma 132.
 
 ## 28 d. retestas
 Po pakartotinio nuskaitymo (URL Inspection + Request indexing abiem Kauno URL, ranka, tik su leidimu) imti LT, Web, galutinį langą, pvz. 28 d. po deploy datos; palyginti su 2026-10-23–11-19: „medžių genėjimas kaune" 50 parodymų / 0 paspaudimų / poz. 28,92; URL × užklausa: pjovimas-kaunas 37, genėjimas-kaunas 10, paslaugos/medziu-genejimas 3. Sėkmė: daugiau parodymų genėjimo URL, pozicija < 20, CTR > 0, pjovimo URL dalis krenta. Stebėti ir kainos straipsnio indeksavimą. Rodiklis be metinio palyginimo (2025 langas tuščias). Deploy data: NEŽINOMA (deploy šioje užduotyje nedarytas).
