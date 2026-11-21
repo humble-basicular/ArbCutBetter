@@ -1,5 +1,12 @@
 # ArbCut work board
 
+## 21 November 2026 — Kaunas pruning SEO polish, LIVE (`e156cd7`)
+
+- Owner: Claude (thread 0dfe5223), branch `seo/arbcut-full-audit-77c1`, ff-merged to `main`, pushed; Vercel success, live checked (canonical, no noindex, tel, new blocks on 3 URLs). Matas 21 Nov: "Based on the context you have do everything. I wont ask mantas".
+- Changed: `/medziu-genejimas-kaunas/` (description, lead, sąmata block, Aldona example, 2 FAQ), `/medziu-pjovimas-kaunas/` (genėjimas note + FAQ), price article genėjimas section. Title/URLs/canonicals unchanged.
+- Matrix 132: `.agents/research/2026-11-21-matrix-132-reconciliation.csv` (24 own URL, 99 service URL, 9 exception). Retest plan: `.agents/research/2026-11-21-kaunas-pruning-owner-inputs-retest.md`.
+- Open: GSC URL Inspection/Request indexing for both Kaunas URLs not done (no GSC access in thread). 28 d. retest from 2026-11-21 → read on/after 2026-12-19.
+
 ## 7 November 2026 — review funnel `/ivertinimas`, BUILT (not live)
 
 - Owner: Claude (this thread). Approved by Matas 7 Nov ("Taip gerai tai implementuok arbcut ir irasyk i brain"), Google review-gating risk known and accepted. Page `src/pages/ivertinimas.astro`: noindex, out of sitemap and menus. 4–5★ → public review (Google when `site.google.placeId` is set, otherwise Paslaugos.lt); 1–3★ → private form to the Worker `/t/form` (`kind=site_inquiry`, `service="Privatus įvertinimas: N/5"`, phone required) with a small "write publicly" link kept. Browser-tested in preview at 1440 and 390 px (both branches, keyboard rating, validation, inert submit, no overflow). Note: private feedback lands among enquiries until the Worker gets its own kind. Link to send after a job: `https://arbcut.lt/ivertinimas`. Update 7 Nov (`fix` after Matas pointed at glassexpertsfl.org/review-us): 4–5★ now redirect instantly in the same tab, 1–3★ form has optional name/phone and required feedback, no public link; all site "Parašyti atsiliepimą" buttons lead here. Contact on the 1–3★ form: phone or email, both optional (Matas, 7 Nov). Worker support built on JarvisCo `feat/review-feedback-20261107` (`4103527`, 161 tests pass), not reviewed/merged/deployed; launch blocked until it is live (see v5-form-launch-steps.md).
