@@ -69,7 +69,7 @@ const schemas = [
     thumbAlt={`${m.trumpas}, ArbCut darbas`}
     service={m.paslauga}
   >
-    {genKaunas && <p class="mute">Medį reikia šalinti? Žr. <a href="/medziu-pjovimas-kaunas">medžių pjovimas Kaune</a>.</p>}
+    {genKaunas && <p class="mute">Medį reikia šalinti? Žr. <a class="textlink" href="/medziu-pjovimas-kaunas">medžių pjovimas Kaune</a>.</p>}
   </PageHero>
 
   <section class="sec">
@@ -109,7 +109,7 @@ const schemas = [
           <div class="mp__block">
             <h2>Darbo pavyzdys: {pavyzdys.pavadinimas.charAt(0).toLowerCase() + pavyzdys.pavadinimas.slice(1)}</h2>
             <p>{pavyzdys.problema} {pavyzdys.salygos} {pavyzdys.darbas}</p>
-            <p class="mute">Pagal kliento atsiliepimą, {pavyzdys.vardas}, {new Date(pavyzdys.data).toLocaleDateString('lt-LT', { year: 'numeric', month: 'long' })}. Atsiliepimo tekste vietovės ir kainos nėra. <a href="/galerija#darbai">Daugiau darbų</a></p>
+            <p class="mute">Pagal kliento atsiliepimą, {pavyzdys.vardas}, {new Date(pavyzdys.data).toLocaleDateString('lt-LT', { year: 'numeric', month: 'long' })}. Atsiliepimo tekste vietovės ir kainos nėra. <a class="textlink" href="/galerija#darbai">Daugiau darbų</a></p>
           </div>
         )}
       </div>

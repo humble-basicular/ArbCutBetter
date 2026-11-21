@@ -58,7 +58,7 @@ const description = `Medžių pjovimas ${v.kur}: pavojingi medžiai prie namų i
             ? <p><strong>Išvežame patys.</strong> Kaune ir Kauno rajone šakas ir medieną išvežame fiskaru — kiemas lieka tvarkingas.</p>
             : <p><strong>Medienos išvežimas</strong> — tik Kaune ir Kauno rajone. {v.kur} medieną ir šakas sukrauname tvarkingoje krūvoje.</p>}
         </div>
-        {isBase && <p class="town__note"><strong>Medžio šalinti nereikia?</strong> Jei reikia tik pašalinti sausas šakas ar sumažinti lają, tinka <a href="/medziu-genejimas-kaunas">medžių genėjimas Kaune</a>, kaina nuo 50 €.</p>}
+        {isBase && <p class="town__note"><strong>Medžio šalinti nereikia?</strong> Jei reikia tik pašalinti sausas šakas ar sumažinti lają, tinka <a class="textlink" href="/medziu-genejimas-kaunas">medžių genėjimas Kaune</a>, kaina nuo 50 €.</p>}
         {cia.length > 0 && <p class="town__also">{cia.map((m) => <a class="link-arrow" href={`/${m.slug}`}>{m.h1}</a>)}</p>}
       </div>
       <div class="town__svc">
