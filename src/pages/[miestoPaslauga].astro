@@ -10,6 +10,7 @@ import { getPaslauga } from '@data/paslaugos.js';
 import { detales } from '@data/paslaugu-turinys.js';
 import { miestuPaslaugos, paslaugosMiestuose, atvykimas, isvezimas } from '@data/miestu-paslaugos.js';
 import { atrinkti } from '@data/atrinkti.js';
+import { darbai } from '@data/darbai.js';
 import { localBusiness, breadcrumbs, faqPage, serviceSchema } from '@data/jsonld.js';
 
 export function getStaticPaths() {
@@ -34,10 +35,19 @@ const foto = {
   'darbai-su-autoboksteliu': ['arboristas-bokstelyje', 'Arboristas autobokštelio krepšyje pušies lajoje', '50% 40%'],
   'lietvamzdziu-stogo-valymas': ['autobokstelis-prie-namo', 'Autobokštelis prie namo stogo', '70% 30%'],
 }[m.paslauga] || [];
+/* Kauno genėjimo puslapis (GSC 2026-10-23–11-19: „medžių genėjimas kaune“ 50 parodymų, 0 paspaudimų): tik patvirtinti faktai iš kainų straipsnio, paslaugos aprašo ir kliento atsiliepimo. */
+const genKaunas = m.slug === 'medziu-genejimas-kaunas';
+const pavyzdys = genKaunas ? darbai.find((x) => x.vardas === 'Aldona') : null;
+const kainaMazesne = d.kaina.map((t) => t.charAt(0).toLowerCase() + t.slice(1)).join('; ');
+const genFaq = genKaunas ? [
+  { klausimas: 'Kiek kainuoja medžių genėjimas Kaune?', atsakymas: `Genėjimas ${p.kaina}. Tai pradinė, o ne tipinė kaina. Galutinę sumą lemia: ${kainaMazesne}. Preliminarią kainą pasakome pagal nuotraukas, o kainą ir darbų apimtį sutariame prieš pradedant.` },
+  { klausimas: 'Ar genėjimui reikia savivaldybės leidimo?', atsakymas: 'Leidimo reikia saugotinam medžiui, jei jį intensyviai genite, tai yra šalinate daugiau nei 30 % lajos. Ar jūsų medis saugotinas, pasako savivaldybė. Plačiau: straipsnis „Ar reikia leidimo pjauti medį privačiame sklype?“.' },
+] : [];
 const faq = [
   { klausimas: `Kaip planuojate darbus ${v.kur}?`, atsakymas: atvykimas(v) },
   { klausimas: `Ar išvežate šakas ${v.kur}?`, atsakymas: isvezimas(v) },
   ...d.duk,
+  ...genFaq,
 ];
 const schemas = [
   localBusiness(),
@@ -46,11 +56,11 @@ const schemas = [
   breadcrumbs([{ name: 'Pradžia', path: '/' }, { name: 'Paslaugos', path: '/paslaugos' }, { name: m.h1, path }]),
 ];
 ---
-<BaseLayout title={`${m.h1}: kaina ${p.kaina} | ArbCut`} description={`${m.h1}. ${atvykimas(v)} Kaina ${p.kaina}. Skambinkite ${site.telefonas}.`} schemas={schemas}>
+<BaseLayout title={`${m.h1}: kaina ${p.kaina} | ArbCut`} description={genKaunas ? `Medžių genėjimas Kaune: sausų ir pavojingų šakų šalinimas, lajos prašviesinimas ir formavimas, kai medį norite palikti. Kaina ${p.kaina}, galutinę pasakome pagal nuotraukas. ${site.telefonas}.` : `${m.h1}. ${atvykimas(v)} Kaina ${p.kaina}. Skambinkite ${site.telefonas}.`} schemas={schemas}>
   <PageHero
     title={m.h1}
     kicker={`${v.miestas} · ${p.kaina}`}
-    lead={d.ivadas}
+    lead={genKaunas ? 'Kai medį norite palikti, bet reikia pašalinti sausas ar pavojingas šakas, prašviesinti ar suformuoti lają. Siųskite nuotraukas, pasakysime preliminarią kainą, o kainą ir darbų apimtį sutarsime prieš pradedant.' : d.ivadas}
     crumbs={[{ label: 'Paslaugos', href: '/paslaugos' }, { label: d.trumpas, href: `/paslaugos/${m.paslauga}` }, { label: v.miestas }]}
     photo={foto[0]}
     photoAlt={foto[1]}
@@ -58,7 +68,9 @@ const schemas = [
     thumbs={foto[0] ? [] : d.nuotraukos.slice(0, 2)}
     thumbAlt={`${m.trumpas}, ArbCut darbas`}
     service={m.paslauga}
-  />
+  >
+    {genKaunas && <p class="mute">Medį reikia šalinti? Žr. <a href="/medziu-pjovimas-kaunas">medžių pjovimas Kaune</a>.</p>}
+  </PageHero>
 
   <section class="sec">
     <div class="wrap mp">
@@ -80,6 +92,26 @@ const schemas = [
             <a class="link-arrow" href={`/${v.slug}`}>Medžių pjovimas {v.kur}</a>
           </p>
         </div>
+        {genKaunas && (
+          <div class="mp__block">
+            <h2>Ką reiškia „{p.kaina}“ ir kaip gauti sąmatą</h2>
+            <p>Kaina „{p.kaina}“ yra pradinė genėjimo kaina, o ne tipinė sąmata. Galutinę sumą lemia:</p>
+            <ul class="ticks">{d.kaina.map((t) => <li>{t}</li>)}</ul>
+            <ol class="steps steps--row" role="list">
+              <li>Atsiųskite nuotraukas iš kelių pusių ir nurodykite, kurios šakos kelia nerimą.</li>
+              <li>Pasakome preliminarią kainą pagal nuotraukas.</li>
+              <li>Prieš pradedant sutariame kainą ir darbų apimtį.</li>
+            </ol>
+            <p class="mute">Sąmatai paruoškite: {d.paruosti.map((t) => t.charAt(0).toLowerCase() + t.slice(1)).join('; ')}.</p>
+          </div>
+        )}
+        {pavyzdys && (
+          <div class="mp__block">
+            <h2>Darbo pavyzdys: {pavyzdys.pavadinimas.charAt(0).toLowerCase() + pavyzdys.pavadinimas.slice(1)}</h2>
+            <p>{pavyzdys.problema} {pavyzdys.salygos} {pavyzdys.darbas}</p>
+            <p class="mute">Pagal kliento atsiliepimą, {pavyzdys.vardas}, {new Date(pavyzdys.data).toLocaleDateString('lt-LT', { year: 'numeric', month: 'long' })}. Atsiliepimo tekste vietovės ir kainos nėra. <a href="/galerija#darbai">Daugiau darbų</a></p>
+          </div>
+        )}
       </div>
       <aside class="mp__side" aria-label="Kaina ir užklausa">
         <div class="panel mp__card">

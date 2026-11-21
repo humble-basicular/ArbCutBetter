@@ -18,7 +18,7 @@ export const straipsniai = [
     aprasymas:
       'ArbCut medžio pjovimo įkainiai, kas lemia kainą, kas skaičiuojama atskirai ir realus pavyzdys: trys medžiai už 470 € su išvežimu.',
     data: PASKELBTA,
-    atnaujinta: '2026-11-06',
+    atnaujinta: '2026-11-21',
     skaitymas: '4 min',
     turinys: `
       <p><strong>Trumpas atsakymas:</strong> ArbCut medžio pjovimas kainuoja ${kaina('avariniu-medziu-pjovimas')}, tačiau tai mūsų mažiausias įkainis, o ne Lietuvos rinkos vidurkis. Galutinę sumą lemia medžio dydis, kas aplink jį, ar privažiuoja autobokštelis ir ar reikia išvežti medieną.</p>
@@ -35,6 +35,8 @@ export const straipsniai = [
           <tr><td><a href="/paslaugos/saku-isvezimas">Šakų ir medienos išvežimas</a> (tik Kaune ir Kauno r.)</td><td>${kaina('saku-isvezimas')}</td></tr>
         </tbody>
       </table>
+      <h2>Genėjimas: ką reiškia „${kaina('medziu-genejimas')}“</h2>
+      <p>Tai pradinė genėjimo kaina, o ne tipinė sąmata. Ją didina tie patys dalykai: kiek šakų reikia šalinti, ar privažiuoja autobokštelis, ar šakos virš pastato ar laidų ir ar reikia išvežti šakas. Konkrečios genėjimo sumos pavyzdžio šiame straipsnyje nepateikiame, nes jo neturime patvirtinto. Daugiau: <a href="/medziu-genejimas-kaunas">medžių genėjimas Kaune</a>.</p>
       <h2>Kas didina kainą</h2>
       <ul>
         <li><strong>Medžio dydis.</strong> Aukštus, storus medžius pjauname dalimis, tai užtrunka ilgiau.</li>

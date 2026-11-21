@@ -31,6 +31,7 @@ const townFaq = [
   isBase
     ? { klausimas: `Ar išvežate medieną ${v.kur}?`, atsakymas: 'Taip. Kaune ir Kauno rajone po darbų išvežame šakas ir medieną nuosavu fiskaru (talpa nuo 20 m³). Kas išvežama ir už kokią kainą, sutariame iš anksto.' }
     : { klausimas: `Ar išvežate medieną ${v.kur}?`, atsakymas: 'Medienos išvežimą fiskaru atliekame Kaune ir Kauno rajone. Kitur medį nupjauname, sutvarkome, o šakas ir medieną sukrauname tvarkingoje krūvoje.' },
+  ...(isBase ? [{ klausimas: 'Ar galima medį tik apgenėti, o ne pjauti?', atsakymas: 'Taip. Jei medį norite palikti, o reikia pašalinti sausas ar pavojingas šakas arba sumažinti lają, tinka genėjimas, kaina nuo 50 €. Plačiau: medžių genėjimas Kaune.' }] : []),
   { klausimas: `Kaip greitai galite atvykti ${v.kur}?`, atsakymas: isBase ? 'Mūsų bazė Garliavoje, šalia Kauno, todėl Kaune atvykstame greičiausiai. Tikslų laiką pasakome telefonu pagal tos dienos darbus.' : 'Išvykimo datą suderiname iš anksto. Avariniu atveju paskambinkite — pasakysime, kada realiai galime būti.' },
   ...duk.filter((q) => /elektros|savaitgal/.test(q.klausimas)),
 ];
@@ -57,6 +58,7 @@ const description = `Medžių pjovimas ${v.kur}: pavojingi medžiai prie namų i
             ? <p><strong>Išvežame patys.</strong> Kaune ir Kauno rajone šakas ir medieną išvežame fiskaru — kiemas lieka tvarkingas.</p>
             : <p><strong>Medienos išvežimas</strong> — tik Kaune ir Kauno rajone. {v.kur} medieną ir šakas sukrauname tvarkingoje krūvoje.</p>}
         </div>
+        {isBase && <p class="town__note"><strong>Medžio šalinti nereikia?</strong> Jei reikia tik pašalinti sausas šakas ar sumažinti lają, tinka <a href="/medziu-genejimas-kaunas">medžių genėjimas Kaune</a>, kaina nuo 50 €.</p>}
         {cia.length > 0 && <p class="town__also">{cia.map((m) => <a class="link-arrow" href={`/${m.slug}`}>{m.h1}</a>)}</p>}
       </div>
       <div class="town__svc">
