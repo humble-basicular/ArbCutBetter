@@ -5,7 +5,7 @@
 - Owner: Claude (thread 0dfe5223), branch `seo/arbcut-full-audit-77c1`, ff-merged to `main`, pushed; Vercel success, live checked (canonical, no noindex, tel, new blocks on 3 URLs). Matas 21 Nov: "Based on the context you have do everything. I wont ask mantas".
 - Changed: `/medziu-genejimas-kaunas/` (description, lead, sąmata block, Aldona example, 2 FAQ), `/medziu-pjovimas-kaunas/` (genėjimas note + FAQ), price article genėjimas section. Title/URLs/canonicals unchanged.
 - Matrix 132: `.agents/research/2026-11-21-matrix-132-reconciliation.csv` (24 own URL, 99 service URL, 9 exception). Retest plan: `.agents/research/2026-11-21-kaunas-pruning-owner-inputs-retest.md`.
-- Open: GSC URL Inspection/Request indexing for both Kaunas URLs not done (no GSC access in thread). 28 d. retest from 2026-11-21 → read on/after 2026-12-19.
+- GSC Request indexing done 2026-11-21 ~18:05 EET (mbwebdv, u/2) for both Kaunas URLs: "Indexing requested… added to a priority crawl queue"; both showed "URL is on Google / Page is indexed" before. Open: 28 d. retest → read on/after 2026-12-19.
 
 ## 7 November 2026 — review funnel `/ivertinimas`, BUILT (not live)
 
